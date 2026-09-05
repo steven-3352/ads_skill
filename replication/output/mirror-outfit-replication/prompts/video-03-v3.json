@@ -1,0 +1,17 @@
+{
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "resolution": "720p",
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "asset://asset-20260905084248-6vvrj"
+      },
+      "role": "reference_image"
+    }
+  ],
+  "prompt": "5-second vertical fashion video. Use the single certified character reference as the only visual reference. Preserve exactly the same adult Asian male identity throughout: same face shape, eye spacing, eyebrows, nose, lips, jawline, ears, short black hairstyle, hairline, skin tone and age. Show exactly one person. He is already wearing a clean black technical overshirt with simple utility pockets over a plain black T-shirt. Scene: a bright minimal bedroom in the morning, pale neutral wall, soft daylight from one side, no mirror, no frame, no reflective surface. Camera: locked straight-on medium shot from the waist up, camera at eye level, generous empty space above the head and beside both shoulders. 0-1.5s: he stands still and looks directly toward the camera with a calm neutral expression. 1.5-3.5s: using only his right hand, he slowly adjusts the left side of his collar once. 3.5-5s: he lowers his hand and holds still. Keep the face clearly visible and unchanged during the entire shot. Minimal natural movement, no walking, no turning, no phone, no clothing transformation, no transition, no camera movement, no zoom. No mirror, no frame, no reflection, no duplicate person, no second face, no face morphing, no facial expression change, no lip movement, no body deformation, no extra fingers, no brands, no logos, no text, no watermark. Fictional AI-generated adult character."
+}

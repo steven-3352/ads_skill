@@ -1,0 +1,6 @@
+{
+  "references": [
+    "replication/output/wild-mode/keyframes/kf-01-final-look-v1.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: corrected vertical 9:16 hero keyframe for a premium fashion TV commercial. Image 1 is the edit target and immutable visual anchor. Remove only the black handbag from the man's lowered hand and reconstruct his relaxed empty hand naturally beside his thigh. Keep the exact same fictional man, face, hair, sunglasses, cap, expression, body proportions, pose, cobalt-blue cropped jacket, ivory ribbed knit, charcoal trousers, watch, belt, shoes, room architecture, camera, crop, sunlight, shadows, rich realistic color and all material textures unchanged. Preserve the clean slightly roguish fashion-editorial attitude. No replacement object in his hand. No text, no brand, no logo, no watermark. Avoid changing identity, outfit, accessories, background, framing, lighting, anatomy or adding any object."
+}

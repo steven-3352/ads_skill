@@ -1,0 +1,172 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd "$BASE_DIR/../.." && pwd)"
+ENV_FILE="$PROJECT_DIR/.env"
+[[ -f "$ENV_FILE" ]] || { echo "找不到项目配置: $ENV_FILE" >&2; exit 1; }
+set -a; source "$ENV_FILE"; set +a
+
+PROMPT_FILE=""
+OUTPUT_DIR="./generated-videos"
+OUTPUT_NAME="video-task-$(date +%s).json"
+PROVIDER="${VIDEO_PROVIDER:-seedance}"
+CLI_REFERENCES=()
+WAIT=false
+DOWNLOAD=false
+
+usage() {
+  cat >&2 <<'USAGE'
+用法: generate-video.sh --prompt <prompt.json> --output-dir <目录> [选项]
+选项:
+  --output-name <文件名.json>    输出响应文件名
+  --provider <seedance|minimax>  接口协议，默认 seedance
+  --reference <素材>             参考素材，可重复传入并覆盖 JSON 中的素材
+  --model <模型>                 覆盖环境变量中的模型
+  --wait                         提交后轮询并保存最终响应
+  --download                     轮询完成后下载 MP4（需同时使用 --wait）
+USAGE
+  exit 2
+}
+
+if [[ "${1:-}" != --* ]]; then
+  PROMPT_FILE="${1:-}"
+  if [[ -n "${2:-}" ]]; then OUTPUT_DIR="$(dirname "$2")"; OUTPUT_NAME="$(basename "$2")"; fi
+else
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --prompt) PROMPT_FILE="${2:-}"; shift 2 ;;
+      --output-dir) OUTPUT_DIR="${2:-}"; shift 2 ;;
+      --output-name) OUTPUT_NAME="${2:-}"; shift 2 ;;
+      --provider) PROVIDER="${2:-}"; shift 2 ;;
+      --reference) CLI_REFERENCES+=("${2:-}"); shift 2 ;;
+      --model) VIDEO_MODEL="${2:-}"; shift 2 ;;
+      --wait) WAIT=true; shift ;;
+      --download) DOWNLOAD=true; shift ;;
+      -h|--help) usage ;;
+      *) echo "未知参数: $1" >&2; usage ;;
+    esac
+  done
+fi
+[[ -n "$PROMPT_FILE" && -f "$PROMPT_FILE" ]] || usage
+mkdir -p "$OUTPUT_DIR"
+OUTPUT="$OUTPUT_DIR/$OUTPUT_NAME"
+command -v jq >/dev/null || { echo "需要 jq" >&2; exit 1; }
+command -v curl >/dev/null || { echo "需要 curl" >&2; exit 1; }
+
+PROMPT="$(jq -er '.prompt' "$PROMPT_FILE")"
+if [[ "${#CLI_REFERENCES[@]}" -gt 0 ]]; then
+  REFERENCES="$(printf '%s\n' "${CLI_REFERENCES[@]}" | jq -Rsc 'split("\n") | map(select(length > 0))')"
+else
+  REFERENCES="$(jq -c '.images // []' "$PROMPT_FILE")"
+fi
+
+# Seedance rejects first/last-frame items mixed with reference media in one request.
+if [[ "$PROVIDER" == "seedance" ]]; then
+  CONTENT_CHECK="$(jq -c '.content // []' "$PROMPT_FILE")"
+  if [[ "$CONTENT_CHECK" != "[]" ]]; then
+    HAS_FRAME="$(jq '[.[] | select(.role == "first_frame" or .role == "last_frame")] | length' <<< "$CONTENT_CHECK")"
+    HAS_REFERENCE="$(jq '[.[] | select(.role == "reference_image" or .role == "reference_video" or .role == "reference_audio")] | length' <<< "$CONTENT_CHECK")"
+    if [[ "$HAS_FRAME" -gt 0 && "$HAS_REFERENCE" -gt 0 ]]; then
+      echo "Seedance 参数错误：first_frame/last_frame 不能与 reference_image/reference_video/reference_audio 混用" >&2
+      exit 1
+    fi
+  fi
+fi
+DURATION="$(jq -r '.duration // 5' "$PROMPT_FILE")"
+RATIO="$(jq -r '.ratio // .aspect_ratio // "9:16"' "$PROMPT_FILE")"
+GENERATE_AUDIO="$(jq -r '.generate_audio // true' "$PROMPT_FILE")"
+WATERMARK="$(jq -r '.watermark // false' "$PROMPT_FILE")"
+RESOLUTION="$(jq -r '.resolution // empty' "$PROMPT_FILE")"
+CAMERA_FIXED="$(jq -r '.camera_fixed // empty' "$PROMPT_FILE")"
+
+if [[ "$PROVIDER" == "seedance" ]]; then
+  [[ -n "${SEEDANCE_API_KEY:-}" ]] || { echo "缺少 SEEDANCE_API_KEY" >&2; exit 1; }
+  BASE_URL="${SEEDANCE_BASE_URL:-https://us1.tonbirds.com/v1}"
+  BASE_URL="${BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
+  MODEL="${VIDEO_MODEL:-${SEEDANCE_MODEL_ID:-doubao-seedance-2-0-mini-260615}}"
+  CONTENT="$(jq -c '.content // empty' "$PROMPT_FILE")"
+  if [[ -z "$CONTENT" || "$CONTENT" == "null" ]]; then
+    CONTENT="$(jq -c '[.[] | {type:"image_url", image_url:{url:.}, role:"reference_image"}]' <<< "$REFERENCES")"
+  fi
+  SEEDANCE_TEMP_DIR="$(mktemp -d)"
+  trap 'rm -rf "$SEEDANCE_TEMP_DIR"' EXIT
+  CONTENT_FILE="$SEEDANCE_TEMP_DIR/content.json"
+  printf '%s' "$CONTENT" > "$CONTENT_FILE"
+
+  # Local image inputs avoid hard-coded public URLs. They are converted only in
+  # the temporary request and never persisted in the source prompt JSON.
+  while IFS=$'\t' read -r INDEX LOCAL_PATH; do
+    [[ -n "$LOCAL_PATH" ]] || continue
+    if [[ "$LOCAL_PATH" != /* ]]; then LOCAL_PATH="$PROJECT_DIR/$LOCAL_PATH"; fi
+    [[ -f "$LOCAL_PATH" ]] || { echo "找不到本地 Seedance 素材: $LOCAL_PATH" >&2; exit 1; }
+    case "${LOCAL_PATH##*.}" in
+      jpg|JPG|jpeg|JPEG) MIME_TYPE="image/jpeg" ;;
+      webp|WEBP) MIME_TYPE="image/webp" ;;
+      *) MIME_TYPE="image/png" ;;
+    esac
+    DATA_URL_FILE="$SEEDANCE_TEMP_DIR/data-url-$INDEX.txt"
+    {
+      printf 'data:%s;base64,' "$MIME_TYPE"
+      base64 < "$LOCAL_PATH" | tr -d '\n'
+    } > "$DATA_URL_FILE"
+    NEXT_CONTENT_FILE="$SEEDANCE_TEMP_DIR/content-next.json"
+    jq --argjson index "$INDEX" --rawfile data_url "$DATA_URL_FILE" \
+      '.[$index].image_url = {url:$data_url} | del(.[$index].local_path)' \
+      "$CONTENT_FILE" > "$NEXT_CONTENT_FILE"
+    mv "$NEXT_CONTENT_FILE" "$CONTENT_FILE"
+  done < <(jq -r 'to_entries[] | select(.value.local_path != null) | [.key, .value.local_path] | @tsv' "$CONTENT_FILE")
+
+  REQUEST="$SEEDANCE_TEMP_DIR/request.json"
+  jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --slurpfile content "$CONTENT_FILE" \
+    --arg ratio "$RATIO" --argjson audio "$GENERATE_AUDIO" --argjson watermark "$WATERMARK" \
+    --arg duration "$DURATION" --arg resolution "$RESOLUTION" --arg camera_fixed "$CAMERA_FIXED" \
+    '{model:$model,prompt:$prompt,metadata:({content:$content[0],ratio:$ratio,generate_audio:$audio,watermark:$watermark} +
+      (if $duration != "" then {duration:($duration|tonumber)} else {} end) +
+      (if $resolution != "" then {resolution:$resolution} else {} end) +
+      (if $camera_fixed != "" then {camera_fixed:($camera_fixed == "true")} else {} end))}' > "$REQUEST"
+  if ! curl --fail-with-body -sS -X POST "${SEEDANCE_CREATE_PATH:-$BASE_URL/video/generations}" \
+    -H 'Content-Type: application/json' -H "Authorization: Bearer $SEEDANCE_API_KEY" \
+    --data-binary "@$REQUEST" > "$OUTPUT"; then
+    echo "Seedance 创建任务失败，服务端响应：" >&2
+    jq . "$OUTPUT" >&2 2>/dev/null || sed -n '1,120p' "$OUTPUT" >&2
+    exit 1
+  fi
+  echo "Seedance 视频任务响应已保存: $OUTPUT"
+  if [[ "$WAIT" == true ]]; then
+    TASK_ID="$(jq -r '.id // .task_id // empty' "$OUTPUT")"; [[ -n "$TASK_ID" ]] || exit 1
+    STATUS_FILE="$OUTPUT.status.json"
+    while true; do
+      curl --fail-with-body -sS "${SEEDANCE_STATUS_BASE:-$BASE_URL/videos}/$TASK_ID" \
+        -H "Authorization: Bearer $SEEDANCE_API_KEY" > "$STATUS_FILE"
+      STATUS="$(jq -r '.status // .data.status // empty' "$STATUS_FILE" | tr '[:upper:]' '[:lower:]')"
+      echo "任务 $TASK_ID 状态: ${STATUS:-unknown}"
+      [[ "$STATUS" == "completed" || "$STATUS" == "success" ]] && break
+      [[ "$STATUS" == "failed" ]] && exit 1
+      sleep "${SEEDANCE_POLL_SECONDS:-30}"
+    done
+    echo "最终任务响应已保存: $STATUS_FILE"
+    if [[ "$DOWNLOAD" == true ]]; then
+      VIDEO_URL="$(jq -r '.metadata.url // .data.url // .data.video_url // .video_url // empty' "$STATUS_FILE")"
+      [[ -n "$VIDEO_URL" ]] || { echo "完成响应中没有找到视频 URL，请检查: $STATUS_FILE" >&2; exit 1; }
+      VIDEO_OUTPUT="$OUTPUT_DIR/${OUTPUT_NAME%.json}.mp4"
+      curl --fail-with-body -sS -L "$VIDEO_URL" -o "$VIDEO_OUTPUT"
+      [[ -s "$VIDEO_OUTPUT" ]] || { echo "视频下载失败或文件为空: $VIDEO_OUTPUT" >&2; exit 1; }
+      echo "视频已下载: $VIDEO_OUTPUT"
+    fi
+  fi
+elif [[ "$PROVIDER" == "minimax" ]]; then
+  [[ -n "${MINIMAX_API_KEY:-${MINIMAX_H3_API_KEY:-}}" ]] || { echo "缺少 MINIMAX_API_KEY 或 MINIMAX_H3_API_KEY" >&2; exit 1; }
+  API_KEY="${MINIMAX_API_KEY:-$MINIMAX_H3_API_KEY}"
+  BASE_URL="${MINIMAX_BASE_URL:-${MINIMAX_H3_API_URL:-https://deepkey.top/v1}}"
+  BASE_URL="${BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
+  MODEL="${VIDEO_MODEL:-${MINIMAX_MODEL_ID:-Minimax-H3-768p-933-15s}}"
+  jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --argjson images "$REFERENCES" \
+    --arg ratio "$RATIO" --arg duration "$DURATION" \
+    '{model:$model,prompt:$prompt,images:$images,aspect_ratio:$ratio} + (if $duration != "" then {duration:($duration|tonumber)} else {} end)' \
+    | curl --fail-with-body -sS -X POST "${MINIMAX_CREATE_PATH:-$BASE_URL/videos}" \
+      -H 'Content-Type: application/json' -H "Authorization: Bearer $API_KEY" --data-binary @- > "$OUTPUT"
+  echo "Minimax 视频任务响应已保存: $OUTPUT"
+else
+  echo "不支持的 provider: $PROVIDER" >&2; exit 2
+fi

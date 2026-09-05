@@ -1,0 +1,7 @@
+{
+  "references": [
+    "replication/output/wild-mode/keyframes/production/watch-state-a-animal-v1.png",
+    "replication/output/wild-mode/keyframes/production/watch-design-product-crop.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: exact matching last-frame production keyframe for a vertical 9:16 premium animal-to-fashion TVC. Image 1 is the immutable base frame and edit target. Image 2 supplies only the approved finished watch design. Replace only the emerald jewel beetle at the center of Image 1 with exactly one finished compact wristwatch from Image 2, centered on the same footprint and angled in the same three-quarter direction. Preserve every other visual property of Image 1: identical graphite tabletop, room architecture, blurred cobalt jacket, camera position, vertical crop, macro perspective, sunlight, shadows, exposure, depth of field and color. Watch: emerald mineral-glass dial, champagne-silver case, emerald beetle-shell curvature around the bezel, graphite-and-emerald segmented metal strap opened in an elegant curve, commercially wearable menswear proportions. One normal single-camera frame only, finished product state with no active effects. No beetle, insect legs, antennae, extra watch, person, hand, mirror, reflection, glow, sparks, text, brand, logo or watermark. Avoid changing background, tabletop, camera, framing or lighting; avoid smartwatch UI, oversized sci-fi device and multiple time states."
+}

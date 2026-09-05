@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+**/.DS_Store
+
+# Generated media and temporary analysis assets
+replication/images/
+replication/videos/
+replication/audio/
+replication/edit/
+**/*-task.json
+**/*-task.json.status.json
+*.mp4
+*.MP4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg

@@ -1,0 +1,7 @@
+{
+  "references": [
+    "replication/output/wild-mode/keyframes/production/glasses-state-a-animal-v1.png",
+    "replication/output/wild-mode/keyframes/production/glasses-design-product-crop.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: exact matching last-frame production keyframe for a vertical 9:16 premium animal-to-fashion TVC. Image 1 is the immutable base frame and edit target. Image 2 supplies only the approved finished sunglasses design. Replace only the dragonfly at the center of Image 1 with exactly one pair of finished sunglasses from Image 2, centered on the same footprint, horizontal axis and three-quarter direction. Preserve every other visual property of Image 1: identical graphite tabletop, room architecture, blurred cobalt jacket, camera position, vertical crop, macro perspective, sunlight, shadows, exposure, depth of field and color. Sunglasses: slim smoke-gray optical lenses, champagne-silver graphite bridge, transparent lightly veined temples derived from dragonfly wings, and compact cobalt hinge accents; commercially wearable menswear proportions, both temples open naturally. One normal single-camera frame only, finished product state with no active effects. No dragonfly, insect body, legs, antennae or wings outside the eyewear, extra glasses, person, hand, mirror, reflection, glow, sparks, text, brand, logo or watermark. Avoid changing background, tabletop, camera, framing or lighting; avoid goggles, oversized costume eyewear, dark cyberpunk and multiple time states."
+}

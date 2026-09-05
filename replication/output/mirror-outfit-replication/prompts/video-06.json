@@ -1,0 +1,12 @@
+{
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "resolution": "720p",
+  "content": [
+    {"type": "image_url", "image_url": {"url": "asset://asset-20260905084248-6vvrj"}, "role": "reference_image"},
+    {"type": "image_url", "image_url": {"url": "https://www.tonbird.top/uploads/1/user_upload/image/mirror-scene-v1.png"}, "role": "reference_image"}
+  ],
+  "prompt": "5-second 9:16 vertical short video. Treat the silver rectangular frame as a fixed portrait picture frame, not as a reflective surface. Show exactly one fictional adult Asian male inside the frame and nowhere else. Use the certified asset:// character image to preserve his identity and use the tiled frame image only for the surrounding composition. He wears the final deep navy and charcoal layered outfit from the first frame. Use a locked straight-on medium-long shot from head to knees, with empty margin above his head and on both sides; keep his head, shoulders, hands, knees and shoes inside the silver frame, never touching or crossing the border. 0-1.5s: a plain unbranded smartphone is held low near his chest without covering his face. 1.5-3.5s: he adjusts one sleeve and gives a restrained natural half-smile. 3.5-4.2s: a small soft white camera-flash effect appears near the phone, without changing the person or frame. 4.2-5s: hold the final pose cleanly. Pale gray tiled wall and shelf remain fixed around the frame, no foreground person, no duplicated person, no second face, no , no reflective surface, no full-screen body outside the frame, no camera movement, cool bright morning light, realistic hands, stable facial identity and stable frame geometry. No brands, logos, watermarks, platform interface, readable text, extra people, extra fingers, face drift, outfit change, body duplication, or dramatic effects. Fictional AI-generated adult character."
+}

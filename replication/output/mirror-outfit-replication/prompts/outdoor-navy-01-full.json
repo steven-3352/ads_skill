@@ -1,0 +1,6 @@
+{
+  "references": [
+    "replication/output/mirror-outfit-replication/images/outfit-frame-navy-v1.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: vertical outdoor fashion montage still. Image 1 is the sole source of truth for the person and the complete outfit. Copy the exact same face, hair, age, body proportions, every garment, garment color, construction, fit, folds, trousers and shoes from Image 1 without redesigning or substituting anything. Remove only the phone and replace only the bedroom with an outdoor setting. Scene: an open modern office plaza in clear morning light, pale concrete architecture, a small amount of green landscaping and a refined cool-neutral palette. The same man walks confidently toward the building with a natural long stride, body angled slightly across frame. Photorealistic contemporary menswear campaign photography, full body head-to-shoes, eye-level 35mm view, vertical 9:16, crisp fabric detail and natural movement. Keep identity and clothing unchanged. No phone, no other people, no readable building signs, no brand, no logo, no watermark, no altered clothing, no face drift, no extra limbs, no distorted hands."
+}

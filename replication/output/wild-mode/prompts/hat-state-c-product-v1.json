@@ -1,0 +1,7 @@
+{
+  "references": [
+    "replication/output/wild-mode/keyframes/production/hat-state-a-animal-v1.png",
+    "replication/output/wild-mode/keyframes/production/hat-design-product-crop.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: exact matching last-frame production keyframe for a vertical 9:16 premium animal-to-fashion TVC. Image 1 is the immutable base frame and edit target. Image 2 supplies only the approved finished cap design. Replace only the peregrine falcon in Image 1 with exactly one finished structured graphite fashion cap, centered on the same tabletop footprint and facing the same three-quarter direction. Preserve every other visual property of Image 1: identical graphite tabletop, room architecture, blurred cobalt jacket, camera position, vertical crop, perspective, sunlight, shadows, exposure, depth of field and color. Cap: graphite fabric crown built from elegant overlapping feather-like panels, short precise brim, champagne-silver structural seams and a restrained cobalt underside accent; lightweight, commercially wearable contemporary menswear, clearly a cap rather than a helmet. One normal single-camera frame only, finished product state with no active effects. No bird, beak, eyes, talons or loose feathers remaining, extra cap, person, hand, mirror, reflection, glow, sparks, text, brand, logo or watermark. Avoid changing background, table, camera, framing or lighting; avoid military helmet, costume headwear, dark cyberpunk and multiple time states."
+}

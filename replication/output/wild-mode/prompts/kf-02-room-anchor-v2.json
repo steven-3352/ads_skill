@@ -1,0 +1,6 @@
+{
+  "references": [
+    "replication/output/wild-mode/keyframes/kf-02-room-anchor-v1.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: corrected vertical 9:16 environment continuity keyframe for a premium fashion TV commercial. Image 1 is the edit target and visual anchor. Replace only the large central reflective glass panel with a non-reflective warm-white lime-plaster wall plane and a clean open doorway leading deeper into the same dressing area. Preserve the exact camera position, vertical composition, pale limestone floor, graphite console, wardrobe, cobalt-blue cropped jacket, ivory knit, charcoal trousers, cobalt wall artwork, realistic dawn sunlight, shadow directions, exposure, color and tactile material quality. The new wall and doorway must have matte surfaces with no reflections and must preserve strong foreground-middle-background depth. No people, animals or accessories. No mirrors, reflective panels, text, brand, logo or watermark. Avoid redesigning the room, moving the wardrobe, changing clothing, darkening the scene, adding clutter or surreal architecture."
+}

@@ -1,0 +1,6 @@
+{
+  "references": [
+    "replication/output/mirror-outfit-replication/images/outfit-frame-navy-v1.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: vertical outdoor fashion montage still and final-look payoff. Image 1 is the sole source of truth for the person and the complete outfit. Copy the exact same face, hair, age, body proportions and every visible clothing detail from Image 1 without redesigning, recoloring or substituting anything. Remove only the phone and replace only the bedroom with an outdoor setting. Scene: outside a restrained concrete-and-stone office entrance in soft morning sunlight, clean architectural shadow lines and no visible signage. Three-quarter medium portrait from mid-thigh upward, natural 50mm perspective. The same man finishes straightening one cuff and looks directly toward camera with a quiet confident expression. Photorealistic premium lifestyle-fashion editorial, vertical 9:16, realistic skin and hand anatomy, shallow depth of field and strong final-frame clarity. Keep identity and clothing unchanged. No phone, no other people, no text, no brand, no logo, no watermark, no altered clothing, no face drift, no extra fingers."
+}

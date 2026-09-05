@@ -1,0 +1,20 @@
+{
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "resolution": "720p",
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {"url": "asset://asset-20260905084248-6vvrj"},
+      "role": "reference_image"
+    },
+    {
+      "type": "image_url",
+      "image_url": {"url": "https://www.tonbird.top/uploads/1/user_upload/image/mirror-scene-v1.png"},
+      "role": "reference_image"
+    }
+  ],
+  "prompt": "5-second 9:16 vertical short video. Use the certified asset:// character image to preserve the same fictional adult Asian male identity, and use the mirror-scene image as the fixed background. The man starts in loose pale gray sleepwear in the center of the mirror. 0-1.5s: he lifts the plain smartphone from chest level until it briefly covers his upper body, while the mirror frame and background remain fixed. 1.5-2s: his finger taps the selected outfit on the phone; a short clean white pulse marks the choice. 2-3.2s: while the phone still covers his upper body, perform a quick hidden cut style transformation. 3.2-5s: he lowers the phone and is now wearing a black technical overshirt with utility pockets, black straight-leg trousers and matte black sneakers; he lightly adjusts the jacket collar and looks toward the camera. Keep the same face, short black hair, age, body proportions, mirror position and cool morning light. Natural motion, stable identity, realistic hands. No brands, logos, watermarks, platform interface, readable text, extra people, extra fingers, face drift, additional clothing, or dramatic effects. Fictional AI-generated adult character."
+}

@@ -1,0 +1,7 @@
+{
+  "references": [
+    "replication/output/wild-mode/keyframes/production/final-exit-frame-v1.png",
+    "replication/output/wild-mode/keyframes/production/shoes-design-product-crop.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: corrected vertical 9:16 closing-shot keyframe for a premium fashion TVC. Image 1 is the immutable base image and edit target. Image 2 is only the approved mechanical shoe-design reference. Replace only the ordinary black shoes on the man's feet in Image 1 with the exact low-profile graphite-black technical shoes from Image 2: black leather uppers, visible streamlined feline-spine sole geometry, cobalt mechanical channels and champagne-silver heel locks. Match foot perspective, scale, floor contact, sunlight and shadows naturally. Preserve everything else in Image 1 unchanged: the exact rear-view fictional man, body, pose, cap, glasses temples, cobalt-blue cropped jacket, charcoal trousers, hands, room, wardrobe, doorway, camera, crop, light and colors. Face remains invisible. No extra shoes, bag, person, animal, text, brand, logo or watermark. Avoid changing anatomy, clothing, background, framing, lighting or adding armor."
+}
