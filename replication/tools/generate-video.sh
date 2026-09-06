@@ -10,7 +10,7 @@ set -a; source "$ENV_FILE"; set +a
 PROMPT_FILE=""
 OUTPUT_DIR="./generated-videos"
 OUTPUT_NAME="video-task-$(date +%s).json"
-PROVIDER="${VIDEO_PROVIDER:-seedance}"
+PROVIDER="${VIDEO_PROVIDER:-minimax}"
 CLI_REFERENCES=()
 WAIT=false
 DOWNLOAD=false
@@ -20,7 +20,7 @@ usage() {
 用法: generate-video.sh --prompt <prompt.json> --output-dir <目录> [选项]
 选项:
   --output-name <文件名.json>    输出响应文件名
-  --provider <seedance|minimax>  接口协议，默认 seedance
+  --provider <minimax|seedance>  接口协议，默认 minimax H3
   --reference <素材>             参考素材，可重复传入并覆盖 JSON 中的素材
   --model <模型>                 覆盖环境变量中的模型
   --wait                         提交后轮询并保存最终响应
@@ -28,6 +28,8 @@ usage() {
 USAGE
   exit 2
 }
+
+die() { echo "错误: $*" >&2; exit 1; }
 
 if [[ "${1:-}" != --* ]]; then
   PROMPT_FILE="${1:-}"
@@ -156,17 +158,109 @@ if [[ "$PROVIDER" == "seedance" ]]; then
     fi
   fi
 elif [[ "$PROVIDER" == "minimax" ]]; then
-  [[ -n "${MINIMAX_API_KEY:-${MINIMAX_H3_API_KEY:-}}" ]] || { echo "缺少 MINIMAX_API_KEY 或 MINIMAX_H3_API_KEY" >&2; exit 1; }
+  [[ -n "${MINIMAX_API_KEY:-${MINIMAX_H3_API_KEY:-}}" ]] || die "缺少 MINIMAX_API_KEY 或 MINIMAX_H3_API_KEY"
   API_KEY="${MINIMAX_API_KEY:-$MINIMAX_H3_API_KEY}"
-  BASE_URL="${MINIMAX_BASE_URL:-${MINIMAX_H3_API_URL:-https://deepkey.top/v1}}"
-  BASE_URL="${BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
-  MODEL="${VIDEO_MODEL:-${MINIMAX_MODEL_ID:-Minimax-H3-768p-933-15s}}"
-  jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --argjson images "$REFERENCES" \
-    --arg ratio "$RATIO" --arg duration "$DURATION" \
-    '{model:$model,prompt:$prompt,images:$images,aspect_ratio:$ratio} + (if $duration != "" then {duration:($duration|tonumber)} else {} end)' \
-    | curl --fail-with-body -sS -X POST "${MINIMAX_CREATE_PATH:-$BASE_URL/videos}" \
-      -H 'Content-Type: application/json' -H "Authorization: Bearer $API_KEY" --data-binary @- > "$OUTPUT"
-  echo "Minimax 视频任务响应已保存: $OUTPUT"
+  MODE="${H3_API_MODE:-v2}"
+  MINIMAX_TEMP_DIR="$(mktemp -d)"
+  trap 'rm -rf "$MINIMAX_TEMP_DIR"' EXIT
+  REQUEST="$MINIMAX_TEMP_DIR/request.json"
+
+  if [[ "$MODE" == "v2" ]]; then
+    BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-https://cp.compshare.cn}}"
+    BASE_URL="${BASE_URL%/}"
+    CREATE_URL="${MINIMAX_CREATE_URL:-$BASE_URL/minimax/v2/video_generation}"
+    STATUS_BASE="${MINIMAX_STATUS_BASE:-$BASE_URL/minimax/v2/query/video_generation}"
+    MODEL="${VIDEO_MODEL:-${MINIMAX_MODEL_ID:-MiniMax-H3}}"
+    MINIMAX_RESOLUTION_VALUE="${MINIMAX_RESOLUTION:-${RESOLUTION:-768P}}"
+    [[ "$MINIMAX_RESOLUTION_VALUE" == "720p" ]] && MINIMAX_RESOLUTION_VALUE="768P"
+    CONTEXT_IR="${MINIMAX_USE_CONTEXT_IR:-false}"
+    CONTENT="$(jq -c '.content // empty' "$PROMPT_FILE")"
+
+    if [[ -z "$CONTENT" || "$CONTENT" == "null" ]]; then
+      CONTENT="$(jq -c 'to_entries | map({type:"image_url",image_url:{url:.value},role:(if .key == 0 then "first_frame" else "last_frame" end)})' <<< "$REFERENCES")"
+    fi
+    INVALID_ROLES="$(jq -r '[.[] | select(.type == "image_url" and (.role != "first_frame" and .role != "last_frame"))] | length' <<< "$CONTENT")"
+    [[ "$INVALID_ROLES" -eq 0 ]] || die "MiniMax H3 v2 的图片 role 只能是 first_frame 或 last_frame"
+    HAS_FIRST_FRAME="$(jq '[.[] | select(.type == "image_url" and .role == "first_frame")] | length' <<< "$CONTENT")"
+    [[ "$HAS_FIRST_FRAME" -gt 0 ]] || die "MiniMax H3 v2 至少需要一张 first_frame"
+
+    CONTENT_FILE="$MINIMAX_TEMP_DIR/content.json"
+    printf '%s' "$CONTENT" > "$CONTENT_FILE"
+    while IFS=$'\t' read -r INDEX LOCAL_PATH; do
+      [[ -n "$LOCAL_PATH" ]] || continue
+      if [[ "$LOCAL_PATH" != /* ]]; then LOCAL_PATH="$PROJECT_DIR/$LOCAL_PATH"; fi
+      [[ -f "$LOCAL_PATH" ]] || die "找不到本地 MiniMax 素材: $LOCAL_PATH"
+      case "${LOCAL_PATH##*.}" in
+        jpg|JPG|jpeg|JPEG) MIME_TYPE="image/jpeg" ;;
+        webp|WEBP) MIME_TYPE="image/webp" ;;
+        *) MIME_TYPE="image/png" ;;
+      esac
+      DATA_URL_FILE="$MINIMAX_TEMP_DIR/data-url-$INDEX.txt"
+      {
+        printf 'data:%s;base64,' "$MIME_TYPE"
+        base64 < "$LOCAL_PATH" | tr -d '\n'
+      } > "$DATA_URL_FILE"
+      NEXT_CONTENT_FILE="$MINIMAX_TEMP_DIR/content-next.json"
+      jq --argjson index "$INDEX" --rawfile data_url "$DATA_URL_FILE" \
+        '.[$index].image_url = {url:$data_url} | del(.[$index].local_path)' \
+        "$CONTENT_FILE" > "$NEXT_CONTENT_FILE"
+      mv "$NEXT_CONTENT_FILE" "$CONTENT_FILE"
+    done < <(jq -r 'to_entries[] | select(.value.local_path != null) | [.key, .value.local_path] | @tsv' "$CONTENT_FILE")
+
+    jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --slurpfile content "$CONTENT_FILE" \
+      --arg duration "$DURATION" --arg resolution "$MINIMAX_RESOLUTION_VALUE" --arg ratio "$RATIO" \
+      --arg context_ir "$CONTEXT_IR" --argjson watermark "$WATERMARK" \
+      '{model:$model,content:([{type:"text",text:$prompt}] + $content[0]),duration:($duration|tonumber),resolution:$resolution,ratio:$ratio,use_context_ir:($context_ir == "true"),aigc_watermark:$watermark}' > "$REQUEST"
+  elif [[ "$MODE" == "compat" ]]; then
+    BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-${MINIMAX_H3_API_URL:-https://deepkey.top/v1}}}"
+    BASE_URL="${BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
+    CREATE_URL="${MINIMAX_CREATE_URL:-$BASE_URL/videos}"
+    STATUS_BASE="${MINIMAX_STATUS_BASE:-$BASE_URL/videos}"
+    MODEL="${VIDEO_MODEL:-${MINIMAX_MODEL_ID:-Minimax-H3-768p-933-15s}}"
+    jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --argjson images "$REFERENCES" \
+      --arg ratio "$RATIO" --arg duration "$DURATION" \
+      '{model:$model,prompt:$prompt,images:$images,aspect_ratio:$ratio} + (if $duration != "" then {duration:($duration|tonumber)} else {} end)' > "$REQUEST"
+  else
+    die "H3_API_MODE 只能是 v2 或 compat"
+  fi
+
+  if ! curl --fail-with-body -sS -X POST "$CREATE_URL" \
+    -H 'Content-Type: application/json; charset=utf-8' -H 'Accept: application/json' \
+    -H "Authorization: Bearer $API_KEY" --data-binary "@$REQUEST" > "$OUTPUT"; then
+    echo "MiniMax 创建任务失败，服务端响应：" >&2
+    jq . "$OUTPUT" >&2 2>/dev/null || sed -n '1,120p' "$OUTPUT" >&2
+    exit 1
+  fi
+  echo "MiniMax 视频任务响应已保存: $OUTPUT"
+
+  extract_minimax_url() {
+    jq -r '.metadata.url // .data.url // .data.video_url // .video_url // .content.url // .task.content.url // .data.content.url // empty' "$1"
+  }
+  VIDEO_URL="$(extract_minimax_url "$OUTPUT")"
+  if [[ "$WAIT" == true && -z "$VIDEO_URL" ]]; then
+    TASK_ID="$(jq -r '.id // .task_id // .data.id // .data.task_id // empty' "$OUTPUT")"
+    [[ -n "$TASK_ID" ]] || die "创建响应中没有 task_id，也没有可下载的视频 URL"
+    STATUS_FILE="$OUTPUT.status.json"
+    while true; do
+      curl --fail-with-body -sS "$STATUS_BASE/$TASK_ID" \
+        -H 'Accept: application/json' -H "Authorization: Bearer $API_KEY" > "$STATUS_FILE"
+      STATUS="$(jq -r '.status // .data.status // .task.status // empty' "$STATUS_FILE" | tr '[:upper:]' '[:lower:]')"
+      echo "任务 $TASK_ID 状态: ${STATUS:-unknown}"
+      case "$STATUS" in
+        completed|success|succeeded) VIDEO_URL="$(extract_minimax_url "$STATUS_FILE")"; break ;;
+        failed|cancelled|canceled|error) jq . "$STATUS_FILE" >&2; die "视频任务失败: $STATUS" ;;
+      esac
+      sleep "${MINIMAX_POLL_SECONDS:-10}"
+    done
+    echo "最终任务响应已保存: $STATUS_FILE"
+  fi
+  if [[ "$DOWNLOAD" == true ]]; then
+    [[ -n "$VIDEO_URL" ]] || die "完成响应中没有找到视频 URL"
+    VIDEO_OUTPUT="$OUTPUT_DIR/${OUTPUT_NAME%.json}.mp4"
+    curl --fail-with-body -sS -L "$VIDEO_URL" -o "$VIDEO_OUTPUT"
+    [[ -s "$VIDEO_OUTPUT" ]] || die "视频下载失败或文件为空: $VIDEO_OUTPUT"
+    echo "视频已下载: $VIDEO_OUTPUT"
+  fi
 else
   echo "不支持的 provider: $PROVIDER" >&2; exit 2
 fi
