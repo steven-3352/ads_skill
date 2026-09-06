@@ -1,4 +1,4 @@
 interface:
   display_name: "广告创意与AI短TVC"
-  short_description: "蒸馏经典广告机制，升级为可执行、可测试的高创意AI短TVC"
-  default_prompt: "使用 $ad-creative-expert 蒸馏参考广告或经典创意，为我的商品完成冷饭再炒、结构升级、资源分档、分镜剪辑与首轮测试方案。"
+  short_description: "高创意AI短TVC成片，并同步产出5张小红书图文"
+  default_prompt: "使用 $ad-creative-expert 为我的商品完成高创意 AI 短 TVC；预算只缩小规模、不降低质量。视频验收后，再交付同一创意的 5 张小红书图文。"
