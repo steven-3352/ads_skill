@@ -1,0 +1,16 @@
+{
+  "prompt": "Create a continuous live-action cinematic shot from the supplied portrait. Preserve the same middle-aged Chinese male singer, facial identity, short hair, light stubble, blue T-shirt, green cargo pants, vintage microphone and rainy rooftop at night. He sings with restrained grief, eyes mostly closed, then briefly opens them toward the distant city. His mouth movements are subtle and musically paced, with natural breathing and a slightly firmer grip on the microphone. Heavy rain falls continuously, droplets strike his shoulders and the wet ground, warm backlight glows through mist, and distant city lights shimmer. The camera makes one very slow, smooth dolly from a medium full-body composition toward a waist-up composition without cutting. Real skin, believable wet fabric, correct hands, physically plausible rain, quiet mature performance. No scene change, no extra person, no generated captions, no new readable text, no watermark, no commercial presentation.",
+  "negative_prompt": "identity drift, young face, beauty filter, exaggerated crying, shouting, theatrical gestures, fast camera, cuts, zoom effect, frozen frame, lip distortion, extra fingers, fused hand and microphone, changing clothes, changing microphone, daylight, indoor stage, audience, added text, subtitles, logo mutation, watermark",
+  "duration": 15,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "watermark": false,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {},
+      "role": "first_frame",
+      "local_path": "replication/output/rainy-rooftop-singer-20260906/assets/rainy-rooftop-singer-clean.png"
+    }
+  ]
+}

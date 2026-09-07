@@ -1,0 +1,16 @@
+{
+  "prompt": "Create the opening shot of the same live-action rainy rooftop performance from the supplied full-body portrait. Preserve the exact same middle-aged Chinese male singer, face, hair, stubble, blue T-shirt, green cargo pants, vintage microphone, warm backlight and night skyline. Keep him continuously framed as a full-body or three-quarter figure with generous rainy rooftop and city space around him. The camera distance and focal length remain constant for the entire shot: absolutely no dolly in, no zoom in, no crop toward the face, and no increase in the singer's size. A very subtle lateral camera drift or gentle change toward a slight side angle is allowed while maintaining the same wide composition. He sings softly with restrained grief, natural mouth movement and breathing, one hand on the microphone and the other in his pocket. Rain, wet clothing, mist and reflected city lights move naturally. One uninterrupted shot, realistic anatomy, quiet mature performance. No extra person, no flashback, no scene change, no generated captions, no new readable text, no watermark, no commercial presentation.",
+  "negative_prompt": "camera moving closer, dolly in, zoom in, push in, portrait framing, face enlargement, close framing, identity drift, different face, young face, exaggerated crying, shouting, dramatic arm waving, fast motion, cuts, frozen photo, lip distortion, extra fingers, fused hand and microphone, changing clothes, changing microphone, daylight, indoor stage, audience, added text, subtitles, logo mutation, watermark",
+  "duration": 15,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "watermark": false,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {},
+      "role": "first_frame",
+      "local_path": "replication/output/rainy-rooftop-singer-20260906/assets/rainy-rooftop-singer-clean.png"
+    }
+  ]
+}
