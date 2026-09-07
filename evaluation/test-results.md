@@ -1,5 +1,7 @@
 # 广告创意专家 Skill 能力前测结果
 
+> 历史基线：以下分数属于升级前的规范推演，保留供对照，不适用于新版统一创意门，也不代表新版独立运行或观众效果。2026-09-06 创意与脚本升级的桌面检查见 `creative-upgrade-review.md`。
+
 ## 测试说明
 
 - **测试性质**：基于当前开发目录规范的本地人工 forward-test。按 `SKILL.md`、`references/brief-framework.md`、`category-playbook.md`、`platform-and-testing.md` 逐项推演标准输出，不代表已安装到系统后的自动触发测试。
