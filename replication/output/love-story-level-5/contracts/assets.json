@@ -6,56 +6,56 @@
     {
       "id": "lin-wan",
       "type": "character",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/lin-wan.json",
       "path": null,
       "usage": "现在与回忆中的林晚身份一致"
     },
     {
       "id": "chen-yu",
       "type": "character",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/chen-yu.json",
       "path": null,
       "usage": "回忆段陈屿身份一致"
     },
     {
       "id": "zhou-colleague",
       "type": "character",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/zhou-colleague.json",
       "path": null,
       "usage": "现在餐馆小周"
     },
     {
       "id": "lao-zhao",
       "type": "character",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/lao-zhao.json",
       "path": null,
       "usage": "回忆公司聚餐同事"
     },
     {
       "id": "restaurant-private-room",
       "type": "background",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/restaurant-private-room.json",
       "path": null,
       "usage": "餐馆包间"
     },
     {
       "id": "rental-dining-table",
       "type": "background",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/rental-dining-table.json",
       "path": null,
       "usage": "四年前出租屋餐桌"
     },
     {
       "id": "shrimp-and-tableware",
       "type": "prop",
-      "status": "contract_pending",
-      "prompt": null,
+      "status": "prompt_ready",
+      "prompt": "prompts/shrimp-and-tableware.json",
       "path": null,
       "usage": "白灼虾、公盘、小碟、筷子、虾壳、纸巾、空碟"
     }

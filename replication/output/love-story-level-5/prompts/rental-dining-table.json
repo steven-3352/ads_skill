@@ -1,0 +1,11 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "出租屋餐桌背景",
+  "prompt": "普通城市出租屋餐桌，夜晚室内灯光，外卖盒、电脑、两只碗，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+}

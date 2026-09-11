@@ -1,0 +1,11 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "陈屿人物母卡",
+  "prompt": "写实中国男性约27岁，短黑发，可靠朴素，蓝色圆领上衣，正面、三分之二侧面、侧面三视图，灰色无缝背景，柔和自然光，无文字水印。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+}

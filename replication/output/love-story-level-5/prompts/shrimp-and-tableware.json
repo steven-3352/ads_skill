@@ -1,0 +1,11 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "虾与餐具道具",
+  "prompt": "白灼虾、公盘、小白碟、黑色筷子、虾壳、白纸巾，真实食物摄影，湿亮虾壳和水珠，干净背景，无文字、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+}

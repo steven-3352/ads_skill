@@ -1,0 +1,11 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "小周人物参考",
+  "prompt": "写实中国男性同事约28岁，普通餐馆聚餐服装，自然状态，三视图，灰色背景，无文字水印。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+}

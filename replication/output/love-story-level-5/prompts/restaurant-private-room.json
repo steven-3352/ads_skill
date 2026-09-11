@@ -1,0 +1,11 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "餐馆包间背景",
+  "prompt": "现代中国餐馆包间，夜晚暖色实用灯光，圆桌、公盘、小碟、筷子，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+}
