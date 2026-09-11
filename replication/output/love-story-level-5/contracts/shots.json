@@ -1,7 +1,7 @@
 {
   "projectId": "love-story-level-5",
-  "status": "pending",
-  "stage": "shot_and_asset_contracts",
+  "status": "confirmed",
+  "stage": "prompt_contracts",
   "source": "contracts/screenplay.json",
   "shots": [
     {

@@ -4,6 +4,6 @@
   "status": "brief_confirmed",
   "input": {"type": "user_story", "storyFile": "01-虾壳.md", "received": true},
   "brief": {"platform":"抖音","duration_limit_seconds":120,"format":"叙事短片","visual_style":"写实Vlog","audio":true,"model":"MiniMax-H3","budget_limit_yuan":30},
-  "confirmed": {"story": true, "brief": true, "screenplay": true, "beats": false, "assets": false, "shots": false, "model": true},
+  "confirmed": {"story": true, "brief": true, "screenplay": true, "beats": true, "assets": true, "shots": true, "model": true},
   "nextAction": "剧本已确认，开始建立分镜与资产契约"
 }
