@@ -3,6 +3,136 @@
   "status": "pending",
   "stage": "shot_and_asset_contracts",
   "source": "contracts/screenplay.json",
-  "shots": [],
-  "note": "分镜尚未建立；将依据已确认剧本重新拆分，不继承历史分镜。"
+  "shots": [
+    {
+      "id": "01",
+      "title": "现在：递虾与拒绝",
+      "beats": [
+        "S1"
+      ],
+      "units": [
+        "01"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "02",
+      "title": "回忆：熟练剥虾",
+      "beats": [
+        "S2"
+      ],
+      "units": [
+        "02"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "03",
+      "title": "回忆：受伤仍偏爱",
+      "beats": [
+        "S4"
+      ],
+      "units": [
+        "03A",
+        "03B"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "04",
+      "title": "回忆：关系生活证据",
+      "beats": [
+        "S5"
+      ],
+      "units": [
+        "04"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "05",
+      "title": "现在：普通礼貌的落差",
+      "beats": [
+        "S6"
+      ],
+      "units": [
+        "05"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "06",
+      "title": "现在：重复并承受",
+      "beats": [
+        "S7"
+      ],
+      "units": [
+        "06"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "07",
+      "title": "现在：吃下与旁白",
+      "beats": [
+        "S7"
+      ],
+      "units": [
+        "07"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    },
+    {
+      "id": "08",
+      "title": "现在：主题回扣与切黑",
+      "beats": [
+        "S7"
+      ],
+      "units": [
+        "08"
+      ],
+      "place": "按剧本对应场景",
+      "action": "按已确认剧本完整执行本镜头动作链",
+      "evidence": "图片阶段验证人物、空间、道具及动作起止",
+      "sound": "按剧本对白、拟音与环境声",
+      "image_gate": "required",
+      "generation_allowed": false
+    }
+  ],
+  "note": "依据已确认剧本重新拆分；不继承历史分镜。"
 }
