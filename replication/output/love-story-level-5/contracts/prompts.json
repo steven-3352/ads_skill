@@ -1,0 +1,13 @@
+{
+  "projectId": "love-story-level-5",
+  "status": "pending",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "slots": {
+    "public_assets": ["lin-wan", "chen-yu", "zhou-colleague", "lao-zhao", "restaurant-private-room", "rental-dining-table", "shrimp-and-tableware"],
+    "shots": {
+      "01": ["first_frame", "last_frame", "video"], "02": ["first_frame", "last_frame", "video"], "03": ["first_frame", "last_frame", "video"], "04": ["first_frame", "last_frame", "video"], "05": ["first_frame", "last_frame", "video"], "06": ["first_frame", "last_frame", "video"], "07": ["first_frame", "last_frame", "video"], "08": ["first_frame", "last_frame", "video"]
+    }
+  },
+  "note": "槽位已定义，提示词尚未生成或校验；当前不可生成图片/视频。"
+}
