@@ -1,0 +1,145 @@
+{
+  "projectId": "love-story-level-5",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "status": "pending",
+  "shots": {
+    "01": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "02": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "03": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "04": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "05": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "06": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "07": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    },
+    "08": {
+      "first_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "last_frame": {
+        "status": "empty",
+        "file": null,
+        "prompt": null
+      },
+      "video": {
+        "status": "locked",
+        "file": null,
+        "prompt": null
+      }
+    }
+  },
+  "note": "分镜提示词槽位已建立；待依据分镜契约生成并校验。"
+}
