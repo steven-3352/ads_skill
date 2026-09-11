@@ -1,0 +1,8 @@
+{
+  "projectId": "love-story-level-5",
+  "status": "pending",
+  "stage": "shot_and_asset_contracts",
+  "source": "contracts/screenplay.json",
+  "shots": [],
+  "note": "分镜尚未建立；将依据已确认剧本重新拆分，不继承历史分镜。"
+}
