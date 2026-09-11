@@ -1,23 +1,43 @@
 {
   "projectId": "love-story-level-5",
   "status": "confirmed",
-  "stage": "prompt_contracts",
+  "stage": "assets_generated",
   "publicAssets": [
     {
       "id": "lin-wan",
       "type": "character",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/lin-wan.json",
-      "path": null,
-      "usage": "现在与回忆中的林晚身份一致"
+      "path": "assets/lin-wan-master.png",
+      "usage": "现在与回忆中的林晚身份一致",
+      "model": "GPT Image",
+      "sha256": "3a208fd52d2acfdf53c10021925e4b133564a7651c93430bd6917ed3b281c904",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      },
+      "generation_time": "2026-09-11T06:01:32Z",
+      "cost": "recorded_by_provider"
     },
     {
       "id": "chen-yu",
       "type": "character",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/chen-yu.json",
-      "path": null,
-      "usage": "回忆段陈屿身份一致"
+      "path": "assets/chen-yu-master.png",
+      "usage": "回忆段陈屿身份一致",
+      "model": "GPT Image",
+      "sha256": "27dd2c35dd58e54515ca2d3530c4b93f71f061f54ffeab79c9cb4a3d308980cf",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      },
+      "generation_time": "2026-09-11T06:01:32Z",
+      "cost": "recorded_by_provider"
     },
     {
       "id": "zhou-colleague",
@@ -60,5 +80,5 @@
       "usage": "白灼虾、公盘、小碟、筷子、虾壳、纸巾、空碟"
     }
   ],
-  "note": "资产仅建立契约，尚未生成。"
+  "note": "林晚、陈屿公共人物资产已生成；其余公共资产仍待生成。"
 }

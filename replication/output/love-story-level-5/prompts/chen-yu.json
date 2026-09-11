@@ -1,11 +1,44 @@
 {
   "asset_type": "image",
-  "model": "MiniMax-H3",
-  "authoring_skill": "h3-prompt-writing",
+  "model": "GPT Image",
+  "authoring_skill": "imagegen",
   "title": "陈屿人物母卡",
   "prompt": "写实中国男性约27岁，短黑发，可靠朴素，蓝色圆领上衣，正面、三分之二侧面、侧面三视图，灰色无缝背景，柔和自然光，无文字水印。",
   "output": null,
-  "status": "prompt_ready",
+  "status": "approved_for_generation",
   "references": [],
-  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T05:55:53Z",
+    "checks": [
+      "故事资产一致性",
+      "人物身份约束",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bf22b053b3904ceceebd479010982985123c03297a4e7f6997df3433f3fe60dd"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "S3",
+      "S4"
+    ],
+    "related_shots": [
+      "02",
+      "03",
+      "04"
+    ],
+    "visual_evidence": [
+      "人物身份与服装三视图可复用",
+      "写实Vlog自然中景",
+      "无文字水印",
+      "人物与虾及餐桌动作关系可在分镜首尾帧验证"
+    ],
+    "unresolved_blockers": []
+  }
 }
