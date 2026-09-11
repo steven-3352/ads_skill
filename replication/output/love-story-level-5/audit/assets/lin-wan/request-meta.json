@@ -1,0 +1,11 @@
+{
+  "request_id": "love-story-level-5-lin-wan-master-20260911",
+  "prompt_file": "replication/output/love-story-level-5/prompts/lin-wan.json",
+  "output": "replication/output/love-story-level-5/assets/lin-wan-master.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-11T13:56:16+08:00"
+}

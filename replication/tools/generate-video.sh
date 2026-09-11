@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$BASE_DIR/../.." && pwd)"
-ENV_FILE="$PROJECT_DIR/.env"
+ENV_FILE="/home/ubuntu/ads_skill/.env"
 [[ -f "$ENV_FILE" ]] || { echo "找不到项目配置: $ENV_FILE" >&2; exit 1; }
 set -a; source "$ENV_FILE"; set +a
 
@@ -51,6 +51,11 @@ else
   done
 fi
 [[ -n "$PROMPT_FILE" && -f "$PROMPT_FILE" ]] || usage
+if [[ "$PROVIDER" == "seedance" ]]; then
+  "$BASE_DIR/validate-seedance-prompt-review.sh" "$PROMPT_FILE" video
+else
+  "$BASE_DIR/validate-h3-prompt-review.sh" "$PROMPT_FILE" video
+fi
 mkdir -p "$OUTPUT_DIR"
 OUTPUT="$OUTPUT_DIR/$OUTPUT_NAME"
 command -v jq >/dev/null || { echo "需要 jq" >&2; exit 1; }
@@ -177,7 +182,7 @@ elif [[ "$PROVIDER" == "minimax" ]]; then
     CONTENT="$(jq -c '.content // empty' "$PROMPT_FILE")"
 
     if [[ -z "$CONTENT" || "$CONTENT" == "null" ]]; then
-      CONTENT="$(jq -c 'to_entries | map({type:"image_url",image_url:{url:.value},role:(if .key == 0 then "first_frame" else "last_frame" end)})' <<< "$REFERENCES")"
+      CONTENT="$(jq -c 'to_entries | map({type:"image_url",image_url:{url:("pending")},local_path:.value,role:(if .key == 0 then "first_frame" else "last_frame" end)})' <<< "$REFERENCES")"
     fi
     INVALID_ROLES="$(jq -r '[.[] | select(.type == "image_url" and (.role != "first_frame" and .role != "last_frame"))] | length' <<< "$CONTENT")"
     [[ "$INVALID_ROLES" -eq 0 ]] || die "MiniMax H3 v2 的图片 role 只能是 first_frame 或 last_frame"

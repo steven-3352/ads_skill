@@ -1,0 +1,11 @@
+{
+  "request_id": "love-story-level-5-chen-yu-master-20260911",
+  "prompt_file": "replication/output/love-story-level-5/prompts/chen-yu.json",
+  "output": "replication/output/love-story-level-5/assets/chen-yu-master.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-11T13:56:46+08:00"
+}

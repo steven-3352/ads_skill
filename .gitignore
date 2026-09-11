@@ -19,3 +19,16 @@ replication/edit/
 *.png
 *.jpg
 *.jpeg
+*.gif
+*.webp
+*.webm
+*.mov
+*.MOV
+
+# Backups and transient orchestrator state markers
+*.bak
+/generated_pending_qc
+/submitting
+
+# Raw image-gen API responses embed base64 image payloads (b64_json) — treat as media
+**/audit/assets/**/response.json

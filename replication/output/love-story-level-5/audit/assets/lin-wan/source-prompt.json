@@ -1,0 +1,25 @@
+{
+  "asset_type": "image",
+  "model": "GPT Image",
+  "authoring_skill": "imagegen",
+  "title": "林晚人物母卡",
+  "prompt": "写实中国女性约26岁，长黑发，自然淡妆，浅色日常上衣，正面、三分之二侧面、侧面三视图，表情自然，普通都市上班族，灰色无缝背景，柔和自然光，无文字水印。",
+  "output": null,
+  "status": "approved_for_generation",
+  "references": [],
+  "note": "提示词已按H3图片资产规范整理；等待生成执行。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T05:55:53Z",
+    "checks": [
+      "故事资产一致性",
+      "人物身份约束",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "7508c20061cc4029b4d91c0b621fd67e3d6865f4406c101750bba1e91d3e7dd4"
+  }
+}

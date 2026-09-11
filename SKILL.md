@@ -166,6 +166,8 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 - 需要把夜间、自动、静置或循环过程视觉化，或设计“语义接力 + 尺度世界 + 后台夜班”结构：读取 `references/cases/kerastase-night-serum-dream-slide.md`，迁移时间代理与现实回环，不复制发丝滑梯、人物、花草、音乐或品牌资产。
 - 需要从已确认创意自动生产 AI 短片、使用 MiniMax H3 首尾帧、控制生成成本或执行成片验收：读取 `references/ai-video-production-sop.md`。
 - 需要在 ads、screenwriting 和 Seedance 之间分流或交接：读取 `references/three-skill-production-sop.md`。
+- 需要为新项目锁定生成模型、在 H3/Seedance 提示词技能间路由，或执行中途模型迁移：读取 `references/model-routing-sop.md`。
+- 需要把已确认的故事/剧本拆成叙事分镜、生成单元、段内切镜和后期任务，并做节拍通道覆盖校验：读取 `references/narrative-shot-production-plan.md`，配合 `scripts/validate-production-plan.mjs` 校验。
 
 ## 安全与真实性
 
