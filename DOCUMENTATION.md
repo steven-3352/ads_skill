@@ -42,8 +42,9 @@
 
 ### AI 视频生产与三 Skill 协作
 
-- `references/three-skill-production-sop.md`：`ads_skill → screenwriting-master → seedance-prompt-zh` 的路由和交接。
+- `references/three-skill-production-sop.md`：`ads_skill → screenwriting-master → h3-prompt-writing/seedance-prompt-zh` 的路由和交接。
 - `references/ai-video-production-sop.md`：生成、成本、后期、验收和 5 张小红书图文。
+- `references/project-production-sop.md`：项目级对话、剧本/分镜契约、HTML 模板和可复制执行命令。
 - `references/cases/`：具体 AI 生产案例，不能替代通用 SOP。
 
 ### 数据、案例和迭代
