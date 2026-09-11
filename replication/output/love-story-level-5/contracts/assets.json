@@ -19,7 +19,8 @@
         "narrative_alignment": "pass"
       },
       "generation_time": "2026-09-11T06:01:32Z",
-      "cost": "recorded_by_provider"
+      "cost": "recorded_by_provider",
+      "prompt_text": "写实中国女性约26岁，长黑发，自然淡妆，浅色日常上衣，正面、三分之二侧面、侧面三视图，表情自然，普通都市上班族，灰色无缝背景，柔和自然光，无文字水印。"
     },
     {
       "id": "chen-yu",
@@ -37,7 +38,8 @@
         "narrative_alignment": "pass"
       },
       "generation_time": "2026-09-11T06:01:32Z",
-      "cost": "recorded_by_provider"
+      "cost": "recorded_by_provider",
+      "prompt_text": "写实中国男性约27岁，短黑发，可靠朴素，蓝色圆领上衣，正面、三分之二侧面、侧面三视图，灰色无缝背景，柔和自然光，无文字水印。"
     },
     {
       "id": "zhou-colleague",
@@ -45,7 +47,8 @@
       "status": "prompt_ready",
       "prompt": "prompts/zhou-colleague.json",
       "path": null,
-      "usage": "现在餐馆小周"
+      "usage": "现在餐馆小周",
+      "prompt_text": "写实中国男性同事约28岁，普通餐馆聚餐服装，自然状态，三视图，灰色背景，无文字水印。"
     },
     {
       "id": "lao-zhao",
@@ -53,7 +56,8 @@
       "status": "prompt_ready",
       "prompt": "prompts/lao-zhao.json",
       "path": null,
-      "usage": "回忆公司聚餐同事"
+      "usage": "回忆公司聚餐同事",
+      "prompt_text": "写实中国男性同事约35岁，普通聚餐服装，自然状态，三视图，灰色背景，无文字水印。"
     },
     {
       "id": "restaurant-private-room",
@@ -61,7 +65,8 @@
       "status": "prompt_ready",
       "prompt": "prompts/restaurant-private-room.json",
       "path": null,
-      "usage": "餐馆包间"
+      "usage": "餐馆包间",
+      "prompt_text": "现代中国餐馆包间，夜晚暖色实用灯光，圆桌、公盘、小碟、筷子，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。"
     },
     {
       "id": "rental-dining-table",
@@ -69,7 +74,8 @@
       "status": "prompt_ready",
       "prompt": "prompts/rental-dining-table.json",
       "path": null,
-      "usage": "四年前出租屋餐桌"
+      "usage": "四年前出租屋餐桌",
+      "prompt_text": "普通城市出租屋餐桌，夜晚室内灯光，外卖盒、电脑、两只碗，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。"
     },
     {
       "id": "shrimp-and-tableware",
@@ -77,7 +83,8 @@
       "status": "prompt_ready",
       "prompt": "prompts/shrimp-and-tableware.json",
       "path": null,
-      "usage": "白灼虾、公盘、小碟、筷子、虾壳、纸巾、空碟"
+      "usage": "白灼虾、公盘、小碟、筷子、虾壳、纸巾、空碟",
+      "prompt_text": "白灼虾、公盘、小白碟、黑色筷子、虾壳、白纸巾，真实食物摄影，湿亮虾壳和水珠，干净背景，无文字、无品牌。"
     }
   ],
   "note": "林晚、陈屿公共人物资产已生成；其余公共资产仍待生成。"
