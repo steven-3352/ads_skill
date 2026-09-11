@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05-first 关键帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感、钨丝暖光，公司聚餐桌面双人关系景。老赵从桌对面伸筷子讨虾，陈屿一手把老赵的筷子挡回、一手把刚剥好的虾放进林晚碗里；林晚低头、嘴角带笑。满桌暖调热闹。暖线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA-first-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1802f47d0dfc1cb59909004d14dc6c36d803139d38970425a532974345ba0092"
+  }
+}

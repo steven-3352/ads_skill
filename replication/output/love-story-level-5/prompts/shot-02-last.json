@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-02-last 关键帧",
+  "mode": "FL2VA-last-frame",
+  "prompt": "同一冷白偏青餐馆包间中景，镜头极缓微推。林晚被一声清脆的虾壳脆响触发，缓缓抬眼、目光越过喧闹望向远处，准备切入回忆。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "504fcc958d59ace8770999ddab0338a2f11e91498823ca4d3882a83a7fffcfe9"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-07b-first 关键帧",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青餐馆包间手部近景。林晚用筷子拨开剥好虾肉表面沾着的一点葱花，露出底下空着的碗底。冷调、干净、孤立。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1fa69dcd3c1c17b073dffe60d5be31046ce7cc97c0d85219e45d7c80dc15d540"
+  }
+}

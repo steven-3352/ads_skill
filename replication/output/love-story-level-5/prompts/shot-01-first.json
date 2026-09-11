@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-01-first 关键帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青的餐馆包间夜景，中景。林晚（长黑发、自然淡妆、素净偏冷上衣，神情克制）坐在圆桌边，面前小碟里躺着一只完整白灼虾，虾壳湿亮泛红、尾巴沾着水珠；前景虚化的同事小周正把第二只虾夹向她。构图偏紧，把林晚从热闹里隔开。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA-first-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "dc2b1078dd971a58eae00ea882926f01de4973c546a1c1f9bab15193ec1087a1"
+  }
+}

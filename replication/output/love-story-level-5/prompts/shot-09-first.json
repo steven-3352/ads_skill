@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-09-first 关键帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青餐馆夜景近景。林晚把剥好的虾放进嘴里慢慢嚼，目光落到自己被扎的食指、又抬起看面前那只空碟；桌上一小堆不太完整的虾壳，旁边压着一张染上一点血的纸巾。安静克制，准备落到静物构图并切黑。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA-first-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "069b48cb83367ab533d01c41a8e1ab7166728966655032f7ad568a003df72a1a"
+  }
+}

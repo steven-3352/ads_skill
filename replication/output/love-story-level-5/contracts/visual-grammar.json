@@ -1,0 +1,49 @@
+{
+  "projectId": "love-story-level-5",
+  "purpose": "两条时间线的统一视觉基准；production-plan 每个分镜必须归属其一（timeline: now|then）。",
+  "timelines": {
+    "now": {
+      "label": "现在（冷线）",
+      "scenes": ["scene-01", "scene-04", "scene-05"],
+      "color": "中性偏青、对比略高、干净通透",
+      "lighting": "餐馆实用冷白/顶光，阴影更硬",
+      "framing": "偏紧、单人孤立构图；前景虚化的同事把林晚隔开",
+      "camera": "近静止或极缓推（Push In small amplitude slow），克制、不晃",
+      "sound": "可从满桌谈笑抽离到只剩水龙头滴水与呼吸（场景 5 尤甚）",
+      "performance": "克制、收着、礼貌性微笑、眼神向下",
+      "meaning": "礼貌照顾无法替代被记得的偏爱；孤立与落差"
+    },
+    "then": {
+      "label": "四年前（暖线）",
+      "scenes": ["scene-02", "scene-03"],
+      "color": "钨丝金橙、暖、轻胶片颗粒",
+      "lighting": "暖光柔和，阴影软，满桌暖调",
+      "framing": "双人关系景 + 满桌 + 手部近景（剥虾/递虾/碰鞋）",
+      "camera": "轻微呼吸感手持（非廉价大晃），跟随手部动作",
+      "sound": "暖满、生活化的聚餐/居家环境声",
+      "performance": "被宠、笃定、嘴上催眼里笑",
+      "meaning": "被偏爱的日常；照顾是记得对方喜欢什么"
+    }
+  },
+  "matchCuts": {
+    "A": {
+      "name": "虾壳脆响声画转场",
+      "type": "sound_bridge",
+      "out": {"shot": "02", "beat": "b02-crack", "timeline": "now", "cue": "邻桌虾壳被掰开的清脆一声 + 林晚抬眼"},
+      "in": {"shot": "03", "beat": "b03-in", "timeline": "then", "cue": "同样一声脆响接入四年前，陈屿低头剥虾"},
+      "rule": "两侧使用同一条脆响音效缝合，硬切；现在→四年前"
+    },
+    "B": {
+      "name": "同一根被扎手指构图对仗",
+      "type": "composition_rhyme",
+      "anchor": {"shot": "04", "beat": "b04-prick", "timeline": "then", "subject": "陈屿食指被虾壳尖刺、冒血珠"},
+      "payoff": {"shot": "08", "beat": "b08-prick", "timeline": "now", "subject": "林晚食指被虾壳尖刺、冒血珠"},
+      "rule": "近景机位、景别、手指入画方向与构图对齐；不使用哭泣，靠动作对仗承载情绪"
+    }
+  },
+  "endingCallback": {
+    "then": "整齐的剥好虾肉（陈屿剥）",
+    "now": "一小堆不完整的虾壳 + 空碟 + 染血纸巾（林晚自己剥）",
+    "rule": "结尾静物落在不完整虾壳上，切黑"
+  }
+}

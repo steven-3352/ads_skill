@@ -2,216 +2,88 @@
   "projectId": "love-story-level-5",
   "model": "MiniMax-H3",
   "authoringSkill": "h3-prompt-writing",
-  "status": "prompt_ready",
-  "shots": {
-    "01": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "现在餐馆包间夜晚自然中景，林晚坐在餐桌边，小周从公盘夹一只完整白灼虾放到她面前小碟，林晚随后用自己的筷子夹回公盘，动作关系清楚，写实Vlog，适度手持，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "林晚把虾夹回公盘后停顿，听见旁边虾壳脆响并抬眼，餐馆包间自然中景，写实Vlog，准备硬切回忆，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+  "status": "video_prompts_locked",
+  "note": "关键帧图片提示词见 prompts/shot-*.json（已过 validate-h3-prompt-review.sh image）。以下为每个生成单元的 H3 视频三字段时间轴，video 状态锁定：先过图片闸门确认关键帧，再解锁视频生成。对白/旁白与 01-虾壳.md 逐字一致。",
+  "units": {
+    "unit-01": {
+      "shot": "01", "sceneId": "scene-01", "mode": "I2VA", "durationSeconds": 10, "status": "locked",
+      "keyframes": {"first": "prompts/shot-01-first.json"},
+      "alignment_instruction": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, cool teal-white lighting in a private dining room at night. The frame preserves the woman Lin Wan shown in <Picture 1> — her long black hair, plain cool-toned top, restrained expression, her seat at the round table, the single whole poached shrimp on the small dish before her, and the out-of-focus colleague Zhou in the foreground. The camera pushes in with small amplitude at slow speed. Zhou (S1), an ordinary male colleague around 28 with a light casual voice, picks a second shrimp toward her dish and says: <d>[Chinese]这盘就你没动。减肥啊？</d> Lin Wan (S2), a woman in her late twenties with a quiet, restrained voice, lifts the shrimp with her chopsticks and places it back onto the shared plate, then says: <d>[Chinese]懒得剥。</d> Zhou (S1) replies: <d>[Chinese]喜欢吃还懒。</d> Her chopsticks pause at the edge of the dish; the tight framing and the blurred colleague isolate her from the surrounding chatter.",
+      "overall_soundscape": "Layered restaurant chatter and clinking bowls fill the private room, with chopsticks tapping porcelain and the soft click of a shrimp set back onto the shared plate.",
+      "non_diegetic_music": "Sparse cold piano notes at a slow tempo, held quietly under the scene."
     },
-    "02": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "四年前公司聚餐夜晚，陈屿与林晚同桌自然中景，陈屿低头连续剥白灼虾，面前有一小摞虾壳，林晚与同事聊天，碗里已有剥好的虾，真实餐馆环境，写实Vlog，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "陈屿拿起下一只虾继续剥，林晚举起剥好的虾检查并带克制笑意，双人中景与手部关系清楚，写实Vlog，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-02": {
+      "shot": "02", "sceneId": "scene-01", "mode": "FL2VA", "durationSeconds": 6, "status": "locked", "matchCut": "A-out",
+      "keyframes": {"first": "prompts/shot-02-first.json", "last": "prompts/shot-02-last.json"},
+      "alignment_instruction": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, cool teal-white private dining room at night. Beginning in the framing of Picture 1, Lin Wan sits with her chopsticks resting at the edge of her dish, expression restrained, while a neighboring diner cracks a shrimp shell. The camera holds nearly static, then pushes in with small amplitude at slow speed. A crisp shrimp-shell crack sounds off to the side — this crack is the sound bridge that will stitch into the next scene — and Lin Wan slowly lifts her gaze past the noise toward the distance, arriving at the pose, framing and lighting of Picture 2 at the end of the shot as the memory is about to open.",
+      "overall_soundscape": "Restaurant chatter continues underneath while a single crisp shrimp-shell crack cuts through clearly, followed by a brief hush around her.",
+      "non_diegetic_music": "A single sustained low string tone that swells slightly toward the end."
     },
-    "03": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "陈屿食指被虾壳尖刺入，指腹出现小血珠，林晚在旁看见并询问，四年前公司聚餐桌面，动作特写与中景结合，写实Vlog，无血腥夸张，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "老赵从桌对面伸筷子，陈屿把刚剥好的虾放入林晚碗中并挡开老赵筷子，林晚低头准备吃虾，桌面关系清楚，写实Vlog，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-03": {
+      "shot": "03", "sceneId": "scene-02", "mode": "I2VA", "durationSeconds": 12, "status": "locked", "matchCut": "A-in",
+      "keyframes": {"first": "prompts/shot-03-first.json"},
+      "alignment_instruction": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, warm tungsten golden light with light film grain, a company dinner four years ago. The frame preserves the setting of <Picture 1>: Chen Yu (short black hair, blue crew-neck top) with his head down peeling poached shrimp, a small pile of shells before him; the same-faced Lin Wan, four years younger and visibly happier, talks with colleagues while peeled shrimp accumulate in her bowl. The same crisp shrimp-shell crack from the previous scene carries over and lands here, stitching present to past. The camera holds a gentle handheld breath over the hands. [Shot 2] At 00:06.000, the shot cuts to a two-person relationship framing: Lin Wan (S2) lifts a peeled shrimp to her eyes as if inspecting how clean it is, suppressing a smile, and says: <d>[Chinese]你能不能快点？我这边都断供了。</d> Chen Yu (S1), a steady low-voiced man, keeps peeling without looking up and answers: <d>[Chinese]着什么急。</d>",
+      "overall_soundscape": "Warm, full dinner-party ambience with overlapping laughter and chatter, and the steady small sounds of shells being peeled and dropped into a pile.",
+      "non_diegetic_music": "Warm sustained strings at a slow tempo with a soft, rounded low end."
     },
-    "04": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "四年前出租屋餐桌夜晚，陈屿一边看电脑一边剥小龙虾，按住林晚伸来的筷子，桌上左右分开放辣与不辣的虾，写实Vlog自然中景，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "林晚夹走最大虾藏到碗沿后抬眼，陈屿手指上的小创可贴可见，出租屋暖光自然中景，嘴硬但亲密，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-04": {
+      "shot": "04", "sceneId": "scene-02", "mode": "FL2VA", "durationSeconds": 8, "status": "locked", "matchCut": "B-anchor",
+      "keyframes": {"first": "prompts/shot-04-first.json", "last": "prompts/shot-04-last.json"},
+      "alignment_instruction": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, warm tungsten light, an extreme close framing on a fingertip (the same camera setup later mirrored on Lin Wan's finger). Beginning at Picture 1, Chen Yu's hand pinches a poached shrimp and peels it, the shell's sharp tip nearing his index finger. The camera holds a static shot. The sharp shell pricks his index finger; he flinches slightly and a single bead of blood rises on the pad of his fingertip. Off the close-up, Lin Wan (S2) asks: <d>[Chinese]扎了？</d> Chen Yu (S1) briefly puts the finger to his mouth, pulls out a tissue and presses it, saying flatly: <d>[Chinese]没有。</d> Lin Wan (S2) says: <d>[Chinese]那你快点。</d> reaching the tissue-pressed finger pose of Picture 2. No exaggerated gore.",
+      "overall_soundscape": "Warm dinner ambience continues softly, with the small sounds of a shell tip pricking skin, a quick inhale, and a tissue being pulled free.",
+      "non_diegetic_music": "A single low piano note held quietly under the moment."
     },
-    "05": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "现在餐馆包间夜晚，小周把剥好的虾放进林晚碗中，林晚低头看虾肉，餐桌关系中景，写实Vlog，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "林晚拨开虾肉上的葱花看见空碗底，夹起虾停在半空又放下，随后筷子转向公盘中的完整虾，动作起止清楚，写实Vlog，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-05": {
+      "shot": "05", "sceneId": "scene-02", "mode": "I2VA", "durationSeconds": 12, "status": "locked",
+      "keyframes": {"first": "prompts/shot-05-first.json"},
+      "alignment_instruction": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, warm tungsten light, the company-dinner two-person table framing preserved from <Picture 1>. Lao Zhao (S3), an older male colleague around 35, reaches his chopsticks across the table and says: <d>[Chinese]给我来一个。</d> Chen Yu (S1) blocks Lao Zhao's chopsticks with one hand and, with the other, places the shrimp he just peeled into Lin Wan's bowl, saying: <d>[Chinese]自己剥。</d> The table laughs warmly. [Shot 2] At 00:06.000, the shot cuts to Lin Wan lowering her head to eat, then briefly to a low framing under the table where the tip of her shoe lightly taps Chen Yu's shoe; her shoulders relax as she takes the first bite.",
+      "overall_soundscape": "Warm overlapping laughter around the table, chopsticks crossing, and a shrimp dropped softly into a bowl.",
+      "non_diegetic_music": "Warm strings continue at a slow tempo, a touch brighter here."
     },
-    "06": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "现在餐馆餐桌边夜晚，林晚独自低头剥完整白灼虾，保持餐桌空间连续，适度手持中景与手部特写，写实Vlog，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "虾壳断裂刺入林晚食指，出现一颗小血珠，她用纸巾按住伤口，另一只手继续剥虾，餐桌环境连续，写实Vlog，无夸张血腥，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-06": {
+      "shot": "06", "sceneId": "scene-03", "mode": "I2VA", "durationSeconds": 13, "status": "locked",
+      "keyframes": {"first": "prompts/shot-06-first.json"},
+      "alignment_instruction": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, warm indoor light, a rented apartment dining table at night, preserving <Picture 1>: takeout boxes open, Chen Yu watching a laptop while peeling crayfish for Lin Wan. He presses down her reaching chopsticks and says: <d>[Chinese]辣的在左边。你胃不舒服，吃右边。</d> Lin Wan (S2) says: <d>[Chinese]吃个虾也管。</d> He pushes a bowl of peeled meat toward her and says: <d>[Chinese]那你别吃。</d> [Shot 2] At 00:07.000, the shot cuts to a close view of hands as Lin Wan picks the biggest one and hides it behind the rim of her bowl, glancing up for a second, and says: <d>[Chinese]你管我。</d> A small band-aid is wrapped around Chen Yu's previously pricked finger as he keeps watching the laptop.",
+      "overall_soundscape": "Quiet home-evening ambience with a soft laptop audio hum, chopsticks tapping and bowls shifting.",
+      "non_diegetic_music": "Warm, intimate guitar harmonics at a slow tempo."
     },
-    "07": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "林晚把剥好的虾放入口中，餐馆餐桌边夜晚，人物自然中景，水滴和呼吸对应的安静时刻，写实Vlog，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "林晚看受伤食指再看空碟，将带一点血迹的纸巾折起压在碟子下面，手部与空碟关系清楚，写实Vlog，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-07a": {
+      "shot": "07", "sceneId": "scene-04", "mode": "I2VA", "durationSeconds": 6, "status": "locked",
+      "keyframes": {"first": "prompts/shot-07a-first.json"},
+      "alignment_instruction": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, cool teal-white private dining room at night, preserving <Picture 1>. Colleague Zhou (S1) places one peeled shrimp into Lin Wan's bowl and says: <d>[Chinese]给。省得你懒。</d> then immediately turns away to join another conversation. Lin Wan looks at the bowl with a restrained expression; a blurred foreground colleague isolates her.",
+      "overall_soundscape": "Restaurant chatter and clinking continue, with a chair shifting as the colleague turns away.",
+      "non_diegetic_music": "Cold sparse piano returns quietly."
     },
-    "08": {
-      "first_frame": {
-        "status": "prompt_ready",
-        "prompt": "餐馆包间谈笑声回归的夜晚，林晚低头吃完最后一口虾，镜头从自然中景转向桌面，写实Vlog，无字幕文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "last_frame": {
-        "status": "prompt_ready",
-        "prompt": "桌面一小堆不完整虾壳成为画面焦点，林晚虚化在背景低头，固定静物构图，准备切黑，写实Vlog，无文字水印。",
-        "model": "MiniMax-H3",
-        "authoringSkill": "h3-prompt-writing",
-        "review": {
-          "result": "pass",
-          "unresolved_blockers": []
-        }
-      },
-      "video": {
-        "status": "locked",
-        "prompt": null
-      }
+    "unit-07b": {
+      "shot": "07", "sceneId": "scene-04", "mode": "FL2VA", "durationSeconds": 7, "status": "locked",
+      "keyframes": {"first": "prompts/shot-07b-first.json", "last": "prompts/shot-07b-last.json"},
+      "alignment_instruction": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 7.00-second mark of the target video.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, cool teal-white close framing on hands. Beginning at Picture 1, Lin Wan's chopsticks push aside a fleck of chopped scallion on the peeled shrimp, revealing the empty bottom of the bowl beneath. The camera holds static. She lifts the peeled shrimp, holds it midair, then puts it down, and instead reaches to the shared plate to pick up one whole, unpeeled poached shrimp, settling on it as in Picture 2.",
+      "overall_soundscape": "Restaurant ambience thinning on her side, chopsticks nudging the shrimp, and a shrimp lifted from the shared plate.",
+      "non_diegetic_music": "A single cold sustained note."
+    },
+    "unit-08": {
+      "shot": "08", "sceneId": "scene-05", "mode": "FL2VA", "durationSeconds": 10, "status": "locked", "matchCut": "B-payoff",
+      "keyframes": {"first": "prompts/shot-08-first.json", "last": "prompts/shot-08-last.json"},
+      "alignment_instruction": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 10.00-second mark of the target video.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, cool teal-white, beside the restaurant washroom sink at night, an extreme close framing on a fingertip that mirrors the earlier shot of Chen Yu's finger. Beginning at Picture 1, Lin Wan alone lowers her head and peels a whole shrimp, fingers pinching the shell seam. The camera holds a static shot as the surrounding chatter fades away until only a dripping faucet and her breathing remain. The shell breaks from the middle and the sharp tip pricks her index finger; a single bead of blood rises. She pulls out a tissue and presses the wound while her other hand keeps peeling the shell to the end, arriving at Picture 2. No exaggerated gore; the framing matches the earlier finger shot.",
+      "overall_soundscape": "Ambient chatter recedes into near silence, leaving a slow faucet drip and quiet breathing, with the small snap of a shell breaking and a tissue pressed to skin.",
+      "non_diegetic_music": "A single low sustained tone, barely audible."
+    },
+    "unit-09": {
+      "shot": "09", "sceneId": "scene-05", "mode": "I2VA", "durationSeconds": 14, "status": "locked",
+      "keyframes": {"first": "prompts/shot-09-first.json"},
+      "alignment_instruction": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.",
+      "integrated_multimodal_description": "[Shot 1] Live-action, cinematic, cool teal-white, close on Lin Wan preserving <Picture 1>. She puts the peeled shrimp into her mouth and chews slowly; her gaze drops to her pricked index finger, then lifts to the empty small dish. [Shot 2] At 00:05.000, the shot cuts to her hands as Lin Wan (S2) says in an off-screen voiceover: <d>[Chinese]后来我才知道，他不是喜欢剥虾。</d> while her lips remain completely closed; she folds the slightly blood-stained tissue and tucks it under the dish. She (S2) then says in an off-screen voiceover: <d>[Chinese]他只是记得，我喜欢吃。</d> while her lips remain completely closed. [Shot 3] At 00:10.000, the shot changes to a static still-life of the small pile of incomplete shrimp shells in front of her as the surrounding laughter floods back; the image holds, then cuts to black at the end.",
+      "overall_soundscape": "Near silence broken by slow chewing and a tissue being folded, then restaurant laughter and chatter surging back in the final seconds before the cut to black.",
+      "non_diegetic_music": "Sparse cold piano resolves on a single held note that stops at the cut to black."
     }
-  },
-  "note": "分镜提示词槽位已建立；待依据分镜契约生成并校验。"
+  }
 }

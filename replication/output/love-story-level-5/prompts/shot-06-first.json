@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-06-first 关键帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感、暖光，出租屋餐桌夜景，桌面双人景。外卖盒摊在桌上，陈屿一边看电脑一边替林晚剥小龙虾，并按住她伸来的筷子；桌面左右分放辣与不辣两堆。林晚嘴硬地去夹最大的一只。居家暖氛围，可见陈屿手指上缠着一小圈创可贴。暖线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA-first-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "403ebc0dd3b152b67e156e499945319064f777b5e0eb1c989486d812867e3b8b"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-08-first 关键帧",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青餐馆洗手台旁夜景，食指近景机位（与四年前陈屿受伤手指镜头同机位、同景别对仗）。林晚独自低头剥一只完整白灼虾，指尖捏住虾壳中缝。安静、孤立。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "见 production-plan.json 对应 generationUnit.references"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-11",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份约束(characters.md)",
+      "视觉语法归属(visual-grammar.json)",
+      "无文字水印/无品牌",
+      "关键帧构图可验证(人物/空间/道具/动作起止)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "508f40486fd7801cd11899660bd0510c3a6ee2c84503f01dbe0affa502d242af"
+  }
+}

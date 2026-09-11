@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-level-5",
+  "title": "《虾壳》v2 导演层生产计划",
+  "generation_allowed": false,
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "audioPolicy": {
+    "mode": "in_video_first",
+    "note": "对白配音/拟音/环境声默认在 H3 生成视频时一起生成（video 内音轨）。好则直接用；不佳时才走 postTasks 里的后备任务在后期替换。因此 dialogue/action_sound/ambience 通道由生成单元的切镜(cut)认领，transition(声音桥/切黑) 才归 postTasks。"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 15,
+    "totalTargetSeconds": 98,
+    "budgetYuan": 30
+  },
+  "visualGrammarRef": "contracts/visual-grammar.json",
+  "screenplayRef": "contracts/screenplay.json",
+  "charactersRef": "characters.md",
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "现在：退虾拒绝（Hook）",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "近静止，微推（Push In small amplitude slow）；前景虚化的小周把林晚隔开",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "林晚把虾夹回公盘。"},
+      "requiredBeats": [
+        {"id": "b01-hook", "sceneId": "scene-01", "text": "小周夹来第二只虾，林晚把虾夹回公盘说懒得剥（Hook：第一只被退回公盘的虾）。", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-01",
+          "sceneId": "scene-01",
+          "durationSeconds": 10,
+          "inputMode": "I2VA",
+          "cuts": [
+            {"id": "c01", "seconds": 10, "camera": "微推", "coverage": [{"beatId": "b01-hook", "channels": ["picture", "dialogue", "action_sound", "ambience"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-01-first.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-01/images/unit-01-first.png", "lastFrame": null, "video": "shots/shot-01/video/unit-01.mp4"},
+          "references": ["assets/lin-wan-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-01-dia", "type": "fallback_dialogue", "description": "后备（视频内音轨优先）·对白配音：小周‘这盘就你没动。减肥啊？’/林晚‘懒得剥。’/小周‘喜欢吃还懒。’"},
+        {"id": "pt-01-fol", "type": "fallback_sound", "description": "后备·拟音：筷子夹虾、虾夹回公盘的轻响"},
+        {"id": "pt-01-amb", "type": "fallback_sound", "description": "后备·环境声：餐馆包间满桌谈笑背景（冷线，可被后续抽离）"}
+      ]
+    },
+    {
+      "id": "02",
+      "title": "现在→四年前：脆响触发（签名A 出）",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "FL2VA",
+      "camera": "静止，末帧微推向林晚抬眼",
+      "matchCut": "A-out",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "旁边的人继续聊天。筷子碰碗，虾壳被掰开，发出清脆的一声。"},
+      "requiredBeats": [
+        {"id": "b02-crack", "sceneId": "scene-01", "text": "邻桌虾壳被掰开发出清脆一声，林晚抬眼——现在→四年前的声画转场起点（签名A 出点）。", "channels": ["picture", "action_sound", "transition"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-02",
+          "sceneId": "scene-01",
+          "durationSeconds": 6,
+          "inputMode": "FL2VA",
+          "cuts": [
+            {"id": "c02", "seconds": 6, "camera": "静止转微推", "coverage": [{"beatId": "b02-crack", "channels": ["picture", "action_sound"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-02-first.json", "prompts/shot-02-last.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-02/images/unit-02-first.png", "lastFrame": "shots/shot-02/images/unit-02-last.png", "video": "shots/shot-02/video/unit-02.mp4"},
+          "references": ["assets/lin-wan-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-02-mc", "type": "transition", "description": "签名A 声画转场·出点：脆响作为声音桥，硬切到四年前", "coverage": [{"beatId": "b02-crack", "channels": ["transition"]}]}
+      ]
+    },
+    {
+      "id": "03",
+      "title": "四年前：剥虾催促（签名A 入）",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "轻微呼吸手持，双人关系景与手部近景切换",
+      "matchCut": "A-in",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "陈屿低着头剥虾，面前已经堆了一小摞虾壳。林晚正和同事说话，碗里不断多出剥好的虾。"},
+      "requiredBeats": [
+        {"id": "b03-in", "sceneId": "scene-02", "text": "同样一声脆响接入四年前，陈屿低头连续剥虾堆起虾壳（签名A 入点）。", "channels": ["picture", "transition", "ambience"]},
+        {"id": "b03-urge", "sceneId": "scene-02", "text": "林晚举起剥好的虾检查、嘴角压笑并催促，陈屿回应。", "channels": ["picture", "dialogue", "action_sound"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-03",
+          "sceneId": "scene-02",
+          "durationSeconds": 12,
+          "inputMode": "I2VA",
+          "cuts": [
+            {"id": "c03a", "seconds": 6, "camera": "首帧锚定后手部近景", "coverage": [{"beatId": "b03-in", "channels": ["picture", "ambience"]}]},
+            {"id": "c03b", "seconds": 6, "camera": "cut 到双人关系景", "coverage": [{"beatId": "b03-urge", "channels": ["picture", "dialogue", "action_sound"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-03-first.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-03/images/unit-03-first.png", "lastFrame": null, "video": "shots/shot-03/video/unit-03.mp4"},
+          "references": ["assets/lin-wan-master.png", "assets/chen-yu-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-03-mc", "type": "transition", "description": "签名A 声画转场·入点：与分镜02同一条脆响缝合，硬切落地", "coverage": [{"beatId": "b03-in", "channels": ["transition"]}]},
+        {"id": "pt-03-amb", "type": "fallback_sound", "description": "后备·环境声：暖满生活化的公司聚餐背景（暖线）"},
+        {"id": "pt-03-dia", "type": "fallback_dialogue", "description": "后备·对白配音：林晚‘你能不能快点？我这边都断供了。’/陈屿‘着什么急。’"},
+        {"id": "pt-03-fol", "type": "fallback_sound", "description": "后备·拟音：连续剥虾、虾壳堆落的细响"}
+      ]
+    },
+    {
+      "id": "04",
+      "title": "四年前：扎伤手指·陈屿（签名B 锚）",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "FL2VA",
+      "camera": "手指近景，机位与分镜08对齐（签名B 构图对仗）",
+      "matchCut": "B-anchor",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "虾壳尖刺进陈屿的食指。他缩了一下，指腹冒出一颗血珠。"},
+      "requiredBeats": [
+        {"id": "b04-prick", "sceneId": "scene-02", "text": "虾壳尖刺进陈屿食指、冒血珠，林晚问‘扎了？’，陈屿含指按纸巾说‘没有’仍继续（签名B 锚：受伤手指近景，不哭）。", "channels": ["picture", "dialogue", "action_sound"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-04",
+          "sceneId": "scene-02",
+          "durationSeconds": 8,
+          "inputMode": "FL2VA",
+          "cuts": [
+            {"id": "c04", "seconds": 8, "camera": "手指近景，首帧剥虾中→末帧冒血珠按纸巾", "coverage": [{"beatId": "b04-prick", "channels": ["picture", "dialogue", "action_sound"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-04-first.json", "prompts/shot-04-last.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-04/images/unit-04-first.png", "lastFrame": "shots/shot-04/images/unit-04-last.png", "video": "shots/shot-04/video/unit-04.mp4"},
+          "references": ["assets/chen-yu-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-04-dia", "type": "fallback_dialogue", "description": "后备·对白配音：林晚‘扎了？’/陈屿‘没有。’/林晚‘那你快点。’"},
+        {"id": "pt-04-fol", "type": "fallback_sound", "description": "后备·拟音：虾壳刺入、缩手、抽纸巾的细响"}
+      ]
+    },
+    {
+      "id": "05",
+      "title": "四年前：拒老赵·给林晚·脚尖碰鞋",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "双人关系景 + 桌下脚尖近景",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "她咬下第一口，肩膀松下来，脚尖在桌下轻轻碰了一下陈屿的鞋。"},
+      "requiredBeats": [
+        {"id": "b05-give", "sceneId": "scene-02", "text": "老赵伸筷讨虾，陈屿说‘自己剥’挡回并把刚剥的虾放进林晚碗。", "channels": ["picture", "dialogue", "action_sound"]},
+        {"id": "b05-toe", "sceneId": "scene-02", "text": "林晚低头笑着吃虾、肩膀松下、脚尖在桌下轻轻碰陈屿的鞋（全片唯一亲密证据）。", "channels": ["picture", "ambience"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-05",
+          "sceneId": "scene-02",
+          "durationSeconds": 12,
+          "inputMode": "I2VA",
+          "cuts": [
+            {"id": "c05a", "seconds": 6, "camera": "桌面关系景", "coverage": [{"beatId": "b05-give", "channels": ["picture", "dialogue", "action_sound"]}]},
+            {"id": "c05b", "seconds": 6, "camera": "cut 到桌下脚尖近景再回林晚笑吃", "coverage": [{"beatId": "b05-toe", "channels": ["picture", "ambience"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-05-first.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-05/images/unit-05-first.png", "lastFrame": null, "video": "shots/shot-05/video/unit-05.mp4"},
+          "references": ["assets/lin-wan-master.png", "assets/chen-yu-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-05-dia", "type": "fallback_dialogue", "description": "后备·对白配音：老赵‘给我来一个。’/陈屿‘自己剥。’"},
+        {"id": "pt-05-fol", "type": "fallback_sound", "description": "后备·拟音：筷子交错、虾放进碗"},
+        {"id": "pt-05-amb", "type": "fallback_sound", "description": "后备·环境声：满桌笑声（暖线，笑声是被偏爱的底色）"}
+      ]
+    },
+    {
+      "id": "06",
+      "title": "四年前·出租屋：辣度分区·创可贴·嘴硬",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "轻微呼吸手持，桌面双人景与手部近景",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "陈屿一边看电脑，一边替林晚剥小龙虾。"},
+      "requiredBeats": [
+        {"id": "b06-spice", "sceneId": "scene-03", "text": "出租屋陈屿看电脑替林晚剥小龙虾，按住她筷子说辣的在左边、胃不舒服吃右边，林晚嘴硬。", "channels": ["picture", "dialogue", "action_sound", "ambience"]},
+        {"id": "b06-bandaid", "sceneId": "scene-03", "text": "林晚夹走最大的虾藏碗沿后抬眼，陈屿被扎破手指缠着一小圈创可贴（关系日常）。", "channels": ["picture"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-06",
+          "sceneId": "scene-03",
+          "durationSeconds": 13,
+          "inputMode": "I2VA",
+          "cuts": [
+            {"id": "c06a", "seconds": 7, "camera": "桌面双人景，按住筷子分辣度", "coverage": [{"beatId": "b06-spice", "channels": ["picture", "dialogue", "action_sound", "ambience"]}]},
+            {"id": "c06b", "seconds": 6, "camera": "cut 到手部近景：最大的虾 + 创可贴", "coverage": [{"beatId": "b06-bandaid", "channels": ["picture"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-06-first.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-06/images/unit-06-first.png", "lastFrame": null, "video": "shots/shot-06/video/unit-06.mp4"},
+          "references": ["assets/lin-wan-master.png", "assets/chen-yu-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-06-dia", "type": "fallback_dialogue", "description": "后备·对白配音：陈屿‘辣的在左边。你胃不舒服，吃右边。’/林晚‘吃个虾也管。’/陈屿‘那你别吃。’/林晚‘你管我。’"},
+        {"id": "pt-06-fol", "type": "fallback_sound", "description": "后备·拟音：键盘轻响、筷子相碰、拨碗"},
+        {"id": "pt-06-amb", "type": "fallback_sound", "description": "后备·环境声：出租屋夜晚居家氛围（暖线）"}
+      ]
+    },
+    {
+      "id": "07",
+      "title": "现在：递剥好虾·空碗底·夹回完整虾（落差）",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA+FL2VA",
+      "camera": "冷线偏紧；末段以完整虾夹回作为落点",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "她从公盘夹回一只完整的虾。"},
+      "requiredBeats": [
+        {"id": "b07-give", "sceneId": "scene-04", "text": "小周把剥好的一只虾放进林晚碗说‘给。省得你懒。’便转身加入别处谈话。", "channels": ["picture", "dialogue"]},
+        {"id": "b07-empty", "sceneId": "scene-04", "text": "林晚拨开虾肉上的葱花露出底下空着的碗底，夹起虾停半空又放下，从公盘夹回一只完整的虾（落差）。", "channels": ["picture", "action_sound", "ambience"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-07a",
+          "sceneId": "scene-04",
+          "durationSeconds": 6,
+          "inputMode": "I2VA",
+          "cuts": [
+            {"id": "c07a", "seconds": 6, "camera": "关系景：小周给虾便转身", "coverage": [{"beatId": "b07-give", "channels": ["picture", "dialogue"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-07a-first.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-07/images/unit-07a-first.png", "lastFrame": null, "video": "shots/shot-07/video/unit-07a.mp4"},
+          "references": ["assets/lin-wan-master.png"]
+        },
+        {
+          "id": "unit-07b",
+          "sceneId": "scene-04",
+          "durationSeconds": 7,
+          "inputMode": "FL2VA",
+          "cuts": [
+            {"id": "c07b", "seconds": 7, "camera": "手部近景，首帧拨葱花见空碗底→末帧从公盘夹回完整虾", "coverage": [{"beatId": "b07-empty", "channels": ["picture", "action_sound", "ambience"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-07b-first.json", "prompts/shot-07b-last.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-07/images/unit-07b-first.png", "lastFrame": "shots/shot-07/images/unit-07b-last.png", "video": "shots/shot-07/video/unit-07b.mp4"},
+          "references": ["assets/lin-wan-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-07-dia", "type": "fallback_dialogue", "description": "后备·对白配音：小周‘给。省得你懒。’"},
+        {"id": "pt-07-fol", "type": "fallback_sound", "description": "后备·拟音：拨葱花、筷子夹起又放下、从公盘夹回完整虾"},
+        {"id": "pt-07-amb", "type": "fallback_sound", "description": "后备·环境声：谈笑背景，但林晚一侧渐趋安静（落差铺垫）"}
+      ]
+    },
+    {
+      "id": "08",
+      "title": "现在·洗手台：独自剥虾·扎伤·林晚（签名B 兑现）",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "FL2VA",
+      "camera": "手指近景，机位与分镜04对齐（签名B 构图对仗）",
+      "matchCut": "B-payoff",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "她抽出纸巾，按住伤口。另一只手继续把虾壳剥完。"},
+      "requiredBeats": [
+        {"id": "b08-prick", "sceneId": "scene-05", "text": "洗手台旁林晚独自低头剥虾，壳从中间断开尖刺扎进食指冒血珠，周围声音渐远只剩水滴与呼吸，她抽纸巾按住伤口另一只手继续剥完（签名B 兑现，与04同机位对仗，不哭）。", "channels": ["picture", "action_sound", "ambience"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-08",
+          "sceneId": "scene-05",
+          "durationSeconds": 10,
+          "inputMode": "FL2VA",
+          "cuts": [
+            {"id": "c08", "seconds": 10, "camera": "手指近景，首帧低头剥虾→末帧冒血珠按纸巾继续（对齐分镜04）", "coverage": [{"beatId": "b08-prick", "channels": ["picture", "action_sound", "ambience"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-08-first.json", "prompts/shot-08-last.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-08/images/unit-08-first.png", "lastFrame": "shots/shot-08/images/unit-08-last.png", "video": "shots/shot-08/video/unit-08.mp4"},
+          "references": ["assets/lin-wan-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-08-fol", "type": "fallback_sound", "description": "后备·拟音：剥虾、虾壳从中间断开、缩手、抽纸巾"},
+        {"id": "pt-08-amb", "type": "fallback_sound", "description": "后备·环境声：周围谈笑渐远抽离，只剩水龙头滴水与她的呼吸（冷线极致孤立）"}
+      ]
+    },
+    {
+      "id": "09",
+      "title": "现在：旁白揭示与回扣·切黑",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "静止；末段落到不完整虾壳静物，切黑",
+      "source": {"storyFile": "01-虾壳.md", "verbatim": "画面停在她面前那一小堆不太完整的虾壳上。"},
+      "requiredBeats": [
+        {"id": "b09-eat", "sceneId": "scene-05", "text": "林晚把虾放进嘴里慢慢嚼，目光落到自己的食指，又抬起来看那只空碟。", "channels": ["picture", "action_sound"]},
+        {"id": "b09-vo", "sceneId": "scene-05", "text": "旁白‘后来我才知道，他不是喜欢剥虾。’她把染上一点血的纸巾折起压在碟子下面，旁白‘他只是记得，我喜欢吃。’（旁白唇闭合）。", "channels": ["picture", "dialogue"]},
+        {"id": "b09-shells", "sceneId": "scene-05", "text": "餐桌谈笑声重新涌回，画面停在她面前那一小堆不太完整的虾壳上，切黑（结尾回扣：过去整齐虾肉↔现在不完整虾壳）。", "channels": ["picture", "ambience", "transition"]}
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-09",
+          "sceneId": "scene-05",
+          "durationSeconds": 14,
+          "inputMode": "I2VA",
+          "cuts": [
+            {"id": "c09a", "seconds": 5, "camera": "近景：吃虾慢嚼，看食指再看空碟", "coverage": [{"beatId": "b09-eat", "channels": ["picture", "action_sound"]}]},
+            {"id": "c09b", "seconds": 5, "camera": "折染血纸巾压碟下（旁白）", "coverage": [{"beatId": "b09-vo", "channels": ["picture", "dialogue"]}]},
+            {"id": "c09c", "seconds": 4, "camera": "静物：不完整虾壳，切黑", "coverage": [{"beatId": "b09-shells", "channels": ["picture", "ambience"]}]}
+          ],
+          "prompts": {"images": ["prompts/shot-09-first.json"], "video": null},
+          "media": {"firstFrame": "shots/shot-09/images/unit-09-first.png", "lastFrame": null, "video": "shots/shot-09/video/unit-09.mp4"},
+          "references": ["assets/lin-wan-master.png"]
+        }
+      ],
+      "postTasks": [
+        {"id": "pt-09-fol", "type": "fallback_sound", "description": "后备·拟音：慢嚼、纸巾折叠、碟子轻响"},
+        {"id": "pt-09-vo", "type": "fallback_dialogue", "description": "后备·旁白配音（OS，唇闭合）：‘后来我才知道，他不是喜欢剥虾。’/‘他只是记得，我喜欢吃。’"},
+        {"id": "pt-09-amb", "type": "fallback_sound", "description": "后备·环境声：谈笑声重新涌回（与场景5前段的抽离形成对照）"},
+        {"id": "pt-09-tr", "type": "transition", "description": "结尾切黑（fade/hard cut to black）", "coverage": [{"beatId": "b09-shells", "channels": ["transition"]}]}
+      ]
+    }
+  ],
+  "note": "v2 四层生产计划：narrativeShots→generationUnits(≤15s 付费单元)→cuts(段内切镜)→postTasks。音轨策略 in_video_first：对白/拟音/环境声由切镜(cut)在 H3 视频内一起生成；transition(声音桥/切黑) 归 postTasks；fallback_* 后期任务为后备（视频内音轨不佳时替换），不认领通道。media 字段为模板占位路径（generation_allowed=false 时文件尚未生成，路径即生成目标）。每个 required beat:channel 恰好认领一次。"
+}

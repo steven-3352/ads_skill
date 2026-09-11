@@ -1,9 +1,15 @@
 {
   "projectId": "love-story-level-5",
-  "stage": "prompt_contracts",
-  "status": "brief_confirmed",
+  "stage": "prompts_ready",
+  "status": "director_layer_v2_review",
   "input": {"type": "user_story", "storyFile": "01-虾壳.md", "received": true},
-  "brief": {"platform":"抖音","duration_limit_seconds":120,"format":"叙事短片","visual_style":"写实Vlog","audio":true,"model":"MiniMax-H3","budget_limit_yuan":30},
-  "confirmed": {"story": true, "brief": true, "screenplay": true, "beats": true, "assets": true, "shots": true, "model": true},
-  "nextAction": "分镜与资产契约已通过，建立 MiniMax-H3 提示词契约"
+  "brief": {"platform":"抖音","duration_limit_seconds":120,"format":"叙事短片","visual_style":"两条时间线视觉语法(现在冷/四年前暖)","audio":true,"model":"MiniMax-H3","budget_limit_yuan":30},
+  "confirmed": {"story": true, "brief": true, "screenplay": true, "beats": true, "characters": true, "visual_grammar": true, "production_plan": true, "keyframe_prompts": true, "model": true},
+  "generation_allowed": false,
+  "sourceOfTruth": "contracts/production-plan.json",
+  "gates": {
+    "production_plan": "scripts/validate-production-plan.mjs (valid, 9 shots)",
+    "keyframe_prompts": "replication/tools/validate-h3-prompt-review.sh (14/14 image pass)"
+  },
+  "nextAction": "页面评审通过后，过图片闸门（生成并验收关键帧首尾帧），再解锁 H3 视频生成。"
 }
