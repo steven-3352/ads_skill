@@ -2,141 +2,213 @@
   "projectId": "love-story-level-5",
   "model": "MiniMax-H3",
   "authoringSkill": "h3-prompt-writing",
-  "status": "pending",
+  "status": "prompt_ready",
   "shots": {
     "01": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "现在餐馆包间夜晚自然中景，林晚坐在餐桌边，小周从公盘夹一只完整白灼虾放到她面前小碟，林晚随后用自己的筷子夹回公盘，动作关系清楚，写实Vlog，适度手持，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "林晚把虾夹回公盘后停顿，听见旁边虾壳脆响并抬眼，餐馆包间自然中景，写实Vlog，准备硬切回忆，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "02": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "四年前公司聚餐夜晚，陈屿与林晚同桌自然中景，陈屿低头连续剥白灼虾，面前有一小摞虾壳，林晚与同事聊天，碗里已有剥好的虾，真实餐馆环境，写实Vlog，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "陈屿拿起下一只虾继续剥，林晚举起剥好的虾检查并带克制笑意，双人中景与手部关系清楚，写实Vlog，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "03": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "陈屿食指被虾壳尖刺入，指腹出现小血珠，林晚在旁看见并询问，四年前公司聚餐桌面，动作特写与中景结合，写实Vlog，无血腥夸张，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "老赵从桌对面伸筷子，陈屿把刚剥好的虾放入林晚碗中并挡开老赵筷子，林晚低头准备吃虾，桌面关系清楚，写实Vlog，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "04": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "四年前出租屋餐桌夜晚，陈屿一边看电脑一边剥小龙虾，按住林晚伸来的筷子，桌上左右分开放辣与不辣的虾，写实Vlog自然中景，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "林晚夹走最大虾藏到碗沿后抬眼，陈屿手指上的小创可贴可见，出租屋暖光自然中景，嘴硬但亲密，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "05": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "现在餐馆包间夜晚，小周把剥好的虾放进林晚碗中，林晚低头看虾肉，餐桌关系中景，写实Vlog，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "林晚拨开虾肉上的葱花看见空碗底，夹起虾停在半空又放下，随后筷子转向公盘中的完整虾，动作起止清楚，写实Vlog，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "06": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "现在餐馆餐桌边夜晚，林晚独自低头剥完整白灼虾，保持餐桌空间连续，适度手持中景与手部特写，写实Vlog，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "虾壳断裂刺入林晚食指，出现一颗小血珠，她用纸巾按住伤口，另一只手继续剥虾，餐桌环境连续，写实Vlog，无夸张血腥，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "07": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "林晚把剥好的虾放入口中，餐馆餐桌边夜晚，人物自然中景，水滴和呼吸对应的安静时刻，写实Vlog，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "林晚看受伤食指再看空碟，将带一点血迹的纸巾折起压在碟子下面，手部与空碟关系清楚，写实Vlog，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     },
     "08": {
       "first_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "餐馆包间谈笑声回归的夜晚，林晚低头吃完最后一口虾，镜头从自然中景转向桌面，写实Vlog，无字幕文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "last_frame": {
-        "status": "empty",
-        "file": null,
-        "prompt": null
+        "status": "prompt_ready",
+        "prompt": "桌面一小堆不完整虾壳成为画面焦点，林晚虚化在背景低头，固定静物构图，准备切黑，写实Vlog，无文字水印。",
+        "model": "MiniMax-H3",
+        "authoringSkill": "h3-prompt-writing",
+        "review": {
+          "result": "pass",
+          "unresolved_blockers": []
+        }
       },
       "video": {
         "status": "locked",
-        "file": null,
         "prompt": null
       }
     }
