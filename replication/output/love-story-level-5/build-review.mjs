@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 const root=path.dirname(new URL(import.meta.url).pathname), review=path.join(root,'review'); fs.mkdirSync(review,{recursive:true});
 const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const shell=(title,body)=>`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><link rel="stylesheet" href="../../../_review-assets/style.css"></head><body><main>${body}</main></body></html>`;
+const shell=(title,body)=>`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><link rel="stylesheet" href="../../_review-assets/style.css"></head><body><main>${body}</main></body></html>`;
 const nav='<nav><a href="index.html">《虾壳》项目首页</a></nav>';
 const story=fs.readFileSync(path.join(root,'01-虾壳.md'),'utf8');
 for(let i=1;i<=8;i++){const n=String(i).padStart(2,'0');fs.writeFileSync(path.join(review,`shot-${n}.html`),shell(`分镜${n} · 虾壳`,`${nav}<h1>分镜 ${n}</h1><p>当前阶段：待完成剧本与分镜契约。</p><h2>原始故事</h2><pre>${esc(story)}</pre><h2>图片</h2><p>空</p><h2>视频</h2><p>未解锁</p><h2>提示词</h2><p>空</p>`));}
