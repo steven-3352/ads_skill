@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot15尾帧·走向墓碑",
+  "mode": "FL2VA-last-frame",
+  "prompt": "Realistic cinematic wide shot on an overcast Chinese hillside cemetery matching the reference location, with rows of dark granite Chinese headstones engraved with gold characters. The man Gu Chuan, seen from behind, has walked up to one gravestone and stands before it; on the ledge of the headstone he has set a paper hot-drink cup and a small photo frame. Overcast blue-cyan cold light, slightly high contrast, clean, quiet, wind in the grass. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "shots/shot-15/images/unit-15-first.png"
+  ],
+  "generator": "GPT Image",
+  "note": "FL2VA尾帧:取热饮+相框走向墓碑(落点)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "墓园WS",
+      "取热饮+相框走向碑背影",
+      "阴天冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "deaf4f41521288eaa93ada4a99cdf53ab7c239aed2235130e4608a13ad08231a",
+    "mode": "FL2VA-last-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "墓园WS",
+      "取热饮+相框走向碑背影",
+      "阴天冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "deaf4f41521288eaa93ada4a99cdf53ab7c239aed2235130e4608a13ad08231a"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B15"
+    ],
+    "related_shots": [
+      "15"
+    ],
+    "visual_evidence": [
+      "他取热饮+相框",
+      "走向墓碑背影",
+      "阴天冷调"
+    ],
+    "unresolved_blockers": []
+  }
+}

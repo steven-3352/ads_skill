@@ -3,28 +3,68 @@
   "model": "MiniMax-H3",
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-01-first 关键帧",
-  "mode": "I2VA-first-frame",
-  "prompt": "写实电影感，冷白偏青的餐馆包间夜景，中景。林晚（长黑发、自然淡妆、素净偏冷上衣，神情克制）坐在圆桌边，面前小碟里躺着一只完整白灼虾，虾壳湿亮泛红、尾巴沾着水珠；前景虚化的同事小周正把第二只虾夹向她。构图偏紧，把林晚从热闹里隔开。冷线视觉语法。无字幕、无文字水印、无品牌。",
-  "output": null,
-  "status": "prompt_ready",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青的餐馆包间夜景，中景偏紧，写实Vlog机位。林晚（长黑发、自然淡妆、素净偏冷针织上衣，神情克制）坐在圆桌边，被前景虚化的男同事小周从画面左侧隔开。她正前方的小碟里躺着一只完整白灼虾，虾壳湿亮；桌面中央清晰摆着一只较大的公用白瓷圆盘，盘里还有几只白灼虾（公盘，作为明确落点）。小周压低筷子，正把夹着的第二只白灼虾往林晚的小碟上方送、即将放下（放虾入碟的动作起势）。封闭包间背景（暖木隔断、柔和壁灯，虚化），无落地窗、无城市夜景。冷线视觉语法：冷白偏青、干净、单人孤立构图。无字幕、无文字水印、无品牌。",
+  "output": "shots/shot-01/images/unit-01-first.png",
+  "status": "generated",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/lin-wan-master.png",
+    "assets/zhou-colleague-master.png",
+    "assets/restaurant-private-room.png",
+    "assets/shrimp-and-tableware.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "image",
-    "mode": "I2VA-first-frame",
+    "mode": "FL2VA-first-frame",
     "reviewed_at": "2026-09-11",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
+      "首帧作FL2VA起点：构图/公盘落点/放虾起势明确",
       "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "冷线视觉语法归属",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "dc2b1078dd971a58eae00ea882926f01de4973c546a1c1f9bab15193ec1087a1"
-  }
+    "reviewed_prompt_sha256": "e8fcfda3126fabe0cb91723cdf7939247d1a6a9e686646593205a6ebfce0c392"
+  },
+  "generator": "GPT Image",
+  "note": "首帧静图由 GPT Image(images/edits)生成，以 master/场景/道具图锚定身份防跨镜漂移；随后作为 MiniMax-H3 I2VA 的首帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T22:40:00Z",
+    "checks": [
+      "故事资产一致性(01-虾壳.md)",
+      "人物身份锚定(lin-wan/zhou master)",
+      "公盘落点清晰(居中白瓷圆盘)",
+      "放虾入碟动作起势可读",
+      "封闭包间(无落地窗城市景)",
+      "冷线视觉语法/单人孤立",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e8fcfda3126fabe0cb91723cdf7939247d1a6a9e686646593205a6ebfce0c392"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b01-hook"
+    ],
+    "related_shots": [
+      "01"
+    ],
+    "visual_evidence": [
+      "退回公盘的第一只完整白灼虾(Hook)",
+      "前景虚化同事把林晚从热闹里隔开",
+      "冷白偏青包间夜景中景",
+      "神情克制的现在·林晚"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "889406c3719fc33eff93d292618ea087161e2d8420f8e43c526ce6a53f695227",
+  "generation_time": "2026-09-11T23:00:00Z"
 }

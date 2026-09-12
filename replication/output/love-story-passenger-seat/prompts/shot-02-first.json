@@ -1,0 +1,59 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot02首帧·手握副驾安全带",
+  "mode": "FL2VA-first-frame",
+  "prompt": "Macro close-up photograph inside a car, looking at the passenger side. Subject fills the frame: a man's right hand reaching across and grasping the passenger-side seatbelt webbing, pulling it over an EMPTY beige passenger seat. Only the hand, the diagonal seatbelt strap, and the empty seat are visible. No human face anywhere in the scene, no head, not a portrait and not a wide cabin shot — a tight insert. Overcast blue-cyan cold daylight, slightly high contrast, clean, near-static locked camera. The passenger seat is clearly empty. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "FL2VA首帧:握住安全带(起点)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "手握安全带·空座",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1b8921ac2b9fe8301d1409ff19093e0b068fe9e8946d9dee3244ec492fd6da91",
+    "mode": "FL2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "手握安全带·空座",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1b8921ac2b9fe8301d1409ff19093e0b068fe9e8946d9dee3244ec492fd6da91"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B2"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "手握副驾安全带",
+      "副驾空",
+      "冷调"
+    ],
+    "unresolved_blockers": []
+  }
+}

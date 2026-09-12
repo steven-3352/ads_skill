@@ -1,0 +1,38 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "scene02 S3 视频(陈屿剥虾·反打)",
+  "mode": "I2VA",
+  "shot": "scene-02-cov",
+  "unit": "s3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] (Clean frame, no text overlays anywhere.) Live-action, cinematic, vertical 9:16, warm tungsten light, shallow depth of field; a medium single of Chen Yu, preserved from Picture 1, looking down and unhurriedly peeling a boiled shrimp with both hands, a faint doting smile, and replying without looking up: <d>[Chinese]着什么急。</d> Warm bokeh table behind him. Absolutely NO subtitles, NO closed captions, NO dialogue captions, NO on-screen text of any kind, NO pinyin, NO title cards, NO watermark and NO logo anywhere in frame. Every spoken line must appear ONLY as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.\n\noverall_soundscape: Warm dinner chatter, close; soft peeling of a shrimp shell.\n\nnon_diegetic_music: Warm strings continue tenderly.",
+  "images": [
+    "shots/scene-02-cov/images/s3-chenyu.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/scene-02-cov/video/s3.mp4",
+  "status": "prompt_ready",
+  "note": "scene-02覆盖样板S3反打。生成5s剪~2.5s。 去字幕指令改英文单语,除<d>对白外提示词无中文,杜绝指令中文泄漏为配音/烧字。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T11:40:00Z",
+    "checks": [
+      "I2VA反打·陈屿低头剥虾(与S2正打成对)",
+      "对白<d>逐字(着什么急)",
+      "对白仅口型+声音,画面无字",
+      "竖9:16暖线",
+      "强化去字幕约束"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6d3a9b70f3ce6e808342d16dd088e967608e321889bfb5252e79a267d21e89b6"
+  }
+}

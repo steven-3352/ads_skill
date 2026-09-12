@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot11首帧·手悬空笑意凝住",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid moment. The man Gu Chuan in the driver seat, his right hand hovering in the empty air above the empty passenger seat, a faint smile freezing on his face as he realizes; overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera; the empty buckled seat and two paper cups visible. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "现在冷线;手悬空、笑意凝住。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "他单人·抓拍",
+      "手悬空·笑意凝住",
+      "空座入画·冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2fd3a7d62ca7d79bd12c36b15322ee2eef6fd85e67dc50c7c73685e907c22535",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "他单人·抓拍",
+      "手悬空·笑意凝住",
+      "空座入画·冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2fd3a7d62ca7d79bd12c36b15322ee2eef6fd85e67dc50c7c73685e907c22535"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B11"
+    ],
+    "related_shots": [
+      "11"
+    ],
+    "visual_evidence": [
+      "手悬空副驾上方",
+      "笑意凝住",
+      "空座+两杯",
+      "冷调"
+    ],
+    "unresolved_blockers": []
+  }
+}

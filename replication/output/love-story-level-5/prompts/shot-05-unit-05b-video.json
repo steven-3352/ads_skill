@@ -1,0 +1,40 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05 / unit-05b H3 视频(FL2VA·桌下脚尖碰鞋)",
+  "mode": "FL2VA",
+  "shot": "05",
+  "unit": "unit-05b",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16, warm tungsten light spilling down under a dinner table; an extreme low-angle close-up under the table showing only two pairs of legs and shoes — Lin Wan's light-colored shoes and Chen Yu's dark shoes — plus table legs and floor, with no faces and no upper bodies in frame, preserved from Picture 1 where her shoe tip is near his shoe. Slowly and tenderly, matching Picture 2, the tip of Lin Wan's shoe lightly taps and comes to rest against Chen Yu's shoe, and his shoe gives a small answering shift. Intimate, quiet, the single most tender beat of the film. No subtitles, no on-screen captions, no burned-in text, no watermark.\n\noverall_soundscape: Warm laughter and table chatter, muffled and distant above; a soft, small tap of a shoe against a shoe.\n\nnon_diegetic_music: Warm strings, tender and hushed, a gentle swell on the touch.",
+  "images": [
+    "shots/shot-05/images/unit-05b-first.png",
+    "shots/shot-05/images/unit-05b-last.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-05/video/unit-05b.mp4",
+  "status": "prompt_ready",
+  "note": "暖线四年前·桌下脚尖碰鞋插镜(新增,补齐原unit-05缺失的b05-toe)。脚尖碰鞋=离散接触→FL2VA首尾帧强制演出。无对白。桌下极近景防渲染成人物。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T09:40:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=脚尖将碰未碰,<Picture2>=脚尖已碰上鞋)",
+      "FL2VA强制演出脚尖碰鞋离散接触动作",
+      "桌下极近景·面部/上半身完全不入画",
+      "无对白(私密无声beat)·仅氛围声",
+      "暖线·全片唯一亲密",
+      "显式no subtitles/no on-screen text/no watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "28ad9b140993f6e23ffd08deacef34357be5169455b7a8d553f42e54c9110ccd"
+  }
+}

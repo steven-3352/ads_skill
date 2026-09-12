@@ -3,28 +3,64 @@
   "model": "MiniMax-H3",
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-07a-first 关键帧",
-  "mode": "I2VA-first-frame",
-  "prompt": "写实电影感，冷白偏青餐馆包间夜景中景。同事小周把一只剥好的虾放进林晚碗里，随即转身加入另一边的谈话；林晚神情克制地看着碗。前景虚化的同事把她隔开。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青的餐馆包间夜景中景，与分镜01同一包间。同事小周刚把一只剥好的虾放进林晚碗里（虾已在碗中）、正收回筷子，并转头和旁边的人继续说笑（仍坐在原位、不起身、不离座）；林晚神情克制地垂眼看着碗里那只虾。前景虚化的男同事把她从喧闹里隔开。冷线视觉语法：冷白偏青、干净、单人孤立。无字幕、无文字水印、无品牌。",
   "output": null,
   "status": "prompt_ready",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/lin-wan-master.png",
+    "assets/zhou-colleague-master.png",
+    "assets/restaurant-private-room.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "image",
-    "mode": "I2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "I2VA:给虾摆成帧起点已完成→规避转移漏演",
+      "小周转头(非转身走人)",
+      "人物身份锚定(lin-wan/zhou)+包间场景锚",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "964c4027b7d17b004f42bd18baf1cffcb93ee3dc326aed6cc4661bac7b49cfda"
+    "reviewed_prompt_sha256": "6682494849aafa6b1a3b4a68623ee41cab0fc9a6cb5143346f47c78cf2c7b0aa"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "I2VA:给虾摆成帧起点已完成→规避转移漏演",
+      "小周转头(非转身走人)",
+      "人物身份锚定(lin-wan/zhou)+包间场景锚",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6682494849aafa6b1a3b4a68623ee41cab0fc9a6cb5143346f47c78cf2c7b0aa"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b07-give"
+    ],
+    "related_shots": [
+      "07a"
+    ],
+    "visual_evidence": [
+      "小周已把虾放进林晚碗(虾已在碗中)·收回筷子",
+      "小周转头继续说笑(不起身不离座)",
+      "林晚克制垂眼看碗",
+      "前景虚化同事隔开·冷线单人孤立"
+    ],
+    "unresolved_blockers": []
   }
 }

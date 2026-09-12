@@ -1,0 +1,67 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05-last 关键帧",
+  "mode": "FL2VA-last-frame",
+  "prompt": "写实电影感、四年前公司聚餐夜景，与首帧同一暖光、同机位（钨丝金橙、轻胶片颗粒）。那只剥好的虾此刻已落在林晚碗里（转移完成）；林晚低头咬下这只虾的第一口、肩膀明显松下来、嘴角带着满足的笑；老赵已收回筷子、陈屿仍在身旁。桌下不可见（脚尖碰鞋为氛围）。暖满笑意。暖线视觉语法。FL2VA终态：虾已在碗+咬第一口+肩膀松。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "shots/shot-05/images/unit-05-first.png",
+    "assets/lin-wan-master.png",
+    "assets/chen-yu-master.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "FL2VA终态锁:虾在碗+咬第一口+肩松(强制演出转移与松弛)",
+      "引用首帧锁机位/连续性",
+      "人物身份锚定",
+      "暖线/被偏爱底色",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ef98b117d5472725cb4ee586d831533a917a1b05be81f98894c3bb563f6083b7"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "FL2VA终态锁:虾在碗+咬第一口+肩松(强制演出转移与松弛)",
+      "引用首帧锁机位/连续性",
+      "人物身份锚定",
+      "暖线/被偏爱底色",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ef98b117d5472725cb4ee586d831533a917a1b05be81f98894c3bb563f6083b7"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b05-give",
+      "b05-toe"
+    ],
+    "related_shots": [
+      "05"
+    ],
+    "visual_evidence": [
+      "虾已在林晚碗里(转移完成)",
+      "林晚咬第一口·肩膀松下·嘴角笑(全片唯一亲密的暖)",
+      "老赵收回筷子",
+      "与首帧同暖光同机位"
+    ],
+    "unresolved_blockers": []
+  }
+}

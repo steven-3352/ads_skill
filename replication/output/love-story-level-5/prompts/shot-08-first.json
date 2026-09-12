@@ -4,11 +4,12 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-08-first 关键帧",
   "mode": "FL2VA-first-frame",
-  "prompt": "写实电影感，冷白偏青餐馆洗手台旁夜景，食指近景机位（与四年前陈屿受伤手指镜头同机位、同景别对仗）。林晚独自低头剥一只完整白灼虾，指尖捏住虾壳中缝。安静、孤立。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "prompt": "写实电影感，冷白偏青的餐馆包间·原桌夜景（与分镜01/04同一张餐桌）。极近景手部特写：画面只见林晚的双手与小臂，面部完全不入画——与分镜04陈屿受伤手指镜头同一景别、同一裁切、同一手指入画方向对仗（签名B，仅冷/暖光不同）。她的双手与那只完整白灼虾几乎填满画面，手指正捏住虾壳中缝准备剥壳，指尖是绝对视觉焦点，手指此刻完好、尚未受伤（FL2VA起点）。桌面浅景深虚化，一角隐约可见她那只已空的小碟。冷白偏青、干净、安静。禁止中景/半身/人物肖像/面部入画，禁止分屏、上下双格、连环画。无字幕、无文字水印、无品牌。",
   "output": null,
   "status": "prompt_ready",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/lin-wan-master.png",
+    "assets/restaurant-private-room.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -16,15 +17,51 @@
     "result": "pass",
     "asset_type": "image",
     "mode": "FL2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA起点:手指完好",
+      "景别锁:极近景手部特写·面部完全不入画(修正前版本渲染成人物肖像)",
+      "与分镜04同景别/裁切/手指入画方向对仗(签名B payoff)",
+      "硬约束:禁止中景/半身/肖像/面部入画·禁止分屏双格连环画",
+      "原桌无场景跳(非洗手台)·人物/场景锚定",
+      "冷线视觉语法·无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "508f40486fd7801cd11899660bd0510c3a6ee2c84503f01dbe0affa502d242af"
+    "reviewed_prompt_sha256": "6bb2e57b296d89a28799bf3b8d1cccf3885c2ddd5753c13ee129c70541b0d708"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "FL2VA起点:手指完好",
+      "景别锁:极近景手部特写·面部完全不入画(修正前版本渲染成人物肖像)",
+      "与分镜04同景别/裁切/手指入画方向对仗(签名B payoff)",
+      "硬约束:禁止中景/半身/肖像/面部入画·禁止分屏双格连环画",
+      "原桌无场景跳(非洗手台)·人物/场景锚定",
+      "冷线视觉语法·无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6bb2e57b296d89a28799bf3b8d1cccf3885c2ddd5753c13ee129c70541b0d708"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b08-prick"
+    ],
+    "related_shots": [
+      "08"
+    ],
+    "visual_evidence": [
+      "极近景手部特写:只见双手与小臂,面部完全不入画",
+      "双手与完整白灼虾填满画面·指尖捏虾壳中缝(手指完好·受伤前起点)",
+      "与分镜04陈屿手指镜头同景别/同裁切对仗(签名B)",
+      "原桌(与01/04同桌)·冷线"
+    ],
+    "unresolved_blockers": []
   }
 }

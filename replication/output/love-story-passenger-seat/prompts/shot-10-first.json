@@ -1,0 +1,67 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot10首帧·红灯空手(签名A·payoff/空气/冷)",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感、纪实抓拍瞬间，竖构图9:16。现在·阴天清晨、青蓝冷调、对比略高、干净。红灯停车。**与前一镜完全相同的机位与景别**(相机在中控偏后、略朝副驾)：驾驶座上的顾川(短寸黑发、深灰夹克、比暖线更疲惫克制)左手扶方向盘，**右手抬起伸向副驾——但副驾空无一人、只系着一条安全带**；他的右手停在空荡的座位上方的空气里。副驾座空、安全带斜系、杯架里有两只纸杯。焦点是这只伸进“空气”里的右手与那个空座的对照。冷线视觉语法、近静止。禁止出现任何人在副驾。 Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "签名对仗A的“空气”一侧;机位/景别/右手动作与shot07严格对齐,只是副驾空+冷调。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "签名机位A·空气(payoff)",
+      "右手伸向空副驾·冷调",
+      "身份锚gu-chuan+车厢空间",
+      "副驾必须空·与shot07严格对仗",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0211aa477dc0c1fbe05ed86cc04db72ae2562e08cd88bc1c150a13a834113f37",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "签名机位A·空气(payoff)",
+      "右手伸向空副驾·冷调",
+      "身份锚gu-chuan+车厢空间",
+      "副驾必须空·与shot07严格对仗",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0211aa477dc0c1fbe05ed86cc04db72ae2562e08cd88bc1c150a13a834113f37"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B10"
+    ],
+    "related_shots": [
+      "10",
+      "07"
+    ],
+    "visual_evidence": [
+      "同机位同动作右手伸向副驾",
+      "副驾空+安全带斜系+两杯",
+      "冷青蓝调",
+      "空手与空座对照(焦点)",
+      "与shot07对仗"
+    ],
+    "unresolved_blockers": []
+  }
+}

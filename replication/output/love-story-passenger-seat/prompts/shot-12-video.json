@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-12 H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "12",
+  "unit": "unit-12",
+  "prompt": "How the reference picture aligns with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera, extreme close-up insert on the center-console audio knob with the empty passenger seat behind, no face in frame. Matches Picture 1. Her song is still playing; the man's fingers gently turn down the balance toward \"her side,\" and the sound on the passenger side fades away. Quiet, aching.\n\noverall_soundscape: Her warm song playing, then the passenger-side channel dimming to near silence as the knob turns; quiet cabin.\n\nnon_diegetic_music: Her song, fading on one side — the sound bridge closing. Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-12/images/unit-12-first.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-12/video/unit-12.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "I2VA首帧发展",
+      "关小她那侧音量·声音桥B兑现",
+      "冷线",
+      "NOTEXT英文-only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e21d5d4160bded0931eb30cc8ae63eb90d844e807550c5fe36a21baac112964f"
+  }
+}

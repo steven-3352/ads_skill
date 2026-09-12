@@ -76,6 +76,32 @@ if [[ "${#CLI_REFERENCES[@]}" -gt 0 ]]; then
 else
   REFERENCES="$(jq -c '.references // []' "$PROMPT_FILE")"
 fi
+
+# 生成门禁（不可绕过）：静物/插入镜的"肖像磁吸"。
+# images/edits(图生图)端点会过度保留参考图构图——给插入/静物镜喂人物参考，
+# 输出会被拽成肖像脸(实测：咖啡杯→挡风玻璃、道具→开车的女人、手部插入→人脸)。
+# 规则：判定为插入/静物镜时禁止携带任何参考图，必须走文生图(images/generations)。
+if [[ "$REFERENCES" != "[]" ]]; then
+  PROMPT_LC="$(printf '%s' "$PROMPT" | tr '[:upper:]' '[:lower:]')"
+  INSERT_HITS=0
+  for kw in "tight insert" "still-life" "still life" "insert shot" "macro close-up" \
+            "macro product" "fills the frame" "面部不入画" "no human face" \
+            "not a portrait" "not a wide" "填满画面"; do
+    [[ "$PROMPT_LC" == *"$kw"* ]] && INSERT_HITS=$((INSERT_HITS + 1))
+  done
+  if [[ "$INSERT_HITS" -ge 2 ]]; then
+    # 可审计豁免：人工验收过的"物体锚定插入镜"(被一张紧物体参考主导、成片正确)可在
+    # 提示词 JSON 里显式写 "insert_ref_verified": true 放行。默认(缺省/false)仍硬拦。
+    INSERT_ACK="$(jq -r '.insert_ref_verified // false' "$PROMPT_FILE" 2>/dev/null || echo false)"
+    if [[ "$INSERT_ACK" != "true" ]]; then
+      REF_N="$(jq 'length' <<< "$REFERENCES")"
+      echo "生成门禁拦截：检测到插入/静物镜特征(命中 $INSERT_HITS 项关键词)但携带 $REF_N 张参考图。" >&2
+      echo "images/edits 会'肖像磁吸'导致主体走形。插入/静物镜默认必须文生图：去掉 --reference 且 JSON .references 置空。" >&2
+      echo "若确为已验收的物体锚定插入镜，在提示词 JSON 加 \"insert_ref_verified\": true 显式豁免(可审计)。" >&2
+      exit 4
+    fi
+  fi
+fi
 mkdir -p "$(dirname "$OUTPUT")"
 
 TEMP_DIR="$(mktemp -d)"

@@ -1,11 +1,46 @@
 {
   "asset_type": "image",
-  "model": "MiniMax-H3",
-  "authoring_skill": "h3-prompt-writing",
-  "title": "小周人物参考",
+  "model": "GPT Image",
+  "authoring_skill": "imagegen",
+  "title": "小周人物参考（现在·冷线同事）",
   "prompt": "写实中国男性同事约28岁，普通餐馆聚餐服装，自然状态，三视图，灰色背景，无文字水印。",
   "output": null,
-  "status": "prompt_ready",
+  "status": "approved_for_generation",
   "references": [],
-  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+  "note": "提示词经 seedance-prompt-zh 审查通过；公共基础资产用 GPT Image 生成静态参考图（H3 锁定为视频模型）。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T21:30:00Z",
+    "checks": [
+      "故事资产一致性",
+      "人物/场景身份约束",
+      "无文字水印",
+      "无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ea092121d85e97fe04c4282be947915190a39aa63f5432d0066fb2dd5847fbbc"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b01-hook",
+      "b02-crack",
+      "b07-give"
+    ],
+    "related_shots": [
+      "01",
+      "02",
+      "07"
+    ],
+    "visual_evidence": [
+      "与林晚无情感联系的礼貌同事",
+      "三视图身份可复用",
+      "前景虚化隔离物功能",
+      "无文字水印"
+    ],
+    "unresolved_blockers": []
+  }
 }

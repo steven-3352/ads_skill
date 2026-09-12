@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot05首帧·她伸手换歌",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid moment (not posed). Single of the woman Su Xiao (long wavy hair, beige knit) in the passenger seat, reaching out toward the round audio knob on the center console to change the song, mischievous smile; sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows, breathing handheld. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/su-xiao-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "暖线;她抢换歌(接台词我的车我做主)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "她单人·抓拍非摆拍",
+      "伸手拧音响旋钮",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2d1a8d68364fbbf91e347888e2a308ec2a99e34dc866a135cdaf588799465baa",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "她单人·抓拍非摆拍",
+      "伸手拧音响旋钮",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2d1a8d68364fbbf91e347888e2a308ec2a99e34dc866a135cdaf588799465baa"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B5"
+    ],
+    "related_shots": [
+      "05"
+    ],
+    "visual_evidence": [
+      "她伸手拧中控旋钮",
+      "俏皮",
+      "暖线",
+      "呼吸手持"
+    ],
+    "unresolved_blockers": []
+  }
+}

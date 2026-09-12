@@ -1,0 +1,38 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-15 H3 视频(FL2VA)",
+  "mode": "FL2VA",
+  "shot": "15",
+  "unit": "unit-15",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video; Picture 2 (last frame) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, exterior hillside cemetery under overcast sky, overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera. Picture 1 (man beside the car, passenger side) develops through the interpolation to Picture 2 (man walking toward a nearby gravestone from behind): the man Gu Chuan opens the passenger door, lifts out a paper hot-drink cup and the photo frame, closes the door, and walks toward a nearby gravestone. One unbroken take, quiet exhale.\n\noverall_soundscape: Wind over the hillside, a car door opening and closing, gravel underfoot; distant birds; no music yet, then rising.\n\nnon_diegetic_music: A restrained, aching string swell entering as he walks. Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-15/images/unit-15-first.png",
+    "shots/shot-15/images/unit-15-last.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-15/video/unit-15.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "FL2VA首尾锁",
+      "开副驾门→取热饮+相框→走向碑",
+      "墓园长镜收",
+      "NOTEXT英文-only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1b4e04763d1b0510692361095dba4b1429817f5c3738db84f238c531c6d71a8c"
+  }
+}

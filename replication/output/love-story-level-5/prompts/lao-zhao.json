@@ -1,11 +1,42 @@
 {
   "asset_type": "image",
-  "model": "MiniMax-H3",
-  "authoring_skill": "h3-prompt-writing",
-  "title": "老赵人物参考",
+  "model": "GPT Image",
+  "authoring_skill": "imagegen",
+  "title": "老赵人物参考（四年前·暖线同事）",
   "prompt": "写实中国男性同事约35岁，普通聚餐服装，自然状态，三视图，灰色背景，无文字水印。",
   "output": null,
-  "status": "prompt_ready",
+  "status": "approved_for_generation",
   "references": [],
-  "note": "提示词已按H3图片资产规范整理；等待生成执行。"
+  "note": "提示词经 seedance-prompt-zh 审查通过；公共基础资产用 GPT Image 生成静态参考图（H3 锁定为视频模型）。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T21:30:00Z",
+    "checks": [
+      "故事资产一致性",
+      "人物/场景身份约束",
+      "无文字水印",
+      "无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ce338ddeee405fd95b51f20d76e568eef9c31ff6000e73977d9e041fb0dad726"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b05-give"
+    ],
+    "related_shots": [
+      "05"
+    ],
+    "visual_evidence": [
+      "桌对面讨虾被陈屿挡回的反衬角色",
+      "三视图身份可复用",
+      "仅场景2出现",
+      "无文字水印"
+    ],
+    "unresolved_blockers": []
+  }
 }

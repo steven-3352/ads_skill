@@ -1,0 +1,64 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot04首帧·她脚搭台大笑(暖线建立)",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid moment (not posed). A warm two-shot inside the car: the woman Su Xiao (long wavy hair, beige knit) in the passenger seat with her feet playfully up on the dashboard, laughing carefree; the man Gu Chuan drives, glancing at her with a fond look; sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows, breathing handheld feel. Full of life. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/car-interior.png",
+    "assets/gu-chuan-master.png",
+    "assets/su-xiao-master.png"
+  ],
+  "generator": "GPT Image",
+  "note": "四年前暖线建立;她鲜活没心没肺。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "关系景双人·抓拍非摆拍",
+      "她脚搭台大笑",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3b8f794f05461e8b30609895a83045dd43136658345a6b10e6cf7f0409c55b47",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "关系景双人·抓拍非摆拍",
+      "她脚搭台大笑",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3b8f794f05461e8b30609895a83045dd43136658345a6b10e6cf7f0409c55b47"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B4"
+    ],
+    "related_shots": [
+      "04"
+    ],
+    "visual_evidence": [
+      "双人关系景",
+      "她脚搭仪表台大笑",
+      "他宠溺",
+      "暖钨丝金光"
+    ],
+    "unresolved_blockers": []
+  }
+}

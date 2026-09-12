@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot08首帧·她蹭掌心",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid close-up. The woman Su Xiao nuzzles her cheek into the man's open palm like a cat, eyes squinting shut, blissful; shallow depth of field; sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/su-xiao-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "暖线;她像猫蹭进他掌心眯眼。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "她CU·蹭掌心眯眼",
+      "浅景深",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "46592570005791f31e2114a1dae5075b2cdfe58fb91c92872cefcd90da9be56b",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "她CU·蹭掌心眯眼",
+      "浅景深",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "46592570005791f31e2114a1dae5075b2cdfe58fb91c92872cefcd90da9be56b"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B8"
+    ],
+    "related_shots": [
+      "08"
+    ],
+    "visual_evidence": [
+      "她蹭进掌心",
+      "眯眼幸福",
+      "浅景深",
+      "暖线"
+    ],
+    "unresolved_blockers": []
+  }
+}

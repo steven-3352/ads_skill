@@ -1,0 +1,68 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05b-last 关键帧(桌下脚尖·已碰)",
+  "mode": "FL2VA-last-frame",
+  "prompt": "写实电影感、桌下低机位极近景,与首帧同一机位、竖画幅9:16。画面只见桌下两双鞋与小腿、桌腿与地面,面部与上半身完全不入画。林晚的脚尖此刻已轻轻碰上陈屿的鞋(接触完成、轻触停留),陈屿的鞋有一个极细微的回应。钨丝暖光漏下、浅景深、私密。FL2VA终态:脚尖已碰上鞋。禁止中景/半身/人物肖像/面部入画。 无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/lin-wan-master.png",
+    "assets/chen-yu-master.png",
+    "shots/shot-05/images/unit-05b-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "FL2VA终态:脚尖已碰上鞋(离散接触动作)",
+      "景别锁:桌下极近景·面部不入画",
+      "与首帧同机位",
+      "硬约束:禁止中景/半身/肖像/面部入画",
+      "暖线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c3543e6862fc228dc75bd27300f777b431b54268ef4b2e939e9798904f2af0c0"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(gpt-image-2, size 768x1344)生成,锚定身份与机位;作为 MiniMax-H3 输入。H3 为唯一视频模型。画幅768x1344精确匹配H3 768P输出以消除拉伸变形。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T09:30:00Z",
+    "checks": [
+      "FL2VA终态:脚尖已碰上鞋(离散接触动作)",
+      "景别锁:桌下极近景·面部不入画",
+      "与首帧同机位",
+      "硬约束:禁止中景/半身/肖像/面部入画",
+      "暖线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c3543e6862fc228dc75bd27300f777b431b54268ef4b2e939e9798904f2af0c0"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b05-toe"
+    ],
+    "related_shots": [
+      "05"
+    ],
+    "visual_evidence": [
+      "桌下极近景:只见两双鞋·面部完全不入画",
+      "林晚脚尖已碰上陈屿鞋(接触完成)",
+      "陈屿鞋极细微回应",
+      "暖线同机位"
+    ],
+    "unresolved_blockers": []
+  }
+}

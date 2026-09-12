@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "车厢内饰 master(空间锚)",
+  "mode": "still-master",
+  "prompt": "写实电影感车厢内饰空间参考图，竖构图9:16。一辆米灰内饰紧凑型轿车的前排：从后排视角看向前挡风玻璃，可见并排的驾驶座与副驾座、方向盘、中控台上的圆形音响旋钮、档杆、两个杯架。日光中性、车内干净、无人。用作所有车内镜头的空间地理基准(座位/旋钮/档杆/杯架位置固定)。 Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "车厢空间锚,固定座位/旋钮/档杆/杯架的相对位置,保证车内所有镜头空间连续。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "车厢空间地理锚",
+      "双座/旋钮/档杆/杯架位置固定",
+      "中性日光无人",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "17bc335f07aad2e892cb3dddf01af3e46410b6414d2e161a311edf6770ad3de4",
+    "mode": "still-master"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "车厢空间地理锚",
+      "双座/旋钮/档杆/杯架位置固定",
+      "中性日光无人",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "17bc335f07aad2e892cb3dddf01af3e46410b6414d2e161a311edf6770ad3de4"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B1",
+      "B7",
+      "B10"
+    ],
+    "related_shots": [
+      "all-car"
+    ],
+    "visual_evidence": [
+      "前排双座+挡风+旋钮+档杆+双杯架",
+      "米灰内饰日光",
+      "无人空间锚"
+    ],
+    "unresolved_blockers": []
+  }
+}

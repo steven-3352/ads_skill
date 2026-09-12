@@ -1,0 +1,67 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05a-last 关键帧(咬第一口肩松)",
+  "mode": "FL2VA-last-frame",
+  "prompt": "写实电影感、纪实抓拍(绝非摆拍)、与首帧同一暖光同机位、竖画幅9:16、浅景深。那只虾此刻已落进林晚面前的碗里(转移完成、陈屿的筷子已放开);林晚低头咬下这只虾的第一口、肩膀明显松下来、嘴角带着满足的笑,不看镜头;原先从画面左缘伸入的那双筷子(老赵)已收回消失;陈屿侧身在她右侧旁边。暖满笑意。暖线视觉语法。FL2VA终态:虾已在碗+林晚咬第一口+肩膀松。禁止摆拍合影/正脸看镜头/静态双人肖像。 无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/chen-yu-master.png",
+    "assets/lin-wan-master.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "FL2VA终态:虾已在碗+咬第一口+肩松",
+      "纪实抓拍非摆拍·与首帧同机位同暖光",
+      "老赵筷子已收回(呼应首帧挡筷)",
+      "硬约束:禁止摆拍合影/正脸/静态双人肖像",
+      "身份锚定chen-yu/lin-wan·暖线",
+      "竖构图9:16·无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3de4af3b84b447f17c23c611120ae4d9367cdf5a46610b64142baf0740e5a2f1"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(gpt-image-2, size 768x1344)生成,锚定身份与机位;作为 MiniMax-H3 输入。H3 为唯一视频模型。画幅768x1344精确匹配H3 768P输出以消除拉伸变形。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T09:30:00Z",
+    "checks": [
+      "FL2VA终态:虾已在碗+咬第一口+肩松",
+      "纪实抓拍非摆拍·与首帧同机位同暖光",
+      "老赵筷子已收回(呼应首帧挡筷)",
+      "硬约束:禁止摆拍合影/正脸/静态双人肖像",
+      "身份锚定chen-yu/lin-wan·暖线",
+      "竖构图9:16·无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3de4af3b84b447f17c23c611120ae4d9367cdf5a46610b64142baf0740e5a2f1"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b05-give"
+    ],
+    "related_shots": [
+      "05"
+    ],
+    "visual_evidence": [
+      "虾已在林晚碗(转移完成·筷已放开)",
+      "林晚低头咬第一口·肩膀松·满足笑·不看镜头",
+      "老赵筷子已收回消失",
+      "陈屿侧身在旁·暖线同机位"
+    ],
+    "unresolved_blockers": []
+  }
+}

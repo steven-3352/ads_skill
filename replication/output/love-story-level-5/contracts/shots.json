@@ -5,14 +5,92 @@
   "sourceOfTruth": "contracts/production-plan.json",
   "note": "本文件为派生索引，唯一真源是 production-plan.json；review/template.js 直接读取 production-plan.json 渲染。保留此文件仅为兼容旧引用，勿手工改动 shot 内容。",
   "shots": [
-    {"id": "01", "title": "现在：退虾拒绝（Hook）", "timeline": "now", "inputMode": "I2VA", "beats": ["b01-hook"]},
-    {"id": "02", "title": "现在→四年前：脆响触发（签名A 出）", "timeline": "now", "inputMode": "FL2VA", "beats": ["b02-crack"]},
-    {"id": "03", "title": "四年前：剥虾催促（签名A 入）", "timeline": "then", "inputMode": "I2VA", "beats": ["b03-in", "b03-urge"]},
-    {"id": "04", "title": "四年前：扎伤手指·陈屿（签名B 锚）", "timeline": "then", "inputMode": "FL2VA", "beats": ["b04-prick"]},
-    {"id": "05", "title": "四年前：拒老赵·给林晚·脚尖碰鞋", "timeline": "then", "inputMode": "I2VA", "beats": ["b05-give", "b05-toe"]},
-    {"id": "06", "title": "四年前·出租屋：辣度分区·创可贴·嘴硬", "timeline": "then", "inputMode": "I2VA", "beats": ["b06-spice", "b06-bandaid"]},
-    {"id": "07", "title": "现在：递剥好虾·空碗底·夹回完整虾（落差）", "timeline": "now", "inputMode": "I2VA+FL2VA", "beats": ["b07-give", "b07-empty"]},
-    {"id": "08", "title": "现在·洗手台：独自剥虾·扎伤·林晚（签名B 兑现）", "timeline": "now", "inputMode": "FL2VA", "beats": ["b08-prick"]},
-    {"id": "09", "title": "现在：旁白揭示与回扣·切黑", "timeline": "now", "inputMode": "I2VA", "beats": ["b09-eat", "b09-vo", "b09-shells"]}
+    {
+      "id": "01",
+      "title": "现在：退虾拒绝（Hook）",
+      "timeline": "now",
+      "inputMode": "I2VA",
+      "beats": [
+        "b01-hook"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "现在→四年前：脆响触发（签名A 出）",
+      "timeline": "now",
+      "inputMode": "FL2VA",
+      "beats": [
+        "b02-crack"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "四年前：剥虾催促（签名A 入）",
+      "timeline": "then",
+      "inputMode": "I2VA",
+      "beats": [
+        "b03-in",
+        "b03-urge"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "四年前：扎伤手指·陈屿（签名B 锚）",
+      "timeline": "then",
+      "inputMode": "FL2VA",
+      "beats": [
+        "b04-prick"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "四年前：拒老赵·给林晚·脚尖碰鞋",
+      "timeline": "then",
+      "inputMode": "I2VA",
+      "beats": [
+        "b05-give",
+        "b05-toe"
+      ]
+    },
+    {
+      "id": "06",
+      "title": "四年前·出租屋：辣度分区·创可贴·嘴硬",
+      "timeline": "then",
+      "inputMode": "I2VA",
+      "beats": [
+        "b06-spice",
+        "b06-bandaid"
+      ]
+    },
+    {
+      "id": "07",
+      "title": "现在：递剥好虾·空碗底·夹回完整虾（落差）",
+      "timeline": "now",
+      "inputMode": "I2VA+FL2VA",
+      "beats": [
+        "b07-give",
+        "b07-empty"
+      ]
+    },
+    {
+      "id": "08",
+      "title": "现在·同桌：独自剥虾·扎伤·林晚（签名B 兑现）",
+      "timeline": "now",
+      "inputMode": "FL2VA",
+      "beats": [
+        "b08-prick"
+      ]
+    },
+    {
+      "id": "09",
+      "title": "现在：旁白揭示与回扣·切黑",
+      "timeline": "now",
+      "inputMode": "I2VA",
+      "beats": [
+        "b09-eat",
+        "b09-vo",
+        "b09-shells"
+      ]
+    }
   ]
 }

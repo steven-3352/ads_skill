@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot12首帧·关小她那侧音量",
+  "mode": "I2VA-first-frame",
+  "prompt": "Macro close-up photograph inside a car center console. Subject fills the frame: a man's fingers resting on the round audio/balance knob of the center console, turning it; behind the console the EMPTY beige passenger seat is visible, softly out of focus. Only the hand, the knob, and the empty seat are visible. No human face anywhere in the scene, no head, not a portrait and not a wide cabin shot — a tight insert. Overcast blue-cyan cold daylight, slightly high contrast, clean, near-static locked camera. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "现在冷线;声音桥B——关小她那侧音量。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "拧音量旋钮+空副驾",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6ecb8cc6d43d096b3a5ab23083eafb863c4ec88d7c9a036a906cbf47d8129bf7",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "拧音量旋钮+空副驾",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6ecb8cc6d43d096b3a5ab23083eafb863c4ec88d7c9a036a906cbf47d8129bf7"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B12"
+    ],
+    "related_shots": [
+      "12"
+    ],
+    "visual_evidence": [
+      "手指拧音量旋钮",
+      "空副驾在后",
+      "冷调",
+      "无人脸插入"
+    ],
+    "unresolved_blockers": []
+  }
+}

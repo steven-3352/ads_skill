@@ -4,11 +4,12 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-07b-first 关键帧",
   "mode": "FL2VA-first-frame",
-  "prompt": "写实电影感，冷白偏青餐馆包间手部近景。林晚用筷子拨开剥好虾肉表面沾着的一点葱花，露出底下空着的碗底。冷调、干净、孤立。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "prompt": "写实电影感，冷白偏青的餐馆包间手部近景。林晚用筷子拨开碗里那只剥好虾肉表面沾着的一点葱花，露出底下空着的碗底（除这只虾外空无一物）。冷调、干净、孤立。冷线视觉语法。FL2VA起点。无字幕、无文字水印、无品牌。",
   "output": null,
   "status": "prompt_ready",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "shots/shot-07/images/unit-07a-first.png",
+    "assets/lin-wan-master.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -16,15 +17,48 @@
     "result": "pass",
     "asset_type": "image",
     "mode": "FL2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA起点:空碗底可读",
+      "引用07a帧保持桌面连续",
+      "人物/场景锚定",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "1fa69dcd3c1c17b073dffe60d5be31046ce7cc97c0d85219e45d7c80dc15d540"
+    "reviewed_prompt_sha256": "bdee452dfc1a352fd0ccf4783fac552dcb24aedaa09810897aab6b980e79805e"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "FL2VA起点:空碗底可读",
+      "引用07a帧保持桌面连续",
+      "人物/场景锚定",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bdee452dfc1a352fd0ccf4783fac552dcb24aedaa09810897aab6b980e79805e"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b07-empty"
+    ],
+    "related_shots": [
+      "07b"
+    ],
+    "visual_evidence": [
+      "拨开葱花露出空碗底(落差起点)",
+      "手部近景·冷调干净孤立",
+      "承接07a同一包间桌面"
+    ],
+    "unresolved_blockers": []
   }
 }

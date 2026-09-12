@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-10 H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "10",
+  "unit": "unit-10",
+  "prompt": "How the reference picture aligns with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera, inside a beige-interior car, LOCKED camera identical framing to the earlier hair-ruffle shot, red traffic light ahead. Matches Picture 1. At the red light the man Gu Chuan lifts his right hand off the wheel and reaches toward the passenger seat exactly as before — but the seat is empty; his hand reaches into empty air above the empty buckled seat where two paper cups sit. Cold, still, the warmth gone.\n\noverall_soundscape: Idling engine, wipers, distant traffic; the warm song now thin and distant; no answering sound from the empty seat.\n\nnon_diegetic_music: Her song, drained of warmth, cold and distant. Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-10/images/unit-10-first.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-10/video/unit-10.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "I2VA首帧发展",
+      "锁定签名A payoff·空手",
+      "暖硬切冷·同机位对仗",
+      "NOTEXT英文-only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "503211d9d0ae0a1b6ec6294b762a6ff321b42fa71873a27bb98746d2d5a6ab33"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-04 / unit-04 H3 视频(FL2VA·扎伤手指·签名B锚)",
+  "mode": "FL2VA",
+  "shot": "04",
+  "unit": "unit-04",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm tungsten light, an extreme close framing on a fingertip (the same camera setup later mirrored on Lin Wan's finger). Beginning at Picture 1, Chen Yu's hand pinches a poached shrimp and peels it, the shell's sharp tip nearing his index finger. The camera holds a static shot. The sharp shell pricks his index finger; he flinches slightly and a single bead of blood rises on the pad of his fingertip. Off the close-up, Lin Wan (S2) asks: <d>[Chinese]扎了？</d> Chen Yu (S1) briefly puts the finger to his mouth, pulls out a tissue and presses it, saying flatly: <d>[Chinese]没有。</d> Lin Wan (S2) says: <d>[Chinese]那你快点。</d> reaching the tissue-pressed finger pose of Picture 2. No exaggerated gore.\n\noverall_soundscape: Warm dinner ambience continues softly, with the small sounds of a shell tip pricking skin, a quick inhale, and a tissue being pulled free.\n\nnon_diegetic_music: A single low piano note held quietly under the moment.",
+  "images": [
+    "shots/shot-04/images/unit-04-first.png",
+    "shots/shot-04/images/unit-04-last.png"
+  ],
+  "duration": 8,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-04/video/unit-04.mp4",
+  "status": "generated",
+  "note": "签名B 构图对仗的锚点(B-anchor)：陈屿受伤手指近景，与分镜08林晚受伤手指近景同机位/景别对仗(仅冷暖光不同、不靠哭)。受伤离散状态变化(完好→冒血珠→按纸巾)由FL2VA首→尾帧强制演出。对白<d>逐字来自01-虾壳.md(扎了/没有/那你快点)、以画外近景处理。暖线四年前，无声音桥。音随视频产出(audioPolicy=in_video_first)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T07:10:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=剥虾中手指完好,<Picture2>=冒血珠按纸巾)",
+      "FL2VA插值强制受伤离散状态变化(完好→冒血珠→按纸巾)",
+      "签名B B-anchor:手指近景与分镜08对仗(仅暖光、不靠哭)",
+      "对白<d>逐字来自01-虾壳.md(扎了/没有/那你快点)",
+      "暖线视觉语法/不动声色/无夸张血腥",
+      "暖满聚餐环境声+刺入拟音+纸巾细响+低钢琴单音，无字幕/水印/品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f3b7a1fd816f868191ff1d803344733024382dcfdef4bea2d98c9bfa2d370d94"
+  },
+  "output_sha256": "cade7e40e48a031438c0aa319449dedd94fb671c13a96378443ec2c5372d0824",
+  "generation_time": "2026-09-12T07:21:00Z",
+  "qc": {
+    "subtitle_burned": true,
+    "note": "FL2VA状态变化演出成功、音频在；三句对白被H3烧成字幕，登记pt-04-sub后期去除",
+    "post_task": "pt-04-sub"
+  }
+}

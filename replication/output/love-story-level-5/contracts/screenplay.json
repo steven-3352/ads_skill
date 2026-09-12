@@ -6,43 +6,265 @@
   "coreAction": "林晚试图若无其事地吃完同事聚餐，却被一只虾和受伤的手指逼回已结束的关系。",
   "theme": "照顾不是习惯性劳动，而是记得对方喜欢什么。",
   "scenes": [
-    {"id": "scene-01", "title": "餐馆包间 / 夜 / 现在", "timeline": "now"},
-    {"id": "scene-02", "title": "公司聚餐 / 夜 / 四年前", "timeline": "then"},
-    {"id": "scene-03", "title": "出租屋餐桌 / 夜 / 四年前", "timeline": "then"},
-    {"id": "scene-04", "title": "餐馆包间 / 夜 / 现在", "timeline": "now"},
-    {"id": "scene-05", "title": "餐馆洗手台旁 / 夜 / 现在", "timeline": "now"}
+    {
+      "id": "scene-01",
+      "title": "餐馆包间 / 夜 / 现在",
+      "timeline": "now"
+    },
+    {
+      "id": "scene-02",
+      "title": "公司聚餐 / 夜 / 四年前",
+      "timeline": "then"
+    },
+    {
+      "id": "scene-03",
+      "title": "出租屋餐桌 / 夜 / 四年前",
+      "timeline": "then"
+    },
+    {
+      "id": "scene-04",
+      "title": "餐馆包间 / 夜 / 现在",
+      "timeline": "now"
+    },
+    {
+      "id": "scene-05",
+      "title": "餐馆包间 / 夜 / 现在（承接场景4·同一张桌）",
+      "timeline": "now",
+      "note": "原故事标题误写“洗手台旁”，实为主观声音抽离（只剩水龙头滴水与呼吸），全部动作仍在同一张餐桌，无起身去水池。"
+    }
   ],
   "beats": [
-    {"id": "B1", "sceneId": "scene-01", "timeline": "now", "shot": "01", "title": "退虾拒绝（Hook）", "text": "小周夹来第二只虾，林晚把虾夹回公盘说懒得剥。", "mustKeep": ["小周递第二只虾", "林晚夹回公盘", "懒得剥"]},
-    {"id": "B2", "sceneId": "scene-01", "timeline": "now", "shot": "02", "title": "脆响触发（转场出）", "text": "邻桌虾壳被掰开发出清脆一声，林晚抬眼。", "mustKeep": ["清脆一声", "林晚抬眼"]},
-    {"id": "B3", "sceneId": "scene-02", "timeline": "then", "shot": "03", "title": "被偏爱的日常·剥虾催促（转场入）", "text": "同样一声脆响接入四年前，陈屿低头连续剥虾堆壳，林晚举虾检查、嘴角压笑并催促，陈屿回应。", "mustKeep": ["同样一声脆响", "陈屿连续剥虾堆壳", "举虾检查压笑", "催促与回应"]},
-    {"id": "B4", "sceneId": "scene-02", "timeline": "then", "shot": "04", "title": "扎伤手指·陈屿（签名B锚）", "text": "虾壳尖刺进陈屿食指冒血珠，林晚问'扎了？'，陈屿含指按纸巾说'没有'。", "mustKeep": ["虾壳刺入食指", "冒血珠", "含指按纸巾", "不喊疼仍继续"]},
-    {"id": "B5", "sceneId": "scene-02", "timeline": "then", "shot": "05", "title": "拒老赵·给林晚·脚尖碰鞋", "text": "老赵伸筷讨虾被陈屿挡回并把刚剥的虾放进林晚碗，林晚低头笑着吃、肩膀松下、脚尖桌下碰陈屿的鞋。", "mustKeep": ["老赵讨虾", "自己剥", "虾放进林晚碗", "脚尖碰鞋"]},
-    {"id": "B6", "sceneId": "scene-03", "timeline": "then", "shot": "06", "title": "关系日常·辣度分区·创可贴", "text": "出租屋陈屿看电脑替林晚剥小龙虾、按住她筷子分辣度，林晚夹走最大虾嘴硬，陈屿被扎手指缠创可贴。", "mustKeep": ["按住筷子分辣度", "夹走最大的虾", "嘴硬", "创可贴"]},
-    {"id": "B7", "sceneId": "scene-04", "timeline": "now", "shot": "07", "title": "现在的落差", "text": "小周把剥好的虾放进林晚碗便转身，林晚拨开葱花露出空碗底，夹起虾停半空又放下，从公盘夹回一只完整的虾。", "mustKeep": ["小周给虾便转身", "葱花与空碗底", "夹起又放下", "夹回完整虾"]},
-    {"id": "B8", "sceneId": "scene-05", "timeline": "now", "shot": "08", "title": "独自剥虾·扎伤·林晚（签名B兑现）", "text": "洗手台旁林晚独自低头剥虾，壳从中间断开尖刺扎进食指冒血珠，周围声音渐远只剩水滴与呼吸，她抽纸巾按住伤口另一只手继续剥完。", "mustKeep": ["独自剥虾", "扎伤出血", "声音渐远只剩水滴呼吸", "按住伤口继续"]},
-    {"id": "B9", "sceneId": "scene-05", "timeline": "now", "shot": "09", "title": "旁白揭示与回扣", "text": "林晚吃虾慢嚼、看伤口再看空碟，两句旁白，把染血纸巾折起压碟下，谈笑声涌回，画面停在不完整虾壳上切黑。", "mustKeep": ["吃虾慢嚼", "看伤口与空碟", "两句旁白", "染血纸巾", "不完整虾壳", "切黑"]}
+    {
+      "id": "B1",
+      "sceneId": "scene-01",
+      "timeline": "now",
+      "shot": "01",
+      "title": "退虾拒绝（Hook）",
+      "text": "小周夹来第二只虾，林晚把虾夹回公盘说懒得剥。",
+      "mustKeep": [
+        "小周递第二只虾",
+        "林晚夹回公盘",
+        "懒得剥"
+      ]
+    },
+    {
+      "id": "B2",
+      "sceneId": "scene-01",
+      "timeline": "now",
+      "shot": "02",
+      "title": "脆响触发（转场出）",
+      "text": "邻桌虾壳被掰开发出清脆一声，林晚抬眼。",
+      "mustKeep": [
+        "清脆一声",
+        "林晚抬眼"
+      ]
+    },
+    {
+      "id": "B3",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "03",
+      "title": "被偏爱的日常·剥虾催促（转场入）",
+      "text": "同样一声脆响接入四年前，陈屿低头连续剥虾堆壳，林晚举虾检查、嘴角压笑并催促，陈屿回应。",
+      "mustKeep": [
+        "同样一声脆响",
+        "陈屿连续剥虾堆壳",
+        "举虾检查压笑",
+        "催促与回应"
+      ]
+    },
+    {
+      "id": "B4",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "04",
+      "title": "扎伤手指·陈屿（签名B锚）",
+      "text": "虾壳尖刺进陈屿食指冒血珠，林晚问'扎了？'，陈屿含指按纸巾说'没有'。",
+      "mustKeep": [
+        "虾壳刺入食指",
+        "冒血珠",
+        "含指按纸巾",
+        "不喊疼仍继续"
+      ]
+    },
+    {
+      "id": "B5",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "05",
+      "title": "拒老赵·给林晚·脚尖碰鞋",
+      "text": "老赵伸筷讨虾被陈屿挡回并把刚剥的虾放进林晚碗，林晚低头笑着吃、肩膀松下、脚尖桌下碰陈屿的鞋。",
+      "mustKeep": [
+        "老赵讨虾",
+        "自己剥",
+        "虾放进林晚碗",
+        "脚尖碰鞋"
+      ]
+    },
+    {
+      "id": "B6",
+      "sceneId": "scene-03",
+      "timeline": "then",
+      "shot": "06",
+      "title": "关系日常·辣度分区·创可贴",
+      "text": "出租屋陈屿看电脑替林晚剥小龙虾、按住她筷子分辣度，林晚夹走最大虾嘴硬，陈屿被扎手指缠创可贴。",
+      "mustKeep": [
+        "按住筷子分辣度",
+        "夹走最大的虾",
+        "嘴硬",
+        "创可贴"
+      ]
+    },
+    {
+      "id": "B7",
+      "sceneId": "scene-04",
+      "timeline": "now",
+      "shot": "07",
+      "title": "现在的落差",
+      "text": "小周把剥好的虾放进林晚碗便转头和旁边的人继续说笑（人不离座），林晚拨开葱花露出空碗底，夹起虾停半空又放下，从公盘夹回一只完整的虾。",
+      "mustKeep": [
+        "小周给虾便转头与旁人交流（不起身）",
+        "葱花与空碗底",
+        "夹起又放下",
+        "夹回完整虾"
+      ]
+    },
+    {
+      "id": "B8",
+      "sceneId": "scene-05",
+      "timeline": "now",
+      "shot": "08",
+      "title": "独自剥虾·扎伤·林晚（签名B兑现）",
+      "text": "现在·同一张餐桌，林晚独自低头剥虾，壳从中间断开、尖刺扎进食指冒血珠；四周谈笑渐远、只剩水龙头滴水与她的呼吸（冷线主观抽离音效，非真实洗手台），她抽纸巾按住伤口、另一只手继续把虾壳剥完。",
+      "mustKeep": [
+        "独自剥虾",
+        "扎伤出血",
+        "声音渐远只剩水滴呼吸",
+        "按住伤口继续"
+      ]
+    },
+    {
+      "id": "B9",
+      "sceneId": "scene-05",
+      "timeline": "now",
+      "shot": "09",
+      "title": "旁白揭示与回扣",
+      "text": "林晚吃虾慢嚼、看伤口再看空碟，两句旁白，把染血纸巾折起压碟下，谈笑声涌回，画面停在不完整虾壳上切黑。",
+      "mustKeep": [
+        "吃虾慢嚼",
+        "看伤口与空碟",
+        "两句旁白",
+        "染血纸巾",
+        "不完整虾壳",
+        "切黑"
+      ]
+    }
   ],
   "dialogue": [
-    {"line": "这盘就你没动。减肥啊？", "speaker": "小周", "sceneId": "scene-01", "beat": "B1"},
-    {"line": "懒得剥。", "speaker": "林晚", "sceneId": "scene-01", "beat": "B1"},
-    {"line": "喜欢吃还懒。", "speaker": "小周", "sceneId": "scene-01", "beat": "B1"},
-    {"line": "你能不能快点？我这边都断供了。", "speaker": "林晚", "sceneId": "scene-02", "beat": "B3"},
-    {"line": "着什么急。", "speaker": "陈屿", "sceneId": "scene-02", "beat": "B3"},
-    {"line": "扎了？", "speaker": "林晚", "sceneId": "scene-02", "beat": "B4"},
-    {"line": "没有。", "speaker": "陈屿", "sceneId": "scene-02", "beat": "B4"},
-    {"line": "那你快点。", "speaker": "林晚", "sceneId": "scene-02", "beat": "B4"},
-    {"line": "给我来一个。", "speaker": "老赵", "sceneId": "scene-02", "beat": "B5"},
-    {"line": "自己剥。", "speaker": "陈屿", "sceneId": "scene-02", "beat": "B5"},
-    {"line": "辣的在左边。你胃不舒服，吃右边。", "speaker": "陈屿", "sceneId": "scene-03", "beat": "B6"},
-    {"line": "吃个虾也管。", "speaker": "林晚", "sceneId": "scene-03", "beat": "B6"},
-    {"line": "那你别吃。", "speaker": "陈屿", "sceneId": "scene-03", "beat": "B6"},
-    {"line": "你管我。", "speaker": "林晚", "sceneId": "scene-03", "beat": "B6"},
-    {"line": "给。省得你懒。", "speaker": "小周", "sceneId": "scene-04", "beat": "B7"}
+    {
+      "line": "这盘就你没动。减肥啊？",
+      "speaker": "小周",
+      "sceneId": "scene-01",
+      "beat": "B1"
+    },
+    {
+      "line": "懒得剥。",
+      "speaker": "林晚",
+      "sceneId": "scene-01",
+      "beat": "B1"
+    },
+    {
+      "line": "喜欢吃还懒。",
+      "speaker": "小周",
+      "sceneId": "scene-01",
+      "beat": "B1"
+    },
+    {
+      "line": "你能不能快点？我这边都断供了。",
+      "speaker": "林晚",
+      "sceneId": "scene-02",
+      "beat": "B3"
+    },
+    {
+      "line": "着什么急。",
+      "speaker": "陈屿",
+      "sceneId": "scene-02",
+      "beat": "B3"
+    },
+    {
+      "line": "扎了？",
+      "speaker": "林晚",
+      "sceneId": "scene-02",
+      "beat": "B4"
+    },
+    {
+      "line": "没有。",
+      "speaker": "陈屿",
+      "sceneId": "scene-02",
+      "beat": "B4"
+    },
+    {
+      "line": "那你快点。",
+      "speaker": "林晚",
+      "sceneId": "scene-02",
+      "beat": "B4"
+    },
+    {
+      "line": "给我来一个。",
+      "speaker": "老赵",
+      "sceneId": "scene-02",
+      "beat": "B5"
+    },
+    {
+      "line": "自己剥。",
+      "speaker": "陈屿",
+      "sceneId": "scene-02",
+      "beat": "B5"
+    },
+    {
+      "line": "辣的在左边。你胃不舒服，吃右边。",
+      "speaker": "陈屿",
+      "sceneId": "scene-03",
+      "beat": "B6"
+    },
+    {
+      "line": "吃个虾也管。",
+      "speaker": "林晚",
+      "sceneId": "scene-03",
+      "beat": "B6"
+    },
+    {
+      "line": "那你别吃。",
+      "speaker": "陈屿",
+      "sceneId": "scene-03",
+      "beat": "B6"
+    },
+    {
+      "line": "你管我。",
+      "speaker": "林晚",
+      "sceneId": "scene-03",
+      "beat": "B6"
+    },
+    {
+      "line": "给。省得你懒。",
+      "speaker": "小周",
+      "sceneId": "scene-04",
+      "beat": "B7"
+    }
   ],
   "voiceover": [
-    {"line": "后来我才知道，他不是喜欢剥虾。", "speaker": "林晚（OS）", "sceneId": "scene-05", "beat": "B9"},
-    {"line": "他只是记得，我喜欢吃。", "speaker": "林晚（OS）", "sceneId": "scene-05", "beat": "B9"}
+    {
+      "line": "后来我才知道，他不是喜欢剥虾。",
+      "speaker": "林晚（OS）",
+      "sceneId": "scene-05",
+      "beat": "B9"
+    },
+    {
+      "line": "他只是记得，我喜欢吃。",
+      "speaker": "林晚（OS）",
+      "sceneId": "scene-05",
+      "beat": "B9"
+    }
   ],
   "nextStage": "shot_and_asset_contracts",
   "note": "v2：场景锚定节拍 B1–B9（修正 v1 串位的 S1–S7）；对白改为对象化并回填 speaker/sceneId/beat；台词与旁白与 01-虾壳.md 逐字一致。"

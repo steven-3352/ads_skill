@@ -1,0 +1,67 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "scene02 S7 老赵正反打A(讨虾)",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感、四年前公司聚餐、竖画幅9:16、钨丝金橙暖光、浅景深。中景老赵(约35岁男同事、市井热络、笑脸):他探身向前、一只手拿筷子朝画面右侧(画外的陈屿方向)伸来讨虾、笑着开口说话。背景暖调餐桌与虚化同事。暖线视觉语法。中景·正反打·视线与筷子朝画面右侧。 无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/lao-zhao-master.png",
+    "assets/restaurant-private-room.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA-first-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "正反打A:老赵视线+筷子朝画右(与S8陈屿挡筷反打匹配)",
+      "中景单人",
+      "身份锚定lao-zhao+包间plate",
+      "暖线",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6582c2fbe965ba2e94a5ba6f6b9d67f109bff3113bbae80b8cb9c5b4c930032e"
+  },
+  "generator": "GPT Image",
+  "note": "scene-02 覆盖样板新镜首帧,GPT Image(gpt-image-2)竖版9:16,锚定master+包间plate保连续性;作为H3 I2VA输入。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T11:30:00Z",
+    "checks": [
+      "正反打A:老赵视线+筷子朝画右(与S8陈屿挡筷反打匹配)",
+      "中景单人",
+      "身份锚定lao-zhao+包间plate",
+      "暖线",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6582c2fbe965ba2e94a5ba6f6b9d67f109bff3113bbae80b8cb9c5b4c930032e"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "B3",
+      "B4",
+      "B5"
+    ],
+    "related_shots": [
+      "scene-02-cov"
+    ],
+    "visual_evidence": [
+      "中景老赵单人",
+      "探身伸筷子朝画右讨虾·笑着开口",
+      "钨丝暖光",
+      "暖线"
+    ],
+    "unresolved_blockers": []
+  }
+}

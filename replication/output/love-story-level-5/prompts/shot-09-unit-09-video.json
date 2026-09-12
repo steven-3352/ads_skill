@@ -1,0 +1,40 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-09 / unit-09 H3 视频(FL2VA)",
+  "mode": "FL2VA",
+  "shot": "09",
+  "unit": "unit-09",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 14.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, cool teal-white, at the same present-day dinner table, close on Lin Wan preserving Picture 1. She puts the peeled shrimp into her mouth and chews slowly; her gaze drops to her pricked index finger, then lifts to the empty small dish. Lin Wan says, in an off-screen voiceover with her lips completely closed: <d>[Chinese]后来我才知道，他不是喜欢剥虾。</d> She folds the slightly blood-stained tissue and tucks it under the dish, then, still in an off-screen voiceover with her lips completely closed: <d>[Chinese]他只是记得，我喜欢吃。</d> As the surrounding laughter floods back, the camera settles and the frame comes to rest, matching Picture 2, on a static still-life of the small pile of incomplete, messily-peeled shrimp shells in front of her (the closing rhyme against the neat peeled shrimp of four years ago); the image holds and then cuts to black. No subtitles, no on-screen captions, no burned-in text, no watermark.\n\noverall_soundscape: Near silence broken by slow chewing and a tissue being folded, then restaurant laughter and chatter surging back in the final seconds before the cut to black.\n\nnon_diegetic_music: Sparse cold piano resolves on a single held note that stops at the cut to black.",
+  "images": [
+    "shots/shot-09/images/unit-09-first.png",
+    "shots/shot-09/images/unit-09-last.png"
+  ],
+  "duration": 14,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-09/video/unit-09.mp4",
+  "status": "prompt_ready",
+  "note": "现在冷线·结尾回扣。旁白两句以画外音(唇闭合)处理。结尾静物=不完整虾壳(对照四年前整齐虾肉)由FL2VA尾帧强制锁定,保证切黑落点。音随视频产出。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T08:00:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=林晚慢嚼看伤口空碟,<Picture2>=不完整虾壳静物·准备切黑)",
+      "FL2VA保证结尾落到不完整虾壳静物(回扣)",
+      "两句旁白off-screen voiceover(唇闭合)逐字来自01-虾壳.md",
+      "结尾谈笑声涌回→切黑",
+      "冷线视觉语法/静物",
+      "显式no subtitles/no on-screen text/no watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e10252630e69a6a154481a28bb66777cc4e917749108d4a0563377ddd578dab4"
+  }
+}

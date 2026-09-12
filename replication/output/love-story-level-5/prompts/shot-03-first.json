@@ -3,28 +3,66 @@
   "model": "MiniMax-H3",
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-03-first 关键帧",
-  "mode": "I2VA-first-frame",
-  "prompt": "写实电影感，钨丝金橙暖光、轻胶片颗粒的公司聚餐夜景，手部近景与双人关系景。陈屿（短黑发、蓝色圆领上衣，沉稳低头）连续剥白灼虾，面前堆着一小摞虾壳；林晚（同一张脸、约24岁、气色更暖、被宠的笃定）在旁与同事说话，碗里已有多只剥好的虾。暖满生活感。暖线视觉语法。无字幕、无文字水印、无品牌。",
-  "output": null,
-  "status": "prompt_ready",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感，四年前公司聚餐夜景，钨丝金橙暖光、暖影柔和、轻胶片颗粒。双人关系景兼手部近景：陈屿（短黑发、蓝色圆领上衣、沉稳、低着头）正低头剥一只白灼虾，面前已堆起一小摞虾壳（起始量、少）；他右手边林晚的小碗里已有两三只剥好的虾仁（起始量）。同一张脸、约24岁、气色更暖、带着被偏爱的笃定的林晚坐在他身旁，正侧头和画外同事说话、嘴角带笑。满桌暖调家常菜、暖满生活感。暖线视觉语法：钨丝金橙、暖满、关系景。无字幕、无文字水印、无品牌。",
+  "output": "shots/shot-03/images/unit-03-first.png",
+  "status": "generated",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/chen-yu-master.png",
+    "assets/lin-wan-master.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "image",
-    "mode": "I2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA起点:虾壳摞与剥好虾均为起始少量(为积累留出增量)",
+      "人物身份锚定(chen-yu/lin-wan master)",
+      "暖线视觉语法/被偏爱的笃定",
+      "与现在·冷线形成暖/冷对照",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "1a5f7a795227ebe6ae0ad7ce2f52fe8b95407ab10bd058487f83442acfa58c79"
-  }
+    "reviewed_prompt_sha256": "ba4d6a40b5bee7317cbf7fd02ea6ebebac3abe362b9d4706560f823fb520f21a"
+  },
+  "generator": "GPT Image",
+  "note": "暖线四年前·首/尾帧静图由 GPT Image(images/edits)生成，以人物 master 锚定身份、以首帧锁机位/积累连续性；作为 MiniMax-H3 FL2VA 首/尾帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T06:40:00Z",
+    "checks": [
+      "FL2VA起点:虾壳摞与剥好虾均为起始少量(为积累留出增量)",
+      "人物身份锚定(chen-yu/lin-wan master)",
+      "暖线视觉语法/被偏爱的笃定",
+      "与现在·冷线形成暖/冷对照",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ba4d6a40b5bee7317cbf7fd02ea6ebebac3abe362b9d4706560f823fb520f21a"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b03-in",
+      "b03-urge"
+    ],
+    "related_shots": [
+      "03"
+    ],
+    "visual_evidence": [
+      "陈屿低头剥虾·面前起始小摞虾壳(暖线默默照顾的起点)",
+      "林晚小碗里已有两三只剥好的虾(积累起点)",
+      "暖气色约24岁被偏爱的林晚侧头说笑",
+      "钨丝金橙暖光·双人关系景"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "73eb61189f96d9c253b571bcf9811da27e07f35cb895586f0183b0dc53bc2b86",
+  "generation_time": "2026-09-12T06:48:00Z"
 }

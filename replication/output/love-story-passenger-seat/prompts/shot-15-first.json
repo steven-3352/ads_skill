@@ -1,0 +1,62 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot15首帧·墓园车旁",
+  "mode": "FL2VA-first-frame",
+  "prompt": "Realistic cinematic wide shot, exterior hillside cemetery under overcast sky; the man Gu Chuan stands beside his parked car on the passenger side, holding nothing yet, about to open the door; overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera, quiet, wind. Gravestones on the slope beyond. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png"
+  ],
+  "generator": "GPT Image",
+  "note": "FL2VA首帧:墓园车旁(起点)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "墓园WS",
+      "他在副驾侧将开门",
+      "阴天冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b5ebbaa024ddd187167bdef90cbfb4628a2fb1abe93fb55d235f676ab94d7849",
+    "mode": "FL2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "墓园WS",
+      "他在副驾侧将开门",
+      "阴天冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b5ebbaa024ddd187167bdef90cbfb4628a2fb1abe93fb55d235f676ab94d7849"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B15"
+    ],
+    "related_shots": [
+      "15"
+    ],
+    "visual_evidence": [
+      "山坡墓园车外",
+      "他在副驾侧",
+      "阴天冷调",
+      "将开门"
+    ],
+    "unresolved_blockers": []
+  }
+}

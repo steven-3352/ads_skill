@@ -1,0 +1,40 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05 / unit-05a H3 视频(FL2VA·桌面关系景)",
+  "mode": "FL2VA",
+  "shot": "05",
+  "unit": "unit-05a",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 7.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16, warm tungsten golden light with light film grain, a company dinner four years ago; gentle handheld breathing camera, two-person relationship framing preserved from Picture 1 with Chen Yu and Lin Wan seated side by side as the subject. Lao Zhao, an older male colleague, reaches his chopsticks in from the left edge of frame and says: <d>[Chinese]给我来一个。</d> Chen Yu (short black hair, blue crew-neck) blocks Lao Zhao's chopsticks with one hand and, with the other, places the shrimp he just peeled into Lin Wan's bowl, saying: <d>[Chinese]自己剥。</d> The whole table laughs warmly. Matching Picture 2, the peeled shrimp is now in Lin Wan's bowl and she is biting into it, her shoulders visibly relaxing with a small warm smile, while Lao Zhao's hand has withdrawn from frame. No subtitles, no on-screen captions, no burned-in text, no watermark.\n\noverall_soundscape: Warm overlapping laughter around the table, chopsticks crossing, and a shrimp dropped softly into a bowl.\n\nnon_diegetic_music: Warm strings continue at a slow tempo, a touch brighter here.",
+  "images": [
+    "shots/shot-05/images/unit-05a-first.png",
+    "shots/shot-05/images/unit-05a-last.png"
+  ],
+  "duration": 7,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-05/video/unit-05a.mp4",
+  "status": "prompt_ready",
+  "note": "暖线四年前·桌面关系景(拆自原unit-05)。放虾进林晚碗=离散转移→FL2VA。脚尖碰鞋移到unit-05b插镜。对白逐字来自原文。已显式禁止烧录字幕。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T09:40:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=放虾进行中,<Picture2>=虾已在碗+咬第一口+肩松)",
+      "FL2VA强制演出放虾进碗离散转移",
+      "竖构图关系景·老赵仅手臂入画",
+      "对白<d>逐字来自01-虾壳.md(给我来一个/自己剥)",
+      "暖线视觉语法",
+      "显式no subtitles/no on-screen text/no watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "83c3145cbc655d2fdd733801bdb4a01ff9ae29a4e5456d40ff63044c0f1b19d8"
+  }
+}

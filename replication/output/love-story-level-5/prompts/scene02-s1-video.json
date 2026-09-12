@@ -1,0 +1,36 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "scene02 S1 视频(建立镜·缓推)",
+  "mode": "I2VA",
+  "shot": "scene-02-cov",
+  "unit": "s1",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] (Clean frame, no text overlays anywhere.) Live-action, cinematic, vertical 9:16, warm tungsten golden light with light film grain, a company dinner four years ago; a slow, gentle push-in establishing the whole round table preserved from Picture 1 — Chen Yu and Lin Wan seated together on the right, Lao Zhao across on the left, a couple of colleagues around, a table full of warm dishes and a big plate of boiled shrimp. Lively, warm chatter; the camera breathes slightly. Absolutely NO subtitles, NO closed captions, NO dialogue captions, NO on-screen text of any kind, NO pinyin, NO title cards, NO watermark and NO logo anywhere in frame. Every spoken line must appear ONLY as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.\n\noverall_soundscape: Warm overlapping dinner chatter, chopsticks and bowls, a cozy private room.\n\nnon_diegetic_music: Warm strings at a slow, tender tempo.",
+  "images": [
+    "shots/scene-02-cov/images/s1-establish.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/scene-02-cov/video/s1.mp4",
+  "status": "prompt_ready",
+  "note": "scene-02覆盖样板S1建立镜。无对白。生成5s,剪辑取~2.5s。 去字幕指令改英文单语,除<d>对白外提示词无中文,杜绝指令中文泄漏为配音/烧字。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T11:40:00Z",
+    "checks": [
+      "I2VA建立镜缓推·交代整桌地理",
+      "竖9:16暖线·无对白",
+      "强化双语no on-screen text/no subtitle/no watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "abc256f60d22a87ba80165df1bf9b2eb44b604986d329e42bfb685e4ff518d23"
+  }
+}

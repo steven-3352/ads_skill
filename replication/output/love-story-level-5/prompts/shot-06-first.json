@@ -3,28 +3,65 @@
   "model": "MiniMax-H3",
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-06-first 关键帧",
-  "mode": "I2VA-first-frame",
-  "prompt": "写实电影感、暖光，出租屋餐桌夜景，桌面双人景。外卖盒摊在桌上，陈屿一边看电脑一边替林晚剥小龙虾，并按住她伸来的筷子；桌面左右分放辣与不辣两堆。林晚嘴硬地去夹最大的一只。居家暖氛围，可见陈屿手指上缠着一小圈创可贴。暖线视觉语法。无字幕、无文字水印、无品牌。",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感、四年前出租屋餐桌夜景，暖光、居家暖氛围，桌面双人景兼手部可见。外卖盒摊在桌上，陈屿（短黑发、蓝色圆领）一边看着笔记本电脑、一边替林晚剥小龙虾，并伸手按住林晚伸来的筷子；桌面左右分放“辣”与“不辣”两堆。林晚（约24岁、暖气色）嘴硬地去夹最大的一只。陈屿被扎破的那根手指上缠着一小圈创可贴（静态可见）。暖线视觉语法：钨丝暖、居家、关系日常。无字幕、无文字水印、无品牌。",
   "output": null,
   "status": "prompt_ready",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/chen-yu-master.png",
+    "assets/lin-wan-master.png",
+    "assets/rental-dining-table.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "image",
-    "mode": "I2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "I2VA:关系/对白为主·无堆积无转移落点风险",
+      "人物身份锚定(chen-yu/lin-wan)+出租屋场景锚(rental-dining-table)",
+      "创可贴静态呈现(被扎手指的日常回声)",
+      "暖线居家视觉语法",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "403ebc0dd3b152b67e156e499945319064f777b5e0eb1c989486d812867e3b8b"
+    "reviewed_prompt_sha256": "5fd682a5ef8705c656d5e735d99bafd5f5b3a7f3cee9cb49bf3135e9e580e0d1"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "I2VA:关系/对白为主·无堆积无转移落点风险",
+      "人物身份锚定(chen-yu/lin-wan)+出租屋场景锚(rental-dining-table)",
+      "创可贴静态呈现(被扎手指的日常回声)",
+      "暖线居家视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5fd682a5ef8705c656d5e735d99bafd5f5b3a7f3cee9cb49bf3135e9e580e0d1"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b06-spice",
+      "b06-bandaid"
+    ],
+    "related_shots": [
+      "06"
+    ],
+    "visual_evidence": [
+      "出租屋外卖盒+陈屿看电脑替林晚剥小龙虾",
+      "按住林晚筷子·桌面左右分辣/不辣两堆",
+      "林晚嘴硬夹最大的虾",
+      "陈屿手指缠创可贴(静态·关系日常)"
+    ],
+    "unresolved_blockers": []
   }
 }

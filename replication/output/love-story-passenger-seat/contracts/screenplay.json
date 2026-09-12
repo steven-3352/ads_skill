@@ -1,0 +1,242 @@
+{
+  "projectId": "love-story-passenger-seat",
+  "status": "confirmed",
+  "source": "story/副驾.md",
+  "format": "叙事短片（竖屏9:16，60秒以内，不拖沓不注水）",
+  "coreAction": "顾川独自开车，用一整套“为副驾保留”的日常动作，把已经不在的苏晓一次次唤回，直到反转揭示她已离世。",
+  "theme": "你习惯了她在，就忘了她已经不在。",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "得来速/车内 · 清晨 · 现在",
+      "timeline": "now"
+    },
+    {
+      "id": "scene-02",
+      "title": "车内 · 晴日 · 四年前",
+      "timeline": "then"
+    },
+    {
+      "id": "scene-03",
+      "title": "车内 · 清晨 · 现在（红灯对仗+揭示）",
+      "timeline": "now"
+    },
+    {
+      "id": "scene-04",
+      "title": "山坡墓园 · 现在",
+      "timeline": "now"
+    }
+  ],
+  "beats": [
+    {
+      "id": "B1",
+      "sceneId": "scene-01",
+      "timeline": "now",
+      "shot": "01",
+      "title": "两杯热饮（Hook）",
+      "text": "他接过两杯热饮，放进杯架。",
+      "mustKeep": [
+        "两杯",
+        "放进杯架"
+      ]
+    },
+    {
+      "id": "B2",
+      "sceneId": "scene-01",
+      "timeline": "now",
+      "shot": "02",
+      "title": "为空座系安全带",
+      "text": "他把副驾的安全带拉过来，越过那个空座，咔哒扣上。",
+      "mustKeep": [
+        "安全带",
+        "空座",
+        "扣上"
+      ]
+    },
+    {
+      "id": "B3",
+      "sceneId": "scene-01",
+      "timeline": "now",
+      "shot": "03",
+      "title": "瞥空座淡笑起步",
+      "text": "他瞥了一眼空副驾，淡淡笑了一下，起步。",
+      "mustKeep": [
+        "瞥空副驾",
+        "淡淡笑",
+        "起步"
+      ]
+    },
+    {
+      "id": "B4",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "04",
+      "title": "她脚搭台大笑（暖线建立）",
+      "text": "苏晓把脚搭在仪表台上，笑得没心没肺。",
+      "mustKeep": [
+        "脚搭仪表台",
+        "大笑"
+      ]
+    },
+    {
+      "id": "B5",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "05",
+      "title": "她换歌",
+      "text": "她伸手去拧车载音响，换成自己的歌。台词：我的车我做主。",
+      "mustKeep": [
+        "换歌",
+        "我的车我做主"
+      ]
+    },
+    {
+      "id": "B6",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "06",
+      "title": "他无奈",
+      "text": "顾川一手扶方向盘，瞥她一眼，无奈：又乱调。",
+      "mustKeep": [
+        "又乱调"
+      ]
+    },
+    {
+      "id": "B7",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "07",
+      "title": "红灯揉头（签名A·有她）",
+      "text": "红灯。他空出右手，揉了揉她的头发。",
+      "mustKeep": [
+        "红灯",
+        "空出右手",
+        "揉头发"
+      ]
+    },
+    {
+      "id": "B8",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "08",
+      "title": "她蹭进掌心",
+      "text": "苏晓像猫一样蹭进他掌心，眯起眼。",
+      "mustKeep": [
+        "蹭进掌心",
+        "眯眼"
+      ]
+    },
+    {
+      "id": "B9",
+      "sceneId": "scene-02",
+      "timeline": "then",
+      "shot": "09",
+      "title": "双手交握",
+      "text": "他们的手在档杆上叠在一起。",
+      "mustKeep": [
+        "档杆",
+        "手叠一起"
+      ]
+    },
+    {
+      "id": "B10",
+      "sceneId": "scene-03",
+      "timeline": "now",
+      "shot": "10",
+      "title": "空手对仗（签名A·payoff/转场）",
+      "text": "红灯。顾川又空出右手伸向副驾——那里什么都没有。",
+      "mustKeep": [
+        "空出右手",
+        "什么都没有"
+      ]
+    },
+    {
+      "id": "B11",
+      "sceneId": "scene-03",
+      "timeline": "now",
+      "shot": "11",
+      "title": "手悬空笑意凝住",
+      "text": "他的手停在空气里，笑意一点点凝住，慢慢收回。",
+      "mustKeep": [
+        "停在空气里",
+        "笑意凝住",
+        "收回"
+      ]
+    },
+    {
+      "id": "B12",
+      "sceneId": "scene-03",
+      "timeline": "now",
+      "shot": "12",
+      "title": "关小她那侧音量（声音桥B）",
+      "text": "她设的那首歌还在放。他把“她那一侧”的音量轻轻关小。",
+      "mustKeep": [
+        "她的歌还在放",
+        "关小音量"
+      ]
+    },
+    {
+      "id": "B13",
+      "sceneId": "scene-03",
+      "timeline": "now",
+      "shot": "13",
+      "title": "对空座说话",
+      "text": "他看着前方路，轻声说：到了，今天不堵。",
+      "mustKeep": [
+        "到了，今天不堵"
+      ]
+    },
+    {
+      "id": "B14",
+      "sceneId": "scene-03",
+      "timeline": "now",
+      "shot": "14",
+      "title": "反转物证（相框+住院手环）",
+      "text": "镜头落在副驾：相框里苏晓在笑；一只褪色的住院手环，印着苏晓和一个日期。",
+      "mustKeep": [
+        "相框",
+        "住院手环",
+        "苏晓",
+        "日期"
+      ]
+    },
+    {
+      "id": "B15",
+      "sceneId": "scene-04",
+      "timeline": "now",
+      "shot": "15",
+      "title": "墓园开副驾门相送",
+      "text": "顾川绕到副驾一侧，拉开车门，拿起那杯热饮和相框，走向不远处的墓碑。",
+      "mustKeep": [
+        "开副驾门",
+        "拿起热饮和相框",
+        "走向墓碑"
+      ]
+    }
+  ],
+  "dialogue": [
+    {
+      "beat": "B5",
+      "who": "苏晓",
+      "line": "我的车我做主。"
+    },
+    {
+      "beat": "B6",
+      "who": "顾川",
+      "line": "又乱调。"
+    },
+    {
+      "beat": "B13",
+      "who": "顾川",
+      "line": "到了，今天不堵。"
+    }
+  ],
+  "voiceover": [
+    {
+      "at": "ending",
+      "line": "你习惯了她在，就忘了她已经不在。"
+    }
+  ],
+  "nextStage": "production-plan → keyframe/video prompts → 图片闸门 → 视频生成 → 覆盖剪辑",
+  "note": "60秒为上限非目标；15个紧镜、目标成片~48-52s，签名机关=红灯揉头同机位对仗(07↔10)+她的歌声音桥(05↔12)。"
+}

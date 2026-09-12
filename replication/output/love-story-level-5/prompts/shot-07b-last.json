@@ -4,11 +4,12 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-07b-last 关键帧",
   "mode": "FL2VA-last-frame",
-  "prompt": "同一冷白偏青手部近景。林晚放下先前夹起、停在半空的那只剥好虾，转而从公盘夹回一只完整、带壳的白灼虾，落点停在这只完整的虾上。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "prompt": "同一冷白偏青手部近景、同机位。林晚放下先前夹起、停在半空的那只剥好虾，转而把筷子伸向桌面中央的公用白瓷圆盘、夹回一只完整、带壳的白灼虾，最终落点停在这只完整的虾上（落差终态：从别人剥好的虾→自己夹回完整带壳虾）。冷线视觉语法。FL2VA终态。无字幕、无文字水印、无品牌。",
   "output": null,
   "status": "prompt_ready",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "shots/shot-07/images/unit-07b-first.png",
+    "assets/lin-wan-master.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -16,15 +17,48 @@
     "result": "pass",
     "asset_type": "image",
     "mode": "FL2VA-last-frame",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA终态锁:夹回完整虾(强制演出落差)",
+      "引用首帧锁机位/构图",
+      "人物身份锚定",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "25e2ee0c4a33240754674a79b19fb9eea750a40fcab75c2d0431a1c297065ac2"
+    "reviewed_prompt_sha256": "11127b29515996ae04ecb841962c45a76ffb86c93fc64b4fe61fa7b18805ab9f"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "FL2VA终态锁:夹回完整虾(强制演出落差)",
+      "引用首帧锁机位/构图",
+      "人物身份锚定",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "11127b29515996ae04ecb841962c45a76ffb86c93fc64b4fe61fa7b18805ab9f"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b07-empty"
+    ],
+    "related_shots": [
+      "07b"
+    ],
+    "visual_evidence": [
+      "放下剥好虾·从公盘夹回一只完整带壳虾(落差终态)",
+      "落点锁在完整虾上",
+      "与首帧同机位"
+    ],
+    "unresolved_blockers": []
   }
 }

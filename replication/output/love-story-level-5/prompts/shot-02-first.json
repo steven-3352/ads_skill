@@ -4,11 +4,13 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-02-first 关键帧",
   "mode": "FL2VA-first-frame",
-  "prompt": "写实电影感，冷白偏青餐馆包间夜景中景。林晚刚把虾夹回公盘、筷子停在碟边，神情克制；邻座的人正在掰开虾壳。构图偏紧、孤立。冷线视觉语法。无字幕、无文字水印、无品牌。",
-  "output": null,
-  "status": "prompt_ready",
+  "prompt": "写实电影感，冷白偏青的餐馆包间夜景，中景偏紧，与分镜01同一包间、同一机位（暖木隔断、壁灯、木格栅，虚化）。林晚（长黑发、素净偏冷针织上衣、神情克制）刚把虾夹回公盘，筷子停在空小碟边缘、垂眼；前景虚化的男同事把她从喧闹里隔开。桌面中央仍是那只公用白瓷圆盘。冷线视觉语法：冷白偏青、干净、单人孤立构图。无字幕、无文字水印、无品牌。",
+  "output": "shots/shot-02/images/unit-02-first.png",
+  "status": "generated",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "shots/shot-01/images/unit-01-last.png",
+    "assets/lin-wan-master.png",
+    "assets/restaurant-private-room.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -18,13 +20,49 @@
     "mode": "FL2VA-first-frame",
     "reviewed_at": "2026-09-11",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "承接分镜01尾帧机位/桌面/垂眼连续性",
+      "人物身份锚定(lin-wan master)",
+      "冷线视觉语法/单人孤立",
+      "脆响仅为画外声、不入画面(掰虾壳属分镜03)",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "1e43bf16ebb811e73dedc1fbbf57425fc348b19d2c1b450f7b182371f2dba851"
-  }
+    "reviewed_prompt_sha256": "d2fe1d02d21e97697a90af4cd4f787e730d0d12b257a1b2e4de63f48a8a8ed6e"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图与分镜01尾帧锚定身份与机位连续性；随后作为 MiniMax-H3 FL2VA 的首/尾帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T23:30:00Z",
+    "checks": [
+      "承接分镜01尾帧机位/桌面/垂眼连续性",
+      "人物身份锚定(lin-wan master)",
+      "冷线视觉语法/单人孤立",
+      "脆响仅为画外声、不入画面(掰虾壳属分镜03)",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d2fe1d02d21e97697a90af4cd4f787e730d0d12b257a1b2e4de63f48a8a8ed6e"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b02-crack"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "承接分镜01尾帧：林晚把虾夹回公盘后停筷垂眼",
+      "前景虚化同事把她从喧闹里隔开",
+      "桌面中央公用白瓷圆盘保持连续",
+      "冷白偏青包间夜景中景·单人孤立"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "019a111e102ec1c0182fa1329c99e27c1c100b1e28fbb23d95ac7e2d7aa87029",
+  "generation_time": "2026-09-12T06:30:00Z"
 }

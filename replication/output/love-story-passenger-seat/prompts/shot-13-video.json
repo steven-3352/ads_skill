@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-13 H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "13",
+  "unit": "unit-13",
+  "prompt": "How the reference picture aligns with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera, inside a beige-interior car. Matches Picture 1. The man Gu Chuan looks ahead through the windshield and, glancing once at the empty buckled passenger seat, says softly as if to someone there: <d>[Chinese]到了，今天不堵。</d> Gentle, habitual, heartbreaking.\n\noverall_soundscape: Tyres slowing, indicator tick, quiet cabin; his soft voice.\n\nnon_diegetic_music: Cold piano, sparse and slow. Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-13/images/unit-13-first.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-13/video/unit-13.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "I2VA首帧发展",
+      "对空座轻声对白",
+      "冷线",
+      "NOTEXT英文-only·仅<d>中文"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0dd1b3456ce40229a51e02c5a95791f2f4ae983da4a97b0802d35fd2627c4eca"
+  }
+}

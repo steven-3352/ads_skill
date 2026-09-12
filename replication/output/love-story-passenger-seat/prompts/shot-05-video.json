@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05 H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "05",
+  "unit": "unit-05",
+  "prompt": "How the reference picture aligns with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows, inside a beige-interior car, breathing handheld. Matches Picture 1. The woman Su Xiao reaches to the round audio knob and twists it to change the song to her own, grinning, and says: <d>[Chinese]我的车我做主。</d> Playful, warm.\n\noverall_soundscape: The click and turn of the audio knob, a snatch of radio static then a new song starting; her voice, warm cabin.\n\nnon_diegetic_music: The song she picks — warm, bright pop guitar (this same song returns as the sound bridge later). Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-05/images/unit-05-first.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-05/video/unit-05.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "I2VA首帧发展",
+      "拧旋钮换歌+对白",
+      "声音桥B设定",
+      "NOTEXT英文-only·仅<d>中文"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b727068a5ca6eb88ae439dfdcbae873f864b04b10661c61e9f1b5b016ad96169"
+  }
+}

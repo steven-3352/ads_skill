@@ -1,0 +1,67 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05a-first 关键帧(桌面关系景)",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感、纪实抓拍瞬间(绝非摆拍、绝非正脸合影)、四年前公司聚餐夜景。竖画幅9:16。钨丝金橙暖光、轻胶片颗粒、浅景深。画面聚焦陈屿(短黑发、蓝色圆领上衣)侧身朝林晚这一侧的动作,他的双手是绝对视觉焦点:一只手正把刚剥好的一只白灼虾夹送向林晚面前那只碗(放虾进行中——虾夹在筷/指间、碗在下方等着接),另一只手侧伸挡住从画面左侧边缘伸进来的一双筷子(那是老赵来讨虾的筷子,画面只见筷子和一截手臂从左缘入画,老赵本人不入画)。林晚在他右侧、低头看着自己的碗、嘴角带笑,不看镜头。两人都不正对镜头、无摆拍感。满桌暖菜、浅景深。暖线视觉语法:钨丝金橙、暖满。FL2VA起点:送虾进行中+挡筷。禁止摆拍合影/两人并排正脸看镜头/静态双人肖像。 无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/chen-yu-master.png",
+    "assets/lin-wan-master.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "首句=纪实抓拍动作(修正:旧版“画面主体是并坐的陈屿与林晚”被渲染成摆拍合影3次)",
+      "双手为焦点·送虾进碗离散转移进行中(FL2VA起点)",
+      "老赵仅筷子+手臂从左缘入画(参考已去老赵master防三人合影)",
+      "硬约束:禁止摆拍合影/正脸看镜头/静态双人肖像",
+      "身份锚定chen-yu/lin-wan·暖线视觉语法",
+      "竖构图9:16·无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8e837f53f4f82ce65ee405964e2a4c4c6745a32c5c0c321ec5195ecb21202c64"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(gpt-image-2, size 768x1344)生成,锚定身份与机位;作为 MiniMax-H3 输入。H3 为唯一视频模型。画幅768x1344精确匹配H3 768P输出以消除拉伸变形。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T09:30:00Z",
+    "checks": [
+      "首句=纪实抓拍动作(修正:旧版“画面主体是并坐的陈屿与林晚”被渲染成摆拍合影3次)",
+      "双手为焦点·送虾进碗离散转移进行中(FL2VA起点)",
+      "老赵仅筷子+手臂从左缘入画(参考已去老赵master防三人合影)",
+      "硬约束:禁止摆拍合影/正脸看镜头/静态双人肖像",
+      "身份锚定chen-yu/lin-wan·暖线视觉语法",
+      "竖构图9:16·无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8e837f53f4f82ce65ee405964e2a4c4c6745a32c5c0c321ec5195ecb21202c64"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b05-give"
+    ],
+    "related_shots": [
+      "05"
+    ],
+    "visual_evidence": [
+      "纪实抓拍动作(非摆拍):陈屿双手为焦点·送虾进林晚碗进行中",
+      "另一手挡住从左缘伸入的老赵筷子(只见筷子+手臂,老赵不入画)",
+      "林晚低头看自己的碗带笑·不看镜头",
+      "竖构图9:16暖线关系动作"
+    ],
+    "unresolved_blockers": []
+  }
+}

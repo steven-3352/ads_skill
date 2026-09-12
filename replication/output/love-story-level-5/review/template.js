@@ -262,9 +262,13 @@
         }
         const d = promptPath ? kfDocs[promptPath] : null;
         if (promptPath && d) {
-          const sha = d.h3_prompt_review?.reviewed_prompt_sha256;
+          const gate = d.seedance_prompt_review || d.h3_prompt_review;
+          const gateName = d.seedance_prompt_review ? 'seedance' : (d.h3_prompt_review ? 'h3' : '—');
+          const gen = d.generator || d.model || '';
+          const sha = gate?.reviewed_prompt_sha256;
           s += '<p class="note">提示词 ' + e(promptPath) + ' · 模式 ' + e(d.mode)
-            + ' · 门禁 ' + (d.h3_prompt_review?.result === 'pass' ? '✅ pass' : '⚠ 未过')
+            + (gen ? ' · 生成 ' + e(gen) : '')
+            + ' · 门禁(' + e(gateName) + ') ' + (gate?.result === 'pass' ? '✅ pass' : '⚠ 未过')
             + (sha ? ' · SHA ' + e(sha.slice(0, 12)) + '…' : '') + '</p>'
             + '<details><summary>关键帧提示词</summary><pre>' + e(d.prompt) + '</pre></details>';
         } else if (promptPath) {

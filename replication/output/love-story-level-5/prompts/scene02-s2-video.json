@@ -1,0 +1,38 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "scene02 S2 视频(林晚催·正打)",
+  "mode": "I2VA",
+  "shot": "scene-02-cov",
+  "unit": "s2",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] (Clean frame, no text overlays anywhere.) Live-action, cinematic, vertical 9:16, warm tungsten light, shallow depth of field; a medium single of Lin Wan seated, preserved from Picture 1, she turns to look screen-right toward Chen Yu offscreen and urges him, a little impatient but fond, lips moving as she speaks: <d>[Chinese]你能不能快点？我这边都断供了。</d> Warm bokeh of the dinner table behind her. Absolutely NO subtitles, NO closed captions, NO dialogue captions, NO on-screen text of any kind, NO pinyin, NO title cards, NO watermark and NO logo anywhere in frame. Every spoken line must appear ONLY as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.\n\noverall_soundscape: Warm dinner chatter around her, softer and close.\n\nnon_diegetic_music: Warm strings continue tenderly.",
+  "images": [
+    "shots/scene-02-cov/images/s2-linwan.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/scene-02-cov/video/s2.mp4",
+  "status": "prompt_ready",
+  "note": "scene-02覆盖样板S2正打。对白H3配音,画面禁字,统一字幕后期加。生成5s剪~3s。 去字幕指令改英文单语,除<d>对白外提示词无中文,杜绝指令中文泄漏为配音/烧字。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T11:40:00Z",
+    "checks": [
+      "I2VA正打·林晚视线朝画右(眼神匹配S3)",
+      "对白<d>逐字来自screenplay(你能不能快点/断供了)",
+      "对白仅口型+声音,画面无字",
+      "竖9:16暖线",
+      "强化去字幕约束"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4119a7b29f4cdf8833295104323e9c80d266b959b71eb87dc8630cace6dd1293"
+  }
+}

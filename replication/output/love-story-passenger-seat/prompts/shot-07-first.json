@@ -1,0 +1,68 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot07首帧·红灯揉头(签名A·有她/暖)",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感、纪实抓拍瞬间(绝非摆拍、绝非正脸看镜头)，竖构图9:16。四年前晴日午后，金色阳光斜射进车厢、暖钨丝色调、轻胶片颗粒。红灯停车。驾驶座上的顾川(短寸黑发、深灰夹克)左手扶方向盘，**右手抬起伸向副驾、正温柔地揉苏晓(披肩长发、米色针织)的头发**——这只揉头的右手与两人之间的暖意是画面焦点；苏晓坐在副驾、微微侧头迎向他的手、眯眼含笑。相机在中控偏后、略朝副驾的固定机位(此机位将与shot10空镜完全对仗)。禁止摆拍合影/两人并排正脸看镜头/静态双人肖像。 Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png",
+    "assets/su-xiao-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "签名对仗A的“有她”一侧;机位/景别须与shot10空手镜完全一致,只差副驾有无人。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "签名机位A·有她",
+      "右手揉头为焦点·暖钨丝金光",
+      "身份锚gu-chuan/su-xiao+车厢空间",
+      "与shot10同机位对仗",
+      "禁摆拍合影·无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8f924037d0a7d691e86c42be1aa353acc7a8acda3f346256355882305099a2c1",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "签名机位A·有她",
+      "右手揉头为焦点·暖钨丝金光",
+      "身份锚gu-chuan/su-xiao+车厢空间",
+      "与shot10同机位对仗",
+      "禁摆拍合影·无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8f924037d0a7d691e86c42be1aa353acc7a8acda3f346256355882305099a2c1"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B7"
+    ],
+    "related_shots": [
+      "07",
+      "10"
+    ],
+    "visual_evidence": [
+      "红灯车内暖线",
+      "顾川右手伸向副驾揉苏晓头发(焦点)",
+      "苏晓侧头蹭手含笑",
+      "固定机位与shot10对仗",
+      "抓拍非摆拍"
+    ],
+    "unresolved_blockers": []
+  }
+}

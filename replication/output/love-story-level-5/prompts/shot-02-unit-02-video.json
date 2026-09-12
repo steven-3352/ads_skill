@@ -1,0 +1,43 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-02 / unit-02 H3 视频(FL2VA·脆响抬眼→切)",
+  "mode": "FL2VA",
+  "shot": "02",
+  "unit": "unit-02",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, cool teal-white private dining room at night, same enclosed room and camera as Shot 01 (wood lattice screen, soft wall sconce, warm wood partition, blurred). The opening matches Picture 1: Lin Wan — long black hair, plain cool-toned knit top, restrained expression — sits with her chopsticks resting at the edge of her now-empty small dish, gaze lowered; the out-of-focus male colleague isolates her at the near foreground; the shared white communal plate holding several whole shrimp stays at the center-foreground of the table. The camera holds nearly static, then pushes in with small amplitude at slow speed. An off-screen crisp shrimp-shell crack cuts through the chatter — nothing cracking is shown in frame; this crack is the sound bridge that will stitch into the next scene — and Lin Wan slowly lifts her gaze from the dish, chin rising, looking past the noise into the distance, a flicker of distraction surfacing. The ending matches Picture 2: her gaze is lifted and fixed on the distance, chin slightly up, chopsticks still paused at the empty dish edge, as the memory is about to open.\n\noverall_soundscape: Layered restaurant chatter and clinking bowls fill the private room; a single crisp shrimp-shell crack cuts through clearly from off-screen, followed by a brief hush settling around her.\n\nnon_diegetic_music: A single sustained low string tone, held quietly, swelling slightly toward the end as the memory is about to open.",
+  "images": [
+    "shots/shot-02/images/unit-02-first.png",
+    "shots/shot-02/images/unit-02-last.png"
+  ],
+  "duration": 6,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-02/video/unit-02.mp4",
+  "status": "generated",
+  "note": "签名A 声画 match-cut 的出点(A-out)：脆响为画外声音桥、抬眼为可见引信；对白无、以环境声+脆响+冷弦为主，随 H3 视频一起产出(audioPolicy=in_video_first)。首=unit-02-first.png(承接shot01尾帧)，尾=unit-02-last.png(抬眼终态，由首帧锁机位)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T06:25:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=首帧垂眼停筷,<Picture2>=尾帧抬眼)",
+      "FL2VA插值强制垂眼→抬眼的离散姿态变化",
+      "脆响为画外音桥、画面不出现掰虾人(掰虾属分镜03)",
+      "时长6s节拍匹配、极缓微推",
+      "签名A A-out：声音桥+抬眼引信",
+      "冷线视觉语法/克制表演/单人孤立",
+      "无对白、环境声+脆响+冷弦，无字幕/水印/品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5dc1fbe1162e7336d51de3d9b2acfb8959bd6f93216f47fc3e245f8e0bc323ff"
+  },
+  "output_sha256": "3f5e09d4a57423d1e0072bdce3a2cb32952bd9413bfd60f6581e744b7c8f0bbb",
+  "generation_time": "2026-09-12T06:30:00Z"
+}

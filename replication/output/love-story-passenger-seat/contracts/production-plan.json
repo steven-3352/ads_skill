@@ -1,0 +1,1040 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-passenger-seat",
+  "title": "副驾",
+  "generation_allowed": true,
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "audioPolicy": {
+    "dialogue": "H3 <d> 配音优先，后备后期配音",
+    "music": "她的歌贯穿05↔12声音桥",
+    "mix": "loudnorm I=-16:TP=-1.5:LRA=11"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 15,
+    "aspect": "9:16",
+    "durationCeilingSeconds": 60,
+    "note": "60秒为上限非目标，不拖沓不注水；目标成片~48-52s"
+  },
+  "visualGrammarRef": "contracts/visual-grammar.json",
+  "screenplayRef": "contracts/screenplay.json",
+  "charactersRef": "characters.md",
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "现在：现在·两杯热饮(Hook)",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "车外过窗口→车内插入杯架；近静止",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "接过两杯热饮，放进杯架"
+      },
+      "requiredBeats": [
+        {
+          "id": "b01",
+          "sceneId": "scene-01",
+          "text": "接过两杯热饮，放进杯架",
+          "channels": [
+            "picture",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-01",
+          "sceneId": "scene-01",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c01",
+              "seconds": 5,
+              "camera": "车外过窗口→车内插入杯架；近静止",
+              "coverage": [
+                {
+                  "beatId": "b01",
+                  "channels": [
+                    "picture",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-01-first.json"
+            ],
+            "video": "prompts/shot-01-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-01/images/unit-01-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-01/video/unit-01.mp4"
+          },
+          "references": [
+            "assets/car-interior.png",
+            "assets/two-drinks.png",
+            "assets/gu-chuan-master.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-01-fol",
+          "type": "fallback_sound",
+          "description": "拟音：纸杯放进杯架的轻响、发动机怠速"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "现在：为空座系安全带",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "FL2VA",
+      "camera": "CU手部；安全带越过空座；固定机位",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "把副驾的安全带拉过来，越过那个空座，咔哒扣上"
+      },
+      "requiredBeats": [
+        {
+          "id": "b02",
+          "sceneId": "scene-01",
+          "text": "把副驾的安全带拉过来，越过那个空座，咔哒扣上",
+          "channels": [
+            "picture",
+            "action_sound"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-02",
+          "sceneId": "scene-01",
+          "durationSeconds": 5,
+          "inputMode": "FL2VA",
+          "cuts": [
+            {
+              "id": "c02",
+              "seconds": 5,
+              "camera": "CU手部；安全带越过空座；固定机位",
+              "coverage": [
+                {
+                  "beatId": "b02",
+                  "channels": [
+                    "picture",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-02-first.json",
+              "prompts/shot-02-last.json"
+            ],
+            "video": "prompts/shot-02-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-02/images/unit-02-first.png",
+            "lastFrame": "shots/shot-02/images/unit-02-last.png",
+            "video": "shots/shot-02/video/unit-02.mp4"
+          },
+          "references": [
+            "assets/car-interior.png",
+            "assets/gu-chuan-master.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-02-fol",
+          "type": "fallback_sound",
+          "description": "拟音：安全带抽出与卡扣“咔哒”一声"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "现在：瞥空座淡笑起步",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "驾驶位正打；近静止微推",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "瞥了一眼空副驾，淡淡笑了一下，起步"
+      },
+      "requiredBeats": [
+        {
+          "id": "b03",
+          "sceneId": "scene-01",
+          "text": "瞥了一眼空副驾，淡淡笑了一下，起步",
+          "channels": [
+            "picture",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-03",
+          "sceneId": "scene-01",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c03",
+              "seconds": 5,
+              "camera": "驾驶位正打；近静止微推",
+              "coverage": [
+                {
+                  "beatId": "b03",
+                  "channels": [
+                    "picture",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-03-first.json"
+            ],
+            "video": "prompts/shot-03-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-03/images/unit-03-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-03/video/unit-03.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "04",
+      "title": "四年前：四年前·她脚搭台大笑",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "车内WS两人关系景；轻呼吸手持",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "苏晓把脚搭在仪表台上，笑得没心没肺"
+      },
+      "requiredBeats": [
+        {
+          "id": "b04",
+          "sceneId": "scene-02",
+          "text": "苏晓把脚搭在仪表台上，笑得没心没肺",
+          "channels": [
+            "picture",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-04",
+          "sceneId": "scene-02",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c04",
+              "seconds": 5,
+              "camera": "车内WS两人关系景；轻呼吸手持",
+              "coverage": [
+                {
+                  "beatId": "b04",
+                  "channels": [
+                    "picture",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-04-first.json"
+            ],
+            "video": "prompts/shot-04-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-04/images/unit-04-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-04/video/unit-04.mp4"
+          },
+          "references": [
+            "assets/car-interior.png",
+            "assets/gu-chuan-master.png",
+            "assets/su-xiao-master.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "05",
+      "title": "四年前：她换歌",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "反打·她(看画左向他)+中控插入；轻手持",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "她伸手去拧车载音响，换成自己的歌"
+      },
+      "requiredBeats": [
+        {
+          "id": "b05",
+          "sceneId": "scene-02",
+          "text": "她伸手去拧车载音响，换成自己的歌",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-05",
+          "sceneId": "scene-02",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c05",
+              "seconds": 5,
+              "camera": "反打·她(看画左向他)+中控插入；轻手持",
+              "coverage": [
+                {
+                  "beatId": "b05",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-05-first.json"
+            ],
+            "video": "prompts/shot-05-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-05/images/unit-05-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-05/video/unit-05.mp4"
+          },
+          "references": [
+            "assets/su-xiao-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-05-fol",
+          "type": "fallback_sound",
+          "description": "拟音：旋钮转动、切歌电台杂音"
+        },
+        {
+          "id": "pt-05-dia",
+          "type": "fallback_dialogue",
+          "description": "后备配音·苏晓：我的车我做主。"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "四年前：他无奈",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "正打·他(瞥画右)；轻手持",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "一手扶方向盘，瞥她一眼，无奈"
+      },
+      "requiredBeats": [
+        {
+          "id": "b06",
+          "sceneId": "scene-02",
+          "text": "一手扶方向盘，瞥她一眼，无奈",
+          "channels": [
+            "picture",
+            "dialogue"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-06",
+          "sceneId": "scene-02",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c06",
+              "seconds": 5,
+              "camera": "正打·他(瞥画右)；轻手持",
+              "coverage": [
+                {
+                  "beatId": "b06",
+                  "channels": [
+                    "picture",
+                    "dialogue"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-06-first.json"
+            ],
+            "video": "prompts/shot-06-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-06/images/unit-06-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-06/video/unit-06.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-06-dia",
+          "type": "fallback_dialogue",
+          "description": "后备配音·顾川：又乱调。"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "四年前：红灯揉头(签名A·有她)",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "正打·他伸右手入画揉头(签名机位A)；轻手持",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "红灯。他空出右手，揉了揉她的头发"
+      },
+      "requiredBeats": [
+        {
+          "id": "b07",
+          "sceneId": "scene-02",
+          "text": "红灯。他空出右手，揉了揉她的头发",
+          "channels": [
+            "picture",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-07",
+          "sceneId": "scene-02",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c07",
+              "seconds": 5,
+              "camera": "正打·他伸右手入画揉头(签名机位A)；轻手持",
+              "coverage": [
+                {
+                  "beatId": "b07",
+                  "channels": [
+                    "picture",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-07-first.json"
+            ],
+            "video": "prompts/shot-07-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-07/images/unit-07-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-07/video/unit-07.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/su-xiao-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "08",
+      "title": "四年前：她蹭进掌心",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "反打·她CU蹭手心闭眼；浅景深",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "苏晓像猫一样蹭进他掌心，眯起眼"
+      },
+      "requiredBeats": [
+        {
+          "id": "b08",
+          "sceneId": "scene-02",
+          "text": "苏晓像猫一样蹭进他掌心，眯起眼",
+          "channels": [
+            "picture"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-08",
+          "sceneId": "scene-02",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c08",
+              "seconds": 5,
+              "camera": "反打·她CU蹭手心闭眼；浅景深",
+              "coverage": [
+                {
+                  "beatId": "b08",
+                  "channels": [
+                    "picture"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-08-first.json"
+            ],
+            "video": "prompts/shot-08-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-08/images/unit-08-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-08/video/unit-08.mp4"
+          },
+          "references": [
+            "assets/su-xiao-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "09",
+      "title": "四年前：双手交握",
+      "timeline": "then",
+      "visualGrammar": "then",
+      "inputMode": "I2VA",
+      "camera": "插入·档杆手部特写",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "他们的手在档杆上叠在一起"
+      },
+      "requiredBeats": [
+        {
+          "id": "b09",
+          "sceneId": "scene-02",
+          "text": "他们的手在档杆上叠在一起",
+          "channels": [
+            "picture",
+            "action_sound"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-09",
+          "sceneId": "scene-02",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c09",
+              "seconds": 5,
+              "camera": "插入·档杆手部特写",
+              "coverage": [
+                {
+                  "beatId": "b09",
+                  "channels": [
+                    "picture",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-09-first.json"
+            ],
+            "video": "prompts/shot-09-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-09/images/unit-09-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-09/video/unit-09.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/su-xiao-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "10",
+      "title": "现在：空手对仗(签名A·payoff/转场)",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "正打·同机位同动作右手伸向副驾→空气；暖→冷硬切入",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "又空出右手伸向副驾"
+      },
+      "requiredBeats": [
+        {
+          "id": "b10",
+          "sceneId": "scene-03",
+          "text": "又空出右手伸向副驾",
+          "channels": [
+            "picture",
+            "transition"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-10",
+          "sceneId": "scene-03",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c10",
+              "seconds": 5,
+              "camera": "正打·同机位同动作右手伸向副驾→空气；暖→冷硬切入",
+              "coverage": [
+                {
+                  "beatId": "b10",
+                  "channels": [
+                    "picture",
+                    "transition"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-10-first.json"
+            ],
+            "video": "prompts/shot-10-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-10/images/unit-10-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-10/video/unit-10.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "11",
+      "title": "现在：手悬空笑意凝住",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "正打·他手悬空、笑意凝住收回；冷线近静止",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "他的手停在空气里，笑意一点点凝住，慢慢收回"
+      },
+      "requiredBeats": [
+        {
+          "id": "b11",
+          "sceneId": "scene-03",
+          "text": "他的手停在空气里，笑意一点点凝住，慢慢收回",
+          "channels": [
+            "picture",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-11",
+          "sceneId": "scene-03",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c11",
+              "seconds": 5,
+              "camera": "正打·他手悬空、笑意凝住收回；冷线近静止",
+              "coverage": [
+                {
+                  "beatId": "b11",
+                  "channels": [
+                    "picture",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-11-first.json"
+            ],
+            "video": "prompts/shot-11-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-11/images/unit-11-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-11/video/unit-11.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "12",
+      "title": "现在：关小她那侧音量(声音桥B)",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "插入·中控旋钮+空副驾同框；她的歌仍在放",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "把“她那一侧”的音量轻轻关小"
+      },
+      "requiredBeats": [
+        {
+          "id": "b12",
+          "sceneId": "scene-03",
+          "text": "把“她那一侧”的音量轻轻关小",
+          "channels": [
+            "picture",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-12",
+          "sceneId": "scene-03",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c12",
+              "seconds": 5,
+              "camera": "插入·中控旋钮+空副驾同框；她的歌仍在放",
+              "coverage": [
+                {
+                  "beatId": "b12",
+                  "channels": [
+                    "picture",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-12-first.json"
+            ],
+            "video": "prompts/shot-12-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-12/images/unit-12-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-12/video/unit-12.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-12-mus",
+          "type": "music_bridge",
+          "description": "用与shot05同一段“她的歌”做声音桥；现在侧音量被关小=她的声音退场"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "现在：对空座说话",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "正打·他看路轻声说，副驾空座入画",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "到了，今天不堵"
+      },
+      "requiredBeats": [
+        {
+          "id": "b13",
+          "sceneId": "scene-03",
+          "text": "到了，今天不堵",
+          "channels": [
+            "picture",
+            "dialogue"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-13",
+          "sceneId": "scene-03",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c13",
+              "seconds": 5,
+              "camera": "正打·他看路轻声说，副驾空座入画",
+              "coverage": [
+                {
+                  "beatId": "b13",
+                  "channels": [
+                    "picture",
+                    "dialogue"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-13-first.json"
+            ],
+            "video": "prompts/shot-13-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-13/images/unit-13-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-13/video/unit-13.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-13-dia",
+          "type": "fallback_dialogue",
+          "description": "后备配音·顾川：到了，今天不堵。"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "现在：反转物证(相框+住院手环)",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "I2VA",
+      "camera": "插入·副驾相框(苏晓笑)+杯架住院手环特写",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "一只褪色的住院手环，印着“苏晓”和一个日期"
+      },
+      "requiredBeats": [
+        {
+          "id": "b14",
+          "sceneId": "scene-03",
+          "text": "一只褪色的住院手环，印着“苏晓”和一个日期",
+          "channels": [
+            "picture",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-14",
+          "sceneId": "scene-03",
+          "durationSeconds": 5,
+          "inputMode": "I2VA",
+          "cuts": [
+            {
+              "id": "c14",
+              "seconds": 5,
+              "camera": "插入·副驾相框(苏晓笑)+杯架住院手环特写",
+              "coverage": [
+                {
+                  "beatId": "b14",
+                  "channels": [
+                    "picture",
+                    "onscreen_text"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-14-first.json"
+            ],
+            "video": "prompts/shot-14-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-14/images/unit-14-first.png",
+            "lastFrame": null,
+            "video": "shots/shot-14/video/unit-14.mp4"
+          },
+          "references": [
+            "assets/reveal-props.png",
+            "assets/car-interior.png",
+            "assets/su-xiao-master.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-14-txt",
+          "type": "onscreen_text_overlay",
+          "description": "住院手环上的“苏晓+日期”若生成不清晰，后期以贴近实拍的方式补描清晰(诊断式白底黑字，非字幕)"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "现在：墓园开副驾门相送",
+      "timeline": "now",
+      "visualGrammar": "now",
+      "inputMode": "FL2VA",
+      "camera": "车外·山坡墓园；他绕到副驾侧开门取物走向碑",
+      "source": {
+        "storyFile": "story/副驾.md",
+        "verbatim": "拉开车门，拿起那杯热饮和相框，走向不远处的墓碑"
+      },
+      "requiredBeats": [
+        {
+          "id": "b15",
+          "sceneId": "scene-04",
+          "text": "拉开车门，拿起那杯热饮和相框，走向不远处的墓碑",
+          "channels": [
+            "picture",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "unit-15",
+          "sceneId": "scene-04",
+          "durationSeconds": 5,
+          "inputMode": "FL2VA",
+          "cuts": [
+            {
+              "id": "c15",
+              "seconds": 5,
+              "camera": "车外·山坡墓园；他绕到副驾侧开门取物走向碑",
+              "coverage": [
+                {
+                  "beatId": "b15",
+                  "channels": [
+                    "picture",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shot-15-first.json",
+              "prompts/shot-15-last.json"
+            ],
+            "video": "prompts/shot-15-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-15/images/unit-15-first.png",
+            "lastFrame": "shots/shot-15/images/unit-15-last.png",
+            "video": "shots/shot-15/video/unit-15.mp4"
+          },
+          "references": [
+            "assets/gu-chuan-master.png",
+            "assets/car-interior.png"
+          ]
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "pt-15-card",
+          "type": "theme_card",
+          "description": "黑场主题句卡：你习惯了她在，就忘了她已经不在。(ASS统一字幕/旁白)"
+        }
+      ]
+    }
+  ],
+  "note": "覆盖剪辑法(多机位+正反打+插入+同机位对仗)。签名A=红灯揉头07↔10空手对仗；签名B=她的歌05↔12声音桥。媒体不进仓库。",
+  "stage": "produced"
+}

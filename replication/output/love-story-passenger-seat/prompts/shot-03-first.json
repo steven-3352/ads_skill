@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot03首帧·瞥空座淡笑",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid moment (not posed, not looking at camera). Medium shot of the man Gu Chuan (short black hair, dark grey jacket) in the driver seat, one hand on the wheel, turning his head slightly right to glance at the empty passenger seat with a faint, sad small smile; overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera. The empty buckled passenger seat is visible in frame. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "现在冷线;瞥空座淡笑起步。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "驾驶位单人·抓拍非摆拍",
+      "瞥空副驾淡笑",
+      "空座入画·冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0a9bd9bc8d66626211efc772e420efa8a7e937be019167220ff21aeba64a7663",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "驾驶位单人·抓拍非摆拍",
+      "瞥空副驾淡笑",
+      "空座入画·冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0a9bd9bc8d66626211efc772e420efa8a7e937be019167220ff21aeba64a7663"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B3"
+    ],
+    "related_shots": [
+      "03"
+    ],
+    "visual_evidence": [
+      "驾驶位单人瞥空座",
+      "淡笑克制",
+      "空座入画",
+      "冷调"
+    ],
+    "unresolved_blockers": []
+  }
+}

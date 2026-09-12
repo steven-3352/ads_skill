@@ -1,0 +1,40 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05 / unit-05 H3 视频(FL2VA)",
+  "mode": "FL2VA",
+  "shot": "05",
+  "unit": "unit-05",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 12.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm tungsten golden light with light film grain, a company dinner four years ago; gentle handheld breathing camera, two-person relationship framing at the warm dinner table preserved from Picture 1. Lao Zhao, an older male colleague around 35, reaches his chopsticks across the table and says: <d>[Chinese]给我来一个。</d> Chen Yu (short black hair, blue crew-neck) blocks Lao Zhao's chopsticks with one hand and, with the other, places the shrimp he just peeled into Lin Wan's bowl, saying: <d>[Chinese]自己剥。</d> The whole table laughs warmly. Lin Wan — the same face, four years younger and secure in being adored — lowers her head; under the table the tip of her shoe lightly taps Chen Yu's shoe. Matching Picture 2, the peeled shrimp is now in Lin Wan's bowl and she is biting into it, her shoulders visibly relaxing with a small warm smile, while Lao Zhao has withdrawn his chopsticks. No subtitles, no on-screen captions, no burned-in text, no watermark.\n\noverall_soundscape: Warm overlapping laughter around the table, chopsticks crossing, and a shrimp dropped softly into a bowl.\n\nnon_diegetic_music: Warm strings continue at a slow tempo, a touch brighter here.",
+  "images": [
+    "shots/shot-05/images/unit-05-first.png",
+    "shots/shot-05/images/unit-05-last.png"
+  ],
+  "duration": 12,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-05/video/unit-05.mp4",
+  "status": "prompt_ready",
+  "note": "暖线四年前唯一亲密段。放虾进林晚碗=离散转移→FL2VA首尾帧强制演出。脚尖碰鞋以画外/氛围处理。对白逐字来自原文。已在IMD显式禁止烧录字幕(参见 pt-04-sub 教训)。音随视频产出。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T08:00:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=放虾进行中/未咬,<Picture2>=虾已在碗+咬第一口+肩松)",
+      "FL2VA强制演出放虾进碗离散转移与松弛",
+      "三人身份锚定(chen-yu/lin-wan/lao-zhao)",
+      "对白<d>逐字来自01-虾壳.md(给我来一个/自己剥)",
+      "暖线视觉语法/全片唯一亲密",
+      "显式no subtitles/no on-screen text/no watermark(shot-04教训)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b34c6a89b5f9dd9368b2e44253acb2865ce2d312f258f3ab0c42765e7eca9445"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "projectId": "love-story-passenger-seat",
+  "principle": "镜头语言按场景/情绪分配：冷线现在=静止多角度覆盖(停顿即情绪)；暖线四年前=呼吸感手持长镜(让生活流动)；签名对仗镜=锁定机位；墓园结尾=一个连续长镜。覆盖用变时长+连续性剪(视线/动作匹配)，非等长幻灯片。",
+  "targetSeconds": "≈48-52 (上限60，不注水)",
+  "grade": { "now": "阴天青蓝冷调、略高对比、干净、近静止", "then": "晴日钨丝金橙、饱和、轻颗粒、呼吸手持" },
+  "scenes": [
+    {
+      "scene": "scene-01", "timeline": "now", "language": "多角度覆盖·静止·短",
+      "why": "发车仪式靠细节呈现(两杯/系空座安全带/瞥座)，静止覆盖+动作连续最贴还原且克制",
+      "shots": [
+        { "id": "01", "role": "coverage_insert", "keep": 2.5, "gen": 5, "cut": "细节起手(两杯入杯架)，动作接下一插入" },
+        { "id": "02", "role": "coverage_insert", "keep": 2.5, "gen": 5, "cut": "手部动作连续：拉安全带越过空座→咔哒(FL2VA)" },
+        { "id": "03", "role": "coverage_single", "keep": 2.5, "gen": 5, "cut": "由细节切到驾驶位单人，瞥空座淡笑→起步，接暖线" }
+      ]
+    },
+    {
+      "scene": "scene-02", "timeline": "then", "language": "呼吸感手持长镜为主 + 07锁定签名镜",
+      "why": "暖线是全片的‘有她’情感核心，需呼吸让生活流动，别切碎；正反打保留可读性；07红灯揉头刻意锁机位(与10对仗)——手持的暖在此‘屏住呼吸’",
+      "shots": [
+        { "id": "04", "role": "long_take_breathing", "keep": 3.5, "gen": 5, "cut": "WS关系景建立暖+她鲜活(脚搭台大笑)" },
+        { "id": "05", "role": "long_take_breathing", "keep": 3.5, "gen": 5, "cut": "反打她换歌+台词‘我的车我做主’，动作(拧旋钮)接他反打" },
+        { "id": "06", "role": "coverage_single", "keep": 3.0, "gen": 5, "cut": "正打他无奈+‘又乱调’，视线匹配她" },
+        { "id": "07", "role": "locked_signature_A_has", "keep": 3.0, "gen": 5, "cut": "红灯·锁定机位·揉头(有她/暖)；镜头在此静下来，为10对仗" },
+        { "id": "08", "role": "coverage_single", "keep": 2.5, "gen": 5, "cut": "反打她蹭掌心眯眼，接手部插入" },
+        { "id": "09", "role": "coverage_insert", "keep": 2.5, "gen": 5, "cut": "档杆双手交握插入，暖线情感峰值→硬切到10" }
+      ]
+    },
+    {
+      "scene": "scene-03", "timeline": "now", "language": "静止多角度覆盖 + 对仗 + 声音桥 + 揭示",
+      "why": "现在冷线用静止覆盖，空座与停滞承载缺席；10空手是签名payoff(锁定机位对仗07)；声音桥B与物证揭示逐步收紧",
+      "shots": [
+        { "id": "10", "role": "locked_signature_A_empty", "keep": 3.5, "gen": 5, "cut": "从09暖硬切入：同机位同动作右手伸向空副驾(空气/冷)，多停一拍让缺席落下" },
+        { "id": "11", "role": "coverage_single", "keep": 3.0, "gen": 5, "cut": "正打手悬空、笑意凝住、慢收回" },
+        { "id": "12", "role": "coverage_insert", "keep": 3.0, "gen": 5, "cut": "中控旋钮+空副驾同框，关小她那侧音量(声音桥B兑现)" },
+        { "id": "13", "role": "coverage_single", "keep": 3.0, "gen": 5, "cut": "正打对空座轻声‘到了，今天不堵’，视线向副驾" },
+        { "id": "14", "role": "coverage_insert_reveal", "keep": 3.5, "gen": 5, "cut": "揭示物证：相框(苏晓笑)+褪色住院手环(名字+日期)，全片反转落点" }
+      ]
+    },
+    {
+      "scene": "scene-04", "timeline": "now", "language": "一个连续长镜",
+      "why": "走向墓碑的不间断长镜=情绪呼气，切碎反而廉价；长镜头适合此处",
+      "shots": [
+        { "id": "15", "role": "long_take_closing", "keep": 5.0, "gen": 5, "cut": "FL2VA连续：绕到副驾侧开门→取热饮+相框→走向墓碑；接主题句黑场卡~2s" }
+      ]
+    }
+  ],
+  "themeCard": { "text": "你习惯了她在，就忘了她已经不在。", "seconds": 2.0, "style": "黑场·衬线白字·ASS·PlayRes768x1344" },
+  "signatureCuts": {
+    "A": "09→10 暖硬切到冷，同机位同‘伸右手’动作，有她↔空气；切点色调由暖褪冷",
+    "B": "05她换的歌 作声音桥贯穿，到12把‘她那侧’音量关小=她的声音退场"
+  },
+  "assembly": {
+    "keepWindows": "各镜按 keep 秒从5s生成里裁最干净窗口(优先避开H3尾部可能烧字段)",
+    "venc": "libx264 -crf 18 -preset medium -pix_fmt yuv420p -r 24 -video_track_timescale 12288",
+    "aenc": "aac 48k ac2 192k; loudnorm I=-16:TP=-1.5:LRA=11",
+    "subs": "ASS 统一字幕 Noto Serif CJK SC；仅05/06/13三句对白+结尾主题句；concat demuxer -c copy",
+    "estSeconds": "coverage keep 合计≈45.5 + 主题卡2 ≈ 47.5s"
+  }
+}

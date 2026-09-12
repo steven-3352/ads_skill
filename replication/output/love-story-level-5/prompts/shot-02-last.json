@@ -4,11 +4,12 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-02-last 关键帧",
   "mode": "FL2VA-last-frame",
-  "prompt": "同一冷白偏青餐馆包间中景，镜头极缓微推。林晚被一声清脆的虾壳脆响触发，缓缓抬眼、目光越过喧闹望向远处，准备切入回忆。冷线视觉语法。无字幕、无文字水印、无品牌。",
-  "output": null,
-  "status": "prompt_ready",
+  "prompt": "写实电影感，冷白偏青的餐馆包间夜景，与首帧同一机位、同一包间（暖木隔断、壁灯、木格栅，虚化），镜头极缓微推。林晚被一声画外清脆的虾壳脆响触发，视线从空碟面缓缓抬起、下巴微抬，目光越过前景喧闹望向远处，眼神里浮起一丝恍惚——回忆即将开启（签名A 声画转场起点）。筷子仍停在空小碟边缘。冷线视觉语法：冷白偏青、干净、单人孤立构图。无字幕、无文字水印、无品牌。",
+  "output": "shots/shot-02/images/unit-02-last.png",
+  "status": "generated",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "shots/shot-02/images/unit-02-first.png",
+    "assets/lin-wan-master.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -18,13 +19,51 @@
     "mode": "FL2VA-last-frame",
     "reviewed_at": "2026-09-11",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA终态锁死抬眼姿态(垂眼→抬眼)",
+      "引用首帧图锁机位/连续性",
+      "脆响为画外声音桥、不入画面",
+      "人物身份锚定(lin-wan master)",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "504fcc958d59ace8770999ddab0338a2f11e91498823ca4d3882a83a7fffcfe9"
-  }
+    "reviewed_prompt_sha256": "57bab86127bd296a014956bf55f3aa95db3a1ac23fed884e8c486568660d371c"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图与分镜01尾帧锚定身份与机位连续性；随后作为 MiniMax-H3 FL2VA 的首/尾帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T23:30:00Z",
+    "checks": [
+      "FL2VA终态锁死抬眼姿态(垂眼→抬眼)",
+      "引用首帧图锁机位/连续性",
+      "脆响为画外声音桥、不入画面",
+      "人物身份锚定(lin-wan master)",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "57bab86127bd296a014956bf55f3aa95db3a1ac23fed884e8c486568660d371c"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b02-crack"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "林晚视线从空碟抬起、下巴微抬(垂眼→抬眼的离散状态变化终态)",
+      "目光越过喧闹望向远处、浮起恍惚",
+      "与首帧同机位同包间",
+      "签名A 声画转场起点"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "e183b899ea76da4491a63ea03caeb6e047c363e862c6c0e084ef92878b207a88",
+  "generation_time": "2026-09-12T06:30:00Z"
 }

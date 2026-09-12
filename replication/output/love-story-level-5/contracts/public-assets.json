@@ -44,47 +44,97 @@
     {
       "id": "zhou-colleague",
       "type": "character",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/zhou-colleague.json",
-      "path": null,
+      "path": "assets/zhou-colleague-master.png",
       "usage": "现在餐馆小周",
-      "prompt_text": "写实中国男性同事约28岁，普通餐馆聚餐服装，自然状态，三视图，灰色背景，无文字水印。"
+      "prompt_text": "写实中国男性同事约28岁，普通餐馆聚餐服装，自然状态，三视图，灰色背景，无文字水印。",
+      "model": "GPT Image",
+      "sha256": "a37906437f41c968038a088bed1ace4608403d61694acd2f02f4f23ed430f775",
+      "generation_time": "2026-09-11T22:05:00Z",
+      "cost": "recorded_by_provider",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      }
     },
     {
       "id": "lao-zhao",
       "type": "character",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/lao-zhao.json",
-      "path": null,
+      "path": "assets/lao-zhao-master.png",
       "usage": "回忆公司聚餐同事",
-      "prompt_text": "写实中国男性同事约35岁，普通聚餐服装，自然状态，三视图，灰色背景，无文字水印。"
+      "prompt_text": "写实中国男性同事约35岁，普通聚餐服装，自然状态，三视图，灰色背景，无文字水印。",
+      "model": "GPT Image",
+      "sha256": "8b2fa8f0cb27008fe113d3371e184fb5153e48d7fb9c934e4a3e8b05a3aa80d8",
+      "generation_time": "2026-09-11T22:05:00Z",
+      "cost": "recorded_by_provider",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      }
     },
     {
       "id": "restaurant-private-room",
       "type": "background",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/restaurant-private-room.json",
-      "path": null,
+      "path": "assets/restaurant-private-room.png",
       "usage": "餐馆包间",
-      "prompt_text": "现代中国餐馆包间，夜晚暖色实用灯光，圆桌、公盘、小碟、筷子，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。"
+      "prompt_text": "现代中国餐馆包间，夜晚暖色实用灯光，圆桌、公盘、小碟、筷子，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。",
+      "model": "GPT Image",
+      "sha256": "73fd356bb436db2838600e6b0937eac31a7a6fcd25c2b21e167e3a25063ad826",
+      "generation_time": "2026-09-11T22:05:00Z",
+      "cost": "recorded_by_provider",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      }
     },
     {
       "id": "rental-dining-table",
       "type": "background",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/rental-dining-table.json",
-      "path": null,
+      "path": "assets/rental-dining-table.png",
       "usage": "四年前出租屋餐桌",
-      "prompt_text": "普通城市出租屋餐桌，夜晚室内灯光，外卖盒、电脑、两只碗，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。"
+      "prompt_text": "普通城市出租屋餐桌，夜晚室内灯光，外卖盒、电脑、两只碗，真实生活感，适合Vlog拍摄，无人物、无文字、无品牌。",
+      "model": "GPT Image",
+      "sha256": "b90b9565de6bdd01953468a1533b72501dc48e130984900bc788a9f2ce66ee75",
+      "generation_time": "2026-09-11T22:05:00Z",
+      "cost": "recorded_by_provider",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      }
     },
     {
       "id": "shrimp-and-tableware",
       "type": "prop",
-      "status": "prompt_ready",
+      "status": "accepted",
       "prompt": "prompts/shrimp-and-tableware.json",
-      "path": null,
+      "path": "assets/shrimp-and-tableware.png",
       "usage": "白灼虾、公盘、小碟、筷子、虾壳、纸巾、空碟",
-      "prompt_text": "白灼虾、公盘、小白碟、黑色筷子、虾壳、白纸巾，真实食物摄影，湿亮虾壳和水珠，干净背景，无文字、无品牌。"
+      "prompt_text": "白灼虾、公盘、小白碟、黑色筷子、虾壳、白纸巾，真实食物摄影，湿亮虾壳和水珠，干净背景，无文字、无品牌。",
+      "model": "GPT Image",
+      "sha256": "dfa481da03bd386135eedc52de52cbdcb6d6a204884ecf66d7e0a9bff8bc3c64",
+      "generation_time": "2026-09-11T22:05:00Z",
+      "cost": "recorded_by_provider",
+      "technical_qc": {
+        "file_exists": true,
+        "non_empty": true,
+        "format": "png",
+        "narrative_alignment": "pass"
+      }
     }
   ],
   "note": "林晚、陈屿公共人物资产已生成；其余公共资产仍待生成。"

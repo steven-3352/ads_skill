@@ -32,3 +32,9 @@ replication/edit/
 
 # Raw image-gen API responses embed base64 image payloads (b64_json) — treat as media
 **/audit/assets/**/response.json
+
+# Per-generation video response JSONs carry a download URL to the generated MP4
+# (a media pointer) — treat as media, keep out of the text-only repo
+**/shots/**/video/*.json
+# Any generation audit evidence dirs (base64/URLs) if ever placed in-tree
+**/.audit/

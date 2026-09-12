@@ -1,0 +1,62 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "两杯热饮 master(道具锚)",
+  "mode": "still-master",
+  "prompt": "Macro product photograph looking down into a car center console. Subject fills the frame: two identical tall paper takeaway coffee cups with white plastic lids, standing upright side by side, each seated in one of the two round cup holders of a beige-interior car console. The two cups are the clear focus and dominate the frame; one cup clearly full and untouched. Overcast blue-cyan cold daylight, slightly high contrast, clean, near-static locked macro camera. Only the console surface and the cup holders are visible, softly blurred behind the cups; no windshield, no sky, no dashboard, no steering wheel, no seats, no people, no faces — a tight still-life insert, not a wide cabin shot and not a portrait. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "两杯热饮道具锚;她那杯始终满没动。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "双纸杯并列杯架",
+      "一杯满未动",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "af1cb9233d1c14211e1409a2a94d9877bb23c46a0b1f35ac4c918a79e09f5f6c",
+    "mode": "still-master"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "双纸杯并列杯架",
+      "一杯满未动",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "af1cb9233d1c14211e1409a2a94d9877bb23c46a0b1f35ac4c918a79e09f5f6c"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B1"
+    ],
+    "related_shots": [
+      "01",
+      "10",
+      "15"
+    ],
+    "visual_evidence": [
+      "双纸杯并列杯架",
+      "她那杯满未动",
+      "冷调",
+      "接车厢锚"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-07 / unit-07b H3 视频(FL2VA)",
+  "mode": "FL2VA",
+  "shot": "07",
+  "unit": "unit-07b",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 7.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, cool teal-white close framing on hands. Beginning at Picture 1, Lin Wan's chopsticks push aside a fleck of chopped scallion on the peeled shrimp, revealing the empty bottom of the bowl beneath. The camera holds static. She lifts the peeled shrimp, holds it midair, then puts it down, and instead reaches to the shared plate to pick up one whole, unpeeled poached shrimp, settling on it as in Picture 2. No subtitles, no on-screen captions, no burned-in text, no watermark.\n\noverall_soundscape: Restaurant ambience thinning on her side, chopsticks nudging the shrimp, and a shrimp lifted from the shared plate.\n\nnon_diegetic_music: A single cold sustained note.",
+  "images": [
+    "shots/shot-07/images/unit-07b-first.png",
+    "shots/shot-07/images/unit-07b-last.png"
+  ],
+  "duration": 7,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-07/video/unit-07b.mp4",
+  "status": "prompt_ready",
+  "note": "现在冷线落差核心。拨开葱花露空碗底→夹起又放下→从公盘夹回完整带壳虾=离散动作,FL2VA首尾帧强制演出。无对白。音随视频产出。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T08:00:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=拨葱花露空碗底,<Picture2>=夹回完整带壳虾)",
+      "FL2VA强制演出落差(别人剥好虾→自己夹回完整虾)",
+      "人物/桌面连续性(承接07a)",
+      "冷线视觉语法/手部近景",
+      "显式no subtitles/no on-screen text/no watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "df0a90c02c6b665c205471f9a5acd0c96782a8c37e3bdcb7c8aa3e78010557b0"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot13首帧·对空座说话",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid moment. Single of the man Gu Chuan looking ahead through the windshield, about to speak softly, the empty buckled passenger seat clearly in frame beside him; overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "现在冷线;对空座轻声说话。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "他单人·抓拍",
+      "看前方将开口",
+      "空座入画·冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "62417c43ca93416047f8625dc547e2a829a2febd8263afda38dcae031f2d2963",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "他单人·抓拍",
+      "看前方将开口",
+      "空座入画·冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "62417c43ca93416047f8625dc547e2a829a2febd8263afda38dcae031f2d2963"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B13"
+    ],
+    "related_shots": [
+      "13"
+    ],
+    "visual_evidence": [
+      "他单人看前方",
+      "空座入画",
+      "将开口",
+      "冷调"
+    ],
+    "unresolved_blockers": []
+  }
+}

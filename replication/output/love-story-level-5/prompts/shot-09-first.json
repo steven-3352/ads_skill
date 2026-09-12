@@ -3,28 +3,64 @@
   "model": "MiniMax-H3",
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-09-first 关键帧",
-  "mode": "I2VA-first-frame",
-  "prompt": "写实电影感，冷白偏青餐馆夜景近景。林晚把剥好的虾放进嘴里慢慢嚼，目光落到自己被扎的食指、又抬起看面前那只空碟；桌上一小堆不太完整的虾壳，旁边压着一张染上一点血的纸巾。安静克制，准备落到静物构图并切黑。冷线视觉语法。无字幕、无文字水印、无品牌。",
+  "mode": "FL2VA-first-frame",
+  "prompt": "写实电影感，冷白偏青的餐馆包间·原桌夜景近景。林晚把剥好的虾放进嘴里慢慢嚼，目光先落到自己被扎的食指、再抬起来看面前那只空的小碟；桌上她面前有一小堆不太完整、剥得凌乱的白灼虾壳，旁边压着一张染了一点血的纸巾。安静克制。冷线视觉语法。FL2VA起点。无字幕、无文字水印、无品牌。",
   "output": null,
   "status": "prompt_ready",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/lin-wan-master.png",
+    "assets/restaurant-private-room.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "image",
-    "mode": "I2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "mode": "FL2VA-first-frame",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA起点:人物在场·虾壳堆与染血纸巾可见",
+      "人物/场景锚定",
+      "冷线视觉语法",
+      "为结尾静物回扣铺垫",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "069b48cb83367ab533d01c41a8e1ab7166728966655032f7ad568a003df72a1a"
+    "reviewed_prompt_sha256": "a97bec729e6ed4ad4cdc39b44f3bb3faaa436d49b99149fb7c768b916d1e76ec"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "FL2VA起点:人物在场·虾壳堆与染血纸巾可见",
+      "人物/场景锚定",
+      "冷线视觉语法",
+      "为结尾静物回扣铺垫",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a97bec729e6ed4ad4cdc39b44f3bb3faaa436d49b99149fb7c768b916d1e76ec"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b09-eat",
+      "b09-vo",
+      "b09-shells"
+    ],
+    "related_shots": [
+      "09"
+    ],
+    "visual_evidence": [
+      "林晚慢嚼·看被扎食指·抬眼看空碟",
+      "桌上一小堆不完整虾壳+染血纸巾",
+      "冷线原桌近景·安静克制"
+    ],
+    "unresolved_blockers": []
   }
 }

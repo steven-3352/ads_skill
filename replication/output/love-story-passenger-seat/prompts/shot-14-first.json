@@ -1,0 +1,64 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot14首帧·反转物证",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic extreme close-up insert that fills the frame; no human face in frame; do NOT render this as a portrait or a medium shot. On the beige passenger seat: an upright photo frame showing the smiling woman Su Xiao, and beside it a faded pale hospital ID wristband printed with a Chinese name and a date; overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera, melancholy still-life. No living face in the car — only the photo. The frame and wristband fill the composition. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/reveal-props.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "现在冷线;全片反转落点(相框+住院手环)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无活人脸",
+      "相框+住院手环",
+      "冷调静物",
+      "手环印字为道具·非字幕·无水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1b90cabb9bd6c63987af2886c1439a7c8fbe1f43a413b2fbce353f80a9a52648",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无活人脸",
+      "相框+住院手环",
+      "冷调静物",
+      "手环印字为道具·非字幕·无水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1b90cabb9bd6c63987af2886c1439a7c8fbe1f43a413b2fbce353f80a9a52648"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B14"
+    ],
+    "related_shots": [
+      "14"
+    ],
+    "visual_evidence": [
+      "副驾相框(苏晓笑)",
+      "褪色住院手环",
+      "冷调静物",
+      "无人脸插入"
+    ],
+    "unresolved_blockers": []
+  },
+  "insert_ref_verified": true
+}

@@ -1,0 +1,64 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot01首帧·两杯入杯架(Hook)",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic extreme close-up insert that fills the frame; no human face in frame; do NOT render this as a portrait or a medium shot. A man's hand lowering two paper hot-drink cups toward the twin cup holders of a beige-interior car center console; overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera through the windshield; focus on the cups and holders. No face. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/car-interior.png",
+    "assets/two-drinks.png",
+    "assets/gu-chuan-master.png"
+  ],
+  "generator": "GPT Image",
+  "note": "现在冷线Hook;细节起手。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "两杯入杯架",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "08a58a0c6b1ce7c6f86df988451960a99dadb5df72ab19e16b31d27213a7f4c0",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "两杯入杯架",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "08a58a0c6b1ce7c6f86df988451960a99dadb5df72ab19e16b31d27213a7f4c0"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B1"
+    ],
+    "related_shots": [
+      "01"
+    ],
+    "visual_evidence": [
+      "手放两杯入杯架",
+      "冷调",
+      "无人脸插入"
+    ],
+    "unresolved_blockers": []
+  },
+  "insert_ref_verified": true
+}

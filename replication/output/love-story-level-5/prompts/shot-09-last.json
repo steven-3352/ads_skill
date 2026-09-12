@@ -1,0 +1,64 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-09-last 关键帧",
+  "mode": "FL2VA-last-frame",
+  "prompt": "写实电影感，冷白偏青的餐馆包间·原桌夜景，静物构图（结尾回扣）。画面完全落到桌上她面前那一小堆不太完整、剥得凌乱的白灼虾壳上（与四年前整齐漂亮的虾肉相对照），旁边压着那张染了一点血、折起的纸巾；林晚已淡出画面主体或仅余虚化衣角，焦点完全在这堆不完整虾壳上，画面准备切黑。冷线视觉语法。FL2VA终态：落到不完整虾壳静物。无字幕、无文字水印、无品牌。",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "shots/shot-09/images/unit-09-first.png",
+    "assets/lin-wan-master.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "FL2VA终态锁:不完整虾壳静物(保证结尾回扣落点)",
+      "引用首帧锁桌面连续性",
+      "冷线视觉语法/静物切黑",
+      "与四年前整齐虾肉的对照",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "08ba0083585fdeb7abfd6af9a825969a687737e4aa1b04b457ebf98dfbfe8c3c"
+  },
+  "generator": "GPT Image",
+  "note": "首/尾帧静图由 GPT Image(images/edits)生成，以 master/场景图锚定身份与机位连续性；作为 MiniMax-H3 输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:30:00Z",
+    "checks": [
+      "FL2VA终态锁:不完整虾壳静物(保证结尾回扣落点)",
+      "引用首帧锁桌面连续性",
+      "冷线视觉语法/静物切黑",
+      "与四年前整齐虾肉的对照",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "08ba0083585fdeb7abfd6af9a825969a687737e4aa1b04b457ebf98dfbfe8c3c"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b09-shells"
+    ],
+    "related_shots": [
+      "09"
+    ],
+    "visual_evidence": [
+      "画面落到不完整凌乱虾壳静物(结尾回扣:过去整齐↔现在不完整)",
+      "染血折起纸巾压在旁",
+      "林晚淡出·焦点全在虾壳·准备切黑"
+    ],
+    "unresolved_blockers": []
+  }
+}

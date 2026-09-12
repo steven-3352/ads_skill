@@ -1,0 +1,43 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-01 / unit-01 H3 视频(I2VA·首帧发展)",
+  "mode": "FL2VA",
+  "shot": "01",
+  "unit": "unit-01",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 10.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, cool teal-white lighting in an enclosed restaurant private room at night (wood lattice screen, soft wall sconce); a tight medium shot, camera nearly still with a very slow small push-in. The opening matches Picture 1: the woman Lin Wan — long black hair, plain cool-toned knit top, restrained expression — sits at the round table; a single whole poached shrimp lies on the small dish before her; a large shared communal plate holding several shrimp sits at the center-foreground of the table; the out-of-focus male colleague Zhou is at the near foreground. Zhou (S1) lowers his chopsticks and places the second whole shrimp down onto Lin Wan's small dish, saying: <d>[Chinese]这盘就你没动。减肥啊？</d> Lin Wan (S2) then picks up the shrimp from her small dish with her own chopsticks, reaches forward to the center of the table, and sets it down onto the shared communal plate — clearly returning it — and says quietly: <d>[Chinese]懒得剥。</d> Zhou (S1) replies: <d>[Chinese]喜欢吃还懒。</d> Lin Wan withdraws her chopsticks and lets them rest at the edge of her now-empty small dish, her gaze lowering. The ending matches Picture 2: her small dish is empty, the returned shrimp sits among the others on the communal plate, her chopsticks paused at the dish edge, the blurred colleague isolating her from the surrounding chatter.\n\noverall_soundscape: Layered restaurant chatter and clinking bowls fill the private room; the soft tap of a shrimp set onto the porcelain small dish, then the click of the shrimp placed back onto the shared communal plate, and chopsticks coming to rest against the dish edge.\n\nnon_diegetic_music: Sparse cold piano notes at a slow tempo, held quietly under the scene.",
+  "images": [
+    "shots/shot-01/images/unit-01-first.png",
+    "shots/shot-01/images/unit-01-last.png"
+  ],
+  "duration": 10,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-01/video/unit-01.mp4",
+  "status": "generated",
+  "note": "对白配音/拟音/环境声在 H3 生成时随视频一起产出(audioPolicy=in_video_first)；首帧为 shot-01-first.png(GPT Image 生成)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-11T22:50:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=首帧,<Picture2>=尾帧)",
+      "FL2VA插值强制退虾:放虾入碟→夹起→放回公盘→停筷",
+      "时长10s节拍匹配",
+      "对白<d>逐字来自01-虾壳.md",
+      "冷线视觉语法/克制表演",
+      "拟音(放碟声/放回公盘声/停筷)+环境声+冷钢琴",
+      "无字幕/水印/品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "7e34c29b1a835be5aeb277354eb5ace8cb68b233308fb76eef3597cc27a4206b"
+  },
+  "output_sha256": "1f228313641e82f48452854a849ab7dc6362aa77fff684f19272667b08dd7323",
+  "generation_time": "2026-09-11T23:30:00Z"
+}

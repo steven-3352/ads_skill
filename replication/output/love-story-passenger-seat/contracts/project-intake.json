@@ -1,0 +1,62 @@
+{
+  "projectId": "love-story-passenger-seat",
+  "stage": "produced",
+  "status": "director_layer_review",
+  "input": {
+    "type": "original_story",
+    "storyFile": "story/副驾.md",
+    "received": true
+  },
+  "brief": {
+    "platform": "抖音/竖屏",
+    "duration_ceiling_seconds": 60,
+    "duration_target_seconds": 50,
+    "no_padding": true,
+    "format": "叙事短片·爱情·共鸣/虐/普世",
+    "visual_style": "两条时间线视觉语法(现在冷/四年前暖)",
+    "aspect": "9:16",
+    "audio": true,
+    "model": "MiniMax-H3"
+  },
+  "creativeLocked": {
+    "concept": "副驾驶（空座即缺席）",
+    "reveal": "明确离世（相框+住院手环+墓园）",
+    "title": "副驾",
+    "theme": "你习惯了她在，就忘了她已经不在。"
+  },
+  "confirmed": {
+    "story": true,
+    "brief": true,
+    "screenplay": true,
+    "beats": true,
+    "characters": true,
+    "visual_grammar": true,
+    "production_plan": true,
+    "keyframe_prompts": true,
+    "model": true
+  },
+  "generation_allowed": false,
+  "stageDetail": "look_board_review",
+  "sourceOfTruth": "contracts/production-plan.json",
+  "reviewPage": "https://www.tonbird.top/ads-review/love-story-passenger-seat/review/index.html",
+  "lookBoard": {
+    "generated": [
+      "assets/gu-chuan-master.png",
+      "assets/su-xiao-master.png",
+      "assets/car-interior.png",
+      "shots/shot-07/images/unit-07-first.png",
+      "shots/shot-10/images/unit-10-first.png"
+    ],
+    "qc": "脸/车/机位三重一致；签名A对仗成立(07有她暖↔10空手冷)；真9:16(940x1672)；零烧字。",
+    "pending_until_go": [
+      "assets/two-drinks.png",
+      "assets/reveal-props.png",
+      "全部15镜首/尾帧+视频"
+    ]
+  },
+  "gates": {
+    "production_plan": "scripts/validate-production-plan.mjs → valid (15 shots)",
+    "keyframe_prompts": "5/5 pass (validate-h3-prompt-review.sh image；3 master + shot-07/10 签名帧)"
+  },
+  "nextAction": "等用户看板评审。通过→写全部15镜首/尾帧+H3视频提示词过闸门→生成two-drinks/reveal-props+15镜(覆盖QC去烧字)→覆盖剪辑成片~48-52s+ASS统一字幕+主题卡。"
+}

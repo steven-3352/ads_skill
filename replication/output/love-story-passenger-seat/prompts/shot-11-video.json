@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-11 H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "11",
+  "unit": "unit-11",
+  "prompt": "How the reference picture aligns with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, overcast blue-cyan cold light, slightly high contrast, clean, near-static locked camera, inside a beige-interior car. Matches Picture 1. The man Gu Chuan's right hand hovers in the empty air above the empty passenger seat; the faint smile on his face slowly freezes as he remembers, and his hand slowly, quietly withdraws back to the wheel. Restrained grief.\n\noverall_soundscape: Idling engine, wipers; a small caught breath; the thin distant song.\n\nnon_diegetic_music: Cold piano, a single note dissolving. Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-11/images/unit-11-first.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-11/video/unit-11.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "I2VA首帧发展",
+      "手悬空·笑意凝住·收回",
+      "冷线克制",
+      "NOTEXT英文-only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "328c323868c409d0348630bc4ee5f8dba7375be79b5f7456cc198f782757c42f"
+  }
+}

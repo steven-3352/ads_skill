@@ -4,11 +4,11 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-04-first 关键帧",
   "mode": "FL2VA-first-frame",
-  "prompt": "写实电影感、钨丝暖光，食指特写机位（为与现在林晚的手指近景对仗预留同一机位与景别）。陈屿的手捏着白灼虾剥壳，指腹靠近虾壳的尖刺，桌面暖调虚化。暖线视觉语法。无字幕、无文字水印、无品牌。",
+  "prompt": "写实电影感，四年前公司聚餐夜景，钨丝金橙暖光、轻胶片颗粒。食指/手部近景机位（机位、景别、手指入画方向与分镜08林晚受伤镜头对仗——签名B 构图对仗，仅此处为暖光）。陈屿（短黑发、蓝色圆领上衣的小臂入画）的手正捏着一只白灼虾剥壳，指腹已贴近虾壳中缝的尖刺；背景暖调虚化可见他面前那一小摞虾壳与暖满餐桌。手指此刻完好、尚未受伤（FL2VA起点）。暖线视觉语法：钨丝金橙、暖满、手部近景。无字幕、无文字水印、无品牌。",
   "output": null,
-  "status": "prompt_ready",
+  "status": "generated",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "assets/chen-yu-master.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -16,15 +16,51 @@
     "result": "pass",
     "asset_type": "image",
     "mode": "FL2VA-first-frame",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA起点:手指完好未受伤",
+      "人物身份锚定(chen-yu master)",
+      "暖线视觉语法/手部近景",
+      "机位/景别/手指入画方向与分镜08对仗(签名B)",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "b5ceebc3123ffa0cf361206e2b45b32503ca191eb06bb12422554652ced6d743"
-  }
+    "reviewed_prompt_sha256": "096d67a18ef140ac7d5179b43428cb7e6308c987a0853b8f3db70e29f7da1d8c"
+  },
+  "generator": "GPT Image",
+  "note": "暖线四年前·首/尾帧静图由 GPT Image(images/edits)生成，以陈屿 master 锚定身份、以首帧锁机位/景别/构图连续性；作为 MiniMax-H3 FL2VA 首/尾帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:10:00Z",
+    "checks": [
+      "FL2VA起点:手指完好未受伤",
+      "人物身份锚定(chen-yu master)",
+      "暖线视觉语法/手部近景",
+      "机位/景别/手指入画方向与分镜08对仗(签名B)",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "096d67a18ef140ac7d5179b43428cb7e6308c987a0853b8f3db70e29f7da1d8c"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b04-prick"
+    ],
+    "related_shots": [
+      "04"
+    ],
+    "visual_evidence": [
+      "陈屿手捏白灼虾剥壳·指腹贴近虾壳尖刺（受伤前起点）",
+      "蓝色圆领小臂入画锚定身份",
+      "背景暖调虚化虾壳摞与餐桌（承接shot03四年前）",
+      "手部近景·签名B对仗机位（暖光）"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "b417efa22e9eef08859f1932354b9be308288af8b7466e90f7d6f971bb15b4b9",
+  "generation_time": "2026-09-12T07:21:00Z"
 }

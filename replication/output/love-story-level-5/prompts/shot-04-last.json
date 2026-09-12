@@ -4,11 +4,12 @@
   "authoring_skill": "h3-prompt-writing",
   "title": "shot-04-last 关键帧",
   "mode": "FL2VA-last-frame",
-  "prompt": "同一暖光食指特写机位。陈屿食指被虾壳尖刺，指腹冒出一颗血珠，他把手指含了一下、随即抽出纸巾按住，神情不动声色、不喊疼。无夸张血腥。暖线视觉语法。无字幕、无文字水印、无品牌。",
+  "prompt": "写实电影感，四年前公司聚餐夜景，与首帧完全同一机位、同一景别、同一暖光（钨丝金橙、轻胶片颗粒）：手部/食指紧近景，画面只见双手与小臂（蓝色圆领上衣），人物面部完全不入画。单一画面——禁止分屏、禁止上下双格、禁止连环画/多格。终态：陈屿食指指腹上冒出一颗清晰的小血珠，另一只手已抽出一张白色纸巾、正按在这根受伤的食指上（已按住）。背景暖调虚化仍是那一小摞虾壳与餐桌。无夸张血腥。与分镜08林晚按纸巾镜头同构对仗（签名B）。暖线视觉语法。无字幕、无文字水印、无品牌。",
   "output": null,
-  "status": "prompt_ready",
+  "status": "generated",
   "references": [
-    "见 production-plan.json 对应 generationUnit.references"
+    "shots/shot-04/images/unit-04-first.png",
+    "assets/chen-yu-master.png"
   ],
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
@@ -16,15 +17,55 @@
     "result": "pass",
     "asset_type": "image",
     "mode": "FL2VA-last-frame",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-12",
     "checks": [
-      "故事资产一致性(01-虾壳.md)",
-      "人物身份约束(characters.md)",
-      "视觉语法归属(visual-grammar.json)",
-      "无文字水印/无品牌",
-      "关键帧构图可验证(人物/空间/道具/动作起止)"
+      "FL2VA终态锁受伤:冒血珠+纸巾已按住(强制离散状态变化)",
+      "单帧硬约束:禁止分屏/双格/连环画",
+      "景别锁:与首帧同机位、手部紧近景、面部不入画",
+      "引用首帧图锁机位/构图连续性",
+      "人物身份锚定(chen-yu master)",
+      "不哭不喊疼(签名B靠构图)·无夸张血腥",
+      "无文字水印/无品牌"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "fc7047a309319c32ffb120badb1948d48cf2479b5e4fa345a24de413c970876c"
-  }
+    "reviewed_prompt_sha256": "19a60b2a4b5bf9a3a6556f47e26f17d0d17306f84487d91573c7ab3df5d9488e"
+  },
+  "generator": "GPT Image",
+  "note": "暖线四年前·首/尾帧静图由 GPT Image(images/edits)生成，以陈屿 master 锚定身份、以首帧锁机位/景别/构图连续性；作为 MiniMax-H3 FL2VA 首/尾帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T07:10:00Z",
+    "checks": [
+      "FL2VA终态锁受伤:冒血珠+纸巾已按住(强制离散状态变化)",
+      "单帧硬约束:禁止分屏/双格/连环画",
+      "景别锁:与首帧同机位、手部紧近景、面部不入画",
+      "引用首帧图锁机位/构图连续性",
+      "人物身份锚定(chen-yu master)",
+      "不哭不喊疼(签名B靠构图)·无夸张血腥",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "19a60b2a4b5bf9a3a6556f47e26f17d0d17306f84487d91573c7ab3df5d9488e"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b04-prick"
+    ],
+    "related_shots": [
+      "04"
+    ],
+    "visual_evidence": [
+      "食指指腹冒出一颗血珠·另一只手已用纸巾按住（单一终态帧）",
+      "与首帧完全同机位同景别：手部紧近景、面部不入画",
+      "背景暖调虚化虾壳摞与餐桌",
+      "与分镜08林晚按纸巾镜头构图对仗（签名B）"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "36717cbb8275ee11a7c9ff6472a65ad22d73bfc1dcaac40d9174168c0ecb7a31",
+  "generation_time": "2026-09-12T07:21:00Z"
 }

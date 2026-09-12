@@ -1,0 +1,71 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-03-last 关键帧",
+  "mode": "FL2VA-last-frame",
+  "prompt": "写实电影感，四年前公司聚餐夜景，与首帧同一暖调场景、同机位（钨丝金橙暖光、轻胶片颗粒），相机轻微呼吸感、已从手部近景缓移到双人关系景。陈屿（短黑发、蓝色圆领、低头）仍在剥虾，面前的虾壳摞明显变高变多（比首帧更大一摞）；他身旁林晚的小碗里剥好的虾仁明显增多（比首帧更满）。林晚（同一张脸、约24岁、暖气色、被偏爱的笃定）举起一只刚剥好的虾仁到眼前端详、嘴角压着笑，半催促半打趣。暖满生活感。暖线视觉语法：钨丝金橙、暖满、关系景。无字幕、无文字水印、无品牌。",
+  "output": "shots/shot-03/images/unit-03-last.png",
+  "status": "generated",
+  "references": [
+    "shots/shot-03/images/unit-03-first.png",
+    "assets/chen-yu-master.png",
+    "assets/lin-wan-master.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "FL2VA终态锁积累:虾壳更高一摞+林晚碗更满(强制演出积累)",
+      "林晚举虾催促的可读姿态",
+      "引用首帧图锁机位/连续性",
+      "人物身份锚定",
+      "暖线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1c928881da88f043b7f068267e5f294449530cfe4bb4880cb077247fb26df263"
+  },
+  "generator": "GPT Image",
+  "note": "暖线四年前·首/尾帧静图由 GPT Image(images/edits)生成，以人物 master 锚定身份、以首帧锁机位/积累连续性；作为 MiniMax-H3 FL2VA 首/尾帧输入。H3 仍为唯一视频模型。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T06:40:00Z",
+    "checks": [
+      "FL2VA终态锁积累:虾壳更高一摞+林晚碗更满(强制演出积累)",
+      "林晚举虾催促的可读姿态",
+      "引用首帧图锁机位/连续性",
+      "人物身份锚定",
+      "暖线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1c928881da88f043b7f068267e5f294449530cfe4bb4880cb077247fb26df263"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b03-in",
+      "b03-urge"
+    ],
+    "related_shots": [
+      "03"
+    ],
+    "visual_evidence": [
+      "虾壳摞明显变高变多(积累终态·默默照顾的证据)",
+      "林晚碗里剥好的虾明显增多(积累终态)",
+      "林晚举起剥好的虾端详·压笑催促",
+      "与首帧同机位同暖调"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "52d821cb9caf1bfaeca80cb1d2822a9ee7f7c79241d7d0642e53eac494d336fc",
+  "generation_time": "2026-09-12T06:48:00Z"
+}

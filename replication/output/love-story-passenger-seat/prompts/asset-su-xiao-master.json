@@ -1,0 +1,62 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "苏晓 master(女主身份锚)",
+  "mode": "still-master",
+  "prompt": "写实电影感人物身份参考图，竖构图9:16。一位约27岁的中国女性苏晓的半身肖像：披肩长发微卷、眼睛弯而明亮、笑意温暖、气色暖、皮肤真实，穿米色/暖黄针织衫。柔和暖光、浅背景、自然含笑。用作跨镜身份锚，五官发型清晰可辨。 Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "女主master,四年前暖线及现在相框照片均以此锚定,禁止漂移。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "单人半身身份锚",
+      "长发/米色针织/明亮爱笑",
+      "暖柔光浅背景",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d95704d8d9df198f28e842fcd3787ca5f6d4387f2dd70fc2defae90b2c257c69",
+    "mode": "still-master"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "单人半身身份锚",
+      "长发/米色针织/明亮爱笑",
+      "暖柔光浅背景",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d95704d8d9df198f28e842fcd3787ca5f6d4387f2dd70fc2defae90b2c257c69"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B4",
+      "B14"
+    ],
+    "related_shots": [
+      "scene-02",
+      "14"
+    ],
+    "visual_evidence": [
+      "半身身份锚",
+      "长发微卷明亮爱笑",
+      "米色针织暖光",
+      "五官清晰"
+    ],
+    "unresolved_blockers": []
+  }
+}

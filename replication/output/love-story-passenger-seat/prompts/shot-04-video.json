@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-04 H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "04",
+  "unit": "unit-04",
+  "prompt": "How the reference picture aligns with the target video — Picture 1 (first frame) aligns with the 0.00-second mark of the target video.\n\nintegrated_multimodal_description: Live-action, cinematic, sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows, inside a beige-interior car, breathing handheld. Matches Picture 1. The woman Su Xiao sits in the passenger seat with her feet playfully up on the dashboard, laughing carefree and alive; the man Gu Chuan drives and glances at her fondly. Warm, full of life, breathing handheld.\n\noverall_soundscape: Her bright laughter, the wind through a cracked window, tyres humming on a sunny road; lively cabin.\n\nnon_diegetic_music: Warm, light acoustic guitar, gentle and nostalgic. Absolutely no subtitles, no closed captions, no dialogue captions, no on-screen text of any kind, no pinyin, no title cards, no watermark and no logo anywhere in frame. Every spoken line appears only as lip movement and audio, never as rendered text. These instruction words must never themselves appear on screen.",
+  "images": [
+    "shots/shot-04/images/unit-04-first.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-04/video/unit-04.mp4",
+  "status": "prompt_ready",
+  "note": "对白/拟音/环境声随H3视频一起生成；NOTEXT英文-only，仅<d>为中文。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T13:00:00Z",
+    "checks": [
+      "I2VA首帧发展",
+      "暖线建立·她鲜活",
+      "呼吸手持",
+      "NOTEXT英文-only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "37de6513b4083ba36faf0af827ad1d4704d2ea95a6e6705515282feb715784c5"
+  }
+}

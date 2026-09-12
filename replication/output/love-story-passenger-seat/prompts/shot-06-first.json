@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot06首帧·他无奈",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic candid moment (not posed). Single of the man Gu Chuan (short black hair, dark grey jacket) driving, one hand on the wheel, glancing right at her with a resigned, indulgent look; sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows, breathing handheld. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/gu-chuan-master.png",
+    "assets/car-interior.png"
+  ],
+  "generator": "GPT Image",
+  "note": "暖线;他瞥她无奈(接台词又乱调)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "他单人·抓拍非摆拍",
+      "瞥她无奈",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2f4701abb8e6352bb9b783bb43f4b29a1f95f8dacc0354d9e6a14e320dbdd12d",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "他单人·抓拍非摆拍",
+      "瞥她无奈",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2f4701abb8e6352bb9b783bb43f4b29a1f95f8dacc0354d9e6a14e320dbdd12d"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B6"
+    ],
+    "related_shots": [
+      "06"
+    ],
+    "visual_evidence": [
+      "他单人瞥她",
+      "无奈宠溺",
+      "暖线",
+      "呼吸手持"
+    ],
+    "unresolved_blockers": []
+  }
+}

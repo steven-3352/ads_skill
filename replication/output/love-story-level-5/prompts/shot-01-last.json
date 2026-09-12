@@ -1,0 +1,67 @@
+{
+  "asset_type": "image",
+  "model": "GPT Image",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-01-last 关键帧（FL2VA 尾帧·虾已回公盘）",
+  "mode": "FL2VA-last-frame",
+  "prompt": "写实电影感，冷白偏青的餐馆包间夜景，中景偏紧，与首帧同一机位同一包间（木格栅、壁灯、暖木隔断，虚化）。林晚（长黑发、素净偏冷针织上衣，神情克制、垂眼）独自在画面中，前景同事已虚化淡出到几乎不见。她正前方的小碟此刻是空的（虾已被夹走）；桌面中央的公用白瓷圆盘上多出一只刚被放回的完整白灼虾，与盘中其它虾并排。林晚的筷子停在空小碟的边缘，手微微收回。冷线视觉语法：冷白偏青、干净、单人孤立构图。无字幕、无文字水印、无品牌。",
+  "output": "shots/shot-01/images/unit-01-last.png",
+  "status": "generated",
+  "references": [
+    "shots/shot-01/images/unit-01-first.png",
+    "assets/lin-wan-master.png",
+    "assets/shrimp-and-tableware.png"
+  ],
+  "generator": "GPT Image",
+  "note": "FL2VA 尾帧：锁定退虾后的结束状态（小碟空、虾回公盘、停筷垂眼），以首帧图锁房间/桌面/构图连续性。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-11T23:10:00Z",
+    "checks": [
+      "与首帧同机位同包间连续",
+      "结束状态：小碟空+虾回公盘",
+      "停筷垂眼克制",
+      "单人孤立(同事淡出)",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f8fc8c4df303369d7221e556029892ae62952f7b9e54bd70954f342532c6b037"
+  },
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last-frame",
+    "reviewed_at": "2026-09-11T23:10:00Z",
+    "checks": [
+      "FL2VA终点状态可验证(退虾完成)",
+      "与首帧构图连续",
+      "冷线视觉语法",
+      "无文字水印/无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f8fc8c4df303369d7221e556029892ae62952f7b9e54bd70954f342532c6b037"
+  },
+  "narrative_alignment": {
+    "source_story": "01-虾壳.md",
+    "related_beats": [
+      "b01-hook"
+    ],
+    "related_shots": [
+      "01"
+    ],
+    "visual_evidence": [
+      "林晚把虾夹回公盘后的结束状态",
+      "空小碟=拒绝完成",
+      "停筷垂眼=克制失落",
+      "Hook 收束"
+    ],
+    "unresolved_blockers": []
+  },
+  "output_sha256": "31a036d9396fdabbbc7f3139e299614e1357ff9f7b307a7d8e81f8c602691614",
+  "generation_time": "2026-09-11T23:20:00Z"
+}

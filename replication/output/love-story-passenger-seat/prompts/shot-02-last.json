@@ -1,0 +1,59 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot02尾帧·安全带扣好越过空座",
+  "mode": "FL2VA-last-frame",
+  "prompt": "Macro close-up photograph inside a car, passenger side. Subject fills the frame: a seatbelt now buckled diagonally across an EMPTY beige passenger seat, the metal tongue clicked into the buckle, a man's hand just withdrawing from the buckle. Only the belt, buckle, hand, and empty seat are visible. No human face anywhere in the scene, no head, not a portrait and not a wide cabin shot — a tight insert. Overcast blue-cyan cold daylight, slightly high contrast, clean, near-static locked camera. The seat is empty; the belt spans it diagonally. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "FL2VA尾帧:安全带已扣好越过空座(落点)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "安全带扣好越过空座",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6718f9277771b8810cf5bb6d1f0d461be9c23a6254221681ae4342d60d7e6ccb",
+    "mode": "FL2VA-last-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "安全带扣好越过空座",
+      "冷调",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6718f9277771b8810cf5bb6d1f0d461be9c23a6254221681ae4342d60d7e6ccb"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B2"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "安全带扣好越过空座",
+      "手撤离",
+      "冷调"
+    ],
+    "unresolved_blockers": []
+  }
+}

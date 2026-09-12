@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot09首帧·双手交握档杆",
+  "mode": "I2VA-first-frame",
+  "prompt": "Macro close-up photograph inside a car. Subject fills the frame: a man's hand resting on the car gear shifter with a woman's hand folded over it, their fingers interlaced, warm and still. Only the two hands and the gear shifter are visible. No human face anywhere in the scene, no heads, not a portrait and not a wide cabin shot — a tight intimate insert. Sunny golden-hour tungsten warmth, saturated, faint film grain, soft shadows. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "暖线情感峰值;档杆双手交握(→硬切10)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "双手交握档杆",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ab0158d73bd76d771e8fa5f9f2b71ee46c104ae1203db0f6b60a242cc326733d",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "双手交握档杆",
+      "暖线金光",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ab0158d73bd76d771e8fa5f9f2b71ee46c104ae1203db0f6b60a242cc326733d"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B9"
+    ],
+    "related_shots": [
+      "09"
+    ],
+    "visual_evidence": [
+      "双手叠在档杆",
+      "亲密",
+      "暖线",
+      "无人脸插入"
+    ],
+    "unresolved_blockers": []
+  }
+}

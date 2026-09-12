@@ -1,0 +1,39 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-07 / unit-07a H3 视频(I2VA)",
+  "mode": "I2VA",
+  "shot": "07",
+  "unit": "unit-07a",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] (Clean frame, no text overlays anywhere.) Live-action, cinematic, cool teal-white private dining room at night, the same room as the present-day shots, preserving Picture 1 where a peeled shrimp already sits in Lin Wan's bowl and colleague Zhou is just withdrawing his chopsticks. Zhou says: <d>[Chinese]给。省得你懒。</d> and turns his head to keep chatting and laughing with the person beside him, staying in his seat and not standing up or leaving. Lin Wan looks down at the single shrimp in her bowl with a restrained, quiet expression; a blurred foreground colleague isolates her. 画面绝对不可出现任何文字：不要字幕、不要对白字幕、不要拼音、不要标题卡、不要水印台标；所有对白只以人物口型与声音呈现，绝不以文字形式出现在画面。Absolutely NO subtitles, NO closed captions, NO dialogue captions, NO on-screen text of any kind, NO pinyin, NO title cards, NO watermark and NO logo anywhere in frame — every spoken line must appear ONLY as lip movement and audio, never as rendered text.\n\noverall_soundscape: Restaurant chatter and clinking continue softly around her.\n\nnon_diegetic_music: Cold sparse piano returns quietly.",
+  "images": [
+    "shots/shot-07/images/unit-07a-first.png"
+  ],
+  "duration": 6,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-07/video/unit-07a.mp4",
+  "status": "prompt_ready",
+  "note": "现在冷线。给虾在首帧已完成(虾在碗中),I2VA只需演小周转头说笑+林晚垂眼,规避离散转移漏演。修正原“转身走人”为“转头”(用户反馈:饭桌不出现转身离座)。音随视频产出。 强化去字幕:H3烧字幕为非确定性,已双语前后置强约束;生成时QC拒绝任何带烧录文字的take并重roll。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-12T08:00:00Z",
+    "checks": [
+      "单首帧I2VA:给虾已完成摆成帧起点→规避转移漏演",
+      "小周转头继续说笑(非转身走人/不离座)",
+      "人物身份锚定(lin-wan/zhou)+包间场景",
+      "对白<d>逐字来自01-虾壳.md(给。省得你懒。)",
+      "冷线视觉语法/单人孤立",
+      "显式no subtitles/no on-screen text/no watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b5e64a45b8b5a93c441874b93a9087fe9501a2bc0d0f520fccea223b423f25aa"
+  }
+}

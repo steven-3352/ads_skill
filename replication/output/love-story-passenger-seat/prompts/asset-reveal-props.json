@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "反转物证 master(相框+住院手环)",
+  "mode": "still-master",
+  "prompt": "Macro still-life photograph resting on a beige leather car passenger seat. Subject fills the frame: a small upright picture frame with a printed photograph inside it, and beside it a faded pale paper hospital ID wristband. Inside the picture frame's glass is a printed portrait of a smiling East Asian woman in her late twenties with long wavy black hair, a warm gentle smile, wearing a cream beige knit sweater — she exists ONLY as a small printed photo inside the frame; do not render a real woman in the car, no live person, no real human face anywhere in the scene. The wristband is a thin curled pale paper band lying on the seat beside the frame. These two objects dominate the frame. Overcast blue-cyan cold daylight, slightly high contrast, clean, melancholy, near-static locked macro camera, still-life. Only the seat surface and these two objects are visible; no windshield, no sky, no steering wheel, no driver — a tight still-life insert, not a portrait and not a wide cabin shot. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "反转物证:相框(苏晓笑)+褪色住院手环(名字+日期)。手环文字后期可补描清晰。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "极近景插入·无人脸",
+      "相框苏晓笑+住院手环",
+      "冷调静物",
+      "文字为道具印字非字幕·无水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b0aab28a1acdbaa7ece1d92f0d69b9eb347a6cf5050fd18b368885abc461c5bb",
+    "mode": "still-master"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "极近景插入·无人脸",
+      "相框苏晓笑+住院手环",
+      "冷调静物",
+      "文字为道具印字非字幕·无水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b0aab28a1acdbaa7ece1d92f0d69b9eb347a6cf5050fd18b368885abc461c5bb"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B14"
+    ],
+    "related_shots": [
+      "14"
+    ],
+    "visual_evidence": [
+      "副驾相框(苏晓笑)",
+      "褪色住院手环(名字+日期)",
+      "冷调静物",
+      "接车厢锚"
+    ],
+    "unresolved_blockers": []
+  }
+}

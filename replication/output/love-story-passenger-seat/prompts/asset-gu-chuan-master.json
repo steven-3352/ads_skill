@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "顾川 master(男主身份锚)",
+  "mode": "still-master",
+  "prompt": "写实电影感人物身份参考图，竖构图9:16。一位约30岁的中国男性顾川的半身肖像：短寸黑发、干净利落、眉眼沉静内敛、皮肤真实有细节，穿深灰色夹克。中性柔光、浅灰背景、无道具、目视前方略偏、自然表情。用作跨镜身份锚，五官发型清晰可辨。 Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "男主master,后续所有顾川镜头以此锚定身份,禁止漂移。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12",
+    "checks": [
+      "单人半身身份锚",
+      "短寸黑发/深灰夹克/沉静内敛",
+      "中性光浅背景",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cef26cfba8976fc3bfc2be99d56d2c1b0e997b435bf55190d0905314c834a5da",
+    "mode": "still-master"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-12T12:00:00Z",
+    "checks": [
+      "单人半身身份锚",
+      "短寸黑发/深灰夹克/沉静内敛",
+      "中性光浅背景",
+      "无文字水印"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cef26cfba8976fc3bfc2be99d56d2c1b0e997b435bf55190d0905314c834a5da"
+  },
+  "narrative_alignment": {
+    "source_story": "story/副驾.md",
+    "related_beats": [
+      "B1",
+      "B3"
+    ],
+    "related_shots": [
+      "all-now"
+    ],
+    "visual_evidence": [
+      "半身身份锚",
+      "短寸黑发深灰夹克",
+      "中性柔光浅背景",
+      "五官清晰"
+    ],
+    "unresolved_blockers": []
+  }
+}

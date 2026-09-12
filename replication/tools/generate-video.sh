@@ -238,6 +238,19 @@ elif [[ "$PROVIDER" == "minimax" ]]; then
   fi
   echo "MiniMax 视频任务响应已保存: $OUTPUT"
 
+  # 付费创建门禁（不可绕过）：MiniMax 以 HTTP 200 + RetCode 业务码返回错误
+  # （如 226638 积分不足），curl --fail-with-body 不会失败，旧逻辑会静默落到
+  # "没有 task_id" 的泛化报错，导致批量继续空跑、看不出真因。此处显式拦截。
+  MM_RETCODE="$(jq -r '.RetCode // .base_resp.status_code // empty' "$OUTPUT" 2>/dev/null || true)"
+  if [[ -n "$MM_RETCODE" && "$MM_RETCODE" != "0" ]]; then
+    MM_MSG="$(jq -r '.Message // .base_resp.status_msg // "unknown"' "$OUTPUT" 2>/dev/null || echo unknown)"
+    echo "MiniMax 创建被拒: RetCode=$MM_RETCODE ($MM_MSG)" >&2
+    if [[ "$MM_RETCODE" == "226638" ]]; then
+      echo "→ 积分不足：请先给账户充值。批量必须立即停止，勿重试(重试仍会被拒且白跑流程)。" >&2
+    fi
+    exit 3
+  fi
+
   extract_minimax_url() {
     jq -r '.metadata.url // .data.url // .data.video_url // .video_url // .content.url // .task.content.url // .data.content.url // empty' "$1"
   }

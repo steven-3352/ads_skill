@@ -1,0 +1,43 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-03 / unit-03 H3 视频(FL2VA·脆响入四年前·剥虾积累)",
+  "mode": "FL2VA",
+  "shot": "03",
+  "unit": "unit-03",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 12.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm tungsten golden light with light film grain, a company dinner four years ago; gentle handheld breathing camera. The shot opens exactly on the same crisp shrimp-shell crack carried over from the previous scene — a hard sound-bridge cut from the present into four years ago. Matching Picture 1, Chen Yu — short black hair, blue crew-neck top, steady, head down — cracks and peels a whole poached shrimp, a small pile of shells already before him, while beside him Lin Wan's small bowl holds a few peeled shrimp. Chen Yu keeps peeling continuously; the pile of shells visibly grows taller and more peeled shrimp accumulate in Lin Wan's bowl. The camera breathes and eases from the close view of his hands out to a two-person relationship framing (one continuous take, no hard cut). Lin Wan — same face, four years younger, warmer, secure in being adored — lifts a freshly peeled shrimp up to her eyes as if inspecting how clean it is, suppressing a smile, and says: <d>[Chinese]你能不能快点？我这边都断供了。</d> Chen Yu, without looking up, keeps peeling and answers in a steady low voice: <d>[Chinese]着什么急。</d> The ending matches Picture 2: a distinctly taller pile of shells, Lin Wan's bowl noticeably fuller with peeled shrimp, and Lin Wan holding up the peeled shrimp with a suppressed smile.\n\noverall_soundscape: Warm, full dinner-party ambience with overlapping laughter and chatter; the incoming crisp shrimp-shell crack lands right at the very start as the sound bridge, then the steady small sounds of shells being cracked, peeled and dropped onto the growing pile.\n\nnon_diegetic_music: Warm sustained strings at a slow tempo with a soft rounded low end, tender and unhurried.",
+  "images": [
+    "shots/shot-03/images/unit-03-first.png",
+    "shots/shot-03/images/unit-03-last.png"
+  ],
+  "duration": 12,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "output": "shots/shot-03/video/unit-03.mp4",
+  "status": "generated",
+  "note": "签名A 声画 match-cut 的入点(A-in)：与分镜02同一条脆响硬切落地；对白<d>逐字来自01-虾壳.md；剥虾积累(虾壳堆高+林晚碗变满)由FL2VA首→尾帧强制演出；一镜连续缓移(无内部硬切)；暖线。音随视频产出(audioPolicy=in_video_first)。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-12T06:40:00Z",
+    "checks": [
+      "首尾帧锚定(<Picture1>=起始少量,<Picture2>=积累终态)",
+      "FL2VA插值强制积累:虾壳堆高+林晚碗变满",
+      "签名A A-in:同一脆响硬切入四年前、开场即落地",
+      "一镜连续缓移(手部近景→双人关系景)、无内部硬切",
+      "对白<d>逐字来自01-虾壳.md(断供/着什么急)",
+      "暖线视觉语法/被偏爱的笃定/嘴上催眼里笑",
+      "暖满聚餐环境声+剥虾拟音+暖弦，无字幕/水印/品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4bbe4caa48b6d4067c88bc9e49fe9cc5cceccbcb9057045a8ce7add1ac6719af"
+  },
+  "output_sha256": "19797c56ee763c1562e67b2b0c598952feef140db95dd4fa42e8ec6849506e04",
+  "generation_time": "2026-09-12T06:48:00Z"
+}

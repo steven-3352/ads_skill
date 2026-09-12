@@ -1,0 +1,71 @@
+{
+  "projectId": "love-story-passenger-seat",
+  "purpose": "两条时间线的统一视觉基准；production-plan 每个分镜必须归属其一（timeline: now|then）。",
+  "timelines": {
+    "now": {
+      "label": "现在（冷线）",
+      "scenes": [
+        "scene-01",
+        "scene-03",
+        "scene-04"
+      ],
+      "color": "阴天青蓝、对比略高、干净通透",
+      "lighting": "清晨自然冷光/多云散射，阴影偏硬",
+      "framing": "副驾空座始终入画或留白；紧凑单人+空座对照构图",
+      "camera": "近静止或极缓推，克制、不晃",
+      "sound": "车内低频胎噪、雨刮/暖风声、外界车流，抽离到只剩发动机与呼吸",
+      "performance": "克制、把思念藏进日常动作、眼神向下或看路",
+      "meaning": "习惯性地为不在的人保留一切；空座即缺席"
+    },
+    "then": {
+      "label": "四年前（暖线）",
+      "scenes": [
+        "scene-02"
+      ],
+      "color": "晴天钨丝金橙、饱和、轻胶片颗粒",
+      "lighting": "金色阳光斜射进车厢，阴影软",
+      "framing": "双人关系景+副驾满是她的东西+手部近景（揉头/交握）",
+      "camera": "轻微呼吸感手持，跟随手部动作",
+      "sound": "满车活气：她的歌、笑闹、开窗风声",
+      "performance": "被宠、没心没肺地幸福、嘴上贫眼里笑",
+      "meaning": "被偏爱的鲜活日常"
+    }
+  },
+  "matchCuts": {
+    "A": {
+      "name": "红灯伸手揉头·同机位对仗（核心）",
+      "type": "action_composition_rhyme",
+      "setup": {
+        "shot": "07",
+        "timeline": "then",
+        "subject": "红灯他空出右手揉苏晓头发（有她）"
+      },
+      "payoff": {
+        "shot": "10",
+        "timeline": "now",
+        "subject": "同机位同动作，右手伸向副驾——空气（无她）"
+      },
+      "rule": "相机机位、景别、右手入画方向与构图完全对齐；从暖线硬切到冷线，色调在切点由暖褪冷；不靠哭，靠空手承载"
+    },
+    "B": {
+      "name": "她设的歌·声音桥",
+      "type": "sound_bridge",
+      "setup": {
+        "shot": "05",
+        "timeline": "then",
+        "cue": "她换成自己的歌"
+      },
+      "payoff": {
+        "shot": "12",
+        "timeline": "now",
+        "cue": "同一首歌仍在放，他把“她那一侧”的音量关小"
+      },
+      "rule": "同一段歌缝合过去与现在；现在侧音量被关小＝她的声音正在退场"
+    }
+  },
+  "endingCallback": {
+    "then": "满座的她、两人交握的手",
+    "now": "空副驾+系着的安全带+她那杯没动的热饮+褪色住院手环+相框",
+    "rule": "反转物证落在副驾（相框+住院手环），再到墓园开副驾门；主题句黑场收尾"
+  }
+}
