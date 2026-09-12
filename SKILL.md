@@ -15,7 +15,7 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 
 除非用户最新指令明确取消某项交付，否则生产流程不得跳过上述铁律。
 
-4. **故事/情感类短片强制前置**：凡涉及故事片、情感短片、有情节的带货片，动手前**必须先读 `references/story-drive-continuity-methodology.md`** 并全程遵守，与本节铁律同级、强制执行。核心不可违背项：①**一切以故事原文为准**（原文是唯一事实源，不得偏离人物/动作/台词/主题）；②**驱动方式在编剧阶段就从原文+主题推导确定**（不是剪辑阶段补救，不是先套方法论），并在剧本里写明主引擎/动力/点睛/缝合各由谁承担；③**无幻灯片 SOP 五条**（共享锚点/0.3s 叠化禁纯硬切/单镜 1.8–3s/每镜微运镜/统一光影）逐条满足，签名硬切须为设计过的例外；④交付前跑**慢感诊断五因**自查。**本约束对 Claude 与 codex 同等生效**，任何工具、任何会话不得跳过。
+4. **故事/情感类短片强制前置**：凡涉及故事片、情感短片、有情节的带货片，动手前**必须先读并全程遵守 `references/story-drive-continuity-methodology.md`**，与本节铁律同级、强制执行。该文件是「原文为准 / 驱动方式 / 无幻灯片连贯性 / 慢感诊断」这些约束的**唯一权威出处**；本节只做强制指针、**不复制其条文**（条数、数字、清单一律以该文件为准，避免新旧不同步）。**本约束对 Claude 与 codex 同等生效**，任何工具、任何会话不得跳过。凡本项目产出的视频，必须逐条落地该文件。
 
 本 Skill 还支持“视频创意机制蒸馏”：当用户提供一组视频样本时，读取 `references/video-replication-framework.md`，先做逐条事实档案，再抽象机制，最后生成可迁移到其他商品的平台原生视频方案。不得把样本的角色、台词、造型、音乐或画面资产直接当作复刻要求。
 
@@ -166,6 +166,7 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 - 需要执行“真实主体→机械中间态→商品”的 AI 变形短片，或需要用首尾关键帧提高 Seedance 生成稳定性：读取 `references/cases/wild-mode-animal-to-product-ai-sop.md`，复用端点派生、几何守恒、单难题生成、自动验收和后期闭合规则，不复制本案动物、服装或产品设计。
 - 需要为饮料、咖啡、茶、果汁、乳饮、运动饮料、热饮、酒饮或其他可入口产品设计感官创意，尤其是“每喝一口切换一种感觉、状态、身份或场景”：读取 `references/cases/drink-each-sip-state-switch.md`，使用味觉外化、状态卡、重复升级、瓶形构图和产品回扣，不复制样本人物、品牌、色彩、广告语或道具。
 - 需要把夜间、自动、静置或循环过程视觉化，或设计“语义接力 + 尺度世界 + 后台夜班”结构：读取 `references/cases/kerastase-night-serum-dream-slide.md`，迁移时间代理与现实回环，不复制发丝滑梯、人物、花草、音乐或品牌资产。
+- 需要做故事片、情感短片或有情节的带货片（判定驱动方式、治幻灯片感、查慢感）：**动手前先读** `references/story-drive-continuity-methodology.md`（强制前置，是这些约束的唯一权威出处）。
 - 需要从已确认创意自动生产 AI 短片、使用 MiniMax H3 首尾帧、控制生成成本或执行成片验收：读取 `references/ai-video-production-sop.md`。
 - 需要在 ads、screenwriting 和 Seedance 之间分流或交接：读取 `references/three-skill-production-sop.md`。
 - 需要为新项目锁定生成模型、在 H3/Seedance 提示词技能间路由，或执行中途模型迁移：读取 `references/model-routing-sop.md`。

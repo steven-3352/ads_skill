@@ -25,6 +25,7 @@
 
 |文件|定位|
 |---|---|
+|[story-drive-continuity-methodology.md](story-drive-continuity-methodology.md)|**【强制前置·唯一出处】**故事/情感片的驱动方式、无幻灯片连贯性五条、单镜6段、慢感诊断五因；其他文档只指针不复制|
 |[three-skill-production-sop.md](three-skill-production-sop.md)|ads、screenwriting、H3/Seedance 的分流和交接|
 |[ai-video-production-sop.md](ai-video-production-sop.md)|模型选择、成本、后期、验收和跨平台交付|
 |[model-routing-sop.md](model-routing-sop.md)|项目模型锁定、H3/Seedance 提示词路由与模型迁移|
