@@ -1,0 +1,51 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S2尾帧·喷头已卡稳松手(FL2VA last)",
+  "mode": "FL2VA-last-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, medium shot on the same bright home balcony as the first frame, keeping the same smooth painted wall and the same potted plants and flowerpots around. The same small chrome silver suction-cup shower bracket with a round suction base and an adjustable cradle stays stuck firmly in its original position on the smooth wall; a garden hose spray nozzle is now fully clicked and seated into the bracket's open cradle, held securely and completely hands-free, no longer lying on the ground. The same East Asian Chinese man in his early sixties with short greying hair, wearing the same dark casual sweater, has just released the nozzle and is drawing both empty hands back and away from the wall, his face visible with a calm satisfied expression. The bracket and nozzle surfaces are plain and unmarked, no packaging, no logo, no brand text. Bright daylight, warm neutral grade, shallow depth of field. Clean frame with no subtitles, no captions, and no on-screen text.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "images": [],
+  "generator": "GPT Image",
+  "size": "768x1344",
+  "ratio": "9:16",
+  "resolution": "768P",
+  "watermark": false,
+  "note": "FL2VA尾帧·喷头已卡入支架卡口松手腾双手·喷头不再落地·商品留位后期贴图·选角中国人爸爸",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA-last",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "终态:喷头已牢牢卡进支架卡口稳固-爸爸双手离开画面",
+      "与first.png场景连续:同阳台同光滑墙同支架位同机位光线",
+      "选角锁East Asian中国人中老年爸爸-面部可入画",
+      "商品位留干净:no packaging/no logo/no brand text",
+      "竖构图9:16-画面无字no subtitles/no captions/no on-screen text",
+      "买点兑现:通用卡口卡住喷头腾出双手(不越事实边界)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0dbb92df7b3df100a5aa0c685985c1cdbb6a091a1af5284add847a69d5b49559"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/01-1i-shooting-script.md",
+    "related_beats": [
+      "b02"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "喷头卡入支架稳住不落地",
+      "爸爸松手腾出双手",
+      "FL2VA尾帧终态"
+    ],
+    "unresolved_blockers": []
+  }
+}

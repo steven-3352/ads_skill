@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S6尾帧·粉水搅匀成一体(FL2VA尾帧)",
+  "mode": "FL2VA-last-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, close-up of the same clear glass on a light-wood morning kitchen counter, the back of a spoon turning slowly through the drink. The liquid is now a smooth, uniform, silky creamy white — fully blended, no streaks, softly glossy. Faint dawn light, hand and spoon only, no face in frame, do NOT render as a portrait. Shallow depth of field, warm neutral color grade, calm morning mood. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "FL2VA尾帧=均匀端点。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "粉水搅匀成顺滑均匀奶白",
+      "勺背转动·无条纹微光泽",
+      "手勺入画无人脸",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2423fd1cb174407205c2eaaffcd8cc62c44686930a75d80f4c6dacf3707d72f7",
+    "mode": "FL2VA-last-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T11:00:00.000Z",
+    "checks": [
+      "粉水搅匀成顺滑均匀奶白",
+      "勺背转动·无条纹微光泽",
+      "手勺入画无人脸",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2423fd1cb174407205c2eaaffcd8cc62c44686930a75d80f4c6dacf3707d72f7"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b06"
+    ],
+    "related_shots": [
+      "06"
+    ],
+    "visual_evidence": [
+      "分开的粉与水并成一体",
+      "勺背转动",
+      "近景",
+      "无人脸",
+      "无文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

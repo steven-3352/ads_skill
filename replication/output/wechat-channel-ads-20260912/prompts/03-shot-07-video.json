@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S7视频·杯壁稠润纹理(I2VA,4s)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing, extreme macro close-up. Begin exactly from <Picture 1>: the inner wall of the glass coated with smooth creamy white almond drink, thick glossy trails clinging to it. The glass turns very slightly at slow speed with a tiny push-in so the thick, silky liquid slides and clings down the wall, catching soft dawn light and showing its rich body. Texture, color and lighting from <Picture 1> stay consistent. Face NOT in frame. Clean frame with no subtitles, no captions and no on-screen text.\n\noverall_soundscape: A quiet dawn kitchen room tone, nearly silent, with only the faint sound of thick liquid gently moving.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-07/images/first.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "质感镜留白半拍;乐段短暂留白。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "I2VA首帧对齐0.00s",
+      "杯壁挂流微转展稠度",
+      "面部不入画",
+      "无对白无烧字幕·单镜4s"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "7276b234b808d0e0f01ffe39d0466685605fdc343f55821f0b8e01d97e7a7d7d"
+  }
+}

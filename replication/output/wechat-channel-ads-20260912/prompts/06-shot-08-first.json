@@ -1,0 +1,62 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "06-S08-single",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, clean hero still: the real BAYLDAHL white pet spray bottle with its long nozzle clearly visible stands beside pet-care items on a table, a calm long-haired dog resting nearby; warm light, the lower portion of the frame calm and uncluttered. Preserve the bottle's real label exactly. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/wechat-channel-ads-20260912/06/masters/bottle-crop.png"
+  ],
+  "generator": "GPT Image",
+  "note": "拜达尔宠物皮肤喷剂 6B S08 single;img2img母版bottle-crop还原真标签(不含促销文案);人物锁中国人;只表现加长喷嘴穿毛发对准局部细雾;不出现杀菌止痒舔食无害喷洒次数买一送二等宣称。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.316Z",
+    "checks": [
+      "英雄收尾:真喷剂瓶加长喷嘴清晰+宠物安静",
+      "买点收束:先找准再护理",
+      "下方留白给收尾字幕",
+      "img2img母版还原标签不出现宣称文案"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cdffd44ed630ec0d71a480ade48e3c4a62d01f5709b049ab8c2d63504658cfae"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.316Z",
+    "checks": [
+      "英雄收尾:真喷剂瓶加长喷嘴清晰+宠物安静",
+      "买点收束:先找准再护理",
+      "下方留白给收尾字幕",
+      "img2img母版还原标签不出现宣称文案"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cdffd44ed630ec0d71a480ade48e3c4a62d01f5709b049ab8c2d63504658cfae"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/06-6b-shooting-script.md",
+    "related_beats": [
+      "b08"
+    ],
+    "related_shots": [
+      "08"
+    ],
+    "visual_evidence": [
+      "真喷剂瓶加长喷嘴清晰",
+      "宠物安静趴着",
+      "英雄镜"
+    ],
+    "unresolved_blockers": []
+  }
+}

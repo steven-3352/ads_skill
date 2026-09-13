@@ -1,0 +1,34 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S3视频·落粉第一鼓点(FL2VA,4s)",
+  "mode": "FL2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing, one continuous top-down close-up over the mouth of a clear glass on a light-wood morning kitchen counter. Begin exactly from <Picture 1>: a spoon tips a small mound of off-white beige almond powder into the air above the glass. The camera holds steady with a very small push-in at slow speed as the powder falls, scatters, and lands at the bottom of the glass; fine pale dust blooms and drifts through the dawn light, then the spoon lifts away and the powder settles into the soft even layer, dispersing dust, framing, lighting and composition established by <Picture 2> at the end of the shot. Hand and spoon only, no face in frame. Clean frame with no subtitles, no captions and no on-screen text.\n\noverall_soundscape: A quiet dawn kitchen room tone. A single clean, granular soft drop as the powder hits the bottom of the glass, like the first beat of a drum, then a light settling hiss of fine dust.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-03/images/first.png",
+    "shots/shot-03/images/last.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "落粉鼓点H3自带+后期pt03-sound叠;FL2VA锁扬起落定。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "FL2VA首尾对齐0.00/4.00s",
+      "扬起→落定连续演·防漏演",
+      "落粉颗粒鼓点感",
+      "无对白无烧字幕·单镜4s"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2f6c295a4c20844026fd24f41ff8644e6ba76d30699ba1a5d905faf991fe6212"
+  }
+}

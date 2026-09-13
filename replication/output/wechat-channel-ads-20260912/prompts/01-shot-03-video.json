@@ -1,0 +1,34 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S3视频·整只取下换位(FL2VA,4s)",
+  "mode": "FL2VA",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing, one continuous close shot of a smooth balcony wall. Begin exactly from Picture 1: a middle-aged East Asian Chinese woman's hand grips a plain chrome suction-cup bracket where its base meets the smooth wall. The camera holds steady with a very small push-in at slow speed as her fingers twist the base a quarter turn to break the suction seal, then pull the whole bracket straight off the wall and draw it in toward her palm; the wall is left bare except for a faint round suction imprint, ending on the hand position, the bare-wall imprint, and the composition established by Picture 2 at the end of the shot. The bracket surface stays clean and unbranded. Clean frame with no subtitles, no captions, and no on-screen text.\n\noverall_soundscape: A calm balcony ambience with a faint breeze. A low rubbery peel-and-release as the suction seal breaks, followed by a soft pop as the bracket comes free of the wall.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-03/images/first.png",
+    "shots/shot-03/images/last.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "可拆再用:FL2VA锁拧→破真空→拉→整只取下,墙留吸印;对白后期烧字",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "FL2VA首尾对齐0.00/4.00s",
+      "逐动词:握住贴墙处→一拧破封→整只拉离→收回手中·防漏演",
+      "可拆下换位再用买点兑现·墙留吸印",
+      "无对白·干净画面无字幕·单镜4s"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "73c964b42e405db3e92862ad044df2fc284b1e08f183145482dd3940b6479908"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S6视频·捡帚看向支架(I2VA,4s)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing. Begin exactly from <Picture 1>: a young adult East Asian Chinese woman crouches and picks up the fallen broom from the hallway floor. Preserve her appearance, clothing, the broom, and the lighting from <Picture 1>. The camera pushes in with small amplitude at slow speed as she straightens up holding the broom, then her gaze drifts and lands on a plain chrome suction-cup bracket on the nearby smooth wall; she tilts her head and looks toward it with a curious, questioning expression. The bracket surface stays clean and unbranded. Clean frame with no subtitles, no captions, and no on-screen text.\n\noverall_soundscape: A quiet hallway room tone. A light wooden scrape as she lifts the broom off the floor, soft fabric movement as she stands, and quiet footsteps.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-06/images/first.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "承接:捡起扫帚→目光落在支架上探询;I2VA慢推;对白后期烧字",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "I2VA首帧对齐0.00s",
+      "逐动词:蹲身捡帚→起身→目光落支架→侧头探询·防漏演",
+      "同一支架被第三次借用的承接",
+      "商品位留干净无logo·无对白·干净画面无字幕·单镜4s"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0e577c4dbca0218d3fb2a9ac35be98283c3ccb12373cba68d5d74f0c020dcb9d"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S9视频·端杯收尾热气升腾(I2VA,4s)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing. Begin exactly from <Picture 1>: the white almond-drink product tub on a morning breakfast table with a tall clear glass of creamy white almond drink beside it, steam rising, soft golden dawn light. The camera makes one slow, small push-in as the warm light glints gently across the scene and thin wisps of steam drift and curl up from the glass. The product stays perfectly still and stable and its printed label stays sharp, crisp and unchanged. Calm, warm, premium morning mood. Clean frame with no subtitles, no captions and no on-screen text.\n\noverall_soundscape: A quiet warm morning kitchen room tone, calm and still, with the faint soft sound of a hot drink steaming.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-09/images/first.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "收尾;VO2『等它冲开这一会儿,一天才算醒过来』+收尾字幕后期;产品与热气成品杯留桌。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "I2VA首帧对齐0.00s",
+      "慢推热气升腾·罐身立定标签锐利",
+      "收尾旁白VO2+字幕后期",
+      "无对白无烧字幕·单镜4s"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2be398ef5ebf3147ea9184a9bc4d8e6f523f2159f9f5b81b9089d4a7ac756a3d"
+  }
+}

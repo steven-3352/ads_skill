@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "05-S02-last",
+  "mode": "FL2VA-last-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, medium-close on a desk, warm light. a glass storage jar with a round glass-knob lid and a gold label now open, its lid lifted off, a pair of bamboo tongs reaching in toward the dried peel inside; ambient hush. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "广宝福10陈黄金陈皮 5A S02 last;文生图768x1344;微距尺度奇观+冷暖调色;不虚构产地年份/功效;S04接水舒展帧复用已过审05-hook。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "开罐竹夹取皮-落点",
+      "买点:开罐取皮玻璃罐陈列",
+      "声音收窄",
+      "状态变化落点"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e9df0d7343981d105422582ce8c2b5837e6e1638b248cfe6c2d117a346194e73"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "开罐竹夹取皮-落点",
+      "买点:开罐取皮玻璃罐陈列",
+      "声音收窄",
+      "状态变化落点"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e9df0d7343981d105422582ce8c2b5837e6e1638b248cfe6c2d117a346194e73"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/05-5a-shooting-script.md",
+    "related_beats": [
+      "b02"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "罐盖打开",
+      "竹夹伸入取皮",
+      "FL2VA尾帧"
+    ],
+    "unresolved_blockers": []
+  }
+}

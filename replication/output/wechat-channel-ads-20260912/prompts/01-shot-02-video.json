@@ -1,0 +1,34 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S2视频·喷头卡入腾双手(FL2VA,4s)",
+  "mode": "FL2VA",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing, one continuous medium close shot on a balcony with a smooth painted wall. Begin exactly from Picture 1: a plain chrome suction-cup bracket is stuck onto the smooth wall while a middle-aged East Asian Chinese man holds a garden hose nozzle that had been rolling loose on the floor. The camera holds nearly static with a very small push-in at slow speed as he raises the nozzle, aligns its neck to the bracket's open socket, presses it firmly into the socket until it seats and locks in place, then slowly opens both hands and lifts them away while the nozzle stays fixed and does not fall; freed, he turns and slides a heavy flowerpot aside on the floor, arriving at the pose, hand position, and composition established by Picture 2 at the end of the shot. The bracket surface stays clean and unbranded, with the product area kept clear. Clean frame with no subtitles, no captions, and no on-screen text.\n\noverall_soundscape: A calm outdoor balcony ambience with a faint breeze and distant city hum. A soft rubber knock as the nozzle meets the socket, a crisp click as it locks, then the gritty drag of a ceramic flowerpot sliding across the floor.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-02/images/first.png",
+    "shots/shot-02/images/last.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "喷头卡入FL2VA锁按入→卡稳→松手腾双手;商品位留干净待后期贴真图;对白后期烧字",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "FL2VA首尾对齐0.00/4.00s",
+      "逐动词:举起→对准卡口→按入→卡稳→松手→搬花盆·防漏演",
+      "吸墙+通用卡口买点动作兑现",
+      "商品位留干净无logo·无对白·干净画面无字幕·单镜4s"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5f51715dbbbf079f4c5ff842fbfe23efa9396c62adf87e5e8cfde4b15288ba33"
+  }
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>脚本查看</title>
+<link rel="stylesheet" href="styles.css">
+<style>pre{white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;line-height:1.9}</style>
+</head>
+<body>
+<div id="app">
+<p class="back"><a href="index.html">‹ 返回首页</a></p>
+<h1 class="title" id="mv-title">脚本</h1>
+<pre id="mv-body">加载中…</pre>
+</div>
+<script>
+(function(){
+  var f=new URLSearchParams(location.search).get("f");
+  var body=document.getElementById("mv-body");
+  if(!f){body.textContent="缺少 ?f= 参数";return;}
+  document.getElementById("mv-title").textContent=f;
+  fetch("../"+f,{cache:"no-store"}).then(function(r){return r.ok?r.text():Promise.reject(r.status);})
+    .then(function(t){body.textContent=t;}).catch(function(e){body.textContent="读取失败:"+e;});
+})();
+</script>
+</body>
+</html>

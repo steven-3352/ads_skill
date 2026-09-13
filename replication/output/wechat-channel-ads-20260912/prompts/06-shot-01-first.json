@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "06-S01-single",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, medium shot with a candid handheld feel, bright warm living-room daylight. a Chinese person cradles a fluffy long-haired dog in their arms while another Chinese person holds a white pet spray bottle with a long thin nozzle and gestures vaguely over the outside of the fur, unsure where to spray. Lively cozy mood, shallow depth of field. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "拜达尔宠物皮肤喷剂 6B S01 single;文生图768x1344;人物锁中国人;只表现加长喷嘴穿毛发对准局部细雾;不出现杀菌止痒舔食无害喷洒次数买一送二等宣称。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.316Z",
+    "checks": [
+      "抱狗+拿瓶在毛发外比划-钩子",
+      "两人中国人面部",
+      "萌宠+混乱",
+      "手持轻晃"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "13510937b6a6e37fc83f4d45ed6c53f61217c8af0152429febbe740fa466fedc"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.316Z",
+    "checks": [
+      "抱狗+拿瓶在毛发外比划-钩子",
+      "两人中国人面部",
+      "萌宠+混乱",
+      "手持轻晃"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "13510937b6a6e37fc83f4d45ed6c53f61217c8af0152429febbe740fa466fedc"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/06-6b-shooting-script.md",
+    "related_beats": [
+      "b01"
+    ],
+    "related_shots": [
+      "01"
+    ],
+    "visual_evidence": [
+      "一人抱长毛犬",
+      "一人拿喷瓶瞎比划",
+      "I2VA首帧"
+    ],
+    "unresolved_blockers": []
+  }
+}

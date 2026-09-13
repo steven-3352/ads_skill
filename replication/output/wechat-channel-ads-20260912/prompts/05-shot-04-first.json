@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "05-S04-first",
+  "mode": "FL2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, extreme macro almost entirely filled by the ridged surface of a single curled piece of dried golden-brown citrus peel, its deep grooves magnified so they read like a folded topographic map, completely dry; warming golden-brown tone, very shallow focus, no face and no hands in frame. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "广宝福10陈黄金陈皮 5A S04 first;文生图768x1344;微距尺度奇观+冷暖调色;不虚构产地年份/功效;S04接水舒展帧复用已过审05-hook。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "微距沟壑放大如折叠地图-干态起点",
+      "视觉奇观核心起点",
+      "真实纹理放大不虚构",
+      "状态变化起点"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "80dfaa8900594ae2247dde386acd69b1dc8d5734b97d8ddaeb2690e5b3bacd1e"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "微距沟壑放大如折叠地图-干态起点",
+      "视觉奇观核心起点",
+      "真实纹理放大不虚构",
+      "状态变化起点"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "80dfaa8900594ae2247dde386acd69b1dc8d5734b97d8ddaeb2690e5b3bacd1e"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/05-5a-shooting-script.md",
+    "related_beats": [
+      "b04"
+    ],
+    "related_shots": [
+      "04"
+    ],
+    "visual_evidence": [
+      "陈皮沟壑微距如地图",
+      "完全干态",
+      "FL2VA首帧(尾帧复用05-hook接水态)"
+    ],
+    "unresolved_blockers": []
+  }
+}

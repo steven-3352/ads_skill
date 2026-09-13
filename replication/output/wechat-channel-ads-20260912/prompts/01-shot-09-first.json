@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "01-S09-single",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, clean hero still. a small chrome silver suction-cup shower bracket with a round suction base and an adjustable cradle is stuck on a bright bathroom tiled wall, holding a handheld shower head steady and secure. Soft daylight, warm neutral grade, shallow depth of field; the lower portion of the frame is calm and uncluttered. No person in frame. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "优勤花洒支架 1I S09 single;文生图768x1344;镀铬吸盘支架文生图(无关键中文字),人物锁中国人;买点逐镜兑现。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:39:44.775Z",
+    "checks": [
+      "英雄收尾:支架吸墙稳稳卡花洒",
+      "买点收束:吸得牢反复用",
+      "下方留白给收尾字幕",
+      "干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6b0402e58ed003a96ab7ef307e2dd9caea886e62f620528872e81ea43bbad76f"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:39:44.775Z",
+    "checks": [
+      "英雄收尾:支架吸墙稳稳卡花洒",
+      "买点收束:吸得牢反复用",
+      "下方留白给收尾字幕",
+      "干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6b0402e58ed003a96ab7ef307e2dd9caea886e62f620528872e81ea43bbad76f"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/01-1i-shooting-script.md",
+    "related_beats": [
+      "b09"
+    ],
+    "related_shots": [
+      "09"
+    ],
+    "visual_evidence": [
+      "真支架吸浴室墙卡花洒",
+      "静态英雄镜",
+      "收尾买点落位"
+    ],
+    "unresolved_blockers": []
+  }
+}

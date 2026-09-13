@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S4钩子·微距奇观:陈皮沟壑放大如折叠地图接水",
+  "mode": "hook-keyframe",
+  "prompt": "Extreme macro still photograph, vertical 9:16, the frame almost entirely filled by the surface of a single curled piece of dried golden-brown citrus peel, its deep ridges and grooves magnified so they read like a folded topographic map. A thin thread of clear water is just beginning to run into one groove, catching the light as the edge starts to soften. Dreamlike shift of scale, dry golden-brown tone warming toward amber, very shallow focus, no face and no hands in frame. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "广宝福 10陈黄金陈皮 5A 一片展开的时间 钩子/方向验证帧;文生图768x1344;产品英雄帧的真包装还原留全量出图阶段img2img母版。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:01:41.071Z",
+    "checks": [
+      "微距尺度奇观钩子:纹理放大如地图",
+      "开罐后声音收窄前的视觉焦点",
+      "真实纹理放大不虚构产地年份",
+      "与03声音ASMR形式拉开"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4a278611ff1b290502b2f5b198890df325abad7361482df67ede85341aabfc71"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:01:41.071Z",
+    "checks": [
+      "微距尺度奇观钩子:纹理放大如地图",
+      "开罐后声音收窄前的视觉焦点",
+      "真实纹理放大不虚构产地年份",
+      "与03声音ASMR形式拉开"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4a278611ff1b290502b2f5b198890df325abad7361482df67ede85341aabfc71"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/05-5a-shooting-script.md",
+    "related_beats": [
+      "b04"
+    ],
+    "related_shots": [
+      "04"
+    ],
+    "visual_evidence": [
+      "陈皮沟壑微距放大如折叠地图",
+      "一条沟壑接住水流舒展起点",
+      "尺度幻想奇观定调"
+    ],
+    "unresolved_blockers": []
+  }
+}

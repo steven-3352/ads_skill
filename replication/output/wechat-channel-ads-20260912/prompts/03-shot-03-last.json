@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S3尾帧·粉落定杯底(FL2VA尾帧)",
+  "mode": "FL2VA-last-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, top-down close-up looking straight into the mouth of a clear drinking glass on a light-wood morning kitchen counter. The off-white beige almond powder has settled into a soft even layer at the bottom of the glass; a faint cloud of fine pale dust still hangs and disperses in the soft dawn light above the rim; the spoon has lifted away. No hand covering the glass, no face in frame, do NOT render as a portrait. Shallow depth of field, warm neutral color grade, calm quiet morning mood. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "FL2VA尾帧=落定端点。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "粉落定杯底成均匀薄层",
+      "余尘在光中散开·勺已离开",
+      "无手遮杯无人脸",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c5107234ef6dfb4a53234ed8d0349f6877a2577e129179dc7d117efc38cebfae",
+    "mode": "FL2VA-last-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T11:00:00.000Z",
+    "checks": [
+      "粉落定杯底成均匀薄层",
+      "余尘在光中散开·勺已离开",
+      "无手遮杯无人脸",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c5107234ef6dfb4a53234ed8d0349f6877a2577e129179dc7d117efc38cebfae"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b03"
+    ],
+    "related_shots": [
+      "03"
+    ],
+    "visual_evidence": [
+      "粉落进杯底",
+      "粉尘散开",
+      "俯拍杯口",
+      "无人脸",
+      "无文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "05-S08-single",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, clean hero still: the real 广宝福 gold-label glass jar of dried peel stands on a warm wooden table, with an amber tea cup and an unfurled piece of peel beside it; warm light, the lower portion of the frame calm and uncluttered. No person in frame. Preserve the jar's real label exactly. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/wechat-channel-ads-20260912/05/masters/jar-crop.png"
+  ],
+  "generator": "GPT Image",
+  "note": "广宝福10陈黄金陈皮 5A S08 single;img2img母版jar-crop还原真标签;微距尺度奇观+冷暖调色;不虚构产地年份/功效;S04接水舒展帧复用已过审05-hook。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "英雄收尾:真玻璃罐+琥珀茶汤+舒展陈皮",
+      "买点收束:展开一会儿时间",
+      "下方留白给收尾字幕",
+      "img2img母版还原标签只留10陈等原字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e784ee2de09b40d7cb0b4c6f472a88d7fc6c7873716f4bdd2c882b073b788acb"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "英雄收尾:真玻璃罐+琥珀茶汤+舒展陈皮",
+      "买点收束:展开一会儿时间",
+      "下方留白给收尾字幕",
+      "img2img母版还原标签只留10陈等原字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e784ee2de09b40d7cb0b4c6f472a88d7fc6c7873716f4bdd2c882b073b788acb"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/05-5a-shooting-script.md",
+    "related_beats": [
+      "b08"
+    ],
+    "related_shots": [
+      "08"
+    ],
+    "visual_evidence": [
+      "真广宝福玻璃罐",
+      "琥珀茶汤+舒展陈皮同框",
+      "英雄镜"
+    ],
+    "unresolved_blockers": []
+  }
+}

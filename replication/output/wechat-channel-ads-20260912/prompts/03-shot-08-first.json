@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S8首帧·清晨加入(I2VA首帧)",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, a wider view of a bright light-wood morning kitchen: a window with a light linen curtain letting in soft golden dawn light, a kettle resting on the counter, a small breakfast plate, and the finished glass of creamy white almond drink standing on the wood counter. Warm, calm, fresh morning mood, shallow depth of field, warm neutral color grade. No face in frame, do NOT render as a portrait. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "三声环境后期pt08-amb;首帧建立三元素+成品杯。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "稍宽景晨光厨房",
+      "窗帘/水壶/早餐盘/成品杯齐入画",
+      "暖调清新晨感",
+      "无人脸干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d4aa7a331669076239414c53b9f54a6f4b0704286dff9f5032abb749cf2669e4",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T11:00:00.000Z",
+    "checks": [
+      "稍宽景晨光厨房",
+      "窗帘/水壶/早餐盘/成品杯齐入画",
+      "暖调清新晨感",
+      "无人脸干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d4aa7a331669076239414c53b9f54a6f4b0704286dff9f5032abb749cf2669e4"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b08"
+    ],
+    "related_shots": [
+      "08"
+    ],
+    "visual_evidence": [
+      "清晨加入进来",
+      "窗帘·水壶·早餐盘",
+      "成品杯在台面",
+      "无人脸",
+      "无文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

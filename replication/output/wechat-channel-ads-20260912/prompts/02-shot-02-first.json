@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "02-S02-single",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, close-up of a young Chinese woman in her early thirties with a low ponytail, wearing a simple light knit top's face at a warm wooden dining table, soft warm interior morning light, restrained quiet domestic mood, shallow depth of field, her eyes lowered toward a folded paper's peeking corner on the table, a quiet flicker of concern she does not voice. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "血脂管理指南 2B S02 single;文生图768x1344;人物锁中国人;报告文字模糊避免恐慌/烧字;买点靠动作线兑现。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:48:49.035Z",
+    "checks": [
+      "女儿察觉不点破-潜台词",
+      "中国人女儿面部",
+      "克制不煽情",
+      "情绪:察觉"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "56938fcbbe94d3fa46960a9eb331871909d3120384c6e1550ec9166ca72c114f"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:48:49.035Z",
+    "checks": [
+      "女儿察觉不点破-潜台词",
+      "中国人女儿面部",
+      "克制不煽情",
+      "情绪:察觉"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "56938fcbbe94d3fa46960a9eb331871909d3120384c6e1550ec9166ca72c114f"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/02-2b-shooting-script.md",
+    "related_beats": [
+      "b02"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "女儿目光落到报告一角",
+      "安静担忧",
+      "I2VA首帧"
+    ],
+    "unresolved_blockers": []
+  }
+}

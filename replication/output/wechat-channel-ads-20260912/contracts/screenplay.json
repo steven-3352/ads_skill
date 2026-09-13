@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "wechat-channel-ads-20260912",
+  "title": "清晨开场乐",
+  "product": "修养 杏仁七白饮",
+  "coreAction": "把一次冲调谱成一段清晨开场乐:粉、水、勺依次加入,声音逐拍升级到收住的一刻。",
+  "theme": "冲开的这一会儿,一天才算醒过来。",
+  "driverNote": "主引擎=音乐/节奏+动作·事件;旁白只作点睛,不压中段冲调乐段。",
+  "source": "stories/03-3a-shooting-script.md",
+  "beats": [
+    { "id": "b01", "shot": "01", "sceneId": "kitchen", "text": "空杯居中,手摆正杯;清晨静默起旁白", "channels": ["picture", "dialogue", "ambience"] },
+    { "id": "b02", "shot": "02", "sceneId": "kitchen", "text": "拧开杏仁七白饮包装(商品位后期贴真图)", "channels": ["picture", "action_sound"] },
+    { "id": "b03", "shot": "03", "sceneId": "kitchen", "text": "一勺粉落进杯底=第一下鼓点", "channels": ["picture", "action_sound"] },
+    { "id": "b04", "shot": "04", "sceneId": "kitchen", "text": "热水注入,水声由一线变持续音", "channels": ["picture", "action_sound"] },
+    { "id": "b05", "shot": "05", "sceneId": "kitchen", "text": "粉被托起,杯底旋出漩涡", "channels": ["picture", "action_sound"] },
+    { "id": "b06", "shot": "06", "sceneId": "kitchen", "text": "勺碰杯壁清脆一拍,粉水搅匀成一体", "channels": ["picture", "action_sound"] },
+    { "id": "b07", "shot": "07", "sceneId": "kitchen", "text": "杯壁细滑稠润纹理(香滑糯质感)", "channels": ["picture"] },
+    { "id": "b08", "shot": "08", "sceneId": "kitchen", "text": "清晨加入:窗帘/水壶/盘三连,乐止收束", "channels": ["picture", "ambience", "transition"] },
+    { "id": "b09", "shot": "09", "sceneId": "kitchen", "text": "人坐下端杯,热气与真实包装留桌;收尾旁白+字幕", "channels": ["picture", "dialogue", "onscreen_text"] }
+  ],
+  "dialogue": [],
+  "voiceover": [
+    { "beat": "b01", "who": "我", "line": "清晨第一杯,我想自己冲。" },
+    { "beat": "b09", "who": "我", "line": "等它冲开这一会儿,一天才算醒过来。" }
+  ]
+}

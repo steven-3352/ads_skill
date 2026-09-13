@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "05-S03-single",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, extreme macro, a single curled piece of dried golden-brown citrus peel with deep ridges held by bamboo tongs, the camera pushing close into its ridged surface; warming golden-brown tone, very shallow focus, no face and no hands beyond the tongs. Clean scene: no text, no subtitles, no captions, no watermark and no logo anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "广宝福10陈黄金陈皮 5A S03 single;文生图768x1344;微距尺度奇观+冷暖调色;不虚构产地年份/功效;S04接水舒展帧复用已过审05-hook。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "卷曲陈皮被夹起微距推近-奇观入口",
+      "纹理登场",
+      "真实纹理不虚构产地年份",
+      "慢推"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8336ff36e3b2fb41d36a4c6775630cfc0031a15a48d3e7a762b7ffcb9decbd36"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "hand_filled_unverified",
+    "result": "not_generated_by_skill",
+    "remediation_note": "hand-filled by orchestrator, not produced by any skill generate-before-review; must be re-authored via S2/S3 with a real skill-authored prompt before any S4/S5 paid generation",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T06:55:34.266Z",
+    "checks": [
+      "卷曲陈皮被夹起微距推近-奇观入口",
+      "纹理登场",
+      "真实纹理不虚构产地年份",
+      "慢推"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8336ff36e3b2fb41d36a4c6775630cfc0031a15a48d3e7a762b7ffcb9decbd36"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/05-5a-shooting-script.md",
+    "related_beats": [
+      "b03"
+    ],
+    "related_shots": [
+      "03"
+    ],
+    "visual_evidence": [
+      "一片卷皮被夹起",
+      "微距推近沟壑",
+      "I2VA首帧"
+    ],
+    "unresolved_blockers": []
+  }
+}

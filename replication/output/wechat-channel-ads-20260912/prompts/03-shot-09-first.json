@@ -1,0 +1,63 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S9首帧·成品与真包装留桌(I2VA首帧,img2img母版)",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, medium shot at a natural distance. The complete matte-white cylindrical almond-drink product tub stands on a light-wood morning breakfast table; faithfully reproduce THIS exact product from the reference image, keeping its printed front label, brand mark, Chinese and English wording, illustration and colors true to the reference. Beside the tub stands a tall clear glass filled with finished smooth creamy white almond drink, gentle wisps of steam rising from it. Soft golden dawn light, warm neutral color grade, shallow depth of field, calm premium morning mood. Clean scene: no extra text, no subtitles, no captions and no watermark added anywhere, except the printed label carried on the product itself from the reference.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/wechat-channel-ads-20260912/assets/product-master.png"
+  ],
+  "insert_ref_verified": true,
+  "generator": "GPT Image",
+  "note": "S9改为产品+成品杯收尾英雄镜(img2img母版一致产品);人端杯动作img2img不可靠故略,情绪由VO2+收尾字幕承担;差不多+中景标准。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "img2img母版真包装-差不多标准",
+      "真罐+成品奶白杯冒热气留桌",
+      "中景晨光早餐桌",
+      "仅商品自带标签无额外字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "546c529b92dcf5baaea6424cd5bda77fd08be4651f9178eaa32d706af47ad592",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T11:00:00.000Z",
+    "checks": [
+      "img2img母版真包装-差不多标准",
+      "真罐+成品奶白杯冒热气留桌",
+      "中景晨光早餐桌",
+      "仅商品自带标签无额外字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "546c529b92dcf5baaea6424cd5bda77fd08be4651f9178eaa32d706af47ad592"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b09"
+    ],
+    "related_shots": [
+      "09"
+    ],
+    "visual_evidence": [
+      "包装与杯中真实状态一起留在桌面",
+      "成品杯热气升起",
+      "真实白罐母版参考",
+      "中近景"
+    ],
+    "unresolved_blockers": []
+  }
+}

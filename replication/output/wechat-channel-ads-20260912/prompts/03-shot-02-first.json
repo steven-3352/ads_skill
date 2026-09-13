@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S2首帧-静态产品亮相-img2img真包装",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, medium-wide shot at a natural distance. The complete matte-white cylindrical product tub stands on a clean light-wood morning kitchen counter with soft pale dawn light from a window; faithfully reproduce THIS exact product from the reference image, keeping its printed front label, brand mark, Chinese and English wording, illustration and colors true to the reference. An empty clear glass and a small plate of almonds sit beside it. Warm neutral color grade, shallow depth of field, calm premium morning mood. Clean scene: no extra text, no subtitles, no captions and no watermark added anywhere, except the product's own printed label from the reference.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/wechat-channel-ads-20260912/assets/product-master.png"
+  ],
+  "insert_ref_verified": true,
+  "generator": "GPT Image",
+  "note": "用户定A:静态labeled罐亮相,I2VA轻推,拧盖声后期(pt02-sound)。img2img母版assets/product-master.png;差不多+远景标准。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "img2img母版参考真实包装-差不多远景标准",
+      "静态产品亮相无手-拧盖声后期落点",
+      "晨光厨房木台空杯杏仁盘",
+      "仅商品自带标签无额外字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b675719134c8229e752e3eb10984bd00b9249120991a43e7e47c96badfe259aa"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T10:25:00.000Z",
+    "checks": [
+      "img2img母版参考真实包装-差不多远景标准",
+      "静态产品亮相无手-拧盖声后期落点",
+      "晨光厨房木台空杯杏仁盘",
+      "仅商品自带标签无额外字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b675719134c8229e752e3eb10984bd00b9249120991a43e7e47c96badfe259aa"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b02"
+    ],
+    "related_shots": [
+      "02"
+    ],
+    "visual_evidence": [
+      "手拧开杏仁七白饮的包装(以产品亮相+拧盖声表现)",
+      "真实白罐真包装母版参考",
+      "中远景静态"
+    ],
+    "unresolved_blockers": []
+  }
+}

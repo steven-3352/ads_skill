@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S6首帧·勺尖将触·粉水分离(FL2VA首帧)",
+  "mode": "FL2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16, close-up of a clear glass of almond drink on a light-wood morning kitchen counter, a spoon tip just about to touch the inner glass wall. The liquid is still streaky and separated — pale powder streaks marbled through slightly clearer water, not yet uniform. Faint dawn light, hand and spoon only, no face in frame, do NOT render as a portrait. Shallow depth of field, warm neutral color grade, calm morning mood. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "FL2VA首帧=分离端点。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "近景·勺尖将触杯壁",
+      "粉水分离·条纹大理石感未匀",
+      "手勺入画无人脸",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f3040f92f58b5e921eb2e730bc0e9a43654bc7cf5c828e322c8a042a37fbe7c9",
+    "mode": "FL2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T11:00:00.000Z",
+    "checks": [
+      "近景·勺尖将触杯壁",
+      "粉水分离·条纹大理石感未匀",
+      "手勺入画无人脸",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f3040f92f58b5e921eb2e730bc0e9a43654bc7cf5c828e322c8a042a37fbe7c9"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b06"
+    ],
+    "related_shots": [
+      "06"
+    ],
+    "visual_evidence": [
+      "勺子将碰杯壁",
+      "粉与水分开(分离端点)",
+      "近景",
+      "无人脸",
+      "无文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

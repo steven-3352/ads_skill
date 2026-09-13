@@ -15,6 +15,7 @@ OUTPUT_NAME="generated-$(date +%s).png"
 CLI_REFERENCES=()
 AUDIT_DIR=""
 REQUEST_ID=""
+PROVIDER=""
 
 usage() {
   cat >&2 <<'USAGE'
@@ -46,6 +47,7 @@ else
       --size) GPT_IMAGE_SIZE="${2:-}"; shift 2 ;;
       --audit-dir) AUDIT_DIR="${2:-}"; shift 2 ;;
       --request-id) REQUEST_ID="${2:-}"; shift 2 ;;
+      --provider) PROVIDER="${2:-}"; shift 2 ;;
       -h|--help) usage ;;
       *) echo "unknown option: $1" >&2; usage ;;
     esac
@@ -53,7 +55,23 @@ else
 fi
 
 [[ -n "$PROMPT_FILE" && -f "$PROMPT_FILE" ]] || usage
-"$BASE_DIR/validate-seedance-prompt-review.sh" "$PROMPT_FILE" image
+command -v jq >/dev/null || { echo "jq is required" >&2; exit 1; }
+# 生成门禁：按提示词 JSON 自动选校验器（H3 优先），可用 --provider 覆盖；不得放宽任何现有闸门。
+if [[ "$PROVIDER" == "minimax" ]]; then
+  "$BASE_DIR/validate-h3-prompt-review.sh" "$PROMPT_FILE" image
+elif [[ "$PROVIDER" == "seedance" ]]; then
+  "$BASE_DIR/validate-seedance-prompt-review.sh" "$PROMPT_FILE" image
+elif [[ -n "$PROVIDER" ]]; then
+  echo "unknown --provider: $PROVIDER (expected minimax|seedance)" >&2; exit 2
+elif jq -e '(.h3_prompt_review != null) or (.model == "MiniMax-H3") or (.authoring_skill == "h3-prompt-writing")' "$PROMPT_FILE" >/dev/null 2>&1; then
+  "$BASE_DIR/validate-h3-prompt-review.sh" "$PROMPT_FILE" image
+elif jq -e '.seedance_prompt_review != null' "$PROMPT_FILE" >/dev/null 2>&1; then
+  "$BASE_DIR/validate-seedance-prompt-review.sh" "$PROMPT_FILE" image
+else
+  echo "生成门禁拦截：提示词 JSON 无有效评审块（缺少 .h3_prompt_review 与 .seedance_prompt_review，且无 .model==MiniMax-H3 / .authoring_skill==h3-prompt-writing）。" >&2
+  echo "请补齐对应评审块，或用 --provider minimax|seedance 显式指定校验器。" >&2
+  exit 2
+fi
 OUTPUT="$OUTPUT_DIR/$OUTPUT_NAME"
 [[ ! -e "$OUTPUT" ]] || { echo "refusing to overwrite existing output: $OUTPUT" >&2; exit 1; }
 if [[ -n "$AUDIT_DIR" || -n "$REQUEST_ID" ]]; then

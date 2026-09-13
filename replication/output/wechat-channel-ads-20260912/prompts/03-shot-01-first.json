@@ -1,0 +1,61 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S1首帧·空杯清晨静默",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic still photograph, vertical 9:16 framing, gentle 45-degree overhead-side angle. An empty clear drinking glass stands in the exact center of a clean light-wood morning kitchen countertop; soft pale dawn light coming through a window, no steam and no vapor yet, calm and quiet mood, shallow depth of field, warm neutral color grade. A single human hand enters from the side and gently squares up the empty glass; hand only, no face in frame, do NOT render this as a portrait. Focus stays on the empty glass and the tabletop. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "开场定调空杯;无商品包装入画,无需后期贴图。手部近景无人脸。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "空杯居中·清晨淡光无水汽",
+      "手摆正杯·无人脸非肖像",
+      "9:16竖幅暖调浅景深",
+      "干净画面无文字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "df70efb6f86acf6ea7861f38f7f3adb45424016acbc556734758551998c8f244",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T00:40:51.065Z",
+    "checks": [
+      "空杯居中·清晨淡光无水汽",
+      "手摆正杯·无人脸非肖像",
+      "9:16竖幅暖调浅景深",
+      "干净画面无文字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "df70efb6f86acf6ea7861f38f7f3adb45424016acbc556734758551998c8f244"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b01"
+    ],
+    "related_shots": [
+      "01"
+    ],
+    "visual_evidence": [
+      "空杯立在桌面中央",
+      "一只手把杯子摆正",
+      "窗光很淡水汽未起",
+      "无人脸插入",
+      "无文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

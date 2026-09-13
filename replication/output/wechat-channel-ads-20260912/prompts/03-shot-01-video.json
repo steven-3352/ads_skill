@@ -1,0 +1,34 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S1视频·空杯清晨静默(I2VA,4s)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vertical 9:16 framing. Begin exactly from <Picture 1>: an empty clear glass sitting at the center of a light-wood morning kitchen counter, soft pale dawn light through the window, no steam and no vapor, a single human hand entering from the right with no face in frame. The camera pushes in with small amplitude at slow speed as the hand gently squares up the empty glass, nudging it a few millimeters until it sits perfectly centered, then the fingers lift away and the glass settles into stillness. The appearance, glass shape, counter, and lighting from <Picture 1> stay consistent. The mood stays calm and quiet. Clean frame with no subtitles, no captions, and no on-screen text.\n\noverall_soundscape: A quiet dawn room tone with faint household air. One soft, short glass-on-wood tap sounds as the hand squares the glass, then the room returns to stillness.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "shots/shot-01/images/first.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "旁白VO1不在H3内生成,放后期配音,避免H3烧中文字幕;非叙事音乐N/A,统一由后期加。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "I2VA首帧对齐0.00s",
+      "手扶正空杯→静置,慢推小幅",
+      "无对白(旁白留后期)",
+      "干净画面无字幕烧录",
+      "时长4.00s单镜无切"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "dd66b176430c7d2157f04c9d579a38d0e64eb9106de631a1e70af624fa5143bd"
+  }
+}

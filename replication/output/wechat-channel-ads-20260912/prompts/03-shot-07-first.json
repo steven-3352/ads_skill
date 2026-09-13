@@ -1,0 +1,60 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S7首帧·杯壁稠润挂流(I2VA首帧)",
+  "mode": "I2VA-first-frame",
+  "prompt": "Realistic cinematic macro close-up photograph, vertical 9:16, extreme close-up of the inner wall of a clear glass where a smooth creamy white almond drink coats and clings, thick glossy trails slowly sliding down the glass and showing rich, silky body. Fill the frame with the glass wall and the clinging liquid; face NOT in frame, do NOT render as a portrait, no mid-shot. Soft dawn light, warm neutral color grade, calm premium morning mood, shallow depth of field. Clean frame — no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "note": "极近景按extreme-closeup记忆:首句填满+面不入画+禁中景。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": [
+      "极近景填满画面·杯内壁挂流",
+      "奶白稠润顺滑挂壁·体现稠度",
+      "面部不入画非肖像·禁中景",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a02baee5274abc80772b705d11579b374049f1ce3ee47a8958aa6d7db0869612",
+    "mode": "I2VA-first-frame"
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13T11:00:00.000Z",
+    "checks": [
+      "极近景填满画面·杯内壁挂流",
+      "奶白稠润顺滑挂壁·体现稠度",
+      "面部不入画非肖像·禁中景",
+      "9:16暖调浅景深干净无字"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a02baee5274abc80772b705d11579b374049f1ce3ee47a8958aa6d7db0869612"
+  },
+  "narrative_alignment": {
+    "source_story": "stories/03-3a-shooting-script.md",
+    "related_beats": [
+      "b07"
+    ],
+    "related_shots": [
+      "07"
+    ],
+    "visual_evidence": [
+      "杯壁挂下细滑稠润纹理",
+      "极近景质感",
+      "无人脸",
+      "无文字"
+    ],
+    "unresolved_blockers": []
+  }
+}
