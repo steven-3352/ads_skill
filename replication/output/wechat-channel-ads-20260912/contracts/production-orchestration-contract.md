@@ -94,9 +94,9 @@
 
 | 阶段 | 「剧本约束/分镜约束」= 这些文件 |
 |---|---|
-| **通用（S2+S3 都遵）** | `references/story-drive-continuity-methodology.md`（**唯一权威**：铁律0原文为准 / 驱动分层【实判非模板】 / 无幻灯片五条 / 单镜6段 / 慢感五因） |
-| **S2 剧本约束** | 上 + 本商品 `03-六商品详细内容脚本.md` 对应锁定稿段 + `01-产品事实与核验边界.md` 对应事实卡与红线 + `references/three-skill-production-sop.md`（交接字段） |
-| **S3 分镜约束** | 上 + `ad-creative-expert` §2.5 分镜内置验证（`references/three-skill-production-sop.md` §2.5） + H3 能力边界（I2VA只首帧 / FL2VA首尾帧状态变化必用 / 最短4s：见 [[fl2va-for-state-change-actions]] [[minimax-h3-min-4s-billing]]） + 商品100%还原（真图裁切+后期贴图，商品位留干净） |
+| **通用（S2+S3 都遵）** | `references/video-production-sop.md`（唯一生产权威：原文忠实 / 驱动分层 / 连续性 / 分镜粒度 / 生成与验收闸门） |
+| **S2 剧本约束** | 上 + 本商品 `03-六商品详细内容脚本.md` 对应锁定稿段 + `01-产品事实与核验边界.md` 对应事实卡与红线 |
+| **S3 分镜约束** | 上 + `references/video-production-sop.md` 第 8-9 节完整分镜模板 + H3 能力边界（I2VA 只首帧 / FL2VA 锁首尾状态 / 最短时长以当前模型能力为准） + 商品 100% 还原（真图裁切+后期贴图，商品位留干净） |
 | **S3/S4 提示词与生图** | 模型=H3 → 唯一作者 `h3-prompt-writing`；`seedance-prompt-zh` 为 codex 技能、Claude 不可用、短期忽略；图片门禁 `validate-h3-prompt-review.sh <f> image`、视频门禁 `... video`（00 元数据：不得用 Seedance 字段/校验替代） |
 
 > 事实闸门（六商品红线）源头＝`01-产品事实与核验边界.md` + `03` 末尾事实闸门表 + `00-项目元数据.md` §事实闸门；未补证据的表述一律不进公开成片。

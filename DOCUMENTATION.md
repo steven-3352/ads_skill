@@ -5,8 +5,10 @@
 ## 1. 当前入口
 
 - [SKILL.md](SKILL.md)：`ad-creative-expert` 的唯一主入口和路由规则。
+- [references/video-production-sop.md](references/video-production-sop.md)：所有新视频项目的唯一生产 SOP，内含能力加载目录、项目目录、完整分镜模板、生成与验收闸门。
 - [references/README.md](references/README.md)：方法论、SOP、案例蒸馏和学习资料索引。
 - [replication/README.md](replication/README.md)：AI 复刻/生产项目的素材、提示词、输出和日志索引。
+- [PROJECT-KNOWLEDGE-AUDIT-2026-09-13.md](PROJECT-KNOWLEDGE-AUDIT-2026-09-13.md)：本次知识、经验、约束、SOP 与正反馈的盘点快照；不是生产规则来源。
 
 ## 2. 稳定文档与工作产物
 
@@ -42,11 +44,7 @@
 
 ### AI 视频生产与三 Skill 协作
 
-- `references/three-skill-production-sop.md`：`ads_skill → screenwriting-master → h3-prompt-writing/seedance-prompt-zh` 的路由和交接。
-- `references/model-routing-sop.md`：项目模型锁定（H3/Seedance）、提示词技能路由与模型迁移流程。
-- `references/narrative-shot-production-plan.md`：叙事分镜→生成单元→段内切镜→后期任务的四层生产结构与节拍通道覆盖校验。
-- `references/ai-video-production-sop.md`：生成、成本、后期、验收和 5 张小红书图文。
-- `references/project-production-sop.md`：项目级对话、剧本/分镜契约、HTML 模板和可复制执行命令。
+- `references/video-production-sop.md`：唯一生产流程；统一 `ads → screenwriting → ads 分镜 → H3/Seedance 视频提示词 → 逐单元生成/验收`，并包含能力目录、项目目录、Shot/Panel/Unit 模板、连续性、成本和状态机。
 - `references/cases/`：具体 AI 生产案例，不能替代通用 SOP。
 
 ### 数据、案例和迭代
@@ -61,7 +59,8 @@
 临时分析/项目记录 → replication 或 prd
 可复用方法 → references
 多次验证后的规则 → learned-patterns 或通用 SOP
-已废弃内容 → 在原文件顶部标注 Deprecated，并保留迁移链接
+仍有历史解释价值的废弃内容 → 标注 Deprecated，并保留迁移链接
+已被完整吸收且不再有独立价值的重复内容 → 更新全部引用后删除，由版本历史保留
 ```
 
 新增 Markdown 必须回答：它属于哪个目录？是否与现有文档重复？谁会读取它？如果是 `references/`，必须加入本索引和 `SKILL.md` 的按需索引。

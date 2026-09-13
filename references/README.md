@@ -25,13 +25,8 @@
 
 |文件|定位|
 |---|---|
-|[story-drive-continuity-methodology.md](story-drive-continuity-methodology.md)|**【所有视频强制前置·唯一出处】**人物故事、趣味、视觉、幽默和感官内容的驱动方式，以及无幻灯片连贯性、单镜结构和慢感诊断；其他文档只指针不复制|
-|[three-skill-production-sop.md](three-skill-production-sop.md)|ads、screenwriting、H3/Seedance 的分流和交接|
-|[ai-video-production-sop.md](ai-video-production-sop.md)|模型选择、成本、后期、验收和跨平台交付|
-|[model-routing-sop.md](model-routing-sop.md)|项目模型锁定、H3/Seedance 提示词路由与模型迁移|
-|[narrative-shot-production-plan.md](narrative-shot-production-plan.md)|叙事分镜→生成单元→段内切镜→后期任务的四层结构、节拍通道覆盖校验和状态机|
+|[video-production-sop.md](video-production-sop.md)|**【所有新视频项目强制前置·唯一生产权威】**能力加载目录、项目目录、Skill 分工、完整 Shot/Panel/Unit 模板、连续性、模型路由、逐镜生成、成本、状态和验收|
 |[cases/](cases/)|单案例制作决策；先读通用 SOP，再按需读取案例|
-|[project-production-sop.md](project-production-sop.md)|项目级对话、契约、HTML 模板和手工执行命令|
 
 ## 数据和经验
 

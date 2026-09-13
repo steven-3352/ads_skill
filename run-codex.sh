@@ -12,7 +12,7 @@ PID_FILE="$RUN_DIR/${TASK_NAME}.pid"
 
 PROMPT='无人值守完成 replication/output/love-story-level-5/01-虾壳.md 的“第一级自动生产”。不要向用户提问；无法安全判断、素材不合格、凭据缺失或预算不满足时停止并写报告，绝不绕过检查。
 
-项目边界：先读 SKILL.md、references/three-skill-production-sop.md、references/ai-video-production-sop.md，以及 love-story-level-5 内 README.md、characters.md、01-虾壳.md、故事板、提示词和全部现有素材。所有案例产物只写入 love-story-level-5 及其子目录。通用编排层、SOP 优化和项目经验增量沉淀到根项目 references/；优先更新现有 canonical 文档，确需新增文档时同步更新 DOCUMENTATION.md、references/README.md 和 SKILL.md 索引。不要改无关文件，不 commit，不 push。
+项目边界：先读 SKILL.md、references/video-production-sop.md，以及 love-story-level-5 内 README.md、characters.md、01-虾壳.md、故事板、提示词和全部现有素材。所有案例产物只写入 love-story-level-5 及其子目录。通用编排层、SOP 优化和项目经验增量沉淀到根项目 references/；优先更新现有 canonical 文档，确需新增文档时同步更新 DOCUMENTATION.md、references/README.md 和 SKILL.md 索引。不要改无关文件，不 commit，不 push。
 
 一级完成范围：盘点并验收已有图片和镜头01 MP4；补齐镜头02-08所需首帧与真实视频；下载生成结果；输出可供人工直接照做的剪辑包。不要自动终剪，不把静态推拉当视频。人工只负责依照剪辑包完成拼接、对白/旁白、字幕、声音和导出。
 
