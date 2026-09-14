@@ -89,8 +89,8 @@ CAMERA_FIXED="$(jq -r '.camera_fixed // empty' "$PROMPT_FILE")"
 
 if [[ "$PROVIDER" == "seedance" ]]; then
   [[ -n "${SEEDANCE_API_KEY:-}" ]] || { echo "缺少 SEEDANCE_API_KEY" >&2; exit 1; }
-  BASE_URL="${SEEDANCE_BASE_URL:-https://us1.tonbirds.com/v1}"
-  BASE_URL="${BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
+  [[ -n "${SEEDANCE_BASE_URL:-}" ]] || die "缺少 SEEDANCE_BASE_URL（请在 .env 配置，脚本不再使用硬编码兜底地址）"
+  BASE_URL="${SEEDANCE_BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
   MODEL="${VIDEO_MODEL:-${SEEDANCE_MODEL_ID:-doubao-seedance-2-0-mini-260615}}"
   CONTENT="$(jq -c '.content // empty' "$PROMPT_FILE")"
   if [[ -z "$CONTENT" || "$CONTENT" == "null" ]]; then
@@ -171,7 +171,8 @@ elif [[ "$PROVIDER" == "minimax" ]]; then
   REQUEST="$MINIMAX_TEMP_DIR/request.json"
 
   if [[ "$MODE" == "v2" ]]; then
-    BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-https://cp.compshare.cn}}"
+    BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-}}"
+    [[ -n "$BASE_URL" ]] || die "缺少 MINIMAX_H3_BASE_URL 或 MINIMAX_BASE_URL（请在 .env 配置，脚本不再使用硬编码兜底地址）"
     BASE_URL="${BASE_URL%/}"
     CREATE_URL="${MINIMAX_CREATE_URL:-$BASE_URL/minimax/v2/video_generation}"
     STATUS_BASE="${MINIMAX_STATUS_BASE:-$BASE_URL/minimax/v2/query/video_generation}"
@@ -217,14 +218,39 @@ elif [[ "$PROVIDER" == "minimax" ]]; then
       --arg context_ir "$CONTEXT_IR" --argjson watermark "$WATERMARK" \
       '{model:$model,content:([{type:"text",text:$prompt}] + $content[0]),duration:($duration|tonumber),resolution:$resolution,ratio:$ratio,use_context_ir:($context_ir == "true"),aigc_watermark:$watermark}' > "$REQUEST"
   elif [[ "$MODE" == "compat" ]]; then
-    BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-${MINIMAX_H3_API_URL:-https://deepkey.top/v1}}}"
+    BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-${MINIMAX_H3_API_URL:-}}}"
+    [[ -n "$BASE_URL" ]] || die "缺少 MINIMAX_H3_BASE_URL / MINIMAX_BASE_URL / MINIMAX_H3_API_URL（请在 .env 配置，脚本不再使用硬编码兜底地址）"
     BASE_URL="${BASE_URL%/}"; [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
     CREATE_URL="${MINIMAX_CREATE_URL:-$BASE_URL/videos}"
     STATUS_BASE="${MINIMAX_STATUS_BASE:-$BASE_URL/videos}"
     MODEL="${VIDEO_MODEL:-${MINIMAX_MODEL_ID:-Minimax-H3-768p-933-15s}}"
-    jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --argjson images "$REFERENCES" \
+    # compat 的 images 需为上游可取用的 URL 或 data-URL；本地相对/绝对路径在此就地转 base64 data-URL。
+    # 已是 http(s):// 或 data: 的原样放行（其他用 URL 的项目行为不变）。
+    IMAGES_FILE="$MINIMAX_TEMP_DIR/images.json"
+    printf '%s' "$REFERENCES" > "$IMAGES_FILE"
+    while IFS=$'\t' read -r IMG_INDEX IMG_PATH; do
+      [[ -n "$IMG_PATH" ]] || continue
+      case "$IMG_PATH" in
+        http://*|https://*|data:*) continue ;;
+      esac
+      IMG_LOCAL="$IMG_PATH"; [[ "$IMG_LOCAL" == /* ]] || IMG_LOCAL="$PROJECT_DIR/$IMG_LOCAL"
+      [[ -f "$IMG_LOCAL" ]] || die "找不到本地 MiniMax 素材: $IMG_LOCAL"
+      case "${IMG_LOCAL##*.}" in
+        jpg|JPG|jpeg|JPEG) IMG_MIME="image/jpeg" ;;
+        webp|WEBP) IMG_MIME="image/webp" ;;
+        *) IMG_MIME="image/png" ;;
+      esac
+      IMG_DU="$MINIMAX_TEMP_DIR/img-du-$IMG_INDEX.txt"
+      { printf 'data:%s;base64,' "$IMG_MIME"; base64 < "$IMG_LOCAL" | tr -d '\n'; } > "$IMG_DU"
+      IMG_NEXT="$MINIMAX_TEMP_DIR/images-next.json"
+      jq --argjson i "$IMG_INDEX" --rawfile du "$IMG_DU" '.[$i]=$du' "$IMAGES_FILE" > "$IMG_NEXT"
+      mv "$IMG_NEXT" "$IMAGES_FILE"
+    done < <(jq -r 'to_entries[] | [.key, .value] | @tsv' "$IMAGES_FILE")
+    # images 可能是数 MB 的 base64 data-URL，必须用 --slurpfile 从文件读，
+    # 不能 --argjson 走命令行参数（会 Argument list too long）。
+    jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --slurpfile images "$IMAGES_FILE" \
       --arg ratio "$RATIO" --arg duration "$DURATION" \
-      '{model:$model,prompt:$prompt,images:$images,aspect_ratio:$ratio} + (if $duration != "" then {duration:($duration|tonumber)} else {} end)' > "$REQUEST"
+      '{model:$model,prompt:$prompt,images:$images[0],aspect_ratio:$ratio} + (if $duration != "" then {duration:($duration|tonumber)} else {} end)' > "$REQUEST"
   else
     die "H3_API_MODE 只能是 v2 或 compat"
   fi

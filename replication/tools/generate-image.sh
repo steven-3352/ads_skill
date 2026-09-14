@@ -83,8 +83,8 @@ command -v jq >/dev/null || { echo "jq is required" >&2; exit 1; }
 command -v curl >/dev/null || { echo "curl is required" >&2; exit 1; }
 command -v base64 >/dev/null || { echo "base64 is required" >&2; exit 1; }
 
-BASE_URL="${GPT_IMAGE_BASE_URL:-https://api.openai.com/v1}"
-BASE_URL="${BASE_URL%/}"
+[[ -n "${GPT_IMAGE_BASE_URL:-}" ]] || { echo "missing GPT_IMAGE_BASE_URL（请在 .env 配置，脚本不再使用硬编码兜底地址）" >&2; exit 1; }
+BASE_URL="${GPT_IMAGE_BASE_URL%/}"
 [[ "$BASE_URL" == */v1 ]] || BASE_URL="$BASE_URL/v1"
 MODEL="${GPT_IMAGE_MODEL:-gpt-image-2}"
 SIZE="${GPT_IMAGE_SIZE:-1024x1536}"
