@@ -4,8 +4,8 @@
 一条约 48 秒（60 秒以内）、横屏 16:9、对白驱动的纯情感短片。男主分手后回忆起和女主一个赖床耍赖的暖色早晨；冷（现在）暖（回忆）双时空并置。无商品植入。
 
 ## 当前阶段
-`sound_cut_v1` —— 10 镜 H3 视频已付费生成并合成；**声音初剪 v1（响度归一版）已出**：`edit/xiaozhu-sound-cut-v1.mp4`（52.6s）。对白镜 S02–S08 用纯线性增益对齐到 -18 LUFS（原始 -13～-24.3 LUFS 落差已消除），冷段 S01/S09/S10 保留静默不抬噪。构建脚本 `edit/build-sound-cut-v1.sh`。
-（前序：画面初剪 `edit/xiaozhu-picture-cut.mp4` = 10 镜硬切沿用 H3 原声。）
+`final_cut_v1` —— 成片(对白完整版)已出:`edit/xiaozhu-final-cut.mp4`(52.6s)。S04 正反打对白镜采用 H3 烧字幕版(`shots/S04/S04-U1.burned-subtitle.mp4`,含中文对白+完整"第三个五分钟/假打呼/假的"正反打,已扶正为 `S04-U1.mp4`,旧静音误删版留底 `S04-U1.silent-rejected.mp4`)。字幕策略:采用"接受烧录+就此不补其余镜"(用户 2026-09-14 决定),即 S04 单镜带字幕、其余靠配音;H3 烧字幕处理办法已写入 `references/video-production-sop.md` 13.2.1。对白镜 S02–S08 纯线性增益对齐 -18 LUFS,冷段 S01/S09/S10 保留静默不抬噪。构建脚本 `edit/build-final-cut-v1.sh`。
+（前序:声音初剪 `edit/xiaozhu-sound-cut-v1.mp4`(S04 尚为静音版)、画面初剪 `edit/xiaozhu-picture-cut.mp4`。）
 
 ### 声音/剪辑待办
 - **v2 音效**：`edit/fetch-sfx.sh` 拉取 freesound CC 音效（挂钟滴答/水滴/餐具/清晨房间底噪/掀被布料），落 `assets/sfx/`。冷段三镜敷氛围 + 暖段拟音加厚 + 母线 loudnorm。（freesound 服务不稳，脚本带抗抖动重试。）

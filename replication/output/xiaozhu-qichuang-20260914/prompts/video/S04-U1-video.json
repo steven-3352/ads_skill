@@ -2,9 +2,9 @@
   "asset_type": "video",
   "model": "MiniMax-H3",
   "authoring_skill": "h3-prompt-writing",
-  "title": "S04-U1 回忆·暖 正反打 假睡憋笑",
+  "title": "S04-U1 回忆·暖 正反打 男两句中文对白+女无词憋笑",
   "mode": "I2VA",
-  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced; <Picture 2> anchors the reverse-angle composition and framing used from the internal cut at 00:02.200 onward.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm golden morning light, cozy vintage bedroom, soft and tender memory tone, a medium shot as shown in <Picture 1> of the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy), standing beside the bed and looking down with a knowing, fond half-smile. The camera holds a static shot as his lips move softly as if gently teasing her, mouthing wordlessly with no sound spoken, while his fond half-smile widens. [Shot 2] At 00:02.200, the shot cuts to the reverse angle, a tight close-up matching the composition and framing established by <Picture 2>, on the same single East Asian Chinese woman about 26, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, wearing an oversized loose light-grey boyfriend-style sleep tee, lying with her eyes squeezed shut pretending to be asleep. She performs an exaggerated fake snore as wordless nasal breath — puffs of air through barely-parted lips, onomatopoeic air and no words — while the corners of her mouth twitch and tremble, giving away her suppressed laughter. [Shot 3] At 00:03.800, the shot quickly cuts back to the man in the same medium framing as <Picture 1>, now with a flat, deadpan \\\"caught you\\\" expression as his lips move briefly and wordlessly, mouthing without speaking. The entire scene is completely wordless with no dialogue whatsoever; the frame must be clean: no subtitles, no captions, no on-screen text, no Chinese characters and no watermark burned anywhere in the frame.\n\noverall_soundscape: A soft, quiet early-morning room tone runs underneath throughout, with faint bedsheet rustle as the woman shifts and the light nasal air of her exaggerated fake snore, and a subtle stillness across the two quick cuts. No spoken words are heard anywhere.\n\nnon_diegetic_music: N/A",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced; <Picture 2> anchors the reverse-angle composition and framing used from the internal cut at 00:02.200 onward.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm golden morning light, cozy vintage bedroom, soft and tender memory tone, a medium shot as shown in <Picture 1> of the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy), standing beside the bed and looking down with a knowing, fond half-smile. The camera holds a static shot as the warm, gently teasing man (S1), in a mid-range male voice, says with natural lip-sync: <d>[Chinese] 这是今天第三个五分钟。</d> while his fond half-smile widens. [Shot 2] At 00:02.200, the shot cuts to the reverse angle, a tight close-up matching the composition and framing established by <Picture 2>, on the same single East Asian Chinese woman about 26, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, wearing an oversized loose light-grey boyfriend-style sleep tee, lying with her eyes squeezed shut pretending to be asleep. She performs an exaggerated fake snore as wordless nasal breath — puffs of air through barely-parted lips, onomatopoeic air and no words — while the corners of her mouth twitch and tremble, giving away her suppressed laughter. [Shot 3] At 00:03.800, the shot quickly cuts back to the man in the same medium framing as <Picture 1>, now with a flat, deadpan \"caught you\" expression as the same man (S1), in a flat deadpan tone, says with natural lip-sync: <d>[Chinese] 假的。</d> The characters speak but their spoken lines must never be rendered as text: the frame must be clean with absolutely no subtitles, no captions, no closed-caption bar, no on-screen dialogue text, no Chinese characters, no lyric text, and no watermark burned anywhere in the frame.\n\noverall_soundscape: A soft, quiet early-morning room tone runs underneath throughout, with faint bedsheet rustle as the woman shifts and the light nasal puffs of her exaggerated wordless fake snore, over a subtle stillness across the two quick cuts.\n\nnon_diegetic_music: N/A",
   "images": [
     "assets/images/KF-S04-first.png",
     "assets/images/KF-S04-ref.png"
@@ -14,7 +14,7 @@
   "resolution": "768P",
   "generate_audio": true,
   "watermark": false,
-  "note": "正反打(内部硬切×2)：男中景(Picture1)→女假睡憋笑CU(Picture2)→切回男。单次生成用双参考帧锚定两机位，两处硬切时点 2.2s/3.8s。对白已全部移除(H3两次生成都把中文对白烧进画面)：本条改为纯无声肢体表演(男默口型逗趣/女憋笑露馅+无词假打呼/男切回抓包表情)，两句台词改后期配音。",
+  "note": "正反打(内部硬切×2)：男中景(Picture1)→女假睡憋笑CU(Picture2)→切回男。单次生成用双参考帧锚定两机位,切点2.2s/3.8s。【2026-09-14 修正】此前因H3两次把中文字幕烧进画面,被错误地删掉对白改成无声哑剧——方向错了:烧的是字幕不是对白,配音本就是中文。现恢复男两句中文对白(承S03女『……五分钟』→男『这是今天第三个五分钟』;男收尾『假的』),女保留无词假打呼鼻息。视觉锁定/机位/正反打切点全部不动,只恢复声音层。禁烧字幕已强化(台词绝不渲染成文字)。若再烧字幕→加约束重生,绝不删词。",
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
@@ -23,15 +23,16 @@
     "mode": "I2VA",
     "reviewed_at": "2026-09-14",
     "checks": [
-      "单条 H3 提示词用两次内部硬切编排正反打：Shot1 男中景(0.00s起，<Picture 1> 全参考)→Shot2 @00:02.200 shot cuts to 女假睡憋笑CU(以 <Picture 2> 锚定反打构图)→Shot3 @00:03.800 quick cut back 回男主同 <Picture 1> 中景",
-      "双参考帧锚定两机位:Picture1=KF-S04-first 定男中景机位;Picture2=KF-S04-ref 定女CU反打机位;切点在提示词内显式给出严格递增时间戳(2.200<3.800<5.00)",
-      "对白全部移除(此前 H3 两次生成把 <d>[Chinese]…</d> 中文台词烧进画面):无任何 <d> 标签、无任何待说中文词;两句台词改后期配音承载。改为纯无声肢体表演——男(Shot1/3)软口型如逗趣/切回后deadpan抓包表情、只动嘴不发声;女(Shot2)紧闭双眼假睡+夸张无词假打呼(鼻息拟声非词)+嘴角抽动憋笑露馅",
-      "男/女锁定串各自逐字写入，跨机位一致(男:deep navy on navy;女:light-grey oversized boyfriend sleep tee+messy bed hair)",
-      "禁烧字幕串逐字写入,并显式声明整场无词(completely wordless with no dialogue whatsoever)",
-      "overall_soundscape 收尾(清晨底噪+床品摩擦+无词假打呼鼻息,明写 No spoken words are heard anywhere),non_diegetic_music=N/A;暖金晨光/复古卧室/实拍电影感/16:9 保留",
-      "画面动作与构图完全不变,仅去词改无声表演;时长 5s，三段事件量与切点匹配"
+      "单条H3提示词用两次内部硬切编排正反打:Shot1男中景(0.00s起,<Picture 1>全参考)→Shot2 @00:02.200切女假睡憋笑CU(<Picture 2>锚定反打)→Shot3 @00:03.800 quick cut back回男主同<Picture 1>中景;切点严格递增(2.200<3.800<5.00)",
+      "双参考帧锚定两机位:Picture1=KF-S04-first定男中景;Picture2=KF-S04-ref定女CU反打(与旧无声版机位/构图完全一致,视觉不变)",
+      "【修正】恢复中文对白:男(S1)Shot1『这是今天第三个五分钟。』、Shot3『假的。』均<d>[Chinese]…</d>+natural lip-sync;女只做无词假打呼(non-verbal,无speaker ID);generate_audio=true",
+      "连贯性:男锁定串deep navy on navy/oval/side part not buzz cut与S02/S05一致;女锁定串light-grey oversized boyfriend tee/messy bed hair与S03/S05一致;对白承S03女『……五分钟』、启S05女『抓到了』",
+      "禁烧字幕强化:显式声明spoken lines must never be rendered as text + no subtitles/captions/closed-caption bar/on-screen dialogue text/Chinese characters/lyric text/watermark(针对S04两次烧字幕前科)",
+      "overall_soundscape仅写环境+非语言声(清晨底噪+床品摩擦+无词假打呼鼻息),对白不重复;non_diegetic_music=N/A",
+      "时长5s,三段事件量与切点匹配;仅恢复声音层,画面动作/构图/时长不变"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "2f1a255224065d5e49e521e2880d3094d9f3f379b56bb0d118c05bf7b80f4f24"
+    "reviewed_prompt_sha256": "f8be47b9cc05d688889aed626618c9e86d8da6e57e892f81d59519c190f7f153",
+    "title_note": "对白恢复版"
   }
 }
