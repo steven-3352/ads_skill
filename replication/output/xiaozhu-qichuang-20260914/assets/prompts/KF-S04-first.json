@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S04 回忆·暖 假睡正反打·男中景(我知道你装睡的宠溺无奈)",
+  "mode": "keyframe-memory-warm",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom from an open doorway POV with floral door-curtains framing left and right edges, a wooden slatted-headboard bed centered against the far wall, a window with sheer curtains and potted plants on the left with a wooden dresser under it, a nightstand with a ceramic lamp, a framed picture above the headboard, a tall bookshelf on the right, a patterned rug; lived-in, not a modern hotel room. At the bedside is the same single East Asian Chinese man, about 28 years old, with an oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, gentle warm demeanor; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other shirt color). He leans down over the bed with a doting, helplessly amused fond patient half-smile that shows he knows she is only pretending to be asleep, looking off-frame toward the bed just out of shot. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, medium shot, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S04正反打男侧首帧重做(男主换脸/换色修复):暖调卧室,男主逐字锁A1藏青tee+椭圆脸软短发床边俯身,一脸我知道你装睡的宠溺无奈半笑看向镜头外的床;中景;文生图references=[]",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "mode": "keyframe-memory-warm",
+    "checks": [
+      "首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "男主锁A1藏青tee+椭圆脸软短发防换脸/换色:逐字放入锁定描述(oval face/smooth fair skin/almond eyes/soft short side-part black hair NOT buzz cut/clean-shaven/DEEP NAVY BLUE crew-neck tee+matching navy pants,navy on navy no grey no other color)置于人物描述处",
+      "房间逐字复用LOC01锚点(open doorway POV+floral door-curtains框边/木床居中/左窗植物+木衣柜/床头挂画/右侧书架/地毯)保暖调回忆连续性",
+      "神态到位:床边俯身宠溺无奈半笑(知道她装睡),看向镜头外的床供正反打;表情描述无引号防误当屏内文字",
+      "暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams),中景",
+      "文生图references=[]避免img2img肖像磁吸,结尾洁净句逐字禁字/字幕/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9a6335eeff46eec02af6736965790dbebbd395a91b218ab08d427efd6d1c9bbc"
+  }
+}

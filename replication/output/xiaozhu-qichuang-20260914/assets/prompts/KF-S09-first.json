@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S09 现在·冷 独坐收尾(一只煎蛋一副碗筷,拿起筷子悬着没动)",
+  "mode": "keyframe-present-cold",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot of the same single East Asian Chinese man, about 28 years old, with an oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, gentle warm demeanor; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other shirt color), sitting alone at the same wooden dining table, one single fried egg on a plate and exactly one place setting (one bowl, one pair of chopsticks), nothing else. He has just picked up the single pair of chopsticks and holds them raised and suspended above the bowl, completely motionless and not eating, his gaze lowered, lonely and silent. Cool blue-grey low-saturation desaturated pale flat daylight, quiet still melancholic present-day mood. Photorealistic surfaces and food textures, shallow depth of field on the plate, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S09首帧重做(男主换脸/换色修复):冷调餐区(逐字复用A6/LOC02冷桌锚点:一只煎蛋+一副碗筷nothing else),男主逐字锁A1(冷调下仍藏青tee)独坐拿起筷子悬着没动孤寂静默,中景,文生图references=[]",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "mode": "keyframe-present-cold",
+    "checks": [
+      "首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "男主锁A1藏青tee+椭圆脸软短发防换脸/换色:逐字放入锁定描述(oval face/smooth fair skin/almond eyes/soft short side-part black hair NOT buzz cut/clean-shaven/DEEP NAVY BLUE crew-neck tee+matching navy pants,navy on navy no grey no other color),冷调下仍是藏青tee",
+      "餐桌逐字复用LOC02锚点(same wooden dining table+一只煎蛋+一副碗筷一人份,nothing else),与A6冷母版一致",
+      "动作:拿起筷子悬在碗上没动motionless not eating,垂目孤寂静默,中景",
+      "冷调逐字复用ST01锚点(cool blue-grey low-saturation desaturated pale flat daylight,quiet still melancholic present-day mood)",
+      "文生图references=[]避免img2img肖像磁吸,结尾洁净句逐字禁字/字幕/水印/中文/拼音,一律后期渲染不入画"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "98666b5b95a3c2d9827c77981904e768db2f660324bd1182a0fb3c16b04668b8"
+  }
+}

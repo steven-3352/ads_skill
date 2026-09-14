@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S02 回忆·暖 掀被叫起(同门口POV供S01->S02 match cut)",
+  "mode": "keyframe-memory-warm",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot of a cozy vintage bedroom from an open doorway POV with floral door-curtains framing left and right edges, a wooden slatted-headboard bed centered against the far wall, a window with sheer curtains and potted plants on the left with a wooden dresser under it, a nightstand with a ceramic lamp, a framed picture above the headboard, a tall bookshelf on the right, a patterned rug; lived-in, not a modern hotel room. The camera holds the exact same open-doorway point-of-view framing as the matching cold present-day shot so the two can be cut together. Standing beside the bed is the same single East Asian Chinese man, about 28 years old, with an oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, gentle warm demeanor; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other shirt color). He leans down over the bed and his hand has just lifted one corner of the rumpled tangled duvet to wake the person underneath; beneath the covers a distinct human-shaped lump is stirring and shifting, a woman still completely buried under the duvet with her face not visible. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, deep-focus interior, shot on a full-frame cinema camera with a wide 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S02首帧重做(男主换脸/换色修复):暖调回忆卧室,与A3/KF-S01同门口POV机位供S01->S02 match cut;男主逐字锁A1藏青tee+椭圆脸软短发床边俯身掀被角叫起,被子乱成团,被下女性人形隆起在动未露脸;中景暖金晨光;文生图references=[]锁机位防肖像磁吸",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "mode": "keyframe-memory-warm",
+    "checks": [
+      "首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "男主锁A1藏青tee+椭圆脸软短发防换脸/换色:逐字放入锁定描述(oval face/smooth fair skin/almond eyes/soft short side-part black hair NOT buzz cut/clean-shaven/DEEP NAVY BLUE crew-neck tee+matching navy pants,navy on navy no grey no other color)置于人物描述处",
+      "房间逐字复用LOC01锚点(open doorway POV+floral door-curtains框边/木床居中/左窗植物+木衣柜/床头挂画/右侧书架/地毯),明写与冷版同门口POV供S01->S02 match cut",
+      "被子乱成一团+被下女性人形隆起在动(未露脸),动作=俯身掀起被子一角叫起,状态清晰",
+      "暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams),中景",
+      "文生图references=[]无图片参考避免img2img肖像磁吸并锁match-cut机位,结尾洁净句逐字禁字/字幕/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d134dd4f811c6710ec5b35b3ca354bc6ddcaf298ab9e74d0fc5739ca1635357f"
+  }
+}

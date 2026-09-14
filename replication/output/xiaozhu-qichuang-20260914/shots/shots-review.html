@@ -1,0 +1,63 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《小猪起床了》— 10 条分镜视频验收</title>
+<style>
+ :root{color-scheme:dark}
+ body{margin:0;font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0f1115;color:#e8eaed}
+ header{padding:20px 24px;border-bottom:1px solid #2a2e37;position:sticky;top:0;background:#0f1115cc;backdrop-filter:blur(8px);z-index:2}
+ header h1{margin:0 0 4px;font-size:20px}
+ header p{margin:0;color:#9aa0aa;font-size:13px}
+ main{padding:22px;display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(460px,1fr));max-width:1600px;margin:0 auto}
+ .card{background:#171a21;border:1px solid #262b35;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+ .card.warn{border-color:#7a2b2e}
+ video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+ .meta{padding:12px 15px}
+ .meta h2{margin:0 0 6px;font-size:15px}
+ .sub{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
+ .tag{font-size:12px;border-radius:20px;padding:1px 9px;border:1px solid}
+ .present{color:#8ab4ff;border-color:#34507f}
+ .memory{color:#e6b06a;border-color:#7a5a2b}
+ .mode{color:#c8a2ff;border-color:#5a3f8f}
+ .pill{font-size:12px;padding:1px 8px;border-radius:20px}
+ .pass{background:#16351f;color:#7fe0a0;border:1px solid #2c6b3f}
+ .bad{background:#3a1618;color:#ff9a9a;border:1px solid #7a2b2e}
+ .beat{color:#9aa0aa;font-size:13px;margin:4px 0 0}
+</style></head>
+<body>
+<header>
+  <h1>《小猪起床了》— 10 条分镜视频验收（横屏 16:9 · MiniMax-H3 · 768P）</h1>
+  <p>逐条抽帧+密集接触表已核验：动作完整 / 选角一致(中国人·男深藏青上下装 女灰白T炸毛头) / 冷暖调 / 烧字幕。<b style="color:#ff9a9a">S04 两次生成均被 H3 烧录对白字幕（唯一含两句台词的镜头），需决策</b>。其余 9 条画面干净。</p>
+</header>
+<main>
+  <!-- rows injected below -->
+</main>
+<script>
+const shots = [
+ {id:'S01',t:'现在·习惯性走回卧室看到空的另一半',tl:'present',mode:'I2VA',beat:'做完早饭习惯性走回卧室→门口停下→看到床只有一半空着→慢慢苦笑',ok:true},
+ {id:'S02',t:'回忆·掀被叫起',tl:'memory',mode:'I2VA',beat:'掀被角叫起，被下一坨蠕动（与 S01 结尾苦笑做匹配剪辑）',ok:true},
+ {id:'S03',t:'回忆·裹被蚕蛹赖床',tl:'memory',mode:'I2VA',beat:'翻身裹被成蚕蛹，只露一只眼慢眨+炸毛头',ok:true},
+ {id:'S04',t:'回忆·假睡正反打',tl:'memory',mode:'I2VA',beat:'正反打：男「这是今天第三个五分钟」／女假打呼噜憋笑「假的」',ok:false},
+ {id:'S05',t:'回忆·拽人入被',tl:'memory',mode:'FL2VA',beat:'探手抓腕一拽→男被拖进被窝，被子蒙两人，腿一勾（无悬空腿）',ok:true},
+ {id:'S06',t:'回忆·亲亲抱抱数条件',tl:'memory',mode:'FL2VA',beat:'点脸颊→亲额头→搂住→竖手指数条件',ok:true},
+ {id:'S07',t:'回忆·举高高爬背',tl:'memory',mode:'FL2VA',beat:'顶炸毛头爬上背贴后颈出发（尾帧=S10手机封面）',ok:true},
+ {id:'S08',t:'回忆·背起走向餐厅',tl:'memory',mode:'FL2VA',beat:'背起晃一下稳住，往外走，桌上两只煎蛋冒热气（与 S09 一副碗筷做匹配剪辑）',ok:true},
+ {id:'S09',t:'现在·独坐收尾',tl:'present',mode:'I2VA',beat:'坐下，拿起筷子没动，静默，一只煎蛋（冷调）',ok:true},
+ {id:'S10',t:'现在·手机「一年前的今天」',tl:'present',mode:'I2VA',beat:'桌上手机自亮→回忆推送(暖照)→不点开→暖光慢暗（右侧留白待后期上「一年前的今天」）',ok:true},
+];
+const main=document.querySelector('main');
+main.innerHTML=shots.map(s=>`
+ <section class="card ${s.ok?'':'warn'}">
+  <video controls preload="metadata" src="${s.id}/${s.id}-U1.mp4"></video>
+  <div class="meta">
+   <h2>${s.id} · ${s.t}</h2>
+   <div class="sub">
+    <span class="tag ${s.tl}">${s.tl==='present'?'现在·冷':'回忆·暖'}</span>
+    <span class="tag mode">${s.mode}</span>
+    <span class="pill ${s.ok?'pass':'bad'}">${s.ok?'画面干净·通过':'烧字幕·需决策'}</span>
+   </div>
+   <p class="beat">${s.beat}</p>
+   ${s.ok?'':'<p class="beat" style="color:#ff9a9a">两次生成均在底部烧录中文对白（H3 对白非确定性烧字幕）。见决策项。</p>'}
+  </div>
+ </section>`).join('');
+</script>
+</body></html>

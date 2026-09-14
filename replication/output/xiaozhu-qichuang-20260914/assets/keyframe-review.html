@@ -1,0 +1,307 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《小猪起床了》逐镜关键帧审阅</title>
+<style>
+ :root{color-scheme:light dark}
+ body{margin:0;font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0f1115;color:#e8eaed}
+ header{padding:22px 26px;border-bottom:1px solid #2a2e37;position:sticky;top:0;background:#0f1115;z-index:2}
+ header h1{margin:0 0 4px;font-size:20px}
+ header p{margin:0;color:#9aa0aa;font-size:13px}
+ main{padding:22px;display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(460px,1fr));max-width:1600px;margin:0 auto}
+ .card{background:#171a21;border:1px solid #262b35;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+ .imgwrap{aspect-ratio:16/9;background:#000;display:flex;align-items:center;justify-content:center}
+ .imgwrap img{width:100%;height:100%;object-fit:cover;display:block}
+ .missing{color:#e06c6c}
+ .meta{padding:14px 16px}
+ .meta h2{margin:0 0 8px;font-size:15px;line-height:1.4}
+ .tag{font-size:12px;color:#8ab4ff;border:1px solid #34507f;border-radius:20px;padding:1px 9px}
+ .tag.mode{color:#c8a2ff;border-color:#5a3f8f}
+ .sub{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+ code{background:#0c0e12;padding:1px 6px;border-radius:5px;font-size:12px;color:#c7ccd4}
+ .pill{font-size:12px;padding:1px 8px;border-radius:20px}
+ .pill.ok{background:#16351f;color:#7fe0a0;border:1px solid #2c6b3f}
+ .pill.bad{background:#3a1618;color:#ff9a9a;border:1px solid #7a2b2e}
+ .pill.warn{background:#3a3316;color:#e6cf7a;border:1px solid #7a6b2b}
+ details{margin:6px 0}
+ summary{cursor:pointer;color:#9aa0aa;font-size:13px}
+ .prompt{background:#0c0e12;border-radius:8px;padding:10px 12px;font-size:12.5px;color:#b9c0ca;white-space:pre-wrap}
+ .checks{margin:8px 0 0;padding-left:18px;color:#9aa0aa;font-size:12.5px}
+</style></head>
+<body>
+<header>
+  <h1>《小猪起床了》— 逐镜关键帧审阅（15/15 张已生成 · 闸门通过 15/15）</h1>
+  <p>横屏 16:9 · gpt-image-2 文生图锁 1344×768（H3 768P 16:9）· FL2VA 动作镜含首/尾端点帧 · 中文字幕/片名/日期一律后期渲染，画面留白。请确认：选角一致(中国人)/机位与场景连贯/动作端点/冷暖。回复「关键帧通过」进入付费视频生成。</p>
+</header>
+<main>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S01-first.png" alt="KF-S01-first">
+    </div>
+    <div class="meta">
+      <h2>S01 现在·习惯性走回卧室看到空的另一半（触发）</h2>
+      <div class="sub">
+        <span class="tag">首帧</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S01-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot of a cozy vintage bedroom viewed from an open doorway point of view, with soft floral-patterned door-curtains hanging down and framing the left and right edges of the frame; a wooden slatted-headboard bed sits centered against the far back wall; on the left wall beside the bed a window with sheer white curtains and small hanging and potted plants, a wooden dresser under the window; a small nightstand with a ceramic table lamp beside the bed; a framed picture on the wall above the headboard; a tall wooden bookshelf against the right wall; a patterned area rug on the hardwood floor; lived-in and eclectic, not a clean modern hotel room. In the foreground at the doorway, an East Asian Chinese man about 28 years old, with neat short black hair and gentle warm facial features, wearing a plain solid-color home short-sleeve tee and simple matching home pants, has just stepped in through the floral door-curtains and stands still, seen from behind in a three-quarter back view, his shoulders and the back of his head toward the camera as he gazes across the room toward the bed. The bed is neatly made but asymmetric: the near left half, his side, is faintly creased and lightly dented as if recently slept in, while the other half is perfectly flat, smooth, untouched and empty, and the emptiness of that one half reads clearly. Cool blue-grey low-saturation desaturated pale flat overcast daylight, quiet still melancholic present-day mood. Photorealistic surfaces and fabric textures, deep-focus interior, shot on a full-frame cinema camera with a wide 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>房间逐字复用LOC01锚点(门口POV+花布门帘框边/木床居中/左窗植物+木衣柜/床头挂画/右侧书架/地毯),与A4冷母版同机位供S01-&gt;S02 match cut</li><li>男主逐字复用CH01锚点(East Asian中国男性约28岁短黑发温和/素色居家短袖+家居裤),显式East Asian防欧美脸</li><li>床整齐但不对称:近左半他睡的微皱/另一半平整空着可读,空感清晰(与A4一致)</li><li>冷调逐字复用ST01锚点(cool blue-grey low-saturation desaturated pale flat overcast daylight,quiet still melancholic present-day),中景</li><li>文生图references=[]无图片参考避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音,中文与日期一律后期渲染不入画</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S02-first.png" alt="KF-S02-first">
+    </div>
+    <div class="meta">
+      <h2>S02 回忆·掀被叫起</h2>
+      <div class="sub">
+        <span class="tag">首帧</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S02-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot of a cozy vintage bedroom from an open doorway POV with floral door-curtains framing left and right edges, a wooden slatted-headboard bed centered against the far wall, a window with sheer curtains and potted plants on the left with a wooden dresser under it, a nightstand with a ceramic lamp, a framed picture above the headboard, a tall bookshelf on the right, a patterned rug; lived-in, not a modern hotel room. The camera holds the exact same open-doorway point-of-view framing as the matching cold present-day shot so the two can be cut together. Standing beside the bed is the same single East Asian Chinese man, about 28 years old, with an oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, gentle warm demeanor; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other shirt color). He leans down over the bed and his hand has just lifted one corner of the rumpled tangled duvet to wake the person underneath; beneath the covers a distinct human-shaped lump is stirring and shifting, a woman still completely buried under the duvet with her face not visible. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, deep-focus interior, shot on a full-frame cinema camera with a wide 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>男主锁A1藏青tee+椭圆脸软短发防换脸/换色:逐字放入锁定描述(oval face/smooth fair skin/almond eyes/soft short side-part black hair NOT buzz cut/clean-shaven/DEEP NAVY BLUE crew-neck tee+matching navy pants,navy on navy no grey no other color)置于人物描述处</li><li>房间逐字复用LOC01锚点(open doorway POV+floral door-curtains框边/木床居中/左窗植物+木衣柜/床头挂画/右侧书架/地毯),明写与冷版同门口POV供S01-&gt;S02 match cut</li><li>被子乱成一团+被下女性人形隆起在动(未露脸),动作=俯身掀起被子一角叫起,状态清晰</li><li>暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams),中景</li><li>文生图references=[]无图片参考避免img2img肖像磁吸并锁match-cut机位,结尾洁净句逐字禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S03-first.png" alt="KF-S03-first">
+    </div>
+    <div class="meta">
+      <h2>S03 回忆·裹被蚕蛹赖床</h2>
+      <div class="sub">
+        <span class="tag">首帧·极近景</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S03-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. An extreme macro close-up that FILLS THE ENTIRE FRAME with a rumpled duvet cocoon, NOT a medium shot, NOT a wide shot. The soft duvet is wrapped tightly around a person like a silkworm chrysalis cocoon, and through a single narrow gap in the folds only ONE sleepy half-lidded eye peeks out, slowly blinking, together with a single tuft of messy tousled fluffed-up bed hair poking out through the covers; the person cocooned inside is an East Asian Chinese woman about 26 years old, with shoulder-length slightly wavy tousled just-woke-up messy bed hair and a cute sleepy playful vibe. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes drifting in the sunbeams. The rumpled duvet edges and that one slowly blinking eye completely fill the frame from edge to edge, extreme close-up macro framing with a shallow depth of field, no room or wider scene visible. Photorealistic fabric weave and skin textures, shot on a full-frame cinema camera with a macro lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字用极近景例外版:1344x768横构图wide frame never vertical or portrait + extreme macro close-up FILLS THE ENTIRE FRAME with a rumpled duvet cocoon,NOT a medium shot,NOT a wide shot</li><li>被子裹成蚕蛹只从缝里露出一只睡眼惺忪的眼睛正慢慢眨+一撮凌乱炸毛头发,状态与神态到位</li><li>女主逐字复用CH02发型气质锚点(East Asian中国女性约26岁及肩微卷睡不醒炸毛头+慵懒俏皮),显式East Asian防欧美脸</li><li>构图明写被子边缘与那只眨眼填满画面edge to edge/no room or wider scene visible,防被渲染成中景或肖像</li><li>暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes)柔光</li><li>文生图references=[]避免img2img肖像磁吸,结尾洁净句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S04-first.png" alt="KF-S04-first">
+    </div>
+    <div class="meta">
+      <h2>S04 回忆·假睡正反打</h2>
+      <div class="sub">
+        <span class="tag">首帧·男中景</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S04-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom from an open doorway POV with floral door-curtains framing left and right edges, a wooden slatted-headboard bed centered against the far wall, a window with sheer curtains and potted plants on the left with a wooden dresser under it, a nightstand with a ceramic lamp, a framed picture above the headboard, a tall bookshelf on the right, a patterned rug; lived-in, not a modern hotel room. At the bedside is the same single East Asian Chinese man, about 28 years old, with an oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, gentle warm demeanor; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other shirt color). He leans down over the bed with a doting, helplessly amused fond patient half-smile that shows he knows she is only pretending to be asleep, looking off-frame toward the bed just out of shot. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, medium shot, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>男主锁A1藏青tee+椭圆脸软短发防换脸/换色:逐字放入锁定描述(oval face/smooth fair skin/almond eyes/soft short side-part black hair NOT buzz cut/clean-shaven/DEEP NAVY BLUE crew-neck tee+matching navy pants,navy on navy no grey no other color)置于人物描述处</li><li>房间逐字复用LOC01锚点(open doorway POV+floral door-curtains框边/木床居中/左窗植物+木衣柜/床头挂画/右侧书架/地毯)保暖调回忆连续性</li><li>神态到位:床边俯身宠溺无奈半笑(知道她装睡),看向镜头外的床供正反打;表情描述无引号防误当屏内文字</li><li>暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams),中景</li><li>文生图references=[]避免img2img肖像磁吸,结尾洁净句逐字禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S04-ref.png" alt="KF-S04-ref">
+    </div>
+    <div class="meta">
+      <h2>S04 回忆·假睡正反打</h2>
+      <div class="sub">
+        <span class="tag">参考·女假睡CU</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S04-ref.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A close-up shot of an East Asian Chinese woman about 26 years old, with shoulder-length slightly wavy tousled just-woke-up messy bed hair and a cute sleepy playful vibe, wearing an oversized loose boyfriend-style sleep tee, lying on her side on the bed with her eyes squeezed shut pretending to be fast asleep, the corners of her mouth helplessly curling upward as she fights back a giggle, her fluffy tousled messy bed hair fanned out and sunk into a warm-toned pillow. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes drifting in the sunbeams. Photorealistic natural skin texture with soft flyaway hair strands catching the light, close-up framing with a shallow depth of field, shot on a full-frame cinema camera with an 85mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>女主逐字复用CH02锚点(East Asian中国女性约26岁及肩微卷睡不醒炸毛头+慵懒俏皮+宽松男友风睡T),显式East Asian防欧美脸</li><li>神态到位:闭眼装睡+嘴角忍不住上翘憋笑+炸毛头陷进暖调枕头</li><li>近景face close-up但正常近景(85mm),非极端特写,与S03极近景区分</li><li>暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes)柔光</li><li>文生图references=[]避免img2img肖像磁吸,结尾洁净句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S05-first.png" alt="KF-S05-first">
+    </div>
+    <div class="meta">
+      <h2>S05 回忆·拽人入被</h2>
+      <div class="sub">
+        <span class="tag">首帧·拽前</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S05-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window with sheer curtains and potted plants on the left, bookshelf on the right, patterned rug, warm morning light. On the bed the duvet is tossed into a rumpled messy pile. From under the messy covers emerges the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts (she stays fully dressed in her sleepwear). She has just poked one bare arm out from the covers and clamped her hand tightly around the wrist of the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). He stands leaning over at the bedside, still fully upright and completely outside the covers, caught mid-motion at the very edge of the bed and not yet dragged in. Her fingers grip his wrist and her arm is taut as she is just beginning to yank him in, a mischievous playful grin on her face. The medium framing holds both people and the whole bed so this clearly reads as the start of the pull, before he is pulled in. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, medium shot, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>卧室逐字复用LOC01锚点(cozy vintage bedroom木床居中far wall/左窗sheer curtains+植物/右书架/地毯/暖晨光)</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字DEEP NAVY BLUE crew-neck tee+navy裤navy on navy no grey/oval face/soft short neatly-cut black hair side part NOT buzz cut/clean-shaven,显式East Asian中国人</li><li>女主锁定保持不变:逐字浅灰oversized boyfriend-style sleep tee+sleep shorts fully dressed/乱睡醒发/round soft youthful face,显式East Asian中国人</li><li>动作起点明确:女从乱被探出一只手抓住男手腕正要拽,男still fully upright completely outside the covers not yet dragged in(位置=拽前);FL2VA首帧与last尾帧位置状态形成明显变化</li><li>中景同机位容纳两人与整床,暖调逐字复用ST02(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸并锁机位,结尾洁净句逐字禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S05-last.png" alt="KF-S05-last">
+    </div>
+    <div class="meta">
+      <h2>S05 回忆·拽人入被</h2>
+      <div class="sub">
+        <span class="tag">尾帧·拖入相依</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S05-last.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window with sheer curtains and potted plants on the left, bookshelf on the right, patterned rug, warm morning light. The exact same camera position and bed framing as the start of the pull. Now two people have both sunk down side by side into the rumpled duvet. One is the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). Beside him is the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts (she stays fully dressed in her sleepwear). The man has just been dragged in under the covers and the two of them lie close together; the duvet is pulled up high over most of their bodies so that only their two heads stick out above the covers, and they nestle together cheek to cheek, laughing and playing, the man half-resigned and amused, the woman triumphant. Under the blanket the woman has playfully hooked one of her legs across the man to tangle him in place, but that leg stays completely under the duvet and hidden beneath the covers; there is absolutely no bare leg and no exposed limb sticking out on top of the blanket, the smooth duvet stays draped over their bodies with nothing poking out. The medium framing holds both people and the whole bed so this reads as the landing of the pull, clearly changed from the start. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, medium shot, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>卧室逐字复用LOC01锚点,明写exact same camera position and bed framing与first同机位</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字DEEP NAVY BLUE crew-neck tee+navy裤navy on navy no grey/oval face/soft short neatly-cut black hair side part NOT buzz cut/clean-shaven,显式East Asian中国人</li><li>女主锁定保持不变:逐字浅灰oversized boyfriend-style sleep tee+sleep shorts fully dressed,显式East Asian中国人</li><li>S05-last含女主腿留在被子里不裸露突兀:逐字hooked one leg across the man but that leg stays completely under the duvet and hidden,absolutely no bare leg no exposed limb sticking out on top of the blanket,修掉第一次那条横搭被面的突兀裸腿</li><li>动作落点明确:男已被拖进被窝两人并排陷被子只露两头相依笑闹(位置=拽后),与first首帧形成清晰位置状态变化;两人各1人共2人</li><li>中景同机位容纳两人与整床,暖调逐字复用ST02(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams);文生图references=[]锁机位,结尾洁净句逐字禁字/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S06-first.png" alt="KF-S06-first">
+    </div>
+    <div class="meta">
+      <h2>S06 回忆·亲亲抱抱数条件</h2>
+      <div class="sub">
+        <span class="tag">首帧·点脸颊</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S06-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A close two-shot on the bed inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window with sheer curtains and potted plants on the left, bookshelf on the right, patterned rug, warm morning light. The frame stays tight on the upper bodies of the two people lying close together among the rumpled covers. On the bed lies the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts (she stays fully dressed in her sleepwear). Next to her is the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). She lies close beside him with her eyes closed and her lips puckered into a pout, one finger pointing at and tapping her own cheek in a coy playful demand to be kissed right there; he leans in close beside her with a doting, indulgent, tender expression. The framing keeps both of their upper bodies clearly in shot. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, close two-shot, shot on a full-frame cinema camera with an 85mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>卧室逐字复用LOC01锚点,双人近景收在上半身</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字DEEP NAVY BLUE crew-neck tee+navy裤navy on navy no grey/oval face/soft short neatly-cut black hair side part NOT buzz cut/clean-shaven,显式East Asian中国人</li><li>女主锁定保持不变:逐字浅灰oversized boyfriend-style sleep tee+sleep shorts fully dressed,显式East Asian中国人</li><li>动作起点明确:女闭眼嘟嘴用一根手指点着自己脸颊撒娇(先亲亲),男在旁宠溺;神态描述无引号防误当屏内文字;两人各1人共2人</li><li>双人近景同机位收两人上半身,暖调逐字复用ST02(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸并锁机位,结尾洁净句逐字禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S06-last.png" alt="KF-S06-last">
+    </div>
+    <div class="meta">
+      <h2>S06 回忆·亲亲抱抱数条件</h2>
+      <div class="sub">
+        <span class="tag">尾帧·搂住竖二指</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S06-last.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A close two-shot on the bed inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window with sheer curtains and potted plants on the left, bookshelf on the right, patterned rug, warm morning light. The exact same close camera framing as the start, held tight on the upper bodies of the two people among the rumpled covers. Here is the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). Next to him is the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts (she stays fully dressed in her sleepwear). Now the man has wrapped one arm around the woman and pulled her against him; she nestles contentedly in his embrace with a happy smile and narrowed crescent eyes, and lifts her free hand with exactly two fingers raised, having just added a second finger to cheekily count off her second demand. The framing keeps both of their upper bodies and that raised two-finger counting hand clearly in shot. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, close two-shot, shot on a full-frame cinema camera with an 85mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>卧室逐字复用LOC01锚点,明写exact same close camera framing与first同机位</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字DEEP NAVY BLUE crew-neck tee+navy裤navy on navy no grey/oval face/soft short neatly-cut black hair side part NOT buzz cut/clean-shaven,显式East Asian中国人</li><li>女主锁定保持不变:逐字浅灰oversized boyfriend-style sleep tee+sleep shorts fully dressed,显式East Asian中国人</li><li>动作落点明确:男一只手臂搂住女,女赖怀里笑眯眯竖起两根手指(明写exactly two fingers raised/second finger数第二个条件),与first撒娇点脸颊形成清晰状态变化;两人各1人共2人</li><li>双人近景同机位收两人上半身与那只竖起的两指手,暖调逐字复用ST02(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸并锁机位,结尾洁净句逐字禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S07-first.png" alt="KF-S07-first">
+    </div>
+    <div class="meta">
+      <h2>S07 回忆·举高高爬背</h2>
+      <div class="sub">
+        <span class="tag">首帧·竖三指</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S07-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window+sheer curtains+potted plants on the left, bookshelf on the right, patterned rug, warm morning light; the duvet is rumpled and tossed into a soft messy pile on the bed. On the bed, the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts, leans out from under the duvet toward the man, her eyes squinted into a happy playful grin, and cutely holds up one hand showing a clear 'number three' hand sign with exactly three fingers extended straight up — her index, middle and ring fingers fully raised while ONLY her thumb and little finger are folded down against the palm; this is a three-finger count, definitely NOT a two-finger peace or V sign, in a coaxing 'I want one more' gesture. Beside her sits the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). He leans in close with a fond helpless smile as he looks at her. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic skin and fabric textures, shallow depth of field, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字锁oval face/smooth fair skin/almond eyes/soft short neatly-cut hair natural side part(NOT buzz not spiky)/clean-shaven/DEEP NAVY BLUE crew-neck tee+deep navy pants(navy on navy,no grey no other color)</li><li>女主保持已通过样子逐字锁定(East Asian约26岁及卷炸毛睡醒发/圆润软脸/浅灰oversized男友风睡T+睡裤),显式East Asian防欧美脸</li><li>卧室逐字复用LOC01锚点(木床居中/左窗sheer curtains+植物/右书架/地毯/暖晨光)+乱被堆,暖回忆场景一致</li><li>关键姿态:女从被窝探身竖起第三根手指撒娇(明确食指中指无名指三指,防误画二指或五指),对应'还要举高高',中景</li><li>暖调逐字复用ST02锚点(Warm golden high-saturation soft morning light,cozy nostalgic memory mood,gentle dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S07-last.png" alt="KF-S07-last">
+    </div>
+    <div class="meta">
+      <h2>S07 回忆·举高高爬背</h2>
+      <div class="sub">
+        <span class="tag">尾帧·趴背绕颈(复用S10封面)</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S07-last.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A clear medium shot inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window+sheer curtains+potted plants on the left, bookshelf on the right, patterned rug, warm morning light; the duvet lies rumpled in a soft messy pile on the bed behind them. The same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). He stands fully upright and steady, giving a piggyback ride. Riding on his back is the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts; her chest is against his upper back, both of her arms are wrapped around the front of his neck, her cheek is pressed against the back of his neck and shoulder, her fluffy messy hair sticks up, and her eyes are squinted into a bright happy laugh. Both of them are smiling warmly; the piggyback pose is centered, unobstructed and clearly readable, framed from roughly the knees up so the clinging pose and both of their faces are fully visible, sharp and recognizable for reuse as a keepsake memory photo. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic skin and fabric textures, shallow depth of field, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字锁oval face/smooth fair skin/almond eyes/soft short neatly-cut hair natural side part(NOT buzz not spiky)/clean-shaven/DEEP NAVY BLUE crew-neck tee+deep navy pants(navy on navy,no grey no other color)</li><li>女主保持已通过样子逐字锁定(East Asian约26岁及卷炸毛睡醒发/圆润软脸/浅灰oversized男友风睡T+睡裤),显式East Asian防欧美脸</li><li>卧室逐字复用LOC01锚点(木床居中/左窗sheer curtains+植物/右书架/地毯/暖晨光)+乱被堆,暖回忆场景一致</li><li>关键姿态:女趴男背两手环颈脸颊贴后颈炸毛头开心笑+男站直背她,居中无遮挡清晰可辨(经典'她趴他背'),膝上取景双脸fully visible/sharp/recognizable,便于复用为S10手机回忆封面缩略图</li><li>暖调逐字复用ST02锚点(Warm golden high-saturation soft morning light,cozy nostalgic memory mood,gentle dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S08-first.png" alt="KF-S08-first">
+    </div>
+    <div class="meta">
+      <h2>S08 回忆·背起走向餐厅</h2>
+      <div class="sub">
+        <span class="tag">首帧·背起晃动</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S08-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window+sheer curtains+potted plants on the left, bookshelf on the right, patterned rug, warm morning light; the duvet lies rumpled in a soft messy pile on the bed behind them. The same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). He has just hoisted onto his back the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts, who clings to his back with both arms wrapped around the front of his neck and her cheek near his shoulder, continuing the piggyback pose. He has just lifted her and his body tips slightly off balance mid-wobble, knees a little bent as he catches his footing and steadies himself, both of them laughing with open playful grins. Long warm morning shadows stretch across the floor. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic skin and fabric textures, shallow depth of field, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字锁oval face/smooth fair skin/almond eyes/soft short neatly-cut hair natural side part(NOT buzz not spiky)/clean-shaven/DEEP NAVY BLUE crew-neck tee+deep navy pants(navy on navy,no grey no other color)</li><li>女主保持已通过样子逐字锁定(East Asian约26岁及卷炸毛睡醒发/圆润软脸/浅灰oversized男友风睡T+睡裤),显式East Asian防欧美脸</li><li>卧室逐字复用LOC01锚点(木床居中/左窗sheer curtains+植物/右书架/地毯/暖晨光)+乱被堆,暖回忆场景一致</li><li>关键姿态:承接S07爬背(两手环颈),男刚背起身子晃一下膝微屈正稳住两人笑,晨光长影,中景</li><li>暖调逐字复用ST02锚点(Warm golden high-saturation soft morning light,cozy nostalgic memory mood,gentle dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S08-last.png" alt="KF-S08-last">
+    </div>
+    <div class="meta">
+      <h2>S08 回忆·背起走向餐厅</h2>
+      <div class="sub">
+        <span class="tag">尾帧·近餐桌两煎蛋热气</span>
+        <span class="tag mode">FL2VA</span>
+        <code>KF-S08-last.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot in a warm morning dining area adjacent to the bedroom, a wooden dining table with a plate of two sunny-side-up fried eggs, glossy bright-yellow yolks, freshly cooked and steaming hot with rising wisps of steam, warm golden light. In the foreground on the tabletop, the plate holding exactly two steaming sunny-side-up fried eggs sits close to camera with clear wisps of steam rising into the light. Approaching the table from behind and slightly to the side, seen from a rear three-quarter angle, the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color), carries on his back the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts, who rides piggyback with both arms wrapped around the front of his neck and her chin resting on his shoulder, both of them smiling. Long warm morning shadows stretch from them across the floor toward the table. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic skin, food and fabric textures, shallow depth of field on the plate, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>餐区逐字复用LOC02锚点(与A5一致:木餐桌+两只荷包蛋亮黄蛋黄冒热气+暖金晨光),前景强调exactly two煎蛋冒热气防蛋数错</li><li>男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字锁oval face/smooth fair skin/almond eyes/soft short neatly-cut hair natural side part(NOT buzz not spiky)/clean-shaven/DEEP NAVY BLUE crew-neck tee+deep navy pants(navy on navy,no grey no other color)</li><li>女主保持已通过样子逐字锁定(East Asian约26岁及卷炸毛睡醒发/圆润软脸/浅灰oversized男友风睡T+睡裤),显式East Asian防欧美脸</li><li>关键姿态:承接爬背,男背女从背后/侧后rear three-quarter走近餐桌,暖金晨光长影,中景,构图供match cut到冷版独坐</li><li>暖调逐字复用ST02锚点(Warm golden high-saturation soft morning light,cozy nostalgic memory mood,gentle dust motes in the sunbeams)</li><li>文生图references=[]避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S09-first.png" alt="KF-S09-first">
+    </div>
+    <div class="meta">
+      <h2>S09 现在·独坐收尾</h2>
+      <div class="sub">
+        <span class="tag">首帧·冷调一副碗筷</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S09-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot of the same single East Asian Chinese man, about 28 years old, with an oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, gentle warm demeanor; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other shirt color), sitting alone at the same wooden dining table, one single fried egg on a plate and exactly one place setting (one bowl, one pair of chopsticks), nothing else. He has just picked up the single pair of chopsticks and holds them raised and suspended above the bowl, completely motionless and not eating, his gaze lowered, lonely and silent. Cool blue-grey low-saturation desaturated pale flat daylight, quiet still melancholic present-day mood. Photorealistic surfaces and food textures, shallow depth of field on the plate, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>男主锁A1藏青tee+椭圆脸软短发防换脸/换色:逐字放入锁定描述(oval face/smooth fair skin/almond eyes/soft short side-part black hair NOT buzz cut/clean-shaven/DEEP NAVY BLUE crew-neck tee+matching navy pants,navy on navy no grey no other color),冷调下仍是藏青tee</li><li>餐桌逐字复用LOC02锚点(same wooden dining table+一只煎蛋+一副碗筷一人份,nothing else),与A6冷母版一致</li><li>动作:拿起筷子悬在碗上没动motionless not eating,垂目孤寂静默,中景</li><li>冷调逐字复用ST01锚点(cool blue-grey low-saturation desaturated pale flat daylight,quiet still melancholic present-day mood)</li><li>文生图references=[]避免img2img肖像磁吸,结尾洁净句逐字禁字/字幕/水印/中文/拼音,一律后期渲染不入画</li></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="imgwrap">
+      <img loading="lazy" src="images/KF-S10-first.png" alt="KF-S10-first">
+    </div>
+    <div class="meta">
+      <h2>S10 现在·手机&quot;一年前的今天&quot;回忆推送</h2>
+      <div class="sub">
+        <span class="tag">首帧·冷桌暖封面(留字位)</span>
+        <span class="tag mode">I2VA</span>
+        <code>KF-S10-first.png</code>
+        <span class="pill ok">2048x1152</span>
+        <span class="pill ok">闸门 pass</span>
+      </div>
+      <details><summary>提示词全文</summary><p class="prompt">Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A top-down insert close-up looking straight down at the surface of the same wooden dining table; cool blue-grey low-saturation pale flat light falls across the cold blue-toned tabletop. A single smartphone lies flat on the tabletop, its screen glowing and awake. On the phone screen is a warm golden-toned memory photograph displayed as a cover image: an East Asian Chinese young woman with a messy tousled just-woken bed-head lies happily on the back of an East Asian Chinese young man, both of them smiling and laughing, bathed in warm golden morning light — this warm photograph is the single only warm element in the entire frame. One corner of the phone screen is left as a clean empty blank area reserved for later post-production text, but absolutely no text, no numbers and no date appear anywhere in the image. The surrounding tabletop and everything around the phone stay cool blue-grey, desaturated and pale, quiet still melancholic present-day mood, so that the warm glow of the phone screen contrasts sharply against the cold surface, a warm memory framed inside a cold present. Photorealistic surfaces, screen glow and reflections, shallow depth of field on the phone, shot on a full-frame cinema camera with a 50mm lens directly overhead. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.</p></details>
+      <ul class="checks"><li>首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏</li><li>俯拍插入静物特写top-down insert,冷蓝桌面(承接LOC02餐桌),桌面everything冷蓝低饱和</li><li>手机屏内暖色回忆封面=中国女子(East Asian)趴中国男子(East Asian)背上炸毛头两人开心暖金,显式East Asian防欧美脸,为画面唯一暖元素,冷暖同框</li><li>屏角留clean empty blank区域给后期文字,但画内绝无任何文字/数字/日期('一年前的今天'后期确定性渲染)</li><li>文生图references=[]无图片参考,洁净结尾句禁字/字幕/水印/中文/拼音</li></ul>
+    </div>
+  </section>
+</main>
+</body></html>

@@ -1,0 +1,31 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "男主身份母版",
+  "mode": "identity-master",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768 (wide frame, never vertical or portrait). A single East Asian Chinese man, about 28 years old, with neat short black hair and gentle warm facial features, a calm relaxed expression. He wears a plain solid-color home short-sleeve tee and simple matching home pants. Framed medium, waist-up, facing the camera in a slight three-quarter turn, centered like a clean character reference portrait. Neutral soft even studio lighting with no harsh shadows, plain light-grey seamless studio backdrop. Natural realistic skin texture and pores, subtle catchlights in the eyes, shallow depth of field, shot on a full-frame cinema camera with an 85mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "男主身份锚点母版,后续I2VA/FL2VA统一脸型与穿着",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "16:9横构图锁1344x768无竖屏",
+      "显式East Asian中国人防欧美脸",
+      "写实真人非插画/动漫/3D",
+      "结尾洁净画面禁字/水印/logo/拼音",
+      "无品牌无产品仅身份母版"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "427bb501c760a0a5e3ecebd7159973db5ea546c609c7ca034112a8b478a27295",
+    "mode": "identity-master"
+  }
+}

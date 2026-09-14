@@ -1,0 +1,31 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "卧室场景母版-冷现实",
+  "mode": "location-master-cold",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. The exact same cozy vintage bedroom as the warm master, now empty and silent, viewed from the same open doorway point of view, with soft floral-patterned door-curtains hanging down and framing the left and right edges of the frame. A wooden slatted-headboard bed sits centered against the far back wall. On the left wall beside the bed, a window with sheer white curtains and small hanging and potted plants lets in pale flat daylight, and a wooden dresser stands under the window; a small nightstand with an unlit ceramic table lamp sits beside the bed; a framed picture hangs on the wall above the headboard; a tall wooden bookshelf stands against the right wall; the hardwood floor holds a patterned area rug. Same furniture, same layout, same wood tones, unmistakably the same room, lived-in and eclectic, not a clean modern hotel room. The lighting and mood are cool blue-grey, low-saturation and desaturated, pale flat overcast daylight, quiet, still, and melancholic present-day. The bed is neatly made but asymmetric: the near left half, his side, is faintly creased and lightly dented as if recently slept in, while the other half is perfectly flat, smooth, untouched and empty, and the emptiness of that one half reads clearly. Photorealistic surfaces and fabric textures, deep-focus interior, shot on a full-frame cinema camera with a wide 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no people in the frame. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "卧室冷调现实母版,与暖版同一房间同门口POV(木床居中/左窗+植物/木衣柜/右侧书架/床头挂画/花布门帘框边),整齐床铺但左半微皱右半平整空着,冷蓝低饱和,无人",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "与暖版同一房间/同机位(门口POV+花布门帘框边,木床居中,左窗植物,右侧书架,床头挂画,地毯)",
+      "16:9横构图锁1344x768无竖屏",
+      "冷蓝低饱和平光现实基调到位",
+      "整齐床铺但不对称:近左半微皱另一半平整空着可读",
+      "无人+结尾洁净画面禁字/水印/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9cd6b76589cb0d31918bd736ff915a3491767cb7677e68ee17207ae808d1bd62",
+    "mode": "location-master-cold"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S06-U1 亲亲抱抱数条件(FL2VA)",
+  "mode": "FL2VA",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vintage warm film look with warm golden morning light in a cozy vintage bedroom and a tender playful memory tone; a close two-shot begins exactly in the framing of Picture 1, where the same single East Asian Chinese woman about 26, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, oversized loose light-grey boyfriend-style sleep tee (fully in sleepwear) lies back against the pillow with her eyes closed and lips puckered, one fingertip tapping her own cheek in a coaxing gesture, while the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, DEEP NAVY BLUE plain crew-neck short-sleeve tee + matching deep navy home pants (navy on navy) leans in close above her. The camera holds a static shot. The man (S2), a warm low male voice, says: <d>[Chinese]……蛋真要凉了。</d> with natural lip-sync. She burrows her face into his neck and, muffled against his skin, the woman (S1), a youthful playful female voice, says: <d>[Chinese]不管。先亲亲。</d> Relenting, he bends down and presses a soft kiss on her cheek and then her forehead. Pushing her luck, she leans closer as he slides one arm around her and gathers her in; she nestles into his embrace, squints happily, and raises two fingers to count her demands. Settling into the exact pose, spacing, and composition of Picture 2, the woman (S1) says: <d>[Chinese]还要抱抱。</d> with natural lip-sync. no subtitles, no captions, no on-screen text, no Chinese characters and no watermark burned anywhere in the frame.\n\noverall_soundscape: Soft light laughter and the gentle sound of small kisses mix with the rustle of bedding and sheets shifting, all under a quiet early-morning room tone.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "assets/images/KF-S06-first.png",
+    "assets/images/KF-S06-last.png"
+  ],
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "改变状态的动作镜:撒娇索吻→亲吻→得寸进尺要抱抱→被搂住→竖两指数条件。FL2VA锁首尾帧+逐动词。三段中文对白由角色说出(男:蛋真要凉了;女:不管先亲亲;女:还要抱抱),自然口型,禁烧字幕。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "FL2VA首尾对齐行含正确时长6.00s,Picture1@0.00/Picture2@6.00",
+      "逐动词覆盖全动作节点:点脸颊索吻→男轻亲脸颊/额头→女得寸进尺→男搂住→竖两指数条件,收在Picture2构图",
+      "三段中文对白由角色说出:男主(S2)<d>[Chinese]……蛋真要凉了。</d>、女主(S1)<d>[Chinese]不管。先亲亲。</d>、女主(S1)<d>[Chinese]还要抱抱。</d>,自然口型,generate_audio=true",
+      "对白顺序符合逻辑:先索吻再亲吻,先亲亲后抱抱",
+      "禁烧字幕串逐字写入prompt",
+      "overall_soundscape含轻笑/亲吻轻响/被褥摩擦/清晨底噪;non_diegetic_music=N/A",
+      "统一锁定串(男主navy on navy/女主浅灰睡衣/暖回忆)逐字放进画面"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ca8cb0ad19003203fa29df01ccca5c6c2128ee2803a442105d28e5fbdfe4e21b"
+  }
+}

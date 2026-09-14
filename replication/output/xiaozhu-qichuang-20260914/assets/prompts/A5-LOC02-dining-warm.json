@@ -1,0 +1,31 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "餐区场景母版-暖回忆",
+  "mode": "location-master-warm",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768 (wide frame, never vertical or portrait). A warm morning dining area adjacent to the bedroom, empty with absolutely no people. On a wooden dining table sits a plate with two sunny-side-up fried eggs, glossy bright-yellow yolks, freshly cooked and steaming hot, thin wisps of steam rising into the light. Warm golden cozy morning light streams across the table, high saturation, inviting nostalgic memory mood, soft warm bounce on the tabletop. Photorealistic food textures and surfaces, shallow depth of field on the plate, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no people in the frame. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "餐区暖调回忆母版,两个热气腾腾荷包蛋,暖金晨光,无人",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "16:9横构图锁1344x768无竖屏",
+      "两个荷包蛋+冒热气状态明确",
+      "暖金高饱和回忆基调到位",
+      "写实真人质感非插画/动漫/3D",
+      "无人+结尾洁净画面禁字/水印/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5074eb5db304351fbaac54989d95e2540d5a7694f892675e3c13be09bf0ae752",
+    "mode": "location-master-warm"
+  }
+}

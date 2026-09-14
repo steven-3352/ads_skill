@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S03 回忆·暖 裹被蚕蛹赖床(极近景只露一只眼)",
+  "mode": "keyframe-memory-warm-cu",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. An extreme macro close-up that FILLS THE ENTIRE FRAME with a rumpled duvet cocoon, NOT a medium shot, NOT a wide shot. The soft duvet is wrapped tightly around a person like a silkworm chrysalis cocoon, and through a single narrow gap in the folds only ONE sleepy half-lidded eye peeks out, slowly blinking, together with a single tuft of messy tousled fluffed-up bed hair poking out through the covers; the person cocooned inside is an East Asian Chinese woman about 26 years old, with shoulder-length slightly wavy tousled just-woke-up messy bed hair and a cute sleepy playful vibe. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes drifting in the sunbeams. The rumpled duvet edges and that one slowly blinking eye completely fill the frame from edge to edge, extreme close-up macro framing with a shallow depth of field, no room or wider scene visible. Photorealistic fabric weave and skin textures, shot on a full-frame cinema camera with a macro lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S03首帧:极近景例外,被子把人裹成蚕蛹只从缝里露出一只睡眼惺忪的眼睛正慢慢眨+一撮凌乱炸毛头发;女主CH02发型气质;暖调柔光;构图被子边缘与那只眼填满画面edge to edge;文生图references=[]",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "首句逐字用极近景例外版:1344x768横构图wide frame never vertical or portrait + extreme macro close-up FILLS THE ENTIRE FRAME with a rumpled duvet cocoon,NOT a medium shot,NOT a wide shot",
+      "被子裹成蚕蛹只从缝里露出一只睡眼惺忪的眼睛正慢慢眨+一撮凌乱炸毛头发,状态与神态到位",
+      "女主逐字复用CH02发型气质锚点(East Asian中国女性约26岁及肩微卷睡不醒炸毛头+慵懒俏皮),显式East Asian防欧美脸",
+      "构图明写被子边缘与那只眨眼填满画面edge to edge/no room or wider scene visible,防被渲染成中景或肖像",
+      "暖调逐字复用ST02锚点(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes)柔光",
+      "文生图references=[]避免img2img肖像磁吸,结尾洁净句禁字/字幕/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0095ba540152910626cb282c1fe4decc7d7ac88b9b96ecdb292595eba8e15e4c",
+    "mode": "keyframe-memory-warm-cu"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "projectId": "xiaozhu-qichuang-20260914",
+  "title": "小猪起床了",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": { "maxGenerationSeconds": 15 },
+  "estTotalDurationSec": 49,
+  "postTasksGlobal": [
+    {"id": "PT1", "type": "onscreen_text", "description": "片名《小猪起床了》字幕层，后期确定性渲染，不入模型画面"},
+    {"id": "PT2", "type": "onscreen_text", "description": "对白字幕(可选)后期渲染；H3 生成后必查是否误烧字幕"},
+    {"id": "PT3", "type": "transition", "description": "两处 match cut(S01↔S02, S08↔S09)与冷暖调色在剪辑阶段完成"},
+    {"id": "PT4", "type": "mix", "description": "混音：现在段水滴/钟表/静默；回忆段对白+笑声+掀被蹭动拟音+清晨底噪；BGM 留白"},
+    {"id": "PT5", "type": "onscreen_text", "description": "S10 手机屏'一年前的今天'/回忆推送文案与日期，后期确定性渲染到屏幕区域(点明正好分手一年)，不靠模型烧字"}
+  ],
+  "cost": {
+    "imageUnitPrice": 0.25, "videoPerSecPrice": 0.2,
+    "estKeyframes": 17, "estVideoGenSec": 49,
+    "estFirstPassImages": 4.25, "estFirstPassVideo": 9.8, "estFirstPassTotal": 14.05,
+    "note": "H3 每单元≥4s按下限计费；FL2VA首尾帧多；正式付费前走 preflight+金丝雀重新报准"
+  },
+  "narrativeShots": [
+    {
+      "id": "S01", "title": "现在·习惯性走回卧室看到空的另一半(触发)",
+      "timeline": "present", "style": "ST01", "mode": "I2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "另一半平平整整，空着。"},
+      "watchFocus": "只空着另一半的床 + 他的苦笑",
+      "requiredBeats": [
+        {"id": "B1", "sceneId": "S01", "text": "做完早饭习惯性走回卧室→在门口停下→看到床只有另一半空着→慢慢苦笑", "channels": ["picture", "ambience"]}
+      ],
+      "generationUnits": [
+        {"id": "S01-U1", "sceneId": "S01", "durationSeconds": 5, "mode": "I2VA",
+         "difficulty": "走入→停→苦笑的表演，微表情(苦笑)要有'了然/怅然'的层次，非静图",
+         "keyframes": {"first": "KF-S01-first 冷调卧室门口，床他睡的半皱着、另一半平整空着，人将入画/门口"},
+         "dialogue": [],
+         "cuts": [{"id": "S01-U1-C1", "seconds": 5, "coverage": [{"beatId": "B1", "channels": ["picture", "ambience"]}]}]}
+      ],
+      "linkNext": "match cut 同机位同床进入 S02(暖，空的另一半→她赖床)"
+    },
+    {
+      "id": "S02", "title": "回忆·掀被叫起",
+      "timeline": "memory", "style": "ST02", "mode": "I2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "起床啦，蛋摆桌上了。"},
+      "watchFocus": "他掀被的手 + 被子里的动静",
+      "requiredBeats": [
+        {"id": "B2", "sceneId": "S02", "text": "掀被角叫起，被下一坨蠕动", "channels": ["picture", "dialogue", "action_sound"]}
+      ],
+      "generationUnits": [
+        {"id": "S02-U1", "sceneId": "S02", "durationSeconds": 5, "mode": "I2VA",
+         "difficulty": "掀被动作自然发展",
+         "keyframes": {"first": "KF-S02-first 暖调掀被角同机位"},
+         "dialogue": [{"who": "男", "line": "起床啦，蛋摆桌上了。"}],
+         "cuts": [{"id": "S02-U1-C1", "seconds": 5, "coverage": [{"beatId": "B2", "channels": ["picture", "dialogue", "action_sound"]}]}]}
+      ],
+      "linkPrev": "承接 S01 match cut"
+    },
+    {
+      "id": "S03", "title": "回忆·裹被蚕蛹赖床",
+      "timeline": "memory", "style": "ST02", "mode": "I2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "……五分钟。"},
+      "watchFocus": "女主耍赖神态特写",
+      "requiredBeats": [
+        {"id": "B3", "sceneId": "S03", "text": "翻身裹被成蚕蛹，只露一只眼慢眨+炸毛头", "channels": ["picture", "dialogue"]}
+      ],
+      "generationUnits": [
+        {"id": "S03-U1", "sceneId": "S03", "durationSeconds": 4, "mode": "I2VA",
+         "difficulty": "翻身裹被+只露一只眼慢眨，可爱神态",
+         "keyframes": {"first": "KF-S03-first 蚕蛹只露一只眼CU"},
+         "dialogue": [{"who": "女", "line": "……五分钟。", "note": "闷在被子里"}],
+         "cuts": [{"id": "S03-U1-C1", "seconds": 4, "coverage": [{"beatId": "B3", "channels": ["picture", "dialogue"]}]}]}
+      ]
+    },
+    {
+      "id": "S04", "title": "回忆·假睡正反打",
+      "timeline": "memory", "style": "ST02", "mode": "I2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "这是今天第三个五分钟。"},
+      "watchFocus": "两人对切，女主假睡憋笑",
+      "requiredBeats": [
+        {"id": "B4", "sceneId": "S04", "text": "正反打：第三个五分钟／假打呼噜憋笑／假的", "channels": ["dialogue", "action_sound"]}
+      ],
+      "generationUnits": [
+        {"id": "S04-U1", "sceneId": "S04", "durationSeconds": 5, "mode": "I2VA",
+         "difficulty": "正反打对白节奏，女假睡嘴角抽动憋笑",
+         "keyframes": {"first": "KF-S04-first 男中景", "ref": "KF-S04-ref 女假睡CU"},
+         "dialogue": [
+           {"who": "男", "line": "这是今天第三个五分钟。"},
+           {"who": "女", "line": "呼……呼……", "note": "假打呼噜"},
+           {"who": "男", "line": "假的。"}
+         ],
+         "cuts": [
+           {"id": "S04-U1-C1", "seconds": 2.5, "note": "男中景", "coverage": [{"beatId": "B4", "channels": ["dialogue"]}]},
+           {"id": "S04-U1-C2", "seconds": 2.5, "note": "女假睡CU憋笑", "coverage": [{"beatId": "B4", "channels": ["action_sound"]}]}
+         ]}
+      ]
+    },
+    {
+      "id": "S05", "title": "回忆·拽人入被",
+      "timeline": "memory", "style": "ST02", "mode": "FL2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "抓到了。不许走。"},
+      "watchFocus": "位置突变的动作喜剧",
+      "requiredBeats": [
+        {"id": "B5", "sceneId": "S05", "text": "探手抓腕一拽→男被拖进被窝，被子蒙两人，腿一勾", "channels": ["picture", "dialogue", "action_sound"]}
+      ],
+      "generationUnits": [
+        {"id": "S05-U1", "sceneId": "S05", "durationSeconds": 6, "mode": "FL2VA",
+         "difficulty": "改变位置的动作，锁首尾+摆落点+逐动词，防漏演",
+         "keyframes": {"first": "KF-S05-first 女探手抓男手腕(拽前)", "last": "KF-S05-last 男已被拖入被窝两头相依"},
+         "dialogue": [{"who": "女", "line": "抓到了。不许走。", "note": "下巴搁他肩上赖皮"}],
+         "cuts": [{"id": "S05-U1-C1", "seconds": 6, "coverage": [{"beatId": "B5", "channels": ["picture", "dialogue", "action_sound"]}]}]}
+      ]
+    },
+    {
+      "id": "S06", "title": "回忆·亲亲抱抱数条件",
+      "timeline": "memory", "style": "ST02", "mode": "FL2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "不管。先亲亲。"},
+      "watchFocus": "亲亲抱抱的甜与得寸进尺",
+      "requiredBeats": [
+        {"id": "B6", "sceneId": "S06", "text": "先亲亲(点脸颊)→亲额头→还要抱抱搂住→竖手指数条件", "channels": ["picture", "dialogue"]}
+      ],
+      "generationUnits": [
+        {"id": "S06-U1", "sceneId": "S06", "durationSeconds": 6, "mode": "FL2VA",
+         "difficulty": "多个亲密动作串联，锁起止避免糊成一团",
+         "keyframes": {"first": "KF-S06-first 女闭眼嘟嘴点脸颊", "last": "KF-S06-last 男搂住女竖第二根手指"},
+         "dialogue": [
+           {"who": "男", "line": "……蛋真要凉了。"},
+           {"who": "女", "line": "不管。先亲亲。", "note": "脸埋他脖子闷闷地"},
+           {"who": "女", "line": "还要抱抱。", "note": "眯眼得寸进尺"}
+         ],
+         "cuts": [{"id": "S06-U1-C1", "seconds": 6, "coverage": [{"beatId": "B6", "channels": ["picture", "dialogue"]}]}]}
+      ]
+    },
+    {
+      "id": "S07", "title": "回忆·举高高爬背",
+      "timeline": "memory", "style": "ST02", "mode": "FL2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "你上辈子是只考拉吧。"},
+      "watchFocus": "爬背动作 + 软糯耍赖",
+      "requiredBeats": [
+        {"id": "B7", "sceneId": "S07", "text": "还要举高高／考拉／顶炸毛头爬上背贴后颈出发", "channels": ["picture", "dialogue"]}
+      ],
+      "generationUnits": [
+        {"id": "S07-U1", "sceneId": "S07", "durationSeconds": 5, "mode": "FL2VA",
+         "difficulty": "从被窝爬上男主背的位置转移，锁首尾",
+         "keyframes": {"first": "KF-S07-first 女竖第三根手指举高高", "last": "KF-S07-last 女趴上男主背两手绕颈"},
+         "dialogue": [
+           {"who": "女", "line": "……还要举高高。", "note": "声音软下来"},
+           {"who": "男", "line": "你上辈子是只考拉吧。"},
+           {"who": "女", "line": "厨房——出发！", "note": "脑袋搭他肩指门外"}
+         ],
+         "cuts": [{"id": "S07-U1-C1", "seconds": 5, "coverage": [{"beatId": "B7", "channels": ["picture", "dialogue"]}]}]}
+      ]
+    },
+    {
+      "id": "S08", "title": "回忆·背起走向餐厅",
+      "timeline": "memory", "style": "ST02", "mode": "FL2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "餐桌上两只煎蛋正冒着热气。"},
+      "watchFocus": "背影暖光 + 餐桌煎蛋落点",
+      "requiredBeats": [
+        {"id": "B8", "sceneId": "S08", "text": "背起晃一下稳住，一路笑往外走，晨光长影，桌上两只煎蛋冒热气", "channels": ["picture", "ambience"]}
+      ],
+      "generationUnits": [
+        {"id": "S08-U1", "sceneId": "S08", "durationSeconds": 5, "mode": "FL2VA",
+         "difficulty": "背人行走的稳定运镜，落到餐桌煎蛋热气",
+         "keyframes": {"first": "KF-S08-first 男背女起身晃动", "last": "KF-S08-last 走近餐桌两只煎蛋冒热气"},
+         "dialogue": [],
+         "cuts": [{"id": "S08-U1-C1", "seconds": 5, "coverage": [{"beatId": "B8", "channels": ["picture", "ambience"]}]}]}
+      ],
+      "linkNext": "暖光晃动定格褪成冷调 match cut → S09"
+    },
+    {
+      "id": "S09", "title": "现在·独坐收尾",
+      "timeline": "present", "style": "ST01", "mode": "I2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "他坐下，拿起筷子，没有动。"},
+      "watchFocus": "一只煎蛋一副碗筷 + 停住的筷子",
+      "requiredBeats": [
+        {"id": "B9", "sceneId": "S09", "text": "转身走向厨房，坐下，拿起筷子没动，静默", "channels": ["picture", "ambience"]}
+      ],
+      "generationUnits": [
+        {"id": "S09-U1", "sceneId": "S09", "durationSeconds": 4, "mode": "I2VA",
+         "difficulty": "转身→坐→拿筷的真动作，尾巴留白不拖",
+         "keyframes": {"first": "KF-S09-first 冷调餐桌独坐一副碗筷"},
+         "dialogue": [],
+         "cuts": [{"id": "S09-U1-C1", "seconds": 4, "coverage": [{"beatId": "B9", "channels": ["picture", "ambience"]}]}]}
+      ],
+      "linkPrev": "承接 S08 冷褪 match cut",
+      "linkNext": "静默中桌上手机自亮 → S10"
+    },
+    {
+      "id": "S10", "title": "现在·手机'一年前的今天'回忆推送(收尾/正好一年)",
+      "timeline": "present", "style": "ST01", "mode": "I2VA",
+      "source": {"storyFile": "story/screenplay.md", "verbatim": "一年前的今天。"},
+      "watchFocus": "冷桌面上手机亮起的暖色回忆封面 + 一行小字'一年前的今天'",
+      "requiredBeats": [
+        {"id": "B10", "sceneId": "S10", "text": "桌上手机自亮→照片App'回忆'推送(封面=她趴他背炸毛头暖照)→他不点开→暖光亮起慢慢暗下，点明正好分手一年", "channels": ["picture", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "S10-U1", "sceneId": "S10", "durationSeconds": 4, "mode": "I2VA",
+         "difficulty": "冷调插入CU：手机屏暖光渐亮→渐暗托出暖色回忆封面，冷暖同框收尾；'一年前的今天'文字由后期确定性渲染，不入模型画面",
+         "keyframes": {"first": "KF-S10-first 冷桌面手机屏亮起，屏内暖色回忆封面(她趴他背炸毛头)，屏角留出文字位"},
+         "dialogue": [],
+         "cuts": [{"id": "S10-U1-C1", "seconds": 4, "coverage": [{"beatId": "B10", "channels": ["picture", "onscreen_text"]}]}]}
+      ],
+      "linkPrev": "承接 S09，静默中手机自亮"
+    }
+  ],
+  "state": "storyboard_confirmed"
+}

@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S09-U1 现在·冷调餐桌 独食煎蛋停箸 (I2VA, 无对白)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, horizontal 16:9, a cool blue-grey low-saturation grade under pale flat overcast daylight, quiet still melancholic present-day mood. The frame opens exactly on <Picture 1>: a cool blue-grey dining area with a dark wooden table in the foreground, where the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve tee, sits at the table facing camera, one forearm resting on the wood, the other hand raised holding a pair of wooden chopsticks above a single pale ceramic bowl. On the table there is only one small plate with a single fried egg and that one bowl and pair of chopsticks — a spare, lonely setting. Preserve his appearance, his deep navy tee, the plain wall behind, the dark doorway, the side window with flat grey light, the empty chair at the left edge, and the exact placement of the plate, bowl, and chopsticks. The camera holds an almost static shot with only a faint drift. From this position he lowers his gaze to the lone fried egg and gently brings the chopsticks a little lower toward the plate, then stops and holds completely still without eating, the chopsticks hovering just above the egg. His face stays quiet and blank; he does not move for the rest of the shot as the emptiness of the table settles around him. Clean frame with no subtitles, no captions, no on-screen text, no Chinese characters and no watermark anywhere in the frame.\n\noverall_soundscape: Near-total silence broken only by the slow ticking of a wall clock and a very light indoor room tone, with the faint creak of the chair and a soft rustle of fabric as he settles and goes still.\n\nnon_diegetic_music: N/A",
+  "images": ["assets/images/KF-S09-first.png"],
+  "duration": 4,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "承接S08暖褪冷 match cut。首帧已是坐定持箸状态，I2VA只能前向发展，故'转身走向餐桌坐下拿筷'发生在镜前;本镜落在停箸不动的情绪拍点(只一只煎蛋一副碗筷的冷清)。尾巴留白不拖沓，无对白。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "I2VA结构:首行对齐指令<Picture 1>(from [Shot 1])@0.00s + 空行 + 三核心字段顺序正确",
+      "从首帧坐定持箸精确起始，前向逐动词:低头看孤蛋→箸微下移→停住不动不吃(尊重首帧不倒放)，落在停箸情绪拍点",
+      "冷清桌面锁定:只一只煎蛋+一副碗筷+空椅;锁定串男主外观+DEEP NAVY BLUE深蓝tee + 冷蓝灰低饱和阴天日光一致",
+      "无对白;overall_soundscape=静默/挂钟/极轻室内底噪/椅衣轻响;non_diegetic_music=N/A",
+      "末尾写死禁字幕串:no subtitles/captions/on-screen text/Chinese characters/watermark",
+      "时长4s单镜与描述节奏匹配;16:9横屏live-action cinematic;尾部留白不拖沓"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "fd38d5d0a16e67cd23102dd4db9656abc1552e102ed406486fb838a07e2ed3ab"
+  }
+}

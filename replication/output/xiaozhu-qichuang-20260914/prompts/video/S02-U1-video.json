@@ -1,0 +1,36 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S02-U1 回忆·暖 掀被角唤醒",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm golden morning light, cozy vintage bedroom, soft and tender memory tone, holding the exact same camera position and framing as the preceding shot as a match cut (the empty bed now has someone under the quilt). the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy), shown in <Picture 1>, leans down over the bed and pinches the corner of the floral-print quilt. The camera holds a static shot as he lifts and peels the quilt corner back, revealing a human-shaped lump squirming and burrowing deeper to hide underneath. The warm, gently amused man (S1), in a mid-range male voice, says with natural lip-sync: <d>[Chinese] 起床啦，蛋摆桌上了。</d> The hidden lump wriggles once more under his hand. The characters speak but the frame must be clean: no subtitles, no captions, no on-screen text, no Chinese characters and no watermark burned anywhere in the frame.\n\noverall_soundscape: A quiet early-morning room tone hums softly underneath, with the light rustle and friction of the floral quilt fabric being lifted and peeled back, and a muffled shifting thump of movement from under the covers.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "assets/images/KF-S02-first.png"
+  ],
+  "duration": 5,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "承 S01 match cut 同机位同床（空→有她）；单机位静止，男主掀花布被角，被下人形蠕动。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "I2VA 指令行开头，0.00s 全参考 <Picture 1>=KF-S02-first，从首帧向前发展",
+      "单机位 static shot，明写 match cut 承 S01 同机位（空床→被下有人）",
+      "男主锁定串逐字写入(deep navy on navy/oval face/side part not buzz cut)",
+      "对白中文原样 <d>[Chinese] 起床啦，蛋摆桌上了。</d> 由 (S1) 说出，标注 natural lip-sync；generate_audio=true",
+      "禁烧字幕串逐字写入(no subtitles/captions/on-screen text/Chinese characters/watermark)",
+      "overall_soundscape 收尾(清晨底噪+掀被布料摩擦+被下闷动)，non_diegetic_music=N/A",
+      "时长 5s，画面事件量与之匹配，无多余分镜"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a8f2dbbbd1424cdf8e952eab2872bef4fa3870027282a221d3d7f4d3812d9da0"
+  }
+}

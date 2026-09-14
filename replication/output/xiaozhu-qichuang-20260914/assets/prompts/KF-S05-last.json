@@ -1,0 +1,33 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S05 回忆·暖 拽人入被·落点(男已被拽进被窝两头相依,女一腿在被子下勾住)[重做:锁男主藏青+修腿不裸露]",
+  "mode": "keyframe-memory-action",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window with sheer curtains and potted plants on the left, bookshelf on the right, patterned rug, warm morning light. The exact same camera position and bed framing as the start of the pull. Now two people have both sunk down side by side into the rumpled duvet. One is the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). Beside him is the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts (she stays fully dressed in her sleepwear). The man has just been dragged in under the covers and the two of them lie close together; the duvet is pulled up high over most of their bodies so that only their two heads stick out above the covers, and they nestle together cheek to cheek, laughing and playing, the man half-resigned and amused, the woman triumphant. Under the blanket the woman has playfully hooked one of her legs across the man to tangle him in place, but that leg stays completely under the duvet and hidden beneath the covers; there is absolutely no bare leg and no exposed limb sticking out on top of the blanket, the smooth duvet stays draped over their bodies with nothing poking out. The medium framing holds both people and the whole bed so this reads as the landing of the pull, clearly changed from the start. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, medium shot, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S05 FL2VA尾帧(拽人入被落点)[重做修腿]:暖调床上,男主(锁定)已被拽进被窝,两人并排陷在被子里只露两个头相依笑闹;女一条腿在被子下勾住男主,该腿完全在被子覆盖之下、绝无一条裸腿凭空伸在被面上(修掉第一次那条突兀裸腿);中景同机位与KF-S05-first构图连贯,位置状态确实改变;文生图references=[];逐字锁男主藏青防换脸换色,女主浅灰睡衣保持不变",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "卧室逐字复用LOC01锚点,明写exact same camera position and bed framing与first同机位",
+      "男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字DEEP NAVY BLUE crew-neck tee+navy裤navy on navy no grey/oval face/soft short neatly-cut black hair side part NOT buzz cut/clean-shaven,显式East Asian中国人",
+      "女主锁定保持不变:逐字浅灰oversized boyfriend-style sleep tee+sleep shorts fully dressed,显式East Asian中国人",
+      "S05-last含女主腿留在被子里不裸露突兀:逐字hooked one leg across the man but that leg stays completely under the duvet and hidden,absolutely no bare leg no exposed limb sticking out on top of the blanket,修掉第一次那条横搭被面的突兀裸腿",
+      "动作落点明确:男已被拖进被窝两人并排陷被子只露两头相依笑闹(位置=拽后),与first首帧形成清晰位置状态变化;两人各1人共2人",
+      "中景同机位容纳两人与整床,暖调逐字复用ST02(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams);文生图references=[]锁机位,结尾洁净句逐字禁字/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "902c7f25b37cdd0125bdaa8d12f9a8af01bac05abb508241de875ee81ab955dc",
+    "mode": "keyframe-memory-action"
+  }
+}

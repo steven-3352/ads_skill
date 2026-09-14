@@ -1,0 +1,15 @@
+{
+  "projectId": "xiaozhu-qichuang-20260914",
+  "videoModel": "MiniMax-H3",
+  "videoPromptSkill": "h3-prompt-writing",
+  "videoPromptValidator": "replication/tools/validate-h3-prompt-review.sh",
+  "imagePromptAuthor": "ad-creative-expert",
+  "imagePromptValidatorNote": "无独立图片提示词 Skill；关键帧图片提示词由 ad-creative-expert 撰写",
+  "modelLockedAt": "2026-09-14",
+  "state": "model_locked",
+  "notes": [
+    "H3 视频下限 4 秒，不足也按 4 秒计费；每个生成单元时长 >= 4s。",
+    "改变状态/位置的动作（拽人入被、背起）优先 FL2VA 锁首尾帧。",
+    "对白镜头生成后必查是否烧录字幕。"
+  ]
+}

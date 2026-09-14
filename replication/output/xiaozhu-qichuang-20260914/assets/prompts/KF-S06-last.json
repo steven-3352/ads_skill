@@ -1,0 +1,33 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S06 回忆·暖 亲亲抱抱·落点(男搂住女,女赖怀里笑眯眯竖起两根手指)[重做:锁男主藏青防换脸换色]",
+  "mode": "keyframe-memory-action",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A close two-shot on the bed inside a cozy vintage bedroom, wooden slatted-headboard bed centered against the far wall, window with sheer curtains and potted plants on the left, bookshelf on the right, patterned rug, warm morning light. The exact same close camera framing as the start, held tight on the upper bodies of the two people among the rumpled covers. Here is the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color). Next to him is the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts (she stays fully dressed in her sleepwear). Now the man has wrapped one arm around the woman and pulled her against him; she nestles contentedly in his embrace with a happy smile and narrowed crescent eyes, and lifts her free hand with exactly two fingers raised, having just added a second finger to cheekily count off her second demand. The framing keeps both of their upper bodies and that raised two-finger counting hand clearly in shot. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic surfaces and fabric textures, close two-shot, shot on a full-frame cinema camera with an 85mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S06 FL2VA尾帧(亲亲抱抱落点)[重做]:暖调床上双人近景,男主(锁定)一只手臂搂住女主,女赖在他怀里笑眯眯竖起两根手指(得寸进尺数第二个条件,exactly two fingers raised);收在两人上半身与那只竖起的手;与KF-S06-first同机位连贯;文生图references=[];逐字锁男主藏青防换脸换色,女主浅灰睡衣保持不变",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "首句逐字锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "卧室逐字复用LOC01锚点,明写exact same close camera framing与first同机位",
+      "男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字DEEP NAVY BLUE crew-neck tee+navy裤navy on navy no grey/oval face/soft short neatly-cut black hair side part NOT buzz cut/clean-shaven,显式East Asian中国人",
+      "女主锁定保持不变:逐字浅灰oversized boyfriend-style sleep tee+sleep shorts fully dressed,显式East Asian中国人",
+      "动作落点明确:男一只手臂搂住女,女赖怀里笑眯眯竖起两根手指(明写exactly two fingers raised/second finger数第二个条件),与first撒娇点脸颊形成清晰状态变化;两人各1人共2人",
+      "双人近景同机位收两人上半身与那只竖起的两指手,暖调逐字复用ST02(warm golden high-saturation soft morning light,cozy nostalgic memory mood,dust motes in the sunbeams)",
+      "文生图references=[]避免img2img肖像磁吸并锁机位,结尾洁净句逐字禁字/字幕/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0429d6097f2ef0a72ce8a8ff9a9aaa0701666f063b1ca89df28178d2d8b4684b",
+    "mode": "keyframe-memory-action"
+  }
+}

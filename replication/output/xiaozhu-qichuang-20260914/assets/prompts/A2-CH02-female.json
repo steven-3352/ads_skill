@@ -1,0 +1,31 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "女主身份母版",
+  "mode": "identity-master",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768 (wide frame, never vertical or portrait). A single East Asian Chinese woman, about 26 years old, with shoulder-length slightly wavy tousled just-woke-up messy bed hair, a cute sleepy playful vibe and a faint gentle smile. She wears an oversized loose sleep shirt, a soft boyfriend-style tee. Framed medium, waist-up, facing the camera in a slight three-quarter turn, centered like a clean character reference portrait. Soft warm morning lighting wrapping her face, plain light neutral seamless backdrop. Natural realistic skin texture, soft flyaway hair strands catching the light, shallow depth of field, shot on a full-frame cinema camera with an 85mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "女主身份锚点母版,睡醒慵懒俏皮感,统一脸型发型与睡衣",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "16:9横构图锁1344x768无竖屏",
+      "显式East Asian中国人防欧美脸",
+      "写实真人非插画/动漫/3D",
+      "凌乱睡醒发+宽松睡衣慵懒俏皮到位",
+      "结尾洁净画面禁字/水印/logo/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d8b37115eedb299bb61ad5f3a884e4b408bc6ec2200fc261c2533eada245fd13",
+    "mode": "identity-master"
+  }
+}

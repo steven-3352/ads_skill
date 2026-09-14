@@ -1,0 +1,33 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S08 回忆·暖 背她走近餐桌落点(桌上两只煎蛋冒热气,可match cut到冷版独坐) 重做r2锁男主",
+  "mode": "keyframe-memory-action",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot in a warm morning dining area adjacent to the bedroom, a wooden dining table with a plate of two sunny-side-up fried eggs, glossy bright-yellow yolks, freshly cooked and steaming hot with rising wisps of steam, warm golden light. In the foreground on the tabletop, the plate holding exactly two steaming sunny-side-up fried eggs sits close to camera with clear wisps of steam rising into the light. Approaching the table from behind and slightly to the side, seen from a rear three-quarter angle, the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, straight eyebrows, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven; he wears a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy, no grey and no other color), carries on his back the same single East Asian Chinese woman, about 26 years old, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, cute sleepy playful vibe, wearing an oversized loose light-grey boyfriend-style sleep tee and sleep shorts, who rides piggyback with both arms wrapped around the front of his neck and her chin resting on his shoulder, both of them smiling. Long warm morning shadows stretch from them across the floor toward the table. Warm golden high-saturation soft morning light, cozy nostalgic memory mood, gentle dust motes in the sunbeams. Photorealistic skin, food and fabric textures, shallow depth of field on the plate, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S08尾帧重做r2(背她走近餐桌落点):暖调餐区(逐字复用A5/LOC02锚点:桌上两只冒热气煎蛋亮黄蛋黄),男主CH01逐字锁定(椭圆脸/软短发自然侧分非寸头非炸毛/干净剃须/藏青crew-neck短袖T配藏青家居裤navy on navy无灰无杂色)背着女主CH02(锁定,浅灰男友风睡T+睡裤)从背后/侧后rear three-quarter走近餐桌,暖金晨光长影,前景桌面两只煎蛋热气腾腾,中景可match cut到冷版S09独坐,文生图references=[]防换脸换色",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "餐区逐字复用LOC02锚点(与A5一致:木餐桌+两只荷包蛋亮黄蛋黄冒热气+暖金晨光),前景强调exactly two煎蛋冒热气防蛋数错",
+      "男主锁A1藏青tee椭圆脸软短发防换脸/换色:逐字锁oval face/smooth fair skin/almond eyes/soft short neatly-cut hair natural side part(NOT buzz not spiky)/clean-shaven/DEEP NAVY BLUE crew-neck tee+deep navy pants(navy on navy,no grey no other color)",
+      "女主保持已通过样子逐字锁定(East Asian约26岁及卷炸毛睡醒发/圆润软脸/浅灰oversized男友风睡T+睡裤),显式East Asian防欧美脸",
+      "关键姿态:承接爬背,男背女从背后/侧后rear three-quarter走近餐桌,暖金晨光长影,中景,构图供match cut到冷版独坐",
+      "暖调逐字复用ST02锚点(Warm golden high-saturation soft morning light,cozy nostalgic memory mood,gentle dust motes in the sunbeams)",
+      "文生图references=[]避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c545da8c0cd25b0e9274ab917cf4b2eb3ba1e91396b818f9529fd0f0eb259c26",
+    "mode": "keyframe-memory-action"
+  }
+}

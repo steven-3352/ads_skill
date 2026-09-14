@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S01-U1 现在·冷调卧室门口 空床苦笑 (I2VA, 无对白)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, horizontal 16:9, a cool blue-grey low-saturation grade under pale flat overcast daylight, quiet still melancholic present-day mood. The frame opens exactly on <Picture 1>: a POV from the bedroom doorway, seen between two pale floral curtains, looking into a cool blue-grey bedroom. Just inside the doorway, seen from behind, stands the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve tee and matching deep navy home pants (navy on navy). Preserve his appearance, his navy-on-navy clothing, and the room anchors: the made wooden double bed, the nightstand lamp, the framed landscape painting above the headboard, the hanging plant by the sheer-curtained window, the dresser, the bookshelf on the right, and the patterned rug. The camera holds an almost static shot with only a faint near-imperceptible drift. He has paused in the doorway as if habitually returning to the room after making breakfast; he stays still for a beat, then his head lowers and turns slightly toward the bed so a sliver of his profile becomes visible. His gaze travels slowly across the two pillows and the bedspread — one half of the bed lies perfectly smooth and empty while the other half, the side where he slept, is faintly creased. He registers the untouched empty side; his shoulders sink with a slow exhale. Over the final seconds a small bittersweet smile forms at the corner of his mouth in partial profile — a knowing, wistful half-smile that does not reach his eyes — before his expression quietly settles and he holds still. Clean frame with no subtitles, no captions, no on-screen text, no Chinese characters and no watermark anywhere in the frame.\n\noverall_soundscape: A hollow morning emptiness fills the room — a slow single water drip, the steady ticking of a wall clock, and a thin layer of early-morning room tone under near-complete silence, with the soft rustle of his tee as he shifts his weight.\n\nnon_diegetic_music: N/A",
+  "images": ["assets/images/KF-S01-first.png"],
+  "duration": 5,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "现在冷线开场。与S02同机位同床，供剪辑做冷→暖 match cut。运镜近乎静止微微漂移，无对白。首帧为背影门口POV，I2VA前向发展仅微转侧脸露出苦笑微表情层次，不做静图。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "I2VA结构:首行对齐指令<Picture 1>(from [Shot 1])@0.00s + 空行 + 三核心字段(integrated_multimodal_description/overall_soundscape/non_diegetic_music)顺序正确",
+      "从首帧背影门口POV精确起始，逐动词前向发展:停顿→低头微转侧脸→目光扫床→看到平整空床半+微皱睡过半→肩沉呼气→形成怅然苦笑微表情，非静图",
+      "锁定串逐字放入:男主外观+DEEP NAVY BLUE navy-on-navy + 冷蓝灰低饱和过曝阴天日光 present-day 一致",
+      "无对白;overall_soundscape写空寂(水滴/挂钟/清晨底噪/近静默/衣料轻响);non_diegetic_music=N/A(BGM留白)",
+      "末尾写死禁字幕串:no subtitles/captions/on-screen text/Chinese characters/watermark",
+      "时长5s单镜与描述节奏匹配;16:9横屏live-action cinematic"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "85a63ff47b76503ad53149d56de0c249be96f16c78a687efbb7e04974a82598f"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S10-U1 现在·冷桌面手机自亮暖回忆封面 冷暖同框 (I2VA, 无对白, 全程无文字)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, horizontal 16:9, a cool blue-grey low-saturation grade under pale flat overcast daylight, quiet still melancholic present-day mood. The frame opens exactly on <Picture 1>: a high-angle top-down close insert of a dark blue-grey wooden tabletop. A black smartphone lies flat on the cold dark wood, surrounded by cool-toned props — a dark ceramic mug at the upper left, a dark plate holding dark cherries at the upper right, a crumpled tissue at the lower left, and a folded grey cloth at the lower right. The phone screen is softly lit, showing a warm golden-backlit photograph of a young East Asian Chinese couple: a smiling young woman lying against a young man's back with her wind-tossed hair, both of them laughing warmly in amber light. Preserve the exact tabletop layout, every prop and its position, the phone's placement, and the warm memory photo displayed on the cool surface. The camera holds an almost static top-down shot with only a faint drift. From this starting frame, the screen's warm amber glow gradually brightens and spills a soft pool of warm light across the surrounding cold blue-grey wood, so warm and cool tones share the same frame; no hand enters and no finger touches or taps the phone. After the glow reaches its gentle peak, the screen slowly dims and the warm light recedes, the tabletop settling back to a cold, quiet blue-grey as the shot ends. The corner of the phone screen stays as clean empty blank space. No text, no numbers, no dates, no letters and no characters of any kind appear anywhere on the phone screen or anywhere in the scene. Clean frame with no subtitles, no captions, no on-screen text, no Chinese characters and no watermark anywhere in the frame.\n\noverall_soundscape: Deep quiet silence over a very light indoor room tone, broken only by a short soft phone vibration and a single faint notification chime, after which everything settles back into stillness.\n\nnon_diegetic_music: N/A",
+  "images": ["assets/images/KF-S10-first.png"],
+  "duration": 4,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "承接S09静默中手机自亮。冷桌面插入近景，屏内暖回忆封面(她趴他背炸毛头暖照)，暖光在冷桌面渐亮又慢慢暗下，冷暖同框收尾;他不点开(无手入画)。屏角留白文字位——'一年前的今天'由后期确定性渲染，本镜屏内屏外一律不生成任何文字/日期/字符。无对白。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "I2VA结构:首行对齐指令<Picture 1>(from [Shot 1])@0.00s + 空行 + 三核心字段顺序正确",
+      "从首帧冷桌面手机自亮暖回忆封面精确起始，前向逐动词:暖光渐亮铺洒冷木面(冷暖同框)→无手入画不点开→暖光渐暗回归冷调收尾",
+      "锁定:冷蓝灰桌面低饱和阴天日光 + 暖照(East Asian中国情侣/她趴背炸毛头/暖金背光)与props位置一致",
+      "特别强调无文字:屏内屏外均禁any text/numbers/dates/letters/characters;屏角留白文字位供后期确定性渲染'一年前的今天'",
+      "无对白;overall_soundscape=静默/极轻室内底噪/手机轻震+提示微响后归静;non_diegetic_music=N/A",
+      "末尾写死禁字幕串:no subtitles/captions/on-screen text/Chinese characters/watermark;时长4s单镜匹配;16:9横屏cinematic"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8b5e891519875e58633c2dfec95a0b68133848f6b15c63bdf5ee377c95751133"
+  }
+}

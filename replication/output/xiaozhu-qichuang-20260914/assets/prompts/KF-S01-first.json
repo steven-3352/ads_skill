@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S01 现在·冷 习惯性走回卧室看到空的另一半(触发,同门口POV供match cut)",
+  "mode": "keyframe-present-cold",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A medium shot of a cozy vintage bedroom viewed from an open doorway point of view, with soft floral-patterned door-curtains hanging down and framing the left and right edges of the frame; a wooden slatted-headboard bed sits centered against the far back wall; on the left wall beside the bed a window with sheer white curtains and small hanging and potted plants, a wooden dresser under the window; a small nightstand with a ceramic table lamp beside the bed; a framed picture on the wall above the headboard; a tall wooden bookshelf against the right wall; a patterned area rug on the hardwood floor; lived-in and eclectic, not a clean modern hotel room. In the foreground at the doorway, an East Asian Chinese man about 28 years old, with neat short black hair and gentle warm facial features, wearing a plain solid-color home short-sleeve tee and simple matching home pants, has just stepped in through the floral door-curtains and stands still, seen from behind in a three-quarter back view, his shoulders and the back of his head toward the camera as he gazes across the room toward the bed. The bed is neatly made but asymmetric: the near left half, his side, is faintly creased and lightly dented as if recently slept in, while the other half is perfectly flat, smooth, untouched and empty, and the emptiness of that one half reads clearly. Cool blue-grey low-saturation desaturated pale flat overcast daylight, quiet still melancholic present-day mood. Photorealistic surfaces and fabric textures, deep-focus interior, shot on a full-frame cinema camera with a wide 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S01首帧:冷调卧室同门口POV(与A4/暖版S02同机位供match cut),男主CH01背身/四分之三侧身刚踏入望向床,床整齐但不对称(近左半微皱他睡的/另一半平整空着),中景,文生图references=[]锁死机位",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "房间逐字复用LOC01锚点(门口POV+花布门帘框边/木床居中/左窗植物+木衣柜/床头挂画/右侧书架/地毯),与A4冷母版同机位供S01->S02 match cut",
+      "男主逐字复用CH01锚点(East Asian中国男性约28岁短黑发温和/素色居家短袖+家居裤),显式East Asian防欧美脸",
+      "床整齐但不对称:近左半他睡的微皱/另一半平整空着可读,空感清晰(与A4一致)",
+      "冷调逐字复用ST01锚点(cool blue-grey low-saturation desaturated pale flat overcast daylight,quiet still melancholic present-day),中景",
+      "文生图references=[]无图片参考避免img2img肖像磁吸,洁净结尾句禁字/字幕/水印/中文/拼音,中文与日期一律后期渲染不入画"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ebb5382c4072d50ac83b95b60fc1830769f9dfab8f0f88b1f4b86f8c18112339",
+    "mode": "keyframe-present-cold"
+  }
+}

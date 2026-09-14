@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "S08-U1 背起走向餐厅(FL2VA,无对白)",
+  "mode": "FL2VA",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, vintage warm film look with warm golden morning light and a tender playful memory tone; the shot begins exactly in the framing of Picture 1, where the same single East Asian Chinese man about 28, oval face, soft short neatly-cut black hair with a natural side part (not a buzz cut), clean-shaven, DEEP NAVY BLUE plain crew-neck short-sleeve tee + matching deep navy home pants (navy on navy) hoists onto his back the same single East Asian Chinese woman about 26, shoulder-length slightly wavy tousled just-woke-up messy bed hair, round soft youthful face, oversized loose light-grey boyfriend-style sleep tee (fully in sleepwear), and rises to his feet, giving one small wobble as he steadies his balance. The camera performs a smooth tracking shot at slow speed following the couple. He laughs and carries her piggyback out of the bedroom and steadily toward the dining area; the framing eases into a rear three-quarter angle behind the two of them as they approach the dining table. Settling into the exact pose, spacing, and composition of Picture 2, they draw near the table where, in the foreground, two fried eggs on a plate steam gently and the warm morning light casts long shadows across the room. No character speaks and no one produces any voice throughout the shot. no subtitles, no captions, no on-screen text, no Chinese characters and no watermark burned anywhere in the frame.\n\noverall_soundscape: Soft footsteps cross the floor while clothing and fabric shift with each step, the couple share light warm laughter, and the faint sizzle of two fried eggs rises in the foreground under a calm early-morning room tone.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "assets/images/KF-S08-first.png",
+    "assets/images/KF-S08-last.png"
+  ],
+  "duration": 5,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "改变位置的动作镜(空间转移:卧室→餐厅):男背女起身晃一下稳住→一路笑往餐厅走→走近餐桌前景两只煎蛋冒热气晨光长影。FL2VA锁首尾帧+逐动词+稳定tracking运镜。无对白(generate_audio保留环境声)。暖光晃动定格供剪辑match cut→S09冷调。禁烧字幕。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "FL2VA首尾对齐行含正确时长5.00s,Picture1@0.00/Picture2@5.00",
+      "空间转移逐动词覆盖:男背女起身→轻晃一下稳住重心→一路笑往餐厅走→走近餐桌落到前景两只煎蛋冒热气晨光长影,收在Picture2(rear three-quarter)构图",
+      "明确无对白:写死No character speaks and no one produces any voice;generate_audio=true仅保留环境声",
+      "稳定运镜:smooth tracking shot at slow speed",
+      "禁烧字幕串逐字写入prompt",
+      "overall_soundscape含脚步/衣物摩擦/两人轻笑/煎蛋滋滋/清晨底噪;non_diegetic_music=N/A",
+      "统一锁定串(男主navy on navy/女主浅灰睡衣/暖回忆)逐字放进画面;note标注match cut→S09冷调"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "075a6a3ebdaf859a1ee6fbe9e7f3b2bc76c0ca3ff5a97bfb002fa1e2c2b219f3"
+  }
+}

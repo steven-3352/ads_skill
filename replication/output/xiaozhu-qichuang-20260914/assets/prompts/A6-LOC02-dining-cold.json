@@ -1,0 +1,31 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "餐区场景母版-冷现实",
+  "mode": "location-master-cold",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768 (wide frame, never vertical or portrait). The same wooden dining table, empty with absolutely no people. Cool blue-grey low-saturation pale light falls flat across the table. On the table sits one single fried egg on a plate and exactly one place setting: one bowl and one pair of chopsticks, and nothing else. Still, lonely, melancholic present-day mood, cold desaturated muted tones. Photorealistic food textures and surfaces, shallow depth of field on the plate, shot on a full-frame cinema camera with a 50mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no people in the frame. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "餐区冷调现实母版,单个荷包蛋+一副碗筷,冷蓝孤寂,无人",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "16:9横构图锁1344x768无竖屏",
+      "单个荷包蛋+一副碗筷一人份状态明确",
+      "冷蓝低饱和孤寂现实基调到位",
+      "与暖版同桌保持场景一致",
+      "无人+结尾洁净画面禁字/水印/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "42d0bab602a7eab2d6478877f31f08227a02204adcbd73e8f71eb2fc399bba3e",
+    "mode": "location-master-cold"
+  }
+}

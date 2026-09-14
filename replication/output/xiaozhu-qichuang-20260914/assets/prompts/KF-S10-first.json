@@ -1,0 +1,31 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-S10 现在·冷 手机'一年前的今天'回忆推送(俯拍插入静物特写,冷桌面暖封面)",
+  "mode": "keyframe-present-cold",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 1344x768, wide frame, never vertical or portrait. A top-down insert close-up looking straight down at the surface of the same wooden dining table; cool blue-grey low-saturation pale flat light falls across the cold blue-toned tabletop. A single smartphone lies flat on the tabletop, its screen glowing and awake. On the phone screen is a warm golden-toned memory photograph displayed as a cover image: an East Asian Chinese young woman with a messy tousled just-woken bed-head lies happily on the back of an East Asian Chinese young man, both of them smiling and laughing, bathed in warm golden morning light — this warm photograph is the single only warm element in the entire frame. One corner of the phone screen is left as a clean empty blank area reserved for later post-production text, but absolutely no text, no numbers and no date appear anywhere in the image. The surrounding tabletop and everything around the phone stay cool blue-grey, desaturated and pale, quiet still melancholic present-day mood, so that the warm glow of the phone screen contrasts sharply against the cold surface, a warm memory framed inside a cold present. Photorealistic surfaces, screen glow and reflections, shallow depth of field on the phone, shot on a full-frame cinema camera with a 50mm lens directly overhead. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [],
+  "generator": "GPT Image",
+  "size": "1344x768",
+  "note": "S10首帧:俯拍插入静物特写(top-down insert),冷蓝桌面上一部手机,屏亮暖色回忆封面(中国女子趴中国男子背上炸毛头两人开心,画面唯一暖元素),屏角留空白给后期文字但画内无任何文字/数字/日期,冷暖同框收尾,文生图references=[]",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-14",
+    "checks": [
+      "首句锁16:9横构图1344x768,wide frame,never vertical or portrait,无竖屏",
+      "俯拍插入静物特写top-down insert,冷蓝桌面(承接LOC02餐桌),桌面everything冷蓝低饱和",
+      "手机屏内暖色回忆封面=中国女子(East Asian)趴中国男子(East Asian)背上炸毛头两人开心暖金,显式East Asian防欧美脸,为画面唯一暖元素,冷暖同框",
+      "屏角留clean empty blank区域给后期文字,但画内绝无任何文字/数字/日期('一年前的今天'后期确定性渲染)",
+      "文生图references=[]无图片参考,洁净结尾句禁字/字幕/水印/中文/拼音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "fedbf6749623c42f8e05cceb7192d2cd25f139037c6e88c0d6a20862f09536da",
+    "mode": "keyframe-present-cold"
+  }
+}
