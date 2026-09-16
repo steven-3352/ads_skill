@@ -1,0 +1,13 @@
+{
+  "_note": "fastwake v2 字幕清单(唯一字幕源)。时间=片内相对(0-5s),clip_order+clip_dur 换算全片时间轴。H3 只出配音,字幕由 tools/burn-subtitles.sh 统一后期烧。",
+  "clip_order": ["C1", "C2", "C3"],
+  "clip_dur": 5.0,
+  "lines": [
+    {"clip": "C1", "speaker": "男主", "text": "起床啦——", "t_start": 0.6, "t_end": 2.2},
+    {"clip": "C1", "speaker": "女主", "text": "唔……再睡五分钟", "t_start": 2.6, "t_end": 4.6},
+    {"clip": "C2", "speaker": "男主", "text": "五分钟早过啦", "t_start": 0.5, "t_end": 2.2},
+    {"clip": "C2", "speaker": "女主", "text": "别拉别拉——", "t_start": 2.6, "t_end": 4.6},
+    {"clip": "C3", "speaker": "男主", "text": "坐起来,清醒一下", "t_start": 0.5, "t_end": 2.4},
+    {"clip": "C3", "speaker": "女主", "text": "……好啦好啦,醒了", "t_start": 2.8, "t_end": 4.8}
+  ]
+}

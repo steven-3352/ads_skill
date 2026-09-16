@@ -1,0 +1,36 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "C1 掀被+抗拒 门口推入长镜拆段 (I2VA 16:9 中文对白直出配音+烧字幕)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm golden morning light, cozy bedroom, horizontal 16:9, the scene begins exactly as shown in <Picture 1>: the same single East Asian Chinese man about 28, oval face, soft short neatly side-parted black hair, clean-shaven, wearing a DEEP NAVY plain crew-neck short-sleeve tee and matching deep navy home pants, standing beside the centered bed with his right hand already gripping the corner of the quilt, while the East Asian Chinese woman about 26 with messy tousled just-woke-up bed hair in a loose off-white sleep dress lies bundled under the still-flat quilt; the side window casts warm high-saturation golden sunlight and the identities, clothing, colors, and bed layout stay consistent with the frame. The camera performs a doorway push-in, pushing in with small amplitude at slow speed from the door toward the bed. From 0.00 to 00:02.500, the man strides the last step to the bedside, tightens his grip on the quilt corner, and in one motion flings the quilt fully open so the bedding flips up and tosses to the side, going from flat and neat to thrown off; the warm, gently teasing man (S1), in a mid-range male voice, calls out crisply with natural lip-sync: <d>[Chinese] 起床啦——</d>. From 00:02.500 to 00:05.000, the push-in settles as focus shifts to the now-revealed woman (S2); startled by the light and the yanked quilt she rolls over, curls into a tight ball, then lifts one arm to shield her eyes and turns her face into the pillow, going from lying flat to a curled light-shielding pose, mumbling groggily with natural lip-sync: <d>[Chinese] 唔……不要——</d>. From 00:05.000 to 00:06.000, an anchor tail holds on the woman keeping her arm raised with a faint residual squirm before the clip ends.\n\noverall_soundscape: A warm quiet morning room tone with faint birdsong underneath, the sharp flap and rustle of the flung quilt, and the soft shift of bedding as she rolls and curls.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "assets/images/KF-C1-first.png"
+  ],
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "生成单元C1=分镜C1-b1(0-2.5s掀被定调)+C1-b2(2.5-5s抗拒转折)+5-6s锚点尾(弃)。I2VA单首帧KF-C1-first驱动,门口推入push-in机位,横屏16:9。中文对白直出配音+烧录中文字幕即达标(S04标杆),不去字幕不删词。后期在2.5s/5s下剪弃尾1s。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA结构:首行I2VA指令(<Picture 1> from [Shot 1] fully referenced at 0.00)+空行+三核心字段integrated_multimodal_description/overall_soundscape/non_diegetic_music,首帧先建立风格/主体/构图/场景锚点再前推",
+      "回溯分镜C1填空:b1=男主门口推入快步到床边→抓被角→一把掀开(平整→掀飞);b2=女主翻身→蜷缩→抬臂挡光(躺平→蜷缩挡光)",
+      "显式写死三段时间码:From 0.00 to 00:02.500(b1掀被)/From 00:02.500 to 00:05.000(b2抗拒)/From 00:05.000 to 00:06.000(锚点尾),每段有起点-过程-终点、无>2.5s静止",
+      "身份锁:首句显式East Asian Chinese man/woman防欧美脸;男主深藏青圆领家居短袖+同色家居裤;女主炸毛睡不醒头+宽松米白睡裙;暖金晨光卧室横屏16:9",
+      "机位=门口推入(doorway push-in, push in small amplitude slow speed),三机位之一;对白保留中文<d>[Chinese]起床啦——/唔……不要——,说话人S1男S2女,natural lip-sync,直出配音+烧录中文字幕(不加禁字幕约束)",
+      "连贯性:C1尾女主蜷缩挡光+被子掀在侧的终止姿=C2首帧起始位;身份串deep navy on navy/oval/side part与C2/C3一致",
+      "overall_soundscape仅写环境+物理动作声(晨间底噪+鸟叫+掀被拟音+床品摩擦),对白不重复;non_diegetic_music=N/A;duration=6/16:9/768P时长与三段节奏匹配"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e8c459e7a2686b12445d34f7d81d9ee2084edda5653d3e39afd78209c6d405b4"
+  }
+}

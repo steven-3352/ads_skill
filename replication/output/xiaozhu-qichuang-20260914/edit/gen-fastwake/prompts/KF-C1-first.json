@@ -1,0 +1,36 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-C1-first 门口推入首帧(男立床边抓被角、女被窝一坨只露炸毛头) 16:9",
+  "mode": "keyframe-fastwake-action",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 2048x1152, a wide cinematic environmental medium shot filmed from the bedroom doorway at a slightly high frontal angle, never vertical or portrait framing — the man stands inside the warm bedroom with the centered wooden slatted-headboard bed, the left-side window with sheer curtains and potted plants, and warm golden morning light all clearly visible around him. Inside this cozy vintage warm-toned bedroom, the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, calm gentle almond eyes, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve home tee and matching deep navy home pants (navy on navy, no grey and no other color), stands at the bedside in a brisk starting pose, his right hand already gripping the corner of the quilt as if about to fling it open. On the bed lies a person completely bundled under the smooth quilt, curled into a small lump, with only a tuft of messy tousled just-woke-up bed hair poking out from under the covers — her face and body hidden. The quilt is still flat and covering her. Warm golden high-saturation soft morning light streams from the side window across the bed, cozy nostalgic family morning mood, gentle dust motes in the sunbeams. Photorealistic skin and fabric textures, shallow depth of field, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/images/A1-CH01-male.png",
+    "assets/images/A3-LOC01-bedroom-warm.png"
+  ],
+  "generator": "GPT Image",
+  "size": "2048x1152",
+  "note": "C1首帧(0-2.5s掀被定调起始姿):门口推入正面略俯,男主CH01(锁A1藏青crew-neck短袖+同色家居裤/椭圆脸/软短发自然侧分/干净剃须)立床边右手抓被角待掀;女主被窝里蜷成一坨只露炸毛头(不露脸,故只用A1+A3参考);暖金晨光卧室(锁A3木床居中/左窗sheer+植物/暖光)。环境中景防肖像磁吸。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "keyframe-fastwake-action",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "首句锁16:9横构图2048x1152,wide cinematic environmental medium shot,never vertical or portrait framing,明确人物在卧室场景内(床/窗/暖光环绕)防肖像磁吸",
+      "男主逐字锁A1:oval face/smooth fair skin/almond eyes/soft short neatly-cut hair natural side part(NOT buzz not spiky)/clean-shaven/DEEP NAVY BLUE crew-neck短袖tee+deep navy pants(navy on navy,no grey no other color)防换脸换色",
+      "显式East Asian Chinese man防欧美脸",
+      "卧室逐字复用A3锚点(木床居中/左窗sheer curtains+植物/暖金晨光)保场景一致",
+      "动作起始姿=男立床边右手抓被角待掀、被子尚平整盖身;女主被窝里蜷成一坨只露炸毛头不露脸(故参考仅A1+A3不带A2)符合C1-b1填空F栏",
+      "暖调逐字(Warm golden high-saturation soft morning light,cozy nostalgic family morning mood,gentle dust motes)",
+      "洁净结尾禁字/字幕/水印/中文/拼音;未触发插入镜exit4关键词(无tight insert/fills the frame/面部不入画等)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "608c7d5693be1b4cc8de8f03f0d7a684aae3169b7e4435b7f1643b7de4b90c97"
+  }
+}

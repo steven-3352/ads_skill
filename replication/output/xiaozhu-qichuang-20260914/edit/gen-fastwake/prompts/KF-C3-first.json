@@ -1,0 +1,37 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "KF-C3-first 床沿过肩首帧(男双手托女肩背扶起、女半坐被子滑落) 16:9",
+  "mode": "keyframe-fastwake-action",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape composition rendered at 2048x1152, a wide cinematic environmental over-the-shoulder two-shot filmed from just behind the man's shoulder looking toward the woman, never vertical or portrait framing — both people are inside the warm bedroom with the centered wooden slatted-headboard bed, the side window with sheer curtains and potted plants, and warm golden morning light clearly visible around them. Inside this cozy vintage warm-toned bedroom, the same single East Asian Chinese man, about 28 years old, oval face, smooth fair skin, soft short neatly-cut black hair with a natural side part (NOT a buzz cut, not spiky), clean-shaven, wearing a DEEP NAVY BLUE plain crew-neck short-sleeve home tee and matching deep navy home pants (navy on navy, no grey and no other color), is seen from behind his shoulder and back as he leans in with both hands supporting the woman's shoulders and upper back, gently lifting her half-up. The same single East Asian Chinese woman, about 26 years old, round soft youthful face, messy tousled just-woke-up bed hair, wearing a loose light-coloured sleep dress, is being propped up into a half-sitting pose, the quilt sliding down and off her body. Both people are seen from the waist up. Warm golden high-saturation soft morning light streams from the side window, cozy nostalgic family morning mood, gentle dust motes in the sunbeams. Photorealistic skin and fabric textures, shallow depth of field, shot on a full-frame cinema camera with a 35mm lens. Not an illustration, not anime, not a 3D render, no cartoon stylization. no text, no subtitles, no captions, no watermark, no logo, no Chinese characters, no pinyin anywhere in the image.",
+  "output": null,
+  "status": "prompt_ready",
+  "references": [
+    "assets/images/A1-CH01-male.png",
+    "assets/images/A2-CH02-female.png",
+    "assets/images/A3-LOC01-bedroom-warm.png"
+  ],
+  "generator": "GPT Image",
+  "size": "2048x1152",
+  "note": "C3首帧(0-2.5s扶坐定调起始姿):床沿过肩(男主肩后看向女主),男主CH01(锁A1)双手托住女主肩背把她半扶起;女主CH02(锁A2)半坐、被子滑落(承接C2尾);暖调晨光卧室(锁A3)。环境过肩两人镜防肖像磁吸。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "keyframe-fastwake-action",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "首句锁16:9横构图2048x1152,wide cinematic environmental over-the-shoulder two-shot(男肩后看女),never vertical or portrait framing,明确两人在卧室场景(床/窗/暖光环绕)防肖像磁吸",
+      "男主逐字锁A1藏青crew-neck短袖+同色家居裤/椭圆脸/软短发自然侧分(NOT buzz not spiky)/干净剃须/navy on navy no grey,过肩仅见肩背防换脸换色",
+      "女主逐字锁A2:East Asian约26岁/圆润软脸/炸毛睡不醒头/宽松浅色睡裙,显式East Asian防欧美脸",
+      "卧室逐字复用A3锚点(木床居中/侧窗sheer curtains+植物/暖金晨光)保跨镜场景一致",
+      "动作起始姿=男双手托女肩背把她半扶起、女半坐被子滑落(承接C2尾),两人半身入画,符合C3-b1填空F栏",
+      "暖调逐字(Warm golden high-saturation soft morning light,cozy nostalgic family morning mood,gentle dust motes)",
+      "洁净结尾禁字/字幕/水印/中文/拼音;未触发插入镜exit4关键词"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0e48e6b533a79b9e62e1f2d9805bca20843e3e7bd305b0eb911bf75f97e5b9e1"
+  }
+}

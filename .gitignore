@@ -38,3 +38,10 @@ replication/edit/
 **/shots/**/video/*.json
 # Any generation audit evidence dirs (base64/URLs) if ever placed in-tree
 **/.audit/
+
+# MPEG-TS 分段与其他媒体容器(仓库无 TypeScript 源码)
+*.ts
+*.m4a
+*.aac
+*.mkv
+*.webm

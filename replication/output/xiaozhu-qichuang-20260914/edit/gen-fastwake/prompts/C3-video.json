@@ -1,0 +1,37 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "C3 扶坐+醒神 床沿过肩长镜拆段 (Ref2VA, 中文对白)",
+  "mode": "Ref2VA",
+  "prompt": "subject_definitions:\n<Subject 1> is the East Asian Chinese man in <Picture 1>, about 28 years old, with an oval face, soft short neatly side-parted black hair, clean-shaven, wearing a deep navy plain crew-neck short-sleeve tee and matching deep navy home pants.\n<Subject 2> is the East Asian Chinese woman in <Picture 2>, about 26 years old, with messy tousled just-woke-up bed hair and a loose sleep dress.\n<Subject 3> is the warm-toned bedroom environment in <Picture 3>, with the bed at center, a window on the bed's side as the morning light source, and warm high-saturation golden soft sunlight.\n\nsummary:\n[reference generation] The target video is a single continuous over-shoulder shot from the edge of the bed. <Subject 1> lifts <Subject 2> up to sit on the bed edge; she rubs her eyes awake and takes his offered hand as the two share a warm morning beat. <Picture 1>, <Picture 2>, and <Picture 3> lock the identities and the environment <Subject 3>.\n\nretention_analysis:\n<Subject 1> (appears throughout): fully_preserved - the man's oval face, soft side-parted short black hair, clean-shaven look, and deep navy crew-neck tee with matching navy home pants are retained.\n<Subject 2> (appears throughout): fully_preserved - the woman's messy tousled bed hair and loose sleep dress are retained.\n<Subject 3> (appears throughout): fully_preserved - the centered bed, the side window morning light source, and the warm high-saturation golden soft light are retained.\n\ndetailed_description:\nThe target video is in a live-action, cinematic style, vertical 9:16, set in the warm golden morning bedroom <Subject 3>, with the side window casting warm high-saturation golden sunlight across the bed.\n[Shot 1] A single continuous over-shoulder shot framed from behind <Subject 1>'s shoulder at the edge of the bed, distinct from the doorway push-in and the bedside medium setups. From 0.00 to 00:02.500, <Subject 1> (S1), the East Asian Chinese man about 28 in a deep navy crew-neck short-sleeve tee and matching navy home pants, leans in and slides both hands under <Subject 2>'s shoulders and back, lifting her whole body up until she is propped sitting on the edge of the bed; her position goes from lying to seated. He says warmly, <d>[Chinese] 起来喽,蛋要凉了</d>. From 00:02.500 to 00:05.000, <Subject 2> (S2), the East Asian Chinese woman about 26 with messy tousled bed hair in a loose sleep dress, sits on the bed edge rubbing her eyes, opens them as her tousled hair sways, and reaches out as <Subject 1> smiles and extends his hand; she rests her hand in his, a continuous micro-action of rub eyes then open then take hand that never freezes. She hums, <d>[Chinese] ……知道啦</d>, and <Subject 1> (S1) gives a soft laugh. From 00:05.000 to 00:06.000, an anchor tail holds on the two sharing a brief look and a small smile before the clip ends.\n\noverall_soundscape:\nA warm quiet morning room tone with the soft shift of bedding as she is lifted, a gentle hum, and a light male chuckle.\n\nnon_diegetic_music:\nN/A",
+  "images": [
+    "assets/images/A1-CH01-male.png",
+    "assets/images/A2-CH02-female.png",
+    "assets/images/A3-LOC01-bedroom-warm.png"
+  ],
+  "duration": 6,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "生成单元C3=分镜C3-b1(0-2.5s扶坐定调)+C3-b2(2.5-5s醒神转折/收尾)+5-6s锚点尾(弃)。床沿过肩over-shoulder机位=第三个真剪切点。收尾镜也不许静。Ref2VA锁身份不用首尾帧。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "Ref2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "Ref2VA六段结构顺序正确:subject_definitions/summary/retention_analysis/detailed_description/overall_soundscape/non_diegetic_music",
+      "回溯分镜C3填空:b1=男主俯身双手托肩背→扶起→坐到床沿(倒卧→坐起);b2=女主揉眼→睁眼炸毛头晃→男主递手女主搭手(连续微动作不定格)",
+      "显式写死三段时间码:From 0.00 to 00:02.500(b1扶坐)/From 00:02.500 to 00:05.000(b2醒神)/From 00:05.000 to 00:06.000(锚点尾),每段有起止动作、收尾镜无静止定格",
+      "身份锁:首行显式East Asian Chinese man/woman防欧美脸;男主深藏青圆领家居短袖+同色家居裤;女主炸毛睡不醒头+宽松睡裙;暖调金色晨光卧室",
+      "机位=床沿过肩(over-shoulder)三机位之一;对白保留中文<d>[Chinese]起来喽蛋要凉了/……知道啦+男主轻笑;说话人S1男S2女一致",
+      "duration=6/9:16竖屏/768P/live-action cinematic warm golden morning,时长与三段描述节奏匹配"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9a29b6ab82439c6f8a21287c652e3eb671c5768c3a6feed3d2d8df64e870d4ab"
+  }
+}

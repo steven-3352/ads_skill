@@ -1,0 +1,36 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "C3 扶坐+醒神 床沿过肩长镜拆段暖收尾 (I2VA 16:9 中文对白直出配音+烧字幕)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm golden morning light, cozy bedroom, horizontal 16:9, the scene begins exactly as shown in <Picture 1>: an over-the-shoulder shot from behind the same East Asian Chinese man about 28, oval face, soft short side-parted black hair, clean-shaven, wearing a DEEP NAVY crew-neck short-sleeve tee and matching deep navy home pants, looking toward the same East Asian Chinese woman about 26 with messy tousled bed hair in a loose off-white sleep dress, his two hands already cupped under her shoulders and back as she is half raised from the buried position carried over from the previous shot with the quilt sliding off; the side window casts warm high-saturation golden light rimming them and the identities, clothing, colors, and bed layout stay consistent with the frame. The camera holds a static over-the-shoulder shot from behind the man's shoulder. From 0.00 to 00:02.500, the man steadily lifts her whole torso up and swings her so she is seated on the edge of the bed with her bare feet touching the floor, going from lying burrowed to sitting on the bed edge; the warm, smiling man (S1), in a mid-range male voice, says with natural lip-sync: <d>[Chinese] 起来喽,蛋要凉了</d>. From 00:02.500 to 00:05.000, the framing eases into a closer two-shot as the seated woman (S2) raises a hand to rub her eyes, blinks them open with her tousled hair bobbing twice, and softly lays her hand into the man's outstretched, offered hand, a continuous rub-open-clasp micro-motion; she says with natural lip-sync: <d>[Chinese] ……知道啦</d> while the man chuckles lightly. From 00:05.000 to 00:06.000, an anchor tail holds on the two exchanging a small smile before the clip ends.\n\noverall_soundscape: A warm quiet morning room tone with the rustle of the sliding quilt, the shift of the mattress as she is lifted and seated, her light groggy hum, and the man's soft chuckle, with any silence held under 1.5 seconds.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "assets/images/KF-C3-first.png"
+  ],
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "生成单元C3=分镜C3-b1(0-2.5s扶坐定调)+C3-b2(2.5-5s醒神转折/收尾)+5-6s锚点尾(弃)。I2VA单首帧KF-C3-first驱动,床沿过肩机位(第二处真硬切),横屏16:9。首帧承接C2尾女主埋枕原位+男手已探到肩背。收尾镜也不静(揉眼→睁眼→搭手连续微动)。中文对白直出配音+烧录中文字幕即达标,不去字幕不删词。后期在2.5s/5s下剪弃尾1s。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA结构:首行I2VA指令(<Picture 1> from [Shot 1] fully referenced at 0.00)+空行+三核心字段,首帧先建立过肩机位/主体/构图再前推",
+      "回溯分镜C3填空:b1=男主俯身双手托肩背→稳稳扶起→扶坐床沿双脚沾地(倒卧蒙被→坐起床沿);b2=女主坐床沿抬手揉眼→睁眼炸毛头晃→搭上男主递来的手(揉眼→睁眼→搭手连续微动,收尾不静)",
+      "显式写死三段时间码:From 0.00 to 00:02.500(b1扶坐)/From 00:02.500 to 00:05.000(b2醒神收尾)/From 00:05.000 to 00:06.000(锚点尾),每段有起点-过程-终点、无>2.5s静止,收尾也不定格",
+      "身份锁:首句显式East Asian Chinese man/woman防欧美脸;男主深藏青圆领家居短袖+同色裤;女主炸毛睡不醒头+宽松米白睡裙;暖金晨光卧室横屏16:9",
+      "机位=床沿过肩static over-the-shoulder(第二处真硬切,三机位之三);对白保留中文<d>[Chinese]起来喽,蛋要凉了/……知道啦,说话人S1男S2女,natural lip-sync,直出配音+烧录中文字幕(不加禁字幕约束)",
+      "连贯性:首帧承接C2尾(女主埋枕原位,男主双手已探到肩背),位置连续;身份串与C1/C2一致;全片收束",
+      "overall_soundscape仅写环境+物理动作+非语言人声(晨间底噪+被子滑落+床垫位移+哼唧+轻笑),留白≤1.5s,对白不重复;non_diegetic_music=N/A;duration=6/16:9/768P时长与三段节奏匹配"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8b9d96b3529feb9ceaf2ce423b11f08e113c12aae99a703aaae8bfc907fff3c3"
+  }
+}

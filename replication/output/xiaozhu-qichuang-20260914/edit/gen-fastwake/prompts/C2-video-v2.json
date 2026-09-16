@@ -1,0 +1,36 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "C2 拽拉+赖床 床侧中景长镜拆段 (I2VA 16:9 中文对白直出配音+烧字幕)",
+  "mode": "I2VA",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, warm golden morning light, cozy bedroom, horizontal 16:9, the scene begins exactly as shown in <Picture 1>: a 90-degree bedside medium shot of the same East Asian Chinese man about 28, oval face, soft short side-parted black hair, clean-shaven, wearing a DEEP NAVY crew-neck short-sleeve tee and matching deep navy home pants, leaning over the bed with both hands gripping the wrists of the same East Asian Chinese woman about 26 with messy tousled bed hair in a loose off-white sleep dress, who is still half-lying in the curled position carried over from the previous shot with the quilt flung aside; the side window casts warm high-saturation golden light and the identities, clothing, colors, and bed layout stay consistent with the frame. The camera holds a static bedside shot from the 90-degree side. From 0.00 to 00:02.500, the man pulls firmly upward on her wrists so her upper body is dragged off the pillow and her hair swings, going from half-lying to hauled up toward sitting with the wrist skin visibly taut; the man (S1), in a mid-range male voice, says with natural lip-sync: <d>[Chinese] 数三下啊,一——二——</d>. From 00:02.500 to 00:05.000, her arms go limp and she flops all the way back into the pillow, buries her face, and pulls the quilt up over her head, going from hauled-up to collapsed back and burrowed under the covers while the man's hands hover helplessly in the air; the woman (S2), muffled, says with natural lip-sync: <d>[Chinese] 再睡五分钟……</d> followed by a soft giggle. From 00:05.000 to 00:06.000, an anchor tail holds on her buried under the quilt with a faint shoulder shrug before the clip ends.\n\noverall_soundscape: A warm quiet morning room tone with the creak of the mattress, the friction of dragged fabric and bedding, the soft thud of her flopping back into the pillow, and her light muffled giggle.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "assets/images/KF-C2-first.png"
+  ],
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "note": "生成单元C2=分镜C2-b1(0-2.5s拽拉定调)+C2-b2(2.5-5s赖床转折)+5-6s锚点尾(弃)。I2VA单首帧KF-C2-first驱动,床侧90度中景机位(第一处真硬切),横屏16:9。首帧承接C1尾女主原位/被子掀开状态。中文对白直出配音+烧录中文字幕即达标,不去字幕不删词。后期在2.5s/5s下剪弃尾1s。",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA结构:首行I2VA指令(<Picture 1> from [Shot 1] fully referenced at 0.00)+空行+三核心字段,首帧先建立床侧机位/主体/构图再前推",
+      "回溯分镜C2填空:b1=男主俯身抓女手腕→用力上拽→上半身拉离枕头(躺卧→被拉起坐立);b2=女主手臂一软→倒回枕头→埋脸拉被蒙头(被拉起→倒回埋头蒙被)",
+      "显式写死三段时间码:From 0.00 to 00:02.500(b1拽拉)/From 00:02.500 to 00:05.000(b2赖床)/From 00:05.000 to 00:06.000(锚点尾),每段有起点-过程-终点、无>2.5s静止",
+      "身份锁:首句显式East Asian Chinese man/woman防欧美脸;男主深藏青圆领家居短袖+同色裤;女主炸毛睡不醒头+宽松米白睡裙;暖金晨光卧室横屏16:9",
+      "机位=床侧90度中景static shot(第一处真硬切,三机位之二);对白保留中文<d>[Chinese]数三下啊,一——二——/再睡五分钟……,说话人S1男S2女,natural lip-sync,直出配音+烧录中文字幕(不加禁字幕约束)",
+      "连贯性:首帧承接C1尾(女主原位半躺蜷缩+被子掀在侧,男主入画抓腕),位置连贯不跳;C2尾女主埋枕蒙被+男手悬空的终止姿=C3首帧起始位;身份串与C1/C3一致",
+      "overall_soundscape仅写环境+物理动作+非语言人声(晨间底噪+床垫吱呀+拽拉摩擦+闷响+咯咯轻笑),对白不重复;non_diegetic_music=N/A;duration=6/16:9/768P时长与三段节奏匹配"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5a352fa16a076c409199874ed922e9d593bbae88aad2db8ccc9c997c4a453b4e"
+  }
+}
