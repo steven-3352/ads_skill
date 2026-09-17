@@ -1,0 +1,28 @@
+{
+  "subproject_id": "fenshou-20260917",
+  "title": "我们还是分手吧",
+  "note": "寄居 xiaozhu-qichuang-20260914 目录的独立子片；owner_globs 划定 fenshou 命名空间，foreign-guard 保护同目录小猪 S01–S10 / screenplay.md / contracts 三件套零改动。付费产物只经 run.sh→orchestrator 生成，才被总账承认。",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "reviewGate": "replication/tools/validate-h3-prompt-review.sh",
+  "ledger": "automation/fenshou.ledger.ndjson",
+  "paid_state": "automation/fenshou.paid-state.json",
+  "state_sequence": "references/state-machine/main-sequence.json",
+  "production_plan": "contracts/fenshou-production-plan.json",
+  "screenplay": "story/fenshou-screenplay.md",
+  "owner_globs": [
+    "story/fenshou-*",
+    "contracts/fenshou-*",
+    "prompts/fenshou-*",
+    "prompts/**/fenshou-*",
+    "shots/fenshou-*",
+    "shots/fenshou-*/**",
+    "review/fenshou-*",
+    "assets/**/fenshou-*",
+    "final/fenshou-*",
+    "edit/fenshou-*",
+    "social/fenshou-*",
+    "automation/fenshou.*",
+    "automation/fenshou-*"
+  ]
+}

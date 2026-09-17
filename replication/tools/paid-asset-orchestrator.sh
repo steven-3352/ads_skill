@@ -64,7 +64,7 @@ run-asset)
   a="$(jq -c --argjson i "$i" '.assets[$i]' "$state")"
   kind="$(jq -r '.kind' <<<"$a")"
   status="$(jq -r '.status' <<<"$a")"
-  [[ "$kind" == image || "$kind" == video ]] || die "unsupported asset kind: $kind"
+  [[ "$kind" == image || "$kind" == video || "$kind" == speech ]] || die "unsupported asset kind: $kind"
   [[ "$status" == ready ]] || die "asset is not ready: $status"
   jq -e --arg id "$id" '.authorization.asset_ids|index($id)!=null' "$state" >/dev/null || die "asset is outside authorization"
   jq -e --arg id "$id" '
@@ -83,9 +83,10 @@ run-asset)
     "$root/replication/tools/validate-h3-prompt-review.sh" "$prompt" video
   elif [[ "$kind" == video ]]; then
     "$root/replication/tools/validate-seedance-prompt-review.sh" "$prompt" video
-  else
+  elif [[ "$kind" == image ]]; then
     "$root/replication/tools/validate-seedance-prompt-review.sh" "$prompt" image
   fi
+  # kind==speech：无对应 prompt-review 校验器（配音由 stage5 语义 accept 把关），跳过技术评审
   [[ ! -e "$out" ]] || die "refusing to overwrite: $out"
   audit="$dir/requests/$id"
   mkdir -p "$audit" "$(dirname "$out")"
@@ -102,10 +103,35 @@ run-asset)
   set +e
   if [[ "$kind" == image ]]; then
     "$root/replication/tools/generate-image.sh" --prompt "$prompt" --output-dir "$(dirname "$out")" --output-name "$(basename "$out")" --audit-dir "$audit" --request-id "$id"
+    rc=$?
+  elif [[ "$kind" == speech ]]; then
+    # generate-speech.sh 原生支持 --audit-dir/--request-id，自写 lifecycle.json（submitting→
+    # ambiguous_submission/ambiguous_result→completed）与 output.sha256，与 image 同构，无需补齐。
+    "$root/replication/tools/generate-speech.sh" --prompt "$prompt" --output-dir "$(dirname "$out")" --output-name "$(basename "$out")" --audit-dir "$audit" --request-id "$id"
+    rc=$?
   else
+    # generate-video.sh 不接受 --audit-dir、不写 lifecycle.json（保持可单独执行的原子工具，不改它）。
+    # 编排层在此为 video 补齐 audit 证据 + lifecycle 归类，让失败分类逻辑（下方 case）对
+    # video 与 image 一致，修复"已付费视频被误判为 cost=0"的 bug。
+    vresp="$(dirname "$out")/$(basename "${out%.mp4}.json")"
     "$root/replication/tools/generate-video.sh" --prompt "$prompt" --output-dir "$(dirname "$out")" --output-name "$(basename "${out%.mp4}.json")" --wait --download
+    rc=$?
+    vtask=""; vret=""
+    if [[ -s "$vresp" ]]; then
+      vtask="$(jq -r '.id // .task_id // .data.id // .data.task_id // empty' "$vresp" 2>/dev/null || true)"
+      vret="$(jq -r '.RetCode // .base_resp.status_code // empty' "$vresp" 2>/dev/null || true)"
+      cp "$vresp" "$audit/response.json" 2>/dev/null || true
+      [[ -f "$vresp.status.json" ]] && cp "$vresp.status.json" "$audit/status.json" 2>/dev/null || true
+    fi
+    if [[ $rc -eq 0 ]]; then                                  vlife=completed
+    elif [[ ! -s "$vresp" ]]; then                            vlife=local_preflight_failed   # 未触达 POST → cost 0
+    elif [[ -n "$vtask" ]]; then                              vlife=ambiguous_submission     # 任务已创建 → 计费
+    elif [[ -n "$vret" && "$vret" != "0" ]]; then             vlife=local_preflight_failed   # 业务拒绝(积分不足等)，无任务 → cost 0
+    else                                                      vlife=ambiguous_submission     # POST 已达但无 task_id → 保守计费
+    fi
+    jq -cn --arg s "$vlife" --arg id "$id" --arg tid "$vtask" --arg at "$(now)" \
+      '{state:$s,asset_id:$id,task_id:$tid,at:$at,source:"orchestrator-video-backfill"}' > "$audit/lifecycle.json"
   fi
-  rc=$?
   set -e
   life="$(jq -r '.state // empty' "$audit/lifecycle.json" 2>/dev/null || true)"
   ts="$(now)"
@@ -230,6 +256,10 @@ auto-qc)
   elif [[ "$kind" == video ]]; then
     command -v ffprobe >/dev/null || die "ffprobe required"
     ffprobe -v error "$out" >/dev/null 2>&1 || technical=fail
+  elif [[ "$kind" == speech ]]; then
+    command -v ffprobe >/dev/null || die "ffprobe required"
+    # 音频解码 + 存在音频流 + 时长>0
+    ffprobe -v error -select_streams a -show_entries stream=codec_type -of csv=p=0 "$out" 2>/dev/null | grep -q audio || technical=fail
   else
     technical=fail
   fi

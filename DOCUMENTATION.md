@@ -6,8 +6,10 @@
 
 - [SKILL.md](SKILL.md)：`ad-creative-expert` 的唯一主入口和路由规则。
 - [references/video-production-sop.md](references/video-production-sop.md)：所有新视频项目的唯一生产 SOP，内含能力加载目录、项目目录、完整分镜模板、生成与验收闸门。
+- [run.sh](run.sh) + [references/state-machine/main-sequence.json](references/state-machine/main-sequence.json)：项目级统一门禁与唯一编排入口（回合制推进状态机 + 总账哈希链 + 收编所有校验器 + 委托付费 orchestrator）。规则见 SOP §4.3；stage 脚本在 `replication/tools/stages/`。
 - [references/README.md](references/README.md)：方法论、SOP、案例蒸馏和学习资料索引。
 - [replication/README.md](replication/README.md)：AI 复刻/生产项目的素材、提示词、输出和日志索引。
+- [deprecated/README.md](deprecated/README.md)：被 `run.sh` 取代或一次性的废弃脚本归档（`run-codex.sh` 等），仅历史参考，不得再调用。
 - [PROJECT-KNOWLEDGE-AUDIT-2026-09-13.md](PROJECT-KNOWLEDGE-AUDIT-2026-09-13.md)：本次知识、经验、约束、SOP 与正反馈的盘点快照；不是生产规则来源。
 
 ## 2. 稳定文档与工作产物

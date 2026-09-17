@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "note": "SOP §4.1 项目主状态序列的机器可读版（权威源 references/video-production-sop.md:201-215）。run.sh 读它来校验状态迁移：前进只允许迁到序列中当前状态的下一个；失败只能回退到本 stage 的 *_pending 最小责任单元。旁支维度（model_locked / 付费事务态 / bootstrap）记 dimension 字段，不占主序 seq 前进校验。",
+  "genesisState": "initialized",
+  "states": [
+    "initialized",
+    "brief_pending",
+    "brief_confirmed",
+    "route_pending",
+    "route_confirmed",
+    "screenplay_pending",
+    "screenplay_confirmed",
+    "production_plan_pending",
+    "storyboard_confirmed",
+    "public_assets_pending",
+    "public_assets_accepted",
+    "shot_images_pending",
+    "shot_images_accepted",
+    "shot_videos_pending",
+    "shot_videos_accepted",
+    "final_workflow_pending",
+    "final_qc",
+    "complete"
+  ],
+  "pendingStates": [
+    "brief_pending",
+    "route_pending",
+    "screenplay_pending",
+    "production_plan_pending",
+    "public_assets_pending",
+    "shot_images_pending",
+    "shot_videos_pending",
+    "final_workflow_pending",
+    "final_qc"
+  ],
+  "stages": {
+    "stage1-screenplay": {
+      "paid": false,
+      "requiresMinState": "route_confirmed",
+      "phases": [
+        {"phase": "run", "from": "route_confirmed", "to": "screenplay_pending"},
+        {"phase": "gate-out", "from": "screenplay_pending", "to": "screenplay_confirmed"}
+      ],
+      "rollbackTo": "screenplay_pending"
+    },
+    "stage2-storyboard": {
+      "paid": false,
+      "requiresMinState": "screenplay_confirmed",
+      "phases": [
+        {"phase": "run", "from": "screenplay_confirmed", "to": "production_plan_pending"},
+        {"phase": "gate-out", "from": "production_plan_pending", "to": "storyboard_confirmed"}
+      ],
+      "rollbackTo": "production_plan_pending"
+    },
+    "stage3-images": {
+      "paid": true,
+      "requiresMinState": "storyboard_confirmed",
+      "phases": [
+        {"phase": "run", "sub": "masters", "from": "storyboard_confirmed", "to": "public_assets_pending"},
+        {"phase": "gate-out", "sub": "masters", "from": "public_assets_pending", "to": "public_assets_accepted"},
+        {"phase": "run", "sub": "shots", "from": "public_assets_accepted", "to": "shot_images_pending"},
+        {"phase": "gate-out", "sub": "shots", "from": "shot_images_pending", "to": "shot_images_accepted"}
+      ],
+      "rollbackTo": "shot_images_pending"
+    },
+    "stage4-videos": {
+      "paid": true,
+      "requiresMinState": "shot_images_accepted",
+      "phases": [
+        {"phase": "run", "from": "shot_images_accepted", "to": "shot_videos_pending"},
+        {"phase": "gate-out", "from": "shot_videos_pending", "to": "shot_videos_accepted"}
+      ],
+      "rollbackTo": "shot_videos_pending"
+    },
+    "stage5-finish": {
+      "paid": true,
+      "requiresMinState": "shot_videos_accepted",
+      "phases": [
+        {"phase": "run", "from": "shot_videos_accepted", "to": "final_workflow_pending"},
+        {"phase": "gate-qc", "from": "final_workflow_pending", "to": "final_qc"},
+        {"phase": "gate-out", "from": "final_qc", "to": "complete"}
+      ],
+      "rollbackTo": "final_workflow_pending"
+    }
+  },
+  "rules": {
+    "forward": "to 必须是 states 中 from 的紧邻后继（index(to)==index(from)+1）。",
+    "rollback": "失败回退只允许迁到 index 更小且属于 pendingStates 的状态（最小责任单元）。",
+    "dimensions": "dimension=='main' 的记录参与状态前进校验；其它 dimension（model_locked / paid_txn / bootstrap）只记事实、不改主状态、不做邻接校验。"
+  }
+}

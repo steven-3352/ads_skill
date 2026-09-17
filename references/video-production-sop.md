@@ -178,8 +178,10 @@ project-id/
 │   ├── preflight.md
 │   ├── preflight.json
 │   ├── cost-plan.json
-│   ├── orchestrator-state.json
-│   └── audit/                      # 请求、响应、锁、hash、生命周期
+│   ├── <sub>.project.json           # 项目描述符：subproject_id/owner_globs/ledger/paid_state/model
+│   ├── <sub>.ledger.ndjson          # 总账（run.sh 唯一写，append-only + 哈希链）→ 即状态机落点
+│   ├── <sub>.paid-state.json        # 付费子账本（orchestrator 唯一写）
+│   └── requests/<id>/               # 请求、响应、锁、hash、生命周期（audit 证据）
 ├── review/                         # 从契约派生的只读审阅页面
 ├── edit/                           # 后期素材与待定终剪方案
 ├── final/                          # 仅放已验收成片
@@ -222,6 +224,18 @@ initialized
 - 用户明确说“开始生成视频/生视频”，表示当前页面的视频提示词已确认，不重复追问同一层级。
 - 确认不取消提示词、依赖、预算、防覆盖和技术/视觉验收。
 - 页面确认后锁定当前提示词 hash；任何改字都会使确认和审查失效。
+
+### 4.3 统一门禁与唯一编排入口 `run.sh`  〔🔴 P0 必牢记〕
+
+正式生产的每一步只经仓库根 **`run.sh`** 推进——它是本状态机的唯一编排入口，取代一切平行入口（旧 `run-codex.sh` 等已归档 `deprecated/`）。它做三件事：① gate-in 校验前置状态；② 分发 `replication/tools/stages/stageN-*.sh` 做 run/gate-out 校验（收编所有校验器）；③ gate-out 通过后作为**总账唯一写者**原子 append 一条带哈希链的记录，推进主状态。
+
+- **机器可读状态机**：`references/state-machine/main-sequence.json`（本 §4.1 序列的权威机读版，项目级共享；即 §3.1:181 画的 orchestrator-state 落点）。
+- **三层账本**（各有唯一写者，交叉核验）：总账 `automation/<sub>.ledger.ndjson`（run.sh 写，append-only + 哈希链）｜付费子账本 `automation/<sub>.paid-state.json`（`paid-asset-orchestrator.sh` 写）｜audit 证据 `automation/<sub>.paid-state 的 requests/<id>/`（生成脚本写 lifecycle/sha256）。
+- **项目描述符** `automation/<sub>.project.json`：`subproject_id/owner_globs/ledger/paid_state/model/state_sequence`。`owner_globs` 喂 foreign-guard 解决同目录多子片共存（他片零改动 gate）。
+- **回合制半自动**：脚本做 gate-in + gate-out + 状态推进；智能内容仍由主会话派隔离子 agent 产出，但**不过 gate-out 不算数**。付费 stage（图/视频/TTS）委托 orchestrator，不重造。
+- **底层生成脚本不动**：`generate-image/video/speech.sh` 保持可单独执行的原子工具，不塞账本/授权/状态。"唯一入口"落在**证据层**：绕过 run.sh 直调生成脚本的产物没有 paid-state 条目 + audit 证据链 + accept + 总账迁移，gate-out 不认、不进交付。
+- **统一退出码**：0 推进成功｜2 用法/内部错误｜10 gate-in 拒（状态/证据不足，含状态不足拒付）｜11 回合制暂停（待子 agent 产出）｜12 gate-out 拒（产物缺/sha256 不符/validate 非 0）｜13 他片零改动 gate 失败｜20 付费委托失败｜30 哈希链断裂。
+- **用法**：`run.sh <project-dir> <stage> --sub <sub> --phase <run|asset|qc|accept|reject|gate-qc|gate-out> [--unit <id>] [--evidence <file>]`；管理子命令 `--init --at <state>` / `--status` / `--history` / `--verify-chain`。stage 与相位绑定见状态机 JSON 的 `.stages`。
 
 ## 5. 阶段 0：初始化项目  〔🟡 P1 要内化〕
 

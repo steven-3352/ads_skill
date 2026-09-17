@@ -93,6 +93,14 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 
 所有进入图片或视频生成接口的最终提示词，只能由当前项目锁定模型对应的 skill 产出并完成生成前校验。最终 JSON 必须包含 `promptPolicy.model`、`promptPolicy.authoringSkill`、匹配的模型审查记录、`result=pass`、非空检查项、空 `unresolved_blockers` 和绑定最终 `.prompt` 的 `reviewed_prompt_sha256`。当前项目选择 Seedance 时使用 `replication/tools/validate-seedance-prompt-review.sh`；选择 H3 时使用 H3 专用校验器，不能用 Seedance 字段和格式替代。
 
+## 生产编排：唯一入口 `run.sh`
+
+正式生产的每一步只经仓库根 **`run.sh`** 推进（项目级统一门禁；取代 `run-codex.sh` 等平行入口，后者已归档 `deprecated/`）。它按 `references/state-machine/main-sequence.json` 校验前置状态 → 分发 `replication/tools/stages/stageN-*.sh` 做 run/gate-out 校验（收编 `validate-production-plan.mjs`、H3/Seedance 提示词评审、orchestrator 付费门）→ gate-out 通过后作为总账 `automation/<sub>.ledger.ndjson`（append-only + 哈希链）唯一写者推进主状态。
+
+- 回合制半自动：脚本做 gate-in/gate-out/状态推进，智能内容仍由主会话派**隔离子 agent** 产出，但不过 gate-out 不算数。
+- 底层 `generate-image/video/speech.sh` 不动，保持可单独执行；"唯一入口"落在证据层——绕过 run.sh 直调生成脚本的产物无 paid-state 条目/audit 证据链/accept/总账迁移，gate-out 不认、不进交付。
+- 用法：`run.sh <project-dir> <stage> --sub <sub> --phase <run|asset|qc|accept|reject|gate-qc|gate-out> [--unit <id>] [--evidence <file>]`；管理子命令 `--init --at <state>` / `--status` / `--history` / `--verify-chain`。退出码 0 成功｜10 gate-in 拒｜11 回合暂停｜12 gate-out 拒｜13 他片改动｜20 付费委托失败｜30 哈希链断裂。详见 SOP §4.3。
+
 ## 对话与生产闸门
 把用户沟通视为制作流程的一部分，不在第一次回复中同时完成 Brief、创意、脚本和付费生成。默认经过多轮创意沟通，至少完成 Brief、表现形式和路线三项确认；路线确认后自动生产：
 
