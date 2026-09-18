@@ -168,6 +168,7 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 - 需要补全或评审 Brief：读取 `references/brief-framework.md`
 - 需要发散、比较创意或评审观看动机：读取 `references/creative-attention.md`，使用统一创意门；不默认把所有商品迁移成视觉机关。
 - 需要写脚本、改稿或将情绪落实成表演与剪辑：读取 `references/script-direction.md`，按观众状态编排节拍，并验证产品角色和动作时长。
+- 需要做**情感/剧情类**短视频的剧作、缺失、人物、台词与克制叙事：读取 `references/emotional-drama-storycraft.md`。**创意广告/纯广告片/带货片只借鉴其第一、二章故事编剧内核（剧作结构、人物、悬念、节奏、短句、潜台词、金句），不套用情感类专属红线（缺失只显影不说破、克制=稀缺、结尾不点题、负空间、情感赛道数据基准）；广告片以显性购买理由/转化钩子为准。**
 - 需要理解多轮升级、对照好坏脚本或避免新模板化：读取 `references/creative-script-iterations.md`，其中版本为创作示范，未经投放验证。
 - 需要做日用、家居、服装、食品或美妆个护创意：读取 `references/category-playbook.md`
 - 需要平台化脚本、Hook 或 A/B 测试：读取 `references/platform-and-testing.md`

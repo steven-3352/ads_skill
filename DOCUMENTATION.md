@@ -42,6 +42,10 @@
 - `references/volcengine-video-distillation.md`：Volcengine 本地视频的内容、Hook、拍摄、爽点和购买理由蒸馏。
 - `references/creative-reheating-sop.md`：经典广告/旧创意的迁移和升级。
 
+### 情感/剧情内容方法论（有边界）
+
+- `references/emotional-drama-storycraft.md`：**仅情感/剧情类**短视频的九章创作方法论（剧作、缺失、台词、构图、导演）。**创意广告/纯广告片/带货片只借鉴其第一、二章故事编剧内核，不套用情感专属红线**（缺失只显影、克制=稀缺、结尾不点题、负空间、情感赛道数据）；量化留存门仍以 `video-production-sop.md` §9 [C]/[R] 为准。
+
 以上文件不是四套模板：通用框架负责方法，样本文件负责证据，具体案例只补充差异；出现重复时以通用框架为准。
 
 ### AI 视频生产与三 Skill 协作

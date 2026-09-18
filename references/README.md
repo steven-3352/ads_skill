@@ -21,6 +21,12 @@
 |[volcengine-video-distillation.md](volcengine-video-distillation.md)|本地 Volcengine 视频的内容/拍摄/Hook/购买理由蒸馏 SOP|
 |[creative-reheating-sop.md](creative-reheating-sop.md)|经典广告和旧创意的三路迁移、升级与回库|
 
+## 情感/剧情内容方法论（有边界）
+
+|文件|定位|
+|---|---|
+|[emotional-drama-storycraft.md](emotional-drama-storycraft.md)|**仅情感/剧情类**短视频的剧作、缺失、台词、构图、导演九章方法论。**创意广告/带货片只借鉴其第一、二章故事编剧内核，不套用情感专属红线（缺失只显影、克制=稀缺、结尾不点题、负空间、情感赛道数据）**；量化留存门以 `video-production-sop.md` §9 [C]/[R] 为准|
+
 ## AI 视频、三 Skill 协作与案例
 
 |文件|定位|
