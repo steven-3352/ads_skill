@@ -176,6 +176,7 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 - 需要执行“真实主体→机械中间态→商品”的 AI 变形短片，或需要用首尾关键帧提高 Seedance 生成稳定性：读取 `references/cases/wild-mode-animal-to-product-ai-sop.md`，复用端点派生、几何守恒、单难题生成、自动验收和后期闭合规则，不复制本案动物、服装或产品设计。
 - 需要为饮料、咖啡、茶、果汁、乳饮、运动饮料、热饮、酒饮或其他可入口产品设计感官创意，尤其是“每喝一口切换一种感觉、状态、身份或场景”：读取 `references/cases/drink-each-sip-state-switch.md`，使用味觉外化、状态卡、重复升级、瓶形构图和产品回扣，不复制样本人物、品牌、色彩、广告语或道具。
 - 需要把夜间、自动、静置或循环过程视觉化，或设计“语义接力 + 尺度世界 + 后台夜班”结构：读取 `references/cases/kerastase-night-serum-dream-slide.md`，迁移时间代理与现实回环，不复制发丝滑梯、人物、花草、音乐或品牌资产。
+- 需要设计口播/独白驱动的情感短剧（亲情、爱情、成长等），尤其追求“画面一直在切却像一段完整的话”的丝滑衔接：读取 `references/cases/narration-driven-emotional-microdrama-storyboard.md`，套用逐句拆镜、连续音频、同场景多景别、道具接力、崩点留白和金句卡机制，使用其镜头 12 维、8 种镜头类型、决策树与空白镜头表模板；只继承机制，不复制样本人物、台词、场景或音乐。
 
 ## 安全与真实性
 

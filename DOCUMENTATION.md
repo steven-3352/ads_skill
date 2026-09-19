@@ -46,6 +46,7 @@
 
 - `references/video-production-sop.md`：唯一生产流程；统一 `ads → screenwriting → ads 分镜 → H3/Seedance 视频提示词 → 逐单元生成/验收`，并包含能力目录、项目目录、Shot/Panel/Unit 模板、连续性、成本和状态机。
 - `references/cases/`：具体 AI 生产案例，不能替代通用 SOP。
+  - `references/cases/narration-driven-emotional-microdrama-storyboard.md`：口播驱动情感短剧的分镜设计操作系统（逐句拆镜、连续音频、同场景多景别、道具接力、崩点留白、金句卡）；含镜头 12 维、8 种镜头类型、决策树与空白镜头表模板。
 
 ### 数据、案例和迭代
 

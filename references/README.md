@@ -27,6 +27,7 @@
 |---|---|
 |[video-production-sop.md](video-production-sop.md)|**【所有新视频项目强制前置·唯一生产权威】**能力加载目录、项目目录、Skill 分工、完整 Shot/Panel/Unit 模板、连续性、模型路由、逐镜生成、成本、状态和验收|
 |[cases/](cases/)|单案例制作决策；先读通用 SOP，再按需读取案例|
+|[cases/narration-driven-emotional-microdrama-storyboard.md](cases/narration-driven-emotional-microdrama-storyboard.md)|口播驱动情感短剧的分镜设计操作系统：全片 8 件事、镜头 12 维、8 种镜头类型、声音层、转场、AI 约束、决策树、空白镜头表模板与逐句拆镜工作流|
 
 ## 数据和经验
 
