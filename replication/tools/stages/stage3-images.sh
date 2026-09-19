@@ -25,7 +25,8 @@ case "$phase" in
     case "$cur" in
       storyboard_confirmed)   from="$cur"; to="public_assets_pending"; grp="master" ;;
       public_assets_accepted) from="$cur"; to="shot_images_pending";   grp="shot_image" ;;
-      *) emit_reject 10 "stage3 run 需 storyboard_confirmed 或 public_assets_accepted（当前 $cur）" ;;
+      shot_images_accepted)   from="$cur"; to="shot_images_pending";   grp="shot_image" ;;  # 返工回退：已收编的关键帧组需补/替镜时回到 pending（合 run.sh 回退规则：更低序 *_pending）
+      *) emit_reject 10 "stage3 run 需 storyboard_confirmed / public_assets_accepted / shot_images_accepted（当前 $cur）" ;;
     esac
     pc_foreign_baseline
     emit_pause "$from" "$to" "stage3:run:$grp" \

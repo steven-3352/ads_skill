@@ -18,8 +18,7 @@
     "shot_images_accepted",
     "shot_videos_pending",
     "shot_videos_accepted",
-    "final_workflow_pending",
-    "final_qc",
+    "final_cut_pending",
     "complete"
   ],
   "pendingStates": [
@@ -30,8 +29,7 @@
     "public_assets_pending",
     "shot_images_pending",
     "shot_videos_pending",
-    "final_workflow_pending",
-    "final_qc"
+    "final_cut_pending"
   ],
   "stages": {
     "stage1-screenplay": {
@@ -68,19 +66,11 @@
       "requiresMinState": "shot_images_accepted",
       "phases": [
         {"phase": "run", "from": "shot_images_accepted", "to": "shot_videos_pending"},
-        {"phase": "gate-out", "from": "shot_videos_pending", "to": "shot_videos_accepted"}
+        {"phase": "gate-out", "from": "shot_videos_pending", "to": "shot_videos_accepted"},
+        {"phase": "finalize", "from": "shot_videos_accepted", "to": "final_cut_pending"},
+        {"phase": "deliver", "from": "final_cut_pending", "to": "complete"}
       ],
       "rollbackTo": "shot_videos_pending"
-    },
-    "stage5-finish": {
-      "paid": true,
-      "requiresMinState": "shot_videos_accepted",
-      "phases": [
-        {"phase": "run", "from": "shot_videos_accepted", "to": "final_workflow_pending"},
-        {"phase": "gate-qc", "from": "final_workflow_pending", "to": "final_qc"},
-        {"phase": "gate-out", "from": "final_qc", "to": "complete"}
-      ],
-      "rollbackTo": "final_workflow_pending"
     }
   },
   "rules": {

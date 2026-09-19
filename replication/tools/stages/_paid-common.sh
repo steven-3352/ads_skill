@@ -81,19 +81,24 @@ pc_group_gate_out() { # <group> <from> <to> <gate>
   [[ $FGRC -eq 13 ]] && emit_reject 13 "foreign-guard：他片被改动，拒绝推进"
   [[ $FGRC -eq 0 ]]  || emit_reject 12 "foreign-guard 无法校验(rc=$FGRC)；stage run 阶段须先 baseline"
 
-  # 该组 + 在授权名单内的资产必须存在且全部 accepted
+  # 该组 + 在授权名单内的资产必须"已解决"：accepted，或 rejected 且 superseded_by 指向一个 accepted 资产。
+  # 且该组至少有一个 accepted。真正缺失/未替换的被拒资产仍会挡住 gate-out。
   local ok
   ok="$(jq -r --arg g "$group" '
+    . as $root |
     (.authorization.asset_ids // []) as $a |
     ([.assets[] | select(.group==$g) | select((.id) as $id | ($a|index($id))!=null)]) as $grp |
-    if ($grp|length)==0 then "empty"
-    elif (all($grp[]; .status=="accepted")) then "ok"
-    else "bad" end' "$PAID_STATE")"
+    (def resolved($x):
+       $x.status=="accepted"
+       or ($x.status=="rejected" and (($x.superseded_by//"") as $s | $s!="" and any($root.assets[]; .id==$s and .status=="accepted")));
+     if ($grp|length)==0 then "empty"
+     elif (all($grp[]; resolved(.))) and (any($grp[]; .status=="accepted")) then "ok"
+     else "bad" end)' "$PAID_STATE")"
   if [[ "$ok" == "empty" ]]; then
     emit_reject 12 "gate-out：授权名单内无 group=$group 资产（paid-state 未按本阶段配置）"
   elif [[ "$ok" != "ok" ]]; then
-    local bad; bad="$(jq -r --arg g "$group" '.authorization.asset_ids as $a|[.assets[]|select(.group==$g and ((.id) as $id|($a|index($id))!=null))|select(.status!="accepted")|"\(.id):\(.status)"]|join(", ")' "$PAID_STATE")"
-    emit_reject 12 "gate-out：group=$group 尚有未 accepted 资产：$bad"
+    local bad; bad="$(jq -r --arg g "$group" '.authorization.asset_ids as $a|[.assets[]|select(.group==$g and ((.id) as $id|($a|index($id))!=null))|select(.status!="accepted" and ((.superseded_by//"")==""))|"\(.id):\(.status)"]|join(", ")' "$PAID_STATE")"
+    emit_reject 12 "gate-out：group=$group 尚有未解决资产（未 accepted 且未被替换）：$bad"
   fi
 
   # 逐件 sha256 账实一致（paid-state.sha256 vs 磁盘产物；output 相对 REPO_ROOT）
