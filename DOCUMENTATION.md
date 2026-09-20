@@ -53,6 +53,7 @@
 - `references/video-production-sop.md`：唯一生产流程；统一 `ads → screenwriting → ads 分镜 → H3/Seedance 视频提示词 → 逐单元生成/验收`，并包含能力目录、项目目录、Shot/Panel/Unit 模板、连续性、成本和状态机。
 - `references/storyboard-methodology.md`：分镜设计推理层——手册创作层与 SOP 模板层熔合的「剧本→成片」六步分镜方法论；逐句拆镜工作流、8 种镜型学、镜头语言决策树、声画错位、崩点配方、物证升级、常见病导航；覆盖视频/图片关键帧/图文三种分镜。模板字段、[R]/[C] 双门、模型路由、验收仍以 `video-production-sop.md` 为唯一权威，冲突以 SOP 为准。
 - `references/cases/`：具体 AI 生产案例，不能替代通用 SOP。
+  - `references/cases/narration-driven-emotional-microdrama-storyboard.md`：`storyboard-methodology.md` 的案例实证+明细附录（V1/V2 实测、镜头 12 维、物品镜 6 规则、声音 6 层、转场 7 开关、AI 约束、决策树、空白镜头表模板）；通用拆镜推理以方法论与 SOP 为准。
 
 ### 数据、案例和迭代
 
