@@ -1,0 +1,29 @@
+{
+  "prompt": "第6个生成单元，约4秒，近景。承接首帧：客厅顶灯全开、明亮通透、中性偏暖白（家常真实的晚间、绝不文艺单光源压暗）。男主 B 两手一摊、眉头拧着、是真的不懂——不是冷漠是懵的，他真实内心是‘不帮不给，我还能干嘛’。【对白】B（两手一摊、真困惑）：那……我不帮你，我干坐着？【音效必带】B 的对白、极轻家常环境声。男主 B 穿深蓝针织衫配白衬衫领、女主 A 穿米色针织，面孔/发型/体型严格随参考帧一致，两人均为 East Asian 中国人面孔。16:9 横屏，iPhone 手持轻微晃动的真实 vlog 质感、不摆拍不打光、家常明亮。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。对白随镜 H3 同期配音+表演直出，不烧任何字幕。",
+  "model": "MiniMax-H3",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA·对白同期·真困惑",
+    "checks": [
+      "B两手一摊的真困惑(懵不是冷)",
+      "近景抓微表情眉头拧",
+      "单句对白同期、音效必带极轻环境",
+      "anti-subtitle零字幕"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a40ac5f9521d319b0e0df9fae99f199fad46b2a08c397726802bfb64aebcdb36"
+  },
+  "narrative_alignment": {
+    "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3）",
+    "unit": "U6",
+    "note": "承接同名关键帧+剧本原台词，H3对白同期、成片零字幕"
+  },
+  "duration": 4,
+  "ratio": "16:9",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/you-budong-me/shots/U6-first.png"
+  ]
+}

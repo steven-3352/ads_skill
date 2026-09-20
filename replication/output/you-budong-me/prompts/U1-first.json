@@ -1,0 +1,42 @@
+{
+  "prompt": "写实居家情感短剧首帧，16:9 横屏，iPhone 手持中景、轻微晃动的真实 vlog 质感，不摆拍、不打光。场景：一个普通晚上的客厅，顶灯开着、明亮通透、光色中性偏暖白（家常真实，不是文艺单光源压暗）。人物均为 East Asian 中国人面孔：男主 B（穿家居卫衣、放松地窝在沙发画面右侧一头），低头专注刷手机，手机屏幕的光映在脸上，头没有抬起来；女主 A（下班回家、穿家居针织衫），刚从画面左侧门口进来，一只手还搭在门边，脸垮着、憋着一整天的委屈站住，视线先落在茶几外卖上、又移向 B 的后脑，眼神里是没被接住的失落。两人各占沙发一头，中间是茶几，茶几上摆着一份打开的黄焖鸡外卖、正冒着袅袅热气（热气清晰可见，是全片热气递减线的起点）。构图让两人之间的茶几与空隙形成物理间隔＝心理距离。侧方电视/游戏画面有微弱反光。人物面孔、发型、体型严格保持与参考图一致（参考图为 A、B 身份母板）。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-19T00:00:00+08:00",
+    "checks": [
+      "选角显式锁 East Asian 中国人面孔，防文生图默认欧美脸",
+      "灯光家常明亮顶灯、中性偏暖白，非文艺单光源压暗",
+      "anti-subtitle：无字幕/无字幕条/无屏幕文字/无水印/无logo",
+      "为后镜留状态：手机在B手、外卖冒热气(热气线起点)、两人各坐一头相对位置",
+      "画幅锁 16:9 → 1536x1024，与 H3 竖屏无关（本项目横屏）",
+      "面孔/发型/体型随参考母板 A/B 一致，身份根锁死",
+      "无插入/静物镜关键词，人物镜携带母板参考正当（不触发肖像磁吸门）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "60fa9cfe66bd0c843ed910bcabd0d776025e43a8e8c7b845b9e6ba6eccf0c0d6"
+  },
+  "narrative_alignment": {
+    "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3，sha256 3f5b7be5…61da8）段1 钩子 0–5s",
+    "related_beats": [
+      "b01"
+    ],
+    "related_shots": [
+      "01"
+    ],
+    "visual_evidence": [
+      "B 窝沙发画右低头刷手机、头没抬",
+      "茶几上黄焖鸡外卖打开冒热气（热气递减线起点）",
+      "A 从画左门口进来、脸垮憋委屈站住",
+      "两人各坐沙发一头、中间茶几+空隙=距离",
+      "家常明亮顶灯、iPhone 手持中景真实质感"
+    ],
+    "unresolved_blockers": []
+  }
+}

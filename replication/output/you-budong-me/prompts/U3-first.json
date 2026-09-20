@@ -1,0 +1,43 @@
+{
+  "prompt": "近中景，偏男主 B。B 坐直了一点，眼睛还黏在手机屏幕上，一只手比划着给女主出主意（给方案的姿态），手机仍攥在手里。女主 A 在画面另一侧、略虚焦，神情从期待转向忍耐。茶几外卖热气很弱。场景为普通晚上的客厅，顶灯开着、光线家常明亮、中性偏暖白（真实居家夜晚，不做文艺单光源压暗），写实居家质感，侧方电视/游戏画面有微弱反光。人物面孔、发型、体型严格保持与参考图一致（参考图为 A、B 身份母板），均为 East Asian 中国人面孔。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。iPhone 手持中景、轻微晃动的真实 vlog 质感，不摆拍、不打光，16:9 横屏。",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-19T12:00:00+08:00",
+    "checks": [
+      "选角显式锁 East Asian 中国人面孔，防欧美脸",
+      "灯光延续 U1 家常夜晚基调（顶灯开着、家常明亮、中性偏暖白），全片一致",
+      "anti-subtitle：无字幕/无字幕条/无屏幕文字/无水印/无logo",
+      "面孔/发型/体型随参考母板 A/B 一致，身份根锁死",
+      "画幅锁 16:9 → 1536x1024（本项目横屏）",
+      "B坐直手比划给方案",
+      "B眼睛黏手机、手机在手",
+      "A另一侧略虚焦转忍耐",
+      "茶几外卖热气很弱"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "40abfc06ae51128e7cc13ac6520542d7d1103c620f95e780af6c55c245992ac5"
+  },
+  "narrative_alignment": {
+    "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3，sha256 3f5b7be5…61da8）",
+    "related_beats": [
+      "b03"
+    ],
+    "related_shots": [
+      "03"
+    ],
+    "visual_evidence": [
+      "B坐直手比划给方案",
+      "B眼睛黏手机、手机在手",
+      "A另一侧略虚焦转忍耐",
+      "茶几外卖热气很弱"
+    ],
+    "unresolved_blockers": []
+  }
+}

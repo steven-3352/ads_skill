@@ -1,0 +1,45 @@
+{
+  "prompt": "近景，女主 A。A 眼泪掉了下来、却又笑了一下、轻轻摇摇头，是泪与笑与摇头交织的矛盾表情（时间差心碎，不是指责、不是怨）。茶几上手机、以及已经凉透、不再冒热气的黄焖鸡外卖。场景为普通晚上的客厅，顶灯开着、光线家常明亮、中性偏暖白（真实居家夜晚，不做文艺单光源压暗），写实居家质感，侧方电视/游戏画面有微弱反光。人物面孔、发型、体型严格保持与参考图一致（参考图为 A、B 身份母板），均为 East Asian 中国人面孔。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。iPhone 手持中景、轻微晃动的真实 vlog 质感，不摆拍、不打光，16:9 横屏。",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-19T12:00:00+08:00",
+    "checks": [
+      "选角显式锁 East Asian 中国人面孔，防欧美脸",
+      "灯光延续 U1 家常夜晚基调（顶灯开着、家常明亮、中性偏暖白），全片一致",
+      "anti-subtitle：无字幕/无字幕条/无屏幕文字/无水印/无logo",
+      "面孔/发型/体型随参考母板 A/B 一致，身份根锁死",
+      "画幅锁 16:9 → 1536x1024（本项目横屏）",
+      "A泪掉下来却笑了一下摇头",
+      "泪笑摇头的矛盾表情",
+      "是放弃不是指责",
+      "外卖已凉无热气",
+      "手机在茶几"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "efbc6150a6c8f02aa4da3ad0422e6cdb3d107eefa395f8576fe3a4a3647ec4c2"
+  },
+  "narrative_alignment": {
+    "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3，sha256 3f5b7be5…61da8）",
+    "related_beats": [
+      "b09"
+    ],
+    "related_shots": [
+      "09"
+    ],
+    "visual_evidence": [
+      "A泪掉下来却笑了一下摇头",
+      "泪笑摇头的矛盾表情",
+      "是放弃不是指责",
+      "外卖已凉无热气",
+      "手机在茶几"
+    ],
+    "unresolved_blockers": []
+  }
+}

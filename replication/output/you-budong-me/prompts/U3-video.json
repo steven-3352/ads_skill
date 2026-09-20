@@ -1,0 +1,30 @@
+{
+  "prompt": "第3个生成单元，约6秒，正反打近中景。承接首帧：客厅顶灯全开、明亮通透、中性偏暖白（家常真实的晚间、绝不文艺单光源压暗）。男主 B 盯着手机、开始出主意、手比划着给具体方案——他真实内心是‘赶紧帮她把问题解决了她就不难受了’。女主 A 越听越被推开、忍不住、声音抬高半度。【对白】A：我不是要你教我怎么办……B（手比划、越说越具体）：那你想咋样？要不我帮你写个邮件，把时间线一捋，甩回去。A（停一下、声音抬高半度）：……你能不能，先把手机放下。【音效必带】两人对白、电视背景音。切点贴着‘她要共情、他给方案’的错位，硬切加快憋屈感。男主 B 穿深蓝针织衫配白衬衫领、女主 A 穿米色针织，面孔/发型/体型严格随参考帧一致，两人均为 East Asian 中国人面孔。16:9 横屏，iPhone 手持轻微晃动的真实 vlog 质感、不摆拍不打光、家常明亮。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。对白随镜 H3 同期配音+表演直出，不烧任何字幕。",
+  "model": "MiniMax-H3",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA·对白同期·正反打",
+    "checks": [
+      "B给方案手比划(真心想帮却越帮越错)",
+      "A被推开、声音抬高半度要求放下手机",
+      "正反打硬切贴错位回合",
+      "对白三句同期、音效必带",
+      "anti-subtitle零字幕"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bddd8d447d987e3ab4366e06657de05a111b53015e31dc9719eea267e647f712"
+  },
+  "narrative_alignment": {
+    "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3）",
+    "unit": "U3",
+    "note": "承接同名关键帧+剧本原台词，H3对白同期、成片零字幕"
+  },
+  "duration": 6,
+  "ratio": "16:9",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/you-budong-me/shots/U3-first.png"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "prompt": "第4个生成单元，约6秒，近景，首尾帧锁定动作（FL2VA）。客厅顶灯全开、明亮通透、中性偏暖白（家常真实的晚间、绝不文艺单光源压暗）。首帧：手机还在 B 手里、B 侧身朝 A、A 苦笑移开视线。动作过程：B 把手机从手里放下、搁到茶几上（放手机声），身体还没真正转过来，自认‘我明明在听’；到尾帧：手机已平放茶几、B 手离开手机。A 苦笑点破——她真实内心是‘我要的东西，从来不在你给的清单里’。【对白】B（放下手机、有点无辜）：我放下了。你说，我听着呢。A（苦笑、移开视线）：我从进门说到现在，你就给我点了个黄焖鸡。【音效必带】放手机搁茶几的轻响、两人对白、家常环境声。男主 B 穿深蓝针织衫配白衬衫领、女主 A 穿米色针织，面孔/发型/体型严格随参考帧一致，两人均为 East Asian 中国人面孔。16:9 横屏，iPhone 手持轻微晃动的真实 vlog 质感、不摆拍不打光、家常明亮。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。对白随镜 H3 同期配音+表演直出，不烧任何字幕。",
+  "model": "MiniMax-H3",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA·放手机·对白同期",
+    "checks": [
+      "FL2VA首帧手机在手→尾帧手机搁茶几、B手离开",
+      "B自认在听的无辜、身体还没转过来",
+      "A苦笑点破移视线的心碎",
+      "放手机声+对白同期、音效必带",
+      "anti-subtitle零字幕"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "848bc193bf0053a9a41de9da8c6c829f2df90d0d82eba747e7975735b42e029f"
+  },
+  "narrative_alignment": {
+    "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3）",
+    "unit": "U4",
+    "note": "承接同名关键帧+剧本原台词，H3对白同期、成片零字幕"
+  },
+  "duration": 6,
+  "ratio": "16:9",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/you-budong-me/shots/U4-first.png",
+    "/home/ubuntu/ads_skill/replication/output/you-budong-me/shots/U4-last.png"
+  ]
+}

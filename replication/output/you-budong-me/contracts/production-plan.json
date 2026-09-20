@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "projectId": "you-budong-me",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": { "maxGenerationSeconds": 8 },
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "钩子·一进门就错位",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "回来啦。给你点了黄焖鸡，在桌上。" },
+      "requiredBeats": [
+        { "id": "b01", "sceneId": "s1", "text": "普通的晚上客厅灯开着，B窝沙发刷手机，桌上黄焖鸡外卖冒气；A进门脸垮站住；B头没抬报外卖。家常环境声/电视游戏背景音/手机提示音/开门声。", "channels": ["picture", "dialogue", "ambience", "action_sound"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U1", "sceneId": "s1", "durationSeconds": 5,
+          "cuts": [
+            { "id": "c1", "seconds": 5, "coverage": [ { "beatId": "b01", "channels": ["picture", "dialogue", "ambience", "action_sound"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U1-first.json"], "video": "prompts/U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "冲突·她讲甩锅委屈",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "今天那个方案，又算到我头上了。" },
+      "requiredBeats": [
+        { "id": "b02", "sceneId": "s1", "text": "同框对撞（避免单向倾诉停滞）：A坐到沙发另一头试探着讲被甩锅委屈——语速慢、手绞着、盯B侧脸求回应；B眼睛始终黏在手机上，心不在焉敷衍地\"嗯\"一声。情绪双线对撞：她要被接住 ↔ 他没接住（第一层错位起点）。家常环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U2", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b02", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U2-first.json"], "video": "prompts/U2-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "对质·他盯手机给方案",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "那你明天跟领导说清楚啊，谁的锅谁背。" },
+      "requiredBeats": [
+        { "id": "b03", "sceneId": "s1", "text": "正反打：B眼睛还在手机上给方案（明天跟领导说清楚），A打断说不是要教怎么办，最后忍不住让他先把手机放下。家常环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U3", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b03", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U3-first.json"], "video": "prompts/U3-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "对质·假装在听（放手机·FL2VA）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "我放下了。你说，我听着呢。" },
+      "requiredBeats": [
+        { "id": "b04", "sceneId": "s1", "text": "状态变化：B把手机放下（首帧手机在手、尾帧手机搁茶几），嘴上说我听着呢；A点破你就给我点了个黄焖鸡。放手机声、家常环境声。", "channels": ["picture", "dialogue", "ambience", "action_sound"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U4", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b04", "channels": ["picture", "dialogue", "ambience", "action_sound"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U4-first.json", "prompts/U4-last.json"], "video": "prompts/U4-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "对质·错位加码（我照做）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "那你到底要我怎么办嘛？你说，我照做。" },
+      "requiredBeats": [
+        { "id": "b05", "sceneId": "s1", "text": "正反打贴错位硬切（每个回合一刀，加快憋屈感）：A委屈上扬\"我没让你关心吃没吃饭，我就想让你听我说话\" → B急了\"我在听啊！那你到底要我怎么办，我照做\" → A声音沉下来、心凉\"你又要照做\"。情绪双线对撞：她要共情 ↔ 他要任务清单。家常环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U5", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b05", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U5-first.json"], "video": "prompts/U5-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "顶点·他真困惑（干坐着？）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "那……我不帮你，我干坐着？" },
+      "requiredBeats": [
+        { "id": "b06", "sceneId": "s1", "text": "近景：B两手一摊，是真的不懂——不帮不给我还能干嘛。家常环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U6", "sceneId": "s1", "durationSeconds": 4,
+          "cuts": [
+            { "id": "c1", "seconds": 4, "coverage": [ { "beatId": "b06", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U6-first.json"], "video": "prompts/U6-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "顶点·她真心碎（你就坐着）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "对。你就坐着。听我说完。抱我一下。就够了。" },
+      "requiredBeats": [
+        { "id": "b07", "sceneId": "s1", "text": "慢推近景：A眼睛红了很轻很慢说对你就坐着听我说完抱我一下就够了；B愣住。极轻环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U7", "sceneId": "s1", "durationSeconds": 5,
+          "cuts": [
+            { "id": "c1", "seconds": 5, "coverage": [ { "beatId": "b07", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U7-first.json"], "video": "prompts/U7-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "余波·手停半空（挪身·FL2VA）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "……那你说。我不插嘴了。" },
+      "requiredBeats": [
+        { "id": "b08", "sceneId": "s1", "text": "状态变化：B慢慢往A那头挪（首帧各坐一头、尾帧挪近抬手停半空），很小声说那你说我不插嘴了；A没动。衣物摩擦声、沉默、家常环境声。", "channels": ["picture", "dialogue", "ambience", "action_sound"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U8", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b08", "channels": ["picture", "dialogue", "ambience", "action_sound"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U8-first.json", "prompts/U8-last.json"], "video": "prompts/U8-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "title": "余波·太晚了（算了不想说了）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "算了。今天……不想说了。" },
+      "requiredBeats": [
+        { "id": "b09", "sceneId": "s1", "text": "近景：A眼泪掉下来却笑了一下摇摇头说算了今天不想说了（时间差心碎）。家常环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U9", "sceneId": "s1", "durationSeconds": 5,
+          "cuts": [
+            { "id": "c1", "seconds": 5, "coverage": [ { "beatId": "b09", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U9-first.json"], "video": "prompts/U9-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "落幅·物件回扣（音效镜）",
+      "source": { "storyFile": "story/你根本不懂我-对白驱动情感短剧剧本.md", "verbatim": "桌上手机亮了一下，谁都没看。" },
+      "requiredBeats": [
+        { "id": "b10", "sceneId": "s1", "text": "静物/双人落幅无对白：A低头扒一口凉掉的黄焖鸡，B不知该给什么；桌上手机亮一下没人看；扒饭声、手机震动、环境声渐弱，切黑场。", "channels": ["picture", "ambience", "action_sound", "transition"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U10", "sceneId": "s1", "durationSeconds": 4,
+          "cuts": [
+            { "id": "c1", "seconds": 4, "coverage": [ { "beatId": "b10", "channels": ["picture", "ambience", "action_sound", "transition"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U10-first.json"], "video": "prompts/U10-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    }
+  ]
+}

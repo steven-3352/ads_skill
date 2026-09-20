@@ -1,0 +1,1326 @@
+{
+  "schema_version": 1,
+  "project_id": "youbudong",
+  "episode": "master",
+  "status": "blocked_pending_semantic_qc",
+  "created_at": "2026-09-19T00:00:00+08:00",
+  "updated_at": "2026-09-19T22:43:15+08:00",
+  "budget": {
+    "committed_yuan": 14.05,
+    "hard_cap_yuan": 15
+  },
+  "authorization": {
+    "committed_yuan": 14.05,
+    "increment_cap_yuan": 15,
+    "asset_ids": [
+      "U1-first",
+      "U1-first-v2",
+      "U1-video",
+      "U10-first",
+      "U10-video",
+      "U2-first",
+      "U2-video",
+      "U3-first",
+      "U3-video",
+      "U4-first",
+      "U4-last",
+      "U4-video",
+      "U5-first",
+      "U5-video",
+      "U6-first",
+      "U6-video",
+      "U7-first",
+      "U7-video",
+      "U8-first",
+      "U8-last",
+      "U8-video",
+      "U9-first",
+      "U9-video",
+      "youbudong-A-master",
+      "youbudong-B-master"
+    ],
+    "allow_pending_semantic_qc": true
+  },
+  "assets": [
+    {
+      "id": "youbudong-A-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/assets/fenshou-pengyou-F-master.json",
+      "output": "replication/output/you-budong-me/assets/master-A.png",
+      "submission_started_at": "2026-09-19T00:00:00+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/youbudong-A-master",
+      "sha256": "ac5852b4c2dce8af40c3c1542228cbc164544e01a50437f794234c85d3a5d7cb",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T00:00:00+08:00",
+        "note": "reused from douyin-fenshou-pengyou F-master; structural decode passed (1536x1024)"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T00:00:00+08:00",
+        "evidence": "contracts/production-orchestration-contract.md",
+        "note": "母板复用认可：F-master(25-28 沉静憋屈)作 A 身份根，各镜 --reference 锁脸，居家化换装在镜头提示词赋予；复用省母板生成 ¥0.25",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T00:00:00+08:00"
+    },
+    {
+      "id": "youbudong-B-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/assets/fenshou-pengyou-M-master.json",
+      "output": "replication/output/you-budong-me/assets/master-B.png",
+      "submission_started_at": "2026-09-19T00:00:00+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/youbudong-B-master",
+      "sha256": "3c4b251ba5714bf856f7aa73779f0390d7aaa404fd23a83967a7d44e1930d801",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T00:00:00+08:00",
+        "note": "reused from douyin-fenshou-pengyou M-master; structural decode passed (1536x1024)"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T00:00:00+08:00",
+        "evidence": "contracts/production-orchestration-contract.md",
+        "note": "母板复用认可：M-master(32-35 成熟理性)作 B 身份根，提示词里居家化换家居卫衣/放松坐姿；复用省母板生成 ¥0.25",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T00:00:00+08:00"
+    },
+    {
+      "id": "U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "rejected",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U1-first.json",
+      "output": "replication/output/you-budong-me/shots/U1-first.png",
+      "submission_started_at": "2026-09-19T11:34:55+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U1-first",
+      "sha256": "19c2b6d33e2cabf5cae4d8e51c2cbffcd1bebc126951e810b8c3443020f2e2b2",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T13:18:43+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T13:18:55+08:00",
+        "evidence": "replication/output/you-budong-me/review/U1-first-semantic-qc.md",
+        "note": "金丝雀人工验收:画风全命中,灯光夜暗调用户接受为基调(B通过)",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T13:18:55+08:00",
+      "superseded_by": "U1-first-v2",
+      "superseded_from_accepted": true,
+      "retired_at": "2026-09-19T15:10:53+08:00"
+    },
+    {
+      "id": "U2-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U2-first.json",
+      "output": "replication/output/you-budong-me/shots/U2-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:26:14+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U2-first",
+      "sha256": "5287971ee67fb48051edc0eae9590f4462be5e6ba139db768ae8281c45f2f3c2",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:10+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:11+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:11+08:00"
+    },
+    {
+      "id": "U3-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U3-first.json",
+      "output": "replication/output/you-budong-me/shots/U3-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:30:22+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U3-first",
+      "sha256": "82cf2aed0627c6389bf4ea066815d353684e7c6cfe24360d0da39e0fb19337a8",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:11+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:11+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:11+08:00"
+    },
+    {
+      "id": "U4-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U4-first.json",
+      "output": "replication/output/you-budong-me/shots/U4-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:33:19+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U4-first",
+      "sha256": "179b3d4d3646c7c3e1020887812ec1da03256a94cbe84aa4dae1907937adc951",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:11+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:12+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:12+08:00"
+    },
+    {
+      "id": "U4-last",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U4-last.json",
+      "output": "replication/output/you-budong-me/shots/U4-last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:37:45+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U4-last",
+      "sha256": "7db1d18e8669455381b3f59667a6c9db4b0350a8c15461a6cf5bf39aa3cc1567",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:12+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:12+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:12+08:00"
+    },
+    {
+      "id": "U5-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U5-first.json",
+      "output": "replication/output/you-budong-me/shots/U5-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:41:21+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U5-first",
+      "sha256": "701743eedc05f8f982a30ce0b5cecefc6f7158b121a39b467209e1ab9dc9f46e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:12+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:13+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:13+08:00"
+    },
+    {
+      "id": "U6-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U6-first.json",
+      "output": "replication/output/you-budong-me/shots/U6-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:45:38+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U6-first",
+      "sha256": "8c06e73d8f0ea2ee68b72b4f7ab7682e9fcee187c78595a60df7c98bb8a6bd06",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:13+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:13+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:13+08:00"
+    },
+    {
+      "id": "U7-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U7-first.json",
+      "output": "replication/output/you-budong-me/shots/U7-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:49:49+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U7-first",
+      "sha256": "0ba41f9471b9205a7be8bccd478bbe7c2f700b41593826f9a905fbcae84e5afe",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:13+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:14+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:14+08:00"
+    },
+    {
+      "id": "U8-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U8-first.json",
+      "output": "replication/output/you-budong-me/shots/U8-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:54:14+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U8-first",
+      "sha256": "449dea91bf1376cb3d4983e62195869976afa51de4c9de1473f7cfda5efe25b2",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:14+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:14+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:14+08:00"
+    },
+    {
+      "id": "U8-last",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U8-last.json",
+      "output": "replication/output/you-budong-me/shots/U8-last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T13:59:03+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U8-last",
+      "sha256": "600c249576143e56f56c9bc9428bfc6db997d4c3024e794d2201f64013add3c3",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:14+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:14+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:14+08:00"
+    },
+    {
+      "id": "U9-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U9-first.json",
+      "output": "replication/output/you-budong-me/shots/U9-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T14:05:57+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U9-first",
+      "sha256": "c84f93de13cef165c3fa138cd7e40e1968143aa80e5e1ffb1e13abf8ae4679d6",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:15+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:15+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:15+08:00"
+    },
+    {
+      "id": "U10-first",
+      "kind": "image",
+      "group": "shot_image",
+      "cost_yuan": 0.25,
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/you-budong-me/prompts/U10-first.json",
+      "output": "replication/output/you-budong-me/shots/U10-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T14:11:36+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U10-first",
+      "sha256": "d0fe13b1ff4c5dd41ac0048d87162cd5f38d78892e11a0a358eb5aa2fedaa971",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:12:15+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:12:15+08:00",
+        "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:12:15+08:00"
+    },
+    {
+      "id": "U1-first-v2",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "output": "replication/output/you-budong-me/shots/U1-first-v2.png",
+      "prompt_file": "replication/output/you-budong-me/prompts/U1-first-v2.json",
+      "depends_on": [
+        "youbudong-A-master",
+        "youbudong-B-master"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-19T15:03:24+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U1-first-v2",
+      "sha256": "cef068178f837c75b0a1143f9fd31b65411c4c66f7f9456ec33260d2ee4d9268",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-19T15:10:21+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-19T15:10:35+08:00",
+        "evidence": "replication/output/you-budong-me/review/U1-first-v2-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-19T15:10:35+08:00"
+    },
+    {
+      "id": "U1-video",
+      "kind": "video",
+      "cost_yuan": 1.0,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U1.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U1-video.json",
+      "depends_on": [
+        "U1-first-v2"
+      ],
+      "status": "generated_pending_qc",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U1-video",
+      "submission_started_at": "2026-09-19T22:06:57+08:00",
+      "sha256": "55c29c82f7200b9afbc8b0fcb3354862f45e8d3448ca9ebe0f65eab1f7c9a501"
+    },
+    {
+      "id": "U2-video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U2.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U2-video.json",
+      "depends_on": [
+        "U2-first"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:08:54+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U2-video",
+      "sha256": "612e0ee9f608292cf57b5f6678f61406402ff085ee4a0557a26f7bdc0f5208fd"
+    },
+    {
+      "id": "U3-video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U3.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U3-video.json",
+      "depends_on": [
+        "U3-first"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:13:13+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U3-video",
+      "sha256": "7e9bf25c2a62af53f881e996e018c20ec720b6e3c8ce925a9e1a4433dfaa111d"
+    },
+    {
+      "id": "U4-video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U4.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U4-video.json",
+      "depends_on": [
+        "U4-first",
+        "U4-last"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:15:50+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U4-video",
+      "sha256": "a5777b0d0f35de3aedbeb3b4435c383f7f639f621318dcd8e42330d240c68f26"
+    },
+    {
+      "id": "U5-video",
+      "kind": "video",
+      "cost_yuan": 1.4,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U5.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U5-video.json",
+      "depends_on": [
+        "U5-first"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:18:52+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U5-video",
+      "sha256": "8765f807acb28b93f9b5b629ae58e995ca5f61ac0ba1aeeaaee54a6687f31fe0"
+    },
+    {
+      "id": "U6-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U6.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U6-video.json",
+      "depends_on": [
+        "U6-first"
+      ],
+      "status": "generated_pending_qc",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U6-video",
+      "submission_started_at": "2026-09-19T22:38:37+08:00",
+      "sha256": "1f3d70117b72d759ed04377a702bbe20c212d2a445d67de96965a05c23c4d3ef"
+    },
+    {
+      "id": "U7-video",
+      "kind": "video",
+      "cost_yuan": 1.0,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U7.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U7-video.json",
+      "depends_on": [
+        "U7-first"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:24:42+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U7-video",
+      "sha256": "ecdde310864342b0b6048f54ce59fd791bde6e4a5cbdb084ddb558c9878df7c6"
+    },
+    {
+      "id": "U8-video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U8.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U8-video.json",
+      "depends_on": [
+        "U8-first",
+        "U8-last"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:26:38+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U8-video",
+      "sha256": "970096e5563c243e1e3ad56ed12e8f292d14d3ebae9a89c1317d4ae6bd2e139f"
+    },
+    {
+      "id": "U9-video",
+      "kind": "video",
+      "cost_yuan": 1.0,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U9.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U9-video.json",
+      "depends_on": [
+        "U9-first"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:30:11+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U9-video",
+      "sha256": "2840c9672d3acca47df33cfe8cdd60676b869c711270fc15778703e338d0fb64"
+    },
+    {
+      "id": "U10-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/you-budong-me/shots/U10.mp4",
+      "prompt_file": "replication/output/you-budong-me/prompts/U10-video.json",
+      "depends_on": [
+        "U10-first"
+      ],
+      "status": "generated_pending_qc",
+      "submission_started_at": "2026-09-19T22:35:20+08:00",
+      "audit_dir": "replication/output/you-budong-me/automation/requests/U10-video",
+      "sha256": "8377d2a76705b27e62b4e5bdabecaa259f1d9363e85f4cfe5a822ff6420fbdc1"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-19T11:34:55+08:00",
+      "type": "submission_started",
+      "asset_id": "U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T11:37:02+08:00",
+      "type": "generation_received",
+      "asset_id": "U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "19c2b6d33e2cabf5cae4d8e51c2cbffcd1bebc126951e810b8c3443020f2e2b2"
+    },
+    {
+      "at": "2026-09-19T13:18:43+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U1-first"
+    },
+    {
+      "at": "2026-09-19T13:18:55+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U1-first",
+      "evidence": "replication/output/you-budong-me/review/U1-first-semantic-qc.md",
+      "note": "金丝雀人工验收:画风全命中,灯光夜暗调用户接受为基调(B通过)",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T13:25:45+08:00",
+      "type": "authorized_batch",
+      "count": 11,
+      "asset_ids": [
+        "U2-first",
+        "U3-first",
+        "U4-first",
+        "U4-last",
+        "U5-first",
+        "U6-first",
+        "U7-first",
+        "U8-first",
+        "U8-last",
+        "U9-first",
+        "U10-first"
+      ],
+      "new_hard_cap_yuan": 4,
+      "new_increment_cap_yuan": 4,
+      "note": "stage3 shot_image 组:U1金丝雀验收通过(B灯光基调),上架其余11张首尾帧",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T13:26:14+08:00",
+      "type": "submission_started",
+      "asset_id": "U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:30:21+08:00",
+      "type": "generation_received",
+      "asset_id": "U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "5287971ee67fb48051edc0eae9590f4462be5e6ba139db768ae8281c45f2f3c2"
+    },
+    {
+      "at": "2026-09-19T13:30:22+08:00",
+      "type": "submission_started",
+      "asset_id": "U3-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:33:19+08:00",
+      "type": "generation_received",
+      "asset_id": "U3-first",
+      "cost_yuan": 0.25,
+      "sha256": "82cf2aed0627c6389bf4ea066815d353684e7c6cfe24360d0da39e0fb19337a8"
+    },
+    {
+      "at": "2026-09-19T13:33:19+08:00",
+      "type": "submission_started",
+      "asset_id": "U4-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:37:45+08:00",
+      "type": "generation_received",
+      "asset_id": "U4-first",
+      "cost_yuan": 0.25,
+      "sha256": "179b3d4d3646c7c3e1020887812ec1da03256a94cbe84aa4dae1907937adc951"
+    },
+    {
+      "at": "2026-09-19T13:37:45+08:00",
+      "type": "submission_started",
+      "asset_id": "U4-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:41:21+08:00",
+      "type": "generation_received",
+      "asset_id": "U4-last",
+      "cost_yuan": 0.25,
+      "sha256": "7db1d18e8669455381b3f59667a6c9db4b0350a8c15461a6cf5bf39aa3cc1567"
+    },
+    {
+      "at": "2026-09-19T13:41:21+08:00",
+      "type": "submission_started",
+      "asset_id": "U5-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:45:38+08:00",
+      "type": "generation_received",
+      "asset_id": "U5-first",
+      "cost_yuan": 0.25,
+      "sha256": "701743eedc05f8f982a30ce0b5cecefc6f7158b121a39b467209e1ab9dc9f46e"
+    },
+    {
+      "at": "2026-09-19T13:45:38+08:00",
+      "type": "submission_started",
+      "asset_id": "U6-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:49:49+08:00",
+      "type": "generation_received",
+      "asset_id": "U6-first",
+      "cost_yuan": 0.25,
+      "sha256": "8c06e73d8f0ea2ee68b72b4f7ab7682e9fcee187c78595a60df7c98bb8a6bd06"
+    },
+    {
+      "at": "2026-09-19T13:49:49+08:00",
+      "type": "submission_started",
+      "asset_id": "U7-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:54:14+08:00",
+      "type": "generation_received",
+      "asset_id": "U7-first",
+      "cost_yuan": 0.25,
+      "sha256": "0ba41f9471b9205a7be8bccd478bbe7c2f700b41593826f9a905fbcae84e5afe"
+    },
+    {
+      "at": "2026-09-19T13:54:14+08:00",
+      "type": "submission_started",
+      "asset_id": "U8-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T13:59:03+08:00",
+      "type": "generation_received",
+      "asset_id": "U8-first",
+      "cost_yuan": 0.25,
+      "sha256": "449dea91bf1376cb3d4983e62195869976afa51de4c9de1473f7cfda5efe25b2"
+    },
+    {
+      "at": "2026-09-19T13:59:03+08:00",
+      "type": "submission_started",
+      "asset_id": "U8-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T14:05:57+08:00",
+      "type": "generation_received",
+      "asset_id": "U8-last",
+      "cost_yuan": 0.25,
+      "sha256": "600c249576143e56f56c9bc9428bfc6db997d4c3024e794d2201f64013add3c3"
+    },
+    {
+      "at": "2026-09-19T14:05:57+08:00",
+      "type": "submission_started",
+      "asset_id": "U9-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T14:11:36+08:00",
+      "type": "generation_received",
+      "asset_id": "U9-first",
+      "cost_yuan": 0.25,
+      "sha256": "c84f93de13cef165c3fa138cd7e40e1968143aa80e5e1ffb1e13abf8ae4679d6"
+    },
+    {
+      "at": "2026-09-19T14:11:36+08:00",
+      "type": "submission_started",
+      "asset_id": "U10-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T14:17:03+08:00",
+      "type": "generation_received",
+      "asset_id": "U10-first",
+      "cost_yuan": 0.25,
+      "sha256": "d0fe13b1ff4c5dd41ac0048d87162cd5f38d78892e11a0a358eb5aa2fedaa971"
+    },
+    {
+      "at": "2026-09-19T15:02:46+08:00",
+      "type": "authorized_batch",
+      "count": 1,
+      "asset_ids": [
+        "U1-first-v2"
+      ],
+      "new_hard_cap_yuan": 4,
+      "new_increment_cap_yuan": 4,
+      "note": "重生U1:上架U1-first-v2对齐母板深蓝针织+明亮,待生成后supersede旧灰卫衣张",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:03:24+08:00",
+      "type": "submission_started",
+      "asset_id": "U1-first-v2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-19T15:08:26+08:00",
+      "type": "generation_received",
+      "asset_id": "U1-first-v2",
+      "cost_yuan": 0.25,
+      "sha256": "cef068178f837c75b0a1143f9fd31b65411c4c66f7f9456ec33260d2ee4d9268"
+    },
+    {
+      "at": "2026-09-19T15:10:21+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U1-first-v2"
+    },
+    {
+      "at": "2026-09-19T15:10:35+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U1-first-v2",
+      "evidence": "replication/output/you-budong-me/review/U1-first-v2-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:10:53+08:00",
+      "type": "superseded_accepted",
+      "asset_id": "U1-first",
+      "superseded_by": "U1-first-v2",
+      "note": "重生退役:旧U1灰卫衣+偏暗,被U1-first-v2(深蓝针织+明亮)替换;同场戏服装/灯光统一",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:10+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U2-first"
+    },
+    {
+      "at": "2026-09-19T15:12:11+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U2-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:11+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U3-first"
+    },
+    {
+      "at": "2026-09-19T15:12:11+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U3-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:11+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U4-first"
+    },
+    {
+      "at": "2026-09-19T15:12:12+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U4-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:12+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U4-last"
+    },
+    {
+      "at": "2026-09-19T15:12:12+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U4-last",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:12+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U5-first"
+    },
+    {
+      "at": "2026-09-19T15:12:13+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U5-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:13+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U6-first"
+    },
+    {
+      "at": "2026-09-19T15:12:13+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U6-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:13+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U7-first"
+    },
+    {
+      "at": "2026-09-19T15:12:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U7-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:14+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U8-first"
+    },
+    {
+      "at": "2026-09-19T15:12:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U8-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:14+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U8-last"
+    },
+    {
+      "at": "2026-09-19T15:12:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U8-last",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:15+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U9-first"
+    },
+    {
+      "at": "2026-09-19T15:12:15+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U9-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:12:15+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U10-first"
+    },
+    {
+      "at": "2026-09-19T15:12:15+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U10-first",
+      "evidence": "replication/output/you-budong-me/review/shot-images-batch-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:25:07+08:00",
+      "type": "authorized_batch",
+      "count": 10,
+      "asset_ids": [
+        "U1-video",
+        "U2-video",
+        "U3-video",
+        "U4-video",
+        "U5-video",
+        "U6-video",
+        "U7-video",
+        "U8-video",
+        "U9-video",
+        "U10-video"
+      ],
+      "new_hard_cap_yuan": 15,
+      "new_increment_cap_yuan": 15,
+      "note": "stage4 shot_video组:上架10个H3视频单元(对白同期+音效必带,U4/U8走FL2VA首尾帧),提额覆盖视频~¥10.8",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-19T15:25:31+08:00",
+      "type": "submission_started",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-19T15:25:52+08:00",
+      "type": "submission_ambiguous",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8,
+      "exit_code": 1,
+      "lifecycle_state": "ambiguous_submission"
+    },
+    {
+      "at": "2026-09-19T15:33:40+08:00",
+      "type": "reconciled_failed_task",
+      "asset_id": "U6-video",
+      "cost_yuan": 0,
+      "refunded_yuan": 0.8,
+      "provider_task_id": "01a0b88e-597e-751d-8df5-5e406fac46b6",
+      "provider_error": "输入内容审核失败，请稍后重试",
+      "provider_input_seconds": 0,
+      "evidence": "replication/output/you-budong-me/automation/requests/U6-video",
+      "note": "U6金丝雀:H3内容审核failed、input_seconds=0平台未按量计费(见status.json),退回保守计入0.8并复位ready;根因画幅9:16已同步修",
+      "reviewer": "opus-4.8"
+    },
+    {
+      "at": "2026-09-19T15:34:22+08:00",
+      "type": "submission_started",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-19T15:34:42+08:00",
+      "type": "submission_ambiguous",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8,
+      "exit_code": 1,
+      "lifecycle_state": "ambiguous_submission"
+    },
+    {
+      "at": "2026-09-19T15:35:47+08:00",
+      "type": "reconciled_failed_task",
+      "asset_id": "U6-video",
+      "cost_yuan": 0,
+      "refunded_yuan": 0.8,
+      "provider_task_id": "01a0b896-713f-7b74-b513-24b63a8c63d3",
+      "provider_error": "输入内容审核失败，请稍后重试",
+      "provider_input_seconds": 0,
+      "evidence": "replication/output/you-budong-me/automation/requests/U6-video",
+      "note": "U6二次重跑(16:9已修)仍moderation failed、input_seconds=0未计费;U6稳定被审核拒,退0.8复位,改跑U1金丝雀定位问题域",
+      "reviewer": "opus-4.8"
+    },
+    {
+      "at": "2026-09-19T15:35:55+08:00",
+      "type": "submission_started",
+      "asset_id": "U1-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-19T15:36:15+08:00",
+      "type": "submission_ambiguous",
+      "asset_id": "U1-video",
+      "cost_yuan": 1.0,
+      "exit_code": 1,
+      "lifecycle_state": "ambiguous_submission"
+    },
+    {
+      "at": "2026-09-19T15:37:52+08:00",
+      "type": "reconciled_failed_task",
+      "asset_id": "U1-video",
+      "cost_yuan": 0,
+      "refunded_yuan": 1.0,
+      "provider_task_id": "01a0b897-dd53-73b5-ab3a-ba0437f3d454",
+      "provider_error": "输入内容审核失败，请稍后重试",
+      "provider_input_seconds": 0,
+      "evidence": "replication/output/you-budong-me/automation/requests/U1-video",
+      "note": "U1金丝雀moderation failed(根因:字段名references→工具读images得空图,已全批修为images);退0.8复位",
+      "reviewer": "opus-4.8"
+    },
+    {
+      "at": "2026-09-19T15:37:58+08:00",
+      "type": "submission_started",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-19T15:38:23+08:00",
+      "type": "submission_ambiguous",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8,
+      "exit_code": 1,
+      "lifecycle_state": "ambiguous_submission"
+    },
+    {
+      "at": "2026-09-19T21:36:51+08:00",
+      "type": "reconciled_failed_task",
+      "asset_id": "U6-video",
+      "cost_yuan": 0,
+      "refunded_yuan": 0.8,
+      "provider_task_id": "01a0b899-d0bc-7146-af37-e10d4009bbce",
+      "provider_error": "输入内容审核失败，请稍后重试",
+      "provider_input_seconds": 0,
+      "evidence": "replication/output/you-budong-me/automation/requests/U6-video",
+      "note": "内容审核临时失败(请稍后重试)、task failed且input_seconds=0未计费，复位重试",
+      "reviewer": "opus-orchestrator"
+    },
+    {
+      "at": "2026-09-19T22:06:57+08:00",
+      "type": "submission_started",
+      "asset_id": "U1-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-19T22:08:54+08:00",
+      "type": "generation_received",
+      "asset_id": "U1-video",
+      "cost_yuan": 1.0,
+      "sha256": "55c29c82f7200b9afbc8b0fcb3354862f45e8d3448ca9ebe0f65eab1f7c9a501"
+    },
+    {
+      "at": "2026-09-19T22:08:54+08:00",
+      "type": "submission_started",
+      "asset_id": "U2-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-19T22:13:13+08:00",
+      "type": "generation_received",
+      "asset_id": "U2-video",
+      "cost_yuan": 1.2,
+      "sha256": "612e0ee9f608292cf57b5f6678f61406402ff085ee4a0557a26f7bdc0f5208fd"
+    },
+    {
+      "at": "2026-09-19T22:13:13+08:00",
+      "type": "submission_started",
+      "asset_id": "U3-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-19T22:15:49+08:00",
+      "type": "generation_received",
+      "asset_id": "U3-video",
+      "cost_yuan": 1.2,
+      "sha256": "7e9bf25c2a62af53f881e996e018c20ec720b6e3c8ce925a9e1a4433dfaa111d"
+    },
+    {
+      "at": "2026-09-19T22:15:50+08:00",
+      "type": "submission_started",
+      "asset_id": "U4-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-19T22:18:51+08:00",
+      "type": "generation_received",
+      "asset_id": "U4-video",
+      "cost_yuan": 1.2,
+      "sha256": "a5777b0d0f35de3aedbeb3b4435c383f7f639f621318dcd8e42330d240c68f26"
+    },
+    {
+      "at": "2026-09-19T22:18:52+08:00",
+      "type": "submission_started",
+      "asset_id": "U5-video",
+      "cost_yuan": 1.4
+    },
+    {
+      "at": "2026-09-19T22:21:19+08:00",
+      "type": "generation_received",
+      "asset_id": "U5-video",
+      "cost_yuan": 1.4,
+      "sha256": "8765f807acb28b93f9b5b629ae58e995ca5f61ac0ba1aeeaaee54a6687f31fe0"
+    },
+    {
+      "at": "2026-09-19T22:21:19+08:00",
+      "type": "submission_started",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-19T22:21:55+08:00",
+      "type": "submission_ambiguous",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8,
+      "exit_code": 1,
+      "lifecycle_state": "ambiguous_submission"
+    },
+    {
+      "at": "2026-09-19T22:24:15+08:00",
+      "type": "reconciled_failed_task",
+      "asset_id": "U6-video",
+      "cost_yuan": 0,
+      "refunded_yuan": 0.8,
+      "provider_task_id": "01a0ba0b-186d-7e98-96ca-6f5e23648689",
+      "provider_error": "输入内容审核失败，请稍后重试",
+      "provider_input_seconds": 0,
+      "evidence": "replication/output/you-budong-me/automation/requests/U6-video",
+      "note": "U6重复内容审核失败，先复位解阻塞以继续U7-U10",
+      "reviewer": "opus-orchestrator"
+    },
+    {
+      "at": "2026-09-19T22:24:42+08:00",
+      "type": "submission_started",
+      "asset_id": "U7-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-19T22:26:38+08:00",
+      "type": "generation_received",
+      "asset_id": "U7-video",
+      "cost_yuan": 1.0,
+      "sha256": "ecdde310864342b0b6048f54ce59fd791bde6e4a5cbdb084ddb558c9878df7c6"
+    },
+    {
+      "at": "2026-09-19T22:26:38+08:00",
+      "type": "submission_started",
+      "asset_id": "U8-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-19T22:30:11+08:00",
+      "type": "generation_received",
+      "asset_id": "U8-video",
+      "cost_yuan": 1.2,
+      "sha256": "970096e5563c243e1e3ad56ed12e8f292d14d3ebae9a89c1317d4ae6bd2e139f"
+    },
+    {
+      "at": "2026-09-19T22:30:11+08:00",
+      "type": "submission_started",
+      "asset_id": "U9-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-19T22:35:20+08:00",
+      "type": "generation_received",
+      "asset_id": "U9-video",
+      "cost_yuan": 1.0,
+      "sha256": "2840c9672d3acca47df33cfe8cdd60676b869c711270fc15778703e338d0fb64"
+    },
+    {
+      "at": "2026-09-19T22:35:20+08:00",
+      "type": "submission_started",
+      "asset_id": "U10-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-19T22:38:37+08:00",
+      "type": "generation_received",
+      "asset_id": "U10-video",
+      "cost_yuan": 0.8,
+      "sha256": "8377d2a76705b27e62b4e5bdabecaa259f1d9363e85f4cfe5a822ff6420fbdc1"
+    },
+    {
+      "at": "2026-09-19T22:38:37+08:00",
+      "type": "submission_started",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-19T22:43:15+08:00",
+      "type": "generation_received",
+      "asset_id": "U6-video",
+      "cost_yuan": 0.8,
+      "sha256": "1f3d70117b72d759ed04377a702bbe20c212d2a445d67de96965a05c23c4d3ef"
+    }
+  ]
+}

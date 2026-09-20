@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>甲方案对比 · 对白响度平衡</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1d24; --line:#2a2e37; --fg:#e8eaed; --mut:#9aa0aa; --acc:#6ea8fe; }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;}
+  header{padding:24px 20px 16px;border-bottom:1px solid var(--line);}
+  h1{margin:0 0 6px;font-size:20px;}
+  .sub{color:var(--mut);font-size:13px;}
+  .wrap{padding:20px;max-width:1000px;margin:0 auto;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .card.hl{border-color:var(--acc);}
+  .card video{width:100%;background:#000;display:block;aspect-ratio:16/9;}
+  .card .body{padding:12px 14px 16px;}
+  .card .t{font-weight:600;}
+  .card .d{color:var(--mut);font-size:12.5px;margin-top:6px;}
+  .note{margin-top:22px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;font-size:13px;color:var(--mut);}
+  .note b{color:var(--fg);}
+  @media(max-width:720px){.two{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+  <h1>甲方案对比 · 对白响度平衡（¥0）</h1>
+  <div class="sub">《你根本不懂我》· 仅声音层处理，画面/叠化转场不变</div>
+</header>
+<div class="wrap">
+  <div class="two">
+    <div class="card">
+      <video src="transitions/full-cut.mp4" controls preload="metadata" playsinline></video>
+      <div class="body">
+        <div class="t">原版（未处理）</div>
+        <div class="d">10 段 0.3s 叠化直拼，全程等响度。</div>
+      </div>
+    </div>
+    <div class="card hl">
+      <video src="transitions/full-cut-audiobalance.mp4" controls preload="metadata" playsinline></video>
+      <div class="body">
+        <div class="t">甲方案（响度平衡）</div>
+        <div class="d">U4「你就给我点了个黄焖鸡」+1.5×、U7 题眼「你就坐着…抱我一下」+1.6×，把两句关键台词从对撞里抬出来。</div>
+      </div>
+    </div>
+  </div>
+  <div class="note">
+    <b>甲方案的天花板（诚实说明）：</b>H3 是对白+环境声+语速一次性烧进<b>同一条音轨</b>的，声音层能做的只有<b>整段响度平衡</b>——
+    抬高关键镜、让金句更突出。它<b>改不了</b>三件事：单句降噪、放慢语速、句间插留白（这些会连环境声一起动，且无法精准定位某句）。
+    所以如果你听完觉得"金句抬出来了、能抓住主线了"，甲方案够用；如果还是"话赶话、糊"，那就得上<b>方案乙</b>（重生成 U7+U4 两镜，约 ¥2，在生成侧写"放慢/停顿/独占声道"）。
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>《你根本不懂我》· 关键帧金丝雀审阅 · U1 首帧</title>
+<style>
+  :root { --bg:#0e0f12; --card:#17191e; --line:#2a2d34; --tx:#e8eaed; --sub:#9aa0a8; --ok:#41c17e; --warn:#e6a53a; --accent:#5b9dff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--tx); font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.7; }
+  .wrap { max-width:1040px; margin:0 auto; padding:28px 18px 80px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .meta { color:var(--sub); font-size:13px; margin-bottom:22px; }
+  .tag { display:inline-block; padding:2px 9px; border-radius:20px; font-size:12px; margin-right:6px; border:1px solid var(--line); }
+  .tag.canary { color:var(--warn); border-color:var(--warn); }
+  .tag.paid { color:var(--accent); border-color:var(--accent); }
+  figure { margin:0 0 22px; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  figure img { width:100%; display:block; }
+  figcaption { padding:12px 16px; color:var(--sub); font-size:13px; border-top:1px solid var(--line); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-bottom:18px; }
+  .card h2 { font-size:16px; margin:0 0 12px; }
+  ul { margin:0; padding-left:0; list-style:none; }
+  li { padding:6px 0; border-bottom:1px dashed var(--line); font-size:14px; }
+  li:last-child { border-bottom:none; }
+  .ok::before { content:"✅ "; }
+  .warn::before { content:"⚠️ "; }
+  .k { color:var(--sub); }
+  .warnbox { border-left:3px solid var(--warn); background:rgba(230,165,58,.08); padding:12px 16px; border-radius:8px; font-size:14px; }
+  .choice { display:flex; gap:14px; flex-wrap:wrap; margin-top:10px; }
+  .choice > div { flex:1 1 300px; border:1px solid var(--line); border-radius:10px; padding:14px; background:#1b1e24; }
+  .choice b { color:var(--accent); }
+  .cost { color:var(--sub); font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《你根本不懂我》· 关键帧金丝雀审阅</h1>
+  <div class="meta">
+    单元 <b>U1 首帧</b>（S01 钩子·一进门就错位）· 16:9 · gpt-image-2 · 1536×1024 ·
+    A/B 母板复用锁脸<br>
+    <span class="tag canary">金丝雀</span>
+    <span class="tag paid">已扣 ¥0.25</span>
+    <span class="tag">2026-09-19</span>
+  </div>
+
+  <figure>
+    <img src="shots/U1-first.png" alt="U1 首帧">
+    <figcaption>
+      女主门口进来手扶墙、脸垮憋着；男主窝沙发另一头低头刷手机头没抬；中间茶几外卖冒热气。
+      走 run.sh→orchestrator 唯一入口生成，证据链已写 paid-state。
+    </figcaption>
+  </figure>
+
+  <div class="card">
+    <h2>逐项对照锁定项（我的初审）</h2>
+    <ul>
+      <li class="ok"><span class="k">选角</span>：两人自然中国人/东亚面孔，男主成熟理性、女主清秀，与复用 F/M 母板身份一致</li>
+      <li class="ok"><span class="k">错位母题</span>：进门站住 vs 窝沙发刷手机、中间茶几+空隙=距离，一眼成立</li>
+      <li class="ok"><span class="k">道具·外卖热气</span>：黄焖鸡外卖热气清晰冒着，全片热气递减线起点稳</li>
+      <li class="ok"><span class="k">手机在B手 / 居家服 / 无字幕水印 / 16:9 / iPhone中景写实</span>：全部命中</li>
+      <li class="warn"><span class="k">灯光</span>：顶灯有开、画面能看清，但整体偏夜暗调、偏冷，未到锁定的"明亮通透、中性偏暖白"</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>唯一待你定夺：灯光基调</h2>
+    <div class="warnbox">
+      当前这张属于"写实但偏暗"（不是极端压暗），和你一贯强调的"居家夜晚也要灯正常亮、别压抑"有出入。
+      这一张定的灯光基调会一次锁死后续 11 张，所以先请你拍板：
+    </div>
+    <div class="choice">
+      <div>
+        <b>A｜调亮重生这张再并行</b>
+        <p>提示词强化"顶灯全开·明亮通透·中性偏暖白·去夜暗压抑"，重生 U1-first（旧张 supersede），定亮基调后并行其余 11 张。</p>
+        <p class="cost">+¥0.25（重生一张）</p>
+      </div>
+      <div>
+        <b>B｜接受当前夜晚质感</b>
+        <p>保留这张偏暗的真实夜晚氛围（顶灯有开、能看清），直接收编 U1-first，并以此暗调基调并行其余 11 张。</p>
+        <p class="cost">省 ¥0.25</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="meta">
+    说明：媒体不进 git（仓库只留文本）；本页经 /ads-review 公网抽验，供你看片确认。
+    你回 A / B，我据此收编并并行。
+  </div>
+</div>
+</body>
+</html>

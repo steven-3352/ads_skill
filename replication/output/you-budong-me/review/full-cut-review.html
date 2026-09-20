@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>整片审阅 · 《你根本不懂我》</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1d24; --line:#2a2e37; --fg:#e8eaed; --mut:#9aa0aa; --acc:#6ea8fe; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
+  header { padding:24px 20px 16px; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 6px; font-size:20px; }
+  .sub { color:var(--mut); font-size:13px; }
+  .wrap { padding:20px; max-width:1000px; margin:0 auto; }
+  .hero { background:var(--card); border:1px solid var(--acc); border-radius:12px; overflow:hidden; margin-bottom:24px; }
+  .hero video { width:100%; background:#000; display:block; aspect-ratio:16/9; }
+  .hero .body { padding:14px 16px 18px; }
+  .hero .t { font-size:17px; font-weight:600; }
+  .hero .d { color:var(--mut); font-size:13px; margin-top:6px; }
+  .hero .d b { color:var(--fg); }
+  h2 { font-size:15px; color:var(--mut); font-weight:500; margin:8px 0 12px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  td, th { padding:8px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+  th { color:var(--mut); font-weight:500; }
+  td.u { font-weight:600; white-space:nowrap; }
+  td.t { color:var(--mut); white-space:nowrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>《你根本不懂我》· 整片拼接审阅</h1>
+  <div class="sub">对白驱动情感短剧 · 16:9 · 约 55.5s · 10 段分镜以 0.3s 叠化串联 · 成片零字幕 · ffmpeg ¥0</div>
+</header>
+<div class="wrap">
+
+  <div class="hero">
+    <video src="transitions/full-cut-audiobalance.mp4" controls preload="metadata" playsinline></video>
+    <div class="body">
+      <div class="t">✅ 定稿版（U1→U10，0.3s 叠化转场 + 关键句响度平衡）</div>
+      <div class="d">
+        剪辑方式：仅做<b>拼接剪辑</b>——按分镜顺序把 10 段接起来，每两段之间画面 <b>xfade</b> + 音频 <b>acrossfade</b> 各 0.3s，
+        无裁剪、无变速、无字幕、无调色；甲方案对 U4 点破句、U7 题眼句做了响度平衡。
+        成片存档：<b>final/youbudong-final.mp4</b>（55.5s / 16:9 / 零字幕）。
+      </div>
+    </div>
+  </div>
+
+  <h2>分镜时间轴（叠化后累计起点，供定位）</h2>
+  <table>
+    <tr><th>单元</th><th>累计起点</th><th>节拍</th><th>内容</th></tr>
+    <tr><td class="u">U1</td><td class="t">00:00</td><td>钩子·建立</td><td>A 进门 → B 头没抬报外卖 → A 看外卖又看他</td></tr>
+    <tr><td class="u">U2</td><td class="t">00:05</td><td>冲突·推进</td><td>A 坐下倾诉 ↔ B 眼黏手机敷衍</td></tr>
+    <tr><td class="u">U3</td><td class="t">00:11</td><td>对质·转折</td><td>B 给方案越给越具体 ↔ A 要他放手机</td></tr>
+    <tr><td class="u">U4</td><td class="t">00:17</td><td>对质·转折</td><td>B 放下手机却仍不懂 → A 苦笑点破</td></tr>
+    <tr><td class="u">U5</td><td class="t">00:23</td><td>对质·推进</td><td>"我照做"——视线对上话对不上</td></tr>
+    <tr><td class="u">U6</td><td class="t">00:30</td><td>顶点·转折</td><td>B 两手一摊真困惑"我干坐着？"</td></tr>
+    <tr><td class="u">U7</td><td class="t">00:34</td><td>顶点·兑现</td><td>题眼："你就坐着…抱我一下。就够了。"→ B 愣住</td></tr>
+    <tr><td class="u">U8</td><td class="t">00:39</td><td>余波·推进</td><td>B 挪身抬手想抱又停半空；A 没动</td></tr>
+    <tr><td class="u">U9</td><td class="t">00:45</td><td>余波·转折</td><td>A 泪+笑+摇头"算了，不想说了"</td></tr>
+    <tr><td class="u">U10</td><td class="t">00:50</td><td>落幅·回扣</td><td>A 扒凉外卖 → 手机亮没人看 → 黑场</td></tr>
+  </table>
+
+  <p style="color:var(--mut);font-size:12px;margin-top:20px">
+    如某处转场需调整（加长到 0.5s / 退回硬切 / 补过渡镜），或某段分镜要重生成，告诉我单元号即可。逐段原片见
+    <a href="videos.html" style="color:var(--acc)">分镜视频审阅页</a>。
+  </p>
+
+</div>
+</body>
+</html>

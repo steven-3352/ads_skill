@@ -1,0 +1,14 @@
+{
+  "request_id": "U4-first",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/you-budong-me/prompts/U4-first.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/you-budong-me/shots/U4-first.png",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-19T13:33:19+08:00"
+}
