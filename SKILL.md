@@ -168,6 +168,7 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 - 需要补全或评审 Brief：读取 `references/brief-framework.md`
 - 需要发散、比较创意或评审观看动机：读取 `references/creative-attention.md`，使用统一创意门；不默认把所有商品迁移成视觉机关。
 - 需要写脚本、改稿或将情绪落实成表演与剪辑：读取 `references/script-direction.md`，按观众状态编排节拍，并验证产品角色和动作时长。
+- 需要拆分镜、选镜型/镜头语言、把剧本逐句拆成镜头序列，或系统理解“为什么这样拆、何时用哪种镜型与生成模式、出问题回到哪一步”：读取 `references/storyboard-methodology.md`（分镜设计推理层，手册创作层×SOP 模板层熔合的“剧本→成片”六步分镜方法论；含逐句拆镜工作流、8 种镜型学、镜头语言决策树、声画错位、崩点配方、物证升级与常见病导航；覆盖视频/图片关键帧/图文三种分镜）。模板字段、[R]/[C] 双门、模型路由、验收仍以 `references/video-production-sop.md` 为唯一权威，本文只补设计推理，冲突以 SOP 为准。
 - 需要做**情感/剧情类**短视频的剧作、缺失、人物、台词与克制叙事：读取 `references/emotional-drama-storycraft.md`。**创意广告/纯广告片/带货片只借鉴其第一、二章故事编剧内核（剧作结构、人物、悬念、节奏、短句、潜台词、金句），不套用情感类专属红线（缺失只显影不说破、克制=稀缺、结尾不点题、负空间、情感赛道数据基准）；广告片以显性购买理由/转化钩子为准。**
 - 需要理解多轮升级、对照好坏脚本或避免新模板化：读取 `references/creative-script-iterations.md`，其中版本为创作示范，未经投放验证。
 - 需要做日用、家居、服装、食品或美妆个护创意：读取 `references/category-playbook.md`
@@ -185,6 +186,7 @@ description: 跨品类广告创意与 Social-first AI TVC 制作专家。用于�
 - 需要执行“真实主体→机械中间态→商品”的 AI 变形短片，或需要用首尾关键帧提高 Seedance 生成稳定性：读取 `references/cases/wild-mode-animal-to-product-ai-sop.md`，复用端点派生、几何守恒、单难题生成、自动验收和后期闭合规则，不复制本案动物、服装或产品设计。
 - 需要为饮料、咖啡、茶、果汁、乳饮、运动饮料、热饮、酒饮或其他可入口产品设计感官创意，尤其是“每喝一口切换一种感觉、状态、身份或场景”：读取 `references/cases/drink-each-sip-state-switch.md`，使用味觉外化、状态卡、重复升级、瓶形构图和产品回扣，不复制样本人物、品牌、色彩、广告语或道具。
 - 需要把夜间、自动、静置或循环过程视觉化，或设计“语义接力 + 尺度世界 + 后台夜班”结构：读取 `references/cases/kerastase-night-serum-dream-slide.md`，迁移时间代理与现实回环，不复制发丝滑梯、人物、花草、音乐或品牌资产。
+- 需要做口播/独白驱动的情感短剧分镜，或需要 12 维镜头表、物品镜 6 规则、声音 6 层、转场 7 开关、AI 生成专属约束、决策树、逐句填空镜头表这些**可直接填的明细清单**，以及 V1/V2 实测证据：读取 `references/cases/narration-driven-emotional-microdrama-storyboard.md`（它是 `references/storyboard-methodology.md` 的案例实证+明细附录；通用拆镜推理仍以方法论与 SOP 为准）。
 
 ## 安全与真实性
 

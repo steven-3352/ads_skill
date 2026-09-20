@@ -32,6 +32,7 @@
 |文件|定位|
 |---|---|
 |[video-production-sop.md](video-production-sop.md)|**【所有新视频项目强制前置·唯一生产权威】**能力加载目录、项目目录、Skill 分工、完整 Shot/Panel/Unit 模板、连续性、模型路由、逐镜生成、成本、状态和验收|
+|[storyboard-methodology.md](storyboard-methodology.md)|分镜设计推理层：只回答“为什么这样拆、何时用哪种镜型与生成模式、怎么判好坏、出问题回到哪一步”。逐句拆镜工作流、8 种镜型学、镜头语言决策树、声画错位、崩点配方、物证升级、常见病导航；覆盖视频/图片关键帧/图文三种分镜。模板字段、[R]/[C] 双门、模型路由、验收以 `video-production-sop.md` 为唯一权威，冲突以 SOP 为准|
 |[cases/](cases/)|单案例制作决策；先读通用 SOP，再按需读取案例|
 
 ## 数据和经验
