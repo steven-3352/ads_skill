@@ -1,0 +1,28 @@
+{
+  "subproject_id": "zhanv",
+  "title": "爱你的人心疼你，你爱的人玩弄你",
+  "note": "抖音商业情感短剧（对白驱动），16:9 横屏 ~80s，H3 对白同期直出。7 镜 13 生成单元，2 句题眼，成片零字幕、每单元必带音效对白、家常明亮顶灯、East Asian 选角、禁塑料蜡感。付费产物只经 run.sh→orchestrator 生成才被总账承认。",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "reviewGate": "replication/tools/validate-h3-prompt-review.sh",
+  "ledger": "automation/zhanv.ledger.ndjson",
+  "paid_state": "automation/zhanv.paid-state.json",
+  "state_sequence": "references/state-machine/main-sequence.json",
+  "production_plan": "contracts/production-plan.json",
+  "screenplay": "story/screenplay-locked-v2.md",
+  "owner_globs": [
+    "story/**",
+    "contracts/**",
+    "prompts/**",
+    "shots/**",
+    "assets/**",
+    "review/**",
+    "final/**",
+    "edit/**",
+    "social/**",
+    "automation/zhanv.*",
+    "*.html",
+    "README.md",
+    "*.md"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese man, an unmistakably Chinese man with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 28-30, an urban white-collar type with clean short black hair, a dark knit top over a white stand-collar shirt, his features, hairstyle and face shape kept identical across the whole film in a bright, airy cafe — the ceiling lights are on so the whole room reads clean and evenly lit, natural neutral warm-white light, not dim, not moody, not oppressive, no single amber lamp darkening the room; a coffee cup sits on the table in front of him and the cafe behind him falls into gentle bokeh. Reacting to the friend's off-screen line (added later). From the composition of Picture 1 his body is frozen; he starts to raise a hand as if to speak then lowers it, turns the phone screen-down flat on the table in a light but decisive motion, and leans back against the chair with his gaze falling to the tabletop, unmoving, settling into the composition of Picture 2 — hit, and going silent. Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet cafe room tone hums under the shot. The soft tap of the phone set face-down; no speech.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/images/SH08-U1-first.png",
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/images/SH08-U1-last.png"
+  ],
+  "duration": 5,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:身体僵住、手抬了又放下、把手机屏朝下扣桌上、往椅背靠、视线落桌面不动 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为FL2VA对齐指令:Picture 1(Shot 1)@0.00、Picture 2(Shot 2)@5.00;单人单镜同轴连续路径末尾落Picture 2构图(非脸部morph);三段字段齐",
+      "关键帧对齐时间0.00→5.00严格递增且落在5s时长内",
+      "无对白校验:本单元为反应/道具镜,H3不出任何对白(V.O.朋友/闺蜜后期豆包配),soundscape注明no speech防H3脑补人声",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;咖啡馆正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0e0b9162f805f3dfb19519863f511a1f71eb602f540564576ce81c4520f25ce0"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍6"
+    ],
+    "related_shots": [
+      "SH08"
+    ],
+    "visual_evidence": [
+      "身体僵住、手抬了又放下、把手机屏朝下扣桌上、往椅背靠、视线落桌面不动"
+    ],
+    "unresolved_blockers": []
+  }
+}

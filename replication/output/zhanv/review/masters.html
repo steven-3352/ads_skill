@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人物母板确认 · 《爱你的人心疼你，你爱的人玩弄你》</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--txt:#e8eaed;--sub:#9aa3b2;--gold:#e6b566;--lin:#ff9db1;--zhou:#7cc4ff;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif;line-height:1.7}
+  .wrap{max-width:900px;margin:0 auto;padding:20px 16px 96px}
+  h1{font-size:21px;margin:6px 0 2px}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .tag{display:inline-block;background:#20242e;border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px;color:var(--sub);margin:2px 4px 2px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+  @media(max-width:680px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .card img{width:100%;display:block;background:#000}
+  .card .body{padding:12px 14px}
+  .card h2{font-size:15px;margin:0 0 6px}
+  .lin h2{color:var(--lin)} .zhou h2{color:var(--zhou)}
+  .card p{font-size:13px;color:#cfd4dd;margin:5px 0}
+  .card .k{color:var(--sub)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:14px 0}
+  .box h3{font-size:14px;margin:0 0 8px;color:var(--gold)}
+  .box ul{margin:0;padding-left:18px} .box li{font-size:13px;color:#cfd4dd;margin:4px 0}
+  .confirm{position:fixed;left:0;right:0;bottom:0;background:#12151c;border-top:1px solid var(--line);padding:11px 16px;text-align:center;font-size:13px;color:var(--sub)}
+  .confirm b{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>人物母板（身份根）· 待你定脸</h1>
+  <div class="meta">《爱你的人心疼你，你爱的人玩弄你》· stage3 母板先行</div>
+  <div>
+    <span class="tag">16:9 · 1536×1024</span><span class="tag">gpt-image-2</span><span class="tag">East Asian 中国人</span>
+    <span class="tag">iPhone 真实质感 · 无塑料蜡感</span><span class="tag">真实房间 LED 中性白光</span><span class="tag">已花 ¥1.0（v1+重生v2）</span>
+  </div>
+
+  <div class="box" style="border-color:#3a5a3a">
+    <h3 style="color:#a6e3a1">已按你的反馈改了（v2）</h3>
+    <ul>
+      <li>你说"光太暖、要真实房间 LED 光线、黄光会顶出蜡感、不要黄光"——已把灯光改成 <b>真实房间 LED 中性白光（约4500–5000K）</b>，显式禁暖黄/橘黄/钨丝黄，连背景暖台灯也去黄，肤色不偏黄。</li>
+      <li>下面显示的是 <b>v2（去黄版）</b>；v1 暖黄两张已退役（沉没成本 ¥0.5 已计费保留）。</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <div class="card lin">
+      <img src="../assets/master-lin-v2.png" alt="林夏母板">
+      <div class="body">
+        <h2>林夏 · lin-master</h2>
+        <p><span class="k">设定：</span>28 岁，和陈默五年，身体却在等另一个人的消息。</p>
+        <p><span class="k">神态：</span>慢半拍、防御、疲惫但不憔悴；敷透明保湿面膜（水光质地，非白片状）。</p>
+        <p><span class="k">看什么：</span>脸是不是你要的"心里有事、但不狼狈"；后续各镜都用它锁脸。</p>
+      </div>
+    </div>
+    <div class="card zhou">
+      <img src="../assets/master-zhou-v2.png" alt="周周母板">
+      <div class="body">
+        <h2>周周 · zhou-master</h2>
+        <p><span class="k">设定：</span>29 岁，清醒毒舌的闺蜜，快短狠、底下是心疼。</p>
+        <p><span class="k">神态：</span>卸妆素颜、利落；眼神直、通透、带点锐利。</p>
+        <p><span class="k">看什么：</span>和林夏是不是一眼能分清两个人；别太冷像反派。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>这一步做了什么 / 花了多少</h3>
+    <ul>
+      <li>只生了 2 张人物母板（身份根），单价 ¥0.25，<b>共 ¥1.0</b>（v1 ¥0.5 已计费退役 + v2 ¥0.5；预算上限 ¥1.5）。</li>
+      <li>提示词经 seedance-prompt-zh 技能生成并过评审门；生图经 run.sh 统一门禁 + orchestrator，扣费/产物都进总账。</li>
+      <li>硬伤已自检：中国脸✅ 真实肤质无塑料蜡感✅ 顶灯明亮不压暗✅ 无文字/logo/品牌✅ 16:9✅。</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>你认可脸之后的下一步</h3>
+    <ul>
+      <li>批量生 ~14 张镜头关键帧（各镜 <code>--reference</code> 这两张母板锁脸），约 ¥3.5 上下，付费前再报你授权。</li>
+      <li>然后 stage4 逐单元 H3 对白同期出视频，人工看对口型/表演，有问题再 TTS 补。</li>
+    </ul>
+  </div>
+</div>
+<div class="confirm">看完在对话里回我：<b>通过</b>（定脸，进关键帧批量生图）｜ <b>重生某张</b>（说清哪张、改哪里）｜ <b>问细节</b></div>
+</body>
+</html>

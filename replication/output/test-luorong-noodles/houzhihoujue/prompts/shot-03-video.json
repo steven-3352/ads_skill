@@ -1,0 +1,39 @@
+{
+  "id": "shot-03-video",
+  "role": "镜3 幸福｜FL2VA｜复用镜1同机位，男做鬼脸挠痒逗边说、女破功笑出声接话转身靠近、中间空距离消失",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld footage with realistic skin texture, natural pores, and fine film grain, no plastic or waxy CG look. The same bright warm-white East Asian Chinese living room with the ceiling light on, airy and evenly lit, and the identical sofa framing as Picture 1: the woman at one end, the man at the far end with a gap between them. From the argument-start pose of Picture 1, the man leans in closer and keeps coaxing her, pulling a goofy playful face and lightly tickling toward her side; the mature East Asian Chinese man in his thirties, teasing and playful at a light, quick pace (S1), says in sync on camera: <d>[Chinese] 笑一个嘛，就一个——</d> The woman resists at first, then her mouth softens and she can no longer hold it, breaking into a bright out-loud laugh as she turns her body back toward the man so the gap between them closes; the mature East Asian Chinese woman in her thirties, laughing out loud as she gives in (S2), says in sync on camera: <d>[Chinese] 哈…你别闹了！</d> The camera holds a nearly static shot with slight handheld drift. The action settles into the exact posture, spacing, and composition of Picture 2 at the five-second mark, the two now leaning close together. Both faces stay matte under soft diffused light with no glare or reflection; East Asian Chinese features throughout, no brand or logo anywhere.\n\noverall_soundscape: A warm living-room tone hums underneath with a faint appliance drone. Cushion fabric rustles as she turns her body back toward him and the sofa shifts under the movement.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜3幸福·FL2VA。复用镜1同机位。首帧起点，尾帧=两人靠拢。男凑近做鬼脸挠痒继续逗，画内同期口型说(S1)『笑一个嘛，就一个——』→女绷不住笑出声接话(S2)『哈…你别闹了！』转身靠近男、中间距离消失。语速正常偏快接话不留白。静止微手持，明亮暖白顶灯居家光，哑光真实iPhone感。声景仅居家底噪+转身布料声。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 5,
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "state-change action with in-frame synced dialogue: man keeps coaxing while speaking (S1) -> woman laughs out loud and answers (S2) -> turns back and gap closes",
+      "对白verbatim校验: <d>[Chinese] 笑一个嘛，就一个——</d> 与 <d>[Chinese] 哈…你别闹了！</d> 逐字逐标点不改; 身份+ID(男S1/女S2)+delivery(逗趣/没绷住笑出声) 全写在 <d> 之外; 画内同期、口型同步",
+      "表演校验: 演从赌气到破功的转折内心戏(女憋不住的笑)而非只念台词; 接话不留白、语速正常偏快",
+      "duration 5.00s 单镜一镜到底; 两人对白衔接不跨剪辑点(无cut)",
+      "soundscape 仅居家底噪+转身布料/沙发声, 笑声已在对白delivery里不在soundscape重复; non_diegetic_music N/A",
+      "visual: 真实iPhone质感/自然毛孔/细颗粒, 哑光皮肤无油光高光, 无塑料蜡感CG感; 顶灯开明亮通透暖白不压暗; East Asian中国人物; 无品牌logo; prompt内无引号包裹的屏幕字幕文字",
+      "FL2VA: Picture 1 opens at 0.00s, Picture 2 lands the final pose at 5.00s; 单镜复用镜1机位, 仅起点后动作发散"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c2ed4a20ad9801426ff43950c9f2eca581d21d6db00ff934b29820b931c38e7a"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/first.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-03/images/last.png"
+  ]
+}

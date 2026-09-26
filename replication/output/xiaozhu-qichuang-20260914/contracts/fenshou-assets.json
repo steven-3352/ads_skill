@@ -1,0 +1,123 @@
+{
+  "projectId": "fenshou-20260917",
+  "revision": "v2.2-2026-09-17",
+  "note": "《我们还是分手吧》公共资产。寄居小猪目录，全部 fenshou- 前缀，不与小猪 assets.json 冲突。v2.2 修订：A/B 人物母板改为 fenshou 新生成专属母板(33–38 岁中国人、深夜分手基调)，不再复用小猪 A1/A2；客厅场景母板新生成 1 张；合照相框道具启用；新增手机屏幕插段静帧(02:17 已读不回)。",
+  "aspectRatio": "16:9",
+  "renderSize": "1344x768",
+  "characters": [
+    {
+      "id": "fenshou-A",
+      "name": "A（提分手方）",
+      "role": "女，33–38 岁；冷静、隐忍、话少句短、做了决定才开口；外在克制内里耗尽",
+      "masterSource": "fenshou 新生成专属母板（不复用小猪）",
+      "masterImage": "assets/fenshou-A-master.png",
+      "masterPrompt": "assets/prompts/fenshou-A-master.json",
+      "genderMapping": "A=女（用户锁定，不可翻转）",
+      "flippable": false,
+      "flippableNote": "用户 2026-09-17 锁定 A=女、B=男，性别不再翻转",
+      "lockedFeatures": ["女性/33–38 岁成熟感", "东亚/中国人面孔（显式锁 East Asian，防欧美脸）", "非笑脸/非网红脸", "脸型/五官", "发型", "体型"],
+      "note": "新母板：深夜客厅居家便装/暖黄光；A 需覆盖侧脸(CAM-A 越肩)、正眼看向 B、眼眶泛红强忍、起身/背影/门口拎行李箱等表演状态",
+      "appearsIn": ["FS01", "FS02", "FS03", "FS04", "FS05", "FS06", "FS07"],
+      "status": "planned"
+    },
+    {
+      "id": "fenshou-B",
+      "name": "B（被分手方）",
+      "role": "男，33–38 岁；错愕、慌但克制，不吵不闹只是不停找理由把分手降级成又一次生气；成熟疲惫",
+      "masterSource": "fenshou 新生成专属母板（不复用小猪）",
+      "masterImage": "assets/fenshou-B-master.png",
+      "masterPrompt": "assets/prompts/fenshou-B-master.json",
+      "genderMapping": "B=男（用户锁定，不可翻转）",
+      "flippable": false,
+      "flippableNote": "用户 2026-09-17 锁定 A=女、B=男，性别不再翻转",
+      "lockedFeatures": ["男性/33–38 岁成熟疲惫感", "东亚/中国人面孔（显式锁 East Asian，防欧美脸）", "非欧美脸", "脸型/五官", "发型", "体型"],
+      "note": "新母板：需覆盖 CAM-B 越肩近景的错愕/前倾/皱眉/喉结滚动/光暗下去/独坐失神等状态",
+      "appearsIn": ["FS01", "FS02", "FS03", "FS04", "FS05", "FS06", "FS07"],
+      "status": "planned"
+    }
+  ],
+  "locations": [
+    {
+      "id": "fenshou-LOC-livingroom",
+      "name": "深夜居家客厅",
+      "masterSource": "小猪只有卧室/餐桌，无客厅 → 本片新生成 1 张场景母板",
+      "masterImage": "assets/fenshou-LOC-livingroom.png",
+      "renderSize": "1344x768（gpt-image-2 文生图，锁 --size）",
+      "geometry": "一张沙发居中，两人分坐沙发两端、中间隔着一段空位（横屏构图核心信息）；一盏暖黄台灯为唯一主要光源；门口在同一空间可达（收尾 A 走向门口）；机位遵守过肩正反打轴线（CAM-A 越 B 肩 / CAM-B 越 A 肩 / 2S 双人中景）",
+      "lockedFeatures": ["沙发位置与朝向", "两端座位+中间空位关系", "暖黄台灯光源方位", "门口方位", "正反打轴线（不跳轴）"],
+      "spec": "暖黄台灯单光源、暗部沉、浅景深、轻微胶片颗粒、写实克制",
+      "appearsIn": ["FS01", "FS02", "FS03", "FS04", "FS05", "FS06", "FS07"],
+      "status": "planned"
+    }
+  ],
+  "keyImagery": [
+    {
+      "id": "fenshou-KEY-empty-seat",
+      "name": "沙发中间的空位",
+      "role": "跨镜关键意象/回扣：开场 2S（FS01）两人分坐两端之间的空位建立 → 收尾（FS07）镜头缓摇扫过同一空位 + B 独坐，画面自己完成“走散”的兑现，不靠字幕点题",
+      "states": ["FS01 开场：两人分坐两端，中间明显空出一段，正中一只倒扣合照相框", "FS07 收尾：缓摇停在同一空位冷清、行李箱已被带走、B 独坐一端、画面渐暗"],
+      "appearsIn": ["FS01", "FS07"],
+      "status": "planned"
+    },
+    {
+      "id": "fenshou-KEY-phone-screen",
+      "name": "手机屏幕插段（02:17 已读不回）",
+      "role": "段3(FS04)内约 0.8s 手机特写插段：茶几上 B 的手机亮起，聊天界面备注名“我”，最后一条「晚安」显示 02:17，上方几条消息均“已读”、无回复，屏幕光映在茶几上；无台词，A 台词画内同期声延续——全片缺失最直接的画面证据(在场即缺席)",
+      "states": ["FS04-U2 内部插段：屏幕内“晚安 02:17 / 已读”为画面内元素，由关键帧渲染、不入后期字幕轨"],
+      "renderNote": "文生图静帧 1344×768，屏幕内中文界面元素随图渲染；无音乐、仅环境底噪与屏幕光",
+      "appearsIn": ["FS04"],
+      "status": "planned"
+    }
+  ],
+  "props": [
+    {
+      "id": "fenshou-PR-luggage",
+      "name": "门口整理好的行李箱（核心道具，不可省）",
+      "role": "核心回扣道具：开场(FS01)门口“将走未走” → FS06 A 背包镜头下摇带到行李箱“将走” → 收尾(FS07)A 拎起行李箱带走、空位“已走”得更彻底；缺失的“移动”实体化",
+      "note": "跨 FS01/FS06/FS07 的核心道具，需锁其门口初始摆放位置与朝向以保首尾一致；非带货、无品牌",
+      "appearsIn": ["FS01", "FS06", "FS07"],
+      "status": "planned"
+    },
+    {
+      "id": "fenshou-PR-photoframe",
+      "name": "沙发中间倒扣的双人合照相框（启用）",
+      "role": "关系识别 + 回扣道具：FS01 首帧沙发中间一只倒扣的双人合照相框(关系破裂第一现场、增强首帧关系识别) → FS07 收尾仍倒扣在空位旁，强化“空了很久”",
+      "note": "用户 2026-09-17 拍板启用；固定摆放于沙发中间空位处、镜面朝下倒扣；非带货、无品牌",
+      "appearsIn": ["FS01", "FS07"],
+      "status": "planned"
+    },
+    {
+      "id": "fenshou-PR-bag",
+      "name": "A 的背包",
+      "role": "收尾状态变化道具：A 起身拎起背包上肩(FS06 FL2VA 落点)，随后走向门口拎行李箱离开(FS07)",
+      "note": "FS06/FS07 出现的收尾道具；因跨到关门离开的动作落点、需锁其起始摆放位置，纳入公共资产以便首尾帧一致；非带货、无品牌",
+      "appearsIn": ["FS06", "FS07"],
+      "status": "planned"
+    }
+  ],
+  "style": [
+    {
+      "id": "fenshou-ST-nightroom",
+      "name": "深夜客厅统一视觉语法",
+      "spec": "16:9 横屏；暖黄台灯单光源、暗部沉；浅景深；轻微胶片颗粒；写实克制、无狗血；近乎生活光比",
+      "appliesTo": ["FS01", "FS02", "FS03", "FS04", "FS05", "FS06", "FS07"]
+    }
+  ],
+  "generationSummary": {
+    "charactersToGenerate": ["assets/fenshou-A-master.png", "assets/fenshou-B-master.png"],
+    "sceneMasterToGenerate": 1,
+    "shotKeyframes": 21,
+    "note": "首次需生成图片=2 张 A/B 人物母板(新生成、不复用小猪) + 1 张客厅场景母板 + 21 张镜头关键帧(含 1 张手机屏幕插段静帧)=24 张。母板顺序锁：先出 A/B 人物母板+场景母板→用户认可身份根→再各镜关键帧并行。"
+  },
+  "forbidden": [
+    "画面内烧录中文字幕/花字（全部后期统一烧，模型只出配音+表演）",
+    "欧美脸、混血脸（母板已锁 East Asian/中国人）",
+    "手部/脸部畸变、穿模",
+    "9:16 竖屏或非 1344x768 画幅（防 H3 写死画幅拉伸变形）",
+    "嘶吼/哭闹/摔东西等狗血表演（违背写实克制味道锚点）",
+    "过肩正反打跳轴（破坏 A/B 空间关系）",
+    "无动机的匀速全程运镜、幻灯片式一镜到底扫场",
+    "极近景把面部畸变/超出安全区（近景只留必要兑现：金句、错愕）",
+    "误用小猪卧室/餐桌场景（本片为客厅，须用 fenshou-LOC-livingroom 母板）"
+  ]
+}

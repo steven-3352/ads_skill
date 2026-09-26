@@ -1,0 +1,36 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, shot on an iPhone with realistic handheld texture, fine natural film grain, true-to-life skin and no plastic AI sheen, matte skin with no oily facial glare, in a warm home entryway beside an open kitchen with bright natural neutral-warm lighting. The clip begins exactly on Picture 1 — the couple in a close embrace, a folded dark-grey jacket pressed between them, on the verge of a kiss — and resolves exactly to Picture 2, acting out every verb. The mature East Asian Chinese man about 45 (S1) leans in and kisses the mature East Asian Chinese woman about 42 (S2) on the lips, a brief tender real kiss of about one and a half seconds with no speech during the kiss; they part slightly, foreheads touching. The man cups her face with both hands, looking into her eyes, and says at a natural, normal conversational pace (S1): <d>[Chinese] 别生气了。</d> The woman softly replies without pause (S2): <d>[Chinese] ……嗯。</d> The man then bends down and crouches low to take the folded dark-grey jacket down toward the floor while the woman looks down at him with a faint gentle reconciled smile and says (S2): <d>[Chinese] 就这一次。</d> The framing settles into the pose, spacing and composition of Picture 2 at the 5.00-second mark, the man crouching with the jacket and the woman looking down. The camera holds a static shot with a slight push in of small amplitude at slow speed. No on-screen text, no subtitles, no captions, no logo, no watermark anywhere in the frame.\n\noverall_soundscape: A soft warm room tone hums underneath; a soft brief kiss sound, light fabric rustle, bare feet shifting on the wood floor, and gentle breaths.\n\nnon_diegetic_music: A warm, gentle fingerpicked acoustic-guitar melody at a slow tempo, growing slightly warmer and fuller toward the end.",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/shots/KF-mid-shared.png",
+    "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/shots/KF2b-unit2-last.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "首行FL2VA对齐指令:Picture 1@0.00、Picture 2@5.00,单镜连续;逐动词(唇吻~1.5s→额抵→捧脸对视→俯身蹲下接外套)+摆落点防漏演;末尾落Picture 2;三段字段齐",
+      "对白逐字<d>[Chinese]:男(S1)别生气了;女(S2)……嗯/就这一次;唇吻期间无speech;说话人ID与unit1一致;delivery锁normal pace/without pause防慢",
+      "去字幕:显式no subtitles/captions/text;生成后人工查烧字幕(H3非确定性)",
+      "实拍去蜡感:iPhone handheld/film grain/matte skin/no oily glare/no plastic sheen;唇吻非额吻;东亚中国人物身份经首尾帧锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cee174b6cfd8248054008e8e511dbfbf9c55c66764250491af4d9e06e6619318"
+  },
+  "narrative_alignment": {
+    "source_story": "story/A-source-analysis.md",
+    "related_beats": [
+      "5-10s 相拥吻·和好收尾"
+    ],
+    "visual_evidence": [
+      "唇吻→捧脸对视→蹲身接外套→女低头浅笑"
+    ],
+    "unresolved_blockers": []
+  }
+}

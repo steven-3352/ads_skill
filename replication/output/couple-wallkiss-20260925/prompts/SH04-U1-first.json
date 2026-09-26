@@ -1,0 +1,15 @@
+{
+  "prompt": "Vertical 9:16 facial close-up in a bright white-wall interior corridor. Two people only, just a little apart, nose to nose with foreheads lightly touching. A Chinese (East Asian) woman, 23-26 years old, long dark hair loose over her shoulders, bare-faced natural good skin, wearing a plain soft knit home top (no logo, no brand, no text), has her eyes lowered, cheeks flushed pink, chin tucked and face turned slightly aside, her fingertips still hooked in the hem of the man's shirt. A Chinese (East Asian) man, 25-28 years old, clean short black hair, wearing a plain white shirt with sleeves rolled to the forearms (no logo, no brand, no text), is close at her ear, the corner of his mouth curved in a soft smile. Bodies close and fully clothed. Bright white-wall interior corridor, soft even diffuse daylight, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture and fine natural grain, iPhone 17 realistic photo look, no plastic or wax or CG, no oily glare or highlights on the faces, no airbrushed fake skin. Vertical 9:16. No subtitles, captions, watermark, logo or on-screen text anywhere in the frame.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "9:16 vertical single/two-person framing verified;identity locked (Chinese East Asian, casting-matched hair/wardrobe);no brand/logo/text on wardrobe or set;anti-subtitle: no on-screen text/watermark;realistic iPhone skin texture, matte no oily glare, no plastic/wax/CG;soft diffuse neutral-warm light not tinting faces"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d019b604787876646315bc0e17bf41f6903f0333d1c032d2e7971d164b279c4c"
+  }
+}

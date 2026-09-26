@@ -1,0 +1,35 @@
+{
+  "asset_type": "image",
+  "keyframe_id": "KF-S05-first",
+  "shot": "S05",
+  "role": "海底·立基帧(巨鲸缓掠,光帘空灵)",
+  "generator": "GPT Image (gpt-image-2)",
+  "size": "1344x768",
+  "video_model": "pending (倾向 MiniMax-H3)",
+  "authoring_skill": "h3-prompt-writing",
+  "mode": "text2img (humans tiny accents only)",
+  "references": [],
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Ultra-wide underwater view just beneath a crystal-clear ocean surface; a single colossal gentle whale spans almost the full width of the frame, gliding slowly across and dwarfing everything around it, warm golden god-rays streaming down like light curtains through the clear blue-teal water. One tiny warm-colored speck — an East Asian Chinese couple — drifts alongside the whale, pure accent, its minuteness making the whale's scale feel immense. Environment more than 90 percent of the frame, vast negative space of luminous water. Rising bubbles, swaying light curtains, soft diffused light, no harsh shadows, translucent palette of clear teal-blue and warm gold rays, bright and clear and never murky or cold. Serene, weightless, joyful, mind-freeing atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
+  "negative": "close-up, big face, character dominates frame, crowded, cluttered, oversaturated, harsh shadows, murky dark water, cold gloomy, scary deep abyss, text, subtitles, watermark, logo, western/caucasian faces",
+  "note": "巨物=巨鲸(用户确认锚点),构图锁'巨鲸满幅横掠+暖光帘',人物随鲸更显微以撑尺度。末帧海沟透微光,为向地下过渡(用视频末帧)。",
+  "status": "prompt_ready_pending_model_and_budget",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "text2img",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "16:9横构图锁1344x768,显式never vertical防画幅拉伸",
+      "写实电影真人,禁illustration/anime/3D",
+      "巨物锚点=巨鲸满幅横掠(spans almost the full width+dwarfing everything),人物随鲸对比撑尺度(~5%)+显式East Asian Chinese",
+      "澄澈蓝绿+暖金光帘/漫射/无硬阴影,明亮通透非浑浊阴冷深渊",
+      "负面词齐:近景/大脸/人物占画/杂乱/过饱和/硬阴影/阴冷深渊/字幕水印logo/欧美脸",
+      "底部15-18%留干净字幕安全区已落文",
+      "结尾禁字/字幕/水印/logo/中文"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f94cd993c2aabc33c9a7042a291a4fd1cc2d5f470020198966106a86d978c30c"
+  }
+}

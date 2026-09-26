@@ -1,0 +1,42 @@
+{
+  "id": "U01",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 5,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U01-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. Two East Asian women sit on a sofa exactly as in <Picture 1>, preserving their faces, clothing, the two glasses of red wine on the coffee table and the room layout. On the left, the 28-year-old woman with a translucent skincare gel on her face and a knitted home cardigan (S1) keeps a dark-screen unbranded phone face-down on her knee; on the right, the 29-year-old woman with clean bare skin and a loose cotton shirt (S2) has just set down her wine glass. The camera holds a mostly static handheld two-shot with slight natural sway. The right woman, quick and dry (S2), flicks her eyes to the phone and says: <d>[Chinese] 又看。</d> The left woman, a half-beat late and defensive (S1), answers: <d>[Chinese] 没有。</d> The right woman (S2), brisk and pointed with concern underneath, presses without a pause: <d>[Chinese] 三天了。他一条没回，你这手机翻了多少遍。</d> The left woman (S1), voice shrinking, replies weakly: <d>[Chinese] ……我就看几点。</d>\n\noverall_soundscape: A low late-night room tone hums underneath with a faint wall clock and a refrigerator drone. A soft fabric rustle as the phone shifts on her knee and the light clink of a wine glass being set on the table.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "28ccc715879d5ff4900b24a7450d9a715ea3cf4e4ae8d173727dc02a1df45bf7"
+  }
+}

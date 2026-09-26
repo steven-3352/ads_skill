@@ -1,0 +1,42 @@
+{
+  "id": "U03a",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 6,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U03a-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. The two East Asian women on the sofa as in <Picture 1>, faces, clothing and room preserved. Left woman with a translucent skincare gel and knitted cardigan (S1); right woman with bare skin and loose cotton shirt (S2). Static handheld two-shot with slight sway, brisk turn-taking, no dead tails. The right woman (S2): <d>[Chinese] 他三天不找你，你干嘛呢。</d> The left woman (S1), a half-beat late, admits low: <d>[Chinese] ……瞎想。想他是不是不要我了。</d> The right woman (S2): <d>[Chinese] 他偶尔回你一次呢。</d> The left woman (S1), a small helpless lift in her voice: <d>[Chinese] 就……特别高兴。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum. Light fabric movement on the sofa.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "76c40922356d9bfd74706a4e25a0d8e73cd2d91696c3eb71b2f6ec19fe0d4dd2"
+  }
+}

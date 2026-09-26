@@ -1,0 +1,13 @@
+{
+  "request_id": "travel-kf-01-first",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/Travel/prompts/shots/travel-01-image.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/Travel/shots/01/first.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/Travel/assets/characters/master-protagonist.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-25T05:39:38+08:00"
+}

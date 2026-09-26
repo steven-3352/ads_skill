@@ -185,21 +185,66 @@ elif [[ "$PROVIDER" == "minimax" ]]; then
     if [[ -z "$CONTENT" || "$CONTENT" == "null" ]]; then
       CONTENT="$(jq -c 'to_entries | map({type:"image_url",image_url:{url:("pending")},local_path:.value,role:(if .key == 0 then "first_frame" else "last_frame" end)})' <<< "$REFERENCES")"
     fi
-    INVALID_ROLES="$(jq -r '[.[] | select(.type == "image_url" and (.role != "first_frame" and .role != "last_frame"))] | length' <<< "$CONTENT")"
-    [[ "$INVALID_ROLES" -eq 0 ]] || die "MiniMax H3 v2 的图片 role 只能是 first_frame 或 last_frame"
-    HAS_FIRST_FRAME="$(jq '[.[] | select(.type == "image_url" and .role == "first_frame")] | length' <<< "$CONTENT")"
-    [[ "$HAS_FIRST_FRAME" -gt 0 ]] || die "MiniMax H3 v2 至少需要一张 first_frame"
+    # 角色白名单：图片=first_frame/last_frame/reference_image；视频=reference_video；音频=reference_audio。
+    BAD_ROLE="$(jq -r '
+      [.[] | select(
+        (.type=="image_url" and ((.role // "") as $r | ($r=="first_frame" or $r=="last_frame" or $r=="reference_image") | not)) or
+        (.type=="video_url" and (.role!="reference_video")) or
+        (.type=="audio_url" and (.role!="reference_audio")) or
+        ((.type=="image_url" or .type=="video_url" or .type=="audio_url") | not)
+      )] | length' <<< "$CONTENT")"
+    [[ "$BAD_ROLE" -eq 0 ]] || die "MiniMax H3 v2 content 角色非法：图片只能 first_frame/last_frame/reference_image，视频只能 reference_video，音频只能 reference_audio"
+
+    FRAME_COUNT="$(jq '[.[] | select(.role=="first_frame" or .role=="last_frame")] | length' <<< "$CONTENT")"
+    REF_IMG="$(jq '[.[] | select(.role=="reference_image")] | length' <<< "$CONTENT")"
+    REF_VID="$(jq '[.[] | select(.role=="reference_video")] | length' <<< "$CONTENT")"
+    REF_AUD="$(jq '[.[] | select(.role=="reference_audio")] | length' <<< "$CONTENT")"
+    REF_COUNT=$((REF_IMG + REF_VID + REF_AUD))
+    RATIO_SET="$(jq -r 'if (.ratio // .aspect_ratio) then "yes" else "no" end' "$PROMPT_FILE")"
+
+    # 帧条件族(first/last_frame)与参考族(reference_*)在 H3 v2 里互斥，不能同请求混用。
+    if [[ "$FRAME_COUNT" -gt 0 && "$REF_COUNT" -gt 0 ]]; then
+      die "MiniMax H3 v2 首尾帧(first/last_frame)与参考素材(reference_*)不能在同一请求混用"
+    fi
+
+    if [[ "$REF_COUNT" -gt 0 ]]; then
+      # 参考族 Ref2VA：音频不能单独作参考；官方上限 图≤9 / 视频≤3 / 音频≤3。
+      if [[ "$REF_AUD" -gt 0 && $((REF_IMG + REF_VID)) -eq 0 ]]; then
+        die "MiniMax H3 v2 参考音频不能单独作参考，至少需一张 reference_image 或一段 reference_video"
+      fi
+      [[ "$REF_IMG" -le 9 ]] || die "MiniMax H3 v2 reference_image 最多 9 张（当前 $REF_IMG）"
+      [[ "$REF_VID" -le 3 ]] || die "MiniMax H3 v2 reference_video 最多 3 段（当前 $REF_VID）"
+      [[ "$REF_AUD" -le 3 ]] || die "MiniMax H3 v2 reference_audio 最多 3 段（当前 $REF_AUD）"
+      REF_MODE=true
+    else
+      # 帧条件族：有图片但无 first_frame 报错；纯文生视频(完全无图片)放行。
+      HAS_FIRST_FRAME="$(jq '[.[] | select(.type == "image_url" and .role == "first_frame")] | length' <<< "$CONTENT")"
+      HAS_ANY_IMAGE="$(jq '[.[] | select(.type == "image_url")] | length' <<< "$CONTENT")"
+      if [[ "$HAS_FIRST_FRAME" -eq 0 && "$HAS_ANY_IMAGE" -gt 0 ]]; then
+        die "MiniMax H3 v2 有图片素材时至少需要一张 first_frame"
+      fi
+      REF_MODE=false
+    fi
 
     CONTENT_FILE="$MINIMAX_TEMP_DIR/content.json"
     printf '%s' "$CONTENT" > "$CONTENT_FILE"
-    while IFS=$'\t' read -r INDEX LOCAL_PATH; do
+    while IFS=$'\t' read -r INDEX ITEM_TYPE LOCAL_PATH; do
       [[ -n "$LOCAL_PATH" ]] || continue
       if [[ "$LOCAL_PATH" != /* ]]; then LOCAL_PATH="$PROJECT_DIR/$LOCAL_PATH"; fi
       [[ -f "$LOCAL_PATH" ]] || die "找不到本地 MiniMax 素材: $LOCAL_PATH"
-      case "${LOCAL_PATH##*.}" in
-        jpg|JPG|jpeg|JPEG) MIME_TYPE="image/jpeg" ;;
-        webp|WEBP) MIME_TYPE="image/webp" ;;
-        *) MIME_TYPE="image/png" ;;
+      EXT="${LOCAL_PATH##*.}"; EXT="${EXT,,}"
+      case "$ITEM_TYPE" in
+        image_url)
+          case "$EXT" in jpg|jpeg) MIME_TYPE="image/jpeg" ;; webp) MIME_TYPE="image/webp" ;; *) MIME_TYPE="image/png" ;; esac
+          URL_FIELD="image_url" ;;
+        audio_url)
+          # H3 参考音频仅支持 WAV / MP3（官方约束）。
+          case "$EXT" in mp3) MIME_TYPE="audio/mpeg" ;; wav) MIME_TYPE="audio/wav" ;; *) die "MiniMax H3 参考音频仅支持 mp3/wav（收到 .$EXT），请先用 ffmpeg 转码" ;; esac
+          URL_FIELD="audio_url" ;;
+        video_url)
+          case "$EXT" in mp4) MIME_TYPE="video/mp4" ;; mov) MIME_TYPE="video/quicktime" ;; *) die "MiniMax H3 参考视频仅支持 mp4/mov（收到 .$EXT）" ;; esac
+          URL_FIELD="video_url" ;;
+        *) die "MiniMax H3 v2 未知 content 类型: ${ITEM_TYPE:-空}" ;;
       esac
       DATA_URL_FILE="$MINIMAX_TEMP_DIR/data-url-$INDEX.txt"
       {
@@ -207,16 +252,24 @@ elif [[ "$PROVIDER" == "minimax" ]]; then
         base64 < "$LOCAL_PATH" | tr -d '\n'
       } > "$DATA_URL_FILE"
       NEXT_CONTENT_FILE="$MINIMAX_TEMP_DIR/content-next.json"
-      jq --argjson index "$INDEX" --rawfile data_url "$DATA_URL_FILE" \
-        '.[$index].image_url = {url:$data_url} | del(.[$index].local_path)' \
+      jq --argjson index "$INDEX" --arg field "$URL_FIELD" --rawfile data_url "$DATA_URL_FILE" \
+        '.[$index][$field] = {url:$data_url} | del(.[$index].local_path)' \
         "$CONTENT_FILE" > "$NEXT_CONTENT_FILE"
       mv "$NEXT_CONTENT_FILE" "$CONTENT_FILE"
-    done < <(jq -r 'to_entries[] | select(.value.local_path != null) | [.key, .value.local_path] | @tsv' "$CONTENT_FILE")
+    done < <(jq -r 'to_entries[] | select(.value.local_path != null) | [.key, .value.type, .value.local_path] | @tsv' "$CONTENT_FILE")
 
-    jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --slurpfile content "$CONTENT_FILE" \
-      --arg duration "$DURATION" --arg resolution "$MINIMAX_RESOLUTION_VALUE" --arg ratio "$RATIO" \
-      --arg context_ir "$CONTEXT_IR" --argjson watermark "$WATERMARK" \
-      '{model:$model,content:([{type:"text",text:$prompt}] + $content[0]),duration:($duration|tonumber),resolution:$resolution,ratio:$ratio,use_context_ir:($context_ir == "true"),aigc_watermark:$watermark}' > "$REQUEST"
+    if [[ "$REF_MODE" == true && "$RATIO_SET" == "no" ]]; then
+      # 参考族(Ref2VA)且未显式指定比例：省略 ratio，交给 H3 adaptive 跟随参考图（与实测一致）。
+      jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --slurpfile content "$CONTENT_FILE" \
+        --arg duration "$DURATION" --arg resolution "$MINIMAX_RESOLUTION_VALUE" \
+        --arg context_ir "$CONTEXT_IR" --argjson watermark "$WATERMARK" \
+        '{model:$model,content:([{type:"text",text:$prompt}] + $content[0]),duration:($duration|tonumber),resolution:$resolution,use_context_ir:($context_ir == "true"),aigc_watermark:$watermark}' > "$REQUEST"
+    else
+      jq -n --arg model "$MODEL" --arg prompt "$PROMPT" --slurpfile content "$CONTENT_FILE" \
+        --arg duration "$DURATION" --arg resolution "$MINIMAX_RESOLUTION_VALUE" --arg ratio "$RATIO" \
+        --arg context_ir "$CONTEXT_IR" --argjson watermark "$WATERMARK" \
+        '{model:$model,content:([{type:"text",text:$prompt}] + $content[0]),duration:($duration|tonumber),resolution:$resolution,ratio:$ratio,use_context_ir:($context_ir == "true"),aigc_watermark:$watermark}' > "$REQUEST"
+    fi
   elif [[ "$MODE" == "compat" ]]; then
     BASE_URL="${MINIMAX_H3_BASE_URL:-${MINIMAX_BASE_URL:-${MINIMAX_H3_API_URL:-}}}"
     [[ -n "$BASE_URL" ]] || die "缺少 MINIMAX_H3_BASE_URL / MINIMAX_BASE_URL / MINIMAX_H3_API_URL（请在 .env 配置，脚本不再使用硬编码兜底地址）"

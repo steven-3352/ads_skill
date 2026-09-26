@@ -1,0 +1,20 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 2.50-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone 17 handheld footage with fine natural photographic grain, a vertical 9:16 extreme close-up begins on Picture 1, framed tight on the woman's (S2) hand resting on the man's (S1) forearm and her close side profile pressed near his — faces only partly in frame, no wide view. The camera holds an intimate close shot with the slightest drift as her pushing hand loses its strength, slides down his sleeve, and turns to clutch his collar in a reverse grip, the softening made visible; her lashes flutter, a slow blink, her jaw eases, her cheeks flushed pink. The woman (S2), a young adult female, breathes out a soft, unfinished half-line, her voice going airy and melting: <d>[Chinese]唔…你…</d> By the end her hand lands exactly as Picture 2: fingers clutching his collar, bodies pressed tight at the brink. Bodies stay fully clothed, no explicit action and no sexualized body close-up. Soft even diffuse light, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture, no plastic or wax or CG look, no oily glare. No subtitles, captions, watermark, logo, or any on-screen text appear anywhere in the frame at any time.\n\noverall_soundscape: Close breathy panting and the faint slide of fingers over fabric, continuous throughout with no silent gap.\n\nnon_diegetic_music: A low sustained warm pad holding steadily at the peak.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "h3-prompt-writing base structure verified;dialogue verbatim in <d>[Chinese]...</d> incl. cut-off half-lines, delivery outside <d>;breathy/panting bed runs continuously, no silent gap;NO glowing-eye/tears/red-glow wording; emotion via lashes tremble/knit-then-ease brows/slow blink/bite lip/throat roll;RED LINE held: bodies fully clothed, ends at just-short-of-brink, no explicit action, no sexualized body close-up;anti-subtitle no on-screen text;realistic matte skin no plastic/CG/oily glare;no brand/logo",
+      "FL2VA aligns Picture 1@0.00s and Picture 2@2.50s; extreme close-up hand+side profile; per-verb: push hand loses strength->slides down sleeve->reverse-grips collar landing on last frame; flushed-pink cheeks not near eyes"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9e68bd1a842eabd268a3fd40c0eeb6d7113f6fd50eb0ba58b5e3ff2e140705e5"
+  },
+  "images": [
+    "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U2-first.png",
+    "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U2-last.png"
+  ]
+}

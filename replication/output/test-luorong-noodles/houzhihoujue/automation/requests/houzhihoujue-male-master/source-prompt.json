@@ -1,0 +1,26 @@
+{
+  "id": "master-male",
+  "role": "男主身份母板（identity root）",
+  "prompt": "Cinematic identity portrait, 9:16 vertical composition, medium half-body shot, static, even soft frontal-to-slightly-angled lighting. A realistic East Asian Chinese man, about 30 to 35 years old, gentle and warm, easygoing calm expression. Short neat dark hair. He wears simple everyday home clothes: a plain light grey crew-neck long-sleeve top, relaxed and unbranded. Bright, evenly lit neutral-warm home interior background, gentle diffuse daylight, ceiling light on, no single dim yellow lamp, no moody shadows. Matte skin with realistic pores, fine skin texture and natural film grain, shot on an iPhone with true-to-life handheld realism; no oily facial glare, no highlight reflection on the face, no plastic AI sheen, no beauty-retouch fake skin, no wax texture. He is Chinese with an East Asian face, not a western face. Natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感身份母板，9:16竖屏构图，中景半身，静态，正面到微侧的均匀柔光。真实东亚中国男性，30-35岁，温和亲切，随和平静的神情。短而利落的深色头发。家常便装：素净浅灰色圆领长袖上衣，无品牌。背景为明亮通透、光线均匀的中性偏暖白居家室内，柔和漫射日光、顶灯开，不用单盏暗黄灯、无压抑阴影。哑光肤质有真实毛孔与细节、自然颗粒，iPhone真实手持质感；无脸部油光、无高光反光、无塑料AI感、无磨皮假脸、无蜡感。中国东亚脸，非欧美脸。中性偏暖自然色，浅景深。任何位置无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "identity master still (male lead, bright even home light)",
+    "checks": [
+      "single East Asian/Chinese man 30-35, gentle warm, short neat dark hair, plain light-grey crew-neck home top — identity root for shot keyframes",
+      "bright evenly-lit neutral-warm home interior, diffuse daylight + ceiling light on, not a single dim yellow lamp, no moody darkening",
+      "realistic iPhone texture / film grain / matte skin with pores / no oily glare / no highlight on face / no plastic AI sheen / no wax",
+      "medium half-body shot, 9:16 vertical 768x1344, static",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "15f25a9c2db5333fa8d2076a06e1467ebf61b78806e33bddfffada587508df00"
+  }
+}

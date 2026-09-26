@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. A realistic East Asian Chinese woman, about 42 years old, elegant and reserved, dark hair neatly pulled into a low bun with a few soft loose strands; wearing a light cream sleeveless fine-knit top and beige wide-leg linen trousers, barefoot. She stands in a warm home entryway beside an open kitchen, soft warm daylight through sheer curtains plus gentle overhead and under-cabinet lighting, matte skin with realistic pores and no oily facial glare, a calm restrained expression. Shot on an iPhone with realistic handheld texture and fine natural film grain, true-to-life skin and no plastic AI sheen. Beige cabinets, a vase of white daisies and a wood floor behind her. She is Chinese with an East Asian face, not a western face. Realistic, natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark anywhere.",
+  "size": "1024x1536",
+  "quality": "high",
+  "output_format": "png"
+}

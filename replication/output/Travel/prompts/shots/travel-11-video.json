@@ -1,0 +1,46 @@
+{
+  "id": "travel-11-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a backlit wide aerial vertical 9:16 view of the Dunhuang desert sand dunes and crescent spring, the low sun gilding the golden dune ridges while a caravan of camels moves as silhouettes along the crest. Dune shapes, spring, backlight and caravan placement stay consistent with the image. Over the four seconds the camera arcs slowly with small amplitude around the ridge while easing in with a gentle push, so the silhouetted camels progress steadily along the dune line and the warm rim light shifts across the sand. Soft, natural diffuse backlight, neutral warm-white in the shadows, bright and airy, not oppressive, no heavy amber wash over the whole frame; true-to-life photographic quality with fine natural grain, real matte surfaces, no plastic or waxy CG look. Any figures on the camels read only as small distant silhouettes. No text, subtitles, letters, numbers, watermark, logo, brand, signage or road signs anywhere in the frame.\n\noverall_soundscape: A dry desert wind hisses over the sand ridges while faint camel bells ring at a slow, uneven pace. Soft footfalls press into the sand far below.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/11/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:全片无任何<d>对白/说话/画外音台词/speaker ID;驼队仅小远景剪影不开口",
+      "配乐校验:non_diegetic_music = N/A;overall_soundscape只写现场同期音(沙漠风/驼铃/沙上脚步)",
+      "真实质感:Live-action photorealistic、自然噪点/真实哑光,禁塑料感AI感CG蜡感",
+      "柔光校验:柔和自然漫射逆光、阴影中性偏暖白、明亮通透不压抑,忌大黄光染整片",
+      "合规无字:画面无文字/字幕/数字/水印/logo/品牌/招牌/路牌;人物仅远景剪影",
+      "运镜校验:Arc 小幅慢速 + 极轻 push,情感片小幅慢速,单Shot一镜到底",
+      "时长/帧引用:4s时间线对齐;I2VA首行<Picture 1> from [Shot 1] @0.00,images一张keyframe.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "664613308089254f8ba8a059d36400d2109e15518299965c1d30b258736edbed"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇(眷恋):第 11 站敦煌鸣沙山月牙泉、驼队剪影"
+    ],
+    "related_shots": [
+      "镜11 全景航拍逆光:敦煌鸣沙山月牙泉,落日染金沙丘,驼队剪影缓行"
+    ],
+    "visual_evidence": [
+      "剧本11镜画面:敦煌鸣沙山月牙泉,落日染金沙丘,驼队剪影(记录用,非写进prompt)",
+      "旁白(仅参考):敦煌的风裹着沙子打在脸上",
+      "合规:无品牌/商标/logo,不出文字招牌路牌"
+    ],
+    "unresolved_blockers": []
+  }
+}

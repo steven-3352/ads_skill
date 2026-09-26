@@ -1,0 +1,45 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a cool white 5600K office in daytime, soft diffused overhead light with a neutral cool-white base, bright and clear, no heavy yellow lamp and no orange cast on skin. A near shot begins on the group as framed in <Picture 1>, preserving the desks, layout, and seating from the reference. The young East Asian Chinese man in his black suit, white shirt and dark-blue tie sits at his desk while a male colleague from the reference, in a blue polo shirt, leans in close beside him to tease and egg him on. The camera holds a near shot with a slight push in at small amplitude and slow speed. The male colleague in the blue polo, with a lively, grinning young voice (S4), nudges him with an elbow and, at a natural, slightly quick conversational pace with no trailing silence, says: <d>[Chinese]她绝对对你有意思。</d> As he speaks his eyebrows lift with a playful, knowing smirk, while the man beside him gives a small, awkward half-smile and shakes his head faintly rather than staring blankly. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A low office room tone hums underneath, with distant keyboard clatter, the creak of a chair as the colleague leans in, and the light pat of his elbow nudge.\n\nnon_diegetic_music: A light, playful pizzicato string figure at a moderate tempo, quiet and springy under the dialogue.",
+  "references": [
+    "replication/output/fuke/assets/U4-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U4-first全参考,0.00s锚定,工位群像布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段,单镜近景小幅慢推",
+      "对白:男同事A(S4)逐字'她绝对对你有意思。',<d>[Chinese]内仅语言标签+原文,身份/动作外置;男主不说话无ID",
+      "时长:4.0s台词8字~1.8s+起哄动作余量,语速自然偏快无死尾",
+      "灯光:办公室日冷白5600K/柔和漫射顶光/明亮通透/禁大黄光染脸",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:同事挤眉坏笑起哄/男主尴尬浅笑摇头非空洞念白",
+      "零字幕:显式no subtitles/on-screen text",
+      "声景:办公室底噪+键盘+椅子吱声+撞肘;非画内俏皮拨弦"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b45e7c5bc4e2018e1e2a2d64ae0e40ea7eb1c205944177701db792d04109a508",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U4-video",
+    "usage": "U4(误导加码)同事撮合起哄,男同事A(S4)说'她绝对对你有意思。',办公室日冷白,I2VA自U4-first发展",
+    "locks": [
+      "男同事A蓝polo衫(S4)",
+      "男主黑西装白衬衫深蓝领带(不说话无ID)",
+      "办公室日冷白5600K",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "误导加码:同事撮合起哄,男同事A亮出'她绝对对你有意思',男主尴尬浅笑,冷白5600K",
+  "images": [
+    "replication/output/fuke/assets/U4-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

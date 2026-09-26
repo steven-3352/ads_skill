@@ -1,0 +1,31 @@
+{
+  "id": "shot-04-image-first",
+  "role": "镜4首帧＝女低头抹眼角显委屈",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. A bright, airy neutral-warm living room, ceiling light on, soft diffuse daylight, no dim moody lamp. A realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, sits with her head lowered, shoulders slightly slumped, gently wiping the corner of her eye with the back of one finger, quietly aggrieved. Her eyes are calm and dry, downcast, NO tears, NO redness, NO glow. The realistic East Asian Chinese man about 30 to 35 years old (identity from the reference man), short neat dark hair, light-grey crew-neck top, is nearby, lips pressed, just beginning to soften and rise to comfort her. Matte skin with realistic pores, fine film grain, shot on an iPhone with true-to-life handheld realism, no oily facial glare, no highlight on faces, no plastic AI sheen, no wax. They are Chinese with East Asian faces, not western faces. Bright natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景，静态。明亮通透中性偏暖客厅，顶灯开、漫射日光，无暗黄压抑灯。真实东亚中国女性(30-35岁，参考女主)，中长深棕披肩发、燕麦米色针织上衣，低着头、肩膀微塌，用一根手指的指背在眼角下面轻轻抹一下，默默委屈。眼神平静而干、垂着，绝无泪水、绝无泛红、绝无发光。真实东亚中国男性(30-35岁，参考男主)，短发、浅灰圆领上衣，在近旁，抿着嘴，刚开始心软、正要起身安慰。哑光肤质有毛孔、自然颗粒，iPhone真实手持质感，无脸部油光/高光/塑料AI感/蜡感。中国东亚脸，非欧美脸。明亮中性偏暖自然色，浅景深。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA first frame, shot-04 aggrieved (woman head-down wiping eye corner, man about to soften)",
+    "checks": [
+      "couple identity locked via reference female + male, East Asian/Chinese 30-35",
+      "grievance shown ONLY via lowered head + slumped shoulders + finger-back wiping eye corner; explicitly NO tears / NO redness / NO glowing eyes",
+      "man nearby with pressed lips, beginning to soften — sets up the comfort in the last frame",
+      "bright airy neutral-warm living room, ceiling light on, not a single dim yellow lamp",
+      "medium shot, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bbcc493fe6760f07db8d3c51959b92aad63e85d607b5d2efeb7385a5f93ffd2b"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "unit":"fenshou-FS07-U3-video-v2","beat":"B7 FS07 收尾定场B独坐(锁亮版)","decision":"accept","reviewer":"claude-selfcheck","at":"2026-09-18",
+  "why":"达标(修原渐黑病):全程锁亮不渐黑,t4.2末帧B脸仍清晰可读、房间明亮;B失神看身旁空位与倒扣合照、肩塌、内心戏靠留白承担,表情读得出;满足'明亮通透不压抑'+‘表情要体现内心’两条硬线;身份锁;无对白无烧字幕;技术QC 1344x768/4.46s。原渐黑版mp4仍在盘上(fenshou-FS07-U3-video.mp4)可作备选。最终由用户审。",
+  "frames":"assets/fenshou-qc-FS07-U3v2-t{0.3,2.2,4.2}.png"
+}

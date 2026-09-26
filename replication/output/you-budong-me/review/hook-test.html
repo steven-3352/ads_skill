@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>你根本不懂我 · 前2秒钩子测试（换头版）</title>
+<style>
+  :root{--bg:#faf7f2;--card:#fff;--ink:#23201c;--sub:#6b635a;--line:#e7e0d6;--accent:#b23b3b;--ok:#2f7a3f;--warn:#a9812f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:20px 16px 80px}
+  h1{font-size:22px;margin:.2em 0}
+  h2{font-size:18px;margin:1.4em 0 .5em;padding-left:10px;border-left:4px solid var(--accent)}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+  video{width:100%;border-radius:12px;display:block;background:#000}
+  .redline{background:#fff6f6;border:1px solid #f0d5d5;border-radius:10px;padding:10px 12px;font-size:13.5px;color:#7a3b3b;margin:10px 0}
+  .ok{color:var(--ok);font-weight:700}.warn{color:var(--warn);font-weight:700}
+  ul{padding-left:18px;margin:.3em 0}li{margin:.25em 0}
+  code{background:#f3ede4;padding:1px 5px;border-radius:5px;font-size:12.5px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:620px){.grid{grid-template-columns:1fr}}
+  .tag{display:inline-block;background:#efe7db;border-radius:6px;padding:1px 8px;font-size:12px;color:#6b5b45;margin-bottom:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《你根本不懂我》· 前 2 秒钩子测试</h1>
+  <div class="meta">只改开头、其余一律不动 · 零额外生成（钩子取自已生成的 U5-r2）· 目标：压 2s 跳出（原 36.7% vs 大盘 29.7%）</div>
+
+  <div class="redline">思路：原片前 5s 是"B 刷手机+点外卖"氛围，没冲突→2s 就流失。这版把痛点句<strong>"我就想让你听我说说话"</strong>（你的封面/题眼）提到第 0 秒当冷开场，第一秒就抛错位。<strong>小步测试：先只换头，看 2s 留存有没有改善，其余镜一个都没重生。</strong></div>
+
+  <h2>① 推荐测试片（钩子B「纯痛点句」+ 原片）</h2>
+  <div class="card">
+    <span class="tag">56.7s · 换头版</span>
+    <video src="hooks/test-cut-hookB.mp4" controls playsinline preload="metadata"></video>
+    <div class="meta" style="margin-top:8px">直链:<code>/ads-review/you-budong-me/review/hooks/test-cut-hookB.mp4</code>。这就是可直接发去测 2s 留存的候选。</div>
+  </div>
+
+  <h2>② 两个冷开场候选（选哪个当第一句）</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">钩子B · 1.2s · 推荐</span>
+      <video src="hooks/coldopen-hookB.mp4" controls playsinline preload="metadata"></video>
+      <div class="meta">只「我就想让你，听我说说话」——最快抛痛点，1.2s 就进故事。</div>
+    </div>
+    <div class="card">
+      <span class="tag">钩子A · 2.7s</span>
+      <video src="hooks/coldopen-hookA.mp4" controls playsinline preload="metadata"></video>
+      <div class="meta">含铺垫「我没让你关心我吃没吃饭。我就想让你听我说说话」——信息更全但慢 1.5s。</div>
+    </div>
+  </div>
+
+  <h2>对照：原开头</h2>
+  <div class="card">
+    <span class="tag">原片 55.5s</span>
+    <video src="../final/youbudong-final.mp4" controls playsinline preload="metadata"></video>
+    <div class="meta">前 5s 为 B 刷手机+点黄焖鸡的氛围铺垫（当前 2s 跳出偏高的开头）。</div>
+  </div>
+
+  <h2>请你判 / 定方向</h2>
+  <div class="card">
+    <ul>
+      <li>🎧 <strong>钩子句听着劈词没有</strong>（我按静音停顿切的，没法自己听）；</li>
+      <li>选 <strong>钩子B（纯痛点·1.2s）</strong> 还是 <strong>钩子A（含铺垫·2.7s）</strong> 当开头；</li>
+      <li>要不要冷开场后加 0.2s 黑场再进故事（更像"钩子→正片"的节奏）；</li>
+      <li><span class="warn">下一步小迭代</span>：开头定了、你发出去看 2s 跳出降没降；<strong>降了</strong>再动下一处（U1 砍半 / 中段瘦身），<strong>没降</strong>就换钩子句再测。一次只动一个变量。</li>
+    </ul>
+  </div>
+  <div class="meta" style="margin-top:16px">语气金丝雀（U5/U7 重写版）另见：<code>/ads-review/you-budong-me/review/emotion-canary.html</code></div>
+</div>
+</body>
+</html>

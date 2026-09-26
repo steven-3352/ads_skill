@@ -1,0 +1,42 @@
+{
+  "id": "U04a",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 10,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U04a-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. The two East Asian women on the sofa as in <Picture 1>, faces, clothing and room preserved. Left woman with a translucent skincare gel and knitted cardigan (S1); right woman with bare skin and a loose cotton shirt (S2), who leans in and counts items off fast, brisk and overlapping with no pauses. The left woman (S1), defensive: <d>[Chinese] 可陈默对我好，是应该的呀。</d> The right woman (S2): <d>[Chinese] 那个男的对你好一次，你记一年。</d> The right woman (S2), rattling it off: <d>[Chinese] 陈默记你姨妈期，记你不吃葱，记你下班走哪条路。</d> The right woman (S2), pointed: <d>[Chinese] 那个人，记你生日吗。</d> The left woman (S1), voice shrinking: <d>[Chinese] ……他忙。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum. Light fabric movement as she leans forward on the sofa.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "26973407886bb06831748a29c323635a952a3e7d97cd1c863b9dad997a543325"
+  }
+}

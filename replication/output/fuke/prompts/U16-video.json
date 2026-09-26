@@ -1,0 +1,44 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a rainy night at the entrance of an office building, cool blue lighting with wet ground reflecting the lights, soft diffused ambience and no heavy yellow wash on the faces; skin keeps its natural tone. The scene begins exactly as in <Picture 1>, a medium-near shot preserving the appearance, wardrobe, and positions: the young East Asian Chinese man (S1) in a black suit stands empty-handed under the building overhang, and a male colleague B (S5) stands beside him. The camera holds a near-static medium-near framing. Colleague B (S5), glancing at the man's empty hands with a light everyday voice, says at a natural, slightly quick pace with no trailing silence: <d>[Chinese]你没带伞啊？</d> [Shot 2] At 00:02.200, the shot cuts to the reverse angle on the man (S1) in his black suit, cool blue rim light on his shoulders and rain streaking the darkness behind him. He gives a small easy shrug and, at a natural slightly quick pace with no trailing silence, replies: <d>[Chinese]没事我等会跑回去就行。</d> His expression stays relaxed and unbothered. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: Steady rain falls on the pavement and the overhang, dripping at the edges, over a low night-street ambience with distant passing traffic underneath. Light breathing is audible between the lines.\n\nnon_diegetic_music: A sparse low synth pad at a slow tempo, quiet and sustained beneath the rain.",
+  "references": [
+    "replication/output/fuke/assets/U16-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 5.0,
+    "checks": [
+      "模式:I2VA首帧U16-first全参考,0.00s锚定,身份/服装/位置延续关键帧",
+      "指令行:标准I2VA首行+空行;中近景正反打,Shot2于00:02.200切反打,时长5.00",
+      "对白:男同事B(S5)逐字`你没带伞啊？`+男主(S1)逐字`没事我等会跑回去就行。`,<d>[Chinese]内仅原文,身份/递送外置",
+      "灯光:写字楼门口雨夜冷蓝cool blue,地面积水反光,柔和漫射,禁大黄光染脸,人脸自然肤色",
+      "质感:人脸哑光无油光高光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "人物锁:东亚中国人,男主黑西装,雨夜冷蓝;延续关键帧外观位置",
+      "表演:男主轻耸肩放松不在意(雨夜误导·没带伞);语速自然偏快无死尾接话不留白",
+      "零字幕:显式no subtitles/on-screen text;声景=雨声/夜街底噪/远车不重复对白;非画内低synth pad"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "97d29685d744f38fc154dbcfdec47d83a4bf8a5050c92b4cde0f5ba0387f0fd5",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U16-video",
+    "usage": "U16(上集)写字楼门口雨夜:男同事B问没带伞,男主答跑回去,I2VA正反打",
+    "locks": [
+      "男主黑西装(S1)",
+      "男同事B(S5)",
+      "写字楼门口雨夜冷蓝地面积水反光",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "上集雨夜误导:没带伞铺垫,中近景正反打,I2VA自U16-first,冷蓝积水反光",
+  "images": [
+    "replication/output/fuke/assets/U16-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 5
+}

@@ -1,0 +1,20 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone 17 handheld footage with fine natural photographic grain, a vertical 9:16 close single shot begins on Picture 1: the man (S1) has stepped in, one hand braced flat on the white wall beside the woman's (S2) head, the other hand at her lower back, lightly pinning her to the wall as she starts to open her mouth to protest, both fully clothed. The handheld camera stays close and slightly shaky as he bends down and kisses her, cutting off her words; she lifts both hands and pushes at his shoulders, struggling two or three times, her heels scuffing the wall base. The woman (S2), a young adult female, gets out only a broken half-line before the kiss stops it: <d>[Chinese]你干什么…唔——</d> Pressed close, the man (S1) murmurs low and breathy against her, the sentence clipped: <d>[Chinese]别躲。看着我。</d> Her lashes tremble, her brows first knit then slowly ease, her gaze pulled from dodging to locked; quick breaths break between them, she bites her lip, his throat rolls. By the end her pushing hands begin to lose strength and slide down his arm, their bodies pressing closer, landing on the pose of Picture 2 — pressed tight at the wall, just short of the brink. Bodies stay fully clothed, framing holds on the embrace and the nearness; no explicit action and no sexualized body close-up. Soft even diffuse light, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture, no plastic or wax or CG look, no oily glare. No subtitles, captions, watermark, logo, or any on-screen text appear anywhere in the frame at any time.\n\noverall_soundscape: Rapid shallow breaths and light panting run continuously with no silent gap, mixed with the rub of fabric and a soft muffled thud as her back meets the wall.\n\nnon_diegetic_music: The ambient pad tightens and swells slightly toward the peak, then holds low and warm.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "h3-prompt-writing base structure verified;dialogue verbatim in <d>[Chinese]...</d> incl. cut-off half-lines, delivery outside <d>;breathy/panting bed runs continuously, no silent gap;NO glowing-eye/tears/red-glow wording; emotion via lashes tremble/knit-then-ease brows/slow blink/bite lip/throat roll;RED LINE held: bodies fully clothed, ends at just-short-of-brink, no explicit action, no sexualized body close-up;anti-subtitle no on-screen text;realistic matte skin no plastic/CG/oily glare;no brand/logo",
+      "FL2VA aligns Picture 1@0.00s and Picture 2@4.00s; per-verb path: step in/brace wall/hand at waist/pin->bend down kiss cuts her off->she pushes shoulders->hands start to slide, land tight at brink"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b2b79ae95a00252af87413800d2be1d3ca4028b4a6e62108ef90d35506055cf8"
+  },
+  "images": [
+    "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U1-first.png",
+    "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U1-last.png"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "request_id": "28c33201-ccf1-4103-8b73-98cc0850ffda",
+  "prompt_file": "prompts/master-man.json",
+  "output": "masters/master-man.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-24T14:42:24+08:00"
+}

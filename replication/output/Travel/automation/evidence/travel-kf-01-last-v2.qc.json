@@ -1,0 +1,16 @@
+{
+  "asset_id": "travel-kf-01-last-v2",
+  "group": "shot_image",
+  "semantic_qc": "pass",
+  "reviewed_by": "claude+user-authorized-A",
+  "reviewed_at": "2026-09-25",
+  "user_verdict": "用户选A授权重生尾帧锁背景",
+  "checks": {
+    "background_continuity_with_first_frame": "pass 同木地板/同双行李箱布局/同植物拖鞋地毯位置，解决v1木地板vs地毯错位",
+    "only_subject_changed": "pass 仅红衣举起→平放入箱、手抬高握→落下松开，机位光线不变（FL2VA达标）",
+    "extreme_closeup_face_not_in_frame": "pass 面部不入画只见双手与行李箱",
+    "real_hand_texture_no_wax": "pass 真实肤质无塑料蜡感",
+    "no_text_brand": "pass 无文字/logo/商标"
+  },
+  "note": "FL2VA首尾帧背景连续性人眼核对通过；成片将随镜01视频在审阅页复核"
+}

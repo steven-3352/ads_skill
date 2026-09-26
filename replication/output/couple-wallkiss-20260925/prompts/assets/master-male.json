@@ -1,0 +1,15 @@
+{
+  "prompt": "Vertical 9:16 portrait, iPhone 17 handheld realistic photo with fine natural photographic grain. A single subject only: a Chinese (East Asian) man, 25-28 years old, clean short black hair, clear front-facing three-quarter upper-body view, fair natural skin with realistic pores and slight texture, matte complexion with no oily glare or specular highlights, calm and confident expression. He wears a plain white shirt with the sleeves rolled up to the forearms — no logo, no brand, no text, no print. Background is a plain bright white-wall interior corridor with soft even diffuse daylight, neutral-to-slightly-warm color temperature that does not tint the face. Photorealistic true-to-life skin texture, natural individual hair strands, no plastic or wax or CG look, no airbrushed fake face, no beauty smoothing. This is a clean single-person identity reference. No subtitles, no captions, no watermark, no logo, no on-screen text anywhere in the frame.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "9:16 vertical single/two-person framing verified;identity locked (Chinese East Asian, casting-matched hair/wardrobe);no brand/logo/text on wardrobe or set;anti-subtitle: no on-screen text/watermark;realistic iPhone skin texture, matte no oily glare, no plastic/wax/CG;soft diffuse neutral-warm light not tinting faces"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6c0907af38694c573d858a972343e0f520e0d1a4940c0d9dc9228714bc2e9839"
+  }
+}

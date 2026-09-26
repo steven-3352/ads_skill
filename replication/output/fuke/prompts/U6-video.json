@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a cool white 5600K office in daytime, soft diffused overhead light with a neutral cool-white base, bright and clear, no heavy yellow lamp and no orange cast on skin. A near shot begins as framed in <Picture 1>, preserving the desks and layout from the reference. The male colleague in the blue polo shirt leans toward the young East Asian Chinese man in his black suit, white shirt and dark-blue tie, pressing him for an answer. The camera holds a near shot with a small slow push in. The male colleague, with a lively, prodding young voice (S4), raises his eyebrows and, at a natural, slightly quick conversational pace with no trailing silence, asks: <d>[Chinese]诶你到底怎么想的呀？</d> [Shot 2] At 00:03.000, the camera cuts to a reverse near shot on the man, whose face softens into a natural, quietly happy little smile as his mind drifts home, and, at a natural, slightly quick conversational pace with no trailing silence, he answers: <d>[Chinese]我家那位还等着我带宵夜呢。</d> The warm, easy smile and the faraway fondness in his eyes deflect the colleague and hint that his heart is already at home, rather than a blank stare. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A low office room tone hums throughout, with faint keyboard clatter and the creak of a chair as the colleague leans in across the cut.\n\nnon_diegetic_music: A warm sustained string pad at a slow tempo that swells very gently as the man answers, quiet under the dialogue.",
+  "references": [
+    "replication/output/fuke/assets/U6-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 6.0,
+    "checks": [
+      "模式:I2VA首帧U6-first全参考,0.00s锚定,工位追问布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段,正反打[Shot 2]切反打机位递增时间戳00:03.000",
+      "对白:男同事A(S4)'诶你到底怎么想的呀？'+男主(S1)'我家那位还等着我带宵夜呢。'逐字,<d>[Chinese]内仅语言标签+原文,身份/动作/递送外置",
+      "时长:6.0s两句共23字+正反打切换,语速自然偏快无死尾",
+      "灯光:办公室日冷白5600K/柔和漫射顶光/明亮通透/禁大黄光染脸",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:同事追问/男主自然带笑意目光柔软思家挡回=第一次忠诚反转非空洞",
+      "零字幕:显式no subtitles/on-screen text",
+      "声景:办公室底噪+键盘+椅子吱声;非画内暖弦轻涨"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4c98caef908f0444e70a0c3a139d8609b743a7bee526b68b1e9b8f6bde0b38c8",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U6-video",
+    "usage": "U6(反转①带宵夜)正反打:男同事(S4)追问'诶你到底怎么想的呀？'男主(S1)'我家那位还等着我带宵夜呢。'第一次忠诚反转,办公室日冷白,I2VA自U6-first",
+    "locks": [
+      "男同事A蓝polo衫(S4)",
+      "男主黑西装白衬衫深蓝领带(S1)",
+      "办公室日冷白5600K",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕",
+      "正反打两机位"
+    ]
+  },
+  "narrative_note": "反转①带宵夜:同事追问,男主带笑亮出女友挡回,第一次忠诚反转,正反打冷白5600K",
+  "images": [
+    "replication/output/fuke/assets/U6-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 6
+}

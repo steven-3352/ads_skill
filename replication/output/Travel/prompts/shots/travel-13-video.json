@@ -1,0 +1,45 @@
+{
+  "id": "travel-13-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a wide high aerial drone view over the Hulunbuir grassland shown in the frame, preserving the rolling green plains, the layered horizon, and the soft overcast diffuse daylight, neutral warm-white and true-to-life, low saturation, natural film grain, real landscape texture, not plastic, not waxy, not CG. Over the four seconds the camera pushes forward with large amplitude at slow speed low above the grass as a steady wind combs across the plain, lifting rolling waves of grass that ripple outward toward the distant horizon in continuous soft swells. The green surface breathes and settles while the open sky stretches wide and bright above. Realistic natural soft diffused light throughout, no glare.\n\noverall_soundscape: A broad open grassland wind moves steadily across the plain while the tall grass hisses and rustles in long rolling waves. Faint distant air and the soft push of the breeze continue underneath with no other sound.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/13/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>块/speaker ID/画外音台词,旁白后期TTS单配,画面纯空镜无人开口",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "同期音景校验:overall_soundscape只写现场草原风+草浪沙沙,无语言,给TTS当干净底噪床",
+      "真实质感校验:Live-action cinematic photorealistic+natural film grain+real landscape texture,显式禁plastic/waxy/CG",
+      "柔光校验:soft overcast diffuse daylight+neutral warm-white,明亮通透不压抑,无大黄光染面",
+      "合规无字校验:画面无任何文字/字幕/logo/品牌/招牌/路牌,地名靠后期花字",
+      "运镜校验:Push forward large amplitude slow(航拍广角揭示,速度慢不快),单Shot一镜到底",
+      "时长校验:integrated_multimodal_description时间线锁死four seconds=4s;I2VA首行<Picture 1> from [Shot 1] @0.00,images 1张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ff4583585126dd366ec4a27a672a095675b789a6337237f88ada70ed2775cce9"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "舒展·释怀"
+    ],
+    "related_shots": [
+      "镜13 呼伦贝尔草原风掀草浪"
+    ],
+    "visual_evidence": [
+      "远景航拍广角:草原风一刮层层草浪(旁白仅参考,不入prompt)"
+    ],
+    "unresolved_blockers": []
+  }
+}

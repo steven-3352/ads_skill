@@ -1,0 +1,45 @@
+{
+  "id": "travel-16-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a medium shot from the back seat of a moving car looking forward, preserving the interior, the rear-view mirror, and the view through it of the road stretching behind toward a low golden sunset, under soft diffuse dusk light, warm-white and true-to-life, natural film grain, real interior and glass texture, not plastic, not waxy, not CG. Over the five seconds the camera holds nearly static with only the faintest small-amplitude drift as the car travels smoothly and safely forward along the open highway; inside the rear-view mirror the ribbon of road recedes steadily into the distance while the low sun glows soft and warm along the horizon and faint reflections shift gently across the glass. Realistic natural soft diffused light throughout, no glare.\n\noverall_soundscape: A steady engine hum runs beneath a continuous low road rumble as the tires roll smoothly over the asphalt. A soft rush of wind and faint interior ambience continue underneath throughout.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/16/keyframe.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>块/speaker ID/画外音台词,空车内后座视角无人开口,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "同期音景校验:overall_soundscape只写引擎+路噪+风的现场同期音",
+      "真实质感校验:Live-action cinematic photorealistic+natural film grain+real interior/glass texture,禁plastic/waxy/CG",
+      "柔光校验:soft diffuse dusk light+warm-white,黄昏柔光不压抑no glare",
+      "合规无字校验:画面无任何文字/字幕/logo/品牌/招牌/路牌",
+      "驾驶安全校验:car travels smoothly and safely,平稳行进不暗示危险",
+      "运镜时长校验:nearly static小幅漂移(情绪静镜);时间线锁five seconds=5s;单Shot;I2VA首行@0.00,images 1张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e0fb99c79fea68afd7260e6a06fd3864a1cc8b6a9e562adafb88bf22984e2dc8"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "释然·绵长"
+    ],
+    "related_shots": [
+      "镜16 车内后座回望后视镜延伸公路与夕阳"
+    ],
+    "visual_evidence": [
+      "中景车内后座视角:后视镜里延伸的公路与夕阳(旁白仅参考,不入prompt)"
+    ],
+    "unresolved_blockers": []
+  }
+}

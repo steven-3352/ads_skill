@@ -1,0 +1,14 @@
+{
+  "request_id": "3972c920-7fc9-4f44-af88-8d7651bbf0e4",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/prompts/KF-mid-shared.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/shots/KF-mid-shared.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/masters/master-woman.png",
+    "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/masters/master-man.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-24T14:57:50+08:00"
+}

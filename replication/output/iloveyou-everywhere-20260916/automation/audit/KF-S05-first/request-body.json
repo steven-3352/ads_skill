@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Ultra-wide underwater view just beneath a crystal-clear ocean surface; a single colossal gentle whale spans almost the full width of the frame, gliding slowly across and dwarfing everything around it, warm golden god-rays streaming down like light curtains through the clear blue-teal water. One tiny warm-colored speck — an East Asian Chinese couple — drifts alongside the whale, pure accent, its minuteness making the whale's scale feel immense. Environment more than 90 percent of the frame, vast negative space of luminous water. Rising bubbles, swaying light curtains, soft diffused light, no harsh shadows, translucent palette of clear teal-blue and warm gold rays, bright and clear and never murky or cold. Serene, weightless, joyful, mind-freeing atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
+  "size": "1344x768",
+  "quality": "high",
+  "output_format": "png"
+}

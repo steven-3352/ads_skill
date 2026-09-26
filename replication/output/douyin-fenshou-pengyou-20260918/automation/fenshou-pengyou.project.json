@@ -1,0 +1,28 @@
+{
+  "subproject_id": "fenshou-pengyou",
+  "title": "分手后要不要做朋友",
+  "note": "抖音独立项目目录 douyin-fenshou-pengyou-20260918，非寄居。16:9 情感短剧，交叉剪辑，中景为主保留拍5一次近景；仅男女主出镜，朋友/闺蜜画外音。付费产物只经 run.sh→orchestrator 生成才被总账承认。",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "reviewGate": "replication/tools/validate-h3-prompt-review.sh",
+  "ledger": "automation/fenshou-pengyou.ledger.ndjson",
+  "paid_state": "automation/fenshou-pengyou.paid-state.json",
+  "state_sequence": "references/state-machine/main-sequence.json",
+  "production_plan": "contracts/production-plan.json",
+  "screenplay": "story/screenplay.md",
+  "owner_globs": [
+    "story/**",
+    "contracts/**",
+    "prompts/**",
+    "shots/**",
+    "assets/**",
+    "review/**",
+    "final/**",
+    "edit/**",
+    "social/**",
+    "automation/fenshou-pengyou.*",
+    "*.html",
+    "README.md",
+    "*.md"
+  ]
+}

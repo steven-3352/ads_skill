@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, a single continuous shot with a silent performance and no dialogue, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. The clip begins exactly on Picture 1 and resolves exactly to Picture 2, acting out every verb of the state and position change: the mature East Asian Chinese woman in her thirties (A, 33-38) reaches the entrance door, bends and grips the handle of the neatly packed upright hard-shell suitcase, lifts it, pulls the door open, steps through the doorway, and closes the door gently and steadily behind her — not a slam, a composed, dignified full stop; the suitcase leaves with her, paying off 'gone', as the framing settles into Picture 2 at the 4.00-second mark. Her face stays low, tender and restrained. The camera follows with a small, steady tracking move to the door. No dialogue at all. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room and the suitcase stay readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums underneath. The lift and light roll of the suitcase handle, quiet footsteps, and a single soft, steady door-closing sound are the only physical sounds; that door settling shut is the one clear, defining foley that separates two worlds.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS07-U2-first.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS07-U2-last.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:A拎行李箱、推门、轻掩门(轻而稳非摔门、体面句号),神情低而温柔克制,内心戏靠动作承担",
+      "首行为FL2VA对齐指令:Picture 1@0.00、Picture 2@4.00(单镜连续);状态/位置变化逐动词(俯身握把→拎起→推门→跨出→轻掩门)+摆落点防单首帧漏演;行李箱被带走兑现'已走';末尾落Picture 2;三段字段齐",
+      "无对白silent performance校验:全片无<d>;关门声为唯一明确核心拟音写在overall_soundscape;non_diegetic_music=N/A",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4d153c4eaf180f53010ffca22254ef740d6dc4d1809a7d72460b603d077312eb"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B7"
+    ],
+    "related_shots": [
+      "FS07"
+    ],
+    "visual_evidence": [
+      "A拎行李箱推门轻掩门",
+      "关门声隔开两个世界+行李箱被带走兑现'已走'"
+    ],
+    "unresolved_blockers": []
+  }
+}

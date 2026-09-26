@@ -1,0 +1,46 @@
+{
+  "prompt": "shot on iPhone 17 Pro, computational photography, photorealistic candid documentary photo of an East Asian Chinese woman, around 30 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face), gentle refined oval face, natural double eyelids, minimal light makeup, long slightly-messy natural black hair, mature and real rather than a filtered idol look. Chest-up vertical half-body portrait, near-frontal at a slight angle, calm neutral baseline micro-expression, not smiling, lips relaxed, faint tiredness under the eyes, an expression kept neutral so it can be reused across many shots. Natural skin texture with visible pores, fine lines, subtle blemishes and natural oil sheen, realistic subsurface skin, true-to-life uneven skin tone. Wearing a plain soft unbranded knit sweater in a muted solid color. Setting: cozy small wine bar seat by a rain-streaked window at night, warm white overhead light plus a table pendant light, bright enough to clearly and evenly read her face (not moody, not underexposed, not dark), soft bokeh background with no text and no logos. subtle sensor noise / fine film grain in shadows and midtones, low-light ISO grain, natural mixed-temperature ambient light, soft real-world light falloff, gentle highlight roll-off, slight handheld micro-shake, natural shallow depth of field, mild lens vignetting, muted natural color, true-to-life white balance. Face clearly and softly lit for stable identity anchoring, upper body filling the frame, vertical 9:16 composition. no plastic skin, no waxy over-smoothed face, no poreless skin, no airbrushed beauty-filter, no CGI, no 3D render look, no video-game look, no over-sharpening, no over-HDR, no glossy plastic highlights, no blown-out overexposure, no oversaturated color, no sterile clean digital look, no artificial perfection. No text, no subtitles, no captions, no letters, no numbers, no watermark, no logo, no brand anywhere in the image.",
+  "references": [],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-21T22:40:00+08:00",
+    "checks": [
+      "东亚中国人面孔已锁·显式禁欧美/网红脸,约30岁清秀温柔鹅蛋脸自然双眼皮淡妆微乱长黑发",
+      "竖屏9:16身份母板·chest-up半身近正脸微侧·中性微表情不笑便于各镜复用·上半身填满画面",
+      "iPhone17真实质感去塑料·可见毛孔细纹瑕疵油光·暗部/中间调噪点胶片颗粒·低光ISO颗粒·浅景深轻晃暗角",
+      "负向禁项齐·no plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR/oversaturated/sterile clean",
+      "小酒馆靠窗夜雨·暖白顶灯+桌面吊灯明亮看得清脸不压暗·柔和bokeh背景无文字无logo",
+      "合规红线·No text/logo/watermark/brand anywhere·素色无标针织衫无品牌"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "58fce992d28b05d95d922cd40d09b83f0f1a02096d58529137927ca2658cb6a1"
+  },
+  "narrative_alignment": {
+    "source_story": "review/screenplay-v2.html",
+    "related_beats": [
+      "B0",
+      "B1",
+      "B4",
+      "B9"
+    ],
+    "related_shots": [
+      "master-A",
+      "U1",
+      "U2",
+      "U3",
+      "U5",
+      "U7",
+      "U8"
+    ],
+    "visual_evidence": [
+      "East Asian中国人清秀温柔约30岁·非欧美非网红",
+      "iPhone17真实肤质带毛孔细纹与暗部噪点·去塑料磨皮HDR",
+      "竖屏9:16·chest-up半身中性母板便于全片复用",
+      "小酒馆靠窗夜雨暖白顶灯+桌面吊灯看得清脸不压抑·柔和bokeh无文字logo"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,1930 @@
+{
+  "schema_version": 1,
+  "project_id": "zhanv",
+  "episode": "master",
+  "status": "gate_open_for_next_authorized_asset",
+  "created_at": "2026-09-23T00:00:00+08:00",
+  "updated_at": "2026-09-26T10:31:03+08:00",
+  "budget": {
+    "committed_yuan": 24.35,
+    "hard_cap_yuan": 27.50
+  },
+  "authorization": {
+    "committed_yuan": 24.35,
+    "increment_cap_yuan": 27.50,
+    "asset_ids": [
+      "U01-first",
+      "U01-video",
+      "U02a-first",
+      "U02a-video",
+      "U02b-first",
+      "U02b-video",
+      "U03a-first",
+      "U03a-video",
+      "U03b-first",
+      "U03b-video",
+      "U04a-first",
+      "U04a-video",
+      "U04b-first",
+      "U04b-video",
+      "U04b-video-v2",
+      "U05a-first",
+      "U05a-video",
+      "U05b-first",
+      "U05b-video",
+      "U06a-first",
+      "U06a-video",
+      "U06b-first",
+      "U06b-last",
+      "U06b-last-v2",
+      "U06b-video",
+      "U07a-first",
+      "U07a-video",
+      "U07b-first",
+      "U07b-video",
+      "lin-master",
+      "lin-master-v2",
+      "zhou-master",
+      "zhou-master-v2"
+    ],
+    "allow_pending_semantic_qc": true
+  },
+  "assets": [
+    {
+      "id": "lin-master",
+      "group": "master",
+      "kind": "image",
+      "status": "rejected",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/zhanv/prompts/assets/lin-master.json",
+      "output": "replication/output/zhanv/assets/master-lin.png",
+      "submission_started_at": "2026-09-23T07:02:44+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/lin-master",
+      "sha256": "e8a946f7cf8e932336b28ceb7a67d220d357a4385f5295912fffeee0b5c54409",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T07:03:29+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "reject",
+        "at": "2026-09-23T07:13:15+08:00",
+        "evidence": "replication/output/zhanv/review/masters-v1-lighting-reject.md",
+        "note": "灯光偏暖黄，用户要LED中性白光",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": null,
+      "superseded_by": "lin-master-v2"
+    },
+    {
+      "id": "zhou-master",
+      "group": "master",
+      "kind": "image",
+      "status": "rejected",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/zhanv/prompts/assets/zhou-master.json",
+      "output": "replication/output/zhanv/assets/master-zhou.png",
+      "submission_started_at": "2026-09-23T07:03:29+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/zhou-master",
+      "sha256": "513b80f8ab986832c83752e06ecf5491e8aba65373691c31d0407fe71db2bbbb",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T07:04:32+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "reject",
+        "at": "2026-09-23T07:13:15+08:00",
+        "evidence": "replication/output/zhanv/review/masters-v1-lighting-reject.md",
+        "note": "灯光偏暖黄，用户要LED中性白光",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": null,
+      "superseded_by": "zhou-master-v2"
+    },
+    {
+      "id": "lin-master-v2",
+      "replaces": "lin-master",
+      "group": "master",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/zhanv/prompts/assets/lin-master-v2.json",
+      "output": "replication/output/zhanv/assets/master-lin-v2.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T07:13:34+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/lin-master-v2",
+      "sha256": "c6aeab3a39a0ef70c78fbbbfd8f9c8706cd4f8e63a477ac738095c66f36f376c",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T07:14:28+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T07:18:24+08:00",
+        "evidence": "replication/output/zhanv/review/masters.html",
+        "note": "用户2026-09-23公网审阅页回复通过：LED中性白光去黄达标、中国脸真实无蜡感",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-23T07:18:24+08:00"
+    },
+    {
+      "id": "zhou-master-v2",
+      "replaces": "zhou-master",
+      "group": "master",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/zhanv/prompts/assets/zhou-master-v2.json",
+      "output": "replication/output/zhanv/assets/master-zhou-v2.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T07:14:49+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/zhou-master-v2",
+      "sha256": "3f472e25d021f3ea632c4657c263f00a35aa1090b6b35822e15eb042ac900d49",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T07:15:24+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T07:18:25+08:00",
+        "evidence": "replication/output/zhanv/review/masters.html",
+        "note": "用户2026-09-23公网审阅页回复通过：素颜真实、与林夏区分足、去黄达标",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-23T07:18:25+08:00"
+    },
+    {
+      "id": "U01-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U01-first.json",
+      "output": "replication/output/zhanv/shots/U01-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:15:58+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U01-first",
+      "sha256": "326f83b85d7b7dcc964eb2714b455dca95bc1eb032bf4e9331aae0bc3bc16558",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:17:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:26+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:26+08:00"
+    },
+    {
+      "id": "U02a-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U02a-first.json",
+      "output": "replication/output/zhanv/shots/U02a-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:17:51+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U02a-first",
+      "sha256": "b5fdc46002bce352ab8110c7be26536482961ad5684e4332a46300dec6b5c383",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:19:11+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:26+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:26+08:00"
+    },
+    {
+      "id": "U02b-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U02b-first.json",
+      "output": "replication/output/zhanv/shots/U02b-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:19:11+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U02b-first",
+      "sha256": "a86e47200128318041af4497f35d1b264ee5de82fb532a92f7809b3f5eeddd53",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:20:19+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:26+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:26+08:00"
+    },
+    {
+      "id": "U03a-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U03a-first.json",
+      "output": "replication/output/zhanv/shots/U03a-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:20:19+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U03a-first",
+      "sha256": "c1ba104a0cf55cc8687e3e9a996a377c79f13a08a9b90ed02077eec2e30931c1",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:23:29+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:27+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:27+08:00"
+    },
+    {
+      "id": "U03b-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U03b-first.json",
+      "output": "replication/output/zhanv/shots/U03b-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:23:29+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U03b-first",
+      "sha256": "fd1d1ca4d185f56ee93ba2bb1cef9921ee695600e436e612c6a7909b5d1b90fb",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:26:24+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:27+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:27+08:00"
+    },
+    {
+      "id": "U04a-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U04a-first.json",
+      "output": "replication/output/zhanv/shots/U04a-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:26:24+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U04a-first",
+      "sha256": "0edc6defe1324abd114b8e13f2647b9766e410ad5865380031357076faa72728",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:28:25+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:27+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:27+08:00"
+    },
+    {
+      "id": "U04b-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U04b-first.json",
+      "output": "replication/output/zhanv/shots/U04b-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:28:25+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U04b-first",
+      "sha256": "dbd8c30c647f9af37c66070e3fd8f7d968149ac667c78e4743de8120f33f49a3",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:30:27+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:27+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:27+08:00"
+    },
+    {
+      "id": "U05a-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U05a-first.json",
+      "output": "replication/output/zhanv/shots/U05a-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:30:27+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U05a-first",
+      "sha256": "66dfa0105cfcc70de95b8e185533f1e3ad4dc3d0aa0d3dd2e7aa83ede159f8ba",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:31:51+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:27+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:27+08:00"
+    },
+    {
+      "id": "U05b-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U05b-first.json",
+      "output": "replication/output/zhanv/shots/U05b-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:31:51+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U05b-first",
+      "sha256": "e6a8adf72dae9c621b881bc089ac27a16bfea5753da5d23e64ef59a3987f6529",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:33:31+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:28+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:28+08:00"
+    },
+    {
+      "id": "U06a-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U06a-first.json",
+      "output": "replication/output/zhanv/shots/U06a-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:33:31+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U06a-first",
+      "sha256": "9c79051be53165ac526d12895b2e268c910114b55db292e2f1fb0ff3aa224d58",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:34:45+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:28+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:28+08:00"
+    },
+    {
+      "id": "U06b-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U06b-first.json",
+      "output": "replication/output/zhanv/shots/U06b-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:34:45+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U06b-first",
+      "sha256": "cf1632f898b92bc258b9d3a2c4430be76b94d9642ee8a0ff432e5ae39afc7031",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:36:17+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:28+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:28+08:00"
+    },
+    {
+      "id": "U06b-last",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U06b-last.json",
+      "output": "replication/output/zhanv/shots/U06b-last.png",
+      "status": "rejected",
+      "submission_started_at": "2026-09-23T09:36:17+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U06b-last",
+      "sha256": "e007773ada346cc2a80f1f6c60a31049bc05f29a2d6e326943aecd121c133a96",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:40:25+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "reject",
+        "at": "2026-09-23T10:17:29+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "手机背面朝上露苹果logo违反禁品牌;未兑现屏幕亮起消息;返工v2",
+        "reviewer": "user"
+      },
+      "accepted_at": null,
+      "superseded_by": "U06b-last-v2"
+    },
+    {
+      "id": "U07a-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U07a-first.json",
+      "output": "replication/output/zhanv/shots/U07a-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:40:25+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U07a-first",
+      "sha256": "f132efbe083cfd3e489d8b930d682c9ef53640616d7e8562a1ebd0f19e9ee910",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:41:34+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:28+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:28+08:00"
+    },
+    {
+      "id": "U07b-first",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U07b-first.json",
+      "output": "replication/output/zhanv/shots/U07b-first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T09:41:34+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U07b-first",
+      "sha256": "15ab342f9b97b5b5ab1968c03c7906db211966f74a747dbb0fde0811ad34c62f",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T09:43:23+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:17:28+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:17:28+08:00"
+    },
+    {
+      "id": "U06b-last-v2",
+      "replaces": "U06b-last",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "depends_on": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "prompt_file": "replication/output/zhanv/prompts/shots/U06b-last-v2.json",
+      "output": "replication/output/zhanv/shots/U06b-last-v2.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T10:18:34+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U06b-last-v2",
+      "sha256": "f5ef1b2d36d9b6948a1661135c35df851ec1595796df21f4497d312850e3154e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-23T10:20:42+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-23T10:25:32+08:00",
+        "evidence": "replication/output/zhanv/review/keyframes-review.html",
+        "note": "返工v2:手机正面亮屏聊天气泡无logo,用户已授权返工",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-23T10:25:32+08:00"
+    },
+    {
+      "id": "U01-video",
+      "kind": "video",
+      "cost_yuan": 1.00,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U01-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U01-video.json",
+      "depends_on": [
+        "U01-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 5,
+      "status": "accepted",
+      "submission_started_at": "2026-09-23T11:24:07+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U01-video",
+      "sha256": "f2f298d271520c402a319807181819e0561816abfa1c2953750f68b1df1a69d6",
+      "accepted_at": "2026-09-24T08:00:50+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T08:00:50+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/U01-video.qc.json",
+        "note": "金丝雀用户看片通过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U02a-video",
+      "kind": "video",
+      "cost_yuan": 1.40,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U02a-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U02a-video.json",
+      "depends_on": [
+        "U02a-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 7,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:01:19+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U02a-video",
+      "sha256": "9c4baffa19bd4f5cc2af4c0437984be0e3ddecef8b5d059ea7062b5d6e0cfc76",
+      "accepted_at": "2026-09-24T13:56:01+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:01+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U02b-video",
+      "kind": "video",
+      "cost_yuan": 1.80,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U02b-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U02b-video.json",
+      "depends_on": [
+        "U02b-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 9,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:04:38+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U02b-video",
+      "sha256": "5cd30ec3054fbcf16544f185a37e9f9e49f8f23f932db2e49529ba857096bdc6",
+      "accepted_at": "2026-09-24T13:56:01+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:01+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U03a-video",
+      "kind": "video",
+      "cost_yuan": 1.20,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U03a-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U03a-video.json",
+      "depends_on": [
+        "U03a-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 6,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:08:47+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U03a-video",
+      "sha256": "737ce086ba073d1fe704dff60060413089ceb21c184878ff0db1e2a0c4f06e2b",
+      "accepted_at": "2026-09-24T13:56:01+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:01+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U03b-video",
+      "kind": "video",
+      "cost_yuan": 1.20,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U03b-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U03b-video.json",
+      "depends_on": [
+        "U03b-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 6,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:11:56+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U03b-video",
+      "sha256": "416f80a6bd1af4f8867d1d3e89af195e2c443806844ff98215e63208c8d61d5e",
+      "accepted_at": "2026-09-24T13:56:02+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:02+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U04a-video",
+      "kind": "video",
+      "cost_yuan": 2.00,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U04a-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U04a-video.json",
+      "depends_on": [
+        "U04a-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 10,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:14:54+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U04a-video",
+      "sha256": "ab23df3e295537c00509eb933fd68ade498fd71bbb42efadce51950fc40b4eb0",
+      "accepted_at": "2026-09-24T13:56:02+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:02+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U04b-video",
+      "kind": "video",
+      "cost_yuan": 1.40,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U04b-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U04b-video.json",
+      "depends_on": [
+        "U04b-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 7,
+      "status": "rejected",
+      "submission_started_at": "2026-09-24T08:19:24+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U04b-video",
+      "sha256": "87c63b39fefadc31924a942c77853dd02ed3f3531ce625e84dafa4baaa2a1d4e",
+      "accepted_at": "2026-09-24T13:56:02+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:02+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      },
+      "superseded_by": "U04b-video-v2",
+      "superseded_from_accepted": true,
+      "retired_at": "2026-09-26T10:29:36+08:00"
+    },
+    {
+      "id": "U05a-video",
+      "kind": "video",
+      "cost_yuan": 1.60,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U05a-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U05a-video.json",
+      "depends_on": [
+        "U05a-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 8,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:22:33+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U05a-video",
+      "sha256": "7385e3d58908f9d5057d6f88b3665c588ff586594372a5a76bad2a1a11adf670",
+      "accepted_at": "2026-09-24T13:56:03+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:03+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U05b-video",
+      "kind": "video",
+      "cost_yuan": 1.80,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U05b-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U05b-video.json",
+      "depends_on": [
+        "U05b-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 9,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:26:02+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U05b-video",
+      "sha256": "c4ce4bb103d0c0597d9ca2c9454f86ff039533bfda1ad53fa7b51b3f5e219b00",
+      "accepted_at": "2026-09-24T13:56:03+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:03+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U06a-video",
+      "kind": "video",
+      "cost_yuan": 1.20,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U06a-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U06a-video.json",
+      "depends_on": [
+        "U06a-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 6,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:30:21+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U06a-video",
+      "sha256": "f5b52fda25beffea716f51f4dbb0b7a0afa685fce3785d10ff80443689a7b295",
+      "accepted_at": "2026-09-24T13:56:03+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:03+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U06b-video",
+      "kind": "video",
+      "cost_yuan": 1.60,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U06b-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U06b-video.json",
+      "depends_on": [
+        "U06b-first",
+        "U06b-last-v2"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 8,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:33:19+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U06b-video",
+      "sha256": "52e00e7f3b253fe3c40919a13ca158988f3df38812225bc2f73b5ab2186359da",
+      "accepted_at": "2026-09-24T13:56:03+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:03+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U07a-video",
+      "kind": "video",
+      "cost_yuan": 1.20,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U07a-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U07a-video.json",
+      "depends_on": [
+        "U07a-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 6,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T08:37:04+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U07a-video",
+      "sha256": "a4d8b7762ac7f488150e8109bdb76df5ae2aadc756f4b86afc99b5172d191b5e",
+      "accepted_at": "2026-09-24T13:56:04+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:04+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U07b-video",
+      "kind": "video",
+      "cost_yuan": 0.80,
+      "group": "shot_video",
+      "output": "replication/output/zhanv/shots/U07b-video.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U07b-video.json",
+      "depends_on": [
+        "U07b-first"
+      ],
+      "model": "MiniMax-H3",
+      "duration_sec": 4,
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T13:46:27+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U07b-video",
+      "sha256": "be02b893eabc93bde8a943e40fb2c9823412549c718e2dea27a4a0d551992dfe",
+      "accepted_at": "2026-09-24T13:56:04+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T13:56:04+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+        "note": "用户看片全过",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "U04b-video-v2",
+      "kind": "video",
+      "cost_yuan": 1.40,
+      "group": "shot_video",
+      "model": "MiniMax-H3",
+      "output": "replication/output/zhanv/shots/U04b-video-v2.mp4",
+      "prompt_file": "replication/output/zhanv/prompts/shots/U04b-video.json",
+      "depends_on": [
+        "U04b-first"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-26T10:23:48+08:00",
+      "audit_dir": "replication/output/zhanv/automation/requests/U04b-video-v2",
+      "sha256": "9b71600b75a61905261bf41717912e6681c6dda44438d8c1ef604c96c0c72e09",
+      "accepted_at": "2026-09-26T10:29:25+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-26T10:29:25+08:00",
+        "evidence": "replication/output/zhanv/review/signoff/U04b-video-v2.qc.json",
+        "note": "字幕合规机检PASS;整片最终签核在deliver",
+        "reviewer": "claude"
+      }
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-23T07:02:44+08:00",
+      "type": "submission_started",
+      "asset_id": "lin-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T07:03:19+08:00",
+      "type": "generation_received",
+      "asset_id": "lin-master",
+      "cost_yuan": 0.25,
+      "sha256": "e8a946f7cf8e932336b28ceb7a67d220d357a4385f5295912fffeee0b5c54409"
+    },
+    {
+      "at": "2026-09-23T07:03:29+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "lin-master"
+    },
+    {
+      "at": "2026-09-23T07:03:29+08:00",
+      "type": "submission_started",
+      "asset_id": "zhou-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T07:04:26+08:00",
+      "type": "generation_received",
+      "asset_id": "zhou-master",
+      "cost_yuan": 0.25,
+      "sha256": "513b80f8ab986832c83752e06ecf5491e8aba65373691c31d0407fe71db2bbbb"
+    },
+    {
+      "at": "2026-09-23T07:04:32+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "zhou-master"
+    },
+    {
+      "at": "2026-09-23T07:13:15+08:00",
+      "type": "semantic_qc_reject",
+      "asset_id": "lin-master",
+      "evidence": "replication/output/zhanv/review/masters-v1-lighting-reject.md",
+      "note": "灯光偏暖黄，用户要LED中性白光",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T07:13:15+08:00",
+      "type": "semantic_qc_reject",
+      "asset_id": "zhou-master",
+      "evidence": "replication/output/zhanv/review/masters-v1-lighting-reject.md",
+      "note": "灯光偏暖黄，用户要LED中性白光",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T07:13:26+08:00",
+      "type": "authorized_batch",
+      "count": 2,
+      "asset_ids": [
+        "lin-master-v2",
+        "zhou-master-v2"
+      ],
+      "new_hard_cap_yuan": 1.5,
+      "new_increment_cap_yuan": 1.5,
+      "note": "母板v1灯光偏暖黄，上架v2(LED中性白光)重生",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T07:13:34+08:00",
+      "type": "submission_started",
+      "asset_id": "lin-master-v2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T07:14:27+08:00",
+      "type": "generation_received",
+      "asset_id": "lin-master-v2",
+      "cost_yuan": 0.25,
+      "sha256": "c6aeab3a39a0ef70c78fbbbfd8f9c8706cd4f8e63a477ac738095c66f36f376c"
+    },
+    {
+      "at": "2026-09-23T07:14:28+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "lin-master-v2"
+    },
+    {
+      "at": "2026-09-23T07:14:49+08:00",
+      "type": "submission_started",
+      "asset_id": "zhou-master-v2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T07:15:24+08:00",
+      "type": "generation_received",
+      "asset_id": "zhou-master-v2",
+      "cost_yuan": 0.25,
+      "sha256": "3f472e25d021f3ea632c4657c263f00a35aa1090b6b35822e15eb042ac900d49"
+    },
+    {
+      "at": "2026-09-23T07:15:24+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "zhou-master-v2"
+    },
+    {
+      "at": "2026-09-23T07:18:24+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "lin-master-v2",
+      "evidence": "replication/output/zhanv/review/masters.html",
+      "note": "用户2026-09-23公网审阅页回复通过：LED中性白光去黄达标、中国脸真实无蜡感",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T07:18:25+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "zhou-master-v2",
+      "evidence": "replication/output/zhanv/review/masters.html",
+      "note": "用户2026-09-23公网审阅页回复通过：素颜真实、与林夏区分足、去黄达标",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T07:18:25+08:00",
+      "type": "superseded",
+      "asset_id": "lin-master",
+      "superseded_by": "lin-master-v2",
+      "note": "v1暖黄被否，v2去黄替换",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T07:18:25+08:00",
+      "type": "superseded",
+      "asset_id": "zhou-master",
+      "superseded_by": "zhou-master-v2",
+      "note": "v1暖黄被否，v2去黄替换",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-23T09:15:41+08:00",
+      "type": "authorized_batch",
+      "count": 14,
+      "asset_ids": [
+        "U01-first",
+        "U02a-first",
+        "U02b-first",
+        "U03a-first",
+        "U03b-first",
+        "U04a-first",
+        "U04b-first",
+        "U05a-first",
+        "U05b-first",
+        "U06a-first",
+        "U06b-first",
+        "U06b-last",
+        "U07a-first",
+        "U07b-first"
+      ],
+      "new_hard_cap_yuan": 4.5,
+      "new_increment_cap_yuan": 4.5,
+      "note": "用户2026-09-23公网授权页回复通过：14张镜头关键帧×¥0.25=¥3.5，累计上限¥4.5",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T09:15:58+08:00",
+      "type": "submission_started",
+      "asset_id": "U01-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:16:53+08:00",
+      "type": "generation_received",
+      "asset_id": "U01-first",
+      "cost_yuan": 0.25,
+      "sha256": "326f83b85d7b7dcc964eb2714b455dca95bc1eb032bf4e9331aae0bc3bc16558"
+    },
+    {
+      "at": "2026-09-23T09:17:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U01-first"
+    },
+    {
+      "at": "2026-09-23T09:17:51+08:00",
+      "type": "submission_started",
+      "asset_id": "U02a-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:19:10+08:00",
+      "type": "generation_received",
+      "asset_id": "U02a-first",
+      "cost_yuan": 0.25,
+      "sha256": "b5fdc46002bce352ab8110c7be26536482961ad5684e4332a46300dec6b5c383"
+    },
+    {
+      "at": "2026-09-23T09:19:11+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U02a-first"
+    },
+    {
+      "at": "2026-09-23T09:19:11+08:00",
+      "type": "submission_started",
+      "asset_id": "U02b-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:20:18+08:00",
+      "type": "generation_received",
+      "asset_id": "U02b-first",
+      "cost_yuan": 0.25,
+      "sha256": "a86e47200128318041af4497f35d1b264ee5de82fb532a92f7809b3f5eeddd53"
+    },
+    {
+      "at": "2026-09-23T09:20:19+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U02b-first"
+    },
+    {
+      "at": "2026-09-23T09:20:19+08:00",
+      "type": "submission_started",
+      "asset_id": "U03a-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:23:28+08:00",
+      "type": "generation_received",
+      "asset_id": "U03a-first",
+      "cost_yuan": 0.25,
+      "sha256": "c1ba104a0cf55cc8687e3e9a996a377c79f13a08a9b90ed02077eec2e30931c1"
+    },
+    {
+      "at": "2026-09-23T09:23:29+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U03a-first"
+    },
+    {
+      "at": "2026-09-23T09:23:29+08:00",
+      "type": "submission_started",
+      "asset_id": "U03b-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:26:23+08:00",
+      "type": "generation_received",
+      "asset_id": "U03b-first",
+      "cost_yuan": 0.25,
+      "sha256": "fd1d1ca4d185f56ee93ba2bb1cef9921ee695600e436e612c6a7909b5d1b90fb"
+    },
+    {
+      "at": "2026-09-23T09:26:24+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U03b-first"
+    },
+    {
+      "at": "2026-09-23T09:26:24+08:00",
+      "type": "submission_started",
+      "asset_id": "U04a-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:28:25+08:00",
+      "type": "generation_received",
+      "asset_id": "U04a-first",
+      "cost_yuan": 0.25,
+      "sha256": "0edc6defe1324abd114b8e13f2647b9766e410ad5865380031357076faa72728"
+    },
+    {
+      "at": "2026-09-23T09:28:25+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U04a-first"
+    },
+    {
+      "at": "2026-09-23T09:28:25+08:00",
+      "type": "submission_started",
+      "asset_id": "U04b-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:30:26+08:00",
+      "type": "generation_received",
+      "asset_id": "U04b-first",
+      "cost_yuan": 0.25,
+      "sha256": "dbd8c30c647f9af37c66070e3fd8f7d968149ac667c78e4743de8120f33f49a3"
+    },
+    {
+      "at": "2026-09-23T09:30:27+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U04b-first"
+    },
+    {
+      "at": "2026-09-23T09:30:27+08:00",
+      "type": "submission_started",
+      "asset_id": "U05a-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:31:50+08:00",
+      "type": "generation_received",
+      "asset_id": "U05a-first",
+      "cost_yuan": 0.25,
+      "sha256": "66dfa0105cfcc70de95b8e185533f1e3ad4dc3d0aa0d3dd2e7aa83ede159f8ba"
+    },
+    {
+      "at": "2026-09-23T09:31:51+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U05a-first"
+    },
+    {
+      "at": "2026-09-23T09:31:51+08:00",
+      "type": "submission_started",
+      "asset_id": "U05b-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:33:31+08:00",
+      "type": "generation_received",
+      "asset_id": "U05b-first",
+      "cost_yuan": 0.25,
+      "sha256": "e6a8adf72dae9c621b881bc089ac27a16bfea5753da5d23e64ef59a3987f6529"
+    },
+    {
+      "at": "2026-09-23T09:33:31+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U05b-first"
+    },
+    {
+      "at": "2026-09-23T09:33:31+08:00",
+      "type": "submission_started",
+      "asset_id": "U06a-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:34:44+08:00",
+      "type": "generation_received",
+      "asset_id": "U06a-first",
+      "cost_yuan": 0.25,
+      "sha256": "9c79051be53165ac526d12895b2e268c910114b55db292e2f1fb0ff3aa224d58"
+    },
+    {
+      "at": "2026-09-23T09:34:45+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U06a-first"
+    },
+    {
+      "at": "2026-09-23T09:34:45+08:00",
+      "type": "submission_started",
+      "asset_id": "U06b-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:36:16+08:00",
+      "type": "generation_received",
+      "asset_id": "U06b-first",
+      "cost_yuan": 0.25,
+      "sha256": "cf1632f898b92bc258b9d3a2c4430be76b94d9642ee8a0ff432e5ae39afc7031"
+    },
+    {
+      "at": "2026-09-23T09:36:17+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U06b-first"
+    },
+    {
+      "at": "2026-09-23T09:36:17+08:00",
+      "type": "submission_started",
+      "asset_id": "U06b-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:40:25+08:00",
+      "type": "generation_received",
+      "asset_id": "U06b-last",
+      "cost_yuan": 0.25,
+      "sha256": "e007773ada346cc2a80f1f6c60a31049bc05f29a2d6e326943aecd121c133a96"
+    },
+    {
+      "at": "2026-09-23T09:40:25+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U06b-last"
+    },
+    {
+      "at": "2026-09-23T09:40:25+08:00",
+      "type": "submission_started",
+      "asset_id": "U07a-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:41:33+08:00",
+      "type": "generation_received",
+      "asset_id": "U07a-first",
+      "cost_yuan": 0.25,
+      "sha256": "f132efbe083cfd3e489d8b930d682c9ef53640616d7e8562a1ebd0f19e9ee910"
+    },
+    {
+      "at": "2026-09-23T09:41:34+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U07a-first"
+    },
+    {
+      "at": "2026-09-23T09:41:34+08:00",
+      "type": "submission_started",
+      "asset_id": "U07b-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T09:43:23+08:00",
+      "type": "generation_received",
+      "asset_id": "U07b-first",
+      "cost_yuan": 0.25,
+      "sha256": "15ab342f9b97b5b5ab1968c03c7906db211966f74a747dbb0fde0811ad34c62f"
+    },
+    {
+      "at": "2026-09-23T09:43:23+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U07b-first"
+    },
+    {
+      "at": "2026-09-23T10:17:26+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U01-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:26+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U02a-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:26+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U02b-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:27+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U03a-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:27+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U03b-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:27+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U04a-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:27+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U04b-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:27+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U05a-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:28+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U05b-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:28+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U06a-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:28+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U06b-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:28+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U07a-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:28+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U07b-first",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "用户2026-09-23公网审阅页keyframes-review回复通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:17:29+08:00",
+      "type": "semantic_qc_reject",
+      "asset_id": "U06b-last",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "手机背面朝上露苹果logo违反禁品牌;未兑现屏幕亮起消息;返工v2",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:18:34+08:00",
+      "type": "authorized_batch",
+      "count": 1,
+      "asset_ids": [
+        "U06b-last-v2"
+      ],
+      "new_hard_cap_yuan": 4.75,
+      "new_increment_cap_yuan": 4.75,
+      "note": "用户2026-09-23授权U06b-last返工+¥0.25(手机正面亮屏无logo)",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:18:34+08:00",
+      "type": "submission_started",
+      "asset_id": "U06b-last-v2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-23T10:20:42+08:00",
+      "type": "generation_received",
+      "asset_id": "U06b-last-v2",
+      "cost_yuan": 0.25,
+      "sha256": "f5ef1b2d36d9b6948a1661135c35df851ec1595796df21f4497d312850e3154e"
+    },
+    {
+      "at": "2026-09-23T10:20:42+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "U06b-last-v2"
+    },
+    {
+      "at": "2026-09-23T10:25:32+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U06b-last-v2",
+      "evidence": "replication/output/zhanv/review/keyframes-review.html",
+      "note": "返工v2:手机正面亮屏聊天气泡无logo,用户已授权返工",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T10:25:32+08:00",
+      "type": "superseded",
+      "asset_id": "U06b-last",
+      "superseded_by": "U06b-last-v2",
+      "note": "背面露logo版被正面亮屏版替换",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-23T11:21:04+08:00",
+      "type": "authorized_batch",
+      "count": 13,
+      "asset_ids": [
+        "U01-video",
+        "U02a-video",
+        "U02b-video",
+        "U03a-video",
+        "U03b-video",
+        "U04a-video",
+        "U04b-video",
+        "U05a-video",
+        "U05b-video",
+        "U06a-video",
+        "U06b-video",
+        "U07a-video",
+        "U07b-video"
+      ],
+      "new_hard_cap_yuan": 22.95,
+      "new_increment_cap_yuan": 22.95,
+      "note": "stage4 方案B:13对白视频单元提额上架(密集镜U02b/U04a/U05a/U05b已加时到~6字/秒);单价¥0.2/秒,合计¥18.2;depends_on锁stage3已accepted关键帧",
+      "reviewer": "user-approved-方案B"
+    },
+    {
+      "at": "2026-09-23T03:23:51Z",
+      "type": "metadata_fix",
+      "note": "修正13个未付费视频资产prompt_file重复-video后缀笔误(authorize时引入,未生成未扣费)",
+      "reviewer": "claude-inline-correction"
+    },
+    {
+      "at": "2026-09-23T11:24:07+08:00",
+      "type": "submission_started",
+      "asset_id": "U01-video",
+      "cost_yuan": 1.00
+    },
+    {
+      "at": "2026-09-23T11:29:08+08:00",
+      "type": "generation_received",
+      "asset_id": "U01-video",
+      "cost_yuan": 1.00,
+      "sha256": "f2f298d271520c402a319807181819e0561816abfa1c2953750f68b1df1a69d6"
+    },
+    {
+      "at": "2026-09-24T08:00:50+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U01-video",
+      "evidence": "replication/output/zhanv/review/signoff/U01-video.qc.json",
+      "note": "金丝雀用户看片通过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T08:01:19+08:00",
+      "type": "submission_started",
+      "asset_id": "U02a-video",
+      "cost_yuan": 1.40
+    },
+    {
+      "at": "2026-09-24T08:04:37+08:00",
+      "type": "generation_received",
+      "asset_id": "U02a-video",
+      "cost_yuan": 1.40,
+      "sha256": "9c4baffa19bd4f5cc2af4c0437984be0e3ddecef8b5d059ea7062b5d6e0cfc76"
+    },
+    {
+      "at": "2026-09-24T08:04:38+08:00",
+      "type": "submission_started",
+      "asset_id": "U02b-video",
+      "cost_yuan": 1.80
+    },
+    {
+      "at": "2026-09-24T08:08:46+08:00",
+      "type": "generation_received",
+      "asset_id": "U02b-video",
+      "cost_yuan": 1.80,
+      "sha256": "5cd30ec3054fbcf16544f185a37e9f9e49f8f23f932db2e49529ba857096bdc6"
+    },
+    {
+      "at": "2026-09-24T08:08:47+08:00",
+      "type": "submission_started",
+      "asset_id": "U03a-video",
+      "cost_yuan": 1.20
+    },
+    {
+      "at": "2026-09-24T08:11:55+08:00",
+      "type": "generation_received",
+      "asset_id": "U03a-video",
+      "cost_yuan": 1.20,
+      "sha256": "737ce086ba073d1fe704dff60060413089ceb21c184878ff0db1e2a0c4f06e2b"
+    },
+    {
+      "at": "2026-09-24T08:11:56+08:00",
+      "type": "submission_started",
+      "asset_id": "U03b-video",
+      "cost_yuan": 1.20
+    },
+    {
+      "at": "2026-09-24T08:14:54+08:00",
+      "type": "generation_received",
+      "asset_id": "U03b-video",
+      "cost_yuan": 1.20,
+      "sha256": "416f80a6bd1af4f8867d1d3e89af195e2c443806844ff98215e63208c8d61d5e"
+    },
+    {
+      "at": "2026-09-24T08:14:54+08:00",
+      "type": "submission_started",
+      "asset_id": "U04a-video",
+      "cost_yuan": 2.00
+    },
+    {
+      "at": "2026-09-24T08:19:23+08:00",
+      "type": "generation_received",
+      "asset_id": "U04a-video",
+      "cost_yuan": 2.00,
+      "sha256": "ab23df3e295537c00509eb933fd68ade498fd71bbb42efadce51950fc40b4eb0"
+    },
+    {
+      "at": "2026-09-24T08:19:24+08:00",
+      "type": "submission_started",
+      "asset_id": "U04b-video",
+      "cost_yuan": 1.40
+    },
+    {
+      "at": "2026-09-24T08:22:32+08:00",
+      "type": "generation_received",
+      "asset_id": "U04b-video",
+      "cost_yuan": 1.40,
+      "sha256": "87c63b39fefadc31924a942c77853dd02ed3f3531ce625e84dafa4baaa2a1d4e"
+    },
+    {
+      "at": "2026-09-24T08:22:33+08:00",
+      "type": "submission_started",
+      "asset_id": "U05a-video",
+      "cost_yuan": 1.60
+    },
+    {
+      "at": "2026-09-24T08:26:01+08:00",
+      "type": "generation_received",
+      "asset_id": "U05a-video",
+      "cost_yuan": 1.60,
+      "sha256": "7385e3d58908f9d5057d6f88b3665c588ff586594372a5a76bad2a1a11adf670"
+    },
+    {
+      "at": "2026-09-24T08:26:02+08:00",
+      "type": "submission_started",
+      "asset_id": "U05b-video",
+      "cost_yuan": 1.80
+    },
+    {
+      "at": "2026-09-24T08:30:20+08:00",
+      "type": "generation_received",
+      "asset_id": "U05b-video",
+      "cost_yuan": 1.80,
+      "sha256": "c4ce4bb103d0c0597d9ca2c9454f86ff039533bfda1ad53fa7b51b3f5e219b00"
+    },
+    {
+      "at": "2026-09-24T08:30:21+08:00",
+      "type": "submission_started",
+      "asset_id": "U06a-video",
+      "cost_yuan": 1.20
+    },
+    {
+      "at": "2026-09-24T08:33:19+08:00",
+      "type": "generation_received",
+      "asset_id": "U06a-video",
+      "cost_yuan": 1.20,
+      "sha256": "f5b52fda25beffea716f51f4dbb0b7a0afa685fce3785d10ff80443689a7b295"
+    },
+    {
+      "at": "2026-09-24T08:33:19+08:00",
+      "type": "submission_started",
+      "asset_id": "U06b-video",
+      "cost_yuan": 1.60
+    },
+    {
+      "at": "2026-09-24T08:37:03+08:00",
+      "type": "generation_received",
+      "asset_id": "U06b-video",
+      "cost_yuan": 1.60,
+      "sha256": "52e00e7f3b253fe3c40919a13ca158988f3df38812225bc2f73b5ab2186359da"
+    },
+    {
+      "at": "2026-09-24T08:37:04+08:00",
+      "type": "submission_started",
+      "asset_id": "U07a-video",
+      "cost_yuan": 1.20
+    },
+    {
+      "at": "2026-09-24T08:40:22+08:00",
+      "type": "generation_received",
+      "asset_id": "U07a-video",
+      "cost_yuan": 1.20,
+      "sha256": "a4d8b7762ac7f488150e8109bdb76df5ae2aadc756f4b86afc99b5172d191b5e"
+    },
+    {
+      "at": "2026-09-24T13:45:59+08:00",
+      "type": "authorized_batch",
+      "count": 0,
+      "asset_ids": [],
+      "new_hard_cap_yuan": 23.00,
+      "new_increment_cap_yuan": 23.00,
+      "note": "用户明确授权放行:浮点边界22.15+0.80=22.95000…3被误判超额,抬上限0.05生成方案B已授权的U07b(4s¥0.8),总额仍¥22.95",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:46:27+08:00",
+      "type": "submission_started",
+      "asset_id": "U07b-video",
+      "cost_yuan": 0.80
+    },
+    {
+      "at": "2026-09-24T13:48:23+08:00",
+      "type": "generation_received",
+      "asset_id": "U07b-video",
+      "cost_yuan": 0.80,
+      "sha256": "be02b893eabc93bde8a943e40fb2c9823412549c718e2dea27a4a0d551992dfe"
+    },
+    {
+      "at": "2026-09-24T13:56:01+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U02a-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:01+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U02b-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:01+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U03a-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:02+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U03b-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:02+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U04a-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:02+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U04b-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U05a-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U05b-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U06a-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U06b-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U07a-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-24T13:56:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U07b-video",
+      "evidence": "replication/output/zhanv/review/signoff/videos-all.qc.json",
+      "note": "用户看片全过",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-26T10:23:34+08:00",
+      "type": "authorized_batch",
+      "count": 3,
+      "asset_ids": [
+        "U04b-video-v2",
+        "U04b-video-v3",
+        "U04b-video-v4"
+      ],
+      "new_hard_cap_yuan": 27.50,
+      "new_increment_cap_yuan": 27.50,
+      "note": "用户经公网授权页 remediation-U04b.html 放行:重生U04b修烧字幕(H3非确定性),预留v2/v3/v4三次重试,抬上限23.00->27.50留浮点余头",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-26T10:23:48+08:00",
+      "type": "submission_started",
+      "asset_id": "U04b-video-v2",
+      "cost_yuan": 1.40
+    },
+    {
+      "at": "2026-09-26T10:27:06+08:00",
+      "type": "generation_received",
+      "asset_id": "U04b-video-v2",
+      "cost_yuan": 1.40,
+      "sha256": "9b71600b75a61905261bf41717912e6681c6dda44438d8c1ef604c96c0c72e09"
+    },
+    {
+      "at": "2026-09-26T10:29:25+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "U04b-video-v2",
+      "evidence": "replication/output/zhanv/review/signoff/U04b-video-v2.qc.json",
+      "note": "字幕合规机检PASS;整片最终签核在deliver",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-26T10:29:36+08:00",
+      "type": "superseded_accepted",
+      "asset_id": "U04b-video",
+      "superseded_by": "U04b-video-v2",
+      "note": "旧U04b整条烧字幕违反成片零字幕,退役换v2干净版(付费历史保留,已计费不退款)",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-26T10:31:03+08:00",
+      "type": "deauthorized_ready",
+      "asset_id": "U04b-video-v3",
+      "note": "v2一次重生即成功,撤销未用的预授权重试槽(从未生成/从未计费)",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-26T10:31:03+08:00",
+      "type": "deauthorized_ready",
+      "asset_id": "U04b-video-v4",
+      "note": "v2一次重生即成功,撤销未用的预授权重试槽(从未生成/从未计费)",
+      "reviewer": "claude"
+    }
+  ]
+}

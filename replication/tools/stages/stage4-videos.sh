@@ -17,6 +17,7 @@
 #     gate-out                         该组全部 accepted + sha256 账实一致 + 他片零改动
 #     finalize                         shot_videos_accepted -> final_cut_pending（派子agent本地拼接成片）
 #     deliver  --evidence <signoff>    final_cut_pending -> complete（成片存在+人工签核+他片零改动）
+#     reopen                           交付后返工：complete/final_cut_pending/shot_videos_accepted -> shot_videos_pending
 # =============================================================================
 set -Eeuo pipefail
 phase="${1:-}"; project_dir="${2:-}"; sub="${3:-}"; desc="${4:-}"; cur="${5:-}"; shift 5 || true
@@ -85,6 +86,19 @@ case "$phase" in
             {kind:"foreign_guard",result:"pass"}]')"
     emit_advance "final_cut_pending" "complete" "stage4:deliver" \
       "成片人工签核通过（成片存在 + reviewer 签核 + 他片零改动）" "$ev"
+    ;;
+  reopen)
+    # 交付后返工回退：complete/final_cut_pending/shot_videos_accepted -> shot_videos_pending。
+    # 合 main-sequence 回退规则（回退到本 stage 的 *_pending 最小责任单元，validate_transition 已放行）。
+    # ¥0 纯状态迁移；重建 foreign 基线，供随后 gate-out/deliver 的他片零改动校验。
+    # 用途：成片已交付后发现某分镜需重生（如 H3 非确定性烧字幕），换镜后重新 gate-out→finalize→deliver。
+    case "$cur" in
+      complete|final_cut_pending|shot_videos_accepted) : ;;
+      *) emit_reject 10 "stage4 reopen 需 complete/final_cut_pending/shot_videos_accepted（当前 $cur）" ;;
+    esac
+    pc_foreign_baseline
+    emit_advance "$cur" "shot_videos_pending" "stage4:reopen" \
+      "交付后返工回退到 shot_videos_pending（最小责任单元）：重生问题分镜后重新 gate-out→finalize→deliver。" "[]"
     ;;
   *) echo "stage4: unknown phase $phase" >&2; exit 1 ;;
 esac

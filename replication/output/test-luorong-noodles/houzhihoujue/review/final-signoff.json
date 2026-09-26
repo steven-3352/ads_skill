@@ -1,0 +1,25 @@
+{
+  "film": "《后知后觉》",
+  "file": "final/houzhihoujue-final.mp4",
+  "duration_seconds": 79.7,
+  "aspect": "9:16",
+  "segments": 16,
+  "reviewer": "用户(业务)+claude(技术QC)",
+  "reviewed_at": "2026-09-25",
+  "decision": "pass",
+  "structure": "开场引导镜(vlog式前2秒反差钩+点哄/应母题) → 7实景演绎镜 × 7黑底顶光金句卡 交替 → 尾板『有些遗憾，后知后觉』",
+  "pacing_decision": "用户定:保留现状(79.7s,不压缩)",
+  "qc": {
+    "no_burned_subtitles": true,
+    "lip_sync_follows_dialogue": true,
+    "no_glowing_eyes": true,
+    "identity_consistent": true,
+    "realistic_skin_no_wax": true,
+    "no_brand_or_logo": true,
+    "assembly_order_correct": true,
+    "no_mojibake_on_cards": true
+  },
+  "public_review": "https://www.tonbird.top/ads-review/test-luorong-noodles/houzhihoujue/review/final-review.html",
+  "cost_yuan_committed": 10.45,
+  "note": "用户确认收尾、保留现状节奏。开场引导镜(帧+视频)逐帧QC过并accept;16段成片装配核对首尾正确、尾板无乱码。"
+}

@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Extreme close-up, vertical 9:16, framed tight on the hand of a Chinese (East Asian) woman now turned to clutch the collar of a Chinese (East Asian) man in a reverse grip, and her close side profile with cheeks flushed pink and lashes lowered — faces only partly in frame, no wide view. The woman is 23-26 years old with long dark hair and bare-faced natural good skin; the man is 25-28 years old in a plain white shirt with sleeves rolled to the forearms (no logo, no brand, no text). Bodies pressed tight and fully clothed at the brink, no explicit content, no sexualized body close-up. Bright white-wall interior corridor, soft even diffuse daylight, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture and fine natural grain, iPhone 17 realistic photo look, no plastic or wax or CG, no oily glare or highlights on the faces, no airbrushed fake skin. Vertical 9:16. No subtitles, captions, watermark, logo or on-screen text anywhere in the frame.",
+  "size": "768x1344",
+  "quality": "high",
+  "output_format": "png"
+}

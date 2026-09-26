@@ -1,0 +1,38 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese man, an unmistakably Chinese man with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 28-30, an urban white-collar type with clean short black hair, a dark knit top over a white stand-collar shirt, his features, hairstyle and face shape kept identical across the whole film in a bright, airy cafe — the ceiling lights are on so the whole room reads clean and evenly lit, natural neutral warm-white light, not dim, not moody, not oppressive, no single amber lamp darkening the room; a coffee cup sits on the table in front of him and the cafe behind him falls into gentle bokeh. As he says the second half he sits his upper body straight and lays both hands flat on the table to steady himself — admitting the pity but refusing to let himself collapse. The urban Chinese man in his late twenties, his voice even but firm, holding himself steady (S2), says: <d>[Chinese] 可惜。但可惜,不等于复合。</d> Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet cafe room tone hums under the shot. His steady voice carries; no other events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/images/SH03-U1-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:说『不等于复合』坐直、双手平放桌上稳住 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;单人单镜(交叉硬切在剪辑不在单元内);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 可惜。但可惜,不等于复合。</d> 一字不改、画内同期口型同步、男=(S2)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;咖啡馆正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d3b5be3a2a5859b3deb18893607fe1c7811c92dfcbedbea25b249cacd9746b4e"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍3"
+    ],
+    "related_shots": [
+      "SH03"
+    ],
+    "visual_evidence": [
+      "说『不等于复合』坐直、双手平放桌上稳住"
+    ],
+    "unresolved_blockers": []
+  }
+}

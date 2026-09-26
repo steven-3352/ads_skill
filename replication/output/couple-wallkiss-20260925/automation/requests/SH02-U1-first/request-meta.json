@@ -1,0 +1,11 @@
+{
+  "request_id": "SH02-U1-first",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/couple-wallkiss-20260925/prompts/SH02-U1-first.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/couple-wallkiss-20260925/shots/shot-SH02/images/SH02-U1-first.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-25T21:39:45+08:00"
+}

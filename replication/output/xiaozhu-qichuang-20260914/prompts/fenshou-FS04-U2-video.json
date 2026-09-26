@@ -1,0 +1,39 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, a single continuous take with no cut (the later phone-screen insert is added in editing and is NOT part of this clip). The clip opens exactly on <Picture 1>: a tight medium close-up (CAM-A, only a thin sliver of the man's shoulder blurred in the extreme lower-left foreground) of the mature East Asian Chinese woman in her thirties (A, 33-38), her face filling much of the frame, warm light on her face, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. Across the take the camera pushes in on her face very slowly and steadily so her expression grows to fill the frame. Her inner state plays out visibly on her face in a clear arc: she shakes her head slowly, her heavy eyelids lowering then lifting, her tired eyes faintly rimmed red and glassy but no tears falling, her brows drawing together at the inner corners in quiet hurt, her throat swallowing once; the ache of being told she is making a fuss is held quietly under her face — worn and disappointed, not angry. Her voice is pressed down, exhausted and restrained, speaking word by word with tiny pauses. The mature woman in her thirties, her voice slow and restrained (S1), says: <d>[Chinese] 不是那一件。你说我小题大做。</d> <scenetrans> Her in-scene, same-scene voice continues seamlessly across the beat, now even softer and almost worn thin (still a real in-scene voice, not a voice-over), <scenetrans> as she goes on: <d>[Chinese] 我等你，等到半夜。……后来，就不等了。</d> On the last words her gaze lowers and steadies, as if setting the memory down at last. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums underneath the whole take. Only the faint sounds of her heavy breathing and a single dry swallow accompany her stillness.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS04-U2-first-v2.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验(修中性锚点):锚定v2近景表情帧+缓推近;可见弧线=缓慢摇头、眼睑沉后抬、眼眶泛红含薄泪不落、眉内角微蹙、喉头吞咽、疲惫资认;末句目光下沉稳住像放下,内心戏演足",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;手机插段不喂H3(剪辑期插入),本clip单人CAM-A近景单镜;两句为画内同期声延续、非旁白,用<scenetrans>标注音频跨编辑cut无缝延续;三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 不是那一件。你说我小题大做。</d> / <d>[Chinese] 我等你，等到半夜。……后来，就不等了。</d> 一字不改、口型同步、A=(S1)、delivery在<d>外",
+      "无字幕校验:不放手机屏02:17/晚安等引号屏幕文字,无任何字幕/caption;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f724296ed015e2b36a0b4e4dc294a48c6add69402a43f99ad945a623b36c7eed"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B4"
+    ],
+    "related_shots": [
+      "FS04"
+    ],
+    "visual_evidence": [
+      "A自白不是一件事是一次次落空",
+      "'等到半夜…后来就不等了'(手机02:17证据由剪辑期插段兑现)"
+    ],
+    "unresolved_blockers": []
+  }
+}

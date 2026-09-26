@@ -1,0 +1,47 @@
+{
+  "id": "travel-12-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a backlit wide vertical 9:16 silhouette view of the Ejina golden poplar forest, sunlight slanting through the gaps in the branches, with an East Asian Chinese woman standing still beneath a tree, seen from behind in a red jacket. Her back-view posture, the red jacket, the forest and the backlight stay consistent with the image; her face is never visible. Over the four seconds the camera eases in with a very small amplitude slow push toward her back while golden leaves drift and quiver in the breeze and light flickers through the swaying branches around her. Soft, natural diffuse daylight, neutral warm-white, bright and airy, not oppressive, no heavy amber wash over the whole frame; true-to-life photographic quality with fine natural grain, real matte surfaces, no plastic or waxy CG look. No text, subtitles, letters, numbers, watermark, logo, brand, signage or road signs anywhere in the frame.\n\noverall_soundscape: A gentle wind moves through the poplar leaves with a continuous soft rustle while dry leaves tick and scatter to the ground. The open forest holds a spacious, quiet ambience underneath.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/12/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:全片无任何<d>对白/说话/画外音台词/speaker ID;女主背影不开口",
+      "配乐校验:non_diegetic_music = N/A;overall_soundscape只写现场同期音(风穿叶沙沙/落叶窸窣/空旷底噪)",
+      "真实质感:Live-action photorealistic、自然噪点/真实哑光,禁塑料感AI感CG蜡感",
+      "柔光校验:柔和自然漫射逆光、中性偏暖白、明亮通透不压抑,忌大黄光染整片",
+      "合规无字:画面无文字/字幕/数字/水印/logo/品牌/招牌/路牌",
+      "人物锁定:女主东亚中国人、红外套背影、脸不入画(呼应01镜红外套服装锚点)",
+      "运镜校验:极小幅慢 push 背影,情绪静镜,单Shot一镜到底;时长4s对齐;I2VA首行<Picture 1> from [Shot 1] @0.00,images一张keyframe.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b561f104000f0e6dff2a1269e4100b6e4244a3cd0216215d6a659cd00feb7882"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇(眷恋):第 12 站额济纳金黄胡杨林、女主背影伫立"
+    ],
+    "related_shots": [
+      "镜12 全景逆光剪影:额济纳金黄胡杨林中女主背影静立树下"
+    ],
+    "visual_evidence": [
+      "剧本12镜画面:额济纳胡杨林金黄,阳光从树缝落下,人物背影立于树下(记录用,非写进prompt)",
+      "旁白(仅参考):胡杨林黄了黄了才好看",
+      "红冲锋衣呼应01镜红外套/女主服装锚点;用母板B锁身形,背影看不清脸",
+      "合规:无品牌/商标/logo,不出文字招牌路牌"
+    ],
+    "unresolved_blockers": []
+  }
+}

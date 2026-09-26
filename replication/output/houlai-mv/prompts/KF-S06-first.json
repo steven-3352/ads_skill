@@ -1,0 +1,27 @@
+{
+  "id": "KF-S06-first",
+  "prompt": "Cinematic still, 16:9, medium over-shoulder two-shot, static. A dinner table set with a full home-cooked meal that is going cold. a realistic East Asian Chinese woman, about 26 years old, long straight dark hair, soft beige knit sweater and a realistic East Asian Chinese man, about 38 years old, short dark hair, reserved calm face, navy sweater over a white shirt sit across/adjacent, each absorbed in their own phone, not looking at each other, a clear emotional distance between them. The room is evenly and normally lit, bright and clear with natural neutral-warm light; it is NOT a single dim warm lamp and NOT moody darkness; even at night the room lights are on and the space is clearly visible. Estranged, quiet mood. They are Chinese with East Asian faces, not western faces. Realistic cinematic film still, natural color, shallow depth of field. No text, no subtitles, no lyrics, no logo, no watermark anywhere.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA first frame (couple at dinner, both on phones, estrangement)",
+    "checks": [
+      "couple East Asian/Chinese, identity via master-A + master-B",
+      "full meal going cold, both on phones, not looking at each other",
+      "bright normal dining light, not moody",
+      "medium over-shoulder two-shot, 16:9 1344x768",
+      "no text/subtitles/lyrics/logo/watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "eed0ed8071972cd62e31e35fc17abbd7b786260a0250396db2675a194bdd8d07"
+  }
+}

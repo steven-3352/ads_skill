@@ -1,0 +1,31 @@
+{
+  "asset_type": "video",
+  "shot": "VO-01",
+  "role": "人声采集口播镜·金丝雀(青年女性·甜美清亮)",
+  "video_model": "MiniMax-H3",
+  "mode": "T2VA (pure text-to-video-audio, no reference frame, no first/last keyframe; voice-only capture — visuals discarded, only the human voice track is extracted)",
+  "duration_s": 4,
+  "aspect_ratio": "16:9",
+  "prompt": "integrated_multimodal_description: [Shot 1] Photorealistic live-action, cinematic, horizontal 16:9, an extreme close-up frames the face and mouth of a young East Asian Chinese woman in her early twenties, her face filling the frame with her lips clearly visible, in a quiet softly-lit indoor room with a clean plain out-of-focus warm background and gentle diffused soft light on her skin. The camera holds a static shot as she looks directly into the lens and smiles warmly. With a sweet, bright, clear and gentle young woman's voice (S1), speaking cheerfully and joyfully, she says twice: <d>[Chinese] 我喜欢你。我喜欢你。</d> Her mouth articulates each word crisply and completely. Absolutely no text, subtitles, captions, watermark, logo or Chinese characters appear anywhere in the image.\n\noverall_soundscape: The room is completely quiet with no background music, no ambient noise and no environmental sound; only the speaker's clean, clear, close voice is present, with no other noise whatsoever.\n\nnon_diegetic_music: N/A",
+  "negative": "background music, ambient noise, environmental sound, crowd noise, echo, reverb, western/caucasian faces, multiple people, medium shot, wide shot, cluttered background, text, subtitles, captions, watermark, logo, Chinese characters, gloomy, sad, mumbling, unclear speech",
+  "status": "prompt_ready_pending_paid_generation",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "T2VA",
+    "reviewed_at": "2026-09-17",
+    "checks": [
+      "T2VA纯文生:无对齐指令首行,直接三核心字段起头,无参考帧/无立基帧(口播镜省成本)",
+      "台词严格=「我喜欢你」三字,<d>[Chinese]内逐字保留,说两遍提高命中,清晰完整",
+      "语气甜美清亮开心:sweet bright clear gentle young woman speaking cheerfully and joyfully,符合甜美雀跃基调",
+      "极近景中国真人显式East Asian Chinese防欧美脸,脸/嘴填满入画+柔光安静室内+干净背景=人声可清晰提取",
+      "安静无音:overall_soundscape写死quiet/no background music/no ambient noise/no environmental sound,only clean clear voice;non_diegetic_music=N/A",
+      "anti-subtitle:显式禁text/subtitles/captions/watermark/logo/Chinese characters(画面虽丢弃仍守规范)",
+      "三核心字段齐+时长4s(H3下限)匹配,16:9只取音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3c10bf50a8cfc671c41d3465a965005de364e550206750e27d71f0fe11fab292"
+  }
+}

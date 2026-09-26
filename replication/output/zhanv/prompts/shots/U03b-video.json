@@ -1,0 +1,42 @@
+{
+  "id": "U03b",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 6,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U03b-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. The two East Asian women as in <Picture 1>, framing favoring the right woman speaking while the left woman listens. Left woman with a translucent skincare gel and knitted cardigan (S1); right woman with bare skin and a loose cotton shirt (S2). Static handheld with slight sway; delivery quick and even, no pauses. The right woman (S2), plain and steady like a home truth: <d>[Chinese] 跟拉老虎机一样。不知道这把中不中，你才停不下来。</d> The left woman (S1) lowers her head, silent. The right woman (S2), landing it: <d>[Chinese] 陈默每次都给你。你当然不稀罕。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and fridge hum. A soft rustle as the left woman lowers her head.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "31288219b6b64f914d72f012e31bfcf9a76afff0bebba87bf2e2ba64fa5bacba"
+  }
+}

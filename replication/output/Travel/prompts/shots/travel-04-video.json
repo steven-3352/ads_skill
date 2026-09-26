@@ -1,0 +1,41 @@
+{
+  "id": "travel-04-video",
+  "mode": "FL2VA",
+  "model": "MiniMax-H3",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, shot on a full-frame DSLR with natural fine grain and soft diffuse morning daylight. The clip opens exactly on Picture 1: a wide static shot of a plain, unbranded off-road SUV parked at the entrance of a residential compound, with no signage, text, license plates, logos or advertisements anywhere in the frame, everything lit by bright, airy, neutral warm-white daylight with true-to-life color. The camera holds a static shot as the SUV's brake lights settle, the engine starts, and the vehicle pulls away smoothly and steadily at a safe, calm pace, rolling forward along the lane and gradually receding into the distance, progressively approaching the framing of Picture 2 until the car has driven out toward the far end of the frame at the end of the shot, matching the composition of Picture 2.\n\noverall_soundscape: A quiet outdoor morning ambience carries a faint distant city hum. A car door thuds shut, the engine turns over and starts, the tires roll and crunch lightly over the ground, and the engine note fades gradually as the vehicle drives away.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/04/first.png",
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/04/last.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>/说话/唱词/画外音台词/speaker ID,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "音景校验:overall_soundscape仅现场同期音(室外晨间底噪+关车门+点火引擎+轮胎压地+驶离渐弱),无语言",
+      "真实质感校验:Live-action photorealistic,真实车漆/自然噪点/自然光,无塑料蜡感CG感",
+      "柔光校验:柔和自然漫射晨光、中性偏暖白、明亮通透",
+      "合规校验:无标越野车,画面无文字/招牌/店名/路牌/车牌/logo/品牌/水印",
+      "安全驾驶校验:平稳安全驶离,不暗示危险驾驶",
+      "运镜校验:Static机位车驶离,无大幅快速运镜",
+      "时长/模式校验:FL2VA单Shot一镜到底,时间线对齐4s(停→点火→驶离→远去);首行Picture1@0.00+Picture2@4.00,images两张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "faacea899ba79e9ea0cc7c8a1d886d2e6d6c823c2c88ea8b3abba723cc5a5022"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": ["转坚定·启程出发"],
+    "related_shots": ["镜04 全景无标越野车停小区门口点火驶离"],
+    "visual_evidence": ["旁白(仅参考):走吧第一站去你圈了最久的地方", "转坚定·启程:首帧停、尾帧车已驶出远去"],
+    "unresolved_blockers": []
+  }
+}

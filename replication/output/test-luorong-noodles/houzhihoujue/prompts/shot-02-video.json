@@ -1,0 +1,39 @@
+{
+  "id": "shot-02-video",
+  "role": "镜2 较劲｜FL2VA｜复用镜1同机位，男伸手碰肩想哄边说台词、女缩肩扭头不应不语、男手停半空收回",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld footage with realistic skin texture, natural pores, and fine film grain, no plastic or waxy CG look. The same bright warm-white East Asian Chinese living room with the ceiling light on, airy and evenly lit, and the identical sofa framing as Picture 1: the woman at one end hugging a cushion, the man at the far end, a gap of cushion between them. Beginning from the argument-start pose of Picture 1, the man turns his upper body toward her and slowly extends one hand toward her shoulder to make up; the mature East Asian Chinese man in his thirties, half-coaxing and half-anxious at a normal, slightly quick conversational pace (S1), says in sync on camera: <d>[Chinese] 行了别气了，我错了还不行吗？</d> As his hand nears, the woman shrinks that shoulder away and turns her head to the opposite side without a word, refusing the gesture; his hand stops in mid-air and draws back to his knee. The camera holds a nearly static shot with slight handheld drift. The movement lands on the exact positions and composition of Picture 2 at the five-second mark — his hand withdrawn, her head turned away. Both faces stay matte under soft diffused light with no glare or reflection; East Asian Chinese features throughout, no brand or logo anywhere.\n\noverall_soundscape: A quiet living-room tone continues with a faint appliance drone. The reaching arm brushes against fabric and the sofa creaks softly as she pulls her shoulder back.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜2较劲·FL2VA。复用镜1吵架起点同机位。首帧起点，尾帧=男手收回、女扭头。男侧身伸手碰肩想哄，画内同期口型说(S1)『行了别气了，我错了还不行吗？』→女不应不语、缩肩扭头避开→手停半空收回。语速正常偏快不留死尾。静止微手持，明亮暖白顶灯居家光，哑光真实iPhone感。声景仅居家底噪+伸手布料声/沙发轻响。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 5,
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "state-change action with in-frame synced dialogue: man reaches to coax while speaking (S1) -> woman shrinks shoulder + turns head away in silence -> hand withdraws",
+      "对白verbatim校验: <d>[Chinese] 行了别气了，我错了还不行吗？</d> 一字一标点不改; 身份(成熟东亚中国男)+ID(S1)+delivery(半哄半急、语速正常偏快) 全写在 <d> 之外; 画内同期、口型同步; 女方无台词以缩肩扭头即表演",
+      "表演校验: 演较劲的内心戏(男哄的急切+女的赌气回避)而非只念台词; 说完不留死尾静默、语速正常偏快",
+      "duration 5.00s 单镜一镜到底; 对白不跨剪辑点(无cut)",
+      "soundscape 仅居家底噪+本镜动作声(伸手布料/沙发轻响), 无人声重复; non_diegetic_music N/A",
+      "visual: 真实iPhone质感/自然毛孔/细颗粒, 哑光皮肤无油光高光, 无塑料蜡感CG感; 顶灯开明亮通透暖白不压暗; East Asian中国人物; 无品牌logo; prompt内无引号包裹的屏幕字幕文字(字幕后期统一处理)",
+      "FL2VA: Picture 1 opens at 0.00s, Picture 2 lands the final pose at 5.00s; 单镜复用镜1吵架起点机位, 仅起点后动作发散"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e820ae78cc68bb3a239f518a4f26506655c128efb7228661a192607afe3b42f2"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/first.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-02/images/last.png"
+  ]
+}

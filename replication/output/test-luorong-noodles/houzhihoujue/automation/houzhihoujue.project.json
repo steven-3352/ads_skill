@@ -1,0 +1,29 @@
+{
+  "subproject_id": "houzhihoujue",
+  "title": "后知后觉",
+  "note": "片尾独白改编情感短剧，竖屏 9:16 ~20-22s，7 镜+尾板。独白走画外音 VO（豆包 seed-audio 一条连续铺底，正常偏快接话·隐忍克制），画面双层：过去暖色双人日常闪回（镜1-6）+ 现在黑底顶光女主孤身（镜7）。核心创意=同一吵架起点，因哄/不哄·应/不应分岔出冷战/较劲/幸福不同结局（镜1/2/3 复用同起点构图）。成片零对白字幕、唯尾板一次设计性大字，情绪镜严禁泪眼/红眼/发光眼（走抿唇/屏息/慢眨），居家场景明亮通透不压抑，East Asian 选角，无任何品牌商品/logo。付费产物只经 run.sh→orchestrator 生成才被总账承认。仅服务源文件 story 片尾独白脚本，不复用/覆盖 test-luorong-noodles 其它文件与资产。",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "reviewGate": "replication/tools/validate-h3-prompt-review.sh",
+  "ledger": "automation/houzhihoujue.ledger.ndjson",
+  "paid_state": "automation/houzhihoujue.paid-state.json",
+  "state_sequence": "references/state-machine/main-sequence.json",
+  "production_plan": "contracts/production-plan.json",
+  "screenplay": "story/houzhihoujue-片尾独白改编剧本.md",
+  "owner_globs": [
+    "story/**",
+    "contracts/**",
+    "prompts/**",
+    "shots/**",
+    "assets/**",
+    "keyframes/**",
+    "video/**",
+    "review/**",
+    "final/**",
+    "edit/**",
+    "automation/houzhihoujue.*",
+    "*.html",
+    "README.md",
+    "*.md"
+  ]
+}

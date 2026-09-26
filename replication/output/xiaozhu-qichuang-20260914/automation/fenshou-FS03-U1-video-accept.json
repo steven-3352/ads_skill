@@ -1,0 +1,9 @@
+{
+  "unit":"fenshou-FS03-U1-video",
+  "beat":"B3 FS03 B抓证据/A苦",
+  "decision":"accept",
+  "reviewer":"claude-selfcheck",
+  "at":"2026-09-18",
+  "why":"达标:B前倾摊手急抓'旧证据'辩解(与'上周不是还说好去吃那家餐厅'一致);A抬眼一瞥→亮一下(像盼道歉)→结尾黯下带苦意(t4.9确认低头黯然,与'那天你加班一条消息都没有'一致),微表情弧线完整、非空白;身份锁灯光正常;含配音无烧字幕;技术QC 1344x768/5.17s。对白verbatim。最终由用户审。",
+  "frames":"assets/fenshou-qc-FS03-U1-t{1.5,3.8,4.9}.png"
+}

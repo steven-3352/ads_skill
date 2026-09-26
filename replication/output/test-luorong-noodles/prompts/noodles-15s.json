@@ -1,0 +1,26 @@
+{
+  "prompt": "integrated_multimodal_description: [Shot 1] Live-action, shot on an iPhone with realistic handheld texture, fine natural film grain, true-to-life skin pores and no plastic AI sheen. Warm, soft natural daylight fills a real home dining table beside an everyday kitchen, matte skin with no oily facial glare. A high overhead shot looks straight down at the table, where a tired young Chinese office worker in her late twenties, still in a slightly rumpled work shirt, sits in front of a single bowl of plain hot noodles. The camera holds a static shot as she reaches for a plain unlabeled white ceramic jar, twists the lid off, and uses chopsticks to lift several dark-brown glossy strips of preserved mushroom out of the jar, laying them over the noodles and stirring them evenly into the bowl. [Shot 2] At 00:06.000, the shot transitions to an extreme close-up as the camera pushes in with small amplitude at slow speed on the chopsticks lifting a tangle of noodles; the dark-brown mushroom strips look oily and fragrant, the noodles are coated in glossy sauce, and light steam drifts upward. On-screen Chinese subtitle text reading \"开罐即食，拌面更香\" appears across the lower part of the frame in a warm white handwritten-style font. [Shot 3] At 00:11.000, the shot cuts to a medium close-up as the young woman lifts the noodles to her mouth and eats one bite, her tired expression softening into a relaxed, satisfied look. On-screen Chinese subtitle text reading \"人间烟火，一罐就够\" appears centered near the bottom of the frame in the same warm white handwritten-style font. No watermark or logo appears anywhere in the frame.\n\noverall_soundscape: Quiet, cozy home-kitchen ambience with a faint refrigerator hum underneath. The ceramic lid twists off with a soft pop, chopsticks tap and scrape gently against the bowl, noodles are stirred and lifted with a light wet sound, and a soft, contented breath follows the first bite.\n\nnon_diegetic_music: A warm, gentle fingerpicked acoustic-guitar melody at a slow, relaxed tempo, with soft sustained notes that rise slightly in volume toward the end.",
+  "duration": 15,
+  "ratio": "9:16",
+  "resolution": "768P",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "T2VA",
+    "checks": [
+      "结构=指令(T2VA无对齐行)+integrated_multimodal_description/overall_soundscape/non_diegetic_music,顺序与字段名合规",
+      "时长15s三镜切点严格递增且落在时长内:Shot1(0)/Shot2(00:06.000)/Shot3(00:11.000)",
+      "运镜写法=类型+幅度+速度自然融入(static/push in small amplitude slow speed)",
+      "屏幕文字用英文双引号保留原中文原样:\"开罐即食，拌面更香\"、\"人间烟火，一罐就够\"",
+      "无对白故不设speaker ID;soundscape仅写环境/动作/非语言声,不与画面重复对白",
+      "去品牌:原文星满厨鹿茸菇改为unlabeled white ceramic jar + preserved mushroom,字幕不含品牌",
+      "去塑料感/去油光:realistic iPhone handheld/film grain/matte skin/no plastic sheen/soft diffused light"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8546ad691e65335cc203f3b216c6b24915c8cc25984ceac23a70758a988f14ad"
+  }
+}

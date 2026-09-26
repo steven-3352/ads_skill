@@ -1,0 +1,14 @@
+{
+  "request_id": "fuke-U8-first",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/fuke/prompts/U8-first.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/fuke/assets/U8-first.png",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/fuke/assets/B-work.png",
+    "replication/output/fuke/assets/A-home-v3.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-22T13:36:08+08:00"
+}

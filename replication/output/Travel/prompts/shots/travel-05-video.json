@@ -1,0 +1,41 @@
+{
+  "id": "travel-05-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, shot on an action camera mounted at the driver's eye line with natural fine grain and soft diffuse daylight. The clip opens exactly on <Picture 1>: a first-person POV from the driver's seat looking through the windshield at the open road ahead, a framed photograph of an East Asian Chinese couple propped in the passenger area, the dashboard and cabin details preserved exactly, with no text, road signs, billboards, license plates or logos anywhere, lit by bright, airy, neutral warm-white daylight with matte surfaces. The camera holds a steady forward POV with only the faintest natural handheld sway as the road surface streams smoothly toward and beneath the vehicle at a safe, even cruising pace, the framed photo staying gently in view, the lane unrolling continuously ahead to the end of the shot.\n\noverall_soundscape: A steady, even engine hum runs throughout beneath a continuous wash of road noise and passing wind. A turn-signal relay ticks softly once or twice inside the cabin.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/05/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>/说话/唱词/画外音台词/speaker ID,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "音景校验:overall_soundscape仅现场同期音(引擎平稳嗡鸣+路噪+风声+偶尔转向灯),无语言",
+      "真实质感校验:Live-action photorealistic,真实车内材质/自然噪点/自然光,无塑料蜡感CG感",
+      "柔光校验:柔和自然漫射光、中性偏暖白、明亮通透",
+      "合规校验:画面无文字/字幕/路牌/招牌/广告牌/车牌/logo/品牌/水印",
+      "人物校验:合照人物为东亚中国人,POV无正脸开口镜",
+      "安全驾驶校验:平稳安全巡航,路面平顺,不暗示危险驾驶",
+      "运镜校验:Static前向POV+极轻自然晃,无大幅快速运镜",
+      "时长/模式校验:I2VA单Shot一镜到底,时间线对齐4s;首行<Picture 1>from[Shot 1]@0.00,images一张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f486205acd334504a6b2cce276638c6e651133bf5d79e4d01788307260adf4bd"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": ["坚定·陪伴上路"],
+    "related_shots": ["镜05 驾驶舱POV前方公路+副驾合照"],
+    "visual_evidence": ["旁白(仅参考):副驾摆着咱俩合照这一路你陪着我", "坚定·陪伴:主驾视角看前方公路"],
+    "unresolved_blockers": []
+  }
+}

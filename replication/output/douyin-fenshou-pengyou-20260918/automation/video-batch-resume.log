@@ -1,0 +1,196 @@
+[1] paid asset: SH06-U1-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/videos/SH06-U1.json
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: moderating
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: running
+任务 01a0b394-cbc8-74d1-92e4-656812b4c853 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/videos/SH06-U1.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/videos/SH06-U1.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/videos/SH06-U1.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH06-U1-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[2] paid asset: SH07-U1-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U1.json
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: moderating
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: running
+任务 01a0b396-6df4-77b2-bf4c-4145a2278a28 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U1.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U1.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U1.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH07-U1-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[3] paid asset: SH07-U2-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U2.json
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: moderating
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: running
+任务 01a0b398-3792-7d3f-ba89-d2a5335c3507 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U2.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U2.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U2.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH07-U2-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[4] paid asset: SH08-U1-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/videos/SH08-U1.json
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: moderating
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: queued
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: running
+任务 01a0b399-9ec8-73d3-a8f6-d4c81b657ebf 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/videos/SH08-U1.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/videos/SH08-U1.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/videos/SH08-U1.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH08-U1-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[5] paid asset: SH09-U1-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U1.json
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: moderating
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: queued
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: running
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: running
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: running
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: running
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: running
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: running
+任务 01a0b39b-7bc8-72b5-b28e-69b3d4b0f822 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U1.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U1.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U1.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH09-U1-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[6] paid asset: SH09-U2-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U2.json
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: moderating
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: running
+任务 01a0b39c-e6fb-7bd1-b039-4d81354036a2 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U2.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U2.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U2.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH09-U2-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[7] paid asset: SH10-U1-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U1.json
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: moderating
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: running
+任务 01a0b39e-393c-79d3-83db-b37c2fa28309 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U1.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U1.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U1.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH10-U1-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[8] paid asset: SH10-U2-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U2.json
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: moderating
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: running
+任务 01a0b39f-dc47-793f-ab50-0faec78ff062 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U2.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U2.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U2.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH10-U2-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[9] paid asset: SH11-U1-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U1.json
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: moderating
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: running
+任务 01a0b3a1-3e58-71c7-adbd-65c8c84a1e2a 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U1.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U1.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U1.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH11-U1-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+[10] paid asset: SH11-U2-video
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U2.json
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: moderating
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: running
+任务 01a0b3a2-f230-7d33-b7ff-dbae89bc837d 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U2.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U2.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U2.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit SH11-U2-video 已生成，待 QC/accept（paid-state: automation/fenshou-pengyou.paid-state.json）
+批量完成：成功 10 个付费单元（QC/accept 请按 --phase qc/accept 单独收口）。

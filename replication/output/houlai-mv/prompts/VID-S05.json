@@ -1,0 +1,42 @@
+{
+  "id": "VID-S05",
+  "model": "MiniMax-H3",
+  "prompt": "A frontal head-and-shoulders close-up of the same young East Asian Chinese woman from the reference image, standing in a pure black void lit only by a single hard overhead spotlight, exactly matching the reference image for her face, hair, soft beige knit sweater and lighting. She is singing, her mouth clearly opening and moving with the vocal throughout. Her expression is sorrowful and withdrawn, her gaze distant and cold, brows faintly drawn — she does NOT smile, no pleasant or happy look. Her lips, teeth and jaw move in precise synchronization with the provided reference audio. Keep the provided reference audio as the actual sound of the shot; do NOT add, replace or generate any other voice, singing, music, room tone or ambience of any kind. Her eyes are glassy with restrained tears. The camera holds nearly still with only the faintest breath of movement. No other person, no on-screen text, no subtitles, no lyrics.",
+  "duration": 6,
+  "resolution": "768P",
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/houlai-mv/shots/KF-S01-first.png",
+      "role": "reference_image"
+    },
+    {
+      "type": "audio_url",
+      "audio_url": {
+        "url": "pending"
+      },
+      "local_path": "/home/ubuntu/mvstudio-workspace/houlai-mv/refaudio/ref-S05-6s-v2.mp3",
+      "role": "reference_audio"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "Ref2VA anchor v2 — S01 recipe + explicit 'singing/no smile/sorrowful distant' + audio +6dB (fix: v1 came out smiling with weak mouth)",
+    "checks": [
+      "reuse KF-S01-first.png black-void spotlight identity",
+      "reference_audio = S05段 +6dB 限幅(补v1嘴型弱),trim ~=6s",
+      "prompt 明确 singing + mouth clearly moving + sorrowful/distant + NO smile",
+      "保音轨句保留;无声景创作;无歌词/文字",
+      "no ratio(->16:9);768P;人眼判非corr"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "154b0d2dcbfea31b75bf51836c7625d6925380d04e5bb31eacda1b4e7f586963"
+  }
+}

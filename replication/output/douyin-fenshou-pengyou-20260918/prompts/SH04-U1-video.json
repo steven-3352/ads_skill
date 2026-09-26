@@ -1,0 +1,38 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese man, an unmistakably Chinese man with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 28-30, an urban white-collar type with clean short black hair, a dark knit top over a white stand-collar shirt, his features, hairstyle and face shape kept identical across the whole film in a bright, airy cafe — the ceiling lights are on so the whole room reads clean and evenly lit, natural neutral warm-white light, not dim, not moody, not oppressive, no single amber lamp darkening the room; a coffee cup sits on the table in front of him and the cafe behind him falls into gentle bokeh. On hearing the friend's off-screen '不在乎' (added later) his fingers stop on the table; as he says '彻底删掉' his eyes flick toward his phone and then move away — the first crack. The urban Chinese man in his late twenties, his voice low, quietly resistant (S2), says: <d>[Chinese] 我只是不想,把她彻底删掉。</d> Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet cafe room tone hums under the shot. His low voice; no other events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U1-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:手指停在桌面、眼神扫向手机又移开 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;单人单镜(交叉硬切在剪辑不在单元内);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 我只是不想,把她彻底删掉。</d> 一字不改、画内同期口型同步、男=(S2)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;咖啡馆正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "77dee3a0b833ebc6a388ce40228a289d9982af16578445eb326b15eb557c3cc1"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍3.5"
+    ],
+    "related_shots": [
+      "SH04"
+    ],
+    "visual_evidence": [
+      "手指停在桌面、眼神扫向手机又移开"
+    ],
+    "unresolved_blockers": []
+  }
+}

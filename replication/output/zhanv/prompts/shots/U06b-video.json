@@ -1,0 +1,50 @@
+{
+  "id": "U06b",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "FL2VA",
+  "duration": 8,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U06b-first.png",
+      "role": "first_frame"
+    },
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U06b-last-v2.png",
+      "role": "last_frame"
+    }
+  ],
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. A single continuous medium shot on the left woman, the 28-year-old with a translucent skincare gel and knitted cardigan (S1), with a phone-screen insert. She begins in the state of Picture 1, an unbranded phone lying dark-screen on her knee, her hand at rest. The camera pushes in with small amplitude at slow speed as the phone lights up and she picks it up; the screen shows a chat message that reads \"下班给你带了糖水，少冰，你上次说那家。\" She stares at it and does not move. Her thumb hovers over a second, separate chat thread, opens it, then closes it again. She settles into the pose, hand position and framing of Picture 2, the phone lit in her hand and her thumb just leaving the other chat thread. At the very end she murmurs, quiet and almost to herself (S1): <d>[Chinese] ……我回陈默。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum kept present so the pause never goes dead. A single soft phone notification chime as the screen lights, and light taps as her thumb touches the screen.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "374085b2f95e204d04a8152c777508a08343baf91aac1494ec55855eacb0903e"
+  }
+}

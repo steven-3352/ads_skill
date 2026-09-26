@@ -1,0 +1,17 @@
+{
+  "unit": "U04b-video-v2",
+  "supersedes": "U04b-video",
+  "purpose": "修复 H3 非确定性烧字幕(旧 U04b 整条烧'爱你的人心疼你/他在遛你')违反成片零字幕死规矩",
+  "technical_qc": {
+    "subtitle_burn": "PASS — 底部28%带10帧密采样,全无烧字幕/水印字",
+    "identity": "PASS — 左S1林夏(肤胶+针织衫)/右S2周周(松衬衫),不串脸,合母板",
+    "framing": "PASS — 过肩近景题眼镜",
+    "texture_light": "PASS — 真实肤质无蜡感,中性白光,无油光",
+    "prompt": "同技能生成prompt(sha 2494b96...),同首帧U04b-first.png,未改",
+    "cost_yuan": 1.40,
+    "attempts": 1
+  },
+  "note": "字幕合规为客观机检(零烧字幕);整片表演/对白/连贯的最终人工签核在 deliver 阶段(用户看重拼成片)",
+  "reviewer": "claude",
+  "at": "2026-09-26"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "travel-03-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, shot on a full-frame DSLR with true-to-life texture, natural fine grain and soft diffuse daylight through the windows. The clip opens exactly on <Picture 1>: a medium shot of a car interior where a plain framed photograph of an East Asian Chinese couple (natural everyday Chinese features) rests on the empty front passenger seat, the upholstery, seatbelt and cabin details preserved exactly, lit by soft, airy, neutral warm-white daylight with matte surfaces and no glare, no text or logos anywhere. The camera pushes in with small amplitude at slow speed toward the framed photograph, the empty seat and the stillness of the cabin quietly emphasizing the single absent passenger, the composition drifting gently closer and holding on the photo at the end of the shot.\n\noverall_soundscape: A hushed, enclosed cabin room tone hums low throughout, with only the faintest creak of upholstery and a soft settle of fabric beneath the movement.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/03/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>/说话/唱词/画外音台词/speaker ID,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "音景校验:overall_soundscape仅现场同期音(车内静谧底噪+极轻皮座/布料声),无语言",
+      "真实质感校验:Live-action photorealistic,真实材质/自然噪点/自然光,哑光无油光,无塑料蜡感CG感",
+      "柔光校验:柔和自然漫射光透窗、中性偏暖白、明亮不压抑",
+      "合规校验:画面无文字/字幕/字母/数字/logo/品牌/水印,相框内为合照非屏幕文字",
+      "人物校验:合照人物为东亚中国人,画面无正脸开口镜",
+      "运镜校验:仅小幅慢速push in向合照,无大幅快速运镜",
+      "时长/模式校验:I2VA单Shot一镜到底,时间线对齐4s;首行<Picture 1>from[Shot 1]@0.00,images一张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cd115ac0db672f3d24127e38f7ebdf212229e46e2e722f9abb91cc347dc8d7c9"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": ["孤身·空副驾"],
+    "related_shots": ["镜03 中景车内空副驾合照相框缓推"],
+    "visual_evidence": ["旁白(仅参考):说好两个人一起去现在就剩我自己", "怅惘·孤身:空副驾座上两人合照相框"],
+    "unresolved_blockers": []
+  }
+}

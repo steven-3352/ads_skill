@@ -1,0 +1,41 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. The clip opens exactly on the composition of Picture 1: an over-the-shoulder single past the woman's shoulder onto the mature East Asian Chinese man in his thirties (B, 33-38), with the axis kept consistent. He has just heard the breakup; his body jerks stiff, his eyes snap to her, disbelief flooding his face, his mouth half-opening as if to laugh it off but unable to — his first instinct that she must be joking or merely in another mood, trying to downgrade it into an ordinary spat, a testing half-smile flickering as he leans slightly toward her. The mature man in his thirties, his voice hesitant and disbelieving (S2), says: <d>[Chinese] 你……是不是又生气了。</d> [Shot 2] At 00:02.300, the camera cuts on the reverse to the matching over-the-shoulder single past the man's shoulder onto the woman (A, 33-38), holding the same axis. She stays calm, her eyes still not warm on him, and gives an extremely small shake of the head, one breath catching for an instant as something stings inside her and her resolve hardens; the framing settles into the composition of Picture 2 by the 5.00-second mark. The mature woman in her thirties, her voice flat, quiet and final (S1), says: <d>[Chinese] 没有。我想很久了。</d> Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums underneath the whole clip. A faint stiffening of fabric marks the man's freeze, and a small caught breath punctuates the woman's turn; no other ambient events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS02-U1-first.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS02-U1-ref.png"
+  ],
+  "duration": 5,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:B身体一僵+试探降级半笑(侥幸,想当拌嘴)、错愕全在表情;A极小摇头+呼吸一顿决定变硬(内心一刺),内心戏演足",
+      "首行为FL2VA对齐指令:Picture 1(Shot 1)@0.00、Picture 2(Shot 2)@5.00;正反打硬切CAM-B→CAM-A、守轴线不跳轴、末尾落在Picture 2构图(非脸部morph);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 你……是不是又生气了。</d> / <d>[Chinese] 没有。我想很久了。</d> 一字不改、画内同期口型同步、A=(S1)/B=(S2)、身份+delivery在<d>外",
+      "cut时间00:02.300严格递增且落在5.00s时长内",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "35a3c5608562e80e45f315ec2c7719d473bc9e1afbeb677d5522b0af6ae13b7c"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B2"
+    ],
+    "related_shots": [
+      "FS02"
+    ],
+    "visual_evidence": [
+      "B想降级成拌嘴的侥幸",
+      "A摇头堵死退路的转折点"
+    ],
+    "unresolved_blockers": []
+  }
+}

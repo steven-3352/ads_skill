@@ -1,0 +1,8 @@
+{
+  "model": "seed-audio-1.0",
+  "text_prompt": "现在懂了，可是那个人已经不在了。",
+  "audio_config": {
+    "format": "wav"
+  },
+  "speaker": "zh_female_cancan_uranus_bigtts"
+}

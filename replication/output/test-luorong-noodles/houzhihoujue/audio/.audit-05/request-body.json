@@ -1,0 +1,8 @@
+{
+  "model": "seed-audio-1.0",
+  "text_prompt": "我唠叨，你点头，这就是迁就。",
+  "audio_config": {
+    "format": "wav"
+  },
+  "speaker": "zh_female_cancan_uranus_bigtts"
+}

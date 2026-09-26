@@ -1,0 +1,82 @@
+[
+  {
+    "id": "CAP-friend-p2",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p2.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p2.mp4"
+  },
+  {
+    "id": "CAP-sis-p2",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-sis-p2.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-sis-p2.mp4"
+  },
+  {
+    "id": "CAP-friend-p35",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p35.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p35.mp4"
+  },
+  {
+    "id": "CAP-sis-p35",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-sis-p35.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-sis-p35.mp4"
+  },
+  {
+    "id": "CAP-friend-p4a",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p4a.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p4a.mp4"
+  },
+  {
+    "id": "CAP-friend-p4b",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p4b.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p4b.mp4"
+  },
+  {
+    "id": "CAP-friend-p6",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 1.2,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p6.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p6.mp4"
+  },
+  {
+    "id": "CAP-friend-p8",
+    "kind": "video",
+    "model": "MiniMax-H3",
+    "group": "vo_capture",
+    "cost_yuan": 0.8,
+    "depends_on": [],
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p8.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p8.mp4"
+  }
+]

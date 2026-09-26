@@ -1,0 +1,37 @@
+{
+  "project": "iloveyou-everywhere-20260916",
+  "locked_at": "2026-09-16",
+  "locked_by_user": true,
+  "video_model": {
+    "id": "MiniMax-H3",
+    "locked": true,
+    "reason": "画内对白+声音+连续推拉运镜,契合穿界长推拉与前戏告白;最短4s计费(minimax-h3-min-4s-billing)"
+  },
+  "image_generator": {
+    "id": "gpt-image-2",
+    "size": "1344x768",
+    "mode": "text2img",
+    "note": "锁1344×768直出避画幅拉伸;禁img2img磁吸肖像(generate-image.sh exit4门禁);S01用--reference仅锁脸"
+  },
+  "budget": {
+    "currency": "CNY",
+    "keyframe_cap": 3.0,
+    "video_cap": 20.0,
+    "on_exceed": "停止并向用户报账,不自动追加",
+    "rule": "付费重试须单独授权;失败只重做最小单元"
+  },
+  "generation_order": [
+    "1. 关键帧金丝雀:先出1张(KF-S01或KF-S07)验证通路+扣费正常",
+    "2. 关键帧批量:其余6张,顺序出,见拒即停",
+    "3. 用户验图",
+    "4. 锁模型后逐镜写视频提示词(prompts/shots/)",
+    "5. 视频金丝雀1镜 → 用户验 → 批量",
+    "6. 无缝拼接+后期声音设计+字幕后期烧"
+  ],
+  "gates": {
+    "paid_generation_requires_this_file": true,
+    "no_media_in_git": true,
+    "precheck_balance_and_canary_before_batch": true,
+    "subtitles_post_burn_only": true
+  }
+}

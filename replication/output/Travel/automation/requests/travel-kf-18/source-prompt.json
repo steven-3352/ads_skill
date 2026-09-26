@@ -1,0 +1,57 @@
+{
+  "id": "travel-18-image",
+  "role": "镜18 特写平视慢推关键帧：副驾座上两人合照特写（母板A那张），画面绝不出任何文字（落字后期加）",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "竖构图 9:16 特写平视，一张真实的实体旅行合照静静立/摆在汽车副驾座上，镜头正对照片、聚焦两人的笑容。照片里是一对二十多岁到三十出头的东亚中国年轻情侣（一男一女、自然普通中国人五官、女生外搭红色冲锋衣），与母板 A 合照保持一致，两人肩并肩自然微笑。照片作为实体相纸带轻微反光与边角磨损，背后虚化的副驾座椅面料作为浅景深背景。照片中两人笑容居中、五官清晰完整、不贴边不出画，防拉伸变形。柔和的自然漫射光打在相纸与座椅上，光色中性偏暖白、明亮通透不压抑，不用大黄光染画面；照片中两人脸部哑光、无油光高光反光。iPhone/单反真实照片级质感，画面带细腻真实的肤质、可见毛孔、相纸纹理与自然噪点，绝无塑料感、AI感、CG蜡感、磨皮假脸、蜡像感。画面任何位置绝对没有任何文字、字幕、字母、数字、水印、logo 或品牌，此帧为纯画面（片尾落字全部靠后期添加，本帧不出任何字）。",
+  "references": [
+    "replication/output/Travel/assets/characters/master-couple-photo.png"
+  ],
+  "identity_anchor": {
+    "character_id": "travel-couple-photo",
+    "role": "合照道具（母板A）片尾特写慢推镜，照片中两人身份锁母板A，纯画面不落字",
+    "usage": "--reference 母板A master-couple-photo.png，锁合照中情侣两人一致；片尾落字靠后期，此帧画面绝不出文字",
+    "locks": [
+      "副驾座上两人合照特写，聚焦两人笑容，母板A那张",
+      "照片内容=母板A那对东亚中国情侣（女生红冲锋衣），肩并肩微笑一致",
+      "五官清晰完整、真实照片级质感，禁塑料感/蜡感/磨皮假脸",
+      "画面绝不出任何文字/字幕/数字/水印/logo，落字后期加",
+      "竖构图 9:16 两人笑容居中不贴边"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T14:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344，照片中两人笑容居中不贴边，防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "身份锁：--reference 母板A master-couple-photo.png，照片内两人（女生红冲锋衣）锁母板A一致（masters-before-shot-keyframes）",
+      "人物东亚中国人：照片内情侣均自然中国人五官，排除欧美/高加索/混血/网红滤镜脸（daihuo-casting-must-be-chinese）",
+      "真实质感非塑料：iPhone/单反照片级、可见毛孔+真实肤质+相纸纹理+自然噪点，禁塑料感/AI感/CG蜡感/磨皮假脸（iphone-realistic-no-plastic-texture）",
+      "柔光无油光：柔和自然漫射光、中性偏暖白明亮通透，照片中脸部哑光无油光，不用大黄光染画面（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo（强化）：片尾落字靠后期，本帧为纯画面，画面任何位置绝不出任何文字/字幕/数字/水印/logo/品牌（no-brand-products-in-videos / subtitle-post-burn-standard）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "06e4acf405ba9a1f977ccf27694b5944da8fbb2ce3509fafba420052ac8150cb"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "合 · 回慢（释然）15–18：情感推顶后收；镜18 结尾题眼落点，答应过你的我都做到了"
+    ],
+    "related_shots": [
+      "18 特写/平视慢推 副驾合照特写，镜头慢慢推近两个人的笑容，画面淡出浮现落字"
+    ],
+    "visual_evidence": [
+      "剧本镜18画面：副驾合照特写，镜头慢慢推近两个人的笑容，画面淡出至黑屏浮现落字",
+      "旁白：答应过你的……我都做到了",
+      "环境声音乐渐收+钢琴尾音；花字「答应过你的 我都做到了」为片尾落字（后期加，本帧不出字）",
+      "合照为全片情感锚点物件（03/05/15/18），母板A锁两人一致；此关键帧为纯画面，落字后期添加"
+    ],
+    "unresolved_blockers": []
+  }
+}

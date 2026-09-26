@@ -1,0 +1,11 @@
+{
+  "request_id": "jiuheover-master-A-20260921",
+  "prompt_file": "replication/output/jiuheover/prompts/master-A.json",
+  "output": "replication/output/jiuheover/assets/master-A.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-21T22:23:09+08:00"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "master-man",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. A realistic East Asian Chinese man, about 45 years old, short neat dark hair lightly greying at the temples, gentle and steady; wearing a light grey crew-neck T-shirt and dark navy shorts, barefoot. He stands in a warm home entryway beside an open kitchen, soft warm daylight through sheer curtains plus gentle overhead and under-cabinet lighting, matte skin with realistic pores and no oily facial glare, a warm calm expression. Shot on an iPhone with realistic handheld texture and fine natural film grain, true-to-life skin and no plastic AI sheen. Beige cabinets, a vase of white daisies and a wood floor behind him. He is Chinese with an East Asian face, not a western face. Realistic, natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark anywhere.",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "identity master still (man lead, warm entryway)",
+    "checks": [
+      "single East Asian/Chinese man ~45, short dark hair greying temples, light grey tee + navy shorts, barefoot — identity root for shot keyframes",
+      "warm home entryway beside open kitchen, sheer-curtain daylight + overhead + under-cabinet lighting, bright natural neutral-warm, not a single dim lamp",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic AI sheen",
+      "medium shot, 9:16 vertical 768x1344, static",
+      "no text/subtitles/logo/watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5f6e238ab44d161d44a9cc50e67a2af65d530c3a57f65c97d9bfce0c91400d21"
+  }
+}

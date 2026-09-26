@@ -1,0 +1,46 @@
+{
+  "id": "travel-07-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a low-angle wide aerial vertical 9:16 view of the Chaka Salt Lake mirror flat, where the shallow still water perfectly reflects the blue sky, white clouds and the distant snow-capped mountains, so sky and ground meet and the frame reads symmetrical top and bottom. The composition, horizon placement, water texture and reflection remain consistent with the image. Over the four seconds the camera tilts up with small amplitude at slow speed while easing forward with a gentle push, so the mirrored sky and the real sky slowly open across the frame; faint ripples travel across the thin water film and the crystalline salt flats hold their natural, slightly uneven texture. Soft, natural diffuse daylight, neutral warm-white, bright and airy, not oppressive, no heavy amber cast; true-to-life photographic quality with fine natural grain and subtle water sheen, real matte surfaces, no plastic or waxy CG look. No people appear. No text, subtitles, letters, numbers, watermark, logo, brand, signage or road signs anywhere in the frame.\n\noverall_soundscape: A steady high-plateau wind moves across the open salt flat while the thin water film laps and trickles faintly underfoot. Occasional soft crunching of footsteps on the salt crust carries from far away.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/07/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:全片无任何<d>对白/说话/画外音台词/speaker ID;纯风光镜无人开口",
+      "配乐校验:non_diegetic_music = N/A,H3不自造BGM;overall_soundscape只写现场同期音(高原风/水膜微响/远处踩盐壳脚步)",
+      "真实质感:Live-action photorealistic、自然噪点/水面微反光/真实哑光,禁塑料感AI感CG蜡感",
+      "柔光校验:柔和自然漫射天光、中性偏暖白、明亮通透不压抑,忌大黄光染整片",
+      "合规无字:画面任何位置无文字/字幕/字母/数字/水印/logo/品牌/招牌/路牌;无人物",
+      "运镜校验:小幅慢 tilt up + 极轻 push,情感片小幅慢速,单Shot一镜到底",
+      "时长/帧引用:4s时间线单连续动作对齐;I2VA首行<Picture 1> from [Shot 1] @0.00,images一张keyframe.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bbec1f6d36a127a4316a44162f8e73e55854b26217dcb44f3794155f76e8ffa4"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇(眷恋):06–14 沿途逐站兑现,第 07 站茶卡盐湖天空之镜"
+    ],
+    "related_shots": [
+      "镜07 全景/航拍低角仰:茶卡盐湖天空之镜,云与雪山倒映水面、水天一色"
+    ],
+    "visual_evidence": [
+      "剧本07镜画面:茶卡盐湖『天空之镜』,云与雪山倒映水面(记录用,非写进prompt)",
+      "旁白(仅参考):走到茶卡脚下全是天",
+      "合规:无品牌/商标/logo,画面不出文字招牌"
+    ],
+    "unresolved_blockers": []
+  }
+}

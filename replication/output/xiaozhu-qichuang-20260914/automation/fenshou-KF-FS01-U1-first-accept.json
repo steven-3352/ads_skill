@@ -1,0 +1,19 @@
+{
+  "unit": "KF-FS01-U1-first",
+  "group": "shot_image",
+  "asset_type": "image",
+  "semantic_qc": "pass",
+  "reviewer": "user",
+  "reviewed_at": "2026-09-18",
+  "channel": "对话认帧 + 公网HTML对比复核 (/ads-review/xiaozhu-qichuang-20260914/fenshou-keyframe-review.html)",
+  "decision": "用户看v1/v2对比后明确选v1作开场帧(2026-09-18\"选V1版本\");相框先忽略最后补缺失镜头",
+  "checks": [
+    "A女/B男脸与母板一致,东亚中国人非网红脸(锁脸成功)",
+    "2S双人中景+中间空位+外套搭臂弯+B抬头构图到位",
+    "门口行李箱清晰可见(将走信号,v1优于v2被遮版)",
+    "灯光偏暖(用户知情接受;成片统一调色时向明亮基调拉齐)",
+    "中间倒扣相框未兑现(渲成抱枕;按用户指示忽略,最后补相框特写镜)",
+    "16:9横屏无变形,无叠字水印"
+  ],
+  "notes": "v2(灯光修正版)因行李箱被遮+相框仍缺,用户未选,作废;开场以v1兑现FS01-U1-first"
+}

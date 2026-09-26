@@ -1,0 +1,39 @@
+{
+  "prompt": "Photorealistic cinematic photograph. FL2VA action-END frame, cold silent ending. Action end point: the woman, now holding the suitcase, has pulled the door open and stepped over the threshold, and is turning back to gently and steadily close the door (not a slammed door, a composed full-stop); the door leaf is almost shut with only a thin gap left. The spot by the door where the suitcase stood is now empty — the suitcase gone with her, delivering 'she has left'. Setting: a lived-in late-night East Asian Chinese urban family living room, normally and evenly lit with the ceiling light switched on so the whole room looks bright, clean, airy and well-lit in every corner — natural neutral warm-white domestic lighting with only low warm saturation, true-to-life clean home light, not dim, not gloomy, not moody, not oppressive, no heavy amber or candlelit grade; a small side-table lamp is only a gentle secondary accent, not the key light. Deep quiet dark night outside the window. A slightly worn two-seater fabric loveseat, a low coffee table in front with everyday clutter (a used mug, a folded newspaper, a tissue box, a couple of throw pillows, a casually draped blanket). On the empty middle seat of the loveseat lies a face-down double-portrait couple photo frame, tipped over flat with its back to the camera. By the entrance door in the background stands a single neatly packed upright hard-shell suitcase, ready by the doorway. 16:9 horizontal composition, DSLR 50mm realistic look, eye-level, shallow depth of field kept mild so the well-lit room stays clearly readable, subtle fine film grain, natural true-to-life color, quiet late-night mood. No text overlay, no subtitles, no captions, no watermark, no logo.",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom-v2.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T11:00:00+08:00",
+    "checks": [
+      "FL2VA落点:A拎行李箱推门跨出回身轻掩门(门缝将合,非摔门)",
+      "门边行李箱已被带走兑现已走",
+      "单人A门口",
+      "客厅正常明亮灯光",
+      "16:9横屏",
+      "结尾锁无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "61f53fff0377677b45ac6f66894df923c5651e8aaabbf2dab6b55bde1b41868b"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B7"
+    ],
+    "related_shots": [
+      "FS07"
+    ],
+    "visual_evidence": [
+      "FL2VA落点A轻掩门(关门声核心)",
+      "行李箱被带走=已走",
+      "体面句号"
+    ],
+    "unresolved_blockers": []
+  }
+}

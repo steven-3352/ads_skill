@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a warm 3200K living room at night, soft diffused light with a neutral warm-white base, not a single heavy yellow lamp washing the face orange; skin keeps its natural tone. The young East Asian Chinese man shown in <Picture 1> keeps his exact appearance, a black suit jacket over a white shirt with a dark-navy tie, just home from work, framed in a close shot as he stands in place. The camera holds a mostly static shot, pushing in with small amplitude at slow speed. He does not speak; he lets out a slow, weary exhale, his shoulders sinking as his gaze drifts to the floor, carrying the helpless resignation left over from the earlier bickering, a faint flicker of tiredness crossing his eyes rather than a blank stare. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A quiet living-room room tone hums underneath with a faint, indistinct television murmur, soft fabric rustle as his suit shifts, and his slow, audible breathing in the stillness.\n\nnon_diegetic_music: Sparse solo piano notes at a slow tempo, widely spaced and low in volume, sustaining gently.",
+  "references": [
+    "replication/output/fuke/assets/U9-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U9-first全参考,0.00s锚定,身份/服装延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段",
+      "无对白:本单元无台词,无<d>块,仅呼吸/叹息非言语人声",
+      "灯光:家夜客厅暖黄3200K/柔和漫射/禁大黄光染脸/人脸自然肤色",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:男主无奈站立/肊墒下沉/目光飘向地面,承接斗嘴后疲惫,非空洞念白",
+      "时长:无对白按给定4.0s",
+      "声景:房间底噪+电视微弱声+衣物摩擦+呼吸;非画内钢琴弱音持续",
+      "相机:近静态小幅慢推",
+      "零字幕:显式no subtitles/on-screen text"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "fe5de706250df5a62572efb30be4484593cae8127ae573a6014b2d97d119bff6",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U9-video",
+    "usage": "U9(镜9)斗嘴后无奈:男主黑西装站立无言叹息,客厅夜暖黄近景,无对白,I2VA自U9-first发展",
+    "locks": [
+      "男主黑西装白衬衫深蓝领带刚下班(不说话无ID)",
+      "家夜客厅暖黄3200K",
+      "柔和漫射/人脸哑光/真实质感",
+      "无对白仅声景",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "斗嘴后的无奈状态:男主站立叹息肊墒下沉,暖黄3200K近景无对白留音景铺底",
+  "images": [
+    "replication/output/fuke/assets/U9-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

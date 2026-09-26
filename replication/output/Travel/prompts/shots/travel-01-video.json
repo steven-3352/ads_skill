@@ -1,0 +1,41 @@
+{
+  "id": "travel-01-video",
+  "mode": "FL2VA",
+  "model": "MiniMax-H3",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, shot on a full-frame DSLR with true-to-life skin texture, natural fine grain and soft diffuse daylight. The clip opens exactly on Picture 1: a top-down extreme close-up of a pair of East Asian Chinese hands (natural everyday Chinese features, faces entirely out of frame) holding a neatly folded bright-red shell jacket suspended just above an open soft-sided suitcase, a second empty suitcase resting beside it, all in a calm, evenly lit bedroom with bright, airy, neutral warm-white ambient light, matte skin with no oily highlights, no text, labels or logos anywhere. The camera holds a nearly static shot with only the faintest push in at slow speed. The hands lower the folded jacket into the case, gently press it flat, and smooth the fabric along its existing fold with the fingertips, then begin to withdraw, progressively settling toward the arrangement in Picture 2 as the red jacket comes to lie flat and squared inside the case and the hands lift away at the end of the shot, matching the pose, spacing and composition of Picture 2.\n\noverall_soundscape: A quiet indoor room tone hums low throughout. The soft rustle of folded fabric, a faint press and smoothing of cloth, and the light tick of the suitcase panel settle beneath the movement.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/01/first.png",
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/01/last-v2.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>/说话/唱词/画外音台词/speaker ID,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "音景校验:overall_soundscape仅现场同期音(室内底噪+布料翻叠窸窣+抚平声+箱扣轻响),无语言",
+      "真实质感校验:Live-action photorealistic,真实肤质/自然噪点/自然光,哑光无油光,无塑料蜡感CG感",
+      "柔光校验:柔和自然漫射光、中性偏暖白、明亮通透不压抑",
+      "合规校验:画面无文字/字幕/字母/数字/logo/品牌/招牌/路牌/水印",
+      "人物校验:东亚中国人手部,面部完全不入画",
+      "运镜校验:近静止仅极小幅慢push,情感片无大幅快速运镜",
+      "时长/模式校验:FL2VA单Shot一镜到底,时间线对齐4s;首行Picture1@0.00+Picture2@4.00,images两张(首+尾last-v2)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "33f3f27e7a79202f4fb0eebe7cdc764cfea78a0dad4b3c4a22c069d525f83fdb"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": ["出发前一晚·收拾行李"],
+    "related_shots": ["镜01 极近景俯拍叠红外套入箱"],
+    "visual_evidence": ["旁白(仅参考):出发前一晚我把你那件红外套叠好放进去", "怅惘·克制:举衣悬于箱上→衣平整入箱、手离开"],
+    "unresolved_blockers": []
+  }
+}

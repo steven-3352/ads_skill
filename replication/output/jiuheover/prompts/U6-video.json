@@ -1,0 +1,32 @@
+{
+  "unit_id": "U6",
+  "scene": "苏晚题眼金句特写 · 不看对方 · 开头半拍静→轻声接自己的话→说完再留半拍静",
+  "mode": "I2VA",
+  "ratio": "9:16",
+  "duration": 4,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U6/images/U6-first.png"
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. The young woman shown in <Picture 1> stays in close-up at her side of the small wooden table by the rain-streaked tavern window at night, not looking at the person across from her, keeping her appearance, seating position, and the plain unlabeled white ceramic bottle with red cap and thin gold ring plus the half-empty clear glass stemmed cup on the table in front of her. Bright warm-white overhead and table-lamp light keeps her face clearly readable. The camera holds a static close shot. For roughly the first half second she stays almost silent, her eyes lowered and not looking up, with only her quiet breathing and the faint room tone present. Speaking Mandarin in a hushed, normal pace with no dead air, as if quietly picking up a thought she had already been having to herself, the East Asian young woman in her late twenties (S1) says: <d>[Chinese]我们都把真话，藏得太好了。</d> As she says 藏得太好了 a small, self-mocking curl touches the corner of her mouth while her eyes still do not lift. After the line she holds still for roughly another half second, letting the sentence settle into the quiet, unhurried and without any performative delivery. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Only very faint rain sounds outside the window and a barely audible indoor room tone are present, kept low throughout so the line reads clearly against the hush; this same faint ambience continues underneath the half-second pauses before and after the line, so the quiet never becomes total dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:I2VA 指令行 <Picture 1>(from [Shot 1]) at 0.00s + 三核心字段顺序正确",
+      "I2VA 结构=first-frame anchor→action onset→continuous development:先锚 <Picture 1> 苏晚特写不看对方,前半拍静→轻声接自己的话说金句→后半拍静",
+      "去蜡感强化写入 Shot 1 开头",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内(我们都把真话，藏得太好了。),自嘲式嘴角松动/不抬眼写在 <d> 外,不端金句腔不煽",
+      "speaker 稳定 ID S1=苏晚,首次出现给身份(late twenties/East Asian/Mandarin/hushed normal pace)",
+      "节奏保留原文『前后半拍静』设计但用极轻环境音连续铺底代替真死寂,合 room-tone-passes-silence-retention-gate 经验",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:极轻雨声+室内底噪贯穿全片含两处停顿,no dead silence,降噪突出台词",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle/half-empty clear glass stemmed cup,无 logo/文字/清酒器",
+      "时长 4s 单镜静态无 cut,竖屏 9:16 由 ref 帧承载,non_diegetic_music=N/A"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b608f647a5f47172844d7ec8d681c4465b7a104eb50e7d5486c8fb4d4a214e15"
+  }
+}

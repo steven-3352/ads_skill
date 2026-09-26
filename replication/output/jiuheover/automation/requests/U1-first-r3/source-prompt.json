@@ -1,0 +1,40 @@
+{
+  "prompt": "写实情感短剧首帧，竖屏 9:16 取景，iPhone 手持轻微晃动的真实质感、不摆拍不打光。场景：夜里一间明亮暖调的靠窗小酒馆老位置，暖白偏暖的顶灯与桌面吊灯全开、整体明亮温暖通透、光色自然中性偏暖白（不压暗、不阴郁、不文艺单光源）。本图给三张参考图，分工如下：参考母板 A 仅取人脸、发型与毛衣（女主苏晚身份），白酒瓶参考图锁定瓶型，白酒杯参考图锁定杯型。前景木桌上摆着一只乳白色瓷质白酒瓶——圆柱形直筒瓶身、平肩、短颈，顶部红色瓶盖配金色环圈；瓶身通体乳白光洁、素白无标（瓶身、瓶盖、环圈上无任何文字、字母、logo、标签、印花、品牌标识），器型严格参考所提供的白酒瓶参考图。桌上另有两只透明玻璃高脚小酒杯——细长玻璃杯脚 + 小碗状杯身 + 圆形底座，中式白酒品鉴杯，晶莹透明、无花纹无字，杯型严格参考所提供的白酒杯参考图。女主苏晚（East Asian 中国人面孔，人脸/发型/毛衣严格随参考母板 A）的一只手刚把一只满杯轻放到桌上。构图为竖屏近景：白酒瓶与满杯占据下三分之一前景，苏晚的脸在上方入画，她看着对面的人、眼神疲惫克制、忍着一句话要问出口。窗外是被雨化开的霓虹光斑（暖色、柔和），窗上有细雨痕。人物面孔发型严格保持与参考母板 A 一致。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo, no sake bottle, no tokkuri, no long-neck bottle, no choko, no sake cup, no white porcelain cup, no ceramic cup, no small ceramic bowl cup, no wine bottle。",
+  "references": [
+    "replication/output/jiuheover/assets/master-A.png",
+    "replication/output/jiuheover/assets/1.jpeg",
+    "replication/output/jiuheover/assets/1白酒.png"
+  ],
+  "size": "768x1344",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I·多参考:身份母板+白酒瓶/杯器型",
+    "checks": [
+      "三张参考图分工已在 prompt 内点明：参考母板 A 仅取人脸/发型/毛衣锁苏晚身份，第二张白酒瓶参考图锁瓶型，第三张白酒杯参考图锁杯型；references 顺序与分工一致",
+      "瓶型已精确对齐参考图：乳白色瓷质、圆柱形直筒瓶身、平肩、短颈、顶部红色瓶盖配金色环圈；替换掉原'矮胖茅台式圆润瓶+白瓷小盖'的偏差措辞",
+      "杯型已精确对齐参考图：两只透明玻璃高脚小酒杯（细长玻璃杯脚+小碗状杯身+圆形底座，中式白酒品鉴杯），替换掉原'白瓷小酒盅'措辞",
+      "瓶盖红色+金色环圈为器型特征已保留，同时强锁瓶身/瓶盖/环圈上无任何文字、字母、logo、标签、印花、品牌标识，商标合规",
+      "素白无标合规：瓶身通体乳白光洁、杯身晶莹透明无花纹无字，无露出任何品牌标识",
+      "身份锁沿用母板 A：苏晚 East Asian 中国人面孔，人脸/发型/毛衣严格随母板 A，未改动",
+      "anti-subtitle 全套保留：no subtitles/captions/on-screen text/Chinese characters/watermark/logo，成片不烧字幕",
+      "负向锁已按参考图调整：删除 no goblet、no glass bottle（白酒杯本就是玻璃高脚小杯）；保留 no sake bottle/tokkuri/long-neck bottle/choko/sake cup；新增 no white porcelain cup/no ceramic cup/no small ceramic bowl cup/no wine bottle，防再渲成白瓷盅或红酒瓶",
+      "画幅竖屏 9:16 保持，size 768x1344 未改",
+      "灯光明亮暖白不压抑：顶灯+桌面吊灯全开、整体明亮温暖通透、中性偏暖白，不压暗不阴郁",
+      "构图/机位/表演层（前景下三分之一酒器+满杯、苏晚脸在上方入画、眼神疲惫克制、窗外雨夜霓虹）除酒器与参考分工措辞外未改动"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "589818fcfab354e6d78e3a6d77bf9922ec4a1886691a489c58356e24bcf8cc77"
+  },
+  "narrative_alignment": {
+    "source_story": "story/酒喝完了-预告片剧本-从正片提炼版.md（screenplay_confirmed）钩子0–5s",
+    "related_beats": [
+      "b01"
+    ],
+    "related_shots": [
+      "01"
+    ]
+  }
+}

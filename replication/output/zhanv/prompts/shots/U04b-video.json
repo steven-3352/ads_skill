@@ -1,0 +1,42 @@
+{
+  "id": "U04b",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 7,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U04b-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. An over-the-shoulder close framing on the left woman's face as in <Picture 1>, the 28-year-old with a translucent skincare gel and knitted cardigan (S1); the right woman with bare skin and a loose cotton shirt (S2) speaks from over the shoulder. The right woman (S2) speaks the key line not as a scolding but as someone who aches for her friend, steady and low: <d>[Chinese] 林夏。爱你的人心疼你。你爱的那个——</d> The right woman (S2), quiet and final: <d>[Chinese] 他在遛你。</d> On the left woman's face her eyes soften and her lips press together, holding it in, no tears and no reddened or glowing eyes, as she answers barely audibly (S1): <d>[Chinese] ……我知道。</d> The right woman (S2): <d>[Chinese] 知道还等。</d> The left woman (S1), a small crack held down: <d>[Chinese] 我控制不住。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum barely rising under the key line without covering the voices. A single soft breath from the left woman.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2494b96d145ffb163cb64dadab3fcb51cee959090f3f25649fd256ac48cb1800"
+  }
+}

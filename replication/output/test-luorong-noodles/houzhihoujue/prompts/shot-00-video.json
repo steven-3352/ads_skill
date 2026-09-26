@@ -1,0 +1,39 @@
+{
+  "id": "shot-00-video",
+  "role": "镜0 开场引导白｜I2VA｜男女主并坐朝镜头vlog式聊'情侣怎么相处'，前2秒反差钩(感情好→天天拌嘴)，点出'哄和应'母题引出正片；画内同期对白",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld footage with realistic skin texture, natural pores, and fine film grain, no plastic or waxy CG look. The video opens on the bright warm-white East Asian Chinese living room of <Picture 1> with the ceiling light on, airy and evenly lit, preserving the two people's appearance, home wear, and the couple sitting close together side by side, both facing the camera warmly like chatting into a phone vlog. The mature East Asian Chinese woman in her early thirties, cheerful and looking straight into the lens, at a normal, brisk conversational pace (S1), says in sync on camera: <d>[Chinese] 都说我俩感情好，</d> The man, spreading his hands with a wry easy grin (S2), says in sync on camera: <d>[Chinese] 其实吧，我俩天天拌嘴。</d> The woman, glancing at him then back to the lens (S1), says in sync on camera: <d>[Chinese] 但吵归吵，</d> The man, warm and matter-of-fact, giving a small shrug (S2), says in sync on camera: <d>[Chinese] 总得有人先哄，有人肯应。</d> The woman, smiling and settling back a little (S1), says in sync on camera: <d>[Chinese] 就这么处了这么多年。</d> They speak at a normal brisk pace, picking up each other's lines with no dead air and no trailing silence. The camera holds a nearly static shot with slight handheld drift throughout. Both faces stay matte under soft diffused light with no glare or reflection; East Asian Chinese features throughout, no brand or logo anywhere.\n\noverall_soundscape: A quiet, cozy living-room tone hums faintly underneath, with soft clothing rustle as they gesture.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜0开场引导白·I2VA。单首帧Picture1=男女主并坐靠近朝镜头vlog式带笑。持续动作:两人对镜头轻松聊'情侣怎么相处'，画内同期口型说——女(看镜头,爽朗)S1『都说我俩感情好，』→男(摊手咧嘴笑)S2『其实吧，我俩天天拌嘴。』→女(瞥他再看镜头)S1『但吵归吵，』→男(温和实在,耸肩)S2『总得有人先哄，有人肯应。』→女(笑,靠回)S1『就这么处了这么多年。』语速正常偏快、接话不留白不留死尾。静止微手持贯穿。明亮暖白顶灯居家光，哑光真实iPhone感,无油光高光塑料蜡感。声景仅居家底噪+轻微衣物声,无重复人声。East Asian中国人,无品牌logo。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 8,
+  "duration": 8,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "single first frame + sustained action with in-frame synced dialogue: couple faces camera vlog-style and talks; five lines alternate 女S1/男S2/女S1/男S2/女S1; no state displacement so I2VA not FL2VA",
+      "对白verbatim校验: 五句 <d>[Chinese] 都说我俩感情好，</d> <d>[Chinese] 其实吧，我俩天天拌嘴。</d> <d>[Chinese] 但吵归吵，</d> <d>[Chinese] 总得有人先哄，有人肯应。</d> <d>[Chinese] 就这么处了这么多年。</d> 逐字逐标点不改; 身份+ID(女S1/男S2)+delivery(看镜头/摊手/瞥他/耸肩/笑) 全写在 <d> 之外; 画内同期口型",
+      "留存钩子校验: 前2秒即抛反差钩(感情好→其实天天拌嘴), 点出'哄和应'母题引出正片七拍; 开场甜与结尾'那个人已经不在了'反转呼应",
+      "表演校验: vlog式对镜头自然唠嗑非念稿; 语速正常偏快、接话不留白、说完不留死尾(禁慢对白)",
+      "duration 8.00s 单镜一镜到底承载五句; 对白衔接不跨剪辑点(无cut)",
+      "soundscape 仅居家底噪+轻微衣物声, 无人声重复; non_diegetic_music N/A",
+      "visual: 真实iPhone质感/自然毛孔/细颗粒, 哑光皮肤无油光高光, 无塑料蜡感CG感; 顶灯开明亮通透暖白; East Asian中国人物; 无品牌logo; prompt内无引号包裹的屏幕字幕文字",
+      "I2VA: <Picture 1> is the 0.00s first frame; 仅靠前向发展(两人对镜头依次说完五句)展开, 无尾帧/Picture 2/时间对齐表述"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "cda837285f6501c45fbcca60d4aa3d12094247d1cb99f22b855acc16195697a2"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-00/images/first.png"
+  ]
+}

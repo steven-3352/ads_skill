@@ -1,0 +1,47 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a warm 3200K bedroom at night, soft diffused light with a neutral warm-white base, not a single heavy yellow lamp washing the scene orange; surfaces keep their natural color. The frame opens on the extreme close-up shown in <Picture 1>, holding the exact ceramic mug, its shape, color, and the bedside layout from the reference, with thin threads of steam curling slowly up from the hot surface. The camera holds a nearly static shot, pushing in with small amplitude at slow speed. Off-screen, the girlfriend, a young East Asian Chinese woman with a warm, teasing voice (S2), presses him without any pause: <d>[Chinese]你倒是说话呀。</d> [Shot 2] At 00:01.400, the shot cuts to a near shot of the young East Asian Chinese man carried over from the reference bedroom, in his light-grey T-shirt, leaning against the headboard; he breaks into a sly half-smile and, speaking at a normal, brisk pace with no pause, the man (S1) answers: <d>[Chinese]那我可得好好考虑考虑。</d> At once the girlfriend (S2) leans into frame from the side in her yellow bear pajamas and bear hair-hoop, swats his shoulder with a pillow and says through a stifled laugh: <d>[Chinese]哎你还真想啊！</d> Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A quiet bedroom room tone hums underneath, with the faint hiss of steam from the hot mug, the soft thump of a pillow against a shoulder, light rustling of bedsheets and pajamas, and a stifled, playful laugh; the room never falls silent.\n\nnon_diegetic_music: Sparse, lightly plucked warm piano notes at a moderate tempo, low in volume, kept gentle under the voices.",
+  "references": [
+    "replication/output/fuke/assets/U2-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U2-first全参考,0.00s锚定,马克杯特写与卧室布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段,[Shot 2]切男主近景时间戳00:01.400严格递增",
+      "对白:三句连续误导递进—女友画外催话(S2)→男主坏笑接'考虑考虑'(S1)→女友枕头砸+笑'你还真想啊'(S2),承接U1假设、埋误导种子、接U4起哄",
+      "禁留白:0-4s声音连续铺满(23字/4s≈5.75字/秒),枕头声+闷笑填尾,无死尾无静默",
+      "时长:4.0s服从对白密度不虚标",
+      "灯光:卧室夜暖黄3200K/柔和漫射/中性暖白/禁大黄光染场",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:男主坏笑半玩笑接话/女友打闹嗔怪,语速正常偏快不拖沓",
+      "零字幕:显式no subtitles/on-screen text,对白<d>[Chinese]逐字",
+      "声景:房间底噪+热气嘶+枕头闷响+被褥睡衣窸窣+闷笑;非画内弱钢琴"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "93d6a3842eb2795aca6c9967aa0bb8ca9777036bf5eff49a4ea2efbdeffb242d",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U2-video",
+    "usage": "U2(重设计·对白驱动)承接U1女友假设:女友画外催话→男主坏笑'考虑考虑'埋误导→女友枕头砸打闹,卧室夜暖黄,I2VA自U2-first发展",
+    "locks": [
+      "男主浅灰T恤(S1)",
+      "女友黄色小熊睡衣+小熊发箍(S2)",
+      "卧室夜暖黄3200K",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕",
+      "对白连续无留白"
+    ]
+  },
+  "narrative_note": "重设计:承接U1女友分手预演的假设,男主半玩笑'那我可得好好考虑考虑'埋下误导种子,女友枕头砸打闹收;三句连续对白零留白,为U4办公室起哄铺垫",
+  "images": [
+    "replication/output/fuke/assets/U2-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

@@ -1,0 +1,36 @@
+{
+  "unit_id": "U7",
+  "scene": "过肩双人竖构图 · 场景锁死不换背景 · 问第一次接吻日期两人同时笑又同时眼红",
+  "mode": "I2VA",
+  "ratio": "9:16",
+  "duration": 5,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U7/images/U7-first.png"
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. The over-the-shoulder framing shown in <Picture 1> stays fixed for the entire shot inside this same rain-streaked tavern window booth at night, under the same warm-white overhead and table-lamp light; the camera position and this single space never shift, cut away, or pan to any other background across the shot — no ceiling fan, no bare wall, no corridor and no restaurant hall ever enters the frame. In the soft-focus foreground, the East Asian man in his early thirties with light stubble (S2), his shoulder and blurred side profile kept in the position established by <Picture 1>, speaks softly toward her, his voice reaching her through the shallow depth of field. In sharp focus behind him, the East Asian young woman in her late twenties (S1) faces the camera, keeping her appearance and seating from <Picture 1>. The background stays clean, showing only the softly blurred night window seat; no rows of bottles, liquor shelf, wine rack, display case, wall poster, signage, storefront lettering, brand logo or brand text appear anywhere in the frame. The table holds only the plain unlabeled white ceramic bottle — cylindrical body, flat shoulder, short neck, red cap with a thin gold ring, entirely plain white with no text or logo — and the clear glass stemmed cups; no other bottles or vessels sit on the table or in the background. From the blurred foreground profile, speaking Mandarin at a normal, slightly quick pace with no dead air, he asks lightly: <d>[Chinese]第一次接吻，什么时候？</d> She smiles and answers, speaking Mandarin at a normal, slightly quick pace with no dead air, her tone light but with a trace of ache underneath: <d>[Chinese]2020 年 5 月 25 号，下着雨。</d> Right after she finishes, the two of them look at each other; in almost the same instant both of them break into a soft smile, then the smiles waver and their faces quietly tighten as they fall silent, both pressing their lips together and drawing a slow held breath, both of them wanting to stay and both fighting to keep the calm on their faces. She gives one slow blink and lowers her chin a fraction. Both faces stay completely plain, ordinary and photoreal throughout, with the normal matte skin already described and absolutely no added visual effects, no light effects and no lens flare anywhere on the face. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain taps against the window while low indoor room tone and faint bar murmur continue underneath without pause. Two very light breaths of near-laughter pass between them as they look at each other, keeping the ambience continuous with no dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:I2VA 指令行 <Picture 1>(from [Shot 1]) at 0.00s + 三核心字段顺序正确",
+      "I2VA 结构=first-frame anchor→action onset→continuous development:先锚 <Picture 1> 过肩双人构图,再陈叙侧脸轻问→苏晚含笑作答→对视同笑同眼红",
+      "场景锁死显式写入:camera position and this single space never shift/cut away/pan,禁头顶风扇/大片墙面/走廊/餐馆大堂",
+      "背景净化显式负向清单:no bottle shelf/liquor shelf/wine rack/display case/poster/signage/storefront lettering/brand logo/brand text,桌面只留指定瓶+杯",
+      "去蜡感强化写入 Shot 1 开头",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内(第一次接吻，什么时候？/2020 年 5 月 25 号，下着雨。),失控临界表演(同笑同眼红/都没让泪掉下)写在 <d> 外",
+      "speaker 稳定 ID S2=陈叙(虚焦前景侧脸非纯画外)、S1=苏晚(实焦入镜),首次出现给身份",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:雨声+室内低语连续,两人极轻笑气声,no dead silence",
+      "时长 5s 单镜无 cut,竖屏 9:16 由 ref 帧承载,non_diegetic_music=N/A",
+      "红眼伪影修正(2026-09-22):首版把『眼红』写成 eyes turn red 被 H3 渲成发光红瞳;改为 rims redden/well up with unshed tears + 虹膜自然深棕/眼白正常 + 显式负向 no glowing/red/demonic eye glow,重算 sha",
+      "红眼二次修正(2026-09-22):r1仍在情绪顶点冒发光红瞳;彻底删除眼睛附近『红/泛红』措辞,只写含泪水光不落+普通人眼深棕虹膜/眼白正常,情绪走颤唇/屏息,并硬压 no glowing/red irises/no neon reflection turning eyes red/no supernatural eye effect,重算 sha",
+      "红眼三次修正(2026-09-22):r2去红后眼睛改冒品红发光光效;确诊H3对『眼睛/泪/红/glow』任意词(含负向)有召唤先验(粉色大象效应)。彻底删除climax里眼睛/泪/红/glow全部字样,情绪只走嘴角抿唇/屏息/一次慢眨/低颌,负向改为no added visual effects/no light effects/no lens flare on the face(不点名eyes),重算sha",
+      "对白日期改动(2026-09-22):用户要求初吻日期改为 2020 年 5 月 25 号(保留下着雨),重算 sha"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5515be5363e8639d766d603733fea2a7d6a411f1970139c5fe8b770163d75268"
+  }
+}

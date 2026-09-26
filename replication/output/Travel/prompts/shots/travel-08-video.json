@@ -1,0 +1,46 @@
+{
+  "id": "travel-08-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a low-angle wide vertical 9:16 view of a Daocheng Yading snow mountain rising above a turquoise glacial lake, with five-colored prayer flags strung across the foreground. Subjects, composition, mountain shape, lake color and flag placement stay consistent with the image. Over the four seconds the camera holds a static shot while a strong wind drives the strings of prayer flags into constant fluttering and snapping, the fabric rippling and twisting; faint surface movement crosses the lake and thin cloud drifts slowly past the peak. Soft, natural diffuse daylight, neutral warm-white, bright and airy, not oppressive, no heavy amber cast; true-to-life photographic quality with fine natural grain, real matte surfaces, no plastic or waxy CG look. No people appear. No text, subtitles, letters, numbers, watermark, logo, brand or scripture text on the flags, no signage or road signs anywhere in the frame.\n\noverall_soundscape: A strong high-plateau wind sweeps continuously across the empty valley while the prayer flags flap and snap sharply against it. Faint water movement and hollow open-air ambience continue underneath.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/08/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:全片无任何<d>对白/说话/画外音台词/speaker ID;纯风光镜无人开口",
+      "配乐校验:non_diegetic_music = N/A;overall_soundscape只写现场同期音(强高原风/经幡扑扑拍动/空旷底噪)",
+      "真实质感:Live-action photorealistic、自然噪点/真实哑光,禁塑料感AI感CG蜡感",
+      "柔光校验:柔和自然漫射天光、中性偏暖白、明亮通透不压抑,忌大黄光染整片",
+      "合规无字:画面无文字/字幕/数字/水印/logo/品牌,经幡不出经文文字,无招牌路牌;无人物",
+      "运镜校验:Static Shot,经幡与风动,情绪静镜,单Shot一镜到底",
+      "时长/帧引用:4s时间线对齐;I2VA首行<Picture 1> from [Shot 1] @0.00,images一张keyframe.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2a2af6e9ddd6f651744c26f83f0b5d98bcd899573316c51968e00bb3b7de27dc"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇(眷恋):第 08 站稻城亚丁雪山下牛奶海、经幡随风"
+    ],
+    "related_shots": [
+      "镜08 全景低角仰:稻城亚丁雪山与牛奶海同框,五色经幡在大风中飘动"
+    ],
+    "visual_evidence": [
+      "剧本08镜画面:稻城亚丁雪山与牛奶海同框,经幡飘动(记录用,非写进prompt)",
+      "旁白(仅参考):亚丁雪山下头风好大我替你多站会儿",
+      "合规:无品牌/商标/logo,经幡不出经文文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

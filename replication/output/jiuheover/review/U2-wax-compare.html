@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jiuheover · U2 去蜡感 旧vs新 对比</title>
+<style>
+  :root{--bg:#faf7f2;--card:#fff;--ink:#23201c;--sub:#6b635a;--line:#e7e0d6;--accent:#b23b3b;--ok:#2f7a3f;--warn:#a9812f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:20px 16px 80px}
+  h1{font-size:22px;margin:.2em 0}
+  h2{font-size:16px;margin:0 0 .4em}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .redline{background:#fff6f6;border:1px solid #f0d5d5;border-radius:10px;padding:10px 12px;font-size:13.5px;color:#7a3b3b;margin:12px 0}
+  .row{display:flex;flex-wrap:wrap;gap:16px}
+  .col{flex:1 1 380px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+  video{width:100%;border-radius:12px;display:block;background:#000}
+  .tag-old{color:var(--warn);font-weight:700}
+  .tag-new{color:var(--ok);font-weight:700}
+  .note{font-size:13px;color:var(--sub);margin-top:8px}
+  code{background:#f3ede4;padding:1px 5px;border-radius:5px;font-size:12.5px}
+  .chk{background:#f3f7f3;border:1px solid #d8e6d8;border-radius:10px;padding:10px 12px;font-size:13.5px;margin:14px 0}
+  ul{padding-left:18px;margin:.3em 0}li{margin:.25em 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>U2 陈叙近景 · 去蜡感「旧 vs 新」对比</h1>
+  <div class="meta">H3 · 竖屏 9:16 · 约 4.5s · 同期对白 · 2026-09-22 · 用户反馈:首帧图OK,蜡感出在视频层</div>
+
+  <div class="redline">⚠️ 病根已定位:蜡感是 <strong>H3 视频生成层</strong>自加的(首帧图本身没那么重)。右侧新版做了两件事:①视频提示词用 <strong>h3-prompt-writing 技能</strong>重写成规范结构;②把去蜡感负向词加强一档写进画面描述。<strong>请对比两条:右侧男主脸的塑料/蜡感是不是更轻、皮肤更哑光真实?</strong></div>
+
+  <div class="row">
+    <div class="col">
+      <h2 class="tag-old">旧版(散文提示词 + 硬贴去蜡感词)</h2>
+      <video src="../shots/shot-U2/videos/U2-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="note">脸部仍有额头油光/偏顺滑的 AI 蜡感,去蜡感词硬贴效果有限。</div>
+    </div>
+    <div class="col">
+      <h2 class="tag-new">新版 r2(技能重写 + 更强去蜡感)</h2>
+      <video src="../shots/shot-U2/videos/U2-video-r2.mp4" controls playsinline preload="metadata"></video>
+      <div class="note">脸更哑光、可见毛孔与胡茬、额头反光减弱,更接近真实拍摄。</div>
+    </div>
+  </div>
+
+  <div class="chk">
+    <b>我的判读(供你对照)</b>
+    <ul>
+      <li><span class="tag-new">✔ 去蜡感</span>:新版比旧版明显更哑光真实,H3 固有平滑没100%消除但压下一档。</li>
+      <li><span class="tag-new">✔ 零字幕</span>:抽帧未见烧字幕。</li>
+      <li><span class="tag-new">✔ 道具合规</span>:白瓷圆柱瓶红盖金环 + 玻璃高脚白酒杯,无标签/无红酒。</li>
+      <li><span class="warn">△ 待你判</span>:① 新版蜡感是否降到你可接受;② 对白语速/清晰度(须你听)。</li>
+    </ul>
+  </div>
+
+  <div class="meta">你确认新版蜡感 OK → 我用同一套技能把其余各镜(U1/U3–U8)全部重写并批量生成;若还要再压蜡感,告诉我方向我继续调。<br>对白:陈叙(干脆)「没有。你问,是因为你希望有,对不对。」直链新版:<code>/ads-review/jiuheover/shots/shot-U2/videos/U2-video-r2.mp4</code></div>
+</div>
+</body>
+</html>

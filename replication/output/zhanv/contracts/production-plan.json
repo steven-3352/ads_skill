@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "projectId": "zhanv",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 8,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "钩子·又看手机",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "三天了。他一条没回，你这手机翻了多少遍。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b01",
+          "sceneId": "s1",
+          "text": "又看。没有。三天了他一条没回你这手机翻了多少遍。我就看几点。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U01",
+          "sceneId": "s1",
+          "durationSeconds": 5,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 5,
+              "coverage": [
+                {
+                  "beatId": "b01",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U01-first.json"
+            ],
+            "video": "prompts/shots/U01-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "推进·稳到没感觉",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "给你热了五年早饭。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b02a",
+          "sceneId": "s1",
+          "text": "他上周说忙？嗯，说这阵子忙。那陈默呢。陈默……挺好。给你热了五年早饭。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        },
+        {
+          "id": "b02b",
+          "sceneId": "s1",
+          "text": "那个三天不回的，偶尔回你一句，你是不是整个人就——就活了。陈默天天在，你咋没这反应。他太稳了，稳得我踏实。踏实到没感觉。你别这么说。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U02a",
+          "sceneId": "s1",
+          "durationSeconds": 7,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 7,
+              "coverage": [
+                {
+                  "beatId": "b02a",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U02a-first.json"
+            ],
+            "video": "prompts/shots/U02a-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        },
+        {
+          "id": "U02b",
+          "sceneId": "s1",
+          "durationSeconds": 9,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 9,
+              "coverage": [
+                {
+                  "beatId": "b02b",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U02b-first.json"
+            ],
+            "video": "prompts/shots/U02b-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "推进·老虎机",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "跟拉老虎机一样。不知道这把中不中，你才停不下来。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b03a",
+          "sceneId": "s1",
+          "text": "他三天不找你，你干嘛呢。瞎想。想他是不是不要我了。他偶尔回你一次呢。就……特别高兴。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        },
+        {
+          "id": "b03b",
+          "sceneId": "s1",
+          "text": "跟拉老虎机一样，不知道这把中不中，你才停不下来。陈默每次都给你，你当然不稀罕。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U03a",
+          "sceneId": "s1",
+          "durationSeconds": 6,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 6,
+              "coverage": [
+                {
+                  "beatId": "b03a",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U03a-first.json"
+            ],
+            "video": "prompts/shots/U03a-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        },
+        {
+          "id": "U03b",
+          "sceneId": "s1",
+          "durationSeconds": 6,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 6,
+              "coverage": [
+                {
+                  "beatId": "b03b",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U03b-first.json"
+            ],
+            "video": "prompts/shots/U03b-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "顶点·题眼①他在遛你",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "他在遛你。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b04a",
+          "sceneId": "s1",
+          "text": "可陈默对我好，是应该的呀。那个男的对你好一次，你记一年。陈默记你姨妈期，记你不吃葱，记你下班走哪条路。那个人，记你生日吗。他忙。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        },
+        {
+          "id": "b04b",
+          "sceneId": "s1",
+          "text": "林夏。爱你的人心疼你。你爱的那个——他在遛你。我知道。知道还等。我控制不住。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U04a",
+          "sceneId": "s1",
+          "durationSeconds": 10,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 10,
+              "coverage": [
+                {
+                  "beatId": "b04a",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U04a-first.json"
+            ],
+            "video": "prompts/shots/U04a-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        },
+        {
+          "id": "U04b",
+          "sceneId": "s1",
+          "durationSeconds": 7,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 7,
+              "coverage": [
+                {
+                  "beatId": "b04b",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U04b-first.json"
+            ],
+            "video": "prompts/shots/U04b-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "题眼②他居然选了我+童年",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "他居然选了我。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b05a",
+          "sceneId": "s1",
+          "text": "你不是离不开他。你是离不开那句——终于有人看见我了。你要的根本不是他爱你，你要的是——他居然选了我。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        },
+        {
+          "id": "b05b",
+          "sceneId": "s1",
+          "text": "你干嘛突然说这个。你小时候，你妈是不是也这样。考好了才理你，考不好就不搭理。忽冷忽热的你才当是爱，陈默这种一直在的你反倒慌。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U05a",
+          "sceneId": "s1",
+          "durationSeconds": 8,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 8,
+              "coverage": [
+                {
+                  "beatId": "b05a",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U05a-first.json"
+            ],
+            "video": "prompts/shots/U05a-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        },
+        {
+          "id": "U05b",
+          "sceneId": "s1",
+          "durationSeconds": 9,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 9,
+              "coverage": [
+                {
+                  "beatId": "b05b",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U05b-first.json"
+            ],
+            "video": "prompts/shots/U05b-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "反转·手机亮选陈默",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "你现在，想回谁。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b06a",
+          "sceneId": "s1",
+          "text": "谁。陈默。那个三天没回的呢。还没。你现在，想回谁。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        },
+        {
+          "id": "b06b",
+          "sceneId": "s1",
+          "text": "我回陈默。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U06a",
+          "sceneId": "s1",
+          "durationSeconds": 6,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 6,
+              "coverage": [
+                {
+                  "beatId": "b06a",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U06a-first.json"
+            ],
+            "video": "prompts/shots/U06a-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        },
+        {
+          "id": "U06b",
+          "sceneId": "s1",
+          "durationSeconds": 8,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 8,
+              "coverage": [
+                {
+                  "beatId": "b06b",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U06b-first.json",
+              "prompts/shots/U06b-last.json"
+            ],
+            "video": "prompts/shots/U06b-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ],
+          "dialogueDensityExempt": "反转崩点静默：手机亮起陈默消息+林夏盯屏不动+手指在那个人对话框点开又关上，画面动作兑现，SOP§7崩点留白"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "余波·刚睡醒的人",
+      "source": {
+        "storyFile": "story/screenplay-locked-v2.md",
+        "verbatim": "像个刚睡醒的人。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b07a",
+          "sceneId": "s1",
+          "text": "你知道你刚才那表情像啥吗。像啥。像个刚睡醒的人。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        },
+        {
+          "id": "b07b",
+          "sceneId": "s1",
+          "text": "我才醒。不晚，他还在楼下等你呢。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U07a",
+          "sceneId": "s1",
+          "durationSeconds": 6,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 6,
+              "coverage": [
+                {
+                  "beatId": "b07a",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U07a-first.json"
+            ],
+            "video": "prompts/shots/U07a-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        },
+        {
+          "id": "U07b",
+          "sceneId": "s1",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b07b",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/U07b-first.json"
+            ],
+            "video": "prompts/shots/U07b-video.json"
+          },
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "references": [
+            "assets/characters/lin-master.png",
+            "assets/characters/zhou-master.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

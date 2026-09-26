@@ -1,0 +1,32 @@
+{
+  "asset_type": "video",
+  "shot": "S06",
+  "role": "地下·钻入晶洞前推(推进·声压蓄顶,第五巨物)",
+  "video_model": "MiniMax-H3",
+  "mode": "I2VA (single first frame = KF-S06-first.png fully referenced at 0.00s; camera develops forward from it, no last frame — 尾帧靠剪辑叠化)",
+  "duration_s": 5,
+  "aspect_ratio": "16:9",
+  "first_frame": "assets/keyframes/KF-S06-first.png",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Photorealistic live-action, cinematic, horizontal 16:9. The frame opens exactly on <Picture 1>: inside a colossal underground crystal cavern at the earth's core, enormous pale translucent crystal columns and glowing crystal veins rising to hold up a vast cathedral-like chamber, soft warm rose-gold and pale gold god-rays slanting down through the gaps as gentle accents while the dominant palette stays clear teal-aqua and pale blue-green crystal, everything bright, luminous, airy, ethereal and crystalline like light passing through clear gemstone and ice, with one tiny warm speck of light — an East Asian Chinese couple — on a ledge between the giant crystal veins, preserving the palette and immense scale. The camera pushes in forward with large amplitude at medium speed, boring deeper into the cavern so the giant crystal columns and glowing veins sweep past on both sides and the chamber opens ahead, luminous particles streaming upward past the lens; toward the end the crystal light swells and begins to rise as the framing tilts slightly upward, as if about to lift back toward the surface. Bright, luminous, translucent, soft diffused ambient light, no hard shadows, never fiery or molten. The bottom 15-18 percent of the frame stays clean and empty, and absolutely no text, subtitles, captions, watermark, logo or Chinese characters appear anywhere in the image.\n\noverall_soundscape: A deep underground low resonant hum fills the chamber, layered with delicate crystalline chimes and bell-like high tones, and a swelling energy tone as the crystal light rises.\n\nnon_diegetic_music: The full theme surges across all sections at a slow-to-medium tempo, its intensity building strongly toward a peak.",
+  "negative": "amber crystals, orange crystals, yellow crystals, fiery, molten lava, orange glow, burning, red hot embers, fire, magma, volcanic, smoke, ash, hot orange cave, hard shadows, harsh shadows, hard cut, jump cut, close-up, big face, character dominates frame, crowded, cluttered, oversaturated, dark scary cave, horror, cold blue gloom, static frozen shot, text, subtitles, captions, watermark, logo, Chinese characters, western/caucasian faces",
+  "status": "prompt_ready_pending_paid_generation",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA指令首行:<Picture 1>(KF-S06-first改色版)0.00s全参考,首帧锚点+向前发展,无尾帧",
+      "持续大幅运镜写死:push in forward large amplitude,钻入晶洞+末端晶光上溢微转升,非静止美图([C]门)",
+      "S06无真人对白,回响到顶/水晶清鸣后期不入提示词(overall_soundscape只写环境底噪)",
+      "巨物锚点=地心巨型晶洞晶脉;严守决策A空灵明亮通透(暖金光束+清透晶体),负面词重锁去炽烈橙红熔岩/火焰",
+      "人物5%微小暖点显式East Asian Chinese防欧美脸;漫射柔光无硬阴影",
+      "anti-subtitle:显式禁text/subtitles/captions/watermark/logo/Chinese characters,底部15-18%安全区留干净",
+      "三核心字段齐,时长匹配5s;音乐全声部涌起声浪推峰(为S07合唱峰蓄势)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "95e1c69dea0e2f606b9fb9804177d03e89cc49a0ff7c0304bc70d8ee56e4427f"
+  }
+}

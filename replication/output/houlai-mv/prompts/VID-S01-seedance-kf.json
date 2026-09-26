@@ -1,0 +1,60 @@
+{
+  "prompt": "以 @图片1 为画面构图与场景基准——纯黑背景的独唱空间，一束顶光从上方打在她身上、四周完全漆黑，肩部以上的面部近景取景、机位与人物姿态都参照 @图片1。人物长相锁定 @视频1 里出镜的东亚年轻女子，五官、发型、气质与妆容全程与 @视频1 中同一个人保持一致；只借用她的长相与神态，不沿用 @视频1 的动作、场景、背景或口型。她跟随 @音频1 里的女声深情清唱，嘴唇、牙齿与下巴的开合随 @音频1 的人声逐字精确同步，口型贴合每一个发音，做到音画严格对位。情绪是克制的悲伤与含泪回忆，眼神低垂、略微失焦而疏离，眉心微蹙，绝不微笑；一滴泪在眼眶里打转、将落未落。镜头几乎静止，仅极缓慢地微微推近。声音：完整保留 @音频1 的原声作为本镜头的实际人声，不要新增、替换或生成任何其他人声、和声、伴唱、音乐、房间底噪或环境音。画面里始终只有她一人，没有任何字幕、文字、歌词、logo 或水印。电影级质感，柔和顶光，浅景深，克制忧伤的氛围。",
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "https://www.tonbird.top/ads-review/houlai-mv/shots/KF-S01-first.png"
+      },
+      "role": "reference_image"
+    },
+    {
+      "type": "video_url",
+      "video_url": {
+        "url": "asset://asset-20260920170838-47zfw"
+      },
+      "role": "reference_video"
+    },
+    {
+      "type": "audio_url",
+      "audio_url": {
+        "url": "https://www.tonbird.top/ads-review/houlai-mv/refaudio/ref-S01-4s.mp3"
+      },
+      "role": "reference_audio"
+    }
+  ],
+  "narrative_alignment": {
+    "source_story": "replication/output/houlai-mv-review/screenplay-lock.md",
+    "related_beats": [
+      "S01 冷开场 HOOK · 现在时女主黑场顶光独唱空间"
+    ],
+    "related_shots": [
+      "S01"
+    ],
+    "visual_evidence": [
+      "asset://asset-20260920170838-47zfw 真人认证视频资产(东亚年轻女子)"
+    ],
+    "unresolved_blockers": []
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "reviewed_at": "2026-09-20T10:45:00Z",
+    "checks": [
+      "@图片1定黑场顶光构图/景别/姿态",
+      "@视频1锁真人长相不沿用其动作场景",
+      "@音频1逐字对口型",
+      "保留@音频1原声禁另加音",
+      "无字幕文字歌词第二人",
+      "克制含泪绝不微笑、镜头近乎静止微推"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6b2f56b8c303e2ce337f95974129c9237361cf50d64ee164bb215ddec415ae29"
+  }
+}

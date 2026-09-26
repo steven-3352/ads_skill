@@ -1,0 +1,2256 @@
+{
+  "schema_version": 1,
+  "project_id": "travel",
+  "episode": "master",
+  "status": "stage_complete_or_waiting_authorization",
+  "created_at": "2026-09-25T00:00:00+08:00",
+  "updated_at": "2026-09-25T20:36:46+08:00",
+  "budget": {
+    "committed_yuan": 20.550000000000008,
+    "hard_cap_yuan": 21
+  },
+  "authorization": {
+    "committed_yuan": 20.550000000000008,
+    "increment_cap_yuan": 21,
+    "asset_ids": [
+      "travel-01-video",
+      "travel-02-video",
+      "travel-03-video",
+      "travel-04-video",
+      "travel-05-video",
+      "travel-06-video",
+      "travel-07-video",
+      "travel-08-video",
+      "travel-09-video",
+      "travel-10-video",
+      "travel-11-video",
+      "travel-12-video",
+      "travel-13-video",
+      "travel-14-video",
+      "travel-15-video",
+      "travel-16-video",
+      "travel-17-video",
+      "travel-18-video",
+      "travel-couple-photo-master",
+      "travel-kf-01-first",
+      "travel-kf-01-last",
+      "travel-kf-01-last-v2",
+      "travel-kf-02",
+      "travel-kf-03",
+      "travel-kf-04-first",
+      "travel-kf-04-last",
+      "travel-kf-05",
+      "travel-kf-06",
+      "travel-kf-07",
+      "travel-kf-08",
+      "travel-kf-09",
+      "travel-kf-10",
+      "travel-kf-11",
+      "travel-kf-12",
+      "travel-kf-13",
+      "travel-kf-14",
+      "travel-kf-15",
+      "travel-kf-16",
+      "travel-kf-17",
+      "travel-kf-18",
+      "travel-protagonist-master"
+    ],
+    "allow_pending_semantic_qc": true
+  },
+  "assets": [
+    {
+      "id": "travel-couple-photo-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "prompt_file": "replication/output/Travel/prompts/assets/travel-couple-photo-master.json",
+      "output": "replication/output/Travel/assets/characters/master-couple-photo.png",
+      "submission_started_at": "2026-09-25T04:59:30+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-couple-photo-master",
+      "sha256": "6dbcfcb002d796a4a86d3cc22dcb9b9a863f406562eae6fa896e280b6c81491d",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T05:00:21+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T05:09:25+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/travel-couple-photo-master.qc.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T05:09:25+08:00"
+    },
+    {
+      "id": "travel-protagonist-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "prompt_file": "replication/output/Travel/prompts/assets/travel-protagonist-master.json",
+      "output": "replication/output/Travel/assets/characters/master-protagonist.png",
+      "submission_started_at": "2026-09-25T05:00:21+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-protagonist-master",
+      "sha256": "b3d3097090bc0363a4143475cd280605be26ee4455a1e427d181c9c0123ff1c1",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T05:00:59+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T05:09:25+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/travel-protagonist-master.qc.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T05:09:25+08:00"
+    },
+    {
+      "id": "travel-kf-01-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-protagonist-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-01-image.json",
+      "output": "replication/output/Travel/shots/01/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:39:38+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-01-first",
+      "sha256": "b5fe53013cfbc1d691cfb160f3af3840a404a1fd1aa414dd5b8dd3dcd753cd7b",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:41+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:03+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:03+08:00"
+    },
+    {
+      "id": "travel-kf-01-last",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-protagonist-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-01-last.json",
+      "output": "replication/output/Travel/shots/01/last.png",
+      "status": "rejected",
+      "submission_started_at": "2026-09-25T05:40:27+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-01-last",
+      "sha256": "c7ae02410510bc4e959c3e5f62a50d495769bff10d6f4e87d0b68dfaecf67875",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:42+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:03+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:03+08:00",
+      "superseded_by": "travel-kf-01-last-v2",
+      "superseded_from_accepted": true,
+      "retired_at": "2026-09-25T10:23:23+08:00"
+    },
+    {
+      "id": "travel-kf-02",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-02-image.json",
+      "output": "replication/output/Travel/shots/02/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:42:19+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-02",
+      "sha256": "444c98fbd70c452ee0d0ea582545a48f95ee8669ec5554fa355270ee892ff8f9",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:42+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:03+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:03+08:00"
+    },
+    {
+      "id": "travel-kf-03",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-couple-photo-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-03-image.json",
+      "output": "replication/output/Travel/shots/03/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:37:43+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-03",
+      "sha256": "d7cd03aef946c6f4e19818a7a2c7d9442b613123af81b76ae82f478687b68cb5",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:42+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:04+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:04+08:00"
+    },
+    {
+      "id": "travel-kf-04-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-04-image.json",
+      "output": "replication/output/Travel/shots/04/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:42:56+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-04-first",
+      "sha256": "ae77aae890428760003b01d2b7540333d2fc9a8ee6d3cf950661aeec7b10335f",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:43+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:04+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:04+08:00"
+    },
+    {
+      "id": "travel-kf-04-last",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-04-last.json",
+      "output": "replication/output/Travel/shots/04/last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:44:47+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-04-last",
+      "sha256": "22fda98e67e8f5fa8b78bc407286068cd243367b6c287246448450cc8462c10f",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:43+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:04+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:04+08:00"
+    },
+    {
+      "id": "travel-kf-05",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-couple-photo-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-05-image.json",
+      "output": "replication/output/Travel/shots/05/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:45:31+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-05",
+      "sha256": "7d02e3330bec1e90f9b55d2a6c0881f0910060f5c66f17e0bfc8f1631b689d9a",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:43+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:04+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:04+08:00"
+    },
+    {
+      "id": "travel-kf-06",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-06-image.json",
+      "output": "replication/output/Travel/shots/06/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:46:26+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-06",
+      "sha256": "a37cdd6af84310372a45d16ecc5398d911c89173cc3a8a3ed52c82cc52b0b2aa",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:44+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:05+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:05+08:00"
+    },
+    {
+      "id": "travel-kf-07",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-07-image.json",
+      "output": "replication/output/Travel/shots/07/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:47:04+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-07",
+      "sha256": "6bcaed07d2e9d8ed12aacab9234e1d5a15450ca4a498d53225cc6a214ddaafea",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:44+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:05+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:05+08:00"
+    },
+    {
+      "id": "travel-kf-08",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-08-image.json",
+      "output": "replication/output/Travel/shots/08/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:47:44+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-08",
+      "sha256": "e79d868c355f4c3936c9d167ad011a377dee651a3998246b5ed36c22720aaccc",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:44+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:05+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:05+08:00"
+    },
+    {
+      "id": "travel-kf-09",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-09-image.json",
+      "output": "replication/output/Travel/shots/09/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:48:30+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-09",
+      "sha256": "41742dc02895edacfbf591d6fa868d2a098f7911d4e928b20c8aef4f6ef912f6",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:45+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:06+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:06+08:00"
+    },
+    {
+      "id": "travel-kf-10",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-10-image.json",
+      "output": "replication/output/Travel/shots/10/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:50:03+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-10",
+      "sha256": "0a7c0e1268510ed7a87add1fd0fa77972e39290fec114e2cc74c2c96d7fe1a0f",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:45+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:06+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:06+08:00"
+    },
+    {
+      "id": "travel-kf-11",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-11-image.json",
+      "output": "replication/output/Travel/shots/11/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:50:46+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-11",
+      "sha256": "b2135b99cad0930ca7b402b736cf3b38a41f69f6b03a09ed6753924cad79a69d",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:45+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:06+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:06+08:00"
+    },
+    {
+      "id": "travel-kf-12",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-protagonist-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-12-image.json",
+      "output": "replication/output/Travel/shots/12/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:51:33+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-12",
+      "sha256": "93f2814ddc8415c3efc6ffb406fd8c50f87eeae344909816969e40b4305d0836",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:46+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:06+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:06+08:00"
+    },
+    {
+      "id": "travel-kf-13",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-13-image.json",
+      "output": "replication/output/Travel/shots/13/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:52:19+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-13",
+      "sha256": "ee09c8aaf9a24c2071119347b60dc8f2c2cd69348ca2032e13d8c8ebcb6ee99c",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:46+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:07+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:07+08:00"
+    },
+    {
+      "id": "travel-kf-14",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-protagonist-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-14-image.json",
+      "output": "replication/output/Travel/shots/14/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:52:54+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-14",
+      "sha256": "9c9a9610b7d703c453625e807e57ea1225b5a6710109482f3f1778170c2bd9be",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:46+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:07+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:07+08:00"
+    },
+    {
+      "id": "travel-kf-15",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-couple-photo-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-15-image.json",
+      "output": "replication/output/Travel/shots/15/keyframe.png",
+      "status": "accepted",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-15",
+      "submission_started_at": "2026-09-25T05:57:28+08:00",
+      "sha256": "c3a84e7f08a8e52f1d71c49d5aef29c798b97ced8fb9b97be657b8f77dd2cb52",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:47+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:07+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:07+08:00"
+    },
+    {
+      "id": "travel-kf-16",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-16-image.json",
+      "output": "replication/output/Travel/shots/16/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:57:59+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-16",
+      "sha256": "ba0ab4474556875e672152228c2df90020c0c913fab25de4cf1c898c5a9da10b",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:47+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:08+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:08+08:00"
+    },
+    {
+      "id": "travel-kf-17",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-17-image.json",
+      "output": "replication/output/Travel/shots/17/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:58:28+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-17",
+      "sha256": "3de0861766817c4e2c4701a43e933dc2dbdb2a278ee7ce467d1b9663446f7bd5",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:47+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:08+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:08+08:00"
+    },
+    {
+      "id": "travel-kf-18",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-couple-photo-master"
+      ],
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-18-image.json",
+      "output": "replication/output/Travel/shots/18/keyframe.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:58:50+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-18",
+      "sha256": "e930260afd4b4e5f5ee06f2513801049d65f19177ee865f13a3a4a7b4bd0c9e2",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T06:00:48+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T09:15:08+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-25T09:15:08+08:00"
+    },
+    {
+      "id": "travel-kf-01-last-v2",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "group": "shot_image",
+      "output": "replication/output/Travel/shots/01/last-v2.png",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-01-last-v2.json",
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "travel-kf-01-first"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T10:20:11+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-kf-01-last-v2",
+      "sha256": "dc2de91ef91ecc573212e26385f555c98c36a4b5caae24d9401506d6cb4df832",
+      "accepted_at": "2026-09-25T10:23:23+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T10:23:23+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/travel-kf-01-last-v2.qc.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-01-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/01/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-01-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-01-first",
+        "travel-kf-01-last-v2"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T12:56:14+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-01-video",
+      "sha256": "f4ed02cc5b96a6af52b6b1669fc0d91dde0d7f3bc17494c206b3d570d93024ff",
+      "accepted_at": "2026-09-25T20:36:40+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:40+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-02-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/02/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-02-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-02"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T12:58:50+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-02-video",
+      "sha256": "b6e984346f0ed0ef66f1597eecbca56df990aa21aca9a32a58d5f4d7d3f10176",
+      "accepted_at": "2026-09-25T20:36:40+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:40+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-03-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/03/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-03-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-03"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:01:19+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-03-video",
+      "sha256": "c51d036b07ca849016e65b0ddfbbb45bb7ce039919f3930e5c2ba2f4abdcc8a6",
+      "accepted_at": "2026-09-25T20:36:40+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:40+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-04-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/04/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-04-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-04-first",
+        "travel-kf-04-last"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:03:27+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-04-video",
+      "sha256": "4b1de8d3e105bb0f46bcecff1ec2ae61806d339ff2927357838bf719dacb3d26",
+      "accepted_at": "2026-09-25T20:36:41+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:41+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-05-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/05/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-05-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-05"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:06:02+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-05-video",
+      "sha256": "24b05d4d83c3d60013fa4d6617d52c7008ee8eb8ddcb74afe38d8b0beb358015",
+      "accepted_at": "2026-09-25T20:36:41+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:41+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-06-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/06/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-06-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-06"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T12:53:10+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-06-video",
+      "sha256": "890c684bac4e41704a5deef29f10b0a54b9aa058bc4f00ad3147cd65117e53a8",
+      "accepted_at": "2026-09-25T20:36:41+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:41+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-07-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/07/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-07-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-07"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:08:50+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-07-video",
+      "sha256": "9da05418300c383bbfc3d5db1805187f08c4cfe13b09c35d1de4dc16301210b2",
+      "accepted_at": "2026-09-25T20:36:42+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:42+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-08-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/08/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-08-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-08"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:10:58+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-08-video",
+      "sha256": "761f038b5b7be49fec42e81d011ad777000a7726f474aedb097e6debed7d656f",
+      "accepted_at": "2026-09-25T20:36:42+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:42+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-09-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/09/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-09-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-09"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:13:37+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-09-video",
+      "sha256": "8317998f1fa5eeccdbf7f90aa4ad897536263bb39404f8aa2b91ecef2c88b598",
+      "accepted_at": "2026-09-25T20:36:43+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:43+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-10-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/10/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-10-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-10"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:19:27+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-10-video",
+      "sha256": "f2c31dfac81285c1f241498f38b71897be6a890bb98489c2d48f16a13905e6ee",
+      "accepted_at": "2026-09-25T20:36:43+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:43+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-11-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/11/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-11-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-11"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:25:07+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-11-video",
+      "sha256": "d986d9b7f9be9c3ad137f9128c337893a54108aeba61037b8326032a023981af",
+      "accepted_at": "2026-09-25T20:36:43+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:43+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-12-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/12/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-12-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-12"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:27:05+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-12-video",
+      "sha256": "70275e79608a514755f8dd74e4e64bfcd31319c09847de5c85158dc36c4b0f89",
+      "accepted_at": "2026-09-25T20:36:44+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:44+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-13-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/13/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-13-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-13"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:29:05+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-13-video",
+      "sha256": "a3e77da6cc8d184d69b75200f42f91eaf2683be5d82a7a7683d6603862dbf376",
+      "accepted_at": "2026-09-25T20:36:44+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:44+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-14-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/14/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-14-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-14"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:31:04+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-14-video",
+      "sha256": "031bdcab1a89c99cdd1d99515da942ca1de3789ad9786a8484b3b85ebe556abd",
+      "accepted_at": "2026-09-25T20:36:45+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:45+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-15-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/15/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-15-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-15"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:33:11+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-15-video",
+      "sha256": "2ca355e2868960ad3f10f62c2f653e26d68c2170e4161f009b0a1f3c518feb9b",
+      "accepted_at": "2026-09-25T20:36:45+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:45+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-16-video",
+      "kind": "video",
+      "cost_yuan": 1.0,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/16/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-16-video.json",
+      "model": "MiniMax-H3",
+      "duration": 5,
+      "depends_on": [
+        "travel-kf-16"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:35:09+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-16-video",
+      "sha256": "130cf6a4b88f01d4a1de46e8e936f2ed7d3b527ae8f1a005d510344a26522492",
+      "accepted_at": "2026-09-25T20:36:45+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:45+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-17-video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/17/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-17-video.json",
+      "model": "MiniMax-H3",
+      "duration": 4,
+      "depends_on": [
+        "travel-kf-17"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:38:16+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-17-video",
+      "sha256": "d03d894c0960e63910e702f636c362c04e75b954bda37d4d9e25a6e30abb43b8",
+      "accepted_at": "2026-09-25T20:36:46+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:46+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    },
+    {
+      "id": "travel-18-video",
+      "kind": "video",
+      "cost_yuan": 1.0,
+      "group": "shot_video",
+      "output": "replication/output/Travel/shots/18/video.mp4",
+      "prompt_file": "replication/output/Travel/prompts/shots/travel-18-video.json",
+      "model": "MiniMax-H3",
+      "duration": 5,
+      "depends_on": [
+        "travel-kf-18"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T13:41:14+08:00",
+      "audit_dir": "replication/output/Travel/automation/requests/travel-18-video",
+      "sha256": "f502043ffff06ed8ae573c448bb2ddd6c7a7e3dd9a0c0fa87a719feff8fecfb8",
+      "accepted_at": "2026-09-25T20:36:46+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T20:36:46+08:00",
+        "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      }
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-25T04:59:30+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-couple-photo-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:00:08+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-couple-photo-master",
+      "cost_yuan": 0.25,
+      "sha256": "6dbcfcb002d796a4a86d3cc22dcb9b9a863f406562eae6fa896e280b6c81491d"
+    },
+    {
+      "at": "2026-09-25T05:00:21+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-couple-photo-master"
+    },
+    {
+      "at": "2026-09-25T05:00:21+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-protagonist-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:00:59+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-protagonist-master",
+      "cost_yuan": 0.25,
+      "sha256": "b3d3097090bc0363a4143475cd280605be26ee4455a1e427d181c9c0123ff1c1"
+    },
+    {
+      "at": "2026-09-25T05:00:59+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-protagonist-master"
+    },
+    {
+      "at": "2026-09-25T05:09:25+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-couple-photo-master",
+      "evidence": "replication/output/Travel/automation/evidence/travel-couple-photo-master.qc.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T05:09:25+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-protagonist-master",
+      "evidence": "replication/output/Travel/automation/evidence/travel-protagonist-master.qc.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T05:37:24+08:00",
+      "type": "authorized_batch",
+      "count": 20,
+      "asset_ids": [
+        "travel-kf-01-first",
+        "travel-kf-01-last",
+        "travel-kf-02",
+        "travel-kf-03",
+        "travel-kf-04-first",
+        "travel-kf-04-last",
+        "travel-kf-05",
+        "travel-kf-06",
+        "travel-kf-07",
+        "travel-kf-08",
+        "travel-kf-09",
+        "travel-kf-10",
+        "travel-kf-11",
+        "travel-kf-12",
+        "travel-kf-13",
+        "travel-kf-14",
+        "travel-kf-15",
+        "travel-kf-16",
+        "travel-kf-17",
+        "travel-kf-18"
+      ],
+      "new_hard_cap_yuan": 6.0,
+      "new_increment_cap_yuan": 6.0,
+      "note": "stage3 shot-image 20张关键帧上架(18镜含01/04 FL2VA首尾),用户已确认继续",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T05:37:43+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-03",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:38:28+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-03",
+      "cost_yuan": 0.25,
+      "sha256": "d7cd03aef946c6f4e19818a7a2c7d9442b613123af81b76ae82f478687b68cb5"
+    },
+    {
+      "at": "2026-09-25T05:38:37+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-03"
+    },
+    {
+      "at": "2026-09-25T05:39:38+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-01-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:40:27+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-01-first",
+      "cost_yuan": 0.25,
+      "sha256": "b5fe53013cfbc1d691cfb160f3af3840a404a1fd1aa414dd5b8dd3dcd753cd7b"
+    },
+    {
+      "at": "2026-09-25T05:40:27+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-01-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:42:18+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-01-last",
+      "cost_yuan": 0.25,
+      "sha256": "c7ae02410510bc4e959c3e5f62a50d495769bff10d6f4e87d0b68dfaecf67875"
+    },
+    {
+      "at": "2026-09-25T05:42:19+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-02",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:42:56+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-02",
+      "cost_yuan": 0.25,
+      "sha256": "444c98fbd70c452ee0d0ea582545a48f95ee8669ec5554fa355270ee892ff8f9"
+    },
+    {
+      "at": "2026-09-25T05:42:56+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-04-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:44:47+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-04-first",
+      "cost_yuan": 0.25,
+      "sha256": "ae77aae890428760003b01d2b7540333d2fc9a8ee6d3cf950661aeec7b10335f"
+    },
+    {
+      "at": "2026-09-25T05:44:47+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-04-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:45:31+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-04-last",
+      "cost_yuan": 0.25,
+      "sha256": "22fda98e67e8f5fa8b78bc407286068cd243367b6c287246448450cc8462c10f"
+    },
+    {
+      "at": "2026-09-25T05:45:31+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-05",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:46:25+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-05",
+      "cost_yuan": 0.25,
+      "sha256": "7d02e3330bec1e90f9b55d2a6c0881f0910060f5c66f17e0bfc8f1631b689d9a"
+    },
+    {
+      "at": "2026-09-25T05:46:26+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-06",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:47:03+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-06",
+      "cost_yuan": 0.25,
+      "sha256": "a37cdd6af84310372a45d16ecc5398d911c89173cc3a8a3ed52c82cc52b0b2aa"
+    },
+    {
+      "at": "2026-09-25T05:47:04+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-07",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:47:43+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-07",
+      "cost_yuan": 0.25,
+      "sha256": "6bcaed07d2e9d8ed12aacab9234e1d5a15450ca4a498d53225cc6a214ddaafea"
+    },
+    {
+      "at": "2026-09-25T05:47:44+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-08",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:48:30+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-08",
+      "cost_yuan": 0.25,
+      "sha256": "e79d868c355f4c3936c9d167ad011a377dee651a3998246b5ed36c22720aaccc"
+    },
+    {
+      "at": "2026-09-25T05:48:30+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-09",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:49:17+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-09",
+      "cost_yuan": 0.25,
+      "sha256": "41742dc02895edacfbf591d6fa868d2a098f7911d4e928b20c8aef4f6ef912f6"
+    },
+    {
+      "at": "2026-09-25T05:50:03+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-10",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:50:46+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-10",
+      "cost_yuan": 0.25,
+      "sha256": "0a7c0e1268510ed7a87add1fd0fa77972e39290fec114e2cc74c2c96d7fe1a0f"
+    },
+    {
+      "at": "2026-09-25T05:50:46+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-11",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:51:33+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-11",
+      "cost_yuan": 0.25,
+      "sha256": "b2135b99cad0930ca7b402b736cf3b38a41f69f6b03a09ed6753924cad79a69d"
+    },
+    {
+      "at": "2026-09-25T05:51:33+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-12",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:52:19+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-12",
+      "cost_yuan": 0.25,
+      "sha256": "93f2814ddc8415c3efc6ffb406fd8c50f87eeae344909816969e40b4305d0836"
+    },
+    {
+      "at": "2026-09-25T05:52:19+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-13",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:52:53+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-13",
+      "cost_yuan": 0.25,
+      "sha256": "ee09c8aaf9a24c2071119347b60dc8f2c2cd69348ca2032e13d8c8ebcb6ee99c"
+    },
+    {
+      "at": "2026-09-25T05:52:54+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-14",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:53:49+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-14",
+      "cost_yuan": 0.25,
+      "sha256": "9c9a9610b7d703c453625e807e57ea1225b5a6710109482f3f1778170c2bd9be"
+    },
+    {
+      "at": "2026-09-25T05:53:49+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-15",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:53:49+08:00",
+      "type": "local_preflight_failed",
+      "asset_id": "travel-kf-15",
+      "exit_code": 4,
+      "lifecycle_state": "",
+      "cost_yuan": 0
+    },
+    {
+      "at": "2026-09-25T05:56:50+08:00",
+      "type": "reconciled_no_post",
+      "asset_id": "travel-kf-15",
+      "cost_yuan": 0,
+      "refunded_yuan": 0,
+      "evidence": "replication/output/Travel/automation/requests/travel-kf-15",
+      "note": "极近景插入镜误带母板A参考触发肖像磁吸门禁exit4(未扣费),复位后改文生图去参考",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T05:57:28+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-15",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:57:58+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-15",
+      "cost_yuan": 0.25,
+      "sha256": "c3a84e7f08a8e52f1d71c49d5aef29c798b97ced8fb9b97be657b8f77dd2cb52"
+    },
+    {
+      "at": "2026-09-25T05:57:59+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-16",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:58:27+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-16",
+      "cost_yuan": 0.25,
+      "sha256": "ba0ab4474556875e672152228c2df90020c0c913fab25de4cf1c898c5a9da10b"
+    },
+    {
+      "at": "2026-09-25T05:58:28+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-17",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:58:50+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-17",
+      "cost_yuan": 0.25,
+      "sha256": "3de0861766817c4e2c4701a43e933dc2dbdb2a278ee7ce467d1b9663446f7bd5"
+    },
+    {
+      "at": "2026-09-25T05:58:50+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-18",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T05:59:48+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-18",
+      "cost_yuan": 0.25,
+      "sha256": "e930260afd4b4e5f5ee06f2513801049d65f19177ee865f13a3a4a7b4bd0c9e2"
+    },
+    {
+      "at": "2026-09-25T06:00:41+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-01-first"
+    },
+    {
+      "at": "2026-09-25T06:00:42+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-01-last"
+    },
+    {
+      "at": "2026-09-25T06:00:42+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-02"
+    },
+    {
+      "at": "2026-09-25T06:00:42+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-03"
+    },
+    {
+      "at": "2026-09-25T06:00:43+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-04-first"
+    },
+    {
+      "at": "2026-09-25T06:00:43+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-04-last"
+    },
+    {
+      "at": "2026-09-25T06:00:43+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-05"
+    },
+    {
+      "at": "2026-09-25T06:00:44+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-06"
+    },
+    {
+      "at": "2026-09-25T06:00:44+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-07"
+    },
+    {
+      "at": "2026-09-25T06:00:44+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-08"
+    },
+    {
+      "at": "2026-09-25T06:00:45+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-09"
+    },
+    {
+      "at": "2026-09-25T06:00:45+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-10"
+    },
+    {
+      "at": "2026-09-25T06:00:45+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-11"
+    },
+    {
+      "at": "2026-09-25T06:00:46+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-12"
+    },
+    {
+      "at": "2026-09-25T06:00:46+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-13"
+    },
+    {
+      "at": "2026-09-25T06:00:46+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-14"
+    },
+    {
+      "at": "2026-09-25T06:00:47+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-15"
+    },
+    {
+      "at": "2026-09-25T06:00:47+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-16"
+    },
+    {
+      "at": "2026-09-25T06:00:47+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-17"
+    },
+    {
+      "at": "2026-09-25T06:00:48+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "travel-kf-18"
+    },
+    {
+      "at": "2026-09-25T09:15:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-01-first",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-01-last",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-02",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-03",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-04-first",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-04-last",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-05",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:05+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-06",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:05+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-07",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:05+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-08",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:06+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-09",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:06+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-10",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:06+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-11",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:06+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-12",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:07+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-13",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:07+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-14",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:07+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-15",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:08+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-16",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:08+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-17",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T09:15:08+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-18",
+      "evidence": "replication/output/Travel/automation/evidence/keyframes-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T10:19:34+08:00",
+      "type": "authorized_batch",
+      "count": 1,
+      "asset_ids": [
+        "travel-kf-01-last-v2"
+      ],
+      "new_hard_cap_yuan": 21,
+      "new_increment_cap_yuan": 21,
+      "note": "镜01 FL2VA尾帧v2背景锁定重生(用户选A);caps抬至21覆盖后续视频批",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T10:20:11+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-kf-01-last-v2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T10:21:08+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-kf-01-last-v2",
+      "cost_yuan": 0.25,
+      "sha256": "dc2de91ef91ecc573212e26385f555c98c36a4b5caae24d9401506d6cb4df832"
+    },
+    {
+      "at": "2026-09-25T10:23:23+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-kf-01-last-v2",
+      "evidence": "replication/output/Travel/automation/evidence/travel-kf-01-last-v2.qc.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T10:23:23+08:00",
+      "type": "superseded_accepted",
+      "asset_id": "travel-kf-01-last",
+      "superseded_by": "travel-kf-01-last-v2",
+      "note": "镜01尾帧背景不一致,用户选A用v2锁背景版替换",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T12:52:53+08:00",
+      "type": "authorized_batch",
+      "count": 18,
+      "asset_ids": [
+        "travel-01-video",
+        "travel-02-video",
+        "travel-03-video",
+        "travel-04-video",
+        "travel-05-video",
+        "travel-06-video",
+        "travel-07-video",
+        "travel-08-video",
+        "travel-09-video",
+        "travel-10-video",
+        "travel-11-video",
+        "travel-12-video",
+        "travel-13-video",
+        "travel-14-video",
+        "travel-15-video",
+        "travel-16-video",
+        "travel-17-video",
+        "travel-18-video"
+      ],
+      "new_hard_cap_yuan": 21,
+      "new_increment_cap_yuan": 21,
+      "note": "stage4 H3视频18单元¥14.8;用户明确授权开始生成视频",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T12:53:10+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-06-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T12:55:09+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-06-video",
+      "cost_yuan": 0.8,
+      "sha256": "890c684bac4e41704a5deef29f10b0a54b9aa058bc4f00ad3147cd65117e53a8"
+    },
+    {
+      "at": "2026-09-25T12:56:14+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-01-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T12:58:49+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-01-video",
+      "cost_yuan": 0.8,
+      "sha256": "f4ed02cc5b96a6af52b6b1669fc0d91dde0d7f3bc17494c206b3d570d93024ff"
+    },
+    {
+      "at": "2026-09-25T12:58:50+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-02-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:01:18+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-02-video",
+      "cost_yuan": 0.8,
+      "sha256": "b6e984346f0ed0ef66f1597eecbca56df990aa21aca9a32a58d5f4d7d3f10176"
+    },
+    {
+      "at": "2026-09-25T13:01:19+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-03-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:03:27+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-03-video",
+      "cost_yuan": 0.8,
+      "sha256": "c51d036b07ca849016e65b0ddfbbb45bb7ce039919f3930e5c2ba2f4abdcc8a6"
+    },
+    {
+      "at": "2026-09-25T13:03:27+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-04-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:06:01+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-04-video",
+      "cost_yuan": 0.8,
+      "sha256": "4b1de8d3e105bb0f46bcecff1ec2ae61806d339ff2927357838bf719dacb3d26"
+    },
+    {
+      "at": "2026-09-25T13:06:02+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-05-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:08:49+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-05-video",
+      "cost_yuan": 0.8,
+      "sha256": "24b05d4d83c3d60013fa4d6617d52c7008ee8eb8ddcb74afe38d8b0beb358015"
+    },
+    {
+      "at": "2026-09-25T13:08:50+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-07-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:10:57+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-07-video",
+      "cost_yuan": 0.8,
+      "sha256": "9da05418300c383bbfc3d5db1805187f08c4cfe13b09c35d1de4dc16301210b2"
+    },
+    {
+      "at": "2026-09-25T13:10:58+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-08-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:13:36+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-08-video",
+      "cost_yuan": 0.8,
+      "sha256": "761f038b5b7be49fec42e81d011ad777000a7726f474aedb097e6debed7d656f"
+    },
+    {
+      "at": "2026-09-25T13:13:37+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-09-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:19:26+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-09-video",
+      "cost_yuan": 0.8,
+      "sha256": "8317998f1fa5eeccdbf7f90aa4ad897536263bb39404f8aa2b91ecef2c88b598"
+    },
+    {
+      "at": "2026-09-25T13:19:27+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-10-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:25:07+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-10-video",
+      "cost_yuan": 0.8,
+      "sha256": "f2c31dfac81285c1f241498f38b71897be6a890bb98489c2d48f16a13905e6ee"
+    },
+    {
+      "at": "2026-09-25T13:25:07+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-11-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:27:05+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-11-video",
+      "cost_yuan": 0.8,
+      "sha256": "d986d9b7f9be9c3ad137f9128c337893a54108aeba61037b8326032a023981af"
+    },
+    {
+      "at": "2026-09-25T13:27:05+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-12-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:29:04+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-12-video",
+      "cost_yuan": 0.8,
+      "sha256": "70275e79608a514755f8dd74e4e64bfcd31319c09847de5c85158dc36c4b0f89"
+    },
+    {
+      "at": "2026-09-25T13:29:05+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-13-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:31:03+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-13-video",
+      "cost_yuan": 0.8,
+      "sha256": "a3e77da6cc8d184d69b75200f42f91eaf2683be5d82a7a7683d6603862dbf376"
+    },
+    {
+      "at": "2026-09-25T13:31:04+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-14-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:33:10+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-14-video",
+      "cost_yuan": 0.8,
+      "sha256": "031bdcab1a89c99cdd1d99515da942ca1de3789ad9786a8484b3b85ebe556abd"
+    },
+    {
+      "at": "2026-09-25T13:33:11+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-15-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:35:08+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-15-video",
+      "cost_yuan": 0.8,
+      "sha256": "2ca355e2868960ad3f10f62c2f653e26d68c2170e4161f009b0a1f3c518feb9b"
+    },
+    {
+      "at": "2026-09-25T13:35:09+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-16-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-25T13:38:16+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-16-video",
+      "cost_yuan": 1.0,
+      "sha256": "130cf6a4b88f01d4a1de46e8e936f2ed7d3b527ae8f1a005d510344a26522492"
+    },
+    {
+      "at": "2026-09-25T13:38:16+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-17-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T13:41:13+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-17-video",
+      "cost_yuan": 0.8,
+      "sha256": "d03d894c0960e63910e702f636c362c04e75b954bda37d4d9e25a6e30abb43b8"
+    },
+    {
+      "at": "2026-09-25T13:41:14+08:00",
+      "type": "submission_started",
+      "asset_id": "travel-18-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-25T13:43:55+08:00",
+      "type": "generation_received",
+      "asset_id": "travel-18-video",
+      "cost_yuan": 1.0,
+      "sha256": "f502043ffff06ed8ae573c448bb2ddd6c7a7e3dd9a0c0fa87a719feff8fecfb8"
+    },
+    {
+      "at": "2026-09-25T20:36:40+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-01-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:40+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-02-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:40+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-03-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-04-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-05-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-06-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:42+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-07-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:42+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-08-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:43+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-09-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:43+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-10-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:43+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-11-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:44+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-12-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:44+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-13-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:45+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-14-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:45+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-15-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:45+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-16-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:46+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-17-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-25T20:36:46+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "travel-18-video",
+      "evidence": "replication/output/Travel/automation/evidence/videos-approved.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    }
+  ]
+}

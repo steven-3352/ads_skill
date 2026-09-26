@@ -1,0 +1,11 @@
+{
+  "request_id": "fenshou-A-master",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/prompts/fenshou-A-master.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-17T21:07:29+08:00"
+}

@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a warm 3200K bedroom at night, soft diffused light with a neutral warm-white base, not a single heavy yellow lamp washing the faces orange; skin keeps its natural tone. The young East Asian Chinese woman shown in <Picture 1> keeps her exact appearance, black hair in a bun with a bear-ear headband, and bright yellow bear-cartoon pajamas, leaning against the headboard and holding a ceramic mug near her chest; the young East Asian Chinese man in a light-grey T-shirt sits on the edge of the bed with his back half toward the camera, preserving the layout, bedside lamp glow, and window curtains from the reference. The camera holds a mostly static medium shot, pushing in with small amplitude at slow speed. The woman with a soft, slightly teasing young voice (S2) looks steadily at him and, at a natural, slightly quick conversational pace with no trailing silence, says: <d>[Chinese]要是哪天你碰到个比我好的女生，就是那种又温柔又细心，人家也喜欢你。</d> As she speaks, the man lowers his head slightly and his eyes flicker with a quiet, complicated unease rather than a blank stare, his fingers tightening a little around nothing. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A quiet bedroom room tone hums underneath, with faint fabric rustle as she shifts against the headboard and a soft ceramic clink as the mug meets her fingers. Light, natural breathing is audible in the pauses.\n\nnon_diegetic_music: Sparse solo piano notes at a slow tempo, widely spaced and low in volume, sustaining gently under the dialogue.",
+  "references": [
+    "replication/output/fuke/assets/U1-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 7.0,
+    "checks": [
+      "模式:I2VA首帧U1-first全参考,0.00s锚定,身份/服装/布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段",
+      "对白:女友(S2)逐字复刻剧本台词,<d>[Chinese]内仅语言标签+原文,speaker身份/动作/递送外置",
+      "时长:台词32字按~4.6字/s定7.0s,语速自然偏快无死尾(合ban-slow-dialogue)",
+      "灯光:柔和漫射/中性暖白/禁大黄光染脸/人脸自然肤色",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:男主低头眼神复杂不安非空洞念白(合fenshou-perform)",
+      "零字幕:显式no subtitles/on-screen text(合anti-subtitle成片零字幕)",
+      "声景:房间底噪+织物+呼吸,不重复对白;非画内钢琴弱音",
+      "相机:近静态中景小幅慢推"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6b13a426fbf66a922ece2e05f7b8365c815bd51aef0ca0393e2d2c59638541e6",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U1-video",
+    "usage": "U1(镜1)钩子开场:女友假设性威胁,卧室夜暖黄中景,I2VA自U1-first发展",
+    "locks": [
+      "女友黄色小熊睡衣丸子头小熊发箍(S2)",
+      "男主灰T恤(不说话无ID)",
+      "卧室夜暖黄3200K",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "钩子开场:假设性威胁建立悬念,女友靠床头捧杯说话,男主坐床沿,暖黄3200K",
+  "images": [
+    "replication/output/fuke/assets/U1-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 7
+}

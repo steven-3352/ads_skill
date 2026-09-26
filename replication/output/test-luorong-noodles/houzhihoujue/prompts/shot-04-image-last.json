@@ -1,0 +1,31 @@
+{
+  "id": "shot-04-image-last",
+  "role": "镜4尾帧＝男心软上前轻揽入怀",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. A bright, airy neutral-warm living room, ceiling light on, soft diffuse daylight, no dim moody lamp. A realistic East Asian Chinese man about 30 to 35 years old (identity from the reference man), short neat dark hair, light-grey crew-neck top, has stepped in close from the side and gently gathers the woman into his arms in a soft yielding hug, his head bowed toward hers, tender and remorseful. A realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, lets herself be held, head lowered against him, shoulders relaxing, quietly aggrieved but comforted. Her eyes are calm and dry, NO tears, NO redness, NO glow. Warm, tender making-up moment. Matte skin with realistic pores, fine film grain, shot on an iPhone with true-to-life handheld realism, no oily facial glare, no highlight on faces, no plastic AI sheen, no wax. They are Chinese with East Asian faces, not western faces. Bright natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景，静态。明亮通透中性偏暖客厅，顶灯开、漫射日光，无暗黄压抑灯。真实东亚中国男性(30-35岁，参考男主)，短发、浅灰圆领上衣，已从侧面上前，把女主轻轻揽进怀里、做出服软让步的柔软拥抱，头微俯向她，温柔带愧疚。真实东亚中国女性(30-35岁，参考女主)，中长深棕披肩发、燕麦米色针织上衣，任由他抱着、头低靠在他身上、肩膀放松下来，仍带委屈但被安慰。眼神平静而干，绝无泪水、绝无泛红、绝无发光。温柔和好的瞬间。哑光肤质有毛孔、自然颗粒，iPhone真实手持质感，无脸部油光/高光/塑料AI感/蜡感。中国东亚脸，非欧美脸。明亮中性偏暖自然色，浅景深。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA last frame, shot-04 heartache (man softens and gathers her into a gentle hug)",
+    "checks": [
+      "couple identity locked via reference female + male, East Asian/Chinese 30-35",
+      "man steps in and gently hugs her in a yielding make-up embrace, woman lets herself be held, shoulders relaxing — he gives in / she is comforted",
+      "still NO tears / NO redness / NO glowing eyes; grievance stays in lowered head",
+      "bright airy neutral-warm living room, ceiling light on, not a single dim yellow lamp",
+      "medium shot, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a33b4ece1673929ccca5bf4ad5351ee7f14cad04dfd40336f14be7f744ffa628"
+  }
+}

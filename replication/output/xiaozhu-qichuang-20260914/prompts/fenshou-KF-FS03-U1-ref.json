@@ -1,0 +1,38 @@
+{
+  "prompt": "Photorealistic cinematic photograph. Over-the-shoulder single of the woman (CAM-A): the camera sits just past the seated man's shoulder, his shoulder and back softly out of focus in the foreground, the woman held in a single near/medium close shot, her face clearly and softly lit, near-frontal to three-quarter, eye-level. The woman has just glanced up at the man and is already looking away again, her eyes flickering bright for an instant then dimming — quietly cutting his proof apart, 'that night you worked late, not one message'. Setting: a lived-in late-night East Asian Chinese urban family living room, normally and evenly lit with the ceiling light switched on so the whole room looks bright, clean, airy and well-lit in every corner — natural neutral warm-white domestic lighting with only low warm saturation, true-to-life clean home light, not dim, not gloomy, not moody, not oppressive, no heavy amber or candlelit grade; a small side-table lamp is only a gentle secondary accent, not the key light. Deep quiet dark night outside the window. A slightly worn two-seater fabric loveseat, a low coffee table in front with everyday clutter (a used mug, a folded newspaper, a tissue box, a couple of throw pillows, a casually draped blanket). On the empty middle seat of the loveseat lies a face-down double-portrait couple photo frame, tipped over flat with its back to the camera. By the entrance door in the background stands a single neatly packed upright hard-shell suitcase, ready by the doorway. 16:9 horizontal composition, DSLR 50mm realistic look, eye-level, shallow depth of field kept mild so the well-lit room stays clearly readable, subtle fine film grain, natural true-to-life color, quiet late-night mood. No text overlay, no subtitles, no captions, no watermark, no logo.",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom-v2.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T11:00:00+08:00",
+    "checks": [
+      "CAM-A越过B肩拍A单人近景",
+      "A抬眼一瞥又移开眼神先亮后暗",
+      "东亚中国人A锁脸",
+      "客厅正常明亮灯光",
+      "16:9横屏",
+      "结尾锁无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4d900930d6976fc9b7f44052034a9c315862f77a8d362cb5110202ad7f3af0d0"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B3"
+    ],
+    "related_shots": [
+      "FS03"
+    ],
+    "visual_evidence": [
+      "A抬眼一瞥又移开反手戳破",
+      "过肩正反打CAM-A机位"
+    ],
+    "unresolved_blockers": []
+  }
+}

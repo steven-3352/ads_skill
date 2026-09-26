@@ -1,0 +1,112 @@
+[
+  {
+    "id": "houzhihoujue-shot-01-first",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-image-first.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/first.png"
+  },
+  {
+    "id": "houzhihoujue-shot-01-last",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-image-last.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/last.png"
+  },
+  {
+    "id": "houzhihoujue-shot-02-last",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-02-image-last.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-02/images/last.png"
+  },
+  {
+    "id": "houzhihoujue-shot-03-last",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-03-image-last.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-03/images/last.png"
+  },
+  {
+    "id": "houzhihoujue-shot-04-first",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-04-image-first.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/images/first.png"
+  },
+  {
+    "id": "houzhihoujue-shot-04-last",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-04-image-last.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/images/last.png"
+  },
+  {
+    "id": "houzhihoujue-shot-05-first",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-05-image-first.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-05/images/first.png"
+  },
+  {
+    "id": "houzhihoujue-shot-06-first",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master", "houzhihoujue-male-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-06-image-first.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-06/images/first.png"
+  },
+  {
+    "id": "houzhihoujue-shot-07-first",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": ["houzhihoujue-female-master"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-07-image-first.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-07/images/first.png"
+  },
+  {
+    "id": "houzhihoujue-shot-08-first",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "model": "gpt-image-2",
+    "size": "768x1344",
+    "depends_on": [],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-08-image-first.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-08/images/first.png"
+  }
+]

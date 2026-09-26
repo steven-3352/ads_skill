@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《酒喝完了，我们散了》· 分镜成片总览验收</title>
+<style>
+  :root{--bg:#faf7f2;--card:#fff;--ink:#23201c;--sub:#6b635a;--line:#e7e0d6;--accent:#b23b3b;--ok:#2f7a3f;--warn:#a9812f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:1180px;margin:0 auto;padding:22px 16px 90px}
+  h1{font-size:23px;margin:.2em 0}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:12px}
+  .summary{background:#f3f7f3;border:1px solid #d8e6d8;border-radius:12px;padding:12px 14px;font-size:14px;margin:14px 0}
+  .summary b{color:var(--ok)}
+  .redline{background:#fff6f6;border:1px solid #f0d5d5;border-radius:10px;padding:10px 12px;font-size:13.5px;color:#7a3b3b;margin:12px 0}
+  .grid{display:flex;flex-wrap:wrap;gap:18px;margin-top:10px}
+  .card{flex:1 1 320px;max-width:360px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column}
+  .card.hook{border-color:#d8c7a0;background:#fffdf7}
+  .card.gold{border-color:#e0c98a;background:#fffdf5}
+  video{width:100%;border-radius:10px;display:block;background:#000;aspect-ratio:9/16;object-fit:cover}
+  .id{font-weight:700;font-size:15px;margin:8px 0 2px}
+  .id .mode{color:var(--sub);font-weight:400;font-size:12.5px;margin-left:6px}
+  .scene{font-size:13px;color:var(--sub);margin:2px 0 6px}
+  .dia{font-size:13.5px;background:#f7f2ea;border-radius:8px;padding:7px 9px;margin:4px 0}
+  .dia .who{color:var(--accent);font-weight:600}
+  .qc{font-size:12.5px;margin-top:auto;padding-top:8px}
+  .qc .pass{color:var(--ok);font-weight:600}
+  .qc .fix{color:var(--warn);font-weight:600}
+  .foot{margin-top:26px;font-size:13px;color:var(--sub);border-top:1px solid var(--line);padding-top:14px}
+  code{background:#f3ede4;padding:1px 5px;border-radius:5px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《酒喝完了，我们散了》· 分镜成片总览验收</h1>
+  <div class="meta">H3 · 竖屏 9:16 · 同期对白 · 成片零字幕 · 2026-09-22 · 共 9 个视频单元(序场 B0 + U1–U8)</div>
+
+  <div class="summary">
+    <b>本轮结论</b>:全 9 镜均按 <code>h3-prompt-writing</code> 技能规范重写、去蜡感负向词重压进视频层。抽帧 QC(每镜早/中/末 3 帧)——
+    <b>零烧字幕</b>(逐帧未见字幕条);<b>肤质自然、蜡感较旧版明显压下一档</b>(哑光、可见毛孔胡茬,H3 固有平滑没 100% 消除);
+    <b>道具合规</b>(白瓷圆柱瓶红盖金环 + 玻璃高脚酒杯,无标签/无红酒/无 logo)。
+  </div>
+
+  <div class="redline">✔ QC 抓到一处并已彻底修复:<b>U7</b> 在情绪顶点会把人眼渲成<b>发光妖异眼</b>(先红瞳、加负向词后反而变品红发光瞳——H3 的「粉色大象」效应,提示词里出现眼睛/泪/红/glow 任意词都会反触发)。第三版把 climax <b>彻底删除眼睛/泪/红/光全部字样</b>,情绪改走抿唇/屏息/慢眨/低颌承载,发光眼<b>根除</b>,眼睛恢复正常深棕虹膜。旧版留档 <code>U7-video-redeye.mp4 / -redeye-r1 / -magentaeye-r2</code> 备查。其余 8 镜无需返工。</div>
+
+  <div class="grid">
+
+    <div class="card hook">
+      <video src="../shots/B0/B0-video-r2.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">B0 序场<span class="mode">I2VA · 10s</span></div>
+      <div class="scene">小酒馆靠窗夜雨,双人隔小木桌对坐对视(金丝雀·你已通过)</div>
+      <div class="dia"><span class="who">苏晚</span>:我问你个事，你别急着否认。这几年，你有没有过……别人。<br><span class="who">陈叙</span>:没有。你怎么突然问这个。<br><span class="who">苏晚</span>:你是不是，宁可我有。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 蜡感OK · 道具合规</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U1/videos/U1-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U1<span class="mode">I2VA · 5s</span></div>
+      <div class="scene">苏晚单人近景,满杯放下带到脸,画外先入后入画同步口型</div>
+      <div class="dia"><span class="who">苏晚</span>:在我们在一起这几年，你有没有过，<span class="who">/ 出轨？</span></div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 肤质自然 · 道具合规</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U2/videos/U2-video-r2.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U2<span class="mode">I2VA · 4s</span></div>
+      <div class="scene">陈叙单人近景,干脆否认后半秒停顿再轻声反刺,举杯(去蜡感 r2·你已通过)</div>
+      <div class="dia"><span class="who">陈叙</span>:没有。你问，是因为你希望有，对不对。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 去蜡感r2 · 道具合规</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U3/videos/U3-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U3<span class="mode">FL2VA · 6s</span></div>
+      <div class="scene">唯一双人立局倒酒镜,首帧起倒→尾帧落定推杯(未复盖瓶盖)</div>
+      <div class="dia"><span class="who">陈叙</span>:你送的。我留了五年。<br><span class="who">苏晚</span>:一人问一个。问的人，喝一杯。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 肤质自然 · 首尾帧状态演到位</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U4/videos/U4-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U4<span class="mode">I2VA · 6s</span></div>
+      <div class="scene">陈叙单人近景,画外先入问是否还爱,稳声作答眼神偏移举杯饮尽手微颤</div>
+      <div class="dia"><span class="who">苏晚</span>:那你……还爱我吗？<br><span class="who">陈叙</span>:爱。可是爱，好像不够了。这酒，原来这么苦。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 肤质自然 · 道具合规</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U5/videos/U5-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U5<span class="mode">I2VA · 5s</span></div>
+      <div class="scene">苏晚单人近景,画外先入问何时觉得远了,笑着答到一半落泪饮酒压情绪</div>
+      <div class="dia"><span class="who">陈叙</span>:你从什么时候，觉得我们远了？<br><span class="who">苏晚</span>:后来，我们谁也不提，楼下那只猫了。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 肤质自然 · 道具合规</span></div>
+    </div>
+
+    <div class="card gold">
+      <video src="../shots/shot-U6/videos/U6-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U6 题眼金句<span class="mode">I2VA · 4s</span></div>
+      <div class="scene">苏晚金句特写,不看对方,半拍静→轻声接→说完再留半拍静</div>
+      <div class="dia"><span class="who">苏晚</span>:我们都把真话，藏得太好了。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 肤质自然 · 道具合规</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U7/videos/U7-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U7<span class="mode">I2VA · 5s · 发光眼已根除(第三版)</span></div>
+      <div class="scene">过肩双人竖构图,场景锁死,问第一次接吻日期,两人同笑后抿唇屏息(情绪走微表情,不靠眼睛)</div>
+      <div class="dia"><span class="who">陈叙</span>:第一次接吻，什么时候？<br><span class="who">苏晚</span>:2020 年 5 月 25 号，下着雨。</div>
+      <div class="qc"><span class="pass">✔ 发光眼根除 · 零字幕 · 肤质自然 · 道具合规</span></div>
+    </div>
+
+    <div class="card">
+      <video src="../shots/shot-U8/videos/U8-video.mp4" controls playsinline preload="metadata"></video>
+      <div class="id">U8 落幕<span class="mode">FL2VA · 7s</span></div>
+      <div class="scene">落点落幕合一,空瓶推桌中央,手挪一寸又收回,两人对视沉默</div>
+      <div class="dia"><span class="who">苏晚</span>:再来一次，你还会追我吗？<br><span class="who">陈叙</span>:会。但我会更努力，留住你。<br><span class="who">苏晚</span>:酒喝完了。</div>
+      <div class="qc"><span class="pass">✔ 零字幕 · 肤质自然 · 首尾帧落幕演到位</span></div>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <b>请你验收(只看业务/观感)</b>:①各镜蜡感是否降到你可接受;②对白语速/清晰度(须你听声);③U7 重生版红眼是否消除、眼眶泛红含泪的失控临界是否演出来;④表演/情绪是否到位。<br>
+    有不满意的镜,告诉我镜号+方向,我按同一套技能改提示词重生。全部通过后再进下一步:整片拼接 + 片名镜。<br>
+    公网直链:<code>https://www.tonbird.top/ads-review/jiuheover/review/overview.html</code>
+  </div>
+</div>
+</body>
+</html>

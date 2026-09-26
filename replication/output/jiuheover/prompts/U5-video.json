@@ -1,0 +1,33 @@
+{
+  "unit_id": "U5",
+  "scene": "苏晚单人近景 · 画外音先入问何时觉得远了 · 笑着答话笑到一半落泪饮酒压情绪",
+  "mode": "I2VA",
+  "ratio": "9:16",
+  "duration": 5,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U5/images/U5-first.png"
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. The young woman shown in <Picture 1> stays seated close in frame at her side of the small wooden table by the rain-streaked tavern window at night, keeping her appearance, cream knit sweater, long dark hair, seating position, and the plain unlabeled white ceramic bottle with red cap and thin gold ring plus the two clear glass stemmed cups on the table in front of her. Bright warm-white overhead and table-lamp light keeps her face clearly readable, not dim, not moody. The camera holds a near-static close shot with slight handheld breathing motion. A low male voice speaking Mandarin at a normal, slightly quick pace with no dead air (S2) says in an off-screen voiceover, entirely outside this frame with his lips remaining closed: <d>[Chinese]你从什么时候，觉得我们远了？</d> The East Asian young woman in her late twenties (S1) begins to answer with a warm, easy smile: <d>[Chinese]后来，我们谁也不提，楼下那只猫了。</d> Midway through the line her smile starts to falter, the corners of her mouth still faintly lifted even as half her tears spill down, not a full cry and with no sound of sobbing, a smile and tears caught together in the same specific moment. Immediately after the line she lifts one clear glass stemmed cup and drinks the wine in it down in a single motion, using the drink to press the feeling back under control. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain taps against the window outside while low indoor room tone and faint bar murmur run continuously underneath. A soft, barely audible catch of breath precedes the light tap of the glass cup meeting the wooden table, keeping the ambience unbroken with no dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:I2VA 指令行 <Picture 1>(from [Shot 1]) at 0.00s + 三核心字段顺序正确",
+      "I2VA 结构=first-frame anchor→action onset→continuous development:先锚 <Picture 1> 苏晚坐姿/道具/暖白光,再画外音提问→含笑作答→笑中带泪→饮酒压情绪",
+      "画外音先入(pre-lap)按 §4.4 处理:陈叙完全不入镜,off-screen voiceover 紧跟 lips remaining closed + entirely outside this frame",
+      "去蜡感强化写入 Shot 1 开头",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内(后来，我们谁也不提，楼下那只猫了。),笑中带泪的具体矛盾表演写在 <d> 外,不喂嚎哭标签",
+      "speaker 稳定 ID S2=陈叙(画外)、S1=苏晚,首次出现给身份",
+      "语速锁:normal slightly quick pace with no dead air",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:雨声+室内低语连续,饮酒吞咽+玻璃杯磕木桌轻响,no dead silence",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle/clear glass stemmed cups,无 logo/文字/清酒器",
+      "时长 5s 单镜无 cut,竖屏 9:16 由 ref 帧承载,non_diegetic_music=N/A"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b9a25d937ef1d49ba126738618a2abfce5cb048c66c7e29c1676d8aabfa2ddd5"
+  }
+}

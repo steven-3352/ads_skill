@@ -1,0 +1,82 @@
+[
+  {
+    "id": "houzhihoujue-shot-01-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-01-first", "houzhihoujue-shot-01-last"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/video/shot-01.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-02-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-01-first", "houzhihoujue-shot-02-last"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-02-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-02/video/shot-02.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-03-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-01-first", "houzhihoujue-shot-03-last"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-03-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-03/video/shot-03.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-04-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-04-first", "houzhihoujue-shot-04-last"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-04-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/video/shot-04.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-05-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-05-first"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-05-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-05/video/shot-05.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-06-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-06-first"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-06-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-06/video/shot-06.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-07-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-07-first"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-07-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-07/video/shot-07.mp4"
+  },
+  {
+    "id": "houzhihoujue-shot-08-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "model": "MiniMax-H3",
+    "depends_on": ["houzhihoujue-shot-08-first"],
+    "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-08-video.json",
+    "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-08/video/shot-08.mp4"
+  }
+]

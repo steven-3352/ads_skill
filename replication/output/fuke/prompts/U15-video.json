@@ -1,0 +1,44 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a bright daytime living room in a wide shot with soft diffused natural daylight and a neutral warm-white base, not a single heavy yellow lamp washing the faces orange; skin keeps its natural tone. The scene begins exactly as in <Picture 1>, preserving the furniture layout and the floor-to-ceiling balcony window with daylight pouring through. The young East Asian Chinese woman in bright yellow bear-cartoon pajamas, black hair in a bun with a bear-ear headband, holds the hand of the young East Asian Chinese man in a light-grey T-shirt and dark-blue shorts, keeping their appearance and clothing from the reference. The camera trucks with small amplitude at slow speed as she leads him by the hand, stepping across the room toward the balcony floor-to-ceiling window; he follows a half-step behind, their linked hands swinging slightly, both walking into the bright daylight at the glass. Their movements are light and easy, a small relaxed smile between them. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A calm daytime living-room tone hums underneath with soft footsteps crossing the floor, faint fabric friction from the pajamas, and light natural breathing throughout.\n\nnon_diegetic_music: Warm sustained keyboard chords at a gentle, moderate tempo, low in volume and slowly brightening.",
+  "references": [
+    "replication/output/fuke/assets/U15-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U15-first全参考,0.00s锚定,身份/服装/布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段;全景牵手走向落地窗,时长4.00",
+      "无对白:按给定不写台词,声景走脚步/衣物摩擦/白天室内底噪+呼吸",
+      "灯光:家日客厅白天自然光明亮通透中性暖白,落地窗日光,禁大黄光染脸",
+      "质感:人脸哑光无油光高光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "人物锁:东亚中国人,男主浅灰T恤深蓝短裤,女友黄色小熊睡衣丸子头小熊发箍,延续关键帧布局",
+      "表演:牵手轻松惬意微笑,女友引路男主半步跟随,动作自然;相机小幅慢移横移",
+      "零字幕:显式no subtitles/on-screen text;非画内暖键盘和弦"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f4982b0209b6067d735960194217a5b13393fc6d1b4c9b47b0263f2f52c468d3",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U15-video",
+    "usage": "U15(上集)家日客厅全景:女友拉男主手走向阳台落地窗,I2VA自U15-first,无对白",
+    "locks": [
+      "男主浅灰T恤深蓝短裤",
+      "女友黄色小熊睡衣丸子头小熊发箍",
+      "家日客厅白天明亮暖白落地窗日光",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "上集家日:牵手走向窗边,全景,I2VA自U15-first发展,无对白纯动作声景",
+  "images": [
+    "replication/output/fuke/assets/U15-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

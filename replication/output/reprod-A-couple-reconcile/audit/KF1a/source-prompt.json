@@ -1,0 +1,28 @@
+{
+  "id": "KF1a-unit1-first",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. Warm home entryway beside an open kitchen in soft warm daylight. A realistic East Asian Chinese woman about 42 years old (identity from the reference woman), dark hair in a low bun, wearing a light cream sleeveless fine-knit top and beige wide-leg linen trousers, barefoot, stands with her BACK to the camera near the entryway door, both hands holding a folded dark-grey jacket against her body, tense and about to leave. A realistic East Asian Chinese man about 45 years old (identity from the reference man), short dark hair greying at the temples, light grey crew-neck T-shirt and dark navy shorts, barefoot, steps in close from just behind her right shoulder, one hand reaching gently toward her arm, remorseful. Sheer-curtain daylight plus overhead and under-cabinet warm lighting, beige cabinets, a vase of white daisies, wood floor. Shot on an iPhone with realistic handheld texture, fine film grain, matte skin with no oily facial glare and no plastic AI sheen. They are Chinese with East Asian faces, not western faces. Natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark anywhere.",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/reprod-A-couple-reconcile/masters/master-woman.png",
+    "replication/output/reprod-A-couple-reconcile/masters/master-man.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA first frame, unit1 (woman back-turned holding jacket, man steps in from behind)",
+    "checks": [
+      "couple identity locked via reference woman + reference man, East Asian/Chinese",
+      "woman back to camera holding folded dark-grey jacket (the leaving prop), man closing in from behind right shoulder — start of the reconciliation",
+      "same warm entryway + open kitchen set, sheer-curtain daylight + overhead + under-cabinet, bright natural neutral-warm",
+      "medium shot two-person standing framing, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "13e80008db2832cdcc371894eacfa419589154b2e813ea49ec0d11df7329bd62"
+  }
+}

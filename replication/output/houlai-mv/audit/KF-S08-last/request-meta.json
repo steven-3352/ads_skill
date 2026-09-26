@@ -1,0 +1,14 @@
+{
+  "request_id": "houlai-KF-S08-last-1789887789-15358",
+  "prompt_file": "replication/output/houlai-mv/prompts/KF-S08-last.json",
+  "output": "replication/output/houlai-mv/shots/KF-S08-last.png",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-20T15:03:09+08:00"
+}

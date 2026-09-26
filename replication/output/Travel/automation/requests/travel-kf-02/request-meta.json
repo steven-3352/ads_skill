@@ -1,0 +1,11 @@
+{
+  "request_id": "travel-kf-02",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/Travel/prompts/shots/travel-02-image.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/Travel/shots/02/keyframe.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-25T05:42:19+08:00"
+}

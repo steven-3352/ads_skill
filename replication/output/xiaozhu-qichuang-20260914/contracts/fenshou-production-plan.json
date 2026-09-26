@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "projectId": "fenshou-20260917",
+  "title": "我们还是分手吧",
+  "note": "寄居 xiaozhu-qichuang-20260914 目录，全部产物 fenshou- 前缀 / FS 镜号，绝不覆盖小猪任何文件。本 plan 不覆盖小猪 contracts/production-plan.json。v2.2 权威版(用户 2026-09-17 确认落地稿)：①开场「物件先行」——首帧决定已发生(A 已起身/外套搭臂弯/门口行李箱/沙发中间倒扣合照相框/B 抬头看她)+约 0.5s 静场(留呼吸)，「我们还是分手吧」第 1 秒内出口 ②新增手机屏幕插段(段3内约 0.8s：茶几上 B 手机亮起，聊天备注名「我」，末条「晚安」显示 02:17，上方几条「已读」无回复，屏幕光映茶几；无台词，A 台词画内同期声延续) ③金句「可是我的失望，不会等你有空」前置到约 26.5s(段3末) ④压时长 56.5→46.5s ⑤A/B 均为 fenshou 新生成专属母板(33–38 岁中国人，深夜分手基调)，不复用小猪 A1/A2 ⑥合照相框道具启用、门口行李箱核心道具不可省。",
+  "revision": "v2.2-2026-09-17",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": { "maxGenerationSeconds": 15 },
+  "estTotalDurationSec": 46.5,
+  "aspectRatio": "16:9",
+  "renderSizeNote": "关键帧 gpt-image-2 文生图直出 1344x768（H3 768P 16:9），锁 --size 防拉伸变形",
+  "casting": {
+    "A": "fenshou 新生成专属母板 assets/fenshou-A-master.png（A=女，33–38 岁，东亚/中国人面孔；冷静隐忍、话少句短、外在克制内里耗尽；非笑脸、非欧美脸、非网红脸）",
+    "B": "fenshou 新生成专属母板 assets/fenshou-B-master.png（B=男，33–38 岁，东亚/中国人面孔；错愕、慌而克制、成熟疲惫；非欧美脸）",
+    "masterPolicy": "A/B 为本片新生成母板，不复用小猪 A1-CH01-male / A2-CH02-female；母板确认后各镜 --reference 冻结身份。场景母板 assets/fenshou-LOC-livingroom.png 新生成 1 张（小猪无客厅）。",
+    "genderLock": "A=女、B=男 已由用户锁定，不可翻转"
+  },
+  "subtitlePolicy": "H3 有台词镜画内同期对白直出配音（不在镜内烧字）；中文字幕后期统一烧录（底部安全区、统一样式，见各 shot postTask 字幕清单）；结尾不留点题花字（用户 2026-09-17 拍板）",
+  "postTasksGlobal": [
+    {"id": "PTG1", "type": "onscreen_text", "description": "全片对白字幕后期统一烧录：底部安全区，统一字号/描边/位置；H3 生成后必查是否误烧字幕，有残留走 anti-subtitle 重生+QC"},
+    {"id": "PTG2", "type": "transition", "description": "正反打硬切、场间叠化/硬切与统一暖黄调色在剪辑阶段完成；手机屏幕插段以硬切插入并硬切切回；结尾渐暗黑场在剪辑定时长"},
+    {"id": "PTG3", "type": "mix", "description": "混音：人声优先；低音量伤感 BGM 全程压低、仅金句处极轻抬升；关门声为核心拟音；开场约 0.5s 静场(留呼吸、非真空，行李箱/合照相框首帧自带信息)；手机插段无音乐、只有环境底噪与屏幕光；两处留白（“没有了”后短静默 / 结尾约 2s 静音黑场）"}
+  ],
+  "cost": {
+    "imageUnitPrice": 0.25,
+    "videoPerSecPrice": 0.2,
+    "estCharacterMasters": 2,
+    "estSceneMasterImages": 1,
+    "estShotKeyframes": 21,
+    "estImagesTotal": 24,
+    "estVideoUnits": 14,
+    "estVideoBilledSec": 57.0,
+    "estVideoContentSec": 46.5,
+    "estFirstPassImages": 6.0,
+    "estFirstPassVideo": 11.4,
+    "estFirstPassTotal": 17.4,
+    "note": "H3 每单元最低 4s 按 4s 计费。v2.2：14 单元(11 I2VA + 3 FL2VA)，内容 46.5s、计费 57.0s(12 单元触 4s 下限、FS02/FS03 各 4.5s)。图片=2 张 A/B 人物母板(新生成)+1 张客厅场景母板+21 张镜头关键帧(含 1 张手机屏幕插段静帧)=24 张。A/B 人物母板不再复用小猪。正式付费前走 preflight+金丝雀重新报准。"
+  },
+  "narrativeShots": [
+    {
+      "id": "FS01",
+      "title": "物件先行·首帧决定已发生，A 轻声「我们还是分手吧」（钩子/激励事件，0.5s 静场留呼吸）",
+      "sceneId": "SC1",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "我们还是分手吧。"},
+      "watchFocus": "首帧即“决定已发生”——A 已起身外套搭臂弯、门口整理好的行李箱、沙发中间倒扣的双人合照相框、B 坐一端抬头看她；约 0.5s 静场后 A 不看 B、第 1 秒内出口",
+      "requiredBeats": [
+        {"id": "B1", "sceneId": "SC1", "text": "首帧“决定已发生”：A 已站起、外套搭臂弯，门口立着整理好的行李箱，沙发中间放一只倒扣的双人合照相框，B 坐沙发一端抬头看她，两人之间空着一段；约 0.5s 静场(只留呼吸、非真空)，A 不看 B、轻声说出「我们还是分手吧」，第 1 秒内出口", "channels": ["picture", "dialogue", "ambience", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "FS01-U1", "sceneId": "SC1", "durationSeconds": 4.0, "mode": "I2VA",
+         "difficulty": "2S 双人中景物件先行起幅：首帧即出行李箱/倒扣合照相框/A 已起身外套搭臂弯/B 抬头，约 0.5s 静场(呼吸感、深夜环境底噪极低切入)后 A 眼神落地不看 B、极缓推近轻平说出分手；静场靠首帧信息密度而非真空造悬念",
+         "keyframes": {"first": "KF-FS01-U1-first"},
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-B-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [{"who": "A", "line": "我们还是分手吧。", "note": "画内同期，轻、平、不抬眼；0.5s 静场后第 1 秒内出口"}],
+         "cuts": [
+           {"id": "FS01-U1-C1", "seconds": 0.5, "note": "约 0.5s 静场：首帧信息(行李箱/合照相框/已起身)自带“发生了什么”，深夜环境底噪极低切入，非真空", "coverage": [{"beatId": "B1", "channels": ["ambience"]}]},
+           {"id": "FS01-U1-C2", "seconds": 3.5, "note": "2S 极缓推近 A 侧脸，A 不看 B 轻声说出分手，含中间空位/合照相框/行李箱意象", "coverage": [{"beatId": "B1", "channels": ["picture", "dialogue"]}]}
+         ]}
+      ],
+      "postTasks": [
+        {"id": "FS01-PT1", "type": "onscreen_text", "description": "字幕后期烧：「我们还是分手吧」", "coverage": [{"beatId": "B1", "channels": ["onscreen_text"]}]}
+      ],
+      "linkNext": "硬切进 FS02（B 的错愕）"
+    },
+    {
+      "id": "FS02",
+      "title": "降级侥幸被堵·B 想当拌嘴，A「没有。我想很久了」堵死退路（正反打合并单元）",
+      "sceneId": "SC2",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "你……是不是又生气了。"},
+      "watchFocus": "B 猛看 A、身体一僵的错愕(“你说什么”并入表情不单列) → A 平静摇头堵退路",
+      "requiredBeats": [
+        {"id": "B2", "sceneId": "SC2", "text": "B 怔住想把分手降级成“又一次生气”(“你说什么”的错愕并入表情、不单列一句)；A 一句「没有。我想很久了」堵死退路", "channels": ["picture", "dialogue", "action_sound", "transition", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "FS02-U1", "sceneId": "SC2", "durationSeconds": 4.5, "mode": "I2VA",
+         "difficulty": "正反打合并为 1 次 H3 调用：first 帧 CAM-B（B 一僵、试探降级，错愕全在表情里）→ 内部切到 ref 帧 CAM-A（A 平静摇头堵退路）；守轴线",
+         "keyframes": {"first": "KF-FS02-U1-first", "ref": "KF-FS02-U1-ref"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [
+           {"who": "B", "line": "你……是不是又生气了。", "note": "CAM-B，不敢相信、想降级成一次拌嘴（“你说什么”并入错愕表情）"},
+           {"who": "A", "line": "没有。我想很久了。", "note": "CAM-A，平；内心一刺后决定变硬"}
+         ],
+         "cuts": [
+           {"id": "FS02-U1-C1", "seconds": 2.3, "note": "CAM-B B 一僵+降级试探", "coverage": [{"beatId": "B2", "channels": ["picture", "dialogue"]}]},
+           {"id": "FS02-U1-C2", "seconds": 2.2, "note": "CAM-A A 摇头堵退路（正反打硬切）", "coverage": [{"beatId": "B2", "channels": ["action_sound", "transition"]}]}
+         ]}
+      ],
+      "postTasks": [
+        {"id": "FS02-PT1", "type": "onscreen_text", "description": "字幕后期烧：「你……是不是又生气了。」/「没有。我想很久了。」", "coverage": [{"beatId": "B2", "channels": ["onscreen_text"]}]}
+      ],
+      "linkPrev": "承接 FS01 硬切", "linkNext": "硬切进 FS03"
+    },
+    {
+      "id": "FS03",
+      "title": "抓证据被戳破·B 搬餐厅约定，A「那天你加班一条消息都没有」（正反打合并单元）",
+      "sceneId": "SC2",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "那天你加班，一条消息都没有。"},
+      "watchFocus": "B 前倾找反证(只有记忆里的证据) → A 抬眼一瞥又移开、反手戳破",
+      "requiredBeats": [
+        {"id": "B3", "sceneId": "SC2", "text": "B 搬出“上周还说好去那家餐厅”当反证；A 用「那天你加班，一条消息都没有」把证据反手戳破（记得 vs 忘了；等的对象缺席）", "channels": ["picture", "dialogue", "action_sound", "transition", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "FS03-U1", "sceneId": "SC2", "durationSeconds": 4.5, "mode": "I2VA",
+         "difficulty": "正反打合并为 1 次调用：first CAM-B（B 前倾找证据，坐姿前倾非位移；若 I2VA 前倾不足备用 FL2VA）→ ref CAM-A（A 抬眼一瞥又移开戳破，眼神先亮后暗）；守轴线",
+         "keyframes": {"first": "KF-FS03-U1-first", "ref": "KF-FS03-U1-ref"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [
+           {"who": "B", "line": "上周不是还说好，周末去吃那家餐厅。", "note": "CAM-B，急、语速变快，手无意识比划"},
+           {"who": "A", "line": "我记得。可你忘了——那天你加班，一条消息都没有。", "note": "CAM-A，轻"}
+         ],
+         "cuts": [
+           {"id": "FS03-U1-C1", "seconds": 2.0, "note": "CAM-B B 找证据", "coverage": [{"beatId": "B3", "channels": ["picture", "dialogue"]}]},
+           {"id": "FS03-U1-C2", "seconds": 2.5, "note": "CAM-A A 戳破（正反打硬切）", "coverage": [{"beatId": "B3", "channels": ["action_sound", "transition"]}]}
+         ]}
+      ],
+      "postTasks": [
+        {"id": "FS03-PT1", "type": "onscreen_text", "description": "字幕后期烧：「上周不是还说好，周末去吃那家餐厅。」/「我记得。可你忘了——那天你加班，一条消息都没有。」", "coverage": [{"beatId": "B3", "channels": ["onscreen_text"]}]}
+      ],
+      "linkPrev": "承接 FS02 硬切", "linkNext": "叠化/硬切进 FS04（痛点段+手机插段）"
+    },
+    {
+      "id": "FS04",
+      "title": "具象痛点累积·A 摆出不是一件事、是一次次落空（含手机屏幕插段 02:17 已读不回）",
+      "sceneId": "SC3",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "就为这些小事。"},
+      "watchFocus": "A 压声一句一顿的痛点自白 + 手机屏幕插段(02:17「晚安」/已读无回复)把“等到半夜”落到可见证据 + B 的不甘",
+      "requiredBeats": [
+        {"id": "B4", "sceneId": "SC3", "text": "B 认错求改；A 缓慢摇头摆出不是一件事——你说我小题大做；手机屏幕插段(茶几上 B 手机亮起、聊天备注名「我」、末条「晚安」显示 02:17、上方几条「已读」无回复、屏幕光映茶几)把“等到半夜、后来就不等了”落到可见证据，A 台词画内同期声延续；B 不甘反问「就为这些小事」", "channels": ["picture", "dialogue", "action_sound", "ambience", "transition", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "FS04-U1", "sceneId": "SC3", "durationSeconds": 2.5, "mode": "I2VA",
+         "difficulty": "CAM-B B 身体前倾、认错求改（坐姿前倾反应；I2VA 不足则备用 FL2VA）；急、快，其实是“怕失去你”不是“懂你为什么走”",
+         "keyframes": {"first": "KF-FS04-U1-first"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [{"who": "B", "line": "那天真的太忙。我不是故意的，我改。", "note": "CAM-B，紧、快"}],
+         "cuts": [{"id": "FS04-U1-C1", "seconds": 2.5, "note": "CAM-B B 认错求改", "coverage": [{"beatId": "B4", "channels": ["picture"]}]}]},
+        {"id": "FS04-U2", "sceneId": "SC3", "durationSeconds": 4.0, "mode": "I2VA",
+         "difficulty": "CAM-A A 缓慢摇头压声自白(第一段“不是那一件。你说我小题大做。”)后，硬切手机屏幕特写插段约 0.8s(茶几上 B 手机亮起、聊天备注名「我」、末条「晚安」02:17、上方几条“已读”无回复、屏幕光映茶几、无音乐只有环境底噪)，A 台词画内同期声延续；手机插段为全片缺失最直接的画面证据",
+         "keyframes": {"first": "KF-FS04-U2-first", "ref": "KF-FS04-U2-phone"},
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [
+           {"who": "A", "line": "不是那一件。你说我小题大做。", "note": "CAM-A，慢、克制，停顿切短拍"},
+           {"who": "A", "line": "我等你，等到半夜。……后来，就不等了。", "note": "画内同期声延续(A 在画外同场景、非旁白)，覆在手机插段屏幕光上，更轻"}
+         ],
+         "cuts": [
+           {"id": "FS04-U2-C1", "seconds": 3.2, "note": "CAM-A A 压声自白第一段", "coverage": [{"beatId": "B4", "channels": ["dialogue"]}]},
+           {"id": "FS04-U2-C2", "seconds": 0.8, "note": "手机屏幕特写插段(02:17「晚安」/已读无回复/屏幕光)硬切插入、硬切切回，无音乐只有环境底噪", "coverage": [{"beatId": "B4", "channels": ["ambience", "transition"]}]}
+         ]},
+        {"id": "FS04-U3", "sceneId": "SC3", "durationSeconds": 2.5, "mode": "I2VA",
+         "difficulty": "CAM-B B 皱眉、不甘不解反问；与 U1 同为 CAM-B 但被中间 A 长镜+手机插段物理隔断、不连续，故不合并",
+         "keyframes": {"first": "KF-FS04-U3-first"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [{"who": "B", "line": "就为这些小事。", "note": "CAM-B，不甘"}],
+         "cuts": [{"id": "FS04-U3-C1", "seconds": 2.5, "note": "CAM-B B 不甘反问", "coverage": [{"beatId": "B4", "channels": ["action_sound"]}]}]}
+      ],
+      "postTasks": [
+        {"id": "FS04-PT1", "type": "onscreen_text", "description": "字幕后期烧：「那天真的太忙。我不是故意的，我改。」/「不是那一件。你说我小题大做。」/「我等你，等到半夜。……后来，就不等了。」/「就为这些小事。」（手机插段屏幕内的“晚安 02:17/已读”属画面内元素，由关键帧渲染、不入后期字幕轨）", "coverage": [{"beatId": "B4", "channels": ["onscreen_text"]}]}
+      ],
+      "linkPrev": "承接 FS03", "linkNext": "硬切进 FS05（金句高潮 ~26.5s）"
+    },
+    {
+      "id": "FS05",
+      "title": "反转金句·高潮(~26.5s)：可是我的失望，不会等你有空（释然自白 + 第一次正眼看 B 说金句）",
+      "sceneId": "SC3",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "可是我的失望，不会等你有空。"},
+      "watchFocus": "A 眼眶泛红强忍的释然自白 → A 平静转头第一次正眼看向 B 说出金句——全片顶点、B 的崩塌时刻",
+      "requiredBeats": [
+        {"id": "B5", "sceneId": "SC3", "text": "A 眼眶泛红、疲惫里有释然「不是小事。我没怪你。是撑不住了」；A 平静转头第一次正眼看向 B，说出反转金句「可是我的失望，不会等你有空」(金句把四层缺失一次摊开、B 由争取转为接受)", "channels": ["picture", "dialogue", "action_sound", "transition", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "FS05-U1", "sceneId": "SC3", "durationSeconds": 3.0, "mode": "I2VA",
+         "difficulty": "CAM-A 慢推近 A：眼眶泛红、强忍、疲惫里有释然的自白；停顿切短拍配 0.3–0.5s 静默做重量",
+         "keyframes": {"first": "KF-FS05-U1-first"},
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [{"who": "A", "line": "不是小事。我没怪你。是撑不住了。", "note": "CAM-A，忍着"}],
+         "cuts": [{"id": "FS05-U1-C1", "seconds": 3.0, "note": "CAM-A A 释然自白", "coverage": [{"beatId": "B5", "channels": ["picture", "dialogue"]}]}]},
+        {"id": "FS05-U2", "sceneId": "SC3", "durationSeconds": 3.0, "mode": "I2VA",
+         "difficulty": "金句单独一单元保质：CAM-A A 平静转头、第一次正眼看向 B 说出金句；金句处 BGM 极轻抬升不盖人声；由侧到正眼若转头感不足备用 FL2VA 锁首尾",
+         "keyframes": {"first": "KF-FS05-U2-first"},
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [{"who": "A", "line": "可是我的失望，不会等你有空。", "note": "CAM-A，平静、扎心｜核心金句"}],
+         "cuts": [{"id": "FS05-U2-C1", "seconds": 3.0, "note": "CAM-A A 金句(全片顶点)", "coverage": [{"beatId": "B5", "channels": ["action_sound", "transition"]}]}]}
+      ],
+      "postTasks": [
+        {"id": "FS05-PT1", "type": "onscreen_text", "description": "字幕后期烧：「不是小事。我没怪你。是撑不住了。」/「可是我的失望，不会等你有空。」（金句字幕可略加权重，仍守统一样式与底部安全区）", "coverage": [{"beatId": "B5", "channels": ["onscreen_text"]}]}
+      ],
+      "linkPrev": "承接 FS04", "linkNext": "硬切进 FS06（余波）"
+    },
+    {
+      "id": "FS06",
+      "title": "最后侥幸被关·B「我以为还有很多时间」，A 背包带到行李箱，A 轻声「没有了」（正反打合并）",
+      "sceneId": "SC4",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "真的……没办法了吗。"},
+      "watchFocus": "B 喉结滚动的低声自白 → A 背起包镜头顺势带到门口行李箱 → B 最后一丝试探、A 极轻决绝，关上最后的门",
+      "requiredBeats": [
+        {"id": "B6", "sceneId": "SC4", "text": "B 喉结滚动、光暗下去、声音发哑「我以为……我们还有很多时间」；A 已背起包、镜头顺势下摇带到门口行李箱(她真的要走了)；B 最后一丝试探「真的……没办法了吗」；A 极轻「没有了」，决绝落定，其后留一小段静默", "channels": ["picture", "dialogue", "action_sound", "ambience", "transition", "onscreen_text"]}
+      ],
+      "generationUnits": [
+        {"id": "FS06-U1", "sceneId": "SC4", "durationSeconds": 3.0, "mode": "I2VA",
+         "difficulty": "CAM-B B 喉结滚动、眼里的光一点点暗、声音发哑的低声自白(听懂了但晚了；“你别走”被咽回去)",
+         "keyframes": {"first": "KF-FS06-U1-first"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [{"who": "B", "line": "我以为……我们还有很多时间。", "note": "CAM-B，哑"}],
+         "cuts": [{"id": "FS06-U1-C1", "seconds": 3.0, "note": "CAM-B B 低声自白", "coverage": [{"beatId": "B6", "channels": ["picture", "dialogue"]}]}]},
+        {"id": "FS06-U2", "sceneId": "SC4", "durationSeconds": 2.5, "mode": "FL2VA",
+         "difficulty": "状态/位置变化动作：A 已背起包，镜头顺势下摇带到门口整理好的行李箱(FL2VA 锁首尾+摆落点+逐动词，防单首帧漏演)；行李箱为核心道具，此处兑现“将走未走→将走”",
+         "keyframes": {"first": "KF-FS06-U2-first", "last": "KF-FS06-U2-last"},
+         "verbs": "拎起背包→背带上肩→起身站直→（镜头顺势下摇）落到门口整理好的行李箱",
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [],
+         "cuts": [{"id": "FS06-U2-C1", "seconds": 2.5, "note": "A 背包+镜头下摇带到行李箱", "coverage": [{"beatId": "B6", "channels": ["action_sound"]}]}]},
+        {"id": "FS06-U3", "sceneId": "SC4", "durationSeconds": 3.5, "mode": "I2VA",
+         "difficulty": "正反打合并为 1 次调用：first CAM-B（B 张嘴最后一丝侥幸试探）→ ref CAM-A（A 极轻「没有了」+尾接短静默）；守轴线",
+         "keyframes": {"first": "KF-FS06-U3-first", "ref": "KF-FS06-U3-ref"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [
+           {"who": "B", "line": "真的……没办法了吗。", "note": "CAM-B，试探"},
+           {"who": "A", "line": "没有了。", "note": "CAM-A，轻、决绝，尾接短静默"}
+         ],
+         "cuts": [
+           {"id": "FS06-U3-C1", "seconds": 1.8, "note": "CAM-B B 试探（正反打硬切）", "coverage": [{"beatId": "B6", "channels": ["transition"]}]},
+           {"id": "FS06-U3-C2", "seconds": 1.7, "note": "CAM-A A「没有了」+尾接短静默", "coverage": [{"beatId": "B6", "channels": ["ambience"]}]}
+         ]}
+      ],
+      "postTasks": [
+        {"id": "FS06-PT1", "type": "onscreen_text", "description": "字幕后期烧：「我以为……我们还有很多时间。」/「真的……没办法了吗。」/「没有了。」", "coverage": [{"beatId": "B6", "channels": ["onscreen_text"]}]}
+      ],
+      "linkPrev": "承接 FS05", "linkNext": "叠化/硬切进 FS07（留白收尾）"
+    },
+    {
+      "id": "FS07",
+      "title": "留白冷收·A 无台词走向门口拎行李箱离开，镜头扫过沙发空位，B 独坐渐暗(纯留白，无对白无字幕)",
+      "sceneId": "SC5",
+      "style": "PRESENT-NIGHT",
+      "source": {"storyFile": "story/fenshou-screenplay.md", "verbatim": "关门声把两个世界隔开"},
+      "watchFocus": "全程无台词(冷收，用户 2026-09-17 改定)：两人之间那段空沙发位(行李箱已被带走、合照相框仍倒扣) + 关门声隔开两个世界 + B 独坐渐暗",
+      "requiredBeats": [
+        {"id": "B7", "sceneId": "SC5", "text": "冷收纯留白、A 全程无台词(用户 2026-09-17 改定，回归剧本第六节场景5 留白)：A 起身走向门口、拎起行李箱轻轻关门(关门声隔开两个世界、关门轻而稳非摔门)；镜头缓摇扫过两人之间那段空沙发位(行李箱已被带走、空得更彻底)冷清停一下；B 独坐失神、画面缓缓变暗、最后约 2s 静音黑场(余味全靠画面与空位承担，不加台词、不加字幕、不加点题花字)", "channels": ["picture", "ambience", "action_sound", "transition"]}
+      ],
+      "generationUnits": [
+        {"id": "FS07-U1", "sceneId": "SC5", "durationSeconds": 4.0, "mode": "FL2VA",
+         "difficulty": "状态/位置变化动作(冷收无台词)：A 起身+走向门口(FL2VA 锁首尾+摆落点+逐动词，防单首帧漏演)；2S 缓摇扫过两人中间那段空沙发位、冷清停一下；全程无对白，靠动作与空位承担",
+         "keyframes": {"first": "KF-FS07-U1-first", "last": "KF-FS07-U1-last"},
+         "verbs": "撑起身→侧身让出→走向门口→（镜头缓摇）扫过中间空沙发位停一下",
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [],
+         "cuts": [{"id": "FS07-U1-C1", "seconds": 4.0, "note": "2S 缓摇 A 无台词起身走向门口+扫空位", "coverage": [{"beatId": "B7", "channels": ["picture"]}]}]},
+        {"id": "FS07-U2", "sceneId": "SC5", "durationSeconds": 3.0, "mode": "FL2VA",
+         "difficulty": "状态/位置变化动作：A 门口拎起整理好的行李箱、推门、轻掩门(FL2VA 锁首尾+摆落点+逐动词)；关门声为唯一明确核心拟音，隔开两个世界；行李箱被带走兑现“已走”",
+         "keyframes": {"first": "KF-FS07-U2-first", "last": "KF-FS07-U2-last"},
+         "verbs": "走近门→拎起行李箱→握门把→拉开门→跨出门槛→回身→轻掩门→门缝合拢(关门声)",
+         "references": ["assets/fenshou-A-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [],
+         "cuts": [{"id": "FS07-U2-C1", "seconds": 3.0, "note": "A 拎行李箱走门推门关门(关门声)", "coverage": [{"beatId": "B7", "channels": ["action_sound", "transition"]}]}]},
+        {"id": "FS07-U3", "sceneId": "SC5", "durationSeconds": 2.5, "mode": "I2VA",
+         "difficulty": "CAM-B 转定场：B 独坐沙发失神、中间空位与倒扣合照相框在侧、画面缓缓变暗；关门声后加约 0.5s 极轻压抑呼吸声再黑场，最后约 2s 静音黑场收束",
+         "keyframes": {"first": "KF-FS07-U3-first"},
+         "references": ["assets/fenshou-B-master.png", "assets/fenshou-LOC-livingroom.png"],
+         "dialogue": [],
+         "cuts": [{"id": "FS07-U3-C1", "seconds": 2.5, "note": "B 独坐渐暗+压抑呼吸+静音黑场", "coverage": [{"beatId": "B7", "channels": ["ambience"]}]}]}
+      ],
+      "postTasks": [],
+      "linkPrev": "承接 FS06"
+    }
+  ],
+  "state": "storyboard_pending"
+}

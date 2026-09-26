@@ -1,0 +1,44 @@
+{
+  "id": "travel-18-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a close shot of a framed photograph of two people resting on the front passenger seat of a parked car, preserving the frame, the photo, and the quiet car interior, under soft diffuse daylight, neutral warm-white and true-to-life, natural film grain, real material and glass texture, not plastic, not waxy, not CG. Over the five seconds the camera pushes in with small amplitude at slow speed toward the framed photograph, the interior settling gently around it; in the final second the movement eases and holds, coming to rest on the photo frame in a still, quiet composition. Realistic natural soft diffused light throughout, no glare.\n\noverall_soundscape: A very quiet parked-car interior tone hums faintly beneath the shot, with only the softest ambient room noise and a barely audible outside breeze continuing underneath throughout.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/18/keyframe.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>块/speaker ID/画外音台词,合照特写无人开口,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "同期音景校验:overall_soundscape只写车内静谧极轻底噪+车外微风的现场同期音,过静默留存门",
+      "真实质感校验:Live-action cinematic photorealistic+natural film grain+real material/glass texture,禁plastic/waxy/CG",
+      "柔光校验:soft diffuse daylight+neutral warm-white,no glare",
+      "合规无字校验:画面无任何文字/字幕/logo/品牌;合照仅描述为two people的图像,不写照片上文字",
+      "运镜时长校验:Push in small amplitude slow末端eases and holds定格;时间线锁five seconds=5s;单Shot;I2VA首行@0.00,images 1张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f4d0469fd7ce28285c268459ab81810330bbfc514dd144cfea6b82470930959a"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "释然·收束"
+    ],
+    "related_shots": [
+      "镜18 副驾两人合照相框缓慢推近定格"
+    ],
+    "visual_evidence": [
+      "特写慢推:副驾合照相框推近至定格(旁白仅参考,不入prompt)"
+    ],
+    "unresolved_blockers": []
+  }
+}

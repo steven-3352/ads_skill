@@ -1,0 +1,19 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone 17 handheld footage with fine natural photographic grain, a vertical 9:16 medium-close shot begins exactly as shown in <Picture 1>: a bright white-wall interior corridor where a Chinese (East Asian) woman with long dark hair loose over her shoulders (S2), in a plain soft knit home top, stands turned side-on with her back partly to camera, arms crossed, chin lifted, cold face refusing to look, lips pressed, while a Chinese (East Asian) man in a rolled-sleeve white shirt (S1), clean short black hair, leans in half-crouched from the side, preserving their appearance, clothing, and spacing. The handheld camera sways slightly and follows the man as he shifts to chase her eyeline; she tilts her head away and he leans the same way, his hand rising toward her wrist and hesitating in mid-air without truly grabbing. The man (S1), a young adult male with a warm, slightly urgent coaxing voice, speaks quickly at a natural pace and picks the line up without pausing: <d>[Chinese]别生气了，我错了，好不好？</d> Her arms tighten, her eyes stay fixed on the corner of the wall, her lips stay pressed. Soft even diffuse daylight, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture, no plastic or wax or CG look, no oily glare on the faces. No subtitles, captions, watermark, logo, or any on-screen text appear anywhere in the frame at any time.\n\noverall_soundscape: Quiet interior room tone with faint footsteps scuffing the floor and the soft rustle of shirt fabric as he leans in; light, continuous breathing keeps the track filled with no silent gap.\n\nnon_diegetic_music: A soft, gentle ambient pad at a slow-to-moderate tempo with sparse warm piano notes, staying low under the voice.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "h3-prompt-writing base structure: instruction line + blank + 3 core fields (integrated_multimodal_description/overall_soundscape/non_diegetic_music);dialogue verbatim in <d>[Chinese]...</d>, delivery/speaker outside <d>, normal-fast pace no dead-air;anti-subtitle: no on-screen text/watermark/logo anywhere at any time;realistic iPhone skin, matte no oily glare, no plastic/wax/CG;soft diffuse neutral-warm light not tinting faces;no brand/logo on wardrobe or set;continuous audible human voice/breathing, no silent gap",
+      "I2VA instruction anchors <Picture 1> at 0.00s; 4.00s single shot; S1 coaxing line picked up without pause"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d64e39b82fbe3312402c277117551b1777e3b601a0c0ff4ea9c9a6f501f5b0db"
+  },
+  "images": [
+    "replication/output/couple-wallkiss-20260925/shots/shot-SH01/images/SH01-U1-first.png"
+  ]
+}

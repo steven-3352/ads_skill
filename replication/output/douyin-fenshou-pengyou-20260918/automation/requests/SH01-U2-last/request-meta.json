@@ -1,0 +1,11 @@
+{
+  "request_id": "SH01-U2-last",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U2-last.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/images/SH01-U2-last.png",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-18T10:48:23+08:00"
+}

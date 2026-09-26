@@ -1,0 +1,33 @@
+{
+  "id": "shot-07-video",
+  "role": "镜7 那个人不在了｜I2VA｜黑底顶光女主独自伫立、身旁位置空荡、抿唇屏息慢眨缓低头；严禁泪眼/红眼/发光眼",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, with heavy film grain and shallow depth of field. The video opens on <Picture 1>: against a pure black background, a single soft overhead beam of light falls on the woman, who stands alone within it; the spot beside her, where someone had just been, is empty and dark. Preserving her appearance and the black-and-light setting, she presses her lips together, holds a breath, blinks slowly once, and lowers her head gradually. Her eyes stay clear and dry — no tears, no redness, and no glow. The camera holds a nearly static shot with only the faintest drift. Her face stays matte under soft diffused light with no glare or reflection.\n\noverall_soundscape: A very faint indoor room tone lingers in the dark, nearly silent, with only the softest rustle of her clothing as she lowers her head.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜7不在了·I2VA。首帧Picture1=纯黑背景头顶单束柔光,女主独自伫立,身旁位置空荡无人。抿唇→屏息→慢眨一次→缓缓低头(眼干净,无泪无红无光)。近静止微飘,电影颗粒浅景深。无对白无字幕。声景=极轻室内底噪近乎静默+低头衣物轻响。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 4,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "single first frame + faint drift; black background overhead beam, empty spot beside her; emotion via lips/breath/slow blink/lowered head, no tears/red/glow",
+      "voiceover-only film: NO dialogue block, NO speaker ID, NO <d>, NO on-screen text in H3 — monologue is a post-production Doubao TTS voiceover track",
+      "duration written as 4.00s per shot (H3 4s minimum billing; assembly trims to plan duration)",
+      "soundscape limited to home room tone + this shot's action sounds only, no vocalizations; non_diegetic_music N/A (BGM/VO added in post)",
+      "visual: pure black background, single soft overhead beam, heavy film grain, shallow depth of field; matte skin, no glare; East Asian; no brand/logo",
+      "emotion beats use lips / held breath / slow blink / lowered head / wiping eye corner — strictly no tears, no red eyes, no glowing eyes",
+      "I2VA: <Picture 1> is the 0.00s first frame; forward development via slow camera move only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4a67ca079bef80fb079155d158fdba73ee52d729aaec901d52963a35034ee0e4"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-07/images/first.png"
+  ]
+}

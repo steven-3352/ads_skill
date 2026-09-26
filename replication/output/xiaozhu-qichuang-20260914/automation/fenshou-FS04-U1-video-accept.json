@@ -1,0 +1,9 @@
+{
+  "unit":"fenshou-FS04-U1-video",
+  "beat":"B4 FS04 B真慌",
+  "decision":"accept",
+  "reviewer":"claude-selfcheck",
+  "at":"2026-09-18",
+  "why":"达标:B前倾恳求、第一次真慌(眉紧近带哭、手抚胸口辩解),但慌的是失去她非懂她为何走,与设定一致;B是被分手方允许崩,非A的克制约束对象;表情强烈非空白、与对白一致;身份/灯光锁;含配音无烧字幕;技术QC 1344x768/4.46s。对白verbatim。最终由用户审。",
+  "frames":"assets/fenshou-qc-FS04-U1-t{0.3,1.5,2.8,3.8}.png"
+}

@@ -1,0 +1,47 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a bright daytime living room with natural daylight, airy and clear with a neutral warm-white balance; skin keeps its natural tone. Framed as an over-the-shoulder close shot past the young East Asian Chinese woman's shoulder, her black hair in a bun with a bear-ear headband and bright yellow bear-cartoon pajamas kept exactly as in <Picture 1>, onto the young East Asian Chinese man in a light-grey T-shirt slumped wearily on the sofa. Looking worn out, at a natural, slightly quick conversational pace with no trailing silence, the man with a tired, complaining voice (S1) says: <d>[Chinese]我这周连续加三个大夜了。</d> His eyes carry genuine exhaustion and a plea for sympathy rather than a blank stare. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A calm daytime living-room room tone sits underneath, with faint fabric rustle as he sinks deeper into the sofa cushions. Light, tired breathing fills the pauses.\n\nnon_diegetic_music: Sparse solo piano notes at a slow tempo, widely spaced and low in volume, sustaining gently under the dialogue.",
+  "references": [
+    "replication/output/fuke/assets/U13-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U13-first全参考,0.00s锚定,身份/服装延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段",
+      "机位:过女友肩过肩近景拍男主",
+      "对白:男主(S1)`我这周连续加三个大夜了。`逐字复刻,<d>内仅语言标签+原文,身份/动作外置",
+      "灯光:家日客厅白天自然光明亮通透偏暖白/人脸自然肤色",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "人物锁:男主浅灰T恤瘫沙发疲惫/女友小熊睡衣入镜肩",
+      "表演:男主嗊累诉苦眼神真实疲惫求共情,非空洞念白",
+      "时长:台词12字定4.0s,语速自然偏快无死尾",
+      "声景:房间底噪+沙发革专衣物摩擦+呼吸;非画内钢琴弱音",
+      "零字幕:显式no subtitles/on-screen text"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "050d6b3367c184479e9843226cc814e90461d20684ad898081a3594b4c74624c",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U13-video",
+    "usage": "U13(镜13)他喊累诉苦:客厅白天明亮,过女友肩过肩拍男主瘫沙发嗊累,I2VA自U13-first发展",
+    "locks": [
+      "男主浅灰T恤瘫沙发疲惫(S1)",
+      "女友小熊睡衣丸子头入镜肩",
+      "家日客厅白天自然光明亮",
+      "人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "他喊累诉苦:过女友肩拍男主瘫沙发诉苦连加大夜,白天明亮过肩近景",
+  "images": [
+    "replication/output/fuke/assets/U13-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

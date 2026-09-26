@@ -1,0 +1,60 @@
+{
+  "id": "travel-12-image",
+  "role": "镜12 关键帧：额济纳胡杨林一片金黄逆光剪影，阳光从树缝斜落，一名女子背影（母板B女主角）静立树下",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "竖构图 9:16 全景逆光剪影，额济纳胡杨林一片灿烂金黄：高大的胡杨树枝干虬曲、满树金黄叶片，逆光下阳光从树冠枝缝间斜斜洒落，形成一道道透过树叶的金色光束与斑驳光影，主体（胡杨林与树下人物）居中、树冠不贴边不出画、防拉伸变形。画面中一名年轻东亚中国女子背对镜头、静静站立在一棵胡杨树下，只见背影：她身穿红色冲锋衣，身形与母板 B 女主角保持一致（身高比例、身形一致），扎着或披着的头发自然垂落，因逆光与背对镜头看不清脸部五官、只见暖金轮廓光勾边的身影。她安静仰望或平视林间的姿态，与金黄胡杨林融为一幅眷恋的画面。柔和的逆光暖阳自然通透、不死黑不压抑，金黄只染树叶与光束、层次分明，画面明亮有空气感，人物为哑光衣料、无油光高光反光。iPhone/单反真实照片级质感，画面带细腻真实的树皮与叶片纹理、衣料织物质感与自然噪点、轻微不均，绝无塑料感、AI感、CG蜡感、磨皮假人、蜡像感。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌，也没有任何商业招牌、店名、路牌、广告牌。",
+  "references": [
+    "replication/output/Travel/assets/characters/master-protagonist.png"
+  ],
+  "identity_anchor": {
+    "character_id": "travel-protagonist-female",
+    "role": "女主角背影（母板B锁身形与红冲锋衣），额济纳胡杨林逆光剪影镜",
+    "usage": "用母板 B `master-protagonist.png` 锁女主角红冲锋衣与身形；本镜为背对镜头背影，看不清脸，只需身形与红冲锋衣一致",
+    "locks": [
+      "人物为母板B女主角：年轻东亚中国女子，红色冲锋衣、身形一致",
+      "背对镜头只见背影，逆光下看不清脸部五官，不要求正脸",
+      "景观本体为额济纳胡杨林金黄、阳光从树缝斜落，全景逆光剪影",
+      "竖构图 9:16、胡杨林与人物居中、树冠不贴边不出画",
+      "真实照片级质感与真实织物质感，禁塑料感/AI感/CG蜡感/磨皮假人",
+      "画面无文字/字幕/数字/水印/logo/品牌，无招牌路牌"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T14:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344、全景逆光剪影、胡杨林与人物居中树冠不贴边、防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "身份锁：用母板B master-protagonist.png 锁女主角红冲锋衣与身形，背对镜头只见背影看不清脸，与母板身形一致（masters-before-shot-keyframes / keyframe-anchored-pipeline）",
+      "人物东亚中国人：年轻东亚中国女子、自然普通中国人身形，排除欧美/高加索/网红滤镜脸氛围（daihuo-casting-must-be-chinese）",
+      "真实质感非塑料：iPhone/单反照片级、树皮叶片纹理+衣料织物质感+自然噪点，禁塑料感/AI感/CG蜡感/磨皮假人（iphone-realistic-no-plastic-texture）",
+      "逆光柔光无油光：逆光暖阳自然通透不死黑不压抑，金黄只染树叶光束，人物哑光衣料无油光反光（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌，无商业招牌/店名/路牌/广告牌（no-brand-products-in-videos）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "121008a7a45793ef4a9a67c39d365b30ccac8a463cc2cab16636d6bce79f8308"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇（眷恋）：06–14 沿途逐站兑现，第 07 站额济纳胡杨林；红冲锋衣女主角服装锚点"
+    ],
+    "related_shots": [
+      "12 全景/逆光剪影：额济纳胡杨林金黄，阳光从树缝落下，人物背影立于树下",
+      "01 红冲锋衣锚点：出发前叠红外套入箱，本镜女主角红冲锋衣呼应"
+    ],
+    "visual_evidence": [
+      "剧本 12 镜画面：额济纳胡杨林金黄，阳光从树缝落下，人物背影立于树下",
+      "旁白：胡杨林黄了。你不是老念叨嘛，黄了才好看",
+      "环境声：树叶沙沙声；花字（后期外挂）：额济纳 · 打卡 07",
+      "红冲锋衣呼应 01 镜红外套/女主服装锚点；用母板B锁身形，背影看不清脸",
+      "合规：无品牌/商标/logo，不出文字招牌路牌"
+    ],
+    "unresolved_blockers": []
+  }
+}

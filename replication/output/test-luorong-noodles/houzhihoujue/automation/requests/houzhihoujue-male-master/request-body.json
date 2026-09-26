@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Cinematic identity portrait, 9:16 vertical composition, medium half-body shot, static, even soft frontal-to-slightly-angled lighting. A realistic East Asian Chinese man, about 30 to 35 years old, gentle and warm, easygoing calm expression. Short neat dark hair. He wears simple everyday home clothes: a plain light grey crew-neck long-sleeve top, relaxed and unbranded. Bright, evenly lit neutral-warm home interior background, gentle diffuse daylight, ceiling light on, no single dim yellow lamp, no moody shadows. Matte skin with realistic pores, fine skin texture and natural film grain, shot on an iPhone with true-to-life handheld realism; no oily facial glare, no highlight reflection on the face, no plastic AI sheen, no beauty-retouch fake skin, no wax texture. He is Chinese with an East Asian face, not a western face. Natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "size": "768x1344",
+  "quality": "high",
+  "output_format": "png"
+}

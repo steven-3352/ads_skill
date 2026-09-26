@@ -1,0 +1,44 @@
+{
+  "prompt": "Photorealistic emotional-drama opening first frame, vertical 9:16, I2VA start pose. A small quiet bar by a rainy window at night, the couple's old regular table: a woman and a man sit facing each other across a small wooden table, two-shot with BOTH faces visible and readable across the small table. KEY PROPS (must appear, override any bottles or shelves from the reference backgrounds): at the center of the table stands ONE tall white porcelain CYLINDRICAL bottle with a red round cap and a thin gold ring, bottle body pure white and completely blank; in front of each person a small clear transparent GLASS stemmed liquor cup (slender glass stem plus a small bowl-shaped cup bowl) holding CLEAR COLORLESS liquor (Chinese baijiu, transparent, NOT red, NOT wine), each cup near-brimming full. Su Wan (woman, about 30, refined and gentle, identity strictly per master A) sits on one side, head slightly lowered, gazing down at her own cup as if about to open her mouth and ask; Chen Xu (man, about 32, mature and reserved with light stubble, identity strictly per master B) sits across from her, near-frontal at a slight angle so his face is clearly readable, not a pure back-of-head over-the-shoulder, quietly watching her. Both are East Asian Chinese people, restrained and neutral, real and understated expressions, not exaggerated. Lighting: bright warm white interior lighting, evenly and clearly lit faces, comfortably bright not dark not dim not moody, both faces clearly readable; outside the window is night rain rendered as soft bokeh. shot on iPhone 17 Pro, computational photography, photorealistic candid documentary, natural skin texture with visible pores fine lines and natural oil sheen, subtle sensor noise / fine film grain in shadows and midtones, low-light ISO grain, natural mixed-temperature ambient light, gentle highlight roll-off, slight handheld micro-shake, natural shallow depth of field, mild lens vignetting, muted natural color. no red wine, no wine, no wine glass, no stemmed wine glass, no burgundy/red liquid, no wine bottles, no bottle shelves, no bar shelves lined with bottles, no candle jar, no plastic skin, no waxy over-smoothed face, no poreless skin, no airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR, no glossy plastic highlights, no blown-out overexposure, no oversaturated color, no sterile clean digital look. No text, no subtitles, no captions, no letters, no numbers, no watermark, no logo, no brand anywhere. The bottle and cups are completely blank and unbranded.",
+  "references": [],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-21T23:40:00+08:00",
+    "checks": [
+      "画幅锁定竖屏 9:16，构图 two-shot with BOTH faces visible and readable across the small table，符合 B0 双人同框首帧/I2VA 起幅",
+      "第二版修复·道具全错：正向前置 KEY PROPS 并显式 override reference backgrounds，锁 ONE tall white porcelain CYLINDRICAL bottle red cap+thin gold ring 纯白无标；每人面前 clear transparent GLASS stemmed cup 装 CLEAR COLORLESS baijiu（transparent, NOT red, NOT wine），near-brimming full",
+      "第二版修复·排红酒：负向新增 no red wine/no wine/no wine glass/no stemmed wine glass/no burgundy-red liquid/no wine bottles/no bottle shelves/no bar shelves lined with bottles/no candle jar，斩断母板背景红酒/酒架污染",
+      "第二版修复·光偏暗：改 bright warm white interior lighting, evenly and clearly lit faces, comfortably bright not dark not dim not moody, both faces clearly readable，女主不再半脸入暗",
+      "第二版修复·男主非纯背影：Chen Xu near-frontal at a slight angle so his face is clearly readable, not a pure back-of-head over-the-shoulder，两人都能看到脸",
+      "人物身份锁：苏晚 identity strictly per master A、陈叙 per master B，均显式 East Asian Chinese people，防欧美脸",
+      "首帧情绪按 B0 节拍：苏晚微低头盯自己杯像要开口问、陈叙对面安静看着她，restrained/neutral/understated 不夸张",
+      "酒位=满：each cup near-brimming full，闭环起点",
+      "iPhone 真实感正向修饰词逐词进 prompt：shot on iPhone 17 Pro/computational photography/photorealistic candid documentary/visible pores fine lines oil sheen/sensor noise & film grain/low-light ISO grain/mixed-temperature ambient light/highlight roll-off/handheld micro-shake/shallow DOF/lens vignetting/muted natural color（保持）",
+      "去塑料感负向词逐词进 prompt：no plastic skin/no waxy over-smoothed/no poreless/no airbrushed beauty-filter/no CGI/no 3D render/no over-sharpening/no over-HDR/no glossy plastic highlights/no blown-out overexposure/no oversaturated/no sterile clean digital look（保持）",
+      "合规红线逐词进 prompt：No text/subtitles/captions/letters/numbers/watermark/logo/brand anywhere；bottle and cups completely blank and unbranded（保持）",
+      "references 留空数组，母板 A/B 与瓶杯参考图由主 agent 生成时经 CLI --reference 传入，不在 JSON 写死路径"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2aeab3abf352c40164cb429a3d8afe05b79841d6a0464f8c8f9d498b5d95d91b"
+  },
+  "narrative_alignment": {
+    "source_story": "review/storyboard-正片-v2.md",
+    "related_beats": [
+      "B0"
+    ],
+    "related_shots": [
+      "B0"
+    ],
+    "visual_evidence": [
+      "双人同框across小木桌/竖屏9:16/both faces readable",
+      "白瓷圆柱瓶红盖下细金圈完全无文字标签logo",
+      "两只透明玻璃高脚小白酒杯clear glass stem+小碗杯肚",
+      "酒位=满near-brimming clear liquor",
+      "iPhone17真实质感带毛孔细纹暗部颗粒噪点/暖白顶灯看得清脸不压暗/窗外夜雨bokeh"
+    ],
+    "unresolved_blockers": []
+  }
+}

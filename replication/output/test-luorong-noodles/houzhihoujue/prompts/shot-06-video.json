@@ -1,0 +1,38 @@
+{
+  "id": "shot-06-video",
+  "role": "镜6 以为还有以后｜I2VA｜两人依偎暖画面、极慢推近、暖光褪色边缘虚化(回忆感)，女轻声一句同期",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld footage with realistic skin texture, natural pores, and fine film grain, no plastic or waxy CG look. The video opens on the warm home scene of <Picture 1>, preserving the two people's appearance, home wear, and the living-room layout: the woman and the man lean quietly against each other on the sofa. The camera pushes in very slowly with small amplitude at slow speed. As it moves, the woman lets her head rest against him, and the mature East Asian Chinese woman in her thirties, softly and quietly, almost to herself (S1), says in sync on camera: <d>[Chinese] ……这样就挺好。</d> Then the warm color gradually drains from the frame and the edges softly blur and vignette, as if this moment is fading out of a memory — a warm-to-cool transition. Both faces stay matte under soft diffused light with no glare or reflection; East Asian Chinese features throughout, no brand or logo anywhere.\n\noverall_soundscape: A soft, warm living-room tone hums underneath with a faint appliance drone, thinning gradually as the image fades.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜6以为·I2VA。首帧Picture1=两人依偎暖色居家。镜头极慢小幅推近,女靠向男轻声画内同期口型说(S1)『……这样就挺好。』随后暖色渐褪、边缘虚化打晕,像这幕从记忆里淡出(暖转冷)。哑光真实iPhone感。声景居家暖底噪随画面渐薄(非死寂)。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 5,
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "single first frame + very slow push-in with in-frame synced dialogue early: woman leans in and speaks (S1); then warm color drains and edges vignette as the memory fades",
+      "对白verbatim校验: <d>[Chinese] ……这样就挺好。</d> 逐字逐标点不改(含开头省略号); 身份+ID(女S1)+delivery(轻声、近自语) 全写在 <d> 之外; 画内同期、口型同步",
+      "表演校验: 演满足与错觉的内心戏(以为还有以后的轻声)而非只念台词; 台词落在前段, 后段渐隐由暖底噪续着不成死寂静默",
+      "duration 5.00s 单镜一镜到底; 单人一句对白, 无cut",
+      "soundscape 仅居家暖底噪随画面渐薄(非N/A静默), 无人声重复; non_diegetic_music N/A",
+      "visual: 真实iPhone质感/自然毛孔/细颗粒, 哑光皮肤无油光高光, 无塑料蜡感CG感; 暖白居家光不压暗; East Asian中国人物; 无品牌logo; prompt内无引号包裹的屏幕字幕文字",
+      "I2VA: <Picture 1> is the 0.00s first frame; 仅靠极慢推近+调色前向发展"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ebb8020a53fce53d3a95293b7552fbb510acdfb42bfab3feca6999828785eea9"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-06/images/first.png"
+  ]
+}

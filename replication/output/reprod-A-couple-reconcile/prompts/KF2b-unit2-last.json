@@ -1,0 +1,28 @@
+{
+  "id": "KF2b-unit2-last",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. Warm home entryway beside an open kitchen in soft warm daylight. A realistic East Asian Chinese man about 45 years old (identity from the reference man), short dark hair greying at the temples, light grey crew-neck T-shirt and dark navy shorts, barefoot, is crouching and bending low in front of a realistic East Asian Chinese woman, one hand taking the folded dark-grey jacket down toward the floor. The woman about 42 years old (identity from the reference woman), dark hair in a low bun, light cream sleeveless fine-knit top and beige wide-leg linen trousers, barefoot, stands and looks down at him with a faint gentle reconciled smile, one hand loose at her side. Sheer-curtain daylight plus overhead and under-cabinet warm lighting, beige cabinets, a vase of white daisies, wood floor. Shot on an iPhone with realistic handheld texture, fine film grain, matte skin with no oily facial glare and no plastic AI sheen. They are Chinese with East Asian faces, not western faces. Natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark anywhere.",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/reprod-A-couple-reconcile/masters/master-woman.png",
+    "replication/output/reprod-A-couple-reconcile/masters/master-man.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA last frame, unit2 (man crouching to take the jacket, woman looks down with a gentle smile)",
+    "checks": [
+      "couple identity locked via reference woman + reference man, East Asian/Chinese",
+      "man crouching/bending to take the folded dark-grey jacket, woman standing looking down with faint reconciled smile — warm resolution beat",
+      "same warm entryway + open kitchen set and lighting for continuity",
+      "medium shot framing, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4a09f2198c51c7978a91fd655dcab7adcea18b8d2234134c9e1cac5b6d807be0"
+  }
+}

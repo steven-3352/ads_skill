@@ -1,0 +1,42 @@
+{
+  "id": "U02b",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 9,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U02b-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. A closer handheld shot on the left woman as in <Picture 1>, the 28-year-old with a translucent skincare gel on her face and a knitted cardigan (S1); the right woman with bare skin and a loose cotton shirt (S2) stays partly in frame. The exchange is fast and overlapping with no pauses between lines. The right woman (S2) presses, quick and blunt: <d>[Chinese] 那个三天不回的，偶尔回你一句，你是不是整个人就——</d> The left woman (S1), cutting in low: <d>[Chinese] ……就活了。</d> The right woman (S2): <d>[Chinese] 陈默天天在，你咋没这反应。</d> The left woman (S1) picks at the edge of her face mask, her hand pausing as she says, quieter: <d>[Chinese] 他太稳了。稳得我踏实。</d> The right woman (S2), flat and knowing: <d>[Chinese] 踏实到没感觉。</d> The left woman (S1), barely above a breath: <d>[Chinese] 你别这么说。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and fridge hum. A small dry peel-and-stop sound as her fingers lift the edge of the face mask and go still.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "dd312de9805408b47dd553ff63d876ef67a55015e2e60b1e7c1ebc842e980f75"
+  }
+}

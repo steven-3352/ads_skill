@@ -1,0 +1,12 @@
+{
+  "asset": "CAP-friend-p6",
+  "kind": "vo_capture_technical",
+  "reviewer": "claude",
+  "check_type": "取音技术校验(非用户审/非语义)",
+  "line": "你不是想做朋友。你是还没接受——她走了。",
+  "duration_s": 6.58,
+  "has_audio_stream": true,
+  "max_volume": "-7.0 dB",
+  "result": "pass",
+  "note": "H3 T2VA口播取音:可解码+含音频流+时长≥台词+非静音;画面丢弃只入声。工程中间件,人声清晰即达标。"
+}

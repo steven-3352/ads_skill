@@ -1,0 +1,19 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone 17 handheld footage with fine natural photographic grain, a vertical 9:16 facial close-up begins exactly as shown in <Picture 1>: the two just a little apart, nose to nose, foreheads lightly touching in the bright white-wall corridor, the woman (S2) with her eyes lowered, cheeks flushed pink, chin tucked, fingertips still hooked in the hem of the man's (S1) shirt; the man (S1) is at her ear, the corner of his mouth curved in a soft smile, preserving their appearance and clothing. The handheld camera holds an intimate close frame. Still a little breathless, the man (S1), a young adult male, asks softly and quickly, teasing: <d>[Chinese]那你还生不生气？</d> Without lifting her eyes and keeping her face turned aside, the woman (S2) mutters a small, shy retort, her fingers not letting go of his hem: <d>[Chinese]登徒子，讨厌。</d> Their breathing evens out. Soft even diffuse light, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture, no plastic or wax or CG look, no oily glare. No subtitles, captions, watermark, logo, or any on-screen text appear anywhere in the frame at any time.\n\noverall_soundscape: Soft settling breaths close to the mic and the faint rustle of fabric where her fingers hold his hem, continuous with no silent gap.\n\nnon_diegetic_music: The warm ambient pad softens and gently resolves, slowing to a calm close.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "h3-prompt-writing base structure: instruction line + blank + 3 core fields (integrated_multimodal_description/overall_soundscape/non_diegetic_music);dialogue verbatim in <d>[Chinese]...</d>, delivery/speaker outside <d>, normal-fast pace no dead-air;anti-subtitle: no on-screen text/watermark/logo anywhere at any time;realistic iPhone skin, matte no oily glare, no plastic/wax/CG;soft diffuse neutral-warm light not tinting faces;no brand/logo on wardrobe or set;continuous audible human voice/breathing, no silent gap",
+      "I2VA anchors <Picture 1> at 0.00s; 3.50s; nose-to-nose resolution; flushed-pink cheeks not near eyes, no glow/tears;嘴硬手软 fingers keep hem"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ee503cd0beeaa89e1649c46f9f7abef1fc53f1cb509024b671ca0a1360e543fd"
+  },
+  "images": [
+    "replication/output/couple-wallkiss-20260925/shots/shot-SH04/images/SH04-U1-first.png"
+  ]
+}

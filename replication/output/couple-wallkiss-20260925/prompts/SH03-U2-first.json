@@ -1,0 +1,15 @@
+{
+  "prompt": "Extreme close-up, vertical 9:16, framed tight on the hand of a Chinese (East Asian) woman resting on the forearm of a Chinese (East Asian) man, and her close side profile pressed near his — faces only partly in frame, no wide view. The woman is 23-26 years old with long dark hair and bare-faced natural good skin; the man is 25-28 years old in a plain white shirt with sleeves rolled to the forearms (no logo, no brand, no text). Her hand lies flat on his sleeve, fingers relaxed. Bodies fully clothed and pressed close, no explicit content, no sexualized body close-up. Bright white-wall interior corridor, soft even diffuse daylight, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture and fine natural grain, iPhone 17 realistic photo look, no plastic or wax or CG, no oily glare or highlights on the faces, no airbrushed fake skin. Vertical 9:16. No subtitles, captions, watermark, logo or on-screen text anywhere in the frame.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "extreme close-up framed on hand+side profile in first sentence, faces only partly in frame;no glowing eyes/tears/red-glow wording near eyes (softening via lashes/slow blink);blush written as flushed-pink cheeks, not near eyes;bodies fully clothed, no explicit content, no sexualized body close-up;no brand/logo/text;anti-subtitle;realistic matte skin, no plastic/CG"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "08f7a0e8ef31a12d17a3e61b5fd1bc505aa9c33d55c2e211e041d592041e51ef"
+  }
+}

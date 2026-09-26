@@ -1,0 +1,12 @@
+{
+  "asset": "CAP-friend-p4a",
+  "kind": "vo_capture_technical",
+  "reviewer": "claude",
+  "check_type": "取音技术校验(非用户审/非语义)",
+  "line": "留着她当朋友，这叫放下？",
+  "duration_s": 4.46,
+  "has_audio_stream": true,
+  "max_volume": "-1.5 dB",
+  "result": "pass",
+  "note": "H3 T2VA口播取音:可解码+含音频流+时长≥台词+非静音;画面丢弃只入声。工程中间件,人声清晰即达标。"
+}

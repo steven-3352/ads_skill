@@ -1,0 +1,12 @@
+{
+  "stage": "stage4-videos",
+  "phase": "deliver",
+  "reviewer": "user",
+  "verdict": "approved",
+  "instruction": "拼接交付",
+  "final_film": "replication/output/zhanv/final/zhanv-final.mp4",
+  "reviewed_via": "https://www.tonbird.top/ads-review/zhanv/review/final-review.html",
+  "checks": {"all_13_clips_accepted":"pass","zero_subtitles":"pass","concat_no_click":"pass","u07b_end_black":"pass","aspect_16x9":"pass"},
+  "note": "13条分镜全过看片后用户指令拼接交付;成片96.7s/16:9/零字幕/重编码拼接/尾黑场",
+  "at": "2026-09-24"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "travel-couple-photo-master",
+  "role": "贯穿全片的实体照片道具：一对二十多岁到三十出头的东亚中国年轻情侣的旅行合照",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "一张年轻东亚中国情侣的旅行合照，作为一张真实的实体照片道具（后续会被握在手里、摆在副驾座上）。画面里是一对二十多岁到三十出头的中国年轻情侣，一男一女，两人都是自然的普通中国人五官，绝对不是欧美/高加索/混血面孔，也不是网红滤镜脸、不做过度精致的整容脸。两人肩并肩靠在一起，自然放松地微笑，像随手拍下的旅行纪念合照，男生穿休闲旅行外套，女生穿休闲旅行装、外面可搭一件红色冲锋衣，两人五官清晰完整、面部朝向镜头、可辨识可复用（供后续镜头锁定身份）。背景是泛化的户外旅行场景（开阔的自然山水或公路远景、柔和天光），绝对不出现任何可辨识的地标、招牌、店名、路牌、品牌或 logo。柔和的自然漫射光，光色中性偏暖白、明亮通透不压抑，不用大黄光染脸；两人脸上是哑光肤质、没有油光高光反光。iPhone/单反真实照片级质感，画面带细腻真实的肤质、可见毛孔、自然噪点与轻微肤色不均，绝无塑料感、AI感、CG蜡感、磨皮假脸、蜡像感。竖构图 9:16，两人居中，面部特征不贴边不出画。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌。",
+  "references": [],
+  "identity_anchor": {
+    "character_id": "travel-couple-photo",
+    "role": "旅行合照道具（男女主同框），全片情感锚点物件",
+    "usage": "作为实体照片道具贯穿全片；03/05/15/18 镜头 --reference 本母板保持照片中两人一致",
+    "locks": [
+      "两人均为东亚中国人五官，排除欧美/高加索/混血/网红滤镜脸",
+      "一男一女、二十多岁到三十出头、休闲旅行装、自然微笑随手拍合照氛围",
+      "女生可搭红色冲锋衣，呼应剧情锚点",
+      "背景泛化户外旅行场景，无任何可辨识地标/招牌/品牌/logo",
+      "真实照片级质感，禁塑料感/蜡感/磨皮假脸",
+      "画面无文字/字幕/数字/水印/logo；竖构图 9:16 人物居中"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T12:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344，人物居中面部不贴边，防拉伸变形（gpt-image-h3-aspect-mismatch-distortion / extreme-closeup-framing）",
+      "人物东亚中国人：男女均自然中国人五官，显式排除欧美/高加索/混血/网红滤镜脸（daihuo-casting-must-be-chinese）",
+      "真实质感非塑料：iPhone/单反照片级、细腻毛孔+真实肤质+自然噪点，禁塑料感/AI感/CG蜡感/磨皮假脸（iphone-realistic-no-plastic-texture）",
+      "柔光无油光：柔和自然漫射光、中性偏暖白明亮通透，人脸哑光无油光高光反光，忌大黄光染脸（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌，背景无可辨识地标招牌（no-brand-products-in-videos）",
+      "身份根用途：合照道具作两人同框身份根，五官清晰可复用，供 03/05/15/18 镜 --reference 锁一致（masters-before-shot-keyframes）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "11a0913f8468e4530c75cc08ad5a9b5a77ad2866ebe1853b86300248a8a5ec99"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "两人合照道具母板/身份根（非具体某镜）：贯穿全片的情感锚点物件"
+    ],
+    "related_shots": [
+      "03 空副驾+合照锚点",
+      "05 驾驶舱 POV 副驾上摆合照",
+      "15 手握合照指腹摩挲",
+      "18 合照特写慢推+落字"
+    ],
+    "visual_evidence": [
+      "剧本强制视觉锚点：两人合照（03/05/15/18）",
+      "03 副驾座空着，座椅上放两人合照",
+      "05 副驾上摆着咱俩的合照，这一路你陪着我",
+      "18 副驾合照特写，镜头慢慢推近两个人的笑容",
+      "合规：无品牌/商标/logo；两人五官清晰供后续锁身份",
+      "女生红冲锋衣呼应 01 镜红外套/女主服装锚点"
+    ],
+    "unresolved_blockers": []
+  }
+}

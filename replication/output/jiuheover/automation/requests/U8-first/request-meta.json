@@ -1,0 +1,16 @@
+{
+  "request_id": "U8-first",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/jiuheover/prompts/U8-first.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/jiuheover/shots/shot-U8/images/U8-first.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/jiuheover/assets/master-A.png",
+    "replication/output/jiuheover/assets/master-B.png",
+    "replication/output/jiuheover/assets/1.jpeg",
+    "replication/output/jiuheover/assets/1白酒.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-21T14:36:39+08:00"
+}

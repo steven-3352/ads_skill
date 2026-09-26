@@ -1,0 +1,11 @@
+{
+  "request_id": "d6ba7ad4-d510-4a42-8cfe-934d7753c9d0",
+  "prompt_file": "prompts/master-woman.json",
+  "output": "masters/master-woman.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-24T14:38:42+08:00"
+}

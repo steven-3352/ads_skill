@@ -1,0 +1,46 @@
+{
+  "id": "travel-10-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: a wide vertical 9:16 view of the white walls and red palace of the Lhasa hilltop palace complex, with prayer flags swaying and a few distant East Asian Chinese pilgrim figures below. The architecture, flag placement and figures stay consistent with the image. Over the four seconds the camera trucks left with small amplitude at slow speed, gently revealing more of the white walls while the prayer flags sway in the breeze and the distant pilgrims move slowly and reverently across the plaza. Soft, natural diffuse daylight, neutral warm-white, bright and airy, not oppressive, no heavy amber cast; true-to-life photographic quality with fine natural grain, real matte surfaces, no plastic or waxy CG look. No text, subtitles, letters, numbers, watermark, logo, brand, scripture text, signage or road signs anywhere in the frame.\n\noverall_soundscape: A light wind carries across the plaza while the prayer flags flap softly. Faint low murmuring of a distant crowd and occasional soft bell tones drift underneath.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/10/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:全片无任何<d>对白/说话/画外音台词/speaker ID;远处朝圣者不开口,人群低语仅作环境非语言底噪",
+      "配乐校验:non_diegetic_music = N/A;overall_soundscape只写现场同期音(风/经幡拍动/远处人群低语/梵铃)",
+      "真实质感:Live-action photorealistic、自然噪点/真实哑光,禁塑料感AI感CG蜡感",
+      "柔光校验:柔和自然漫射天光、中性偏暖白、明亮通透不压抑,忌大黄光染整片",
+      "合规无字:画面无文字/字幕/数字/水印/logo/品牌,不出经文文字/招牌/路牌;远处朝圣者锁东亚中国人",
+      "运镜校验:Truck Left 小幅慢速,情感片小幅慢速,单Shot一镜到底",
+      "时长/帧引用:4s时间线对齐;I2VA首行<Picture 1> from [Shot 1] @0.00,images一张keyframe.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0674654f0e76ed9b2a7d13c1ab98fe03ee66044dc23b8fabebf75a3021fafc19"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇(眷恋):第 10 站拉萨布达拉宫朝圣氛围"
+    ],
+    "related_shots": [
+      "镜10 全景:拉萨布达拉宫白墙红宫前经幡飘摇、朝圣者身影"
+    ],
+    "visual_evidence": [
+      "剧本10镜画面:拉萨布达拉宫前白墙红宫、经幡飘摇、朝圣者身影(记录用,非写进prompt)",
+      "旁白(仅参考):到了拉萨我替咱俩许了个愿",
+      "合规:无品牌/商标/logo,不出文字招牌路牌、不出经文文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

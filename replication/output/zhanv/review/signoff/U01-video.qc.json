@@ -1,0 +1,17 @@
+{
+  "unit": "U01-video",
+  "stage": "stage4-videos",
+  "reviewer": "user",
+  "verdict": "pass",
+  "reviewed_via": "https://www.tonbird.top/ads-review/zhanv/review/canary-review.html",
+  "checks": {
+    "no_burned_subtitles": "pass",
+    "lip_sync": "pass",
+    "performance": "pass",
+    "no_wax_plastic": "pass",
+    "lighting_neutral_bright": "pass",
+    "identity_consistent": "pass"
+  },
+  "note": "金丝雀通过；通路/扣费验通，用户看片确认放行剩余单元",
+  "at": "2026-09-24"
+}

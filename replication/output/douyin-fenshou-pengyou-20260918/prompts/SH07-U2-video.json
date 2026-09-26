@@ -1,0 +1,38 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese woman, an unmistakably Chinese woman with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 26-28, a modern urban woman with neat natural long hair in a beige / light-apricot knit sweater, her features, hairstyle and face shape kept identical across the whole film in a bright, airy home living room by the sofa / dining table — the ceiling light is on and natural window light fills the room, neutral warm-white, clean and airy, not dim, not moody, not oppressive, no single amber lamp darkening the room, normal indoor brightness even though it is night outside; strictly an enclosed interior room, absolutely no outdoors, street or plaza. His off-screen question (laid over in the edit) lands on her: her fingertip halts on the block button without pressing, her shoulder sinks, she looks away to one side, the hand gripping the phone tightens, and her breath catches once; she does not speak — struck, but refusing to admit it. Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet home room tone hums under the shot. A single small caught breath; no speech.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/images/SH07-U2-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:指尖顿在拉黑键上没按、肩一沉、别开眼、握手机手收紧、呼吸卡一下 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;单人单镜(交叉硬切在剪辑不在单元内);三段字段齐",
+      "无对白校验:本单元为反应/道具镜,H3不出任何对白(V.O.朋友/闺蜜后期豆包配),soundscape注明no speech防H3脑补人声",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;居家客厅正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2bd4b012de341656e7b88eca908639818ee126c94ee24cd618858e0bc8b4379a"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍5·声画交叉"
+    ],
+    "related_shots": [
+      "SH07"
+    ],
+    "visual_evidence": [
+      "指尖顿在拉黑键上没按、肩一沉、别开眼、握手机手收紧、呼吸卡一下"
+    ],
+    "unresolved_blockers": []
+  }
+}

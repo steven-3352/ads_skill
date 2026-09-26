@@ -1,0 +1,14 @@
+[
+  {
+    "id": "SH04-U2-first-r2",
+    "group": "shot_image",
+    "kind": "image",
+    "cost_yuan": 0.25,
+    "depends_on": [],
+    "replaces": "SH04-U2-first",
+    "model": "gpt-image-2",
+    "size": "1536x1024",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U2-first-r2.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U2-first-r2.png"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a bright daytime living room with natural daylight, airy and clear with a neutral warm-white balance; skin keeps its natural tone. The young East Asian Chinese woman shown in <Picture 1> keeps her exact appearance, black hair in a bun with a bear-ear headband and bright yellow bear-cartoon pajamas, framed in a close shot as she holds a mop upright and lifts it playfully; behind her the young East Asian Chinese man in a light-grey T-shirt is slumped on the sofa. With a coquettish little tilt of her head, the woman with a soft, slightly petulant young voice (S2), at a natural, slightly quick conversational pace with no trailing silence, says: <d>[Chinese]我够不着上边。</d> Her eyes sparkle with playful pleading rather than a blank stare. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A calm daytime living-room room tone sits underneath, with the light knock of the mop handle and soft fabric rustle as she shifts her weight. Light natural breathing fills the pause.\n\nnon_diegetic_music: A light, playful solo piano figure at a moderate tempo, gentle and low in volume.",
+  "references": [
+    "replication/output/fuke/assets/U12-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U12-first全参考,0.00s锚定,身份/服装/布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段",
+      "对白:女友(S2)`我够不着上边。`逐字复刻,<d>内仅语言标签+原文,身份/动作外置",
+      "灯光:家日客厅白天自然光明亮通透偏暖白/人脸自然肤色",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "人物锁:女友黄色小熊睡衣丸子头发箍举拖把擒娇/男主浅灰T恤瘫沙发",
+      "表演:女友歪头擒娇眼神俏皮求助,非空洞念白",
+      "时长:台词6字定4.0s,语速自然偏快无死尾",
+      "声景:房间底噪+拖把磕+衣物摩擦+呼吸;非画内轻快钢琴",
+      "零字幕:显式no subtitles/on-screen text"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d56defd61e6dc8a2677c1986b18635f54db2f482abbb04ac257743f990f60535",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U12-video",
+    "usage": "U12(镜12)家日反差·拖把:客厅白天明亮,女友举拖把擒娇男主瘫沙发,I2VA自U12-first发展",
+    "locks": [
+      "女友黄色小熊睡衣丸子头小熊发箍(S2)",
+      "男主浅灰T恤瘫沙发(不说话无ID)",
+      "家日客厅白天自然光明亮",
+      "人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "家日反差:女友举拖把擒娇够不着,男主瘫沙发,白天明亮通透轻松基调",
+  "images": [
+    "replication/output/fuke/assets/U12-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

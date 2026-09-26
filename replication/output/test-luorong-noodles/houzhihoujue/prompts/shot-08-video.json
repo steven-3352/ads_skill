@@ -1,0 +1,30 @@
+{
+  "id": "shot-08-video",
+  "role": "镜8 尾板｜I2VA｜黑底仅一束顶光渐暗、向黑收拢收尾；大字'有些遗憾,后知后觉'为后期叠字,不在H3出",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, with heavy film grain and shallow depth of field. The video opens on <Picture 1>: a pure black frame with a single soft overhead beam of light in the center. The camera holds a static shot as the beam of light slowly and evenly dims, the image gradually darkening until it settles into full black. No people and no on-screen text appear.\n\noverall_soundscape: A very faint indoor room tone fades toward near silence as the light dims.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜8尾板·I2VA。首帧Picture1=纯黑中央一束顶光。静止,光束缓缓均匀变暗、画面渐黑收拢至全黑。无人物、无屏内文字(尾板大字由后期叠,不在H3)。电影颗粒浅景深。无对白无字幕。声景=极轻室内底噪随光渐静。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 4,
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "single first frame + static hold; overhead beam slowly dims to full black; NO on-screen text (title is added in post)",
+      "voiceover-only film: NO dialogue block, NO speaker ID, NO <d>, NO on-screen text in H3 — monologue is a post-production Doubao TTS voiceover track",
+      "duration written as 4.00s per shot (H3 4s minimum billing; assembly trims to plan duration)",
+      "soundscape limited to home room tone + this shot's action sounds only, no vocalizations; non_diegetic_music N/A (BGM/VO added in post)",
+      "visual: pure black background, single soft overhead beam, heavy film grain, shallow depth of field; matte skin, no glare; East Asian; no brand/logo",
+      "I2VA: <Picture 1> is the 0.00s first frame; forward development via slow camera move only"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "dc9c26af624ab17dce742e228db1a92b1d03a78c3559a2479592a967aca2d505"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-08/images/first.png"
+  ]
+}

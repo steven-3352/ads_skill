@@ -1,0 +1,38 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese man, an unmistakably Chinese man with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 28-30, an urban white-collar type with clean short black hair, a dark knit top over a white stand-collar shirt, his features, hairstyle and face shape kept identical across the whole film in a bright, airy cafe — the ceiling lights are on so the whole room reads clean and evenly lit, natural neutral warm-white light, not dim, not moody, not oppressive, no single amber lamp darkening the room; a coffee cup sits on the table in front of him and the cafe behind him falls into gentle bokeh. He leans forward while reasoning, his hand gesturing on the table; then, hearing the friend's off-screen '你这是既要,又要' (added later), his whole body freezes for about half a second, his hand stalling in mid-air, before he sinks back against the chair and turns his face to one side — the argument holding, then punctured. The urban Chinese man in his late twenties, his voice reasoning, controlled (S2), says: <d>[Chinese] 放下不等于删除。留个朋友的位置,不越界,不奢望重来。</d> Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet cafe room tone hums under the shot. After his line a beat of tense silence and a faint stiffening of fabric as he freezes; no other speech.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/images/SH05-U1-first.png"
+  ],
+  "duration": 6,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:前倾讲道理、手在桌上摆;听『既要又要』僵住0.5s、手停半空、往椅背靠、脸别向一侧 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;单人单镜(交叉硬切在剪辑不在单元内);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 放下不等于删除。留个朋友的位置,不越界,不奢望重来。</d> 一字不改、画内同期口型同步、男=(S2)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;咖啡馆正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5df95667e9173e267690b02a86f0412765133589509a31dc4943a63f733c46be"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍4"
+    ],
+    "related_shots": [
+      "SH05"
+    ],
+    "visual_evidence": [
+      "前倾讲道理、手在桌上摆;听『既要又要』僵住0.5s、手停半空、往椅背靠、脸别向一侧"
+    ],
+    "unresolved_blockers": []
+  }
+}

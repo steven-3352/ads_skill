@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, a single continuous shot with a silent performance and no dialogue, a slow two-shot pan, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. The clip begins exactly on Picture 1 and resolves exactly to Picture 2, acting out every verb of the state and position change: the mature East Asian Chinese woman in her thirties (A, 33-38), her bag on her shoulder, plants her feet, rises fully from beside the two-seater loveseat, and walks toward the entrance door, unhurried, restrained, and not looking back; as she moves the camera pans slowly with small amplitude at slow speed across the empty middle seat of the loveseat between the two of them — the space where the face-down couple photo frame lies — and lingers there for a cold beat, letting the emptiness be the subject, as the framing settles into Picture 2 at the 4.00-second mark. The mature East Asian Chinese man in his thirties (B, 33-38) stays seated, small in the frame. No dialogue at all; the whole beat is carried by her motion and the empty seat. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room and the empty seat stay readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums throughout. Quiet footsteps and the faint rustle of her clothing as she rises and walks are the only physical sounds, thinning into stillness as the camera holds on the empty seat.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS07-U1-first.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS07-U1-last.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:A无台词起身走向门口、不回头、克制;缓摇停在空沙发位让冷清承担(空位是主角),内心戏靠动作与空位承担",
+      "首行为FL2VA对齐指令:Picture 1@0.00、Picture 2@4.00(单镜连续);状态/位置变化逐动词(起身→走向门口)+摆落点防单首帧漏演;2S缓摇扫过中间空位;末尾落Picture 2;三段字段齐",
+      "无对白silent performance校验:全片无<d>,overall_soundscape只环境底噪+轻脚步,non_diegetic_music=N/A",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a955de185f1b300aa26d522c2f2fce2d209c9d9ab92626ab8c30b9dd17450a36"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B7"
+    ],
+    "related_shots": [
+      "FS07"
+    ],
+    "visual_evidence": [
+      "A无台词走向门口",
+      "镜头扫过两人中间空沙发位:缺失实体化"
+    ],
+    "unresolved_blockers": []
+  }
+}

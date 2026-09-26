@@ -1,0 +1,1228 @@
+{
+  "schema_version": 1,
+  "project_id": "houzhihoujue",
+  "episode": null,
+  "status": "stage_complete_or_waiting_authorization",
+  "created_at": "2026-09-24T00:00:00+08:00",
+  "updated_at": "2026-09-25T10:17:09+08:00",
+  "budget": {
+    "committed_yuan": 10.450000000000001,
+    "hard_cap_yuan": 12
+  },
+  "authorization": {
+    "committed_yuan": 10.450000000000001,
+    "increment_cap_yuan": 12,
+    "allow_pending_semantic_qc": true,
+    "asset_ids": [
+      "houzhihoujue-female-master",
+      "houzhihoujue-male-master",
+      "houzhihoujue-shot-00-first",
+      "houzhihoujue-shot-00-video",
+      "houzhihoujue-shot-01-first",
+      "houzhihoujue-shot-01-last",
+      "houzhihoujue-shot-01-video",
+      "houzhihoujue-shot-02-last",
+      "houzhihoujue-shot-02-video",
+      "houzhihoujue-shot-03-last",
+      "houzhihoujue-shot-03-video",
+      "houzhihoujue-shot-04-first",
+      "houzhihoujue-shot-04-last",
+      "houzhihoujue-shot-04-video",
+      "houzhihoujue-shot-05-first",
+      "houzhihoujue-shot-05-video",
+      "houzhihoujue-shot-06-first",
+      "houzhihoujue-shot-06-video",
+      "houzhihoujue-shot-07-first",
+      "houzhihoujue-shot-07-video",
+      "houzhihoujue-shot-08-first",
+      "houzhihoujue-shot-08-video"
+    ]
+  },
+  "assets": [
+    {
+      "id": "houzhihoujue-female-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/master-female.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-female-master",
+      "submission_started_at": "2026-09-24T18:27:18+08:00",
+      "sha256": "5cc9371491f5cb492fda80f00ebe7e4c963d9fc3fa3c3b7b87d552d3e6f58c27",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T18:30:16+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T18:54:59+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/master-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T18:54:59+08:00"
+    },
+    {
+      "id": "houzhihoujue-male-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/master-male.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-male-master",
+      "submission_started_at": "2026-09-24T18:32:03+08:00",
+      "sha256": "d8b24b8bf23f5245b036f038144fabd6c3d44d6b1d56cc3159da330ab1be56ba",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T18:34:34+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T18:54:59+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/master-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T18:54:59+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-01-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T21:37:58+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-01-first",
+      "sha256": "50213ba57c133f20f76380250ab55721e455bac9f5e48a98ab5c8f62d509a9ad",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T21:44:25+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T21:51:05+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "金丝雀人工验收通过:换脸像母板+构图对+通路验证",
+        "reviewer": "user+run.sh"
+      },
+      "accepted_at": "2026-09-24T21:51:05+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-01-last",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-image-last.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T21:52:08+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-01-last",
+      "sha256": "025a7024161a34e0c11098b6178bd2b88739e869139367d65b2b8230df7ea212",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T21:57:15+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:30+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:30+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-02-last",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-02-image-last.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-02/images/last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T21:57:16+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-02-last",
+      "sha256": "3adfda19eefe8857df5da0c624db9621d99b7aa6ab403e7dfb97c47e4c5c1b19",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:05:13+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:39+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:39+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-03-last",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-03-image-last.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-03/images/last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:05:13+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-03-last",
+      "sha256": "a84fb26ffe321254a478e23dafc3e1f2d8488d47ca48529945a64ec4d855f795",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:09:10+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:40+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:40+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-04-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-04-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/images/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:09:11+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-04-first",
+      "sha256": "b76ebc84dae9321f14511e95f9ccb8f222676faa5f360078b9637881b3155998",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:13:01+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:40+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:40+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-04-last",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-04-image-last.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/images/last.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:13:02+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-04-last",
+      "sha256": "a558c8917d4b8dd7c7f5d3cd376b611413356178617cf2bf7a60b65644d1f843",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:19:49+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:40+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:40+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-05-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-05-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-05/images/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:19:49+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-05-first",
+      "sha256": "80d56e238876394d94ed905ea4355ff195a25d956bdc67a6ddbd18ad7516fe2a",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:23:49+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:41+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:41+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-06-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-06-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-06/images/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:23:49+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-06-first",
+      "sha256": "139eee0d55a03681fedf61f7268caa15e6abdc21096a435bc437a4575a46cec9",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:28:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:41+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:41+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-07-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [
+        "houzhihoujue-female-master"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-07-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-07/images/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:28:04+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-07-first",
+      "sha256": "54eef475e15ca97d9182632a0fdcde32d4fb36b0628d161833f8752e7e716992",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:31:21+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:41+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:41+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-08-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-08-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-08/images/first.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:31:22+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-08-first",
+      "sha256": "de2050e3ff247540d3326f61289fc58c1ef693ddf9f27ee6b1d03c46127435bd",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-24T22:34:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-24T22:41:41+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-24T22:41:41+08:00"
+    },
+    {
+      "id": "houzhihoujue-shot-01-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-01-first",
+        "houzhihoujue-shot-01-last"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/video/shot-01.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-24T22:45:47+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-01-video",
+      "sha256": "d02df1045388dd9d223527a69ca78cf66a2ab18e09942d711b78cae9b2c68478",
+      "accepted_at": "2026-09-25T05:55:32+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T05:55:32+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-02-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-01-first",
+        "houzhihoujue-shot-02-last"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-02-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-02/video/shot-02.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:56:19+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-02-video",
+      "sha256": "fb866405b784cbf9a635dadee9cec9e2b512aa1b31f92b2a1f004dadf0f94fb1",
+      "accepted_at": "2026-09-25T06:13:33+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T06:13:33+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-03-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-01-first",
+        "houzhihoujue-shot-03-last"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-03-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-03/video/shot-03.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:33:12+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-03-video",
+      "sha256": "e42b7991fbeed20036edddc57a62b7ef9816d34aecca5d7a2476c1ab0a6ec725",
+      "accepted_at": "2026-09-25T05:55:32+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T05:55:32+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-04-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-04-first",
+        "houzhihoujue-shot-04-last"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-04-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/video/shot-04.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T05:58:42+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-04-video",
+      "sha256": "7e57e2af476006573a08fa3969ea247da3def35f45f970b97d8f496492b81548",
+      "accepted_at": "2026-09-25T06:13:33+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T06:13:33+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-05-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-05-first"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-05-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-05/video/shot-05.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T06:01:35+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-05-video",
+      "sha256": "e1235e8f4ef231f54b414e0608575f0cc50c33725add3bd89a130123ea996a82",
+      "accepted_at": "2026-09-25T06:13:33+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T06:13:33+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-06-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-06-first"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-06-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-06/video/shot-06.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T06:03:52+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-06-video",
+      "sha256": "78820e6fd28a88d09f12eb7f1be1adf48017a629996740116eae453e21df9d1a",
+      "accepted_at": "2026-09-25T06:13:34+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T06:13:34+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-07-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-07-first"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-07-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-07/video/shot-07.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T06:06:22+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-07-video",
+      "sha256": "cc95806d25c2c31911eea0eb79e26a13e5405574288cd90e42b81ec164160e46",
+      "accepted_at": "2026-09-25T06:13:34+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T06:13:34+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-08-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "houzhihoujue-shot-08-first"
+      ],
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-08-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-08/video/shot-08.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T06:08:29+08:00",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-08-video",
+      "sha256": "b284f87d0db84b7c555954e2c5428890dc64daa89123310d818b45121344a5c1",
+      "accepted_at": "2026-09-25T06:13:34+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T06:13:34+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-00-first",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-00-image-first.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-00/images/first.png",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-00-first",
+      "depends_on": [
+        "houzhihoujue-female-master",
+        "houzhihoujue-male-master"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T10:09:07+08:00",
+      "sha256": "704cff87fe51c7b7914d140054687f542652554c9f4212f604d0094d564e124f",
+      "accepted_at": "2026-09-25T10:11:31+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T10:11:31+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/shot-00-signoff.md",
+        "note": "开场引导镜首帧QC过:vlog并肩构图/身份一致/明亮真实/无品牌",
+        "reviewer": "claude"
+      }
+    },
+    {
+      "id": "houzhihoujue-shot-00-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-00-video.json",
+      "output": "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-00/video/shot-00.mp4",
+      "audit_dir": "replication/output/test-luorong-noodles/houzhihoujue/automation/requests/houzhihoujue-shot-00-video",
+      "depends_on": [
+        "houzhihoujue-shot-00-first"
+      ],
+      "status": "accepted",
+      "submission_started_at": "2026-09-25T10:11:39+08:00",
+      "sha256": "9fa3bc78244d656c3848848618e7088609d16d66ea4aeed2187bd2bcddf1b7d9",
+      "accepted_at": "2026-09-25T10:17:09+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T10:17:09+08:00",
+        "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/shot-00-signoff.md",
+        "note": "开场引导镜视频QC过:口型随对白/前2秒钩/无烧字幕/无发光眼/无品牌/语速不留白",
+        "reviewer": "claude"
+      }
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-24T18:27:18+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-female-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T18:29:35+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-female-master",
+      "cost_yuan": 0.25,
+      "sha256": "5cc9371491f5cb492fda80f00ebe7e4c963d9fc3fa3c3b7b87d552d3e6f58c27"
+    },
+    {
+      "at": "2026-09-24T18:30:16+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-female-master"
+    },
+    {
+      "at": "2026-09-24T18:32:03+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-male-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T18:34:04+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-male-master",
+      "cost_yuan": 0.25,
+      "sha256": "d8b24b8bf23f5245b036f038144fabd6c3d44d6b1d56cc3159da330ab1be56ba"
+    },
+    {
+      "at": "2026-09-24T18:34:34+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-male-master"
+    },
+    {
+      "at": "2026-09-24T18:54:59+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-female-master",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/master-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T18:54:59+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-male-master",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/master-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T21:37:32+08:00",
+      "type": "authorized_batch",
+      "count": 10,
+      "asset_ids": [
+        "houzhihoujue-shot-01-first",
+        "houzhihoujue-shot-01-last",
+        "houzhihoujue-shot-02-last",
+        "houzhihoujue-shot-03-last",
+        "houzhihoujue-shot-04-first",
+        "houzhihoujue-shot-04-last",
+        "houzhihoujue-shot-05-first",
+        "houzhihoujue-shot-06-first",
+        "houzhihoujue-shot-07-first",
+        "houzhihoujue-shot-08-first"
+      ],
+      "new_hard_cap_yuan": 3.2,
+      "new_increment_cap_yuan": 3.2,
+      "note": "stage3 shot_image：上架10张关键帧+提额(母板路线保同起点创意)",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T21:37:58+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-01-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T21:44:03+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-01-first",
+      "cost_yuan": 0.25,
+      "sha256": "50213ba57c133f20f76380250ab55721e455bac9f5e48a98ab5c8f62d509a9ad"
+    },
+    {
+      "at": "2026-09-24T21:44:25+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-01-first"
+    },
+    {
+      "at": "2026-09-24T21:51:05+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-01-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "金丝雀人工验收通过:换脸像母板+构图对+通路验证",
+      "reviewer": "user+run.sh"
+    },
+    {
+      "at": "2026-09-24T21:52:08+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-01-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T21:57:15+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-01-last",
+      "cost_yuan": 0.25,
+      "sha256": "025a7024161a34e0c11098b6178bd2b88739e869139367d65b2b8230df7ea212"
+    },
+    {
+      "at": "2026-09-24T21:57:15+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-01-last"
+    },
+    {
+      "at": "2026-09-24T21:57:16+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-02-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:05:12+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-02-last",
+      "cost_yuan": 0.25,
+      "sha256": "3adfda19eefe8857df5da0c624db9621d99b7aa6ab403e7dfb97c47e4c5c1b19"
+    },
+    {
+      "at": "2026-09-24T22:05:13+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-02-last"
+    },
+    {
+      "at": "2026-09-24T22:05:13+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-03-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:09:10+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-03-last",
+      "cost_yuan": 0.25,
+      "sha256": "a84fb26ffe321254a478e23dafc3e1f2d8488d47ca48529945a64ec4d855f795"
+    },
+    {
+      "at": "2026-09-24T22:09:10+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-03-last"
+    },
+    {
+      "at": "2026-09-24T22:09:11+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-04-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:13:01+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-04-first",
+      "cost_yuan": 0.25,
+      "sha256": "b76ebc84dae9321f14511e95f9ccb8f222676faa5f360078b9637881b3155998"
+    },
+    {
+      "at": "2026-09-24T22:13:01+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-04-first"
+    },
+    {
+      "at": "2026-09-24T22:13:02+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-04-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:19:48+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-04-last",
+      "cost_yuan": 0.25,
+      "sha256": "a558c8917d4b8dd7c7f5d3cd376b611413356178617cf2bf7a60b65644d1f843"
+    },
+    {
+      "at": "2026-09-24T22:19:49+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-04-last"
+    },
+    {
+      "at": "2026-09-24T22:19:49+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-05-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:23:48+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-05-first",
+      "cost_yuan": 0.25,
+      "sha256": "80d56e238876394d94ed905ea4355ff195a25d956bdc67a6ddbd18ad7516fe2a"
+    },
+    {
+      "at": "2026-09-24T22:23:49+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-05-first"
+    },
+    {
+      "at": "2026-09-24T22:23:49+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-06-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:28:03+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-06-first",
+      "cost_yuan": 0.25,
+      "sha256": "139eee0d55a03681fedf61f7268caa15e6abdc21096a435bc437a4575a46cec9"
+    },
+    {
+      "at": "2026-09-24T22:28:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-06-first"
+    },
+    {
+      "at": "2026-09-24T22:28:04+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-07-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:31:21+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-07-first",
+      "cost_yuan": 0.25,
+      "sha256": "54eef475e15ca97d9182632a0fdcde32d4fb36b0628d161833f8752e7e716992"
+    },
+    {
+      "at": "2026-09-24T22:31:21+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-07-first"
+    },
+    {
+      "at": "2026-09-24T22:31:22+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-08-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-24T22:34:04+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-08-first",
+      "cost_yuan": 0.25,
+      "sha256": "de2050e3ff247540d3326f61289fc58c1ef693ddf9f27ee6b1d03c46127435bd"
+    },
+    {
+      "at": "2026-09-24T22:34:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "houzhihoujue-shot-08-first"
+    },
+    {
+      "at": "2026-09-24T22:41:30+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-01-last",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:39+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-02-last",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:40+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-03-last",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:40+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-04-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:40+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-04-last",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-05-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-06-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-07-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:41:41+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-08-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/keyframes-signoff.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-24T22:45:27+08:00",
+      "type": "authorized_batch",
+      "count": 8,
+      "asset_ids": [
+        "houzhihoujue-shot-01-video",
+        "houzhihoujue-shot-02-video",
+        "houzhihoujue-shot-03-video",
+        "houzhihoujue-shot-04-video",
+        "houzhihoujue-shot-05-video",
+        "houzhihoujue-shot-06-video",
+        "houzhihoujue-shot-07-video",
+        "houzhihoujue-shot-08-video"
+      ],
+      "new_hard_cap_yuan": 10,
+      "new_increment_cap_yuan": 10,
+      "note": "上架8个shot_video单元(H3;镜1/2/3/4 FL2VA锁首尾帧,镜5-8 I2VA单首帧;各按H3最短4s计费¥0.8);提额覆盖视频批量",
+      "reviewer": "用户授权直接出交付片+Claude"
+    },
+    {
+      "at": "2026-09-24T22:45:47+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-01-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-24T22:48:59+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-01-video",
+      "cost_yuan": 0.8,
+      "sha256": "d02df1045388dd9d223527a69ca78cf66a2ab18e09942d711b78cae9b2c68478"
+    },
+    {
+      "at": "2026-09-25T05:33:12+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-03-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T05:35:35+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-03-video",
+      "cost_yuan": 0.8,
+      "sha256": "e42b7991fbeed20036edddc57a62b7ef9816d34aecca5d7a2476c1ab0a6ec725"
+    },
+    {
+      "at": "2026-09-25T05:55:32+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-01-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T05:55:32+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-03-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T05:56:19+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-02-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T05:58:41+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-02-video",
+      "cost_yuan": 0.8,
+      "sha256": "fb866405b784cbf9a635dadee9cec9e2b512aa1b31f92b2a1f004dadf0f94fb1"
+    },
+    {
+      "at": "2026-09-25T05:58:42+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-04-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T06:01:25+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-04-video",
+      "cost_yuan": 0.8,
+      "sha256": "7e57e2af476006573a08fa3969ea247da3def35f45f970b97d8f496492b81548"
+    },
+    {
+      "at": "2026-09-25T06:01:35+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-05-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T06:03:52+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-05-video",
+      "cost_yuan": 0.8,
+      "sha256": "e1235e8f4ef231f54b414e0608575f0cc50c33725add3bd89a130123ea996a82"
+    },
+    {
+      "at": "2026-09-25T06:03:52+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-06-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T06:06:10+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-06-video",
+      "cost_yuan": 0.8,
+      "sha256": "78820e6fd28a88d09f12eb7f1be1adf48017a629996740116eae453e21df9d1a"
+    },
+    {
+      "at": "2026-09-25T06:06:22+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-07-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T06:08:28+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-07-video",
+      "cost_yuan": 0.8,
+      "sha256": "cc95806d25c2c31911eea0eb79e26a13e5405574288cd90e42b81ec164160e46"
+    },
+    {
+      "at": "2026-09-25T06:08:29+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-08-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T06:10:44+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-08-video",
+      "cost_yuan": 0.8,
+      "sha256": "b284f87d0db84b7c555954e2c5428890dc64daa89123310d818b45121344a5c1"
+    },
+    {
+      "at": "2026-09-25T06:13:33+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-02-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T06:13:33+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-04-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T06:13:33+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-05-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T06:13:34+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-06-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T06:13:34+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-07-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T06:13:34+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-08-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/videos-review.html",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T10:08:59+08:00",
+      "type": "authorized_batch",
+      "count": 2,
+      "asset_ids": [
+        "houzhihoujue-shot-00-first",
+        "houzhihoujue-shot-00-video"
+      ],
+      "new_hard_cap_yuan": 12,
+      "new_increment_cap_yuan": 12,
+      "note": "增加开场引导镜shot-00(关键帧0.25+H3视频0.8),抓前2秒留存;cap 10->12",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-25T10:09:07+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-00-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T10:10:33+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-00-first",
+      "cost_yuan": 0.25,
+      "sha256": "704cff87fe51c7b7914d140054687f542652554c9f4212f604d0094d564e124f"
+    },
+    {
+      "at": "2026-09-25T10:11:31+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-00-first",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/shot-00-signoff.md",
+      "note": "开场引导镜首帧QC过:vlog并肩构图/身份一致/明亮真实/无品牌",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-25T10:11:39+08:00",
+      "type": "submission_started",
+      "asset_id": "houzhihoujue-shot-00-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T10:15:49+08:00",
+      "type": "generation_received",
+      "asset_id": "houzhihoujue-shot-00-video",
+      "cost_yuan": 0.8,
+      "sha256": "9fa3bc78244d656c3848848618e7088609d16d66ea4aeed2187bd2bcddf1b7d9"
+    },
+    {
+      "at": "2026-09-25T10:17:09+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "houzhihoujue-shot-00-video",
+      "evidence": "replication/output/test-luorong-noodles/houzhihoujue/review/shot-00-signoff.md",
+      "note": "开场引导镜视频QC过:口型随对白/前2秒钩/无烧字幕/无发光眼/无品牌/语速不留白",
+      "reviewer": "claude"
+    }
+  ]
+}

@@ -1,753 +1,115 @@
 {
   "schemaVersion": 1,
   "projectId": "wechat-channel-ads-20260912",
-  "stage": "generating_final",
-  "generation_allowed": true,
-  "title": "03 修养 杏仁七白饮 · 3A《清晨开场乐》",
+  "pilot": "05 广宝福黄金陈皮 · 《这味儿对了》",
   "promptPolicy": {
     "model": "MiniMax-H3",
     "authoringSkill": "h3-prompt-writing",
-    "reviewGate": "replication/tools/validate-h3-prompt-review.sh",
-    "note": "所有进入生成接口的最终提示词只能由 h3-prompt-writing 产出并过 H3 专用生成前校验;不得用 Seedance 字段/校验替代。"
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
   },
   "constraints": {
-    "aspectRatio": "9:16",
-    "maxGenerationSeconds": 15,
-    "targetDurationSeconds": 21.5,
-    "durationCeilingSeconds": 30,
-    "platform": "微信视频号带货短视频",
-    "minGenerationSeconds": 4,
-    "billingNote": "H3 最短4s,不足4s也按4s计费;每单元生成4s,覆盖剪辑里 trim 到内容秒数(余量作0.3s叠化handle)。"
-  },
-  "driver": {
-    "mainEngine": "音乐/节奏驱动 + 动作·事件驱动 —— 一次冲调谱成清晨开场乐,声音逐拍升级",
-    "momentum": "落粉(鼓点)→注水(持续音)→漩涡(铺底)→勺碰(清脆一拍)→搅匀(合成一体),动力来自声音层层加入",
-    "highlight": "2 句第一人称轻旁白点睛(逐句对画面,不压中段乐段)+ 收尾字幕",
-    "stitch": "声音动机做声画桥:每镜留 0.3s 尾音叠进下一镜首拍;统一暖调、同一厨房锚点",
-    "ambienceNote": "氛围只作铺底,不单独驱动;S8 三声环境加入是乐段收束,不是背景音"
-  },
-  "productFidelity": {
-    "rule": "商品还原(差不多标准):包装/品牌字样用真图母版img2img还原,远景/中景下小字略糊可接受;不纯模型臆造。",
-    "shots": [
-      "02",
-      "09"
-    ],
-    "asset": "assets/product-master.png",
-    "note": "S2拧盖、S9收尾用母版assets/product-master.png的img2img;真标签大字保真。S9因img2img不能可靠加人物动作,改为产品+成品杯收尾英雄镜(热气升腾),端杯情绪由VO2+收尾字幕承担。"
-  },
-  "audioPolicy": {
-    "mix": "冲调拟音为主奏,环境声铺底,旁白点睛;成片 loudnorm 统一响度",
-    "voiceover": "两句轻旁白:无TTS环境,改为S1/S9处第一人称烧录字幕点睛(可后续补配音);拟音由各H3分镜自带音频承担",
-    "endText": "收尾字幕后期drawtext确定性渲染(Noto CJK):『一杯冲开,清晨才算开场。｜修宸 杏仁七白饮』"
+    "aspect": "16:9",
+    "targetSeconds": 25,
+    "maxGenerationSeconds": 8,
+    "driver": "对白驱动(人物家常互动)+ 一处凑近感官兑现;iPhone17 手持 vlog 质感,中景/中远景为主,少用近景",
+    "redlines": ["不写十年陈", "不提新会核心产区", "不做年份/收藏", "不碰止咳化痰/健脾消食等功效", "不拍包装/品牌字样/玻璃罐礼盒"]
   },
   "narrativeShots": [
     {
-      "id": "01",
-      "title": "空杯·清晨静默",
-      "inputMode": "I2VA",
-      "camera": "俯侧微俯 45°,空杯居中,浅景深;极缓推 5%,窗光淡、水汽未起",
-      "soundNote": "近乎无声的清晨底噪;旁白 VO1 落在此",
-      "alignment": "VO1 起在手摆正杯的瞬间,说完静一拍再进 S2",
-      "source": {
-        "verbatim": "空杯立在清晨的厨房桌面中央,窗外光很淡,水汽未起。一只手轻轻把杯子摆正。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
+      "id": "S01",
+      "title": "男抱怨:这茶越喝越没味",
+      "source": { "storyFile": "stories/05-screenplay-locked.md", "verbatim": "这茶,越喝越没味。" },
       "requiredBeats": [
-        {
-          "id": "b01",
-          "sceneId": "kitchen",
-          "text": "空杯居中,手摆正杯,清晨静默",
-          "channels": [
-            "picture",
-            "dialogue",
-            "ambience"
-          ]
-        }
+        { "id": "S01-b1", "sceneId": "tea-table", "text": "男喝一口寡淡的茶,咂嘴搁杯,抱怨没味", "channels": ["picture", "dialogue", "action_sound"] }
       ],
       "generationUnits": [
         {
-          "id": "u01",
-          "sceneId": "kitchen",
-          "inputMode": "I2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-01-first.json"
-            ],
-            "video": "prompts/03-shot-01-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-01/images/first.png",
-            "lastFrame": null,
-            "video": "shots/shot-01/video/clip.mp4"
-          },
-          "references": [],
+          "id": "S01-U1", "sceneId": "tea-table", "durationSeconds": 5,
+          "videoMode": "I2VA",
+          "notes": "男中景正打(iPhone手持vlog质感,带居家环境);啜饮/搁杯声;对白1句。首帧锁男主身份+茶桌+透明玻璃杯清汤。",
           "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b01",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2.5s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2.5
-        }
-      ],
-      "postTasks": [
-        {
-          "id": "pt01-vo",
-          "type": "voiceover",
-          "description": "旁白 VO1『清晨第一杯,我想自己冲。』配音,对齐摆杯动作",
-          "coverage": [
-            {
-              "beatId": "b01",
-              "channels": [
-                "dialogue"
-              ]
-            }
+            { "id": "S01-U1-c1", "seconds": 5, "coverage": [ { "beatId": "S01-b1", "channels": ["picture", "dialogue", "action_sound"] } ] }
           ]
-        },
-        {
-          "id": "pt01-amb",
-          "type": "sound_design",
-          "description": "清晨静默底噪 + 极轻室内空气声",
-          "coverage": [
-            {
-              "beatId": "b01",
-              "channels": [
-                "ambience"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "title": "拧盖·开场前一拍",
-      "inputMode": "I2VA",
-      "camera": "中景自然距离静态产品亮相;轻推;商品真包装img2img(母版参考,差不多标准);拧盖声后期落点;无手部动作",
-      "soundNote": "拧盖/撕封的清脆一声,像开场前敲槌",
-      "alignment": "拧开到位=声音落点,紧接 S3 落粉第一鼓点",
-      "source": {
-        "verbatim": "手拧开杏仁七白饮的包装。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
-      "requiredBeats": [
-        {
-          "id": "b02",
-          "sceneId": "kitchen",
-          "text": "手拧开包装(商品位后期贴真图)",
-          "channels": [
-            "picture",
-            "action_sound"
-          ]
-        }
-      ],
-      "generationUnits": [
-        {
-          "id": "u02",
-          "sceneId": "kitchen",
-          "inputMode": "I2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-02-first.json"
-            ],
-            "video": "prompts/03-shot-02-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-02/images/first.png",
-            "lastFrame": null,
-            "video": "shots/shot-02/video/clip.mp4"
-          },
-          "references": [],
-          "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b02",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2
-        }
-      ],
-      "postTasks": [
-        {
-          "id": "pt02-sound",
-          "type": "sound_design",
-          "description": "拧盖/撕封清脆一声,置于开场前一拍",
-          "coverage": [
-            {
-              "beatId": "b02",
-              "channels": [
-                "action_sound"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "pt02-composite",
-          "type": "product_composite",
-          "description": "商品位后期贴真实包装图(assets/product-master.png),匹配透视/光影;不采用模型生成的包装字样"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "title": "落粉·第一鼓点",
-      "inputMode": "FL2VA",
-      "camera": "杯口俯拍近景;首帧=粉在勺中扬起,尾帧=粉落定杯底、光中散尘",
-      "soundNote": "落粉=第一下鼓点,干净有颗粒感",
-      "alignment": "粉触底瞬间对上鼓点;FL2VA 锁『扬起→落定』防漏演",
-      "source": {
-        "verbatim": "一勺粉扬起,落进杯底,第一下像鼓点,粉尘在光里散开。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
-      "requiredBeats": [
-        {
-          "id": "b03",
-          "sceneId": "kitchen",
-          "text": "一勺粉落进杯底=第一下鼓点",
-          "channels": [
-            "picture",
-            "action_sound"
-          ]
-        }
-      ],
-      "generationUnits": [
-        {
-          "id": "u03",
-          "sceneId": "kitchen",
-          "inputMode": "FL2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-03-first.json",
-              "prompts/03-shot-03-last.json"
-            ],
-            "video": "prompts/03-shot-03-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-03/images/first.png",
-            "lastFrame": "shots/shot-03/images/last.png",
-            "video": "shots/shot-03/video/clip.mp4"
-          },
-          "references": [],
-          "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b03",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2
-        }
-      ],
-      "postTasks": [
-        {
-          "id": "pt03-sound",
-          "type": "sound_design",
-          "description": "落粉鼓点,颗粒质感,作为乐段第一拍",
-          "coverage": [
-            {
-              "beatId": "b03",
-              "channels": [
-                "action_sound"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "04",
-      "title": "注水·持续音",
-      "inputMode": "FL2VA",
-      "camera": "侧近景;首帧=水线初触杯底,尾帧=水位过半、雾气微起",
-      "soundNote": "水声从单薄一线变柔和持续音,乐段铺底建立",
-      "alignment": "水线变粗=持续音渐强;FL2VA 锁水位上升",
-      "source": {
-        "verbatim": "热水注入,水声从单薄的一线变成柔和的持续音。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
-      "requiredBeats": [
-        {
-          "id": "b04",
-          "sceneId": "kitchen",
-          "text": "热水注入,水声由一线变持续音",
-          "channels": [
-            "picture",
-            "action_sound"
-          ]
-        }
-      ],
-      "generationUnits": [
-        {
-          "id": "u04",
-          "sceneId": "kitchen",
-          "inputMode": "FL2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-04-first.json",
-              "prompts/03-shot-04-last.json"
-            ],
-            "video": "prompts/03-shot-04-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-04/images/first.png",
-            "lastFrame": "shots/shot-04/images/last.png",
-            "video": "shots/shot-04/video/clip.mp4"
-          },
-          "references": [],
-          "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b04",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2.5s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2.5
-        }
-      ],
-      "postTasks": [
-        {
-          "id": "pt04-sound",
-          "type": "sound_design",
-          "description": "注水声由一线渐成柔和持续音,乐段铺底",
-          "coverage": [
-            {
-              "beatId": "b04",
-              "channels": [
-                "action_sound"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "05",
-      "title": "漩涡·卷起",
-      "inputMode": "FL2VA",
-      "camera": "杯口俯拍近景;首帧=粉浮于水面,尾帧=杯底旋出漩涡、粉被托起",
-      "soundNote": "持续音上加入低回旋质感,乐段推进",
-      "alignment": "漩涡成形对上回旋音;FL2VA 锁『浮起→旋成漩涡』",
-      "source": {
-        "verbatim": "粉被水流托起,杯底旋出一个漩涡。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
-      "requiredBeats": [
-        {
-          "id": "b05",
-          "sceneId": "kitchen",
-          "text": "粉被托起,杯底旋出漩涡",
-          "channels": [
-            "picture",
-            "action_sound"
-          ]
-        }
-      ],
-      "generationUnits": [
-        {
-          "id": "u05",
-          "sceneId": "kitchen",
-          "inputMode": "FL2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-05-first.json",
-              "prompts/03-shot-05-last.json"
-            ],
-            "video": "prompts/03-shot-05-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-05/images/first.png",
-            "lastFrame": "shots/shot-05/images/last.png",
-            "video": "shots/shot-05/video/clip.mp4"
-          },
-          "references": [],
-          "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b05",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2.5s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2.5
-        }
-      ],
-      "postTasks": [
-        {
-          "id": "pt05-sound",
-          "type": "sound_design",
-          "description": "低回旋水声叠进持续音,推进乐段",
-          "coverage": [
-            {
-              "beatId": "b05",
-              "channels": [
-                "action_sound"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "06",
-      "title": "勺碰·清脆一拍与搅匀",
-      "inputMode": "FL2VA",
-      "camera": "近景;首帧=勺尖将触杯壁、粉水分离,尾帧=勺背转动后粉水合为一体",
-      "soundNote": "勺碰杯壁清脆一拍=乐段高点;搅动声铺至均匀",
-      "alignment": "碰壁一拍是全片声音高点;FL2VA 锁『分离→均匀』状态变化",
-      "source": {
-        "verbatim": "勺子碰到杯壁,清脆一声落进节拍;勺背转动,分开的粉与水慢慢并成一体。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
-      "requiredBeats": [
-        {
-          "id": "b06",
-          "sceneId": "kitchen",
-          "text": "勺碰杯壁清脆一拍,粉水搅匀成一体",
-          "channels": [
-            "picture",
-            "action_sound"
-          ]
-        }
-      ],
-      "generationUnits": [
-        {
-          "id": "u06",
-          "sceneId": "kitchen",
-          "inputMode": "FL2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-06-first.json",
-              "prompts/03-shot-06-last.json"
-            ],
-            "video": "prompts/03-shot-06-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-06/images/first.png",
-            "lastFrame": "shots/shot-06/images/last.png",
-            "video": "shots/shot-06/video/clip.mp4"
-          },
-          "references": [],
-          "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b06",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2.5s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2.5
-        }
-      ],
-      "postTasks": [
-        {
-          "id": "pt06-sound",
-          "type": "sound_design",
-          "description": "勺碰杯壁清脆一拍(乐段高点)+ 搅动声至均匀",
-          "coverage": [
-            {
-              "beatId": "b06",
-              "channels": [
-                "action_sound"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "07",
-      "title": "杯壁·稠润纹理",
-      "inputMode": "I2VA",
-      "camera": "极近景,杯内壁细滑挂流;微微转动展现稠度;真实质感不夸张",
-      "soundNote": "乐段短暂留白,只余细微流动声",
-      "alignment": "以质感镜做半拍呼吸,承接 S8 环境加入",
-      "source": {
-        "verbatim": "杯壁挂下细滑、稠润的纹理。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
-      "requiredBeats": [
-        {
-          "id": "b07",
-          "sceneId": "kitchen",
-          "text": "杯壁细滑稠润纹理(香滑糯质感)",
-          "channels": [
-            "picture"
-          ]
-        }
-      ],
-      "generationUnits": [
-        {
-          "id": "u07",
-          "sceneId": "kitchen",
-          "inputMode": "I2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-07-first.json"
-            ],
-            "video": "prompts/03-shot-07-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-07/images/first.png",
-            "lastFrame": null,
-            "video": "shots/shot-07/video/clip.mp4"
-          },
-          "references": [],
-          "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b07",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2
         }
       ],
       "postTasks": []
     },
     {
-      "id": "08",
-      "title": "清晨加入·乐止收束",
-      "inputMode": "I2VA",
-      "camera": "三连快切:窗帘被拉开→水壶咔哒停→早餐盘落桌;每切一微运镜,统一暖调",
-      "soundNote": "三声环境依次加入,在勺背带起质感的一刻收住(乐段收束)",
-      "alignment": "三声=乐段收尾三拍,末拍静一下再进 S9;transition 声画桥",
-      "source": {
-        "verbatim": "清晨加入进来:窗帘被拉开,水壶咔哒停住,早餐盘落到桌上;乐声在勺背带起质感的一刻收住。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
+      "id": "S02",
+      "title": "女丢陈皮:加片这个",
+      "source": { "storyFile": "stories/05-screenplay-locked.md", "verbatim": "加片这个。" },
       "requiredBeats": [
-        {
-          "id": "b08",
-          "sceneId": "kitchen",
-          "text": "清晨加入:窗帘/水壶/盘三连,乐止收束",
-          "channels": [
-            "picture",
-            "ambience",
-            "transition"
-          ]
-        }
+        { "id": "S02-b1", "sceneId": "tea-table", "text": "女捏起一片大而卷曲沟壑纵横的干陈皮丢进男的杯里,说加片这个", "channels": ["picture", "dialogue", "action_sound"] }
       ],
       "generationUnits": [
         {
-          "id": "u08",
-          "sceneId": "kitchen",
-          "inputMode": "I2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-08-first.json"
-            ],
-            "video": "prompts/03-shot-08-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-08/images/first.png",
-            "lastFrame": null,
-            "video": "shots/shot-08/video/clip.mp4"
-          },
-          "references": [],
+          "id": "S02-U1", "sceneId": "tea-table", "durationSeconds": 5,
+          "videoMode": "I2VA",
+          "notes": "女反打中景(手持vlog);拈起一整片大陈皮,中景即见'好大一片'(料好可视),丢入脆响;对白1句。不上纹理极近景。",
           "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b08",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2.5s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2.5
+            { "id": "S02-U1-c1", "seconds": 5, "coverage": [ { "beatId": "S02-b1", "channels": ["picture", "dialogue", "action_sound"] } ] }
+          ]
         }
       ],
-      "postTasks": [
-        {
-          "id": "pt08-amb",
-          "type": "sound_design",
-          "description": "窗帘/水壶/盘三声环境依次加入,作乐段收尾三拍",
-          "coverage": [
-            {
-              "beatId": "b08",
-              "channels": [
-                "ambience"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "pt08-trans",
-          "type": "transition",
-          "description": "乐止处 0.3s 尾音叠化 + 静半拍,桥接 S9 端杯",
-          "coverage": [
-            {
-              "beatId": "b08",
-              "channels": [
-                "transition"
-              ]
-            }
-          ]
-        }
-      ]
+      "postTasks": []
     },
     {
-      "id": "09",
-      "title": "端杯·收尾旁白与字幕",
-      "inputMode": "I2VA",
-      "camera": "中近景静态收尾英雄镜:真包装罐+成品奶白杯冒热气留桌;慢推热气升腾;img2img母版(差不多标准);人端杯动作略,VO2+字幕承担情绪",
-      "soundNote": "旁白 VO2 落在端起动作;收尾字幕后期渲染",
-      "alignment": "VO2 起在端杯瞬间,收尾字幕在热气稳定后淡入",
-      "source": {
-        "verbatim": "人坐下,先看一眼冲好的杯,再把它端起,热气升起,包装与杯中真实状态一起留在桌面。",
-        "storyFile": "stories/03-3a-shooting-script.md"
-      },
+      "id": "S03",
+      "title": "凑近兑现:注水舒展转琥珀",
+      "source": { "storyFile": "stories/05-screenplay-locked.md", "verbatim": "陈皮在水流里缓缓舒展、翻卷,茶汤从清淡的黄一点点转深,透出琥珀色。" },
       "requiredBeats": [
-        {
-          "id": "b09",
-          "sceneId": "kitchen",
-          "text": "人坐下端杯,热气与真实包装留桌;收尾旁白+字幕",
-          "channels": [
-            "picture",
-            "dialogue",
-            "onscreen_text"
-          ]
-        }
+        { "id": "S03-b1", "sceneId": "tea-table", "text": "热水注入,陈皮舒展翻卷,汤色由清黄转深透出琥珀(状态变化兑现)", "channels": ["picture", "action_sound"] }
       ],
       "generationUnits": [
         {
-          "id": "u09",
-          "sceneId": "kitchen",
-          "inputMode": "I2VA",
-          "durationSeconds": 4,
-          "prompts": {
-            "images": [
-              "prompts/03-shot-09-first.json"
-            ],
-            "video": "prompts/03-shot-09-video.json"
-          },
-          "media": {
-            "firstFrame": "shots/shot-09/images/first.png",
-            "lastFrame": null,
-            "video": "shots/shot-09/video/clip.mp4"
-          },
-          "references": [
-            "assets/product-master.png"
-          ],
+          "id": "S03-U1", "sceneId": "tea-table", "durationSeconds": 6,
+          "videoMode": "FL2VA",
+          "notes": "全片唯一凑近镜(vlog手持怼近杯口,非电影微距)。状态变化必用FL2VA锁首尾帧:首帧=干皮卷曲+清黄茶;尾帧=陈皮舒展+琥珀汤。注水声,无对白。单一生成难题=舒展+汤色转变。禁夸成浓黑。",
           "cuts": [
-            {
-              "id": "c01",
-              "seconds": 4,
-              "coverage": [
-                {
-                  "beatId": "b09",
-                  "channels": [
-                    "picture"
-                  ]
-                }
-              ],
-              "note": "生成4s;成片约用 2.5s,余量作叠化handle/trim"
-            }
-          ],
-          "contentSeconds": 2.5
+            { "id": "S03-U1-c1", "seconds": 6, "coverage": [ { "beatId": "S03-b1", "channels": ["picture", "action_sound"] } ] }
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "S04",
+      "title": "男兑现那一口:这味儿对了",
+      "source": { "storyFile": "stories/05-screenplay-locked.md", "verbatim": "……哎,这味儿对了。" },
+      "requiredBeats": [
+        { "id": "S04-b1", "sceneId": "tea-table", "text": "男端杯喝一口愣住,神情转变,说这味儿对了", "channels": ["picture", "dialogue", "action_sound"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "S04-U1", "sceneId": "tea-table", "durationSeconds": 5,
+          "videoMode": "FL2VA",
+          "notes": "表情状态变化镜(中景,同S01轴,手持vlog),FL2VA:首帧=举杯将饮/狐疑;尾帧=愣住后眉挑点头。啜饮声,对白1句。不上表情近景。",
+          "cuts": [
+            { "id": "S04-U1-c1", "seconds": 5, "coverage": [ { "beatId": "S04-b1", "channels": ["picture", "dialogue", "action_sound"] } ] }
+          ]
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "S05",
+      "title": "女收尾+落幅同框+CTA字幕",
+      "source": { "storyFile": "stories/05-screenplay-locked.md", "verbatim": "早跟你说的。" },
+      "requiredBeats": [
+        { "id": "S05-b1", "sceneId": "tea-table", "text": "女瞥他一眼端起自己的杯,说早跟你说的;落幅琥珀茶与大陈皮同框;后期浮现CTA字幕", "channels": ["picture", "dialogue", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "S05-U1", "sceneId": "tea-table", "durationSeconds": 5,
+          "videoMode": "I2VA",
+          "notes": "女中景对白1句后镜头轻退/摇至中远景,落幅=老两口+玻璃杯琥珀茶+碟中大陈皮同框(带居家环境)。CTA字幕后期加,画面留干净下区。不上静物近景。",
+          "cuts": [
+            { "id": "S05-U1-c1", "seconds": 5, "coverage": [ { "beatId": "S05-b1", "channels": ["picture", "dialogue"] } ] }
+          ]
         }
       ],
       "postTasks": [
-        {
-          "id": "pt09-vo",
-          "type": "voiceover",
-          "description": "旁白 VO2『等它冲开这一会儿,一天才算醒过来。』对齐端杯",
-          "coverage": [
-            {
-              "beatId": "b09",
-              "channels": [
-                "dialogue"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "pt09-text",
-          "type": "onscreen_text",
-          "description": "收尾字幕『一杯冲开,清晨才算开场。｜修养 杏仁七白饮』后期确定性渲染",
-          "coverage": [
-            {
-              "beatId": "b09",
-              "channels": [
-                "onscreen_text"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "pt09-composite",
-          "type": "product_composite",
-          "description": "桌面商品位后期贴真实包装图(assets/product-master.png),与杯中真实状态一致"
-        }
+        { "id": "S05-t1", "type": "onscreen_text", "description": "后期确定性渲染收尾CTA字幕:一片大陈皮,平淡的茶也有味道。(留干净下区,不依赖模型写字)", "coverage": [ { "beatId": "S05-b1", "channels": ["onscreen_text"] } ] }
       ]
     }
   ]

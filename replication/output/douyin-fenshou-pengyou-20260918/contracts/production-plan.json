@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "projectId": "fenshou-pengyou",
+  "title": "分手后要不要做朋友",
+  "note": "抖音 16:9 全屏、约 64.5s、MiniMax-H3。男线↔女线交叉硬切：男主答『做朋友』、女主答『不联系』，两人各在自己的场景里被画外音好友(朋友男声/闺蜜女声，均画外音 V.O.、不出镜)追问。逐拍(拍1..拍9 含拍3.5/拍4.5)映射为 11 个叙事镜。景别中景为主：道具特写仅拍1/拍9(手机)，近景仅拍5一次(男主微推)。男主线=SC_M(咖啡馆/桌前)、女主线=SC_F(家/桌前)，交叉剪辑为剪辑期拼接，每个生成单元只属于一个场景。V.O. 台词落在对应出镜者反应单元的 dialogue 通道内，不产生额外出镜人物。字幕(出镜对白+V.O.)一律 postTasks 后期统一烧，不直出。居家/咖啡馆正常明亮通透，不压暗。",
+  "revision": "v1-2026-09-18",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": { "maxGenerationSeconds": 15 },
+  "estTotalDurationSec": 64.5,
+  "aspectRatio": "16:9",
+  "casting": {
+    "male": "男主母板 assets/master-male.png（东亚/中国人面孔，嘴硬→击穿→沉默，用上身表演）",
+    "female": "女主母板 assets/master-female.png（东亚/中国人面孔，洒脱假面→手先叛变→口是心非被戳破）",
+    "vo": "朋友(男声)、闺蜜(女声) 均画外音 V.O.，独立音轨后期配(豆包 seed-audio)，不出镜、不对口型、无母板"
+  },
+  "subtitlePolicy": "H3 只出中文配音+表演；出镜对白与 V.O. 字幕后期统一烧(底部安全区、统一样式)；H3 生成后必查是否误烧字幕，有残留走 anti-subtitle 重生+QC。",
+  "narrativeShots": [
+    {
+      "id": "SH01",
+      "title": "拍1·道具特写首帧：男手机悬删除→硬切女手机压拉黑，都停住没按(钩子，无台词)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "指腹蹭屏边" },
+      "watchFocus": "双机拇指/指尖悬在删除键与拉黑键上方、都停住没落下；无台词，硬切对撞开场",
+      "requiredBeats": [
+        { "id": "B1M", "sceneId": "SC_M", "text": "道具特写男主手机：拇指悬删除好友键上方约1cm、悬停1s、指腹蹭屏边、收回，硬切到女手机", "channels": ["picture", "action_sound", "transition"] },
+        { "id": "B1F", "sceneId": "SC_F", "text": "道具特写女主手机：指尖压加入黑名单键边缘、指甲微微反白、停住、没按(同一女生头像)", "channels": ["picture", "action_sound"] }
+      ],
+      "generationUnits": [
+        { "id": "SH01-U1", "sceneId": "SC_M", "durationSeconds": 1.5, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH01-U1-first.json"], "video": "prompts/SH01-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH01/images/SH01-U1-first.png", "video": "shots/shot-SH01/video/SH01-U1.mp4" },
+          "cuts": [
+            { "id": "SH01-U1-C1", "seconds": 1.5, "note": "男手机拇指悬删除键、悬停、蹭屏边收回；末尾硬切", "coverage": [{ "beatId": "B1M", "channels": ["picture", "action_sound", "transition"] }] }
+          ]
+        },
+        { "id": "SH01-U2", "sceneId": "SC_F", "durationSeconds": 1.5, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH01-U2-first.json"], "video": "prompts/SH01-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH01/images/SH01-U2-first.png", "video": "shots/shot-SH01/video/SH01-U2.mp4" },
+          "cuts": [
+            { "id": "SH01-U2-C1", "seconds": 1.5, "note": "女手机指尖压拉黑键、指甲反白、停住没按", "coverage": [{ "beatId": "B1F", "channels": ["picture", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "硬切进 SH02"
+    },
+    {
+      "id": "SH02",
+      "title": "拍2·被追问：V.O.朋友『不可惜?』压男主反应 / V.O.闺蜜压女主反应(中景对切)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "少提那两个字" },
+      "watchFocus": "男主听到『可惜』视线下滑、握杯手指顿、肩微沉；女主端杯手停半空、嘴角松又抿",
+      "requiredBeats": [
+        { "id": "B2M", "sceneId": "SC_M", "text": "V.O.朋友『你俩那么好,说断就断,不可惜?』压在男主反应上：男主视线从对面滑到桌面、握杯手指顿一下、肩微沉才抬眼", "channels": ["picture", "dialogue", "onscreen_text"] },
+        { "id": "B2F", "sceneId": "SC_F", "text": "V.O.闺蜜『你俩那么亲,装不认识,你舍得?』压在女主反应上：女主端杯的手停在半空、嘴角刚松开又抿住、身体侧过去一点", "channels": ["picture", "dialogue", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH02-U1", "sceneId": "SC_M", "durationSeconds": 2.1, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH02-U1-first.json"], "video": "prompts/SH02-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH02/images/SH02-U1-first.png", "video": "shots/shot-SH02/video/SH02-U1.mp4" },
+          "cuts": [
+            { "id": "SH02-U1-C1", "seconds": 2.1, "note": "男主中景听 V.O.朋友并反应；V.O. 音轨走 dialogue 通道", "coverage": [{ "beatId": "B2M", "channels": ["picture", "dialogue"] }] }
+          ]
+        },
+        { "id": "SH02-U2", "sceneId": "SC_F", "durationSeconds": 2.1, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH02-U2-first.json"], "video": "prompts/SH02-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH02/images/SH02-U2-first.png", "video": "shots/shot-SH02/video/SH02-U2.mp4" },
+          "cuts": [
+            { "id": "SH02-U2-C1", "seconds": 2.1, "note": "女主中景听 V.O.闺蜜并反应；V.O. 音轨走 dialogue 通道", "coverage": [{ "beatId": "B2F", "channels": ["picture", "dialogue"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH02-PT1", "type": "onscreen_text", "description": "字幕后期统一烧：V.O.朋友『你俩那么好,说断就断,不可惜?』/ V.O.闺蜜『你俩那么亲,装不认识,你舍得?』", "coverage": [{ "beatId": "B2M", "channels": ["onscreen_text"] }, { "beatId": "B2F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH01", "linkNext": "硬切进 SH03"
+    },
+    {
+      "id": "SH03",
+      "title": "拍3·各自嘴硬：男主『可惜,不等于复合』/ 女主『舍得,才要断干净』(中景对切)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "不等于复合" },
+      "watchFocus": "男主说不等于复合上身坐直双手平放稳住；女主『舍得』脆快、『舍不得』肩塌、拇指抠指甲",
+      "requiredBeats": [
+        { "id": "B3M", "sceneId": "SC_M", "text": "男主出镜『可惜。但可惜,不等于复合。』：说不等于复合时上身坐直、双手平放桌上稳住", "channels": ["picture", "dialogue", "onscreen_text"] },
+        { "id": "B3F", "sceneId": "SC_F", "text": "女主出镜『舍得。舍不得,才要断干净。』：『舍得』出口快而脆、『舍不得』肩塌一点、拇指无意识抠另一只手指甲", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH03-U1", "sceneId": "SC_M", "durationSeconds": 1.7, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH03-U1-first.json"], "video": "prompts/SH03-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH03/images/SH03-U1-first.png", "video": "shots/shot-SH03/video/SH03-U1.mp4" },
+          "cuts": [
+            { "id": "SH03-U1-C1", "seconds": 1.7, "note": "男主出镜台词+坐直双手平放", "coverage": [{ "beatId": "B3M", "channels": ["picture", "dialogue"] }] }
+          ]
+        },
+        { "id": "SH03-U2", "sceneId": "SC_F", "durationSeconds": 1.8, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH03-U2-first.json"], "video": "prompts/SH03-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH03/images/SH03-U2-first.png", "video": "shots/shot-SH03/video/SH03-U2.mp4" },
+          "cuts": [
+            { "id": "SH03-U2-C1", "seconds": 1.8, "note": "女主出镜台词+抠指甲肩塌", "coverage": [{ "beatId": "B3F", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH03-PT1", "type": "onscreen_text", "description": "字幕后期统一烧：『可惜。但可惜,不等于复合。』/『舍得。舍不得,才要断干净。』", "coverage": [{ "beatId": "B3M", "channels": ["onscreen_text"] }, { "beatId": "B3F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH02", "linkNext": "硬切进 SH04"
+    },
+    {
+      "id": "SH04",
+      "title": "拍3.5·第一道裂缝：男主『不想把她彻底删掉』眼神扫手机 / 女主『难舍才更要断』(中景对切)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "把她彻底删掉" },
+      "watchFocus": "男主听『不在乎』手指在桌面停住、说『彻底删掉』眼神扫向手机又移开；女主下巴微抬后靠、尾音发虚",
+      "requiredBeats": [
+        { "id": "B35M", "sceneId": "SC_M", "text": "V.O.朋友『真放下,是不在乎联不联系。』／男主出镜『我只是不想,把她彻底删掉。』：听『不在乎』手指在桌面停住、说『彻底删掉』眼神扫向手机又移开", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] },
+        { "id": "B35F", "sceneId": "SC_F", "text": "V.O.闺蜜『你俩以前那么难舍难分。』／女主出镜『就因为难舍,才更要断。』：下巴微抬(倔)、身体往椅背后靠、尾音发虚", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH04-U1", "sceneId": "SC_M", "durationSeconds": 3.7, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH04-U1-first.json"], "video": "prompts/SH04-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH04/images/SH04-U1-first.png", "video": "shots/shot-SH04/video/SH04-U1.mp4" },
+          "cuts": [
+            { "id": "SH04-U1-C1", "seconds": 3.7, "note": "男主出镜台词嵌 V.O.朋友追问；手指停桌面+眼神扫手机(action_sound)", "coverage": [{ "beatId": "B35M", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        },
+        { "id": "SH04-U2", "sceneId": "SC_F", "durationSeconds": 3.8, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH04-U2-first.json"], "video": "prompts/SH04-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH04/images/SH04-U2-first.png", "video": "shots/shot-SH04/video/SH04-U2.mp4" },
+          "cuts": [
+            { "id": "SH04-U2-C1", "seconds": 3.8, "note": "女主出镜台词嵌 V.O.闺蜜追问；后靠尾音虚(action_sound)", "coverage": [{ "beatId": "B35F", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH04-PT1", "type": "onscreen_text", "description": "字幕后期统一烧：V.O.朋友『真放下,是不在乎联不联系。』/男主『我只是不想,把她彻底删掉。』/ V.O.闺蜜『你俩以前那么难舍难分。』/女主『就因为难舍,才更要断。』", "coverage": [{ "beatId": "B35M", "channels": ["onscreen_text"] }, { "beatId": "B35F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH03", "linkNext": "硬切进 SH05"
+    },
+    {
+      "id": "SH05",
+      "title": "拍4·『既要又要』被戳：男主僵住把脸别向一侧 / 女主『绝情总好过纠缠』肩塌(中景对切)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "放下不等于删除" },
+      "watchFocus": "男主讲道理前倾摆手→听到『既要又要』整个人僵住0.5s、手停半空、往椅背靠、把脸别向一侧；女主说『绝情』像辩解、吸气、肩明显塌下去",
+      "requiredBeats": [
+        { "id": "B4M", "sceneId": "SC_M", "text": "V.O.朋友『留着她当朋友,这叫放下?』／男主出镜『放下不等于删除。留个朋友的位置,不越界,不奢望重来。』／V.O.朋友『你这是既要,又要。』：讲道理时身体前倾手在桌上摆，听到『既要又要』整个人僵住0.5s、手停半空、随即往椅背一靠、把脸别向一侧", "channels": ["picture", "dialogue", "action_sound", "transition", "onscreen_text"] },
+        { "id": "B4F", "sceneId": "SC_F", "text": "女主出镜『绝情,总好过纠缠。』：说『绝情』正对镜头方向(像辩解)、说完吸一口气、肩明显塌下去", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH05-U1", "sceneId": "SC_M", "durationSeconds": 5.4, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH05-U1-first.json"], "video": "prompts/SH05-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH05/images/SH05-U1-first.png", "video": "shots/shot-SH05/video/SH05-U1.mp4" },
+          "cuts": [
+            { "id": "SH05-U1-C1", "seconds": 2.7, "note": "男主出镜讲道理+嵌 V.O.朋友『这叫放下?』；前倾摆手", "coverage": [{ "beatId": "B4M", "channels": ["picture", "dialogue"] }] },
+            { "id": "SH05-U1-C2", "seconds": 2.7, "note": "V.O.朋友『既要又要』击中→男主僵住0.5s别脸(action_sound)、随即硬切走(transition)", "coverage": [{ "beatId": "B4M", "channels": ["action_sound", "transition"] }] }
+          ]
+        },
+        { "id": "SH05-U2", "sceneId": "SC_F", "durationSeconds": 3.8, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH05-U2-first.json"], "video": "prompts/SH05-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH05/images/SH05-U2-first.png", "video": "shots/shot-SH05/video/SH05-U2.mp4" },
+          "cuts": [
+            { "id": "SH05-U2-C1", "seconds": 3.8, "note": "女主出镜『绝情总好过纠缠』+吸气肩塌(action_sound)", "coverage": [{ "beatId": "B4F", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH05-PT1", "type": "onscreen_text", "description": "字幕后期统一烧：V.O.朋友『留着她当朋友,这叫放下?』/男主『放下不等于删除。留个朋友的位置,不越界,不奢望重来。』/ V.O.朋友『你这是既要,又要。』/女主『绝情,总好过纠缠。』", "coverage": [{ "beatId": "B4M", "channels": ["onscreen_text"] }, { "beatId": "B4F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH04", "linkNext": "硬切进 SH06"
+    },
+    {
+      "id": "SH06",
+      "title": "拍4.5·前置金句(约32s/50%)：女主『还想做朋友…总有一个人还在等机会』(中景女主)",
+      "sceneId": "SC_F",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "还在等机会" },
+      "watchFocus": "女主说『还在等机会』视线飘向窗外/别处、端杯的手没动、说完才把目光收回",
+      "requiredBeats": [
+        { "id": "B45F", "sceneId": "SC_F", "text": "女主出镜金句『体面?分手还想做朋友,不是坦荡,是总有一个人,还在等机会。』：说『还在等机会』视线飘向窗外别处、端杯的手没动、说完才把目光收回", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH06-U1", "sceneId": "SC_F", "durationSeconds": 5.6, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH06-U1-first.json"], "video": "prompts/SH06-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH06/images/SH06-U1-first.png", "video": "shots/shot-SH06/video/SH06-U1.mp4" },
+          "cuts": [
+            { "id": "SH06-U1-C1", "seconds": 5.6, "note": "女主出镜前置金句+视线飘窗外收回(action_sound)", "coverage": [{ "beatId": "B45F", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH06-PT1", "type": "onscreen_text", "description": "字幕后期统一烧(前置金句可略加权重仍守统一样式)：『体面?分手还想做朋友,不是坦荡,是总有一个人,还在等机会。』", "coverage": [{ "beatId": "B45F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH05", "linkNext": "硬切进 SH07"
+    },
+    {
+      "id": "SH07",
+      "title": "拍5·击穿点(唯一近景)：男主『曾经那么爱都会消失吗/真的舍得再无音讯』声画交叉压女主难过画面",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "曾经那么爱" },
+      "watchFocus": "男主唯一近景微推、望向空处眼眶泛红光不落泪；问句声音不断，画面切女主：指尖顿在拉黑键上没按下、肩一沉、别开眼、握手机的手收紧、呼吸卡一下",
+      "requiredBeats": [
+        { "id": "B5M", "sceneId": "SC_M", "text": "男主出镜『不是既要又要。我只是……舍不得。』/『曾经那么爱,都会消失吗?』(唯一近景微推、望向空处眼眶泛红光不落泪)/『真的舍得,从此再无音讯?不会难过吗?』，问句声音不断随即切女主", "channels": ["picture", "dialogue", "transition", "onscreen_text"] },
+        { "id": "B5F", "sceneId": "SC_F", "text": "男主问句声音压在女主画面上：女主(中景)指尖顿在拉黑键上没按下、肩一沉、别开眼望向别处、握手机的手收紧、呼吸卡一下", "channels": ["picture", "action_sound"] }
+      ],
+      "generationUnits": [
+        { "id": "SH07-U1", "sceneId": "SC_M", "durationSeconds": 6.0, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH07-U1-first.json"], "video": "prompts/SH07-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH07/images/SH07-U1-first.png", "video": "shots/shot-SH07/video/SH07-U1.mp4" },
+          "cuts": [
+            { "id": "SH07-U1-C1", "seconds": 3.0, "note": "男主出镜『不是既要又要…舍不得』+起问句", "coverage": [{ "beatId": "B5M", "channels": ["picture", "dialogue"] }] },
+            { "id": "SH07-U1-C2", "seconds": 3.0, "note": "唯一近景微推『曾经那么爱都会消失吗』眼眶泛红，问句声不断切回(transition)", "coverage": [{ "beatId": "B5M", "channels": ["transition"] }] }
+          ]
+        },
+        { "id": "SH07-U2", "sceneId": "SC_F", "durationSeconds": 3.8, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH07-U2-first.json"], "video": "prompts/SH07-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH07/images/SH07-U2-first.png", "video": "shots/shot-SH07/video/SH07-U2.mp4" },
+          "cuts": [
+            { "id": "SH07-U2-C1", "seconds": 3.8, "note": "女主中景无台词表演：指尖顿拉黑键、肩沉别眼、手收紧、呼吸卡(action_sound)；男主问句声画交叉于剪辑期贴入", "coverage": [{ "beatId": "B5F", "channels": ["picture", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH07-PT1", "type": "onscreen_text", "description": "字幕后期统一烧(男主问句金句压女主画面)：『不是既要又要。我只是……舍不得。』/『曾经那么爱,都会消失吗?』/『真的舍得,从此再无音讯?不会难过吗?』", "coverage": [{ "beatId": "B5M", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH06", "linkNext": "硬切进 SH08"
+    },
+    {
+      "id": "SH08",
+      "title": "拍6·被说中：V.O.朋友『你是还没接受——她走了』，男主扣手机靠椅背(中景男主)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "她走了" },
+      "watchFocus": "男主身体僵住、想开口手抬了一下又放下、把手机屏幕朝下扣在桌上(轻但决绝)、往椅背一靠、视线落桌面不动",
+      "requiredBeats": [
+        { "id": "B6M", "sceneId": "SC_M", "text": "V.O.朋友『你不是想做朋友。你是还没接受——她走了。』：男主身体僵住、手抬了一下又放下、把手机屏幕朝下扣在桌上、往椅背一靠、视线落桌面不动", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH08-U1", "sceneId": "SC_M", "durationSeconds": 4.2, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH08-U1-first.json"], "video": "prompts/SH08-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH08/images/SH08-U1-first.png", "video": "shots/shot-SH08/video/SH08-U1.mp4" },
+          "cuts": [
+            { "id": "SH08-U1-C1", "seconds": 4.2, "note": "男主中景听 V.O.朋友补刀(dialogue)+扣手机靠椅背(action_sound)", "coverage": [{ "beatId": "B6M", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH08-PT1", "type": "onscreen_text", "description": "字幕后期统一烧：V.O.朋友『你不是想做朋友。你是还没接受——她走了。』", "coverage": [{ "beatId": "B6M", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH07", "linkNext": "硬切进 SH09"
+    },
+    {
+      "id": "SH09",
+      "title": "拍7·各自留证据：男主『留着至少不是假的』摩挲头像 / 女主『所以我不见』反扣手机(中景对切)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "至少不是假的" },
+      "watchFocus": "男主拇指反复摩挲头像不点开不删、摩挲三下停住(证据①)；女主『做不到没感觉』垂眼、『所以我不见』抬眼、把手机反扣在腿上",
+      "requiredBeats": [
+        { "id": "B7M", "sceneId": "SC_M", "text": "男主出镜『删了就真没了。留着,至少不是假的。』：手机拿在手里、拇指反复摩挲那个头像(不点开不删)、摩挲三下停住(证据①)", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] },
+        { "id": "B7F", "sceneId": "SC_F", "text": "女主出镜『见到他,我做不到没感觉。所以我不见。』：『做不到没感觉』垂眼看桌、『所以我不见』才抬眼、把手机反扣在腿上", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH09-U1", "sceneId": "SC_M", "durationSeconds": 3.5, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH09-U1-first.json"], "video": "prompts/SH09-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH09/images/SH09-U1-first.png", "video": "shots/shot-SH09/video/SH09-U1.mp4" },
+          "cuts": [
+            { "id": "SH09-U1-C1", "seconds": 3.5, "note": "男主出镜台词+摩挲头像三下停住(action_sound·证据①)", "coverage": [{ "beatId": "B7M", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        },
+        { "id": "SH09-U2", "sceneId": "SC_F", "durationSeconds": 3.5, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH09-U2-first.json"], "video": "prompts/SH09-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH09/images/SH09-U2-first.png", "video": "shots/shot-SH09/video/SH09-U2.mp4" },
+          "cuts": [
+            { "id": "SH09-U2-C1", "seconds": 3.5, "note": "女主出镜台词+垂眼后抬眼、手机反扣腿上(action_sound)", "coverage": [{ "beatId": "B7F", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH09-PT1", "type": "onscreen_text", "description": "字幕后期统一烧：『删了就真没了。留着,至少不是假的。』/『见到他,我做不到没感觉。所以我不见。』", "coverage": [{ "beatId": "B7M", "channels": ["onscreen_text"] }, { "beatId": "B7F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH08", "linkNext": "硬切进 SH10"
+    },
+    {
+      "id": "SH10",
+      "title": "拍8·结尾对撞(约58s)：男主『做朋友』↔女主『不联系』贴身快切",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "做朋友" },
+      "watchFocus": "男主说『做朋友』前喉头动一下(中景可见吞咽)、上身坐正、手按桌上；女主说『不联系』下颌一收、立刻把身体转开、别开眼(怕自己反悔)",
+      "requiredBeats": [
+        { "id": "B8M", "sceneId": "SC_M", "text": "V.O.朋友『所以,你的答案是?』男主出镜『做朋友。』：说前喉头动一下(中景可见吞咽)、上身坐正、手按桌上，硬切到女主", "channels": ["picture", "dialogue", "action_sound", "transition", "onscreen_text"] },
+        { "id": "B8F", "sceneId": "SC_F", "text": "女主出镜『不联系。』：下颌一收、说完立刻把身体转开、别开眼(怕自己反悔)", "channels": ["picture", "dialogue", "action_sound", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        { "id": "SH10-U1", "sceneId": "SC_M", "durationSeconds": 2.5, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH10-U1-first.json"], "video": "prompts/SH10-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH10/images/SH10-U1-first.png", "video": "shots/shot-SH10/video/SH10-U1.mp4" },
+          "cuts": [
+            { "id": "SH10-U1-C1", "seconds": 2.5, "note": "男主出镜『做朋友』+吞咽坐正(action_sound)+末尾硬切对撞(transition)；含 V.O.朋友追问", "coverage": [{ "beatId": "B8M", "channels": ["picture", "dialogue", "action_sound", "transition"] }] }
+          ]
+        },
+        { "id": "SH10-U2", "sceneId": "SC_F", "durationSeconds": 2.5, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH10-U2-first.json"], "video": "prompts/SH10-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH10/images/SH10-U2-first.png", "video": "shots/shot-SH10/video/SH10-U2.mp4" },
+          "cuts": [
+            { "id": "SH10-U2-C1", "seconds": 2.5, "note": "女主出镜『不联系』+下颌收身体转开别眼(action_sound)", "coverage": [{ "beatId": "B8F", "channels": ["picture", "dialogue", "action_sound"] }] }
+          ]
+        }
+      ],
+      "postTasks": [
+        { "id": "SH10-PT1", "type": "onscreen_text", "description": "字幕后期统一烧(结尾对撞)：V.O.朋友『所以,你的答案是?』/男主『做朋友。』/女主『不联系。』", "coverage": [{ "beatId": "B8M", "channels": ["onscreen_text"] }, { "beatId": "B8F", "channels": ["onscreen_text"] }] }
+      ],
+      "linkPrev": "承接 SH09", "linkNext": "硬切进 SH11"
+    },
+    {
+      "id": "SH11",
+      "title": "拍9·匹配剪辑收尾：男锁屏合照屏保多停(证据③) →同一张合照MATCH CUT→ 女按下拉黑却没换合照(证据②)黑场(无台词)",
+      "sceneId": "SC_M",
+      "style": "PRESENT-DAY-BRIGHT",
+      "source": { "storyFile": "story/screenplay.md", "verbatim": "屏保是那张合照" },
+      "watchFocus": "男拇指从删除键收回、反手锁屏、屏保是那张合照、手多停0.5s才放下(证据③)→同一张合照匹配剪辑→女按下拉黑(指甲反白终于按下)、锁屏、屏保仍是同一张合照没换、手指在合照上停一下才翻扣(证据②)、黑场",
+      "requiredBeats": [
+        { "id": "B9M", "sceneId": "SC_M", "text": "道具特写男手机：拇指从删除键收回、反手锁屏、屏保是那张合照、手多停0.5s才放下(证据③)，以合照匹配剪辑接女手机", "channels": ["picture", "action_sound", "transition"] },
+        { "id": "B9F", "sceneId": "SC_F", "text": "道具特写女手机(匹配剪辑同一张合照)：按下拉黑(指甲反白终于按下)、锁屏、屏保仍是同一张合照没换、手指在合照上停一下才翻扣(证据②)，黑场", "channels": ["picture", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        { "id": "SH11-U1", "sceneId": "SC_M", "durationSeconds": 2.7, "mode": "I2VA",
+          "references": ["assets/master-male.png"],
+          "prompts": { "images": ["prompts/SH11-U1-first.json"], "video": "prompts/SH11-U1-video.json" },
+          "media": { "firstFrame": "shots/shot-SH11/images/SH11-U1-first.png", "video": "shots/shot-SH11/video/SH11-U1.mp4" },
+          "cuts": [
+            { "id": "SH11-U1-C1", "seconds": 2.7, "note": "男手机反手锁屏合照屏保、手多停0.5s(action_sound)，以合照做匹配剪辑(transition)", "coverage": [{ "beatId": "B9M", "channels": ["picture", "action_sound", "transition"] }] }
+          ]
+        },
+        { "id": "SH11-U2", "sceneId": "SC_F", "durationSeconds": 2.8, "mode": "I2VA",
+          "references": ["assets/master-female.png"],
+          "prompts": { "images": ["prompts/SH11-U2-first.json"], "video": "prompts/SH11-U2-video.json" },
+          "media": { "firstFrame": "shots/shot-SH11/images/SH11-U2-first.png", "video": "shots/shot-SH11/video/SH11-U2.mp4" },
+          "cuts": [
+            { "id": "SH11-U2-C1", "seconds": 2.8, "note": "女手机终于按下拉黑、屏保没换、手指停一下翻扣(action_sound)+黑场余味(ambience)", "coverage": [{ "beatId": "B9F", "channels": ["picture", "action_sound", "ambience"] }] }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkPrev": "承接 SH10"
+    }
+  ],
+  "state": "storyboard_pending"
+}

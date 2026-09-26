@@ -1,0 +1,53 @@
+{
+  "id": "travel-07-image",
+  "role": "镜07 关键帧：茶卡盐湖『天空之镜』全景航拍低角仰，云与雪山倒映澄澈水面、水天一色",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "竖构图 9:16 全景，航拍低角度仰拍茶卡盐湖『天空之镜』的自然奇观本体，画面主体是澄澈如镜的浅盐湖水面，蓝天白云与远处连绵雪山完整倒映在水中，脚下水天一色、上下对称、天地相接，地平线居中偏上、主体居中不贴边不出画、防拉伸变形。前景是浅浅的盐湖水膜与结晶盐滩的自然纹理，倒影清晰、水面平静无风。柔和自然漫射的天光，光色中性偏暖白、明亮通透不压抑，天空层次干净，不用大黄光染整片画面。iPhone/单反真实照片级质感，画面带细腻真实的自然纹理、水面微反光与自然噪点、轻微不均，绝无塑料感、AI感、CG蜡感、蜡像感。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌，也没有任何商业招牌、店名、路牌、广告牌或可辨识标识。纯自然风光景观，画面中不出现人物。",
+  "references": [],
+  "identity_anchor": {
+    "scene_id": "travel-07-chaka-salt-lake",
+    "role": "纯风光地标镜（无人物/无身份锁），场景锚点为茶卡盐湖天空之镜",
+    "locks": [
+      "景观本体为茶卡盐湖天空之镜：浅盐湖水面倒映蓝天白云与雪山，水天一色上下对称",
+      "全景航拍低角仰、竖构图 9:16、地平线居中偏上主体不贴边不出画",
+      "柔和自然漫射天光、中性偏暖白明亮通透，忌大黄光染整片",
+      "真实照片级质感，禁塑料感/AI感/CG蜡感/蜡像感",
+      "画面无文字/字幕/数字/水印/logo/品牌，无招牌路牌，无人物"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T14:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344、全景航拍低角仰、主体居中地平线偏上不贴边、防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "地标风光本体：茶卡盐湖天空之镜，云与雪山倒映水面、水天一色，画具体自然景观本体（keyframe-anchored-pipeline）",
+      "真实质感非塑料：iPhone/单反照片级、自然纹理+水面微反光+自然噪点，禁塑料感/AI感/CG蜡感（iphone-realistic-no-plastic-texture）",
+      "柔光通透：柔和自然漫射天光、中性偏暖白明亮通透不压抑，忌大黄光染整片（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌，无商业招牌/店名/路牌/广告牌，无人物（no-brand-products-in-videos）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "686f32dccd1f343a02bff2cbea60df82156d4f57ff692ca9ea801be6e1bfe59f"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇（眷恋）：06–14 沿途逐站兑现，第 07 站茶卡盐湖天空之镜"
+    ],
+    "related_shots": [
+      "07 全景/航拍低角仰：茶卡盐湖天空之镜，云与雪山倒映水面"
+    ],
+    "visual_evidence": [
+      "剧本 07 镜画面：茶卡盐湖『天空之镜』，云与雪山倒映水面",
+      "旁白：走到茶卡，脚下全是天，你要在准得乐疯",
+      "花字（后期外挂，不入画）：茶卡盐湖 · 打卡 02",
+      "合规：无品牌/商标/logo，画面不出文字招牌"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. The clip opens exactly on the composition of Picture 1: an over-the-shoulder single (CAM-B) past the woman's shoulder onto the mature East Asian Chinese man in his thirties (B, 33-38), axis kept consistent. He opens his mouth on one last flicker of hope, a final testing plea, his eyes still searching hers, his voice thin and tentative. The mature man in his thirties, his voice tentative and almost pleading (S2), says: <d>[Chinese] 真的……没办法了吗。</d> [Shot 2] At 00:01.800, the camera cuts on the reverse to the matching over-the-shoulder single past the man's shoulder onto the woman (A, 33-38), holding the same axis. She answers extremely lightly and cleanly with no hesitation — inside her it is regret, delivered without cruelty; the framing settles into the composition of Picture 2 by the 4.00-second mark. The mature woman in her thirties, her voice very light and final (S1), says: <d>[Chinese] 没有了。</d> After the line a short tail of silence is held on her face to the end. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums underneath. A thin, tentative breath precedes his line and a short, held silence follows hers; no other physical sounds.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS06-U3-first.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS06-U3-ref.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:B张嘴最后一丝侥幸试探(眼神搜寻);A极轻'没有了'决绝无犹豫、内里是遗憾非冷漠、尾接短静默,内心戏演足",
+      "首行为FL2VA对齐指令:Picture 1(Shot 1)@0.00、Picture 2(Shot 2)@4.00;正反打硬切CAM-B→CAM-A、守轴线、末尾落Picture 2构图(非脸部morph);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 真的……没办法了吗。</d> / <d>[Chinese] 没有了。</d> 一字不改、口型同步、A=(S1)/B=(S2)、delivery在<d>外",
+      "cut时间00:01.800严格递增且落在4.00s时长内",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "716f640f9358aeda2a799392787bf148bc796d04e05c2eb0588f9dc6cddb745b"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B6"
+    ],
+    "related_shots": [
+      "FS06"
+    ],
+    "visual_evidence": [
+      "B最后试探'真的没办法了吗'",
+      "A'没有了'决绝落定+尾接短静默"
+    ],
+    "unresolved_blockers": []
+  }
+}

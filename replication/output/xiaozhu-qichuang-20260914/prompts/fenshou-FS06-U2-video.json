@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, a single continuous shot with a silent performance and no dialogue, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. The clip begins exactly on Picture 1 and resolves exactly to Picture 2, acting out every verb of the state and position change: the mature East Asian Chinese woman in her thirties (A, 33-38) takes hold of her bag, lifts it, and slips the strap onto her shoulder, settling it into place with a small, resolute, quiet motion, no drama; as she shoulders the bag the camera tilts down with small amplitude at slow speed and follows the movement, panning down and landing on the neatly packed upright hard-shell suitcase standing ready by the entrance door, letting it come clearly into frame — 'about to leave' turning into 'leaving'. The suitcase, the core prop, reads clearly at the end as the framing settles precisely into Picture 2 at the 4.00-second mark. Her face carries restrained, worn resolve throughout. Eye-level tilting to a downward angle, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room and the suitcase stay readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums throughout. The soft rustle of the bag and the strap settling onto her shoulder, and one quiet controlled breath, are the only physical sounds; no other events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS06-U2-first.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS06-U2-last.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:A背包动作克制决绝、疲惫里的坚定,无台词纯动作/表情承担内心戏,无狗血",
+      "首行为FL2VA对齐指令:Picture 1@0.00、Picture 2@4.00(单镜连续);状态/位置变化逐动词(拿包→举起→上肩→镜头下摇带到门口行李箱)+摆落点防单首帧漏演;末尾落Picture 2、行李箱读清;三段字段齐",
+      "无对白silent performance校验:全片无<d>,overall_soundscape只环境底噪+包/带轻响,non_diegetic_music=N/A",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5ba6d5c60bc1c8f325b248bbe227a9cbd01e356fc2fc111b41872b29af555a0a"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B6"
+    ],
+    "related_shots": [
+      "FS06"
+    ],
+    "visual_evidence": [
+      "A背起包镜头带到门口行李箱",
+      "核心道具行李箱兑现'将走'"
+    ],
+    "unresolved_blockers": []
+  }
+}

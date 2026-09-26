@@ -1,22 +1,22 @@
 {
-  "prompt": "第5个生成单元，约7秒，正反打近中景。承接首帧：客厅顶灯全开、明亮通透、中性偏暖白（家常真实的晚间、绝不文艺单光源压暗）。错位加码：女主 A 委屈、手比划着强调她要的只是被听见；男主 B 有点急、辩解自己在听、反复问‘要我怎么办’——他真的不懂‘光听着也算帮忙’。A 最后失望地把声音沉下来。桌上外卖已吃过、无热气。【对白】A：我没让你关心我吃没吃饭。我就想让你，听我说说话。B（有点急、摊手）：我在听啊！那你到底要我怎么办嘛？你说，我照做。A（声音沉下来）：……你看。你又要‘照做’。【音效必带】两人对白、家常环境声。男主 B 穿深蓝针织衫配白衬衫领、女主 A 穿米色针织，面孔/发型/体型严格随参考帧一致，两人均为 East Asian 中国人面孔。16:9 横屏，iPhone 手持轻微晃动的真实 vlog 质感、不摆拍不打光、家常明亮。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。对白随镜 H3 同期配音+表演直出，不烧任何字幕。",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, handheld iPhone vlog realism with subtle natural shake, no staged lighting, a real domestic feel; the living-room ceiling light is fully on, bright and even, neutral warm-white (an ordinary real evening, never a moody single-source dim room). A near-medium shot preserves the two East Asian Chinese subjects from <Picture 1>: the woman (A) in a beige knit sweater and the man (B) in a dark-navy knit sweater with a white shirt collar, each seated at one end of the sofa, cold takeaway boxes with no rising steam on the low table; faces, hair, body type, and framing kept exactly as the reference frame. The aggrieved young woman with a soft, slightly trembling, restrained voice (S1), gesturing with one hand to stress her point, speaks at a normal conversational pace with a thin thread of reproach under the hurt, no dead air before or after: <d>[Chinese] 我没让你关心我吃没吃饭。我就想让你，听我说说话。</d> [Shot 2] At 00:02.700, the shot cuts to a reverse near-medium of the man (B), who breaks in almost on top of her last word with no pause, spreading both hands, flustered and unfairly-accused; he speaks at a fast, slightly overlapping pace, \"我在听啊\" bursting out defensively and the stress landing hard on \"怎么办\" (S2): <d>[Chinese] 我在听啊！那你到底要我怎么办嘛？你说，我照做。</d> [Shot 3] At 00:05.100, the shot cuts back to the woman (A); her voice drops lower and slows half a beat into quiet disappointment, the fight draining out of her as she looks at him (S1): <d>[Chinese] ……你看。你又要“照做”。</d> Every speaker's lips stay in sync with the spoken line. anti-subtitle: no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo. Explicit delivery negatives: no flat monotone reading, no robotic recitation, no news-anchor cadence, no evenly-paced narration; the two lines collide with no silent gap at the cut.\n\noverall_soundscape: Quiet everyday living-room ambience runs throughout — a low room hum, faint fabric movement as she gestures and he spreads his hands, and a caught breath between their overlapping lines. Her line and his reply nearly overlap across the first cut with no silent gap.\n\nnon_diegetic_music: N/A",
   "model": "MiniMax-H3",
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "video",
-    "mode": "I2VA·对白同期·正反打",
+    "mode": "I2VA·对白同期·正反打·语气升级",
     "checks": [
-      "A委屈加码手比划、要的是被听见",
-      "B着急辩解反复问怎么办(真不懂)",
-      "A失望声音沉下来",
-      "外卖吃过无热气=递减线",
-      "对白三句同期、音效必带",
-      "anti-subtitle零字幕"
+      "H3规范I2VA结构:指令行+integrated_multimodal_description+overall_soundscape+non_diegetic_music,对白锁在<d>[Chinese]内逐字不改",
+      "A首句(S1)委屈带一丝责备、语速正常、句前后不留死白",
+      "B(S2)抢话式接、语速偏快略重叠、'我在听啊'冒出、重音砸在'怎么办'、摊手冤屈",
+      "A末句(S3同人S1)声音沉下来、慢半拍、失望气力抽走",
+      "正反打Shot1/2/3递增cut(0.00/00:02.700/00:05.100)承7秒、身份道具灯光随参考帧、外卖无热气",
+      "显式负向:no flat monotone/robotic recitation/news-anchor cadence/evenly-paced narration;对撞无静白;anti-subtitle零字幕;音效家常环境声+两人对白"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "914fba94ee1afa3a676e91f96077ebd4eb410d0b8240c4db21d620368a44045a"
+    "reviewed_prompt_sha256": "e1f7efbd735fe72ce2d663a3d50d42bdf3e5b7bad6570307207b37bfd3cbc006"
   },
   "narrative_alignment": {
     "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3）",

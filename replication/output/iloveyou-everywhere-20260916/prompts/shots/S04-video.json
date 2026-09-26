@@ -1,0 +1,32 @@
+{
+  "asset_type": "video",
+  "shot": "S04",
+  "role": "森林·俯冲林海(推进,第三巨物)",
+  "video_model": "MiniMax-H3",
+  "mode": "I2VA (single first frame = KF-S04-first.png fully referenced at 0.00s; camera develops forward from it, no last frame — 尾帧靠剪辑叠化)",
+  "duration_s": 5,
+  "aspect_ratio": "16:9",
+  "first_frame": "assets/keyframes/KF-S04-first.png",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Photorealistic live-action, cinematic, horizontal 16:9. The frame opens exactly on <Picture 1>: an aerial view swooping over an endless canopy of giant ancient trees, treetops rolling to the horizon like a green ocean, warm golden light shafts piercing down through gaps in the canopy, and one tiny warm-colored East Asian Chinese couple gliding through a sunlit clearing far below as a pure accent, preserving the scale, the light shafts and the translucent palette. The camera dives forward and downward as a tracking shot with large amplitude at medium speed, swooping toward the canopy so the treetops rush past and the god-ray light shafts sweep through the frame, then threads through a gap in the trees where a glimmer of water light begins to appear below toward the end. Floating light dust and drifting mist, soft diffused light, no harsh shadows, translucent palette of warm-gold light shafts and lush teal-green, serene, airy, joyful and mind-freeing. The bottom 15-18 percent of the frame stays clean and empty, and absolutely no text, subtitles, captions, watermark, logo or Chinese characters appear anywhere in the image.\n\noverall_soundscape: Forest wind moves through moist woodland air with faint birdsong and rustling leaves, and a delicate, bright high shimmer passes as the light shafts sweep by.\n\nnon_diegetic_music: The main theme adds bright wooden and harp colors at a slow tempo, continuing to climb in intensity.",
+  "negative": "hard cut, jump cut, close-up, big face, character dominates frame, crowded, cluttered, oversaturated, harsh sharp shadows, gloomy dark forest, dead grey, cold gloom, static frozen shot, text, subtitles, captions, watermark, logo, Chinese characters, western/caucasian faces",
+  "status": "prompt_ready_pending_paid_generation",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA指令首行:<Picture 1>(KF-S04-first)0.00s全参考,首帧锚点+向前发展,无尾帧",
+      "持续大幅运镜写死:dive forward and downward tracking large amplitude,俯冲林海+穿林隙露水光,非静止美图([C]门)",
+      "S04无真人对白,回响/音效后期不入提示词",
+      "巨物锚点=参天巨木林冠+丁达尔光柱时刻,人物5-8%显式East Asian Chinese防欧美脸",
+      "通透明亮暖调/漫射柔光/无硬阴影,去阴森黑森林",
+      "anti-subtitle:显式禁text/subtitles/captions/watermark/logo/Chinese characters,底部15-18%安全区留干净",
+      "三核心字段齐,时长匹配5s;overall_soundscape仅环境/无对白,音乐主题加明亮色继续爬升"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b861a2e3e71e4f13a50fcbe068484163a5017f4f3d144b635808175c51fa00d8"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "stage4-videos",
+  "reviewer": "user",
+  "verdict": "pass_all",
+  "reviewed_via": "https://www.tonbird.top/ads-review/zhanv/review/videos-review.html",
+  "scope": ["U02a","U02b","U03a","U03b","U04a","U04b","U05a","U05b","U06a","U06b","U07a","U07b"],
+  "checks": {"no_burned_subtitles":"pass","lip_sync":"pass","performance":"pass","no_wax_plastic":"pass","lighting_neutral_bright":"pass","identity_consistent":"pass"},
+  "note": "用户看片全过,指令'拼接交付'",
+  "at": "2026-09-24"
+}

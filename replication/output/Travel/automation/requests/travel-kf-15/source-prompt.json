@@ -1,0 +1,56 @@
+{
+  "id": "travel-15-image",
+  "role": "镜15 极近景手持微晃关键帧：一双手握着两人合照，指腹摩挲照片边缘（合照内容=母板A；面部不入画）",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "面部不入画、只拍一双手与一张照片，手与照片填满整个画面，严禁出现人物半身或中景、不出现任何脸部。极近景：一双成年东亚中国人的手（自然真实肤质、可见指纹与皮肤纹理）握着一张真实的实体旅行合照，指腹缓缓摩挲照片的边缘。照片里是一对二十多岁到三十出头的东亚中国年轻情侣（一男一女、自然普通中国人五官、女生外搭红色冲锋衣），两人肩并肩自然微笑。照片作为被握持的实体相纸，带轻微反光、边角磨损与手指按压的褶皱。手与照片居中、填满画面、不贴边裁切关键部分，防拉伸变形。柔和的自然漫射光打在手背与相纸上，光色中性偏暖白、明亮通透不压抑，不用大黄光染画面；手部皮肤哑光、无油光高光反光。iPhone/单反真实照片级质感，画面带细腻真实的皮肤纹理、可见毛孔、自然噪点与轻微不均，绝无塑料感、AI感、CG蜡感、磨皮假手、蜡像感。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌。",
+  "references": [],
+  "identity_anchor": {
+    "character_id": "travel-couple-photo",
+    "role": "合照道具（母板A）极近景手握摩挲镜，照片中两人身份锁母板A",
+    "usage": "--reference 母板A master-couple-photo.png，锁被握持照片中情侣两人一致；本镜为手+照片极近景，人脸不入画",
+    "locks": [
+      "极近景手+照片，面部不入画、主体填满画面，禁止中景/人物半身（extreme-closeup-framing-gpt-image）",
+      "照片内容=母板A那对东亚中国情侣（女生红冲锋衣），肩并肩微笑一致",
+      "手为东亚中国人成年手，真实肤质可见指纹，哑光无油光",
+      "真实照片级质感，禁塑料感/蜡感/磨皮假手",
+      "画面无文字/字幕/数字/水印/logo；竖构图 9:16 主体居中"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T14:00:00+08:00",
+    "checks": [
+      "极近景框死：首句写面部不入画、手与照片填满画面、严禁中景/人物半身/脸部，防渲成肖像（extreme-closeup-framing-gpt-image / 契约§2.7）",
+      "画幅锁 9:16 竖构图 768×1344，手与照片居中填满不贴边裁切关键部分，防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "身份锁：--reference 母板A master-couple-photo.png，照片内两人（女生红冲锋衣）锁母板A一致（masters-before-shot-keyframes）",
+      "人物东亚中国人：手与照片内情侣均自然中国人五官/肤质，排除欧美/高加索/混血/网红滤镜脸（daihuo-casting-must-be-chinese）",
+      "真实质感非塑料：iPhone/单反照片级、可见毛孔+真实皮肤纹理+自然噪点，禁塑料感/AI感/CG蜡感/磨皮假手，手部哑光无油光（iphone-realistic-no-plastic-texture / soft-light-no-facial-glare）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌（no-brand-products-in-videos）",
+      "极近景手持插入镜:去人物参考走文生图,合照内容靠文字自足描述,规避images/edits肖像磁吸(product-landing-use-text2img-stilllife)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9cb83fedc6dc5a6bf716519b37a1b31723189a62ce19b25ca1ed97d2785bf5bf"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "合 · 回慢（释然）15–18：走完每条线、放下；镜15 钢琴单音+呼吸，你圈过的每个地方我都替你走到了"
+    ],
+    "related_shots": [
+      "15 近景/手持微晃 坐在湖边，手握合照，指腹摩挲照片边缘（极近景手+合照）"
+    ],
+    "visual_evidence": [
+      "剧本镜15画面：坐在湖边，手握合照，镜头轻晃，指腹摩挲照片边缘",
+      "旁白：地图上你圈过的每个地方，我一个一个，都替你走到了",
+      "环境声钢琴单音+人声呼吸；花字「你圈的每一条线 我都走过了」（花字后期加，画面不出字）",
+      "合照为全片情感锚点物件（03/05/15/18），母板A锁两人一致；本镜极近景手+照片，面部不入画"
+    ],
+    "unresolved_blockers": []
+  }
+}

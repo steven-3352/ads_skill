@@ -1,0 +1,38 @@
+{
+  "id": "shot-05-video",
+  "role": "镜5 迁就｜I2VA｜女指桌上物边收拾边碎念叨说、男撑下巴笑着连连点头应；单首帧持续动作，画内同期对白",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld footage with realistic skin texture, natural pores, and fine film grain, no plastic or waxy CG look. The video opens on the bright warm-white East Asian Chinese living room of <Picture 1> with the ceiling light on, airy and evenly lit, preserving the two people's appearance, home wear, and layout: the woman points at a small object on the table and tidies it as she nags on; the mature East Asian Chinese woman in her thirties, half-nagging while she tidies, at a normal, brisk conversational pace (S1), says in sync on camera: <d>[Chinese] 喝完的杯子顺手涮一下，说多少回了。</d> The man, one hand propping his chin, keeps a patient, amused smile and nods along with her again and again without interrupting, his head dipping in small repeated nods; the mature East Asian Chinese man in his thirties, smiling as he goes along with her (S2), says in sync on camera: <d>[Chinese] 嗯，听你的。</d> The camera holds a nearly static shot with slight handheld drift throughout. Both faces stay matte under soft diffused light with no glare or reflection; East Asian Chinese features throughout, no brand or logo anywhere.\n\noverall_soundscape: A quiet living-room tone hums underneath with a faint appliance drone. A small object clinks lightly on the table as she tidies it, and clothing rustles softly with the man's nods.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜5迁就·I2VA。单首帧Picture1=居家女指桌上物碎念。持续动作:女边收拾边碎念,画内同期口型说(S1)『喝完的杯子顺手涮一下，说多少回了。』→男撑下巴笑着一下一下点头应(S2)『嗯，听你的。』语速正常偏快不留白。静止微手持贯穿全镜，明亮暖白顶灯居家光，哑光真实iPhone感。声景仅居家底噪+物件轻响/衣物声。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 5,
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "single first frame + sustained action with in-frame synced dialogue: woman points and nags while speaking (S1); man props chin, smiles and nods along while answering (S2); no state displacement, so I2VA not FL2VA",
+      "对白verbatim校验: <d>[Chinese] 喝完的杯子顺手涮一下，说多少回了。</d> 与 <d>[Chinese] 嗯，听你的。</d> 逐字逐标点不改; 身份+ID(女S1/男S2)+delivery(边收拾边碎念/笑着应) 全写在 <d> 之外; 画内同期、口型同步(取代原VO唇动无音写法)",
+      "表演校验: 演过日子的迁就内心戏(女碎念的理所当然+男宠溺点头)而非只念台词; 语速正常偏快、说完不留死尾",
+      "duration 5.00s 单镜一镜到底; 两人对白衔接不跨剪辑点(无cut)",
+      "soundscape 仅居家底噪+物件轻响/衣物声, 无人声重复; non_diegetic_music N/A",
+      "visual: 真实iPhone质感/自然毛孔/细颗粒, 哑光皮肤无油光高光, 无塑料蜡感CG感; 顶灯开明亮通透暖白不压暗; East Asian中国人物; 无品牌logo; prompt内无引号包裹的屏幕字幕文字",
+      "I2VA: <Picture 1> is the 0.00s first frame; 仅靠前向发展(女唠叨+男点头的持续动作)展开, 无尾帧/Picture 2/时间对齐表述"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a223aa40a5bd8439cdfda2c9f3d4c2dc286b202167a9851f7deb72d5db8749e8"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-05/images/first.png"
+  ]
+}

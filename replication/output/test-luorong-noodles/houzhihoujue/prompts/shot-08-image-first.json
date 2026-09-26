@@ -1,0 +1,27 @@
+{
+  "id": "shot-08-image-first",
+  "role": "镜8尾板底图（I2VA）＝纯黑背景仅一束柔光的极简画面（大字后期叠，图内不写字）",
+  "note": "尾板底图，画面留出中央负空间给后期叠设计性大字\"有些遗憾，后知后觉\"；本图内绝不生成任何文字。",
+  "prompt": "Cinematic still, 9:16 vertical, static, minimalist. A pure solid black frame with a single soft beam of light from directly overhead fading gently into the darkness, an empty stage-like pool of soft light at the center with generous deep black negative space all around. No people, no objects, no props. Subtle cinematic film grain, gentle light falloff toward black. Quiet, restrained, elegant emptiness, composed to leave clean central space for a title to be added later in post. Absolutely no text, no letters, no characters, no subtitles, no logo, no watermark, no brand anywhere in the image.",
+  "prompt_zh": "电影感静帧，9:16竖屏，静态，极简。纯黑实底画面，一束柔光从正头顶落下、缓缓没入黑暗，画面中央是一片舞台般的柔光空池，四周留大量深黑负空间。无人物、无物件、无道具。细微电影颗粒，光向黑处柔和衰减。安静、克制、优雅的空。构图为后期在中央叠加标题留出干净空间。图中任何位置绝对无文字、无字母、无汉字、无字幕、无logo、无水印、无品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA first frame / endslate base plate (black frame, single soft top beam, empty center for post title)",
+    "checks": [
+      "minimalist pure black frame + single overhead soft beam fading to black, empty soft-light pool center, deep black negative space",
+      "no people/objects/props; clean central space reserved for post-added design title '有些遗憾，后知后觉'",
+      "title is NOT baked into the image — prompt explicitly forbids any text/letters/characters in-frame",
+      "9:16 vertical 768x1344, static, cinematic grain",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1fec60408ad061dc30aa2e1b5f1806b595fcf950b245ad6f6648faa8ab24bdba"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "shot-05-image-first",
+  "role": "镜5首帧（I2VA）＝女指着念叨、男在旁耐心听（将点头）",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static. A bright, airy neutral-warm living room, ceiling light on, soft diffuse daylight, no dim moody lamp. A realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, mid-nag: one hand tidying up while the other points at some everyday object on the table, mouth mid-word, lively and chattering. A realistic East Asian Chinese man about 30 to 35 years old (identity from the reference man), short neat dark hair, light-grey crew-neck top, sits beside her, chin propped on one hand, smiling patiently and listening, about to nod along without interrupting. Everyday unbranded household items on the table with plain generic look, no logos. Warm easy domestic moment. Matte skin with realistic pores, fine film grain, shot on an iPhone with true-to-life handheld realism, no oily facial glare, no highlight on faces, no plastic AI sheen, no wax. They are Chinese with East Asian faces, not western faces. Bright natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景，静态。明亮通透中性偏暖客厅，顶灯开、漫射日光，无暗黄压抑灯。真实东亚中国女性(30-35岁，参考女主)，中长深棕披肩发、燕麦米色针织上衣，正在念叨中：一手收拾东西、另一手指着桌上某样日常物件，嘴巴正说到一半、鲜活地碎碎念。真实东亚中国男性(30-35岁，参考男主)，短发、浅灰圆领上衣，坐在她旁边，一手撑着下巴，耐心地笑着听、正要跟着点头不打断。桌上是无品牌、外观泛化的日常家居物件，无logo。温馨随和的居家瞬间。哑光肤质有毛孔、自然颗粒，iPhone真实手持质感，无脸部油光/高光/塑料AI感/蜡感。中国东亚脸，非欧美脸。明亮中性偏暖自然色，浅景深。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA first frame, shot-05 accommodation (woman nags/points, man listens propping chin, about to nod)",
+    "checks": [
+      "couple identity locked via reference female + male, East Asian/Chinese 30-35",
+      "woman mid-nag tidying + pointing at everyday item, man beside her propping chin smiling patiently and about to nod — she nags / he indulgently nods",
+      "table items plain generic unbranded, no logos",
+      "bright airy neutral-warm living room, ceiling light on, not a single dim yellow lamp",
+      "medium shot, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a22e42058542101006f96f8479a74fe7a3346c569b7eccd8fb129c6c1b006f15"
+  }
+}

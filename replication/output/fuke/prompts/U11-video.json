@@ -1,0 +1,47 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a warm 3200K bedroom at night, the light dim but still naturally visible rather than pitch black, soft diffused with a neutral warm-white base; skin keeps its natural tone. The young East Asian Chinese man shown in <Picture 1> keeps his exact appearance, a black suit jacket over a white shirt with a dark-navy tie, coming home late, framed in a close shot as he pushes the bedroom door open. [Shot 2] At 00:01.400, the shot cuts to a close shot of his hand releasing his briefcase, which drops to the floor. [Shot 3] At 00:02.600, the shot cuts to him standing at the edge of the bed, his shoulders heavy with fatigue. Throughout, the young woman is not in the frame; her soft, slightly petulant young voice (S2) says in an off-screen voiceover: <d>[Chinese]也不知道你天天忙什么呢。</d> and, being entirely off-screen, her lips remain completely closed. His expression tightens with weary, wordless resignation rather than a blank stare. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A quiet late-night bedroom room tone hums underneath, with the soft creak of the door, the muffled thud of the briefcase landing on the floor, and faint fabric rustle as he moves. Low, tired breathing fills the pauses.\n\nnon_diegetic_music: Sparse solo piano notes at a slow tempo, widely spaced and low in volume, sustaining gently under the voiceover.",
+  "references": [
+    "replication/output/fuke/assets/U11-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U11-first全参考,0.00s锚定,身份/服装延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段",
+      "三镜:Shot1推门→Shot2(00:01.400)公文包落地→Shot3(00:02.600)站床边",
+      "画外音:女友(S2)`也不知道你天天忙什么呢。`用says in an off-screen voiceover,紧接lips remain completely closed",
+      "对白:<d>内仅语言标签+原文逐字复刻,身份/递送外置",
+      "灯光:家夜卧室暖黄灯暗但正常可见非死黑/人脸自然肤色",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:男主晚归疲惫无言肊墒沉重,非空洞念白",
+      "时长:台词12字+三镜快切定4.0s",
+      "声景:卧室底噪+门吹/公文包落地声/衣物摩擦+呼吸;非画内钢琴弱音",
+      "零字幕:显式no subtitles/on-screen text"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "7451a4a88cf7874feae6616332378092edd5dcb1cf30fff2824d76587dcb4dfe",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U11-video",
+    "usage": "U11(镜11)晚归·画外抱怨:卧室夜暖黄灯暗,推门/公文包落地/站床边三镜,女友画外音抱怨,I2VA自U11-first发展",
+    "locks": [
+      "男主黑西装白衬衫深蓝领带/公文包",
+      "女友画外音不入镜(S2)",
+      "家夜卧室暖黄灯暗可见",
+      "人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "晚归画外抱怨:男主推门进卧室公文包落地站床边,女友画外音抱怨天天忙,暖黄灯暗",
+  "images": [
+    "replication/output/fuke/assets/U11-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

@@ -1,0 +1,53 @@
+{
+  "id": "travel-17-image",
+  "role": "镜17 全景航拍黄昏关键帧：公路尽头日落，车逆光驶向太阳（纯风光镜，无人物）",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "竖构图 9:16 全景航拍黄昏，一条笔直公路一直延伸到画面尽头的地平线，天边被日落烧成大片橙红与暖金，太阳低垂在公路尽头，一辆普通深色轿车在逆光中沿公路驶向太阳（安全行进，不暗示危险驾驶）。公路自画面下方向远处天际收拢、消失点与落日居中，主体公路与落日居中、不贴边不出画，防拉伸变形。黄昏逆光柔和通透，橙红暖调铺满天空、地面公路呈剪影层次，光色明亮不压抑、不糊死细节。iPhone/单反真实照片级质感，画面带细腻真实的天空渐变、自然噪点与轻微光晕，绝无塑料感、AI感、CG蜡感。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌，公路上没有任何招牌、路牌或广告牌。",
+  "references": [],
+  "identity_anchor": {
+    "scene_anchor": "情感顶点黄昏公路镜，纯自然风光，仅一辆逆光行进的泛化深色轿车驶向落日",
+    "locks": [
+      "全景航拍黄昏：笔直公路通向落日，天边橙红，车逆光驶向太阳",
+      "车为安全行进状态，不暗示危险驾驶",
+      "背景无任何可辨识地标招牌/店名/路牌/品牌/logo",
+      "真实照片级质感，禁塑料感/AI感/CG蜡感",
+      "画面无文字/字幕/数字/水印；竖构图 9:16 主体居中"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T14:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344，公路与落日消失点居中不贴边，防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "地标风光镜画泛化黄昏公路本体，不出任何文字招牌/路牌/品牌（no-brand-products-in-videos）",
+      "真实质感非塑料：iPhone/单反照片级、细腻天空渐变+自然噪点，禁塑料感/AI感/CG蜡感（iphone-realistic-no-plastic-texture）",
+      "柔光不压抑：黄昏逆光柔和通透、明亮不糊死细节，橙红暖调只染天空环境（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌，公路无招牌路牌广告牌（no-brand-products-in-videos）",
+      "驾驶合规：车为安全行进状态，不暗示危险驾驶"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e2fb825b9f252a27c9e9830d0491eb5d12d3058c7f4ea7bfa4d525d4fd685266"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "合 · 回慢（释然）15–18：情感推顶；镜17 音乐至高点，你在那边应该都看到了吧"
+    ],
+    "related_shots": [
+      "17 全景/航拍黄昏 公路尽头日落，天边烧成橙红，车在逆光中驶向太阳"
+    ],
+    "visual_evidence": [
+      "剧本镜17画面：公路尽头日落，天边烧成橙红，一辆车在逆光中驶向太阳",
+      "旁白：你在那边，这些好看的，应该都看到了吧？",
+      "环境声音乐情绪至高点；花字「致 你」（花字后期加，画面不出字）",
+      "合规：无品牌/商标/logo，画面不出文字招牌路牌"
+    ],
+    "unresolved_blockers": []
+  }
+}

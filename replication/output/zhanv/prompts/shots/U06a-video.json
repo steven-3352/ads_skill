@@ -1,0 +1,42 @@
+{
+  "id": "U06a",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 6,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U06a-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. The two East Asian women on the sofa as in <Picture 1>, a tense quiet beat; the left woman with a translucent skincare gel and knitted cardigan (S1) now holds the unbranded phone in her hand, its screen glowing faintly on her face; the right woman with bare skin and a loose cotton shirt (S2) watches her. Static handheld two-shot with slight sway; short clipped lines, no dead tails. The right woman (S2): <d>[Chinese] 谁。</d> The left woman (S1), a half-beat late: <d>[Chinese] ……陈默。</d> The right woman (S2): <d>[Chinese] 那个三天没回的呢。</d> The left woman (S1), lower: <d>[Chinese] ……还没。</d> The right woman (S2), quiet and direct: <d>[Chinese] 你现在，想回谁。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum. A soft plastic-and-fabric sound as she holds the phone.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "54a55493346b7416c18b225cc1c51d80e7504febe413432dc1f0bf1b3f6258e1"
+  }
+}

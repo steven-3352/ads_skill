@@ -1,0 +1,31 @@
+{
+  "id": "shot-01-image-last",
+  "role": "镜1尾帧＝各自僵住不看对方（冷战）",
+  "prompt": "Cinematic still, 9:16 vertical, medium wide shot, static, camera facing the sofa straight-on, same living room and same framing as the quarrel-start shot. A bright, airy neutral-warm living room, ceiling light on, soft diffuse daylight, no dim moody lamp. On the two-seat sofa, the realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, sits frozen at the LEFT end, body angled away, arms folded over the throw cushion, jaw set, resolutely not looking at him. The realistic East Asian Chinese man about 30 to 35 years old (identity from the reference man), short neat dark hair, light-grey crew-neck top, sits frozen at the RIGHT end staring straight ahead, not turning toward her either. The empty gap between them still there, both locked in a cold standoff, silent cold war. Matte skin with realistic pores, fine film grain, shot on an iPhone with true-to-life handheld realism, no oily facial glare, no highlight on faces, no plastic AI sheen, no wax. They are Chinese with East Asian faces, not western faces. Bright natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景偏宽，静态，镜头正对沙发，与吵架起点同室同机位。明亮通透中性偏暖客厅，顶灯开、漫射日光，无暗黄压抑灯。双人沙发上，真实东亚中国女性(30-35岁，参考女主)，中长深棕披肩发、燕麦米色针织上衣，僵坐左侧一头、身体侧开、双臂抱在靠垫上、下颌绷紧、坚决不看他。真实东亚中国男性(30-35岁，参考男主)，短发、浅灰圆领上衣，僵坐右侧一头直视前方、也不转头。两人之间空距仍在，双双僵住陷入冷战。哑光肤质有毛孔、自然颗粒，iPhone真实手持质感，无脸部油光/高光/塑料AI感/蜡感。中国东亚脸，非欧美脸。明亮中性偏暖自然色，浅景深。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA last frame, shot-01 cold standoff (both frozen, not looking at each other)",
+    "checks": [
+      "couple identity locked via reference female + male, East Asian/Chinese 30-35",
+      "same sofa framing as first frame; both frozen at their own ends, empty gap kept, resolutely not looking at each other — cold war end state",
+      "bright airy neutral-warm living room, ceiling light on, not a single dim yellow lamp",
+      "medium wide two-person framing, 9:16 vertical 768x1344, static",
+      "no tears/red/glowing eyes; emotion via averted body + set jaw",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "629db4d98890aeafaad7fa4b4231f4bedc69dc1f03d5a0d1ddbdbac92ae55146"
+  }
+}

@@ -1,0 +1,747 @@
+{
+  "schema_version": 1,
+  "project_id": "couple-wallkiss",
+  "episode": "single",
+  "status": "stage_complete_or_waiting_authorization",
+  "created_at": "2026-09-25T00:00:00+08:00",
+  "updated_at": "2026-09-25T22:43:00+08:00",
+  "budget": {
+    "committed_yuan": 7.299999999999999,
+    "hard_cap_yuan": 9.0
+  },
+  "authorization": {
+    "committed_yuan": 7.299999999999999,
+    "increment_cap_yuan": 9.0,
+    "asset_ids": [
+      "master-male",
+      "master-female",
+      "SH01-U1-first",
+      "SH02-U1-first",
+      "SH02-U1-last",
+      "SH03-U1-first",
+      "SH03-U1-last",
+      "SH03-U2-first",
+      "SH03-U2-last",
+      "SH04-U1-first",
+      "SH01-U1-video",
+      "SH02-U1-video",
+      "SH03-U1-video",
+      "SH03-U2-video",
+      "SH04-U1-video"
+    ],
+    "allow_pending_semantic_qc": true
+  },
+  "assets": [
+    {
+      "id": "master-male",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/assets/master-male.json",
+      "output": "replication/output/couple-wallkiss-20260925/assets/master-male.png",
+      "submission_started_at": "2026-09-25T21:28:05+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/master-male",
+      "sha256": "13edefa57c57584bb6734dc52a3dc8e7076af6ba60a46a8df6ee55b621979420",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T21:31:29+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T21:32:20+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/master-male-semantic-qc.md",
+        "note": "身份根合格",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-25T21:32:20+08:00"
+    },
+    {
+      "id": "master-female",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/assets/master-female.json",
+      "output": "replication/output/couple-wallkiss-20260925/assets/master-female.png",
+      "submission_started_at": "2026-09-25T21:32:20+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/master-female",
+      "sha256": "69eb979bf060be8538a1ca799aa5fe5040bd14511ad1ecc7af89de4cf6e0b53c",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-25T21:35:15+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T21:35:45+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/master-female-semantic-qc.md",
+        "note": "身份根合格",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-25T21:35:45+08:00"
+    },
+    {
+      "id": "SH01-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH01-U1-first.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH01/images/SH01-U1-first.png",
+      "submission_started_at": "2026-09-25T21:37:25+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH01-U1-first",
+      "sha256": "f041d32f7f2a23e77558292b2fd80f74dbaad596b107ca81904d63ebc134cf43",
+      "accepted_at": "2026-09-25T22:09:09+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:09+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH02-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH02-U1-first.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH02/images/SH02-U1-first.png",
+      "submission_started_at": "2026-09-25T21:39:45+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH02-U1-first",
+      "sha256": "17609a9226a0405af08e713dfee6362d8c855fe88872004fcc91dd7e80173f93",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH02-U1-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH02-U1-last.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH02/images/SH02-U1-last.png",
+      "submission_started_at": "2026-09-25T21:43:20+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH02-U1-last",
+      "sha256": "6307c0fd979a59bb661e06885982b7c7abb868b18188b3e55602529b9ae6942c",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH03-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH03-U1-first.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U1-first.png",
+      "submission_started_at": "2026-09-25T21:46:53+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH03-U1-first",
+      "sha256": "494631b29af5cb56288e4e31962ad7c4f606d4a7e5624bbc525a7cacfdcc063f",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH03-U1-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH03-U1-last.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U1-last.png",
+      "submission_started_at": "2026-09-25T21:50:24+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH03-U1-last",
+      "sha256": "09d85aa0f61a1753bd4f56c4aa375921a4a7106eeff836274c8bbfb307caea33",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH03-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH03-U2-first.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U2-first.png",
+      "submission_started_at": "2026-09-25T21:54:11+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH03-U2-first",
+      "sha256": "f7105eb6abfdcc163b591e74a0ba69d2e0e2fcba39df0045e55598d88166c61a",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH03-U2-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH03-U2-last.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH03/images/SH03-U2-last.png",
+      "submission_started_at": "2026-09-25T21:58:58+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH03-U2-last",
+      "sha256": "639d0321964f706ebc13089690b87bd234b01323e15870fb3809d02debe382e0",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH04-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "model": "gpt-image-2",
+      "size": "768x1344",
+      "depends_on": [],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH04-U1-first.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH04/images/SH04-U1-first.png",
+      "submission_started_at": "2026-09-25T22:01:14+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH04-U1-first",
+      "sha256": "d249c7b5a2fd495a7085a08e11db6e4c15c9b0c01de96232ba2898587b882f43",
+      "accepted_at": "2026-09-25T22:09:10+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:09:10+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+        "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH01-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "status": "accepted",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "SH01-U1-first"
+      ],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH01-U1-video.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH01/video/SH01-U1.mp4",
+      "submission_started_at": "2026-09-25T22:20:02+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH01-U1-video",
+      "sha256": "2664d9c24047bebd6ff47a46159e0f8f5e53a579e4bc6d0849670217c6113165",
+      "accepted_at": "2026-09-25T22:24:14+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:24:14+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/SH01-U1-video-qc.md",
+        "note": "canary-2:input_image_count=1身份对齐母板/构图吃首帧/无烧字幕/有连续音轨",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH02-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "status": "accepted",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "SH02-U1-first",
+        "SH02-U1-last"
+      ],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH02-U1-video.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH02/video/SH02-U1.mp4",
+      "submission_started_at": "2026-09-25T22:24:30+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH02-U1-video",
+      "sha256": "93b36a81efe2f65bf7153d791fff66443a54825d655f55ab24335a02249f0fa6",
+      "accepted_at": "2026-09-25T22:29:06+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:29:06+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/SH02-U1-video-qc.md",
+        "note": "input_image_count=2甩手状态突变兑现/无烧字幕/身份一致",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH03-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "status": "accepted",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "SH03-U1-first",
+        "SH03-U1-last"
+      ],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH03-U1-video.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH03/video/SH03-U1.mp4",
+      "submission_started_at": "2026-09-25T22:29:07+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH03-U1-video",
+      "sha256": "36e293aa78e90eda7a0b40a191b2b8af1b0551adc6c16ddc3d772e5f6ab51d55",
+      "accepted_at": "2026-09-25T22:34:20+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:34:20+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/SH03-U1-video-qc.md",
+        "note": "情欲顶点吻断三层兑现/临界不越红线/无烧字幕/身份一致",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH03-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "status": "accepted",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "SH03-U2-first",
+        "SH03-U2-last"
+      ],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH03-U2-video.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH03/video/SH03-U2.mp4",
+      "submission_started_at": "2026-09-25T22:34:20+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH03-U2-video",
+      "sha256": "a22c006766e1b2090cae194e48c41af0070730533bb1c8c56b6a2ec074e8c1e8",
+      "accepted_at": "2026-09-25T22:38:35+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:38:35+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/SH03-U2-video-qc.md",
+        "note": "软化反攥衣领兑现/无烧字幕/身份一致",
+        "reviewer": "run.sh-claude"
+      }
+    },
+    {
+      "id": "SH04-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "status": "accepted",
+      "cost_yuan": 0.8,
+      "model": "MiniMax-H3",
+      "depends_on": [
+        "SH04-U1-first"
+      ],
+      "prompt_file": "replication/output/couple-wallkiss-20260925/prompts/SH04-U1-video.json",
+      "output": "replication/output/couple-wallkiss-20260925/shots/shot-SH04/video/SH04-U1.mp4",
+      "submission_started_at": "2026-09-25T22:38:36+08:00",
+      "audit_dir": "replication/output/couple-wallkiss-20260925/automation/requests/SH04-U1-video",
+      "sha256": "4140fb0d9f055dcd9cf0db6afe6efbe685e03470f4a4ed0cbbc2c8284801c535",
+      "accepted_at": "2026-09-25T22:43:00+08:00",
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-25T22:43:00+08:00",
+        "evidence": "replication/output/couple-wallkiss-20260925/review/SH04-U1-video-qc.md",
+        "note": "娇羞破防收尾兑现/无烧字幕/身份一致",
+        "reviewer": "run.sh-claude"
+      }
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-25T21:28:05+08:00",
+      "type": "submission_started",
+      "asset_id": "master-male",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:31:04+08:00",
+      "type": "generation_received",
+      "asset_id": "master-male",
+      "cost_yuan": 0.25,
+      "sha256": "13edefa57c57584bb6734dc52a3dc8e7076af6ba60a46a8df6ee55b621979420"
+    },
+    {
+      "at": "2026-09-25T21:31:29+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "master-male"
+    },
+    {
+      "at": "2026-09-25T21:32:20+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "master-male",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/master-male-semantic-qc.md",
+      "note": "身份根合格",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T21:32:20+08:00",
+      "type": "submission_started",
+      "asset_id": "master-female",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:34:56+08:00",
+      "type": "generation_received",
+      "asset_id": "master-female",
+      "cost_yuan": 0.25,
+      "sha256": "69eb979bf060be8538a1ca799aa5fe5040bd14511ad1ecc7af89de4cf6e0b53c"
+    },
+    {
+      "at": "2026-09-25T21:35:15+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "master-female"
+    },
+    {
+      "at": "2026-09-25T21:35:45+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "master-female",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/master-female-semantic-qc.md",
+      "note": "身份根合格",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-25T21:37:25+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:39:45+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "f041d32f7f2a23e77558292b2fd80f74dbaad596b107ca81904d63ebc134cf43"
+    },
+    {
+      "at": "2026-09-25T21:39:45+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:43:20+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "17609a9226a0405af08e713dfee6362d8c855fe88872004fcc91dd7e80173f93"
+    },
+    {
+      "at": "2026-09-25T21:43:20+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U1-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:46:53+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U1-last",
+      "cost_yuan": 0.25,
+      "sha256": "6307c0fd979a59bb661e06885982b7c7abb868b18188b3e55602529b9ae6942c"
+    },
+    {
+      "at": "2026-09-25T21:46:53+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:50:23+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "494631b29af5cb56288e4e31962ad7c4f606d4a7e5624bbc525a7cacfdcc063f"
+    },
+    {
+      "at": "2026-09-25T21:50:24+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U1-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:54:11+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U1-last",
+      "cost_yuan": 0.25,
+      "sha256": "09d85aa0f61a1753bd4f56c4aa375921a4a7106eeff836274c8bbfb307caea33"
+    },
+    {
+      "at": "2026-09-25T21:54:11+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T21:58:57+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "f7105eb6abfdcc163b591e74a0ba69d2e0e2fcba39df0045e55598d88166c61a"
+    },
+    {
+      "at": "2026-09-25T21:58:58+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U2-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T22:01:13+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U2-last",
+      "cost_yuan": 0.25,
+      "sha256": "639d0321964f706ebc13089690b87bd234b01323e15870fb3809d02debe382e0"
+    },
+    {
+      "at": "2026-09-25T22:01:14+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-25T22:04:47+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "d249c7b5a2fd495a7085a08e11db6e4c15c9b0c01de96232ba2898587b882f43"
+    },
+    {
+      "at": "2026-09-25T22:09:09+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U1-first",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U1-first",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U1-last",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U1-first",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U1-last",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U2-first",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U2-last",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:09:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U1-first",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/keyframes-semantic-qc.md",
+      "note": "关键帧语义QC通过:身份一致/构图兑现/真实质感/无字幕/无品牌/9:16/红线合规",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:10:58+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T22:13:00+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "dc6d14aa193c17fc7d900be630ca7aa3b3c537cd31cda3f50f12884ffebf976c"
+    },
+    {
+      "at": "2026-09-25T22:19:41+08:00",
+      "type": "semantic_qc_reject",
+      "asset_id": "SH01-U1-video",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/SH01-U1-video-qc-reject.md",
+      "note": "input_image_count=0首帧未挂+烧字幕;已补.images修复,重生成",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:20:02+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T22:22:29+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "2664d9c24047bebd6ff47a46159e0f8f5e53a579e4bc6d0849670217c6113165"
+    },
+    {
+      "at": "2026-09-25T22:24:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U1-video",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/SH01-U1-video-qc.md",
+      "note": "canary-2:input_image_count=1身份对齐母板/构图吃首帧/无烧字幕/有连续音轨",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:24:30+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T22:27:03+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "93b36a81efe2f65bf7153d791fff66443a54825d655f55ab24335a02249f0fa6"
+    },
+    {
+      "at": "2026-09-25T22:29:06+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U1-video",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/SH02-U1-video-qc.md",
+      "note": "input_image_count=2甩手状态突变兑现/无烧字幕/身份一致",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:29:07+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T22:32:48+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "36e293aa78e90eda7a0b40a191b2b8af1b0551adc6c16ddc3d772e5f6ab51d55"
+    },
+    {
+      "at": "2026-09-25T22:34:20+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U1-video",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/SH03-U1-video-qc.md",
+      "note": "情欲顶点吻断三层兑现/临界不越红线/无烧字幕/身份一致",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:34:20+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T22:37:15+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "a22c006766e1b2090cae194e48c41af0070730533bb1c8c56b6a2ec074e8c1e8"
+    },
+    {
+      "at": "2026-09-25T22:38:35+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U2-video",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/SH03-U2-video-qc.md",
+      "note": "软化反攥衣领兑现/无烧字幕/身份一致",
+      "reviewer": "run.sh-claude"
+    },
+    {
+      "at": "2026-09-25T22:38:36+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-25T22:40:55+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "4140fb0d9f055dcd9cf0db6afe6efbe685e03470f4a4ed0cbbc2c8284801c535"
+    },
+    {
+      "at": "2026-09-25T22:43:00+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U1-video",
+      "evidence": "replication/output/couple-wallkiss-20260925/review/SH04-U1-video-qc.md",
+      "note": "娇羞破防收尾兑现/无烧字幕/身份一致",
+      "reviewer": "run.sh-claude"
+    }
+  ]
+}

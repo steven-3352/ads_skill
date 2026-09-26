@@ -1,0 +1,104 @@
+{
+  "note": "fenshou成片字幕清单;lines为全片绝对时间(各clip真实时长累加,不用clip_order等长假设);静默镜无字幕",
+  "total_dur_s": 63.85,
+  "lines": [
+    {
+      "clip": "FS01",
+      "speaker": "A",
+      "text": "我们还是分手吧。",
+      "t_start": 0.4,
+      "t_end": 4.2
+    },
+    {
+      "clip": "FS02",
+      "speaker": "B",
+      "text": "你……是不是又生气了。",
+      "t_start": 4.758,
+      "t_end": 7.358
+    },
+    {
+      "clip": "FS02",
+      "speaker": "A",
+      "text": "没有。我想很久了。",
+      "t_start": 7.558,
+      "t_end": 9.408
+    },
+    {
+      "clip": "FS03",
+      "speaker": "B",
+      "text": "上周不是还说好，周末去吃那家餐厅。",
+      "t_start": 9.933,
+      "t_end": 12.133
+    },
+    {
+      "clip": "FS03",
+      "speaker": "A",
+      "text": "我记得。可你忘了——那天你加班，一条消息都没有。",
+      "t_start": 12.333,
+      "t_end": 14.633
+    },
+    {
+      "clip": "FS04U1",
+      "speaker": "B",
+      "text": "那天真的太忙。我不是故意的，我改。",
+      "t_start": 15.108,
+      "t_end": 19.008
+    },
+    {
+      "clip": "FS04U2",
+      "speaker": "A",
+      "text": "不是那一件。你说我小题大做。",
+      "t_start": 19.567,
+      "t_end": 21.367
+    },
+    {
+      "clip": "FS04U2",
+      "speaker": "A",
+      "text": "我等你，等到半夜。……后来，就不等了。",
+      "t_start": 21.567,
+      "t_end": 23.567
+    },
+    {
+      "clip": "FS04U3",
+      "speaker": "B",
+      "text": "就为这些小事。",
+      "t_start": 24.125,
+      "t_end": 27.725
+    },
+    {
+      "clip": "FS05U1",
+      "speaker": "A",
+      "text": "不是小事。我没怪你。是撑不住了。",
+      "t_start": 28.483,
+      "t_end": 32.383
+    },
+    {
+      "clip": "FS05U2",
+      "speaker": "A",
+      "text": "可是我的失望，不会等你有空。",
+      "t_start": 33.042,
+      "t_end": 36.842
+    },
+    {
+      "clip": "FS06U1",
+      "speaker": "B",
+      "text": "我以为……我们还有很多时间。",
+      "t_start": 37.5,
+      "t_end": 41.3
+    },
+    {
+      "clip": "FS06U3",
+      "speaker": "B",
+      "text": "真的……没办法了吗。",
+      "t_start": 46.317,
+      "t_end": 48.617
+    },
+    {
+      "clip": "FS06U3",
+      "speaker": "A",
+      "text": "没有了。",
+      "t_start": 48.917,
+      "t_end": 50.217
+    }
+  ]
+}

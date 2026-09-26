@@ -1,0 +1,5 @@
+{
+  "unit":"fenshou-FS07-U2-video","beat":"B7 FS07 A拉箱离开(静默)","decision":"accept","reviewer":"claude-selfcheck","at":"2026-09-18",
+  "why":"达标:静默镜,A低头拉行李箱走向门口→门口回望一眼,空沙发躺相框冷收;沉静离场、非空白;身份/灯光锁;无对白无烧字幕;技术QC 1344x768。最终由用户审。(注:gate accept调用误用了FS07-U1证据文件,内容近似,本文件为U2正确存档)",
+  "frames":"assets/fenshou-qc-FS07-U2-t{1.5,3.8}.png"
+}

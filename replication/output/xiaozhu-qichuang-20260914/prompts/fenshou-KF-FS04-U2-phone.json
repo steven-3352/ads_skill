@@ -1,0 +1,37 @@
+{
+  "prompt": "Photorealistic tight still-life macro photograph of a smartphone lying face-up on a wooden coffee table, the phone screen fills the frame; this is a still-life insert with no human face in frame, absolutely no person, 面部不入画, not a portrait. The screen shows a plain instant-messaging chat interface: at the top the contact / note name reads 「我」; the last outgoing message bubble reads 「晚安」 with the timestamp 02:17 shown beside it; above it a few earlier message bubbles are each marked 「已读」 with no reply underneath them. The chat text on the screen is in-picture prop content displayed on the device (part of the scene, a phone screen), not an overlay or caption. Cool bluish phone-screen glow spills onto the wooden tea-table surface around the phone in the dark late-night room; realistic phone photograph, shallow depth of field, subtle fine film grain. 16:9 horizontal composition, macro close-up, eye-level top-down on the phone. No text overlay outside the phone screen, no subtitles, no captions, no watermark, no logo.",
+  "references": [],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T11:00:00+08:00",
+    "checks": [
+      "文生图references=[](静物防肖像磁吸)",
+      "手机屏填满画面/面部不入画/无人",
+      "屏内聊天道具:备注名「我」/末条「晚安」02:17/上方几条「已读」无回复",
+      "屏幕冷光映茶几",
+      "屏内文字属画面道具例外,屏外无任何叠字",
+      "16:9横屏",
+      "结尾锁屏外无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3a36fdacc1642afa83274e6ad11c9763ac34f717682011fc4ad70af1abdda523"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B4"
+    ],
+    "related_shots": [
+      "FS04"
+    ],
+    "visual_evidence": [
+      "手机屏02:17「晚安」已读不回=等到半夜的可见证据",
+      "屏幕光映茶几",
+      "极近景静物无人面"
+    ],
+    "unresolved_blockers": []
+  }
+}

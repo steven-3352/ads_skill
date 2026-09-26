@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《我们还是分手吧》· 人物母板认脸</title>
+<style>
+  :root { --bg:#14110f; --card:#1e1a17; --line:#2f2823; --txt:#ece6df; --dim:#a89f95; --accent:#d8a24a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--txt); font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.7; padding:24px 16px 80px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:22px; font-weight:700; margin-bottom:4px; }
+  .sub { color:var(--dim); font-size:13px; margin-bottom:24px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:760px){ .grid{ grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .card img { width:100%; display:block; background:#000; }
+  .card .body { padding:14px 16px 18px; }
+  .tag { display:inline-block; font-size:12px; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:1px 10px; margin-bottom:8px; }
+  .card h2 { font-size:16px; margin-bottom:8px; }
+  .card ul { list-style:none; font-size:13.5px; color:var(--dim); }
+  .card li { margin-bottom:4px; padding-left:14px; position:relative; }
+  .card li::before { content:"·"; position:absolute; left:2px; color:var(--accent); }
+  .note { margin-top:24px; background:#241d14; border:1px solid #4a3a1e; border-radius:10px; padding:14px 18px; font-size:13.5px; }
+  .note b { color:var(--accent); }
+  .ask { margin-top:20px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 20px; font-size:14px; }
+  .ask h3 { font-size:15px; margin-bottom:8px; }
+  .ask li { margin:6px 0 6px 20px; }
+  .cost { margin-top:16px; font-size:13px; color:var(--dim); }
+  .cost b { color:var(--txt); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《我们还是分手吧》· 人物母板认脸</h1>
+  <div class="sub">横屏 16:9 ｜ MiniMax-H3 ｜ 深夜居家客厅 ｜ 本轮：A/B 身份母板（文生图，用于后续各镜 --reference 锁脸）</div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="assets/fenshou-A-master.png" alt="A 女·提分手方 母板">
+      <div class="body">
+        <span class="tag">A · 提分手方</span>
+        <h2>女，约 33–38 岁 · 东亚中国人</h2>
+        <ul>
+          <li>克制平静、不笑、眼神向内收 → 隐忍、话少、内里耗尽</li>
+          <li>黑色中长发、米色针织衫、暖黄台灯客厅、浅景深胶片感</li>
+          <li>面部清晰均匀打光，便于全片身份锚定</li>
+          <li>非欧美脸、非网红脸</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/fenshou-B-master.png" alt="B 男·被分手方 母板">
+      <div class="body">
+        <span class="tag">B · 被分手方</span>
+        <h2>男，约 33–38 岁 · 东亚中国人</h2>
+        <ul>
+          <li>乱发、胡茬、眼下倦意明显 → 疲惫、慌而克制</li>
+          <li>深色连帽衫、与 A 同一暖黄客厅基调，风格统一</li>
+          <li>面部清晰，便于全片身份锚定</li>
+          <li>非欧美脸、非网红脸</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:22px">
+    <img src="assets/fenshou-LOC-livingroom-v2.png?v=2" alt="场景母板·深夜客厅(正常灯光重出版)">
+    <div class="body">
+      <span class="tag">场景母板 · 深夜客厅（正常灯光重出版）</span>
+      <h2>全片环境根 · 各镜 --reference 锁场景</h2>
+      <ul>
+        <li>已按你反馈重出：<b>顶灯开着、整体明亮通透不压抑</b>，光色自然中性偏暖白（不再浓橙黄），台灯降为辅助</li>
+        <li>深夜靠窗外都市夜景交代（屋里灯正常开着）；双人沙发居中、浅景深减弱让房间看得清</li>
+        <li>门口黑色硬壳行李箱清晰、沙发中间倒扣相框可辨（比上一版更明确）</li>
+        <li>生活痕迹足（马克杯/报纸/纸巾盒/钥匙/抱枕/搭毯），非样板间；无人、无水印、16:9</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>人物母板 A/B 已认脸通过、身份冻结（本区留档）。</b>上一版客厅太暖黄压抑已作废重出，
+    现版为<b>正常房间灯光</b>：顶灯开、明亮通透、光色自然，深夜时间感与全部道具（沙发/行李箱/倒扣相框/生活杂物）保留。
+  </div>
+
+  <div class="ask">
+    <h3>请你认客厅（正常灯光版）</h3>
+    <ol>
+      <li>这版灯光（明亮通透、不压抑、光色自然）对不对了？</li>
+      <li>沙发 + 门口行李箱 + 中间倒扣相框的布局能不能作全片环境根？</li>
+      <li>还有要调的（更亮/更冷/家具布局），还是可以定了？</li>
+    </ol>
+    <div class="cost">场景母板重出 ¥0.25，累计已花 <b>¥1.00</b>（A + B + 客厅两版，旧版不退费）。<br>
+    你说“客厅通过” → 场景母板 accept 进账 → 提额出 <b>21 张各镜关键帧</b>（剩 ¥5.25）。</div>
+  </div>
+</div>
+</body>
+</html>

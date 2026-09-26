@@ -1,0 +1,46 @@
+{
+  "units": [
+    {
+      "unit_id": "U1",
+      "covered_shots": ["镜1"],
+      "scene": "卧室夜/暖黄",
+      "duration": 5,
+      "dialogue": "女：要是哪天你碰到个比我好的女生，就是那种又温柔又细心，人家也喜欢你。",
+      "soundscape": "卧室环境声、床品摩擦声、夜晚静谧氛围",
+      "shot_type": "中景",
+      "generation_mode": "I2VA",
+      "keyframe_prompts": {
+        "first": {
+          "subject": "女主靠床头捧马克杯，男主坐床沿，暖黄台灯光",
+          "composition": "双人中景，女主左侧床头、男主右侧床沿",
+          "lighting": "柔和漫射光、中性偏暖白、人脸哑光无油光、真实肤质无蜡感塑料感",
+          "atmosphere": "夜晚卧室温馨氛围",
+          "reference": ["assets/fuke-A-home-v3.png", "assets/fuke-B-home.png"]
+        }
+      },
+      "reference_assets": ["fuke-A-home-v3", "fuke-B-home"],
+      "narrative_note": "钩子开场·假设威胁悬念抛出；女主小熊睡衣+发箍居家造型；3s内抛悬念不许软"
+    },
+    {
+      "unit_id": "U2",
+      "covered_shots": ["镜2", "镜3"],
+      "scene": "卧室夜/暖黄",
+      "duration": 4,
+      "dialogue": "",
+      "dialogueDensityExempt": "忠实复刻原片留白节奏；马克杯热气特写→男主沉默近景，H3下限4s，杯子蒸汽声+呼吸声连续铺底无死白",
+      "soundscape": "热气蒸腾声、呼吸声、卧室环境声",
+      "shot_type": "特写→近景",
+      "generation_mode": "I2VA",
+      "keyframe_prompts": {
+        "first": {
+          "subject": "马克杯特写，杯口冒热气",
+          "composition": "特写，杯子占主体，热气可见",
+          "lighting": "柔和漫射光、暖黄卧室灯光、杯面柔和反光不刺眼",
+          "atmosphere": "沉默停顿、情绪铺垫"
+        }
+      },
+      "reference_assets": ["fuke-B-home"],
+      "narrative_note": "男主沉默反应；特写→近景情绪过渡；热气+沉默营造思考氛围"
+    }
+  ]
+}

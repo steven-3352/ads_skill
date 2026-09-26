@@ -1,0 +1,33 @@
+{
+  "unit_id": "U8",
+  "scene": "落点落幕合一 · 空瓶推桌中央 · 手挪一寸又收回两人对视沉默",
+  "mode": "FL2VA",
+  "ratio": "9:16",
+  "duration": 7,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U8/images/U8-first.png",
+    "replication/output/jiuheover/shots/shot-U8/images/U8-last.png"
+  ],
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 7.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. At the start, established by Picture 1, the East Asian young woman in her late twenties (S1) and the East Asian man in his early thirties with light stubble (S2) sit across the small wooden table from each other by the rain-streaked tavern window at night under warm-white light; beside him sits the plain unlabeled white ceramic bottle, already emptied, cylindrical body with flat shoulder and short neck, red cap topped with a thin gold ring, entirely plain white with no text or logo, and near his hand rests one clear glass stemmed cup holding its final last sip. Speaking Mandarin at a normal, slightly quick pace with no dead air, she asks quietly: <d>[Chinese]再来一次，你还会追我吗？</d> Speaking evenly in the same unhurried pace, he answers: <d>[Chinese]会。但我会更努力，留住你。</d> He lifts the cup, drinks the last sip down, and sets the empty cup back on the table. She reaches over and gently pushes the emptied bottle across the wood table toward the exact center between them, and as it comes to rest there she says quietly: <d>[Chinese]酒喝完了。</d> Right after, both of them go still and look directly at each other, neither saying another word. His hand, resting on the table, slides about an inch toward the center, reaching slightly toward her, then draws back and stops there — wanting to hold her back but not quite daring to, both of them working hard to keep their faces calm. By the end of the shot, the bottle sits pushed to the center of the table, his hand rests the inch back from the middle where it stopped, and the two of them remain locked in the same silent, composed gaze established by Picture 2. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain continues outside the window while low indoor room tone and faint bar murmur run underneath through most of the shot. A soft swallow and the light tap of the cup on wood are followed by the dry scrape of the bottle sliding across the table; as the two of them settle into their final silent gaze the ambience eases to a very light, unbroken hush with no dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:FL2VA 指令行 Picture 1/Picture 2 (from Shot 1) 对齐 0.00s/7.00s,S.SS=duration 两位小数",
+      "FL2VA 结构=first-frame state→intermediate changes→narrowing differences→last-frame state:首帧空瓶在陈叙侧/杯剩最后一口→他答话饮尽放杯→她推空瓶到桌中→手挪一寸收回→落定尾帧对视",
+      "去蜡感强化写入 Shot 1 开头,单镜连续动作无 cut,适配 FL2VA『倾向单镜头插值』",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内(再来一次，你还会追我吗？/会。但我会更努力，留住你。/酒喝完了。),具体动作(手挪一寸又收回)写在 <d> 外,不喂伤心/不舍标签",
+      "speaker 稳定 ID S1=苏晚、S2=陈叙,首次出现给身份(East Asian/Mandarin/normal slightly quick pace)",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:雨声+室内低语连续,饮酒吞咽/杯磕桌/空瓶滑过木桌摩擦声,落幕对视处转极轻但仍连续,no dead silence",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle(已空)/clear glass stemmed cup,无 logo/文字/清酒器",
+      "时长 7s 单镜无 cut,竖屏 9:16 由 ref 帧承载,non_diegetic_music=N/A",
+      "落幕合一:落点(空瓶推中央)与落幕(对视沉默)在同一镜内连续完成,不拆两镜"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ac83b02f7f3dca0ad8f4d3093f427c5ddd2bdce1f751c99e26a51d6e5431bb7a"
+  }
+}

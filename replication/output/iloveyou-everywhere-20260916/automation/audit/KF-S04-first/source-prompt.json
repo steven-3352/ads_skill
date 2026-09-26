@@ -1,0 +1,35 @@
+{
+  "asset_type": "image",
+  "keyframe_id": "KF-S04-first",
+  "shot": "S04",
+  "role": "森林·立基帧(参天巨木林冠如绿海)",
+  "generator": "GPT Image (gpt-image-2)",
+  "size": "1344x768",
+  "video_model": "pending (倾向 MiniMax-H3)",
+  "authoring_skill": "h3-prompt-writing",
+  "mode": "text2img (humans tiny accents only)",
+  "references": [],
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Ultra-wide aerial view swooping over an endless canopy of giant ancient trees, treetops rolling to the horizon like a green ocean, warm golden light shafts piercing down through gaps in the canopy. One tiny warm-colored speck — an East Asian Chinese couple — glides through a sunlit clearing far below, pure accent. Environment more than 90 percent of the frame, immense negative space filled with soft light haze. Floating light dust and drifting mist, soft diffused light, no harsh shadows, translucent palette of warm-gold light shafts and lush teal-green. Serene, airy, joyful and mind-freeing atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
+  "negative": "close-up, big face, character dominates frame, crowded, cluttered, oversaturated, harsh sharp shadows, gloomy dark forest, dead grey, cold gloom, text, subtitles, watermark, logo, western/caucasian faces",
+  "note": "巨物=巨木林冠;光柱给暖与空灵。末帧穿林隙露水光,为向海底过渡铺垫(用视频末帧)。",
+  "status": "prompt_ready_pending_model_and_budget",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "text2img",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "16:9横构图锁1344x768,显式never vertical防画幅拉伸",
+      "写实电影真人,禁illustration/anime/3D",
+      "巨物锚点=参天巨木林冠如绿海,人物仅穿行暖点(~5%)+显式East Asian Chinese防欧美脸",
+      "暖金光柱/漫射光雾/无硬阴影/巨量留白,明亮通透非阴暗森林",
+      "负面词齐:近景/大脸/人物占画/杂乱/过饱和/硬阴影/阴暗/字幕水印logo/欧美脸",
+      "底部15-18%留干净字幕安全区已落文",
+      "结尾禁字/字幕/水印/logo/中文"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "860e3f3e5d2fb1cdea66c16eba3f5dca1f650d2ac9cbb1f911ea910f37c09b4a"
+  }
+}

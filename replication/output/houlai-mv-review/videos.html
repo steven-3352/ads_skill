@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《后来》MV — 视频审阅</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0f1115; color:#e8e8ea; font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:28px 18px 80px; }
+  h1 { font-size:21px; margin:0 0 4px; }
+  .sub { color:#8b8f98; font-size:13px; margin-bottom:22px; }
+  .shot { background:#141821; border:1px solid #242833; border-radius:14px; padding:16px; margin-bottom:18px; }
+  .shead { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px; margin-bottom:10px; }
+  .sid { font-weight:700; font-size:15px; }
+  .tag { font-size:12px; border-radius:6px; padding:2px 8px; }
+  .tag.canary { color:#c7f0b0; background:#1a3312; }
+  .tag.anchor { color:#ffd0a0; background:#3d2a12; }
+  video { width:100%; border-radius:10px; background:#000; display:block; }
+  .meta { font-size:13px; color:#c4c8d0; margin-top:10px; }
+  .dlg { font-size:13px; color:#f0d9a8; background:#1d1710; border:1px solid #4a3a1c; border-radius:8px; padding:8px 12px; margin-top:8px; }
+  .q { background:#12220f; border:1px solid #274a1c; color:#c7f0b0; border-radius:12px; padding:16px 18px; font-size:14px; margin-top:24px; }
+  ul { padding-left:20px; margin:8px 0; }
+  code { background:#0b0d11; padding:1px 6px; border-radius:5px; color:#ffd479; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《后来》MV — 视频审阅</h1>
+  <div class="sub">刘若英《后来》情感虐向 MV · 16:9 · 逐镜生成、人工听审后再拼总片 · 视频效果好坏由你判</div>
+  <div style="background:#2a1d12;border:1px solid #5a3a1c;color:#ffd0a0;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:13px;">
+    <b>关于声音:</b>H3 不保留《后来》原声(只拿它驱动嘴型,输出是它自造的哼唱)。<b>下面三条锚镜已铺上真《后来》原曲对应段</b>——这就是成片音轨的真实效果(成片里 H3 自带音轨一律丢弃、全片统一铺《后来》原曲)。请听:口型 + 原声 合到一起像不像。
+  </div>
+
+  <div class="shot">
+    <div class="shead">
+      <span class="sid">S01 · 冷开场 HOOK</span>
+      <span class="tag canary" style="color:#c7f0b0;background:#1a3312;">✓ 已通过</span>
+      <span class="tag anchor">对口型锚① · Ref2VA</span>
+    </div>
+    <video controls preload="metadata" src="../houlai-mv/videos/withsong/VID-S01-song.mp4"></video>
+    <div class="meta">
+      黑场顶光女主开口唱《后来》,口型跟参考人声段(0–4s)对上;身份/光影锁 S01 关键帧。1344×768 真 16:9 · 4.46s。
+      <br><b>通过配方已记录</b>:极简 prompt(只留"口型同步参考音频"+"禁 H3 自加其他人声/音乐/底噪")+ 不写声景创作段。H3 输出音轨丢弃、后期铺《后来》原曲。task 01a0bde6。详见 anchor-lipsync-recipe.md。
+    </div>
+    <div class="dlg">状态:用户看片通过 ✓</div>
+  </div>
+
+  <div class="shot">
+    <div class="shead">
+      <span class="sid">S05 · 现在时(眼神由暖转凉)</span>
+      <span class="tag anchor">对口型锚② · Ref2VA</span>
+    </div>
+    <video controls preload="metadata" src="../houlai-mv/videos/withsong/VID-S05-song.mp4"></video>
+    <div class="meta">黑场顶光女主唱,眼神由暖回忆转向疏离的凉。<b>已重做 v2</b>:改明确"在唱/嘴张动/悲伤疏离/不笑",人声段增益 +6dB 修嘴型偏弱。复用 S01 配方,25–31s 人声段。1344×768 · 6.58s。</div>
+    <div class="dlg">重点看:口型对不对、情绪"转凉悲伤"到没到位(v1 会微笑,已修)</div>
+  </div>
+
+  <div class="shot">
+    <div class="shead">
+      <span class="sid">S11 · 收尾金句</span>
+      <span class="tag anchor">对口型锚③ · Ref2VA</span>
+    </div>
+    <video controls preload="metadata" src="../houlai-mv/videos/withsong/VID-S11-song.mp4"></video>
+    <div class="meta">黑场顶光女主唱收尾句,泪落,释然中的痛。复用 S01 通过配方,换 66–77s 人声段。1344×768 · 11.55s。</div>
+    <div class="dlg">重点看:口型对不对、泪与"释然中的痛"够不够</div>
+  </div>
+
+  <div class="q">
+    <b>三处对口型锚镜(S01 已过 + 新出 S05/S11)请逐条看片:</b>
+    <ul>
+      <li>S05 / S11 都 OK → 回「锚镜过」,我进带对白镜(S02/03/04/06/07/08/09/10/12)H3 同期出对白,逐个出给你看;</li>
+      <li>个别要调 → 点名(如「S11 情绪太平 / S05 口型不对」),我只重出那条。</li>
+    </ul>
+    已花:关键帧 ¥3.75 + S01 系列实测 ¥2.4 + S05 ¥1.2 + S11 ¥2.2 ≈ <b>¥9.55</b>。剩余 9 个对白镜约 60 秒 ≈ ¥12。
+  </div>
+</div>
+</body>
+</html>

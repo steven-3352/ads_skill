@@ -1,0 +1,42 @@
+{
+  "prompt": "Photorealistic cinematic photograph. Two-shot medium (2S): both people framed together on and beside the two-seater loveseat with the empty middle gap between them clearly visible, horizontal wide eye-level framing. The opening 'decision already made' frame: the woman is already standing, her coat draped over her forearm; the man is seated at one end of the loveseat and has just looked up at her; a clear empty gap sits between them. The neatly packed suitcase stands by the entrance door and a face-down framed couple photo lies flat on the empty middle seat, so the first frame alone tells that something has already happened. KEY PROP, must be clearly rendered: on the empty middle seat of the loveseat, resting flat on the seat cushion right at its center, there is exactly one face-down framed couple photograph — a real rectangular picture frame turned upside-down onto the seat, its dark-colored solid frame edge and flat rigid backing board facing up toward the camera, clearly visible, unmistakable and prominent, of an obvious noticeable size (roughly the size of a hardcover book, not a tiny trinket), so any viewer instantly reads it as 'a couple photo that has been flipped face-down'. This object on the central seat is a framed photograph turned face-down; it is NOT a pillow, NOT a cushion, NOT a throw pillow — no pillow or cushion occupies that central spot. A held, breath-holding half-second of stillness: the woman's gaze is dropped to the floor or the coffee table, she is not looking at the man, quietly about to speak. Setting: a lived-in late-night East Asian Chinese urban family living room. Lighting: ceiling light switched on, whole room evenly and normally lit, bright and clear and airy, neutral warm white indoor lighting, low warm saturation, true-to-life clean home light — explicitly not dim, not gloomy, not moody, not oppressive, no heavy amber grade, not candlelit, not a single lamp lighting the rest of the room in shadow; every corner of the room is clearly and normally lit as if the main ceiling light is on. Deep quiet dark night city view outside the window carries the late-night time-of-day, while indoors the lights are simply on at normal brightness. A slightly worn two-seater fabric loveseat, a low coffee table in front with everyday clutter (a used mug, a folded newspaper, a tissue box, a casually draped blanket). By the entrance door in the background stands a single neatly packed upright hard-shell suitcase, ready by the doorway. Both faces are East Asian Chinese adults with natural, real, ordinary features — not Western, not Caucasian, not influencer-glam. 16:9 horizontal composition, DSLR 50mm realistic look, eye-level, shallow depth of field kept mild so the well-lit room and the face-down photo frame on the middle seat stay clearly readable, subtle fine film grain, natural true-to-life color, quiet late-night mood. No text overlay, no subtitles, no captions, no watermark, no logo.",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-B-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom-v2.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T12:30:00+08:00",
+    "checks": [
+      "2S双人中景两人+中间空位在画",
+      "开场物件先行:门口行李箱/A已起身外套搭臂弯/B抬头",
+      "核心隐喻:中间空座正中倒扣双人合照相框,深色框边+背板清晰可辨/明显尺寸/一眼可认,显式排除抱枕靠垫",
+      "灯光拉回LOC-v2:顶灯开/全屋均匀正常明亮通透/中性偏暖白/低暖饱和,显式排除dim/gloomy/moody/oppressive/heavy amber/candlelit/单灯压暗",
+      "深夜时间感只靠窗外都市夜景,屋内灯正常亮",
+      "东亚中国人A/B锁脸(非欧美非网红)",
+      "16:9横屏",
+      "结尾锁无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c662db9a042b4259c7ae2ac820881bc0577c4774ee783610ee12877ae1e9d9c9"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B1"
+    ],
+    "related_shots": [
+      "FS01"
+    ],
+    "visual_evidence": [
+      "首帧决定已发生:行李箱/中间空座正中倒扣合照相框/A外套搭臂弯/B抬头",
+      "两人之间空位可见",
+      "深夜但屋内正常明亮通透客厅(LOC-v2基调)"
+    ],
+    "unresolved_blockers": []
+  }
+}

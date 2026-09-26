@@ -1,0 +1,54 @@
+{
+  "id": "travel-04-image",
+  "role": "镜04 FL2VA首帧：全景车外，一辆车停在小区门口、静止未动（起始态），路延向远方",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "全景车外固定机位：一辆普通家用轿车静止停在住宅小区门口的路边（尚未启动、未移动的起始状态），车身完整停稳，车头朝向一条延伸向远方的道路，路面向画面深处延伸、通往远方。小区门口是泛化的居民区环境，绿化与楼房柔和虚化。清晨柔和自然的漫射天光，光色中性偏暖白、明亮通透不压抑，车漆哑光自然反光、无夸张高光反光。iPhone/单反真实照片级质感，画面带自然噪点、真实材质、轻微不均，绝无塑料感、AI感、CG蜡感、过度渲染感。车为安全停靠状态，不暗示危险驾驶。竖构图 9:16，车辆居中偏下、道路向纵深延伸，主体不贴边不出画、防拉伸变形。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌，绝无任何门牌、店招、路牌、广告牌或地名标注。",
+  "references": [],
+  "identity_anchor": {
+    "character_id": "travel-car-departure",
+    "role": "镜04首帧全景车外，车停在小区门口的起始态",
+    "usage": "场景锚点：与尾帧 travel-04-last 同机位同光构成 FL2VA 首尾帧，仅车辆位置从停靠到驶出变化",
+    "locks": [
+      "起始态：车静止停在小区门口未动",
+      "全景车外固定机位，路延向远方",
+      "与尾帧同机位同光同环境，仅车位置变",
+      "真实照片级质感，禁塑料/蜡感/过度渲染",
+      "画面无文字/门牌/路牌/招牌/广告牌/logo，竖构图 9:16"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T13:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344，车辆居中道路向纵深，主体不贴边，防拉伸变形（gpt-image-h3-aspect-mismatch-distortion / §2.1）",
+      "真实质感非塑料：iPhone/单反照片级，自然噪点+真实材质，禁塑料/AI/CG蜡/过度渲染（iphone-realistic-no-plastic-texture / §2.2）",
+      "柔光无油光：清晨柔和自然漫射天光、中性偏暖白明亮通透，车漆哑光自然反光无夸张高光（soft-light-no-facial-glare / §2.3）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌，绝无门牌/店招/路牌/广告牌/地名（no-brand-products-in-videos / §2.4）",
+      "FL2VA起始态：车静止停在小区门口未动，与尾帧同机位同光、仅车位置变（fl2va-for-state-change-actions）",
+      "安全行进合规：车为安全停靠状态、不暗示危险驾驶（§2.6）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "014fefe64a1cb045f231b38d9643f1592d00e0b0d23bdde669a1e4c0f7f15b8a"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "承·点火（坚定）04–05：走吧点火转折，起身出发"
+    ],
+    "related_shots": [
+      "04 全景/车外跟拍：车钥匙点火、引擎启动，车驶出小区门口，路延向远方"
+    ],
+    "visual_evidence": [
+      "剧本04画面：车驶出小区门口，路延向远方（本首帧取驶出前起始态：车停在门口静止）",
+      "旁白：走吧。第一站，去你圈了最久的地方",
+      "情绪节拍：情节转紧、点火转折镜"
+    ],
+    "unresolved_blockers": []
+  }
+}

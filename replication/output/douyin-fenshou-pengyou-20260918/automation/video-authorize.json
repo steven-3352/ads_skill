@@ -1,0 +1,249 @@
+[
+  {
+    "id": "SH01-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH01-U1-first",
+      "SH01-U1-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/videos/SH01-U1.mp4"
+  },
+  {
+    "id": "SH01-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH01-U2-first",
+      "SH01-U2-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/videos/SH01-U2.mp4"
+  },
+  {
+    "id": "SH02-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH02-U1-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH02-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH02/videos/SH02-U1.mp4"
+  },
+  {
+    "id": "SH02-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH02-U2-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH02-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH02/videos/SH02-U2.mp4"
+  },
+  {
+    "id": "SH03-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH03-U1-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH03-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/videos/SH03-U1.mp4"
+  },
+  {
+    "id": "SH03-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH03-U2-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH03-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/videos/SH03-U2.mp4"
+  },
+  {
+    "id": "SH04-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH04-U1-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/videos/SH04-U1.mp4"
+  },
+  {
+    "id": "SH04-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH04-U2-first-r3"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/videos/SH04-U2.mp4"
+  },
+  {
+    "id": "SH05-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 1.2,
+    "depends_on": [
+      "SH05-U1-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH05-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/videos/SH05-U1.mp4"
+  },
+  {
+    "id": "SH05-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH05-U2-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH05-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/videos/SH05-U2.mp4"
+  },
+  {
+    "id": "SH06-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 1.2,
+    "depends_on": [
+      "SH06-U1-first-r3"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH06-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/videos/SH06-U1.mp4"
+  },
+  {
+    "id": "SH07-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 1.2,
+    "depends_on": [
+      "SH07-U1-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH07-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U1.mp4"
+  },
+  {
+    "id": "SH07-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH07-U2-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH07-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U2.mp4"
+  },
+  {
+    "id": "SH08-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 1.0,
+    "depends_on": [
+      "SH08-U1-first",
+      "SH08-U1-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH08-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/videos/SH08-U1.mp4"
+  },
+  {
+    "id": "SH09-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH09-U1-first",
+      "SH09-U1-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U1.mp4"
+  },
+  {
+    "id": "SH09-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH09-U2-first",
+      "SH09-U2-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U2.mp4"
+  },
+  {
+    "id": "SH10-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH10-U1-first"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U1.mp4"
+  },
+  {
+    "id": "SH10-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH10-U2-first-r2"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U2.mp4"
+  },
+  {
+    "id": "SH11-U1-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH11-U1-first",
+      "SH11-U1-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U1-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U1.mp4"
+  },
+  {
+    "id": "SH11-U2-video",
+    "group": "shot_video",
+    "kind": "video",
+    "cost_yuan": 0.8,
+    "depends_on": [
+      "SH11-U2-first",
+      "SH11-U2-last"
+    ],
+    "model": "MiniMax-H3",
+    "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U2-video.json",
+    "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U2.mp4"
+  }
+]

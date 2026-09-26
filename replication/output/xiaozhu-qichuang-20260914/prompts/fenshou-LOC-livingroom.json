@@ -1,0 +1,21 @@
+{
+  "prompt": "Photorealistic cinematic photograph of an empty late-night East Asian Chinese urban family living room, completely unoccupied, no people, no person, no human figure anywhere in the frame. A lived-in, real home with genuine traces of daily life (not a pristine showroom, not a staged model apartment): slightly worn two-seater fabric sofa (a loveseat) as the central subject, a low coffee table in front of it, everyday clutter and used objects giving an honest sense of a real couple's home. On the empty middle seat of the two-seater sofa lies a face-down double-portrait couple photo frame, tipped over and lying flat with its back to the camera. By the entrance door in the background stands a single neatly packed hard-shell suitcase, upright and ready by the doorway. The only key light source is a warm yellow table lamp glowing on a side table, casting a soft warm pool of light; the rest of the room falls into gentle warm shadow. Shallow depth of field with a softly blurred, soft-focus background, subtle fine film grain, warm cinematic color grade, late-night quiet mood. DSLR 35mm realistic look, eye-level, 16:9 horizontal wide composition. Empty living room, unoccupied, no people, no person. No text, no subtitles, no captions, no letters, no numbers, no watermark, no logo anywhere in the image.",
+  "references": [],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-17T22:10:00+08:00",
+    "checks": ["深夜居家客厅暖黄台灯主光源已锁", "双人沙发(loveseat)为中心主体", "沙发中间空位倒扣双人合照相框", "门口整理好的行李箱", "浅景深柔焦+轻微胶片颗粒+暖调电影感", "空镜无人 no people/no person/unoccupied 强调", "有生活痕迹真实居家非样板间", "East Asian 中国都市家庭客厅质感", "16:9 横屏文生图无参考图", "结尾锁无文字水印logo"],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "187812eb607b246840fb2f4a954d8b4d579e09e8c7f878f43fa4a2851a6f332d"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": ["B1", "B7"],
+    "related_shots": ["FS01", "FS02", "FS03", "FS04", "FS05", "FS06", "FS07"],
+    "visual_evidence": ["深夜居家客厅暖黄台灯浅景深", "门口整理好的行李箱(开场将走未走/收尾已走)", "沙发中间空位倒扣的双人合照相框(关系破裂第一现场)", "空沙发位(缺失的物理化/空位是主角)", "轻微胶片颗粒暖调电影感", "空镜无人为各镜 --reference 场景根"],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: This is a fast-cut montage of three hard-cut beats at roughly a three-second cadence, each beat carrying continuous motion so no shot ever freezes on a settled static pose before the cut. [Shot 1] From 0.00s, starting exactly as framed in <Picture 1>: a bright daytime living room with soft diffused natural daylight and a neutral warm-white base, no single heavy yellow lamp washing the faces orange, skin keeping its natural tone. Close shot of the young East Asian Chinese woman from the reference, black hair in a bun with a bear-ear headband and bright yellow bear-cartoon pajamas, mid-motion lifting a mop upright with a coquettish little tilt of her head; behind her the young East Asian Chinese man in a light-grey T-shirt is slumped on the sofa. Still moving, at a natural, slightly quick pace with no trailing silence, the woman with a soft, slightly petulant young voice (S2) says: <d>[Chinese]我够不着上边。</d> Her eyes sparkle with playful pleading. [Shot 2] Hard cut at 00:02.90 to a close shot of the man, light-grey T-shirt, slumped deeper into the sofa as he drags an open hand slowly down over his eyes and face, exhausted, letting out a low tired exhale; the hand keeps moving through the cut, no dialogue. [Shot 3] Hard cut at 00:05.80 to a medium over-the-shoulder shot past the standing woman who still holds the mop, onto the man tipping his head back against the cushion and rubbing the back of his neck; at a natural, slightly quick pace he, a young East Asian Chinese man with a weary voice (S1), says: <d>[Chinese]我这周连续加三个大夜了。</d> The shot ends near 00:08.70 while his hand is still moving at his neck, motion unresolved. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A calm daytime living-room room tone runs unbroken beneath all three beats, with the light knock of the mop handle on the floor, soft fabric rustle as she shifts her weight, the faint drag of a palm over skin and a low tired exhale on the second beat, and a soft creak of the couch springs and light shuffle on the third; light natural breathing fills the micro-gaps so there is never dead silence.\n\nnon_diegetic_music: A light, playful solo piano figure at a moderate tempo, gentle and low in volume, holding steady and continuous under all three beats.",
+  "references": [
+    "replication/output/fuke/assets/U12-first.png"
+  ],
+  "images": [
+    "replication/output/fuke/assets/U12-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 9,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA-multishot",
+    "duration_seconds": 9.0,
+    "checks": [
+      "模式:I2VA首帧U12-first全参考0.00s锚定,内部三镜硬切(00:00/00:02.90/00:05.80)复刻原片镜21→22→23快切蒙太奇",
+      "快切:显式声明three hard-cut beats~3s cadence且每beat带连续运动、结尾不停在静止(治翻页/慢感根因)",
+      "对白:镜21女够不着上边(S2)+镜23男加三个大夜(S1)逐字<d>[Chinese],镜22他捂眼疲惫无对白只留叹息",
+      "禁留白:房间底噪+拖把磕+掌擦脸+叹息+沙发吱连续铺满三beat无死寂",
+      "身份锁:女小熊发箍黄睡衣(S2)/男灰T恤(S1)沿用母板,家日客厅暖白自然光禁大黄光染脸",
+      "质感:人脸哑光无油光真实毛孔iPhone噪点禁塑料蜡感CG",
+      "零字幕:显式no subtitles/on-screen text",
+      "时长:9s服从三beat快切密度"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c8e06e2e96b2a8df2113a75cbe59c0596f3e582e55a15fe8aa30e04bcc25d22e",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U12-mtgA-video",
+    "usage": "重做家日甜蜜蒙太奇A(原片式快切):镜21她够不着上边→镜22他捂眼累→镜23过肩他加三个大夜,I2VA自U12-first内部三镜硬切",
+    "locks": [
+      "女:黑发丸子头小熊发箍+亮黄小熊睡衣(S2)",
+      "男:浅灰T恤疲惫瘫沙发(S1)",
+      "家日客厅柔和自然光暖白/禁大黄光染脸",
+      "人脸哑光真实质感iPhone噪点",
+      "零字幕",
+      "三镜硬切快节奏每beat连续运动不停静止",
+      "声连续无留白"
+    ]
+  },
+  "narrative_note": "重做A:把原片镜21-23三个3秒快镜还原为一条内部硬切的快切蒙太奇,替代原U12+U13慢拍;够不着→捂眼累→加三个大夜"
+}

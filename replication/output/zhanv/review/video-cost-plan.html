@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>对白视频生成 · 付费授权 · 《爱你的人心疼你，你爱的人玩弄你》</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--txt:#e8eaed;--sub:#9aa3b2;--gold:#e6b566;--i2:#7cc4ff;--fl:#ff9db1;--ok:#a6e3a1;--warn:#ffb454;--bad:#ff6b6b;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif;line-height:1.7}
+  .wrap{max-width:920px;margin:0 auto;padding:20px 16px 104px}
+  h1{font-size:21px;margin:6px 0 2px}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .tag{display:inline-block;background:#20242e;border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px;color:var(--sub);margin:2px 4px 2px 0}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}
+  .box h2{font-size:14px;margin:0 0 8px;color:var(--gold)}
+  .box ul{margin:0;padding-left:18px} .box li{font-size:13.5px;color:#cfd4dd;margin:5px 0}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+  th{text-align:left;color:var(--sub);font-weight:600;border-bottom:1px solid var(--line);padding:6px 6px}
+  td{border-top:1px solid var(--line);padding:7px 6px;vertical-align:top;color:#dfe3ea}
+  .u{display:inline-block;font-size:11px;border-radius:6px;padding:1px 6px;border:1px solid var(--line)}
+  .i2{color:var(--i2)} .fl{color:var(--fl)}
+  .big{font-size:26px;color:var(--gold);font-weight:700}
+  .dense{color:var(--bad);font-weight:700}
+  .ok{color:var(--ok)}
+  .opt{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+  @media(max-width:680px){.opt{grid-template-columns:1fr}}
+  .optcard{background:#12151c;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .optcard.pick{border-color:#5a7a3a}
+  .optcard h3{margin:0 0 6px;font-size:14px}
+  .confirm{position:fixed;left:0;right:0;bottom:0;background:#12151c;border-top:1px solid var(--line);padding:11px 16px;text-align:center;font-size:13px;color:var(--sub)}
+  .confirm b{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>对白视频生成 · 付费授权（stage4）</h1>
+  <div class="meta">《爱你的人心疼你，你爱的人玩弄你》· 13 个生成单元 · MiniMax-H3 对白同期 · 待你授权后开始计费</div>
+  <div>
+    <span class="tag">13 单元</span><span class="tag">H3 对白同期</span><span class="tag">16:9</span>
+    <span class="tag">单价 ¥0.2/秒（H3 每单元≥4s计费）</span><span class="tag">全部锁 stage3 关键帧首帧</span><span class="tag">已过 h3 提示词校验门</span>
+  </div>
+
+  <div class="box" style="border-color:#5a4a2a">
+    <h2>要花多少 / 花在哪</h2>
+    <ul>
+      <li>13 个对白视频单元，按 H3 <b>¥0.2/秒</b> 计。前三阶段已花 <b>¥4.75</b>（母板 ¥1.0 + 14 关键帧 ¥3.5 + 镜6 返工 ¥0.25）。</li>
+      <li>本步就是 <b>把 13 张关键帧 + 逐字对白喂给 H3，出带声音带对白的视频片段</b>，成片零烧字幕、音画同期。</li>
+      <li>流程：<b>金丝雀 1 条</b>验通路/扣费 → 剩余<b>顺序</b>生成（付费态 flock 锁，不能并行）→ 每条挂公网 HTML 给你<b>看片</b>（对口型/表演/有没有烧字幕/蜡感）→ 不行的 reject 重生 → 全过 gate-out 锁组 → 本地 ffmpeg 拼接（U07b 尾接黑场）→ 交付。</li>
+      <li>重生按实际秒数 ¥0.2/秒<b>另计</b>，触及上限会<b>再找你授权</b>，不偷跑。</li>
+    </ul>
+  </div>
+
+  <div class="box" style="border-color:#7a3a3a">
+    <h2>⚠ 一个需要你拍板的业务点：三处对白太密，锁定秒数塞不下</h2>
+    <ul>
+      <li>爆款对白片要"听得懂 + 不留死尾 + 语速正常偏快"，正常中文口语约 <b>4.5–6 字/秒</b>。</li>
+      <li>按分镜锁定的秒数，<span class="dense">U02b≈9.5、U04a≈7.8、U05b≈10 字/秒</span>——H3 会念崩、吞字或被截断，多半过不了看片，得二次重生（=多花钱、多等）。</li>
+      <li>其余 10 个单元密度正常（<span class="ok">4–6.3 字/秒</span>），没问题。</li>
+    </ul>
+    <div class="opt">
+      <div class="optcard">
+        <h3>方案 A · 按锁定秒数直接生成</h3>
+        <p style="font-size:13px;color:#cfd4dd;margin:4px 0">总时长 82s，<b class="big">¥16.4</b>。</p>
+        <p style="font-size:12.5px;color:var(--sub);margin:4px 0">省钱省一步，但 U02b/U04a/U05b（含 U05a 偏紧）大概率念崩需重生，实际很可能反而更贵更慢。</p>
+      </div>
+      <div class="optcard pick">
+        <h3>方案 B · 推荐：密集镜加时到可听懂</h3>
+        <p style="font-size:13px;color:#cfd4dd;margin:4px 0">U02b 6→9s、U04a 8→10s、U05b 6→9s、U05a 7→8s（+9s），总 91s，<b class="big">¥18.2</b>。</p>
+        <p style="font-size:12.5px;color:var(--sub);margin:4px 0">四镜降到 ~6 字/秒，正常偏快能听清，一次过概率高。加时不改画面/对白/表演，只给嘴留够时间。</p>
+      </div>
+    </div>
+    <p style="font-size:12.5px;color:var(--sub);margin:8px 0 0">选 B 我会先更新机读生产锁的这四个单元时长、重算提示词、再开生成；选 A 我按现状直接开。</p>
+  </div>
+
+  <div class="box">
+    <h2>13 单元逐条（对白逐字来自锁定剧本 v2）</h2>
+    <table>
+      <tr><th>单元</th><th>镜型</th><th>锁定/建议秒</th><th>字/秒</th><th>戏</th></tr>
+      <tr><td>U01</td><td><span class="u i2">I2VA</span></td><td>5s</td><td class="ok">5.6</td><td>钩子·又看手机被抓包（双人中景）</td></tr>
+      <tr><td>U02a</td><td><span class="u i2">I2VA</span></td><td>7s</td><td class="ok">4.4</td><td>点五年早饭·稳（双人中景）</td></tr>
+      <tr><td>U02b</td><td><span class="u i2">I2VA</span></td><td>6s → <b>9s</b></td><td class="dense">9.5→6.3</td><td>"踏实到没感觉"+撕面膜手停（林夏近景）</td></tr>
+      <tr><td>U03a</td><td><span class="u i2">I2VA</span></td><td>6s</td><td class="ok">6.3</td><td>瞎想·怕被抛下（双人中景）</td></tr>
+      <tr><td>U03b</td><td><span class="u i2">I2VA</span></td><td>6s</td><td class="ok">6.3</td><td>老虎机比喻（周周中景·林夏低头）</td></tr>
+      <tr><td>U04a</td><td><span class="u i2">I2VA</span></td><td>8s → <b>10s</b></td><td class="dense">7.8→6.2</td><td>账本对撞·记你姨妈期（双人中景）</td></tr>
+      <tr><td>U04b</td><td><span class="u i2">I2VA</span></td><td>7s</td><td class="ok">5.3</td><td>题眼①"他在遛你"+隐忍（过肩近景）</td></tr>
+      <tr><td>U05a</td><td><span class="u i2">I2VA</span></td><td>7s → <b>8s</b></td><td class="dense">7.0→6.1</td><td>题眼②"他居然选了我"（过肩近景）</td></tr>
+      <tr><td>U05b</td><td><span class="u i2">I2VA</span></td><td>6s → <b>9s</b></td><td class="dense">10→6.7</td><td>童年配方·忽冷忽热（过肩近景）</td></tr>
+      <tr><td>U06a</td><td><span class="u i2">I2VA</span></td><td>6s</td><td class="ok">4.0</td><td>"你现在想回谁"（双人中景）</td></tr>
+      <tr><td>U06b</td><td><span class="u fl">FL2VA</span></td><td>8s</td><td class="ok">豁免</td><td>反转·手机亮陈默消息+手指点开又关上→"我回陈默"（中景+手机屏特写，静默兑现）</td></tr>
+      <tr><td>U07a</td><td><span class="u i2">I2VA</span></td><td>6s</td><td class="ok">4.0</td><td>"像个刚睡醒的人"（林夏近景）</td></tr>
+      <tr><td>U07b</td><td><span class="u i2">I2VA</span></td><td>4s</td><td class="ok">4.0</td><td>"我才醒"+掉泪笑（近景，尾黑场后期加）</td></tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>每条都锁死的硬规矩（已写进 H3 提示词并过校验门）</h2>
+    <ul>
+      <li><b>去蜡感/去黄</b>：iPhone 手持真实质感、噪点、真实肤质毛孔；真实房间 LED 中性白光≈4800K，显式禁暖黄橘黄、脸哑光无油光；<b>全程恒亮不压暗、无渐黑、无字幕烧录</b>。</li>
+      <li><b>身份锁</b>：S1=林夏 / S2=周周，逐条重述身份（East Asian 中国女性、面膜/针织衫 vs 素颜/棉衬衫），跨镜稳定不串脸；各单元首帧=stage3 已锁关键帧。</li>
+      <li><b>对白逐字</b>：`&lt;d&gt;[Chinese]…&lt;/d&gt;` 照抄剧本 v2，标点不动；说话人身份/动作/语气写在标签外；语速正常偏快、接话不留死尾。</li>
+      <li><b>题眼表演</b>：U04b/U05a 走"心疼不是训斥"+林夏抿唇/屏息/眼神松动，<b>禁发光眼/红眼/流泪</b>（避开 H3 妖异眼坑）；仅 U07b 结尾"掉泪笑=松一口气"。</li>
+      <li><b>合规</b>：红酒瓶/手机/糖水无品牌无 logo；台词不提品牌；U06b 手机屏中文为画内 UI（非字幕）。</li>
+      <li><b>反转镜</b>：U06b=FL2VA 首帧手机暗屏、尾帧手机亮陈默消息+手指刚离开另一对话框；具名静默豁免（崩点留白，动作兑现）。</li>
+    </ul>
+  </div>
+</div>
+<div class="confirm">看完在对话里回我：<b>方案B</b>（推荐，¥18.2 加时保可懂）｜ <b>方案A</b>（¥16.4 按锁定秒数）｜ <b>改某条戏/秒数</b> ｜ <b>问细节</b></div>
+</body>
+</html>

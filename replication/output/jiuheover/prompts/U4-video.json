@@ -1,0 +1,33 @@
+{
+  "unit_id": "U4",
+  "scene": "陈叙单人近景 · 画外音先入问是否还爱 · 稳声作答眼神偏移举杯饮尽手微颤",
+  "mode": "I2VA",
+  "ratio": "9:16",
+  "duration": 6,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U4/images/U4-first.png"
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. The man shown in <Picture 1> stays seated close in frame at his side of the small wooden table by the rain-streaked tavern window at night, keeping his appearance, dark sweater over a white collar, seating position, and the plain unlabeled white ceramic bottle with red cap and thin gold ring plus the two clear glass stemmed cups on the table in front of him. Bright warm-white overhead and table-lamp light keeps his face clearly readable, not dim, not moody. The camera holds a near-static close shot with slight handheld breathing motion. A quiet young woman's voice speaking Mandarin at a normal, slightly quick pace with no dead air (S1) says in an off-screen voiceover, entirely outside this frame with her lips remaining closed: <d>[Chinese]那你……还爱我吗？</d> The East Asian man in his early thirties with light stubble, speaking Mandarin at a normal, slightly quick pace with no dead air (S2) waits half a beat, steadying his voice as though trying to keep it from cracking, and answers: <d>[Chinese]爱。可是爱，好像不够了。</d> As he says 不够了 his eyes drift slightly off her, a small fraction of avoidance. He lifts one clear glass stemmed cup and drinks it down in a single swallow; as the cup meets his lips his hand carries a faint, barely noticeable tremor. He sets the empty cup back on the table and, in a voice pitched even lower, adds: <d>[Chinese]这酒，原来这么苦。</d> His micro-expressions stay restrained and real, pressing calm over something he can no longer fully hold down. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain taps against the window outside while low indoor room tone and faint bar murmur run continuously underneath. A soft swallow is followed by the light tap of the glass cup meeting the wooden table, keeping the ambience unbroken with no dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:I2VA 指令行 <Picture 1>(from [Shot 1]) at 0.00s + 三核心字段顺序正确",
+      "I2VA 结构=first-frame anchor→action onset→continuous development:先锚 <Picture 1> 陈叙坐姿/道具/暖白光,再画外音提问→稳声作答→避开眼神→饮尽→压声补句",
+      "画外音先入(pre-lap)按 §4.4 处理:苏晚完全不入镜,off-screen voiceover 紧跟 lips remaining closed + entirely outside this frame",
+      "去蜡感强化写入 Shot 1 开头",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内(爱。可是爱，好像不够了。/这酒，原来这么苦。),表演细节(眼神偏移/手微颤/声音更低)写在 <d> 外",
+      "speaker 稳定 ID S1=苏晚(画外)、S2=陈叙,首次出现给身份",
+      "语速锁:normal slightly quick pace with no dead air,半拍停顿后即接话不留死尾",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:雨声+室内低语连续,饮酒吞咽+玻璃杯磕木桌轻响,no dead silence",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle/clear glass stemmed cups,无 logo/文字/清酒器",
+      "时长 6s 单镜无 cut,竖屏 9:16 由 ref 帧承载,non_diegetic_music=N/A"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c90f9ed869353487b131732765d0b79506a79e406d0a62bc72cb95909d3a181d"
+  }
+}

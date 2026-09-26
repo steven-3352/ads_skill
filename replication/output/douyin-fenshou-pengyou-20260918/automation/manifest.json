@@ -1,0 +1,3762 @@
+{
+  "schema_version": 1,
+  "project_id": "fenshou-pengyou",
+  "episode": "master",
+  "status": "gate_open_for_next_authorized_asset",
+  "created_at": "2026-09-18T10:05:00+08:00",
+  "updated_at": "2026-09-18T20:38:23+08:00",
+  "budget": {
+    "committed_yuan": 32.70000000000001,
+    "hard_cap_yuan": 34
+  },
+  "authorization": {
+    "committed_yuan": 32.70000000000001,
+    "increment_cap_yuan": 34,
+    "asset_ids": [
+      "CAP-friend-p2",
+      "CAP-friend-p35",
+      "CAP-friend-p4a",
+      "CAP-friend-p4b",
+      "CAP-friend-p6",
+      "CAP-friend-p8",
+      "CAP-sis-p2",
+      "CAP-sis-p35",
+      "SH01-U1-first",
+      "SH01-U1-last",
+      "SH01-U1-video",
+      "SH01-U2-first",
+      "SH01-U2-last",
+      "SH01-U2-video",
+      "SH02-U1-first",
+      "SH02-U1-video",
+      "SH02-U2-first",
+      "SH02-U2-video",
+      "SH03-U1-first",
+      "SH03-U1-video",
+      "SH03-U2-first",
+      "SH03-U2-video",
+      "SH04-U1-first",
+      "SH04-U1-video",
+      "SH04-U2-first",
+      "SH04-U2-first-r2",
+      "SH04-U2-first-r3",
+      "SH04-U2-video",
+      "SH05-U1-first",
+      "SH05-U1-video",
+      "SH05-U2-first",
+      "SH05-U2-video",
+      "SH06-U1-first",
+      "SH06-U1-first-r2",
+      "SH06-U1-first-r3",
+      "SH06-U1-video",
+      "SH07-U1-first",
+      "SH07-U1-video",
+      "SH07-U2-first",
+      "SH07-U2-video",
+      "SH08-U1-first",
+      "SH08-U1-last",
+      "SH08-U1-video",
+      "SH09-U1-first",
+      "SH09-U1-last",
+      "SH09-U1-video",
+      "SH09-U2-first",
+      "SH09-U2-last",
+      "SH09-U2-video",
+      "SH10-U1-first",
+      "SH10-U1-video",
+      "SH10-U2-first",
+      "SH10-U2-first-r2",
+      "SH10-U2-video",
+      "SH11-U1-first",
+      "SH11-U1-last",
+      "SH11-U1-video",
+      "SH11-U2-first",
+      "SH11-U2-last",
+      "SH11-U2-video",
+      "VO-friend-p2",
+      "VO-friend-p35",
+      "VO-friend-p4a",
+      "VO-friend-p4b",
+      "VO-friend-p6",
+      "VO-friend-p8",
+      "VO-sis-p2",
+      "VO-sis-p35",
+      "fenshou-pengyou-F-master",
+      "fenshou-pengyou-M-master"
+    ],
+    "allow_pending_semantic_qc": true
+  },
+  "assets": [
+    {
+      "id": "fenshou-pengyou-M-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/assets/fenshou-pengyou-M-master.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/characters/fenshou-pengyou-M-master.png",
+      "submission_started_at": "2026-09-18T10:08:33+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/fenshou-pengyou-M-master",
+      "sha256": "3c4b251ba5714bf856f7aa73779f0390d7aaa404fd23a83967a7d44e1930d801",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:10:43+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T10:14:31+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/review/M-master-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T10:14:31+08:00"
+    },
+    {
+      "id": "fenshou-pengyou-F-master",
+      "group": "master",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/assets/fenshou-pengyou-F-master.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/characters/fenshou-pengyou-F-master.png",
+      "submission_started_at": "2026-09-18T10:11:44+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/fenshou-pengyou-F-master",
+      "sha256": "ac5852b4c2dce8af40c3c1542228cbc164544e01a50437f794234c85d3a5d7cb",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:12:48+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T10:14:31+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/review/F-master-semantic-qc.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T10:14:31+08:00"
+    },
+    {
+      "id": "SH01-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/images/SH01-U1-first.png",
+      "submission_started_at": "2026-09-18T10:41:47+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH01-U1-first",
+      "sha256": "e08b479cce92803acae8e7d2b9365dbec129c53d510acd35acc42ff21d11f78c",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:43:37+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:14+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:14+08:00"
+    },
+    {
+      "id": "SH01-U1-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U1-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/images/SH01-U1-last.png",
+      "submission_started_at": "2026-09-18T10:45:23+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH01-U1-last",
+      "sha256": "277952fb7810517b9690ab18043751b7df095dec69d72c845bb6b9dd50aa35e4",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:46:49+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:14+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:14+08:00"
+    },
+    {
+      "id": "SH01-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/images/SH01-U2-first.png",
+      "submission_started_at": "2026-09-18T10:46:49+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH01-U2-first",
+      "sha256": "61cb069828e10e75c4d035f169b624feaa33e9904a2d3e319b840d47d75f09b9",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:48:23+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:14+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:14+08:00"
+    },
+    {
+      "id": "SH01-U2-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U2-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/images/SH01-U2-last.png",
+      "submission_started_at": "2026-09-18T10:48:23+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH01-U2-last",
+      "sha256": "b203f89a5863375f50f2326f6b3074e2a38881d5960e26618015fb1eaeda6fee",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:50:22+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:15+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:15+08:00"
+    },
+    {
+      "id": "SH02-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH02-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH02/images/SH02-U1-first.png",
+      "submission_started_at": "2026-09-18T10:50:23+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH02-U1-first",
+      "sha256": "df63bac34b8cbe6549df4c8d5e810fdd298d969ab7858610bdf31e51dc5404ab",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:51:49+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:15+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:15+08:00"
+    },
+    {
+      "id": "SH02-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH02-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH02/images/SH02-U2-first.png",
+      "submission_started_at": "2026-09-18T10:51:49+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH02-U2-first",
+      "sha256": "14cd77a9b805d937c4ca390355e17940f4e1c67b239bfe97cc0e84aa929864e3",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:54:07+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:15+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:15+08:00"
+    },
+    {
+      "id": "SH03-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH03-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/images/SH03-U1-first.png",
+      "submission_started_at": "2026-09-18T10:54:07+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH03-U1-first",
+      "sha256": "7ae1bff0e6bd860978774d9833ec1d885cc9bf91823ad14c3fff7eb60531e5de",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T10:57:59+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:16+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:16+08:00"
+    },
+    {
+      "id": "SH03-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH03-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/images/SH03-U2-first.png",
+      "submission_started_at": "2026-09-18T10:57:59+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH03-U2-first",
+      "sha256": "80308826ed127d7ff71eb34676b332f16b63b28b56c47ae96da80223688c9e4e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:00:09+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:16+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:16+08:00"
+    },
+    {
+      "id": "SH04-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U1-first.png",
+      "submission_started_at": "2026-09-18T11:00:09+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U1-first",
+      "sha256": "d00f910c4f8720d980950a86f686ac1d1662b7aa4fe0e49b973c034b52a82b5f",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:01:37+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:16+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:16+08:00"
+    },
+    {
+      "id": "SH04-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "rejected",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U2-first.png",
+      "submission_started_at": "2026-09-18T11:01:37+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U2-first",
+      "sha256": "8556f268974c8952b88d73d8e6a3644799ff2194a2dd10e7026c25c02fde225d",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:04:22+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "reject",
+        "at": "2026-09-18T12:15:41+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual reject",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": null,
+      "superseded_by": "SH04-U2-first-r3"
+    },
+    {
+      "id": "SH05-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH05-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/images/SH05-U1-first.png",
+      "submission_started_at": "2026-09-18T11:04:23+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH05-U1-first",
+      "sha256": "1c1861fbd5a25a1753f30932e020afc526440247642ae32a4eeb88172499d9ef",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:06:26+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:17+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:17+08:00"
+    },
+    {
+      "id": "SH05-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH05-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/images/SH05-U2-first.png",
+      "submission_started_at": "2026-09-18T11:06:27+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH05-U2-first",
+      "sha256": "300fd3a287b1a8f41b87f2f83d5f28b1e3855f17afe4752bc05eaf878dda72d3",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:08:47+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:17+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:17+08:00"
+    },
+    {
+      "id": "SH06-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "rejected",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH06-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/images/SH06-U1-first.png",
+      "submission_started_at": "2026-09-18T11:08:47+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH06-U1-first",
+      "sha256": "f1322d9ac087bf3bd9de0d835702af5f93b03f0fdb8cd5561fa79cc7287b1b21",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:10:41+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:17+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:17+08:00",
+      "superseded_by": "SH06-U1-first-r3",
+      "superseded_from_accepted": true,
+      "retired_at": "2026-09-18T14:34:02+08:00"
+    },
+    {
+      "id": "SH07-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH07-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/images/SH07-U1-first.png",
+      "submission_started_at": "2026-09-18T11:10:41+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH07-U1-first",
+      "sha256": "fbc3a8ecf21fe12fa3992e063788d06d2611d63a3ac659f30f26dd3aecaf2f21",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:11:57+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:17+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:17+08:00"
+    },
+    {
+      "id": "SH07-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH07-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/images/SH07-U2-first.png",
+      "submission_started_at": "2026-09-18T11:11:57+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH07-U2-first",
+      "sha256": "3960a13bd5393fc55342a9dac492c2e6a9c2189675ed1a7b64cf1a23a6937900",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:14:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:18+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:18+08:00"
+    },
+    {
+      "id": "SH08-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH08-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/images/SH08-U1-first.png",
+      "submission_started_at": "2026-09-18T11:14:04+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH08-U1-first",
+      "sha256": "45ca7f528567b6c578a99c64447ef101bb9350478e540fc784fc0534f55b9272",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:16:09+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:18+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:18+08:00"
+    },
+    {
+      "id": "SH08-U1-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH08-U1-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/images/SH08-U1-last.png",
+      "submission_started_at": "2026-09-18T11:16:10+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH08-U1-last",
+      "sha256": "e20a27050d702b1fd46a8e490375fe33819ab6ff9cd37a7d2d346526b9df7cf1",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:18:11+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:18+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:18+08:00"
+    },
+    {
+      "id": "SH09-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/images/SH09-U1-first.png",
+      "submission_started_at": "2026-09-18T11:18:11+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH09-U1-first",
+      "sha256": "6c3966915e4abf172bda1d9e4c9359e341b6b31495e6c090739383d322931088",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:20:17+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:19+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:19+08:00"
+    },
+    {
+      "id": "SH09-U1-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U1-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/images/SH09-U1-last.png",
+      "submission_started_at": "2026-09-18T11:20:18+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH09-U1-last",
+      "sha256": "232e19aedd21ec1352c1f4edbe5f1d0fe312e7fef663610d60e9b058d221f264",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:22:30+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:19+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:19+08:00"
+    },
+    {
+      "id": "SH09-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/images/SH09-U2-first.png",
+      "submission_started_at": "2026-09-18T11:22:30+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH09-U2-first",
+      "sha256": "177cb78031b404bded295064f2e8e3bc8303643b47c217f1f80b69e29ac90d6d",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:24:52+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:19+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:19+08:00"
+    },
+    {
+      "id": "SH09-U2-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U2-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/images/SH09-U2-last.png",
+      "submission_started_at": "2026-09-18T11:24:52+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH09-U2-last",
+      "sha256": "e3c756a4a8b48c00c8fccdf68c191803b091f6a8705b51f4cc997866c977f7e7",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:28:06+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:20+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:20+08:00"
+    },
+    {
+      "id": "SH10-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/images/SH10-U1-first.png",
+      "submission_started_at": "2026-09-18T11:28:06+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH10-U1-first",
+      "sha256": "26ad861cf60e0279c0f10f1af43ab29bcc5f60b8bf28fde52ca3b026b0abc97f",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:30:41+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:20+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:20+08:00"
+    },
+    {
+      "id": "SH10-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "rejected",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/images/SH10-U2-first.png",
+      "submission_started_at": "2026-09-18T11:30:42+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH10-U2-first",
+      "sha256": "558450b2dc9c382f9c0e09ee7a821408ad10470478eb33c768632abb7b2d232e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:32:27+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:20+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:20+08:00",
+      "superseded_by": "SH10-U2-first-r2",
+      "superseded_from_accepted": true,
+      "retired_at": "2026-09-18T14:34:02+08:00"
+    },
+    {
+      "id": "SH11-U1-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U1-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/images/SH11-U1-first.png",
+      "submission_started_at": "2026-09-18T11:32:27+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH11-U1-first",
+      "sha256": "d6a4138e430eac2df33e45546db073588cef372023188bcc7a33e4239bc2eb47",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:33:42+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:20+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:20+08:00"
+    },
+    {
+      "id": "SH11-U1-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U1-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/images/SH11-U1-last.png",
+      "submission_started_at": "2026-09-18T11:33:43+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH11-U1-last",
+      "sha256": "75206b01b86fb181b0b17fef97c346993b446eb5af27732765ba9bb917ba4a34",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:35:49+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:21+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:21+08:00"
+    },
+    {
+      "id": "SH11-U2-first",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U2-first.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/images/SH11-U2-first.png",
+      "submission_started_at": "2026-09-18T11:35:50+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH11-U2-first",
+      "sha256": "fdaae7f51df908e535d3c218d78b9ff9ecb60a0b30fdcf910d7555ba35f7ad25",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:37:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:21+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:21+08:00"
+    },
+    {
+      "id": "SH11-U2-last",
+      "group": "shot_image",
+      "kind": "image",
+      "status": "accepted",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U2-last.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/images/SH11-U2-last.png",
+      "submission_started_at": "2026-09-18T11:37:05+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH11-U2-last",
+      "sha256": "d5d02248ca5068413bc09bd42423e80427a6b91bf31a3a862a0e80798c8ded73",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T11:39:18+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:16:22+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:16:22+08:00"
+    },
+    {
+      "id": "SH04-U2-first-r2",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "replaces": "SH04-U2-first",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U2-first-r2.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U2-first-r2.png",
+      "status": "rejected",
+      "submission_started_at": "2026-09-18T12:10:13+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U2-first-r2",
+      "sha256": "49e971ea81ebf6846847656ede886f73dbdbee9f714651e33a9ed69e6b6e3b2e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T12:14:45+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T12:15:27+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T12:15:27+08:00",
+      "superseded_by": "SH04-U2-first-r3",
+      "superseded_from_accepted": true,
+      "retired_at": "2026-09-18T14:34:02+08:00"
+    },
+    {
+      "id": "SH04-U2-first-r3",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "replaces": "SH04-U2-first-r2",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U2-first-r3.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U2-first-r3.png",
+      "status": "accepted",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U2-first-r3",
+      "submission_started_at": "2026-09-18T14:11:49+08:00",
+      "sha256": "3e58ef052b884d4f298e82866be2c6f1b356fd852a7443fd56f5387444a27d31",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T14:23:21+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T14:23:58+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T14:23:58+08:00"
+    },
+    {
+      "id": "SH06-U1-first-r2",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "replaces": "SH06-U1-first",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH06-U1-first-r2.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/images/SH06-U1-first-r2.png",
+      "status": "rejected",
+      "submission_started_at": "2026-09-18T14:15:37+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH06-U1-first-r2",
+      "sha256": "0e32103de0fd18b120718e196ed3a7fc2838881d07b1039f2a2e6810f959210c",
+      "accepted_at": null,
+      "semantic_qc": {
+        "result": "reject",
+        "at": "2026-09-18T14:24:12+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+        "note": "manual reject",
+        "reviewer": "run.sh"
+      },
+      "superseded_by": "SH06-U1-first-r3"
+    },
+    {
+      "id": "SH10-U2-first-r2",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "replaces": "SH10-U2-first",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U2-first-r2.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/images/SH10-U2-first-r2.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T14:19:06+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH10-U2-first-r2",
+      "sha256": "7e0309fcbf82082f40dbe40d611d5a229c12d3f0a5c55ba4f77992184fe5d310",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T14:23:22+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T14:23:58+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T14:23:58+08:00"
+    },
+    {
+      "id": "SH06-U1-first-r3",
+      "group": "shot_image",
+      "kind": "image",
+      "cost_yuan": 0.25,
+      "depends_on": [],
+      "replaces": "SH06-U1-first",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH06-U1-first-r3.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/images/SH06-U1-first-r3.png",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T14:25:24+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH06-U1-first-r3",
+      "sha256": "8678702e076e77d059ff2c7d561913b3417d42d7b95f03f9544333cda293676b",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T14:29:44+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T14:29:44+08:00",
+        "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+        "note": "manual accept",
+        "reviewer": "run.sh"
+      },
+      "accepted_at": "2026-09-18T14:29:44+08:00"
+    },
+    {
+      "id": "SH01-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH01-U1-first",
+        "SH01-U1-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/videos/SH01-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:21:18+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH01-U1-video",
+      "sha256": "bd01995f1fc2f6ecb183471f0c76a740dfb8e95ba34b3cf72e6ba9fff37fcae1",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:39:07+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:39:07+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:39:07+08:00"
+    },
+    {
+      "id": "SH01-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH01-U2-first",
+        "SH01-U2-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH01-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH01/videos/SH01-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:23:46+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH01-U2-video",
+      "sha256": "48be2612df9f0db5bcedfc285e8243ce472df5e464a9077c375ebaaf21e595cc",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:01+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:01+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:01+08:00"
+    },
+    {
+      "id": "SH02-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH02-U1-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH02-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH02/videos/SH02-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:25:39+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH02-U1-video",
+      "sha256": "a75983fcd623c484ef7f848923ec0bf78a88047a9b804519953cd9701b6b7c8e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:02+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:02+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:02+08:00"
+    },
+    {
+      "id": "SH02-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH02-U2-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH02-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH02/videos/SH02-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:27:05+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH02-U2-video",
+      "sha256": "c08bbdb83da9ab9b405e8df2a75d87fb62a062d6e6c813374f80d38c6bb2e98c",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:03+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:03+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:03+08:00"
+    },
+    {
+      "id": "SH03-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH03-U1-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH03-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/videos/SH03-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:28:32+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH03-U1-video",
+      "sha256": "b2d696612b70bfda5451973ea34d4d2ab50f6c4cd33ed943c3a52c2af913171e",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:04+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:04+08:00"
+    },
+    {
+      "id": "SH03-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH03-U2-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH03-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH03/videos/SH03-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:30:29+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH03-U2-video",
+      "sha256": "a55763b259ea7662c8a1115e30010632a5e21d76431f54a06097f96d9c7710e9",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:04+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:05+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:05+08:00"
+    },
+    {
+      "id": "SH04-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH04-U1-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/videos/SH04-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:32:06+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U1-video",
+      "sha256": "ab2df6a8e08824c53774749d8ca8caef86662cfeb5acd70abe62311f55ad7272",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:05+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:06+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:06+08:00"
+    },
+    {
+      "id": "SH04-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH04-U2-first-r3"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH04-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/videos/SH04-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:33:53+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U2-video",
+      "sha256": "523548dcaaa9d72ba53c6db561f8b42f3c0c8739796ba74910664782cce4da2b",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:06+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:07+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:07+08:00"
+    },
+    {
+      "id": "SH05-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "depends_on": [
+        "SH05-U1-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH05-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/videos/SH05-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:35:30+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH05-U1-video",
+      "sha256": "e7b596fb3cd33e1392b4470446b2c0a95955511252411212bfc7531c8e750e1d",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:07+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:08+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:08+08:00"
+    },
+    {
+      "id": "SH05-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH05-U2-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH05-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH05/videos/SH05-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T15:37:20+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH05-U2-video",
+      "sha256": "209aa51c537985ea4c32127287f0633d0e40ea697e61e443e1472d80f1e10dd8",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:08+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:09+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:09+08:00"
+    },
+    {
+      "id": "SH06-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "depends_on": [
+        "SH06-U1-first-r3"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH06-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH06/videos/SH06-U1.mp4",
+      "status": "accepted",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH06-U1-video",
+      "submission_started_at": "2026-09-18T16:14:23+08:00",
+      "sha256": "557d35d07a0247befc98f1cad7f593b715bdff538065456f56e90641e3456cca",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:09+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:09+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:09+08:00"
+    },
+    {
+      "id": "SH07-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 1.2,
+      "depends_on": [
+        "SH07-U1-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH07-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:16:10+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH07-U1-video",
+      "sha256": "5c717b57f753b074a27a07da2faa74fdde12a3d2374314b81cb8f3490906366c",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:10+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:10+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:10+08:00"
+    },
+    {
+      "id": "SH07-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH07-U2-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH07-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/videos/SH07-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:18:07+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH07-U2-video",
+      "sha256": "b4257b071cbe93c733e9f932d0289f843d867896663a956e503a229b18b23fd8",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:11+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:11+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:11+08:00"
+    },
+    {
+      "id": "SH08-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 1.0,
+      "depends_on": [
+        "SH08-U1-first",
+        "SH08-U1-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH08-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH08/videos/SH08-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:19:34+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH08-U1-video",
+      "sha256": "ac4858798ad97b1aeef685ec07fcd643ab10fc106c577ddb1a75ae37480d3302",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:12+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:12+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:12+08:00"
+    },
+    {
+      "id": "SH09-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH09-U1-first",
+        "SH09-U1-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:21:36+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH09-U1-video",
+      "sha256": "16506c82d46e2b5b80ef597d576d3717d9ad4437ee71497debb92cdf8f969ba4",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:13+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:13+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:13+08:00"
+    },
+    {
+      "id": "SH09-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH09-U2-first",
+        "SH09-U2-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH09-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/videos/SH09-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:23:08+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH09-U2-video",
+      "sha256": "835f0456fb2dd24b407f2c86aa472e88dc90a2758f38119e21ffe91bfb6105f3",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:14+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:14+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:14+08:00"
+    },
+    {
+      "id": "SH10-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH10-U1-first"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:24:41+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH10-U1-video",
+      "sha256": "9a7990103dbb84d79adca19b727876d7eaf2e502c0ccea56d9d96ff8d7538f23",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:15+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:15+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:15+08:00"
+    },
+    {
+      "id": "SH10-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH10-U2-first-r2"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH10-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH10/videos/SH10-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:26:28+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH10-U2-video",
+      "sha256": "61cc1f147b1cfb785795d8ba4a23864d8877794de3535891f97aa74bec537261",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:16+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:16+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:16+08:00"
+    },
+    {
+      "id": "SH11-U1-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH11-U1-first",
+        "SH11-U1-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U1-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U1.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:27:55+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH11-U1-video",
+      "sha256": "73512d21742f173e6386b877ad5be097343f6d27dde0081d94895a7d012f1f5a",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:17+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:17+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:17+08:00"
+    },
+    {
+      "id": "SH11-U2-video",
+      "group": "shot_video",
+      "kind": "video",
+      "cost_yuan": 0.8,
+      "depends_on": [
+        "SH11-U2-first",
+        "SH11-U2-last"
+      ],
+      "model": "MiniMax-H3",
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/SH11-U2-video.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH11/videos/SH11-U2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T16:29:46+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH11-U2-video",
+      "sha256": "de1033239c5336051d5391fedfb3f1501e6cd69bd88353596f05a47ba3c4b5a4",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T19:40:18+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T19:40:18+08:00",
+        "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+        "note": "manual accept",
+        "reviewer": "user"
+      },
+      "accepted_at": "2026-09-18T19:40:18+08:00"
+    },
+    {
+      "id": "VO-friend-p2",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-friend-p2.json",
+      "output": "assets/audio/vo/VO-friend-p2.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-friend-p35",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-friend-p35.json",
+      "output": "assets/audio/vo/VO-friend-p35.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-friend-p4a",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-friend-p4a.json",
+      "output": "assets/audio/vo/VO-friend-p4a.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-friend-p4b",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-friend-p4b.json",
+      "output": "assets/audio/vo/VO-friend-p4b.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-friend-p6",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 1.2,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-friend-p6.json",
+      "output": "assets/audio/vo/VO-friend-p6.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-friend-p8",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-friend-p8.json",
+      "output": "assets/audio/vo/VO-friend-p8.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-sis-p2",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-sis-p2.json",
+      "output": "assets/audio/vo/VO-sis-p2.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "VO-sis-p35",
+      "kind": "video",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "model": "MiniMax-H3",
+      "prompt_file": "prompts/voice/VO-sis-p35.json",
+      "output": "assets/audio/vo/VO-sis-p35.mp4",
+      "status": "ready"
+    },
+    {
+      "id": "CAP-friend-p2",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p2.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:01:20+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-friend-p2",
+      "sha256": "190d1d25a51c4d24e6b1f678db598a800acdf1115ee4a76c4abd1a5926202b80",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:06:23+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:06:24+08:00",
+        "evidence": "automation/vo-evidence/CAP-friend-p2.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:06:24+08:00"
+    },
+    {
+      "id": "CAP-sis-p2",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-sis-p2.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-sis-p2.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:07:12+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-sis-p2",
+      "sha256": "40a115cf92b831ed7d5b4356c7eda08d2a24c6bcb2f3ff3f1bdf17044906a230",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:10:36+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:10:37+08:00",
+        "evidence": "automation/vo-evidence/CAP-sis-p2.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:10:37+08:00"
+    },
+    {
+      "id": "CAP-friend-p35",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p35.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p35.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:10:37+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-friend-p35",
+      "sha256": "3232ef9e98059613bc714971367ed79109318ad0b809fe089b5643ee5445bf34",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:13:31+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:13:31+08:00",
+        "evidence": "automation/vo-evidence/CAP-friend-p35.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:13:31+08:00"
+    },
+    {
+      "id": "CAP-sis-p35",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-sis-p35.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-sis-p35.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:13:32+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-sis-p35",
+      "sha256": "8be9ae68362ae067731ea9eb4bc203bf70fd3f15a86cb51338c31ac0e1cf5ae0",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:16:46+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:16:46+08:00",
+        "evidence": "automation/vo-evidence/CAP-sis-p35.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:16:46+08:00"
+    },
+    {
+      "id": "CAP-friend-p4a",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p4a.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p4a.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:16:47+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-friend-p4a",
+      "sha256": "8c3f4c7ac6a386ba4678908fe7f7aab57b767d7578b09d8b61f77a4a4cfbc567",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:22:43+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:22:43+08:00",
+        "evidence": "automation/vo-evidence/CAP-friend-p4a.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:22:43+08:00"
+    },
+    {
+      "id": "CAP-friend-p4b",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p4b.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p4b.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:22:44+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-friend-p4b",
+      "sha256": "167fd5fc69452d0b987717a4f38e0b633bbe919da4bcfdeb9fe06acd26c43325",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:27:39+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:27:39+08:00",
+        "evidence": "automation/vo-evidence/CAP-friend-p4b.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:27:39+08:00"
+    },
+    {
+      "id": "CAP-friend-p6",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 1.2,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p6.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p6.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:27:40+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-friend-p6",
+      "sha256": "cf5faf8f26e6636f26299ab6dec5841451b3f62d3ee402e87402f121e424b608",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:33:26+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:33:26+08:00",
+        "evidence": "automation/vo-evidence/CAP-friend-p6.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:33:26+08:00"
+    },
+    {
+      "id": "CAP-friend-p8",
+      "kind": "video",
+      "model": "MiniMax-H3",
+      "group": "vo_capture",
+      "cost_yuan": 0.8,
+      "depends_on": [],
+      "prompt_file": "replication/output/douyin-fenshou-pengyou-20260918/prompts/voice/VO-friend-p8.json",
+      "output": "replication/output/douyin-fenshou-pengyou-20260918/assets/audio/vo/CAP-friend-p8.mp4",
+      "status": "accepted",
+      "submission_started_at": "2026-09-18T20:33:27+08:00",
+      "audit_dir": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/CAP-friend-p8",
+      "sha256": "d65b5ffa8cfcb6a9883d477e58fdb29ef750cae0e386ab646657011a0b5f92f4",
+      "technical_qc": {
+        "result": "pass",
+        "at": "2026-09-18T20:38:22+08:00",
+        "note": "structural decode passed"
+      },
+      "semantic_qc": {
+        "result": "accept",
+        "at": "2026-09-18T20:38:23+08:00",
+        "evidence": "automation/vo-evidence/CAP-friend-p8.json",
+        "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+        "reviewer": "claude"
+      },
+      "accepted_at": "2026-09-18T20:38:23+08:00"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-18T10:08:33+08:00",
+      "type": "submission_started",
+      "asset_id": "fenshou-pengyou-M-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:10:27+08:00",
+      "type": "generation_received",
+      "asset_id": "fenshou-pengyou-M-master",
+      "cost_yuan": 0.25,
+      "sha256": "3c4b251ba5714bf856f7aa73779f0390d7aaa404fd23a83967a7d44e1930d801"
+    },
+    {
+      "at": "2026-09-18T10:10:43+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "fenshou-pengyou-M-master"
+    },
+    {
+      "at": "2026-09-18T10:11:44+08:00",
+      "type": "submission_started",
+      "asset_id": "fenshou-pengyou-F-master",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:12:48+08:00",
+      "type": "generation_received",
+      "asset_id": "fenshou-pengyou-F-master",
+      "cost_yuan": 0.25,
+      "sha256": "ac5852b4c2dce8af40c3c1542228cbc164544e01a50437f794234c85d3a5d7cb"
+    },
+    {
+      "at": "2026-09-18T10:12:48+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "fenshou-pengyou-F-master"
+    },
+    {
+      "at": "2026-09-18T10:14:31+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "fenshou-pengyou-M-master",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/review/M-master-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T10:14:31+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "fenshou-pengyou-F-master",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/review/F-master-semantic-qc.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T10:41:47+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:43:36+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "e08b479cce92803acae8e7d2b9365dbec129c53d510acd35acc42ff21d11f78c"
+    },
+    {
+      "at": "2026-09-18T10:43:37+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH01-U1-first"
+    },
+    {
+      "at": "2026-09-18T10:45:23+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U1-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:46:48+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U1-last",
+      "cost_yuan": 0.25,
+      "sha256": "277952fb7810517b9690ab18043751b7df095dec69d72c845bb6b9dd50aa35e4"
+    },
+    {
+      "at": "2026-09-18T10:46:49+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH01-U1-last"
+    },
+    {
+      "at": "2026-09-18T10:46:49+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:48:22+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "61cb069828e10e75c4d035f169b624feaa33e9904a2d3e319b840d47d75f09b9"
+    },
+    {
+      "at": "2026-09-18T10:48:23+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH01-U2-first"
+    },
+    {
+      "at": "2026-09-18T10:48:23+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U2-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:50:22+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U2-last",
+      "cost_yuan": 0.25,
+      "sha256": "b203f89a5863375f50f2326f6b3074e2a38881d5960e26618015fb1eaeda6fee"
+    },
+    {
+      "at": "2026-09-18T10:50:22+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH01-U2-last"
+    },
+    {
+      "at": "2026-09-18T10:50:23+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:51:48+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "df63bac34b8cbe6549df4c8d5e810fdd298d969ab7858610bdf31e51dc5404ab"
+    },
+    {
+      "at": "2026-09-18T10:51:49+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH02-U1-first"
+    },
+    {
+      "at": "2026-09-18T10:51:49+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:54:06+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "14cd77a9b805d937c4ca390355e17940f4e1c67b239bfe97cc0e84aa929864e3"
+    },
+    {
+      "at": "2026-09-18T10:54:07+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH02-U2-first"
+    },
+    {
+      "at": "2026-09-18T10:54:07+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T10:57:58+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "7ae1bff0e6bd860978774d9833ec1d885cc9bf91823ad14c3fff7eb60531e5de"
+    },
+    {
+      "at": "2026-09-18T10:57:59+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH03-U1-first"
+    },
+    {
+      "at": "2026-09-18T10:57:59+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:00:08+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "80308826ed127d7ff71eb34676b332f16b63b28b56c47ae96da80223688c9e4e"
+    },
+    {
+      "at": "2026-09-18T11:00:09+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH03-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:00:09+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:01:37+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "d00f910c4f8720d980950a86f686ac1d1662b7aa4fe0e49b973c034b52a82b5f"
+    },
+    {
+      "at": "2026-09-18T11:01:37+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH04-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:01:37+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:04:22+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "8556f268974c8952b88d73d8e6a3644799ff2194a2dd10e7026c25c02fde225d"
+    },
+    {
+      "at": "2026-09-18T11:04:22+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH04-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:04:23+08:00",
+      "type": "submission_started",
+      "asset_id": "SH05-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:06:26+08:00",
+      "type": "generation_received",
+      "asset_id": "SH05-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "1c1861fbd5a25a1753f30932e020afc526440247642ae32a4eeb88172499d9ef"
+    },
+    {
+      "at": "2026-09-18T11:06:26+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH05-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:06:27+08:00",
+      "type": "submission_started",
+      "asset_id": "SH05-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:08:46+08:00",
+      "type": "generation_received",
+      "asset_id": "SH05-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "300fd3a287b1a8f41b87f2f83d5f28b1e3855f17afe4752bc05eaf878dda72d3"
+    },
+    {
+      "at": "2026-09-18T11:08:47+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH05-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:08:47+08:00",
+      "type": "submission_started",
+      "asset_id": "SH06-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:10:40+08:00",
+      "type": "generation_received",
+      "asset_id": "SH06-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "f1322d9ac087bf3bd9de0d835702af5f93b03f0fdb8cd5561fa79cc7287b1b21"
+    },
+    {
+      "at": "2026-09-18T11:10:41+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH06-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:10:41+08:00",
+      "type": "submission_started",
+      "asset_id": "SH07-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:11:57+08:00",
+      "type": "generation_received",
+      "asset_id": "SH07-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "fbc3a8ecf21fe12fa3992e063788d06d2611d63a3ac659f30f26dd3aecaf2f21"
+    },
+    {
+      "at": "2026-09-18T11:11:57+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH07-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:11:57+08:00",
+      "type": "submission_started",
+      "asset_id": "SH07-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:14:03+08:00",
+      "type": "generation_received",
+      "asset_id": "SH07-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "3960a13bd5393fc55342a9dac492c2e6a9c2189675ed1a7b64cf1a23a6937900"
+    },
+    {
+      "at": "2026-09-18T11:14:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH07-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:14:04+08:00",
+      "type": "submission_started",
+      "asset_id": "SH08-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:16:09+08:00",
+      "type": "generation_received",
+      "asset_id": "SH08-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "45ca7f528567b6c578a99c64447ef101bb9350478e540fc784fc0534f55b9272"
+    },
+    {
+      "at": "2026-09-18T11:16:09+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH08-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:16:10+08:00",
+      "type": "submission_started",
+      "asset_id": "SH08-U1-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:18:11+08:00",
+      "type": "generation_received",
+      "asset_id": "SH08-U1-last",
+      "cost_yuan": 0.25,
+      "sha256": "e20a27050d702b1fd46a8e490375fe33819ab6ff9cd37a7d2d346526b9df7cf1"
+    },
+    {
+      "at": "2026-09-18T11:18:11+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH08-U1-last"
+    },
+    {
+      "at": "2026-09-18T11:18:11+08:00",
+      "type": "submission_started",
+      "asset_id": "SH09-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:20:17+08:00",
+      "type": "generation_received",
+      "asset_id": "SH09-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "6c3966915e4abf172bda1d9e4c9359e341b6b31495e6c090739383d322931088"
+    },
+    {
+      "at": "2026-09-18T11:20:17+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH09-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:20:18+08:00",
+      "type": "submission_started",
+      "asset_id": "SH09-U1-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:22:29+08:00",
+      "type": "generation_received",
+      "asset_id": "SH09-U1-last",
+      "cost_yuan": 0.25,
+      "sha256": "232e19aedd21ec1352c1f4edbe5f1d0fe312e7fef663610d60e9b058d221f264"
+    },
+    {
+      "at": "2026-09-18T11:22:30+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH09-U1-last"
+    },
+    {
+      "at": "2026-09-18T11:22:30+08:00",
+      "type": "submission_started",
+      "asset_id": "SH09-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:24:51+08:00",
+      "type": "generation_received",
+      "asset_id": "SH09-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "177cb78031b404bded295064f2e8e3bc8303643b47c217f1f80b69e29ac90d6d"
+    },
+    {
+      "at": "2026-09-18T11:24:52+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH09-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:24:52+08:00",
+      "type": "submission_started",
+      "asset_id": "SH09-U2-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:28:05+08:00",
+      "type": "generation_received",
+      "asset_id": "SH09-U2-last",
+      "cost_yuan": 0.25,
+      "sha256": "e3c756a4a8b48c00c8fccdf68c191803b091f6a8705b51f4cc997866c977f7e7"
+    },
+    {
+      "at": "2026-09-18T11:28:06+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH09-U2-last"
+    },
+    {
+      "at": "2026-09-18T11:28:06+08:00",
+      "type": "submission_started",
+      "asset_id": "SH10-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:30:41+08:00",
+      "type": "generation_received",
+      "asset_id": "SH10-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "26ad861cf60e0279c0f10f1af43ab29bcc5f60b8bf28fde52ca3b026b0abc97f"
+    },
+    {
+      "at": "2026-09-18T11:30:41+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH10-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:30:42+08:00",
+      "type": "submission_started",
+      "asset_id": "SH10-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:32:26+08:00",
+      "type": "generation_received",
+      "asset_id": "SH10-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "558450b2dc9c382f9c0e09ee7a821408ad10470478eb33c768632abb7b2d232e"
+    },
+    {
+      "at": "2026-09-18T11:32:27+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH10-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:32:27+08:00",
+      "type": "submission_started",
+      "asset_id": "SH11-U1-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:33:42+08:00",
+      "type": "generation_received",
+      "asset_id": "SH11-U1-first",
+      "cost_yuan": 0.25,
+      "sha256": "d6a4138e430eac2df33e45546db073588cef372023188bcc7a33e4239bc2eb47"
+    },
+    {
+      "at": "2026-09-18T11:33:42+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH11-U1-first"
+    },
+    {
+      "at": "2026-09-18T11:33:43+08:00",
+      "type": "submission_started",
+      "asset_id": "SH11-U1-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:35:49+08:00",
+      "type": "generation_received",
+      "asset_id": "SH11-U1-last",
+      "cost_yuan": 0.25,
+      "sha256": "75206b01b86fb181b0b17fef97c346993b446eb5af27732765ba9bb917ba4a34"
+    },
+    {
+      "at": "2026-09-18T11:35:49+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH11-U1-last"
+    },
+    {
+      "at": "2026-09-18T11:35:50+08:00",
+      "type": "submission_started",
+      "asset_id": "SH11-U2-first",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:37:04+08:00",
+      "type": "generation_received",
+      "asset_id": "SH11-U2-first",
+      "cost_yuan": 0.25,
+      "sha256": "fdaae7f51df908e535d3c218d78b9ff9ecb60a0b30fdcf910d7555ba35f7ad25"
+    },
+    {
+      "at": "2026-09-18T11:37:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH11-U2-first"
+    },
+    {
+      "at": "2026-09-18T11:37:05+08:00",
+      "type": "submission_started",
+      "asset_id": "SH11-U2-last",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T11:39:17+08:00",
+      "type": "generation_received",
+      "asset_id": "SH11-U2-last",
+      "cost_yuan": 0.25,
+      "sha256": "d5d02248ca5068413bc09bd42423e80427a6b91bf31a3a862a0e80798c8ded73"
+    },
+    {
+      "at": "2026-09-18T11:39:18+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH11-U2-last"
+    },
+    {
+      "at": "2026-09-18T12:09:46+08:00",
+      "type": "authorized_batch",
+      "count": 1,
+      "asset_ids": [
+        "SH04-U2-first-r2"
+      ],
+      "new_hard_cap_yuan": 8.0,
+      "new_increment_cap_yuan": 8.0,
+      "note": "补授权SH04-U2重做替代(原图双格返工)",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:10:13+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U2-first-r2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T12:12:16+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U2-first-r2",
+      "cost_yuan": 0.25,
+      "sha256": "49e971ea81ebf6846847656ede886f73dbdbee9f714651e33a9ed69e6b6e3b2e"
+    },
+    {
+      "at": "2026-09-18T12:14:45+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH04-U2-first-r2"
+    },
+    {
+      "at": "2026-09-18T12:15:27+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U2-first-r2",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:15:41+08:00",
+      "type": "semantic_qc_reject",
+      "asset_id": "SH04-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual reject",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:15:56+08:00",
+      "type": "superseded",
+      "asset_id": "SH04-U2-first",
+      "superseded_by": "SH04-U2-first-r2",
+      "note": "原图双格返工,r2单一连续帧替代",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U1-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:15+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U2-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:15+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:15+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:16+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:16+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:16+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:17+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH05-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:17+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH05-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:17+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH06-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:17+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH07-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:18+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH07-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:18+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH08-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:18+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH08-U1-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:19+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH09-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:19+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH09-U1-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:19+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH09-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:20+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH09-U2-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:20+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH10-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:20+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH10-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:20+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH11-U1-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:21+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH11-U1-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:21+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH11-U2-first",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T12:16:22+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH11-U2-last",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-shot-images.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T14:10:06+08:00",
+      "type": "authorized_batch",
+      "count": 3,
+      "asset_ids": [
+        "SH04-U2-first-r3",
+        "SH06-U1-first-r2",
+        "SH10-U2-first-r2"
+      ],
+      "new_hard_cap_yuan": 8.5,
+      "new_increment_cap_yuan": 8.5,
+      "note": "女主漂移3帧参考图生图返工:新上架r3/r2三张(references=F-master),抬顶8.5容3×0.25",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:10:25+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U2-first-r3",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T14:10:25+08:00",
+      "type": "local_preflight_failed",
+      "asset_id": "SH04-U2-first-r3",
+      "exit_code": 1,
+      "lifecycle_state": "local_preflight_failed",
+      "cost_yuan": 0
+    },
+    {
+      "at": "2026-09-18T14:11:38+08:00",
+      "type": "reconciled_no_post",
+      "asset_id": "SH04-U2-first-r3",
+      "cost_yuan": 0,
+      "refunded_yuan": 0,
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/requests/SH04-U2-first-r3",
+      "note": "本地预检失败:references路径缺PROJECT前缀;已修为仓库根全路径;未触达provider不退款",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:11:49+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U2-first-r3",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T14:14:37+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U2-first-r3",
+      "cost_yuan": 0.25,
+      "sha256": "3e58ef052b884d4f298e82866be2c6f1b356fd852a7443fd56f5387444a27d31"
+    },
+    {
+      "at": "2026-09-18T14:15:37+08:00",
+      "type": "submission_started",
+      "asset_id": "SH06-U1-first-r2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T14:18:10+08:00",
+      "type": "generation_received",
+      "asset_id": "SH06-U1-first-r2",
+      "cost_yuan": 0.25,
+      "sha256": "0e32103de0fd18b120718e196ed3a7fc2838881d07b1039f2a2e6810f959210c"
+    },
+    {
+      "at": "2026-09-18T14:19:06+08:00",
+      "type": "submission_started",
+      "asset_id": "SH10-U2-first-r2",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T14:22:32+08:00",
+      "type": "generation_received",
+      "asset_id": "SH10-U2-first-r2",
+      "cost_yuan": 0.25,
+      "sha256": "7e0309fcbf82082f40dbe40d611d5a229c12d3f0a5c55ba4f77992184fe5d310"
+    },
+    {
+      "at": "2026-09-18T14:23:21+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH04-U2-first-r3"
+    },
+    {
+      "at": "2026-09-18T14:23:22+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH10-U2-first-r2"
+    },
+    {
+      "at": "2026-09-18T14:23:58+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U2-first-r3",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T14:23:58+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH10-U2-first-r2",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T14:24:12+08:00",
+      "type": "semantic_qc_reject",
+      "asset_id": "SH06-U1-first-r2",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+      "note": "manual reject",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T14:25:15+08:00",
+      "type": "authorized_batch",
+      "count": 1,
+      "asset_ids": [
+        "SH06-U1-first-r3"
+      ],
+      "new_hard_cap_yuan": 8.75,
+      "new_increment_cap_yuan": 8.75,
+      "note": "SH06场景漂移重生:r2户外驳回,r3加严禁户外强锚",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:25:24+08:00",
+      "type": "submission_started",
+      "asset_id": "SH06-U1-first-r3",
+      "cost_yuan": 0.25
+    },
+    {
+      "at": "2026-09-18T14:28:45+08:00",
+      "type": "generation_received",
+      "asset_id": "SH06-U1-first-r3",
+      "cost_yuan": 0.25,
+      "sha256": "8678702e076e77d059ff2c7d561913b3417d42d7b95f03f9544333cda293676b"
+    },
+    {
+      "at": "2026-09-18T14:29:44+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH06-U1-first-r3"
+    },
+    {
+      "at": "2026-09-18T14:29:44+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH06-U1-first-r3",
+      "evidence": "replication/output/douyin-fenshou-pengyou-20260918/automation/semantic-qc-redo-female-frames.md",
+      "note": "manual accept",
+      "reviewer": "run.sh"
+    },
+    {
+      "at": "2026-09-18T14:34:02+08:00",
+      "type": "superseded_accepted",
+      "asset_id": "SH04-U2-first-r2",
+      "superseded_by": "SH04-U2-first-r3",
+      "note": "女主漂移返工:r3参考母板图生图身份锁死,退役旧成熟脸r2",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:34:02+08:00",
+      "type": "superseded_accepted",
+      "asset_id": "SH06-U1-first",
+      "superseded_by": "SH06-U1-first-r3",
+      "note": "女主漂移+户外场景返工:r3室内强锚身份锁死,退役旧图",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:34:02+08:00",
+      "type": "superseded_accepted",
+      "asset_id": "SH10-U2-first",
+      "superseded_by": "SH10-U2-first-r2",
+      "note": "女主漂移返工:r2参考母板图生图身份锁死,退役旧图",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:34:31+08:00",
+      "type": "superseded",
+      "asset_id": "SH04-U2-first",
+      "superseded_by": "SH04-U2-first-r3",
+      "note": "原链r2已退役,重指向accepted的r3",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T14:34:31+08:00",
+      "type": "superseded",
+      "asset_id": "SH06-U1-first-r2",
+      "superseded_by": "SH06-U1-first-r3",
+      "note": "户外漂移r2被室内r3替代",
+      "reviewer": "run.sh-main"
+    },
+    {
+      "at": "2026-09-18T15:20:36+08:00",
+      "type": "authorized_batch",
+      "count": 20,
+      "asset_ids": [
+        "SH01-U1-video",
+        "SH01-U2-video",
+        "SH02-U1-video",
+        "SH02-U2-video",
+        "SH03-U1-video",
+        "SH03-U2-video",
+        "SH04-U1-video",
+        "SH04-U2-video",
+        "SH05-U1-video",
+        "SH05-U2-video",
+        "SH06-U1-video",
+        "SH07-U1-video",
+        "SH07-U2-video",
+        "SH08-U1-video",
+        "SH09-U1-video",
+        "SH09-U2-video",
+        "SH10-U1-video",
+        "SH10-U2-video",
+        "SH11-U1-video",
+        "SH11-U2-video"
+      ],
+      "new_hard_cap_yuan": 26.5,
+      "new_increment_cap_yuan": 26.5,
+      "note": "stage4视频:注册20单元+扩顶17.4",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T15:20:36+08:00",
+      "type": "set_pending_qc",
+      "value": true,
+      "note": "视频不逐件语义accept,生成后挂公网HTML交人工看(only-validate-4-texts)",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T15:21:18+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:22:49+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "bd01995f1fc2f6ecb183471f0c76a740dfb8e95ba34b3cf72e6ba9fff37fcae1"
+    },
+    {
+      "at": "2026-09-18T15:23:46+08:00",
+      "type": "submission_started",
+      "asset_id": "SH01-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:25:38+08:00",
+      "type": "generation_received",
+      "asset_id": "SH01-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "48be2612df9f0db5bcedfc285e8243ce472df5e464a9077c375ebaaf21e595cc"
+    },
+    {
+      "at": "2026-09-18T15:25:39+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:27:05+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "a75983fcd623c484ef7f848923ec0bf78a88047a9b804519953cd9701b6b7c8e"
+    },
+    {
+      "at": "2026-09-18T15:27:05+08:00",
+      "type": "submission_started",
+      "asset_id": "SH02-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:28:32+08:00",
+      "type": "generation_received",
+      "asset_id": "SH02-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "c08bbdb83da9ab9b405e8df2a75d87fb62a062d6e6c813374f80d38c6bb2e98c"
+    },
+    {
+      "at": "2026-09-18T15:28:32+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:30:28+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "b2d696612b70bfda5451973ea34d4d2ab50f6c4cd33ed943c3a52c2af913171e"
+    },
+    {
+      "at": "2026-09-18T15:30:29+08:00",
+      "type": "submission_started",
+      "asset_id": "SH03-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:32:05+08:00",
+      "type": "generation_received",
+      "asset_id": "SH03-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "a55763b259ea7662c8a1115e30010632a5e21d76431f54a06097f96d9c7710e9"
+    },
+    {
+      "at": "2026-09-18T15:32:06+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:33:53+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "ab2df6a8e08824c53774749d8ca8caef86662cfeb5acd70abe62311f55ad7272"
+    },
+    {
+      "at": "2026-09-18T15:33:53+08:00",
+      "type": "submission_started",
+      "asset_id": "SH04-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:35:30+08:00",
+      "type": "generation_received",
+      "asset_id": "SH04-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "523548dcaaa9d72ba53c6db561f8b42f3c0c8739796ba74910664782cce4da2b"
+    },
+    {
+      "at": "2026-09-18T15:35:30+08:00",
+      "type": "submission_started",
+      "asset_id": "SH05-U1-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-18T15:37:19+08:00",
+      "type": "generation_received",
+      "asset_id": "SH05-U1-video",
+      "cost_yuan": 1.2,
+      "sha256": "e7b596fb3cd33e1392b4470446b2c0a95955511252411212bfc7531c8e750e1d"
+    },
+    {
+      "at": "2026-09-18T15:37:20+08:00",
+      "type": "submission_started",
+      "asset_id": "SH05-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T15:39:06+08:00",
+      "type": "generation_received",
+      "asset_id": "SH05-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "209aa51c537985ea4c32127287f0633d0e40ea697e61e443e1472d80f1e10dd8"
+    },
+    {
+      "at": "2026-09-18T15:39:07+08:00",
+      "type": "submission_started",
+      "asset_id": "SH06-U1-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-18T15:39:11+08:00",
+      "type": "local_preflight_failed",
+      "asset_id": "SH06-U1-video",
+      "exit_code": 3,
+      "lifecycle_state": "local_preflight_failed",
+      "cost_yuan": 0
+    },
+    {
+      "at": "2026-09-18T15:42:37+08:00",
+      "type": "reconciled_no_post",
+      "asset_id": "SH06-U1-video",
+      "cost_yuan": 0,
+      "refunded_yuan": 0,
+      "evidence": "automation/requests/SH06-U1-video",
+      "note": "积分不足RetCode226638远端拒cost0未计费,复位ready待充值",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T16:14:23+08:00",
+      "type": "submission_started",
+      "asset_id": "SH06-U1-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-18T16:16:09+08:00",
+      "type": "generation_received",
+      "asset_id": "SH06-U1-video",
+      "cost_yuan": 1.2,
+      "sha256": "557d35d07a0247befc98f1cad7f593b715bdff538065456f56e90641e3456cca"
+    },
+    {
+      "at": "2026-09-18T16:16:10+08:00",
+      "type": "submission_started",
+      "asset_id": "SH07-U1-video",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-18T16:18:07+08:00",
+      "type": "generation_received",
+      "asset_id": "SH07-U1-video",
+      "cost_yuan": 1.2,
+      "sha256": "5c717b57f753b074a27a07da2faa74fdde12a3d2374314b81cb8f3490906366c"
+    },
+    {
+      "at": "2026-09-18T16:18:07+08:00",
+      "type": "submission_started",
+      "asset_id": "SH07-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:19:33+08:00",
+      "type": "generation_received",
+      "asset_id": "SH07-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "b4257b071cbe93c733e9f932d0289f843d867896663a956e503a229b18b23fd8"
+    },
+    {
+      "at": "2026-09-18T16:19:34+08:00",
+      "type": "submission_started",
+      "asset_id": "SH08-U1-video",
+      "cost_yuan": 1.0
+    },
+    {
+      "at": "2026-09-18T16:21:36+08:00",
+      "type": "generation_received",
+      "asset_id": "SH08-U1-video",
+      "cost_yuan": 1.0,
+      "sha256": "ac4858798ad97b1aeef685ec07fcd643ab10fc106c577ddb1a75ae37480d3302"
+    },
+    {
+      "at": "2026-09-18T16:21:36+08:00",
+      "type": "submission_started",
+      "asset_id": "SH09-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:23:07+08:00",
+      "type": "generation_received",
+      "asset_id": "SH09-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "16506c82d46e2b5b80ef597d576d3717d9ad4437ee71497debb92cdf8f969ba4"
+    },
+    {
+      "at": "2026-09-18T16:23:08+08:00",
+      "type": "submission_started",
+      "asset_id": "SH09-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:24:40+08:00",
+      "type": "generation_received",
+      "asset_id": "SH09-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "835f0456fb2dd24b407f2c86aa472e88dc90a2758f38119e21ffe91bfb6105f3"
+    },
+    {
+      "at": "2026-09-18T16:24:41+08:00",
+      "type": "submission_started",
+      "asset_id": "SH10-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:26:27+08:00",
+      "type": "generation_received",
+      "asset_id": "SH10-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "9a7990103dbb84d79adca19b727876d7eaf2e502c0ccea56d9d96ff8d7538f23"
+    },
+    {
+      "at": "2026-09-18T16:26:28+08:00",
+      "type": "submission_started",
+      "asset_id": "SH10-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:27:54+08:00",
+      "type": "generation_received",
+      "asset_id": "SH10-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "61cc1f147b1cfb785795d8ba4a23864d8877794de3535891f97aa74bec537261"
+    },
+    {
+      "at": "2026-09-18T16:27:55+08:00",
+      "type": "submission_started",
+      "asset_id": "SH11-U1-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:29:45+08:00",
+      "type": "generation_received",
+      "asset_id": "SH11-U1-video",
+      "cost_yuan": 0.8,
+      "sha256": "73512d21742f173e6386b877ad5be097343f6d27dde0081d94895a7d012f1f5a"
+    },
+    {
+      "at": "2026-09-18T16:29:46+08:00",
+      "type": "submission_started",
+      "asset_id": "SH11-U2-video",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T16:31:47+08:00",
+      "type": "generation_received",
+      "asset_id": "SH11-U2-video",
+      "cost_yuan": 0.8,
+      "sha256": "de1033239c5336051d5391fedfb3f1501e6cd69bd88353596f05a47ba3c4b5a4"
+    },
+    {
+      "at": "2026-09-18T19:39:07+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH01-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:39:07+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:01+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH01-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:01+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH01-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:02+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH02-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:02+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:03+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH02-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:03+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH02-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH03-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:04+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:04+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH03-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:05+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH03-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:05+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH04-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:06+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:06+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH04-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:07+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH04-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:07+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH05-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:08+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH05-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:08+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH05-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:09+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH05-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:09+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH06-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:09+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH06-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:10+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH07-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:10+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH07-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:11+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH07-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:11+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH07-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:12+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH08-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:12+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH08-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:13+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH09-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:13+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH09-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:14+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH09-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:14+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH09-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:15+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH10-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:15+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH10-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:16+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH10-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:16+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH10-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:17+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH11-U1-video"
+    },
+    {
+      "at": "2026-09-18T19:40:17+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH11-U1-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:40:18+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "SH11-U2-video"
+    },
+    {
+      "at": "2026-09-18T19:40:18+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "SH11-U2-video",
+      "evidence": "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/video-accept-signoff.json",
+      "note": "manual accept",
+      "reviewer": "user"
+    },
+    {
+      "at": "2026-09-18T19:51:46+08:00",
+      "type": "authorized_batch",
+      "count": 8,
+      "asset_ids": [
+        "VO-friend-p2",
+        "VO-friend-p35",
+        "VO-friend-p4a",
+        "VO-friend-p4b",
+        "VO-friend-p6",
+        "VO-friend-p8",
+        "VO-sis-p2",
+        "VO-sis-p35"
+      ],
+      "new_hard_cap_yuan": 34,
+      "new_increment_cap_yuan": 34,
+      "note": "stage5收尾:8段画外音朋友/闺蜜走H3 T2VA口播取音(video kind,取音后混入EDL);seed-audio音色不确定改用已验证H3通路",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:01:07+08:00",
+      "type": "authorized_batch",
+      "count": 8,
+      "asset_ids": [
+        "CAP-friend-p2",
+        "CAP-sis-p2",
+        "CAP-friend-p35",
+        "CAP-sis-p35",
+        "CAP-friend-p4a",
+        "CAP-friend-p4b",
+        "CAP-friend-p6",
+        "CAP-friend-p8"
+      ],
+      "new_hard_cap_yuan": 34,
+      "new_increment_cap_yuan": 34,
+      "note": "VO口播8单元:前批VO-*路径基准写错(项目相对,orchestrator按REPO_ROOT解析致canary missing prompt),作废不生成;本批CAP-*为正确REPO_ROOT相对路径替代,复用同批已validate的prompt文件,预算不提额(committed25.9+6.8=32.7<34)",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:01:20+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-friend-p2",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:04:43+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-friend-p2",
+      "cost_yuan": 0.8,
+      "sha256": "190d1d25a51c4d24e6b1f678db598a800acdf1115ee4a76c4abd1a5926202b80"
+    },
+    {
+      "at": "2026-09-18T20:06:23+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-friend-p2"
+    },
+    {
+      "at": "2026-09-18T20:06:24+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-friend-p2",
+      "evidence": "automation/vo-evidence/CAP-friend-p2.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:07:12+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-sis-p2",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:10:35+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-sis-p2",
+      "cost_yuan": 0.8,
+      "sha256": "40a115cf92b831ed7d5b4356c7eda08d2a24c6bcb2f3ff3f1bdf17044906a230"
+    },
+    {
+      "at": "2026-09-18T20:10:36+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-sis-p2"
+    },
+    {
+      "at": "2026-09-18T20:10:37+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-sis-p2",
+      "evidence": "automation/vo-evidence/CAP-sis-p2.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:10:37+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-friend-p35",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:13:30+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-friend-p35",
+      "cost_yuan": 0.8,
+      "sha256": "3232ef9e98059613bc714971367ed79109318ad0b809fe089b5643ee5445bf34"
+    },
+    {
+      "at": "2026-09-18T20:13:31+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-friend-p35"
+    },
+    {
+      "at": "2026-09-18T20:13:31+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-friend-p35",
+      "evidence": "automation/vo-evidence/CAP-friend-p35.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:13:32+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-sis-p35",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:16:45+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-sis-p35",
+      "cost_yuan": 0.8,
+      "sha256": "8be9ae68362ae067731ea9eb4bc203bf70fd3f15a86cb51338c31ac0e1cf5ae0"
+    },
+    {
+      "at": "2026-09-18T20:16:46+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-sis-p35"
+    },
+    {
+      "at": "2026-09-18T20:16:46+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-sis-p35",
+      "evidence": "automation/vo-evidence/CAP-sis-p35.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:16:47+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-friend-p4a",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:22:42+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-friend-p4a",
+      "cost_yuan": 0.8,
+      "sha256": "8c3f4c7ac6a386ba4678908fe7f7aab57b767d7578b09d8b61f77a4a4cfbc567"
+    },
+    {
+      "at": "2026-09-18T20:22:43+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-friend-p4a"
+    },
+    {
+      "at": "2026-09-18T20:22:43+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-friend-p4a",
+      "evidence": "automation/vo-evidence/CAP-friend-p4a.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:22:44+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-friend-p4b",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:27:38+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-friend-p4b",
+      "cost_yuan": 0.8,
+      "sha256": "167fd5fc69452d0b987717a4f38e0b633bbe919da4bcfdeb9fe06acd26c43325"
+    },
+    {
+      "at": "2026-09-18T20:27:39+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-friend-p4b"
+    },
+    {
+      "at": "2026-09-18T20:27:39+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-friend-p4b",
+      "evidence": "automation/vo-evidence/CAP-friend-p4b.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:27:40+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-friend-p6",
+      "cost_yuan": 1.2
+    },
+    {
+      "at": "2026-09-18T20:33:25+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-friend-p6",
+      "cost_yuan": 1.2,
+      "sha256": "cf5faf8f26e6636f26299ab6dec5841451b3f62d3ee402e87402f121e424b608"
+    },
+    {
+      "at": "2026-09-18T20:33:26+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-friend-p6"
+    },
+    {
+      "at": "2026-09-18T20:33:26+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-friend-p6",
+      "evidence": "automation/vo-evidence/CAP-friend-p6.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    },
+    {
+      "at": "2026-09-18T20:33:27+08:00",
+      "type": "submission_started",
+      "asset_id": "CAP-friend-p8",
+      "cost_yuan": 0.8
+    },
+    {
+      "at": "2026-09-18T20:38:21+08:00",
+      "type": "generation_received",
+      "asset_id": "CAP-friend-p8",
+      "cost_yuan": 0.8,
+      "sha256": "d65b5ffa8cfcb6a9883d477e58fdb29ef750cae0e386ab646657011a0b5f92f4"
+    },
+    {
+      "at": "2026-09-18T20:38:22+08:00",
+      "type": "technical_qc_pass_semantic_pending",
+      "asset_id": "CAP-friend-p8"
+    },
+    {
+      "at": "2026-09-18T20:38:23+08:00",
+      "type": "semantic_qc_accept",
+      "asset_id": "CAP-friend-p8",
+      "evidence": "automation/vo-evidence/CAP-friend-p8.json",
+      "note": "取音技术校验pass(含音频流/非静音/时长匹配);VO工程中间件非成片QC",
+      "reviewer": "claude"
+    }
+  ]
+}

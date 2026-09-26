@@ -23,6 +23,7 @@
     "edit/fenshou-*",
     "social/fenshou-*",
     "automation/fenshou.*",
-    "automation/fenshou-*"
+    "automation/fenshou-*",
+    "fenshou-*"
   ]
 }

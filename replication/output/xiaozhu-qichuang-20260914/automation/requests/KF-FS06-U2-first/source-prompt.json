@@ -1,0 +1,39 @@
+{
+  "prompt": "Photorealistic cinematic photograph. FL2VA action-START frame. Over-the-shoulder single of the woman (CAM-A): the camera sits just past the seated man's shoulder, his shoulder and back softly out of focus in the foreground, the woman held in a single medium shot, her face clearly and softly lit, near-frontal to three-quarter, eye-level. Action start point: the woman is half-risen at the loveseat, her coat over her forearm, both hands reaching for and taking hold of the backpack straps beside her — the moment just before she lifts it onto her shoulder. Her body and the backpack are clearly placed so the following motion (lift bag, strap onto shoulder, stand up straight) can be read from this start frame. Setting: a lived-in late-night East Asian Chinese urban family living room, normally and evenly lit with the ceiling light switched on so the whole room looks bright, clean, airy and well-lit in every corner — natural neutral warm-white domestic lighting with only low warm saturation, true-to-life clean home light, not dim, not gloomy, not moody, not oppressive, no heavy amber or candlelit grade; a small side-table lamp is only a gentle secondary accent, not the key light. Deep quiet dark night outside the window. A slightly worn two-seater fabric loveseat, a low coffee table in front with everyday clutter (a used mug, a folded newspaper, a tissue box, a couple of throw pillows, a casually draped blanket). On the empty middle seat of the loveseat lies a face-down double-portrait couple photo frame, tipped over flat with its back to the camera. By the entrance door in the background stands a single neatly packed upright hard-shell suitcase, ready by the doorway. 16:9 horizontal composition, DSLR 50mm realistic look, eye-level, shallow depth of field kept mild so the well-lit room stays clearly readable, subtle fine film grain, natural true-to-life color, quiet late-night mood. No text overlay, no subtitles, no captions, no watermark, no logo.",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom-v2.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T11:00:00+08:00",
+    "checks": [
+      "FL2VA起点:A俯身抓起背包带(即将上肩)",
+      "落点/朝向摆清可锁位移起点",
+      "CAM-A A单人",
+      "东亚中国人A锁脸",
+      "客厅正常明亮灯光",
+      "16:9横屏",
+      "结尾锁无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0a531c36a29154d83cb561c40f0eb86a0a0aaf5c8f59f323b28a1c14c62a4954"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B6"
+    ],
+    "related_shots": [
+      "FS06"
+    ],
+    "visual_evidence": [
+      "FL2VA起点A拎起背包",
+      "状态变化动作首帧摆好落点"
+    ],
+    "unresolved_blockers": []
+  }
+}

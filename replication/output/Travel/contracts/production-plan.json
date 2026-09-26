@@ -1,0 +1,1390 @@
+{
+  "schemaVersion": 1,
+  "projectId": "travel",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 6,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "叠红冲锋衣入箱·双行李箱锚点",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "出发前一晚，我把你那件红外套，叠好，放进去。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b01",
+          "sceneId": "sc-01",
+          "text": "出发前一晚，我把你那件红外套，叠好，放进去。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u01",
+          "sceneId": "sc-01",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c01",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b01",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-01-image.json"
+            ],
+            "video": "prompts/shots/travel-01-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p01-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p01-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b01",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "手绘环中国路线图·指尖划过青海湖",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "这张图是咱俩画的，你圈的地方，我都记着。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b02",
+          "sceneId": "sc-02",
+          "text": "这张图是咱俩画的，你圈的地方，我都记着。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u02",
+          "sceneId": "sc-02",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c02",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b02",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-02-image.json"
+            ],
+            "video": "prompts/shots/travel-02-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p02-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p02-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b02",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "空副驾+两人合照·缓推",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "说好两个人一起去的，现在啊，就剩我自己了。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b03",
+          "sceneId": "sc-03",
+          "text": "说好两个人一起去的，现在啊，就剩我自己了。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u03",
+          "sceneId": "sc-03",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c03",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b03",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-03-image.json"
+            ],
+            "video": "prompts/shots/travel-03-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p03-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "点火出发·车驶出小区",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "走吧。第一站，去你圈了最久的地方。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b04",
+          "sceneId": "sc-04",
+          "text": "走吧。第一站，去你圈了最久的地方。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u04",
+          "sceneId": "sc-04",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c04",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b04",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-04-image.json"
+            ],
+            "video": "prompts/shots/travel-04-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p04-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p04-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b04",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "驾驶舱POV·空副驾放合照",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "副驾上摆着咱俩的合照，这一路，你陪着我。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b05",
+          "sceneId": "sc-05",
+          "text": "副驾上摆着咱俩的合照，这一路，你陪着我。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u05",
+          "sceneId": "sc-05",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c05",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b05",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-05-image.json"
+            ],
+            "video": "prompts/shots/travel-05-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p05-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "青海湖·笔直公路航拍",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "青海湖到了。这蓝，照片根本拍不出来，你说得对。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b06",
+          "sceneId": "sc-06",
+          "text": "青海湖到了。这蓝，照片根本拍不出来，你说得对。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u06",
+          "sceneId": "sc-06",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c06",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b06",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-06-image.json"
+            ],
+            "video": "prompts/shots/travel-06-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p06-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p06-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b06",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "茶卡盐湖·天空之镜",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "走到茶卡，脚下全是天，你要在准得乐疯。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b07",
+          "sceneId": "sc-07",
+          "text": "走到茶卡，脚下全是天，你要在准得乐疯。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u07",
+          "sceneId": "sc-07",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c07",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b07",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-07-image.json"
+            ],
+            "video": "prompts/shots/travel-07-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p07-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p07-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b07",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "稻城亚丁·雪山牛奶海经幡",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "亚丁的雪山下头，风好大，我替你多站了会儿。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b08",
+          "sceneId": "sc-08",
+          "text": "亚丁的雪山下头，风好大，我替你多站了会儿。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u08",
+          "sceneId": "sc-08",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c08",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b08",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-08-image.json"
+            ],
+            "video": "prompts/shots/travel-08-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p08-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p08-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b08",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "title": "川藏318·弯道随路起伏",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "318 弯得吓人，你老说，开着开着就到了。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b09",
+          "sceneId": "sc-09",
+          "text": "318 弯得吓人，你老说，开着开着就到了。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u09",
+          "sceneId": "sc-09",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c09",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b09",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-09-image.json"
+            ],
+            "video": "prompts/shots/travel-09-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p09-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p09-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b09",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "拉萨布达拉宫·经幡朝圣",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "到了拉萨，我替咱俩许了个愿，是啥不告诉你。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b10",
+          "sceneId": "sc-10",
+          "text": "到了拉萨，我替咱俩许了个愿，是啥不告诉你。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u10",
+          "sceneId": "sc-10",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c10",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b10",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-10-image.json"
+            ],
+            "video": "prompts/shots/travel-10-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p10-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p10-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b10",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "敦煌鸣沙山月牙泉·驼队剪影",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "敦煌的风裹着沙子，打在脸上，你肯定嫌糙。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b11",
+          "sceneId": "sc-11",
+          "text": "敦煌的风裹着沙子，打在脸上，你肯定嫌糙。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u11",
+          "sceneId": "sc-11",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c11",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b11",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-11-image.json"
+            ],
+            "video": "prompts/shots/travel-11-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p11-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p11-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b11",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "额济纳胡杨林·逆光背影",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "胡杨林黄了。你不是老念叨嘛，黄了才好看。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b12",
+          "sceneId": "sc-12",
+          "text": "胡杨林黄了。你不是老念叨嘛，黄了才好看。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u12",
+          "sceneId": "sc-12",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c12",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b12",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-12-image.json"
+            ],
+            "video": "prompts/shots/travel-12-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p12-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p12-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b12",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "呼伦贝尔草原·风掀草浪",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "草原上风一刮，草浪一片一片的，人是真舒坦。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b13",
+          "sceneId": "sc-13",
+          "text": "草原上风一刮，草浪一片一片的，人是真舒坦。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "action_sound",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u13",
+          "sceneId": "sc-13",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c13",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b13",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience",
+                    "action_sound"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-13-image.json"
+            ],
+            "video": "prompts/shots/travel-13-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p13-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p13-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b13",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "洱海·人物背影临湖",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "洱海边上站着，风吹过来，我总觉得，你就在旁边。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b14",
+          "sceneId": "sc-14",
+          "text": "洱海边上站着，风吹过来，我总觉得，你就在旁边。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u14",
+          "sceneId": "sc-14",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c14",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b14",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-14-image.json"
+            ],
+            "video": "prompts/shots/travel-14-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p14-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p14-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b14",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "湖边握合照·指腹摩挲",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "地图上你圈过的每个地方，我一个一个，都替你走到了。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b15",
+          "sceneId": "sc-15",
+          "text": "地图上你圈过的每个地方，我一个一个，都替你走到了。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u15",
+          "sceneId": "sc-15",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c15",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b15",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-15-image.json"
+            ],
+            "video": "prompts/shots/travel-15-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p15-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p15-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b15",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "车内后座·回望后视镜公路",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "剩下的路还很长，没关系的，我一个人，会慢慢替你走完。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b16",
+          "sceneId": "sc-16",
+          "text": "剩下的路还很长，没关系的，我一个人，会慢慢替你走完。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u16",
+          "sceneId": "sc-16",
+          "durationSeconds": 5,
+          "cuts": [
+            {
+              "id": "c16",
+              "seconds": 5,
+              "coverage": [
+                {
+                  "beatId": "b16",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-16-image.json"
+            ],
+            "video": "prompts/shots/travel-16-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p16-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p16-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b16",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "日落公路·逆光驶向太阳",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "你在那边，这些好看的，应该都看到了吧？"
+      },
+      "requiredBeats": [
+        {
+          "id": "b17",
+          "sceneId": "sc-17",
+          "text": "你在那边，这些好看的，应该都看到了吧？",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u17",
+          "sceneId": "sc-17",
+          "durationSeconds": 4,
+          "cuts": [
+            {
+              "id": "c17",
+              "seconds": 4,
+              "coverage": [
+                {
+                  "beatId": "b17",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-17-image.json"
+            ],
+            "video": "prompts/shots/travel-17-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          }
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p17-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p17-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b17",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "合照特写慢推·淡出落字",
+      "source": {
+        "storyFile": "story/travel-screenplay.md",
+        "verbatim": "答应过你的……我都做到了。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b18",
+          "sceneId": "sc-18",
+          "text": "答应过你的……我都做到了。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "ambience",
+            "onscreen_text"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u18",
+          "sceneId": "sc-18",
+          "durationSeconds": 5,
+          "cuts": [
+            {
+              "id": "c18",
+              "seconds": 5,
+              "coverage": [
+                {
+                  "beatId": "b18",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ],
+          "prompts": {
+            "images": [
+              "prompts/shots/travel-18-image.json"
+            ],
+            "video": "prompts/shots/travel-18-video.json"
+          },
+          "references": [],
+          "media": {
+            "firstFrame": null,
+            "lastFrame": null,
+            "video": null
+          },
+          "dialogueDensityExempt": "结尾题眼慢收：画面淡出黑屏+钢琴尾音承接，属设计内结局静默留白（非死尾），旁白密度自检已留痕（SOP §7 例外）。"
+        }
+      ],
+      "postTasks": [
+        {
+          "id": "p18-vo",
+          "type": "voiceover_tts",
+          "description": "旁白走 seed-audio TTS，对画面逐句对齐铺满（成片零对白字幕，H3不生成对白/不写<d>）。",
+          "coverage": []
+        },
+        {
+          "id": "p18-txt",
+          "type": "onscreen_text",
+          "description": "后期烧花字（地名·打卡进度 / 情绪落字），非对白字幕。",
+          "coverage": [
+            {
+              "beatId": "b18",
+              "channels": [
+                "onscreen_text"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

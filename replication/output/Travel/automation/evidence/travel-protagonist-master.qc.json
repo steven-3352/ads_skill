@@ -1,0 +1,19 @@
+{
+  "asset_id": "travel-protagonist-master",
+  "group": "master",
+  "semantic_qc": "pass",
+  "reviewed_by": "user",
+  "reviewed_via": "https://www.tonbird.top/ads-review/Travel/review/master-review.html",
+  "reviewed_at": "2026-09-25",
+  "user_verdict": "通过",
+  "checks": {
+    "east_asian_chinese_female_~28": "pass",
+    "real_skin_texture_natural_light_not_waxy": "pass",
+    "red_windbreaker_anchor_present": "pass",
+    "calm_neutral_baseline_expression": "pass",
+    "face_clear_near_frontal_half_body": "pass",
+    "no_brand_logo": "pass"
+  },
+  "role": "女主角单人身份根（01 手/12·14 背影/15 湖边等镜 --reference）",
+  "note": "用户眼判通过。左胸深色织物细节非清晰商标；落镜头提示词时显式写无标。"
+}

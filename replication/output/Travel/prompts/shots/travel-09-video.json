@@ -1,0 +1,46 @@
+{
+  "id": "travel-09-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: an in-car POV vertical 9:16 view of the winding Sichuan-Tibet mountain highway curving ahead, snow mountains visible in the distance, with a pair of East Asian Chinese hands resting on the steering wheel. The dashboard framing, road, mountains and hands stay consistent with the image. Over the four seconds the camera tracks forward with small amplitude as the vehicle advances smoothly and safely along the bend, the road surface flowing steadily toward the viewer; the hands turn the wheel gently to follow the curve and the body of the car rocks softly with the undulating road. Soft, natural diffuse daylight, neutral warm-white, bright and airy, not oppressive, no heavy amber cast; true-to-life photographic quality with fine natural grain, real matte skin on the hands with no oily highlights, no plastic or waxy CG look. The driving is calm and controlled, never dangerous. No text, subtitles, letters, numbers, watermark, logo, brand, signage or road signs anywhere in the frame.\n\noverall_soundscape: A steady engine hum runs beneath the cabin while the tires grind softly through the curve. Wind passes the car and the road surface produces faint bumps and low rumble.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/09/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:全片无任何<d>对白/说话/画外音台词/speaker ID;只有握方向盘的手无正脸开口",
+      "配乐校验:non_diegetic_music = N/A;overall_soundscape只写现场同期音(引擎嗡鸣/轮胎过弯/风/路面轻颠簸)",
+      "真实质感:Live-action photorealistic、手部真实哑光无油光、自然噪点,禁塑料感AI感CG蜡感",
+      "柔光校验:柔和自然漫射天光、中性偏暖白、明亮通透不压抑,忌大黄光染脸/画面",
+      "合规无字:画面无文字/字幕/数字/水印/logo/品牌/招牌/路牌;人物锁东亚中国人的手",
+      "运镜/安全:Tracking 向前小幅,车安全平稳行进不暗示危险驾驶,单Shot一镜到底",
+      "时长/帧引用:4s时间线对齐;I2VA首行<Picture 1> from [Shot 1] @0.00,images一张keyframe.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c97586ea625bd41c29382d6bee12edbe98159790946a16df5a6866344379bf6f"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇(眷恋):第 09 站川藏318盘山弯道、雪山在望"
+    ],
+    "related_shots": [
+      "镜09 车内POV:川藏318弯道起伏,雪山在前,方向盘随路转"
+    ],
+    "visual_evidence": [
+      "剧本09镜画面:川藏318弯道起伏,雪山在前,车身随路起伏(记录用,非写进prompt)",
+      "旁白(仅参考):318弯得吓人开着开着就到了",
+      "合规:安全行进不暗示危险驾驶;无品牌/商标/logo,不出路牌文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

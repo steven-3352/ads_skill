@@ -1,0 +1,39 @@
+{
+  "prompt": "Photorealistic cinematic photograph. FL2VA action-END frame. Action end point: the woman is now standing upright with the backpack up on her shoulder, coat over her forearm; the camera has tilted and panned downward so the frame now brings the neatly packed hard-shell suitcase by the entrance door into clear view — she is really leaving. Wide-ish framing that ends on the woman standing plus the suitcase at the door, locking the shoulder-bag-on and the door-side suitcase as the end state. Setting: a lived-in late-night East Asian Chinese urban family living room, normally and evenly lit with the ceiling light switched on so the whole room looks bright, clean, airy and well-lit in every corner — natural neutral warm-white domestic lighting with only low warm saturation, true-to-life clean home light, not dim, not gloomy, not moody, not oppressive, no heavy amber or candlelit grade; a small side-table lamp is only a gentle secondary accent, not the key light. Deep quiet dark night outside the window. A slightly worn two-seater fabric loveseat, a low coffee table in front with everyday clutter (a used mug, a folded newspaper, a tissue box, a couple of throw pillows, a casually draped blanket). On the empty middle seat of the loveseat lies a face-down double-portrait couple photo frame, tipped over flat with its back to the camera. By the entrance door in the background stands a single neatly packed upright hard-shell suitcase, ready by the doorway. 16:9 horizontal composition, DSLR 50mm realistic look, eye-level, shallow depth of field kept mild so the well-lit room stays clearly readable, subtle fine film grain, natural true-to-life color, quiet late-night mood. No text overlay, no subtitles, no captions, no watermark, no logo.",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom-v2.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T11:00:00+08:00",
+    "checks": [
+      "FL2VA落点:A已背包起身站直+镜头下摇带到门口行李箱",
+      "首尾能锁'将走未走→将走'",
+      "单人A(镜头顺势带到行李箱)",
+      "东亚中国人A锁脸",
+      "客厅正常明亮灯光",
+      "16:9横屏",
+      "结尾锁无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6a58c1cf3f99cb8a7eda4f28af027ef60b450f88647c288defb2b59045918e50"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B6"
+    ],
+    "related_shots": [
+      "FS06"
+    ],
+    "visual_evidence": [
+      "FL2VA落点A背包起身+行李箱入画",
+      "行李箱兑现将走"
+    ],
+    "unresolved_blockers": []
+  }
+}

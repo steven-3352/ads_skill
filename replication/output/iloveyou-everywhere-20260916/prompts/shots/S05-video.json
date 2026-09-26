@@ -1,0 +1,32 @@
+{
+  "asset_type": "video",
+  "shot": "S05",
+  "role": "海底·下潜巨鲸掠过(推进,第四巨物=巨鲸)",
+  "video_model": "MiniMax-H3",
+  "mode": "I2VA (single first frame = KF-S05-first.png fully referenced at 0.00s; camera develops forward from it, no last frame — 尾帧靠剪辑叠化)",
+  "duration_s": 5,
+  "aspect_ratio": "16:9",
+  "first_frame": "assets/keyframes/KF-S05-first.png",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Photorealistic live-action, cinematic, horizontal 16:9. The frame opens exactly on <Picture 1>: an underwater view just beneath a crystal-clear ocean surface, a single colossal gentle whale spanning almost the full width of the frame and dwarfing everything around it, warm golden god-rays streaming down like light curtains through the clear blue-teal water, and one tiny warm-colored East Asian Chinese couple drifting alongside the whale as a pure accent, preserving the whale's immense scale and the translucent palette. The camera descends and follows as a tracking shot with large amplitude at slow speed, diving deeper so the light curtains slide upward past the lens while the immense whale glides slowly across and downward through the frame, the tiny warm speck trailing along its flank; toward the end a faint glimmer of light appears in a deep trench far below. Rising bubbles, swaying light curtains, soft diffused light, no harsh shadows, translucent palette of clear teal-blue and warm gold rays, bright and clear and never murky or cold, weightless and serene. The bottom 15-18 percent of the frame stays clean and empty, and absolutely no text, subtitles, captions, watermark, logo or Chinese characters appear anywhere in the image.\n\noverall_soundscape: A deep underwater low-frequency reverb hums throughout, with rising bubbles and a distant, long, low whale call resonating through the water.\n\nnon_diegetic_music: The main theme adds low-frequency depth from cello and a bass pad at a slow tempo, building toward the coming climax.",
+  "negative": "hard cut, jump cut, close-up, big face, character dominates frame, crowded, cluttered, oversaturated, harsh shadows, murky dark water, cold gloomy, scary deep abyss, static frozen whale, text, subtitles, captions, watermark, logo, Chinese characters, western/caucasian faces",
+  "status": "prompt_ready_pending_paid_generation",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA指令首行:<Picture 1>(KF-S05-first)0.00s全参考,首帧锚点+向前发展,无尾帧",
+      "持续大幅运镜写死:descend + tracking large amplitude,下潜+巨鲸缓掠横过并下沉(显式可见位移防糊成静物),非静止美图([C]门)",
+      "S05无真人对白,回响/鲸鸣密度后期不入提示词(overall_soundscape只写环境鲸鸣底噪)",
+      "巨物锚点=巨鲸(用户锁定)满幅横掠,人物5%随鲸显式East Asian Chinese防欧美脸",
+      "通透明亮暖调/暖金光帘/漫射柔光/无硬阴影,bright clear never murky去阴冷",
+      "anti-subtitle:显式禁text/subtitles/captions/watermark/logo/Chinese characters,底部15-18%安全区留干净",
+      "三核心字段齐,时长匹配5s;音乐加低频厚度向峰值蓄力"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "6310d52c5208883202aa16e5336ea6566f486c4addd0c2e6a3af82165bbba6b4"
+  }
+}

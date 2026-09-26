@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seedance 链路验证 · 《后来》MV</title>
+<style>
+:root{color-scheme:dark}
+body{margin:0;background:#0f1115;color:#e8e8ea;font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 80px}
+h1{font-size:20px;margin:0 0 4px}.sub{color:#8b8f98;font-size:13px;margin-bottom:20px}
+.card{background:#141821;border:1px solid #242833;border-radius:14px;padding:16px;margin-bottom:18px}
+video{width:100%;border-radius:10px;background:#000;display:block}
+.k{background:#12220f;border:1px solid #274a1c;color:#c7f0b0;border-radius:12px;padding:14px 16px;font-size:14px;margin-top:8px}
+code{background:#0b0d11;padding:1px 6px;border-radius:5px;color:#ffd479}
+b{color:#e8e8ea}
+</style></head><body><div class="wrap">
+<h1>Seedance 2.0 链路验证片</h1>
+<div class="sub">目的:验证真人认证资产走中转站能不能出片 · 非成片、非锚镜,只测通路</div>
+<div class="card">
+  <video controls preload="metadata" src="../houlai-mv/videos/seedance-test/VID-linkcheck.mp4"></video>
+  <div class="k">
+    <b>结论:通路已打通 ✓</b><br>
+    model <code>doubao-seedance-2-0-mini-260615</code> · <code>us.tonbirds.com</code> · 现有 SEEDANCE key<br>
+    真人认证资产 <code>asset-20260920170838-47zfw</code> 以 <b>reference_video</b> 引用成功出片(当 reference_image 会报 not an image——该资产是"视频"类型)。<br>
+    输出 968×720 · 5.04s · h264(本测试未设 ratio;正式镜会锁 16:9)。
+  </div>
+</div>
+<div class="card" style="border-color:#5a3a1c;background:#2a1d12;color:#ffd0a0">
+  <b>下一步要你定:</b> 认证资产是"视频"类型、只能当 <b>动作/画面参考(reference_video)</b>,不是用来锁"人物母板身份"的 reference_image。<br>
+  所以 S01 锚镜的"母板身份怎么进"要重新拼——是否用这个认证视频同时兜身份+口型,还是再配一张母板图。等你看完这条测试片给方向。
+</div>
+</div></body></html>

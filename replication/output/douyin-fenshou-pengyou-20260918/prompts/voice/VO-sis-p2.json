@@ -1,0 +1,40 @@
+{
+  "asset_type": "video",
+  "shot": "VO-sis-p2",
+  "role": "画外音口播镜·闺蜜(女声)·只取人声(拍2,压 SH02-U2 画面)",
+  "video_model": "MiniMax-H3",
+  "mode": "T2VA",
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "prompt": "integrated_multimodal_description: [Shot 1] Photorealistic live-action, cinematic, horizontal 16:9, an extreme close-up frames the face and mouth of an East Asian Chinese woman in her late twenties, her face filling the frame with her lips clearly visible, in a quiet softly-lit indoor room with a clean plain out-of-focus background and gentle diffused soft light on the skin. The camera holds a static shot as she speaks directly and earnestly, as if pressing a close friend for an honest answer. With a warm, close, probing and slightly worried female voice (S1), she says twice, clearly and completely: <d>[Chinese] 你俩那么亲，装不认识，你舍得？ 你俩那么亲，装不认识，你舍得？</d> Her mouth articulates each word crisply. Absolutely no text, subtitles, captions, watermark, logo or Chinese characters appear anywhere in the image.\n\noverall_soundscape: The room is completely quiet with no background music, no ambient noise and no environmental sound; only the speaker's clean, clear, close voice is present, with no other noise whatsoever.\n\nnon_diegetic_music: N/A",
+  "negative": "background music, ambient noise, environmental sound, echo, reverb, western/caucasian faces, multiple people, medium shot, wide shot, cluttered background, text, subtitles, captions, watermark, logo, Chinese characters, mumbling, unclear speech",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "T2VA",
+    "reviewed_at": "2026-09-18",
+    "checks": [
+      "T2VA纯文生:无首行对齐指令,直接三核心字段起头,无参考帧/无立基帧(口播镜省成本)",
+      "台词verbatim=「你俩那么亲，装不认识，你舍得？」,<d>[Chinese]内逐字保留说两遍(提命中,取音截清晰一遍),S1女声",
+      "语气=闺蜜(女声)追问挚友:亲近/心疼/追问;极近景中国真人显式East Asian Chinese防欧美脸",
+      "安静无音:overall_soundscape写死quiet/no background music/no ambient/no environmental,only clean voice;non_diegetic_music=N/A",
+      "anti-subtitle:显式禁text/subtitles/captions/watermark/logo/Chinese characters(画面丢弃仍守规范)",
+      "三核心字段齐+时长4s(≥H3下限4s)匹配,16:9只取音"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "83b80f50e1fca2a0d3a3314dce790bfabd09dcd6299ce248b4eeec5a9807ac84"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍2"
+    ],
+    "voice_role": "闺蜜(女声)",
+    "overlays_shot": "SH02-U2",
+    "note": "画外音不出镜不对口型;取音后混入 EDL 对应拍的本人反应画面时长内"
+  }
+}

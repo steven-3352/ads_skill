@@ -1,0 +1,11 @@
+{
+  "request_id": "jiuheover-cover-base-001",
+  "prompt_file": "output/jiuheover/prompts/cover-base.json",
+  "output": "output/jiuheover/final/cover/cover-base.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-22T12:21:25+08:00"
+}

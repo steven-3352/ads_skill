@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Photorealistic cinematic photograph of an East Asian Chinese woman, aged 33 to 38, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face), waist-up upper-body portrait. Mature, composed, quietly world-weary and emotionally restrained; a calm neutral baseline expression, not smiling, not exaggerated, gaze steady and inward. Natural skin with fine pores and subtle texture, minimal makeup, sensible medium-length black hair, understated home clothing. Setting: a lived-in late-night living room, warm yellow table-lamp light as the key source, shallow depth of field with a softly blurred background, subtle fine film grain, warm filmic color grade. Her face is clearly visible and evenly, softly lit for stable identity anchoring; near-frontal, eye-level framing, upper body filling the frame. DSLR 50mm realistic look, 16:9 horizontal composition. No text, no subtitles, no captions, no letters, no numbers, no watermark, no logo anywhere in the image.",
+  "size": "1344x768",
+  "quality": "high",
+  "output_format": "png"
+}

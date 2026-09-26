@@ -1,0 +1,28 @@
+{
+  "subproject_id": "trailer",
+  "title": "酒喝完了·预告片测试版",
+  "note": "《酒喝完了，我们散了》正片引流预告，竖屏 9:16 ~40s 12 镜，H3 对白同期直出。人物母板复用 you-budong-me master-A（女·苏晚）/master-B（男·陈叙），省母板生成。成片零对白字幕、唯结尾主题句一次画面字幕、画面明亮不压抑、East Asian 选角、道具为素白无标白瓷瓶（女方5年前送的生日礼物）无任何品牌商品/名字。付费产物只经 run.sh→orchestrator 生成才被总账承认。",
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "reviewGate": "replication/tools/validate-h3-prompt-review.sh",
+  "ledger": "automation/trailer.ledger.ndjson",
+  "paid_state": "automation/trailer.paid-state.json",
+  "state_sequence": "references/state-machine/main-sequence.json",
+  "production_plan": "contracts/trailer-production-plan.json",
+  "screenplay": "story/酒喝完了-预告片剧本-从正片提炼版.md",
+  "owner_globs": [
+    "story/**",
+    "contracts/**",
+    "prompts/**",
+    "shots/**",
+    "assets/**",
+    "review/**",
+    "final/**",
+    "edit/**",
+    "social/**",
+    "automation/trailer.*",
+    "*.html",
+    "README.md",
+    "*.md"
+  ]
+}

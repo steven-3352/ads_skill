@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 4.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese woman, an unmistakably Chinese woman with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 26-28, a modern urban woman with neat natural long hair in a beige / light-apricot knit sweater, her features, hairstyle and face shape kept identical across the whole film in a bright, airy home living room by the sofa / dining table — the ceiling light is on and natural window light fills the room, neutral warm-white, clean and airy, not dim, not moody, not oppressive, no single amber lamp darkening the room, normal indoor brightness even though it is night outside; strictly an enclosed interior room, absolutely no outdoors, street or plaza. From the composition of Picture 1 her eyes drop to the table on '做不到没感觉'; on '所以我不见' she lifts her eyes and turns the phone face-down onto her lap, settling into the composition of Picture 2 — fleeing, and calling it a choice. The urban Chinese woman in her late twenties, her voice quiet, admitting it against her will (S1), says: <d>[Chinese] 见到他,我做不到没感觉。所以我不见。</d> Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet home room tone hums under the shot. Her quiet voice; no other events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/images/SH09-U2-first.png",
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH09/images/SH09-U2-last.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "表演/情绪校验:『做不到没感觉』垂眼看桌;『所以我不见』抬眼、把手机反扣腿上 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为FL2VA对齐指令:Picture 1(Shot 1)@0.00、Picture 2(Shot 2)@4.00;单人单镜同轴连续路径末尾落Picture 2构图(非脸部morph);三段字段齐",
+      "关键帧对齐时间0.00→4.00严格递增且落在4s时长内",
+      "对白verbatim校验:<d>[Chinese] 见到他,我做不到没感觉。所以我不见。</d> 一字不改、画内同期口型同步、女=(S1)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;居家客厅正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "7b87add106e5c4aa02f667cc804537dc08a53fc18b5f3c7f242d26e9074ded86"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍7"
+    ],
+    "related_shots": [
+      "SH09"
+    ],
+    "visual_evidence": [
+      "『做不到没感觉』垂眼看桌;『所以我不见』抬眼、把手机反扣腿上"
+    ],
+    "unresolved_blockers": []
+  }
+}

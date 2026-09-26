@@ -1,0 +1,24 @@
+{
+  "id": "KF-S03-first",
+  "prompt": "Handheld iPhone vlog-style candid close look down at a plain clear glass cup standing on a wooden home tea table, natural warm afternoon light. Inside the glass cup: one dry, tightly curled dried tangerine peel resting in pale light-yellow tea. A household ceramic teapot spout hovers just above the cup, tilted and about to pour but no water pouring yet. Casual phone-held close view, a natural everyday glance rather than a cinematic macro shot, gentle handheld feel, shallow depth of field, cozy blurred warm background. Realistic photograph. No hands, no person in frame. No text, no logo, no packaging, no brand markings anywhere.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "text-to-image still keyframe (no person, vlog close look)",
+    "checks": [
+      "East Asian/Chinese identity explicitly locked; not a western face",
+      "iPhone handheld vlog look, natural warm light, home tea table SCN-tea-table",
+      "no packaging / no brand / no text / no logo",
+      "tea colour realistic amber, not exaggerated dark/black",
+      "shot scale matches storyboard (medium / medium-wide; only S03 a vlog close look)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b0035c05021bfd9b75e1e00fab43bcac7284acc787f83c58707cebedebc76ccf"
+  }
+}

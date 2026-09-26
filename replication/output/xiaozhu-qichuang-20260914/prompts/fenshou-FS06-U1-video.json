@@ -1,0 +1,39 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic — B's collapse moment. The clip opens exactly on <Picture 1>: an over-the-shoulder single (CAM-B) past the woman's shoulder onto the mature East Asian Chinese man in his thirties (B, 33-38), in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. He has finally understood, but too late: his Adam's apple rolls in a hard swallow, the light in his eyes dimming bit by bit, the words 'don't go' swallowed back down; his shoulders begin to sink. The mature man in his thirties, his voice hoarse, low, cracked and fragile with a catch (S2), says: <d>[Chinese] 我以为……我们还有很多时间。</d> The camera holds a static shot on his hollowing face. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums beneath the shot. A single hard, dry swallow and his uneven, hoarse breathing are the only physical sounds.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS06-U1-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:B喉结滚动+眼里的光一点点暗+'你别走'被咽回去+肩塌,声音发哑脆而破碎(听懂了但晚了、崩),内心戏写足喉结/眼神/气声",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;delivery=hoarse/cracked/fragile/with a catch写在<d>外;三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 我以为……我们还有很多时间。</d> 一字不改、画内同期口型同步、B=(S2)",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定;无音乐盖过人声(N/A)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "23e627b3171301478218245f4432d326d44cc71d8465cd31d5c86ec3815c625e"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B6"
+    ],
+    "related_shots": [
+      "FS06"
+    ],
+    "visual_evidence": [
+      "B低声自白'我以为还有很多时间'",
+      "时间错觉=最大的缺席"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "request_id": "kf-s04-first-1789564028",
+  "prompt_file": "replication/output/iloveyou-everywhere-20260916/prompts/assets/KF-S04-first.json",
+  "output": "replication/output/iloveyou-everywhere-20260916/assets/keyframes/KF-S04-first.png",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-16T21:07:08+08:00"
+}

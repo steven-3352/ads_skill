@@ -1,0 +1,41 @@
+{
+  "prompt": "Photorealistic cinematic photograph. Two-shot medium (2S): both people framed together on and beside the two-seater loveseat with the empty middle gap between them clearly visible, horizontal wide eye-level framing. The opening 'decision already made' frame: the woman is already standing, her coat draped over her forearm; the man is seated at one end of the loveseat and has just looked up at her; a clear empty gap sits between them. The neatly packed suitcase stands by the entrance door and the face-down couple photo frame lies on the empty middle seat, so the first frame alone tells that something has already happened. A held, breath-holding half-second of stillness: the woman's gaze is dropped to the floor or the coffee table, she is not looking at the man, quietly about to speak. Setting: a lived-in late-night East Asian Chinese urban family living room, normally and evenly lit with the ceiling light switched on so the whole room looks bright, clean, airy and well-lit in every corner — natural neutral warm-white domestic lighting with only low warm saturation, true-to-life clean home light, not dim, not gloomy, not moody, not oppressive, no heavy amber or candlelit grade; a small side-table lamp is only a gentle secondary accent, not the key light. Deep quiet dark night outside the window. A slightly worn two-seater fabric loveseat, a low coffee table in front with everyday clutter (a used mug, a folded newspaper, a tissue box, a couple of throw pillows, a casually draped blanket). On the empty middle seat of the loveseat lies a face-down double-portrait couple photo frame, tipped over flat with its back to the camera. By the entrance door in the background stands a single neatly packed upright hard-shell suitcase, ready by the doorway. 16:9 horizontal composition, DSLR 50mm realistic look, eye-level, shallow depth of field kept mild so the well-lit room stays clearly readable, subtle fine film grain, natural true-to-life color, quiet late-night mood. No text overlay, no subtitles, no captions, no watermark, no logo.",
+  "references": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-A-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-B-master.png",
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom-v2.png"
+  ],
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-18T11:00:00+08:00",
+    "checks": [
+      "2S双人中景两人+中间空位在画",
+      "开场物件先行:门口行李箱/倒扣合照相框/A已起身外套搭臂弯/B抬头",
+      "A不看B视线落地静场感",
+      "东亚中国人A/B锁脸(非欧美非网红)",
+      "客厅正常明亮均匀灯光(LOC-v2基调)",
+      "16:9横屏",
+      "结尾锁无叠字水印logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c97664d6253db1e86953059464a0a534bb10782360419b2fac1291df8414d487"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B1"
+    ],
+    "related_shots": [
+      "FS01"
+    ],
+    "visual_evidence": [
+      "首帧决定已发生:行李箱/倒扣合照相框/A外套搭臂弯/B抬头",
+      "两人之间空位可见",
+      "深夜正常明亮客厅"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "shot-07-image-first",
+  "role": "镜7首帧（I2VA）＝现在时纯黑背景头顶单束柔光、女主独自伫立、身旁位置空荡无人",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static, pure solid black background. A single soft beam of light from directly overhead falls on a realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, standing alone in the pool of light. The space right beside her, where someone would have stood, is empty and dark, no one there. She presses her lips together, holds her breath, calm and restrained; downcast composed gaze, slightly lowered head. NO tears, NO redness, NO glowing eyes. The light touches only her form, her face stays matte and evenly lit with no glare. Cinematic film grain, shallow depth of field, deep black negative space around her. She is Chinese with an East Asian face, not a western face. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景，静态，纯黑实底背景。一束柔和的光从正头顶落下，照在真实东亚中国女性(30-35岁，参考女主)身上，中长深棕披肩发、燕麦米色针织上衣，独自伫立在光束里。她身旁那个本该有人站着的位置，空荡而暗、无人。她抿着嘴、屏住一口气，平静克制；目光沉静微垂、头略低。绝无泪水、绝无泛红、绝无发光眼。光只勾出她的轮廓，脸保持哑光均匀、无高光反光。电影颗粒、浅景深，四周是深黑负空间。中国东亚脸，非欧美脸。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA first frame, shot-07 'that person is gone' (now-time black-void top-light, woman alone, empty spot beside her)",
+    "checks": [
+      "single female identity locked via reference female only, East Asian/Chinese 30-35",
+      "pure black background + single overhead soft beam; empty dark spot beside her where someone would stand — the coldest contrast beat",
+      "emotion via pressed lips + held breath + composed downcast gaze + slightly lowered head; explicitly NO tears / NO redness / NO glowing eyes",
+      "light on form only, face matte evenly lit, no glare; cinematic grain + shallow DOF + deep black negative space",
+      "medium shot, 9:16 vertical 768x1344, static",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "76b113d2ec6062d3a8460bbe08a2ea42db9677a551554b1bb9d51e1d986734fc"
+  }
+}

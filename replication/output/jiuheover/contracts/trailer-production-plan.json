@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "projectId": "jiuheover",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": { "maxGenerationSeconds": 8 },
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "钩子·物件先行+苏晚问出轨(pre-lap)",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "在我们在一起这几年，你有没有过，出轨？" },
+      "requiredBeats": [
+        { "id": "b01", "sceneId": "s1", "text": "夜里小酒馆靠窗老位置，木桌上一只素白无标白瓷瓶与两只杯，苏晚的手把满杯放下；镜头由物件带到苏晚近景，她看着对面、忍着开口问出轨。窗外雨+店内环境声，苏晚问句在物件画面上 pre-lap 提前入耳。竖屏9:16、明亮温暖看得清脸。", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U1", "sceneId": "s1", "durationSeconds": 5,
+          "cuts": [
+            { "id": "c1", "seconds": 5, "coverage": [ { "beatId": "b01", "channels": ["picture", "dialogue", "action_sound", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U1-first.json"], "video": "prompts/U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png"]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "反刺·陈叙答没有·你希望有",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "你问，是因为你希望有，对不对。" },
+      "requiredBeats": [
+        { "id": "b02", "sceneId": "s1", "text": "陈叙近景，干脆不躲地答没有，顿半秒后轻声反刺你问是因为你希望有，举杯。竖屏9:16、明亮暖白顶灯、East Asian 中国人面孔。窗外雨+店内环境声、举杯声。", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U2", "sceneId": "s1", "durationSeconds": 4,
+          "cuts": [
+            { "id": "c1", "seconds": 4, "coverage": [ { "beatId": "b02", "channels": ["picture", "dialogue", "action_sound", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U2-first.json"], "video": "prompts/U2-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "立局·取白瓷瓶你送的我留了五年(唯一双人立局)",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "你送的。我留了五年。" },
+      "requiredBeats": [
+        { "id": "b03", "sceneId": "s1", "text": "隔桌一前一后的双人竖构图，陈叙从布袋取出素白无标白瓷瓶、起瓶倒满两杯，说你送的我留了五年；苏晚怔住。规则立局。竖屏9:16、明亮温暖两人都受光看得清脸。窗外雨+店内环境声、起瓶倒酒声。", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U3", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b03", "channels": ["picture", "dialogue", "action_sound", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U3-first.json", "prompts/U3-last.json"], "video": "prompts/U3-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "重拍·还爱吗·爱可是不够了·他喝这么苦",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "爱。可是爱，好像不够了。" },
+      "requiredBeats": [
+        { "id": "b04", "sceneId": "s1", "text": "陈叙近景为主(苏晚还爱我吗以画外音先入)，他答爱可是爱好像不够了，端杯喝下、声音低下去轻说这酒原来这么苦，喝题眼那杯手微抖、装平静。竖屏9:16、明亮暖白。窗外雨+店内环境声、饮酒放杯声。", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U4", "sceneId": "s1", "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 6, "coverage": [ { "beatId": "b04", "channels": ["picture", "dialogue", "action_sound", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U4-first.json"], "video": "prompts/U4-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "泪点·那只猫·笑中落泪",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "后来，我们谁也不提，楼下那只猫了。" },
+      "requiredBeats": [
+        { "id": "b05", "sceneId": "s1", "text": "苏晚近景(陈叙你从什么时候觉得我们远了以画外音先入)，她说后来我们谁也不提楼下那只猫了，笑到一半眼泪掉下来、端杯喝掉，强忍不痛哭。竖屏9:16、明亮暖白看得清脸。窗外雨+店内环境声、饮酒声。", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U5", "sceneId": "s1", "durationSeconds": 5,
+          "cuts": [
+            { "id": "c1", "seconds": 5, "coverage": [ { "beatId": "b05", "channels": ["picture", "dialogue", "action_sound", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U5-first.json"], "video": "prompts/U5-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png"]
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "金句①·我们都把真话藏得太好了(特写她·前后留半拍静)",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "我们都把真话，藏得太好了。" },
+      "requiredBeats": [
+        { "id": "b06", "sceneId": "s1", "text": "苏晚特写，不看对方，前留半拍静、很轻地接自己的话说出金句我们都把真话藏得太好了、说完再留半拍静把句子顶出来。竖屏9:16、明亮暖白、极轻环境突出台词。窗外雨+店内极轻环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U6", "sceneId": "s1", "durationSeconds": 4,
+          "cuts": [
+            { "id": "c1", "seconds": 4, "coverage": [ { "beatId": "b06", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U6-first.json"], "video": "prompts/U6-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png"]
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "失控临界①·接吻回忆·两人同时笑同时红眼(过肩双人)",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "2020 年 5 月 25 号，下着雨。" },
+      "requiredBeats": [
+        { "id": "b07", "sceneId": "s1", "text": "过肩双人，苏晚笑着答第一次接吻是2020年5月25号下着雨，两人对视、同时笑、同时红了眼(差点和好的失控临界)，都拼命装平静没让眼泪掉。竖屏9:16、明亮暖白两人受光。窗外雨+店内环境声。", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U7", "sceneId": "s1", "durationSeconds": 5,
+          "cuts": [
+            { "id": "c1", "seconds": 5, "coverage": [ { "beatId": "b07", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U7-first.json"], "video": "prompts/U7-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "落点+落幕·再来一次会更努力留住你·空瓶酒喝完了·手往桌中间挪一寸又收回(失控临界②·FL2VA)",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "会。但我会更努力，留住你。" },
+      "requiredBeats": [
+        { "id": "b08", "sceneId": "s1", "text": "双人同框落幕长镜：苏晚问再来一次你还会追我吗，陈叙答会但我会更努力留住你、喝干最后一杯；空瓶被推到桌子中间，苏晚轻声说酒喝完了；两人对视沉默，一方的手往桌子中间挪一寸又收回(想留没敢留的失控临界②)。首帧=两人隔桌对坐、空瓶在桌一侧；尾帧=空瓶落定桌子正中、两人对视、手已收回。竖屏9:16、明亮暖白两人受光。窗外雨+店内环境声、饮酒放杯声、空瓶推过木桌的摩擦声。", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U8", "sceneId": "s1", "durationSeconds": 7,
+          "cuts": [
+            { "id": "c1", "seconds": 7, "coverage": [ { "beatId": "b08", "channels": ["picture", "dialogue", "action_sound", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U8-first.json", "prompts/U8-last.json"], "video": "prompts/U8-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-A.png", "assets/master-B.png"]
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "title": "黑场·金句②字幕单元(唯一画面字幕)",
+      "source": { "storyFile": "story/酒喝完了-预告片剧本-从正片提炼版.md", "verbatim": "是缘分，刚好就那么多。" },
+      "requiredBeats": [
+        { "id": "b09", "sceneId": "s1", "text": "画面切黑场，静默半拍后浮现金句②字幕两行不是酒不够/是缘分刚好就那么多(全片唯一画面字幕)，BGM极轻收，停留后收黑。竖屏9:16、黑底浮白字。", "channels": ["picture", "onscreen_text", "ambience", "transition"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "U9", "sceneId": "s1", "durationSeconds": 4,
+          "cuts": [
+            { "id": "c1", "seconds": 4, "coverage": [ { "beatId": "b09", "channels": ["picture", "onscreen_text", "ambience", "transition"] } ] }
+          ],
+          "prompts": { "images": ["prompts/U9-title.json"], "video": null },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ]
+    }
+  ]
+}

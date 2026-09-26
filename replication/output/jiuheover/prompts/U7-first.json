@@ -1,0 +1,39 @@
+{
+  "prompt": "写实情感短剧首帧，竖屏 9:16 取景，iPhone 手持真实质感、不摆拍不打光。场景：夜里小酒馆靠窗老位置，暖白偏暖顶灯+桌面吊灯全开、明亮温暖中性偏暖白（不压暗）。过肩双人竖构图：前景是陈叙（East Asian，随母板 B）的肩与后脑虚化，纵深处是女主苏晚（East Asian，随母板 A）的正脸，两人隔桌相望、距离很近。苏晚脸上带着回忆起某个日子的笑意、眼睛已经开始泛红（甜里带酸、差点和好的临界）；陈叙侧脸也松动着、要笑。桌上一只乳白色瓷质白酒瓶——圆柱形直筒瓶身、平肩、短颈，顶部红色瓶盖配金色环圈；瓶身通体乳白光洁、素白无标（瓶身、瓶盖、环圈上无任何文字、字母、logo、标签、印花、品牌标识），器型严格参考所提供的白酒瓶参考图与两只透明玻璃高脚小酒杯——细长玻璃杯脚、小碗状杯身、圆形底座，中式白酒品鉴杯，晶莹透明、无花纹无字，杯型严格参考所提供的白酒杯参考图。酒器明确为中式白酒器（素白无标的乳白色白酒瓷瓶 + 透明玻璃高脚白酒品鉴杯）：不是日式清酒壶/徳利、不是细长颈瓶、不是红酒/洋酒瓶、不是日式猪口杯/清酒杯，无任何日式清酒观感。窗外雨化开的暖色霓虹、窗上细雨。两人面孔发型体型严格随各自母板一致。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo, no sake bottle, no tokkuri, no long-neck bottle, no choko, no sake cup, no white porcelain cup, no ceramic cup, no small ceramic bowl cup, no wine bottle。",
+  "references": [
+    "replication/output/jiuheover/assets/master-A.png",
+    "replication/output/jiuheover/assets/master-B.png",
+    "replication/output/jiuheover/assets/1.jpeg",
+    "replication/output/jiuheover/assets/1白酒.png"
+  ],
+  "size": "768x1344",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I·多参考:身份母板+白酒瓶/杯器型",
+    "checks": [
+      "酒器已统一为U1同款:乳白瓷直筒圆柱白酒瓶(圆柱直筒瓶身、平肩短颈、红盖+金环、素白无标)+透明玻璃高脚小酒杯(细杯脚+小碗杯身+圆底座),器型/杯型严格参考所提供的白酒瓶(1.jpeg)与白酒杯(1白酒.png)参考图",
+      "references按顺序追加两张器物参考图:人物母板在前锁身份,再白酒瓶参考图、再白酒杯参考图",
+      "负向锁已按U1对齐:删除no goblet/no glass bottle;保留no sake bottle/tokkuri/long-neck bottle/choko/sake cup;新增no white porcelain cup/no ceramic cup/no small ceramic bowl cup/no wine bottle",
+      "素白无标合规:瓶身/瓶盖/环圈上无任何文字字母logo标签印花品牌标识,玻璃杯晶莹透明无花纹无字",
+      "身份锁沿用原有母板未改(苏晚=母板A、陈叙=母板B),East Asian中国人面孔/发型/体型随母板",
+      "anti-subtitle全套保留(no subtitles/captions/on-screen text/Chinese characters/watermark/logo),成片不烧字幕",
+      "画幅竖屏9:16+size 768x1344未改",
+      "灯光明亮暖白(顶灯+桌面吊灯全开、中性偏暖白、不压暗不阴郁)未改",
+      "构图/机位/表演层除酒器措辞与参考分工外一律未改动;原自相矛盾的\"不是玻璃/不是高脚杯\"表述已随玻璃高脚品鉴杯统一修正为不排斥玻璃高脚杯"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8f896275b77f2e3a8a2b919222f41a2c71fdd01e37469aa5c94d23519dba0d8d"
+  },
+  "narrative_alignment": {
+    "source_story": "story/酒喝完了-预告片剧本-从正片提炼版.md 高光快剪·接吻回忆20–24s",
+    "related_beats": [
+      "b07"
+    ],
+    "related_shots": [
+      "07"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "human_eyeball_review",
+  "asset_group": "shot_video",
+  "reviewer": "user",
+  "method": "公网审阅页逐镜播放眼判",
+  "review_url": "https://www.tonbird.top/ads-review/Travel/review/videos-review.html",
+  "reviewed_at": "2026-09-25T13:50:00+08:00",
+  "verdict": "pass",
+  "instruction": "用户回复「开始拼接，交付成片」= 18 镜视频眼判通过，授权进入成片拼接",
+  "checks": [
+    "画面真实质感、无塑料蜡感（人工看片确认）",
+    "运镜自然不飘、无崩坏变形（人工看片确认）",
+    "画面无文字/招牌/品牌/车牌字（人工看片确认，地名靠后期花字）",
+    "情绪弧 怅惘→坚定→眷恋→释然（人工看片确认）",
+    "镜01/04 FL2VA 首尾动作连贯（人工看片确认）"
+  ],
+  "note": "媒体不做程序语义QC，按 only-validate-4-texts 交人工眼判；本证据记录用户在公网审阅页对 18 镜的整体通过"
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《我们还是分手吧》· 开场关键帧金丝雀复核</title>
+<style>
+  :root { --bg:#141210; --card:#1e1a17; --line:#2f2823; --txt:#ece6df; --dim:#a89f95; --accent:#d8a24a; --bad:#e0685a; --ok:#6fbf73; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--txt); font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.7; padding:24px 16px 80px; }
+  .wrap { max-width:1180px; margin:0 auto; }
+  h1 { font-size:22px; font-weight:700; margin-bottom:4px; }
+  .sub { color:var(--dim); font-size:13px; margin-bottom:24px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:820px){ .grid{ grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .card img { width:100%; display:block; background:#000; }
+  .card .body { padding:14px 16px 18px; }
+  .tag { display:inline-block; font-size:12px; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:1px 10px; margin-bottom:8px; }
+  .card h2 { font-size:16px; margin-bottom:8px; }
+  .card ul { list-style:none; font-size:13.5px; color:var(--dim); }
+  .card li { margin-bottom:5px; padding-left:16px; position:relative; }
+  .card li::before { content:"·"; position:absolute; left:3px; color:var(--accent); }
+  .card li.ok::before { content:"✓"; color:var(--ok); }
+  .card li.bad::before { content:"✗"; color:var(--bad); }
+  .note { margin-top:24px; background:#241d14; border:1px solid #4a3a1e; border-radius:10px; padding:16px 20px; font-size:13.5px; }
+  .note b { color:var(--accent); }
+  .note .bad { color:var(--bad); font-weight:600; }
+  .note .ok { color:var(--ok); font-weight:600; }
+  .ask { margin-top:20px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 20px; font-size:14px; }
+  .ask h3 { font-size:15px; margin-bottom:10px; }
+  .opt { border:1px solid var(--line); border-radius:8px; padding:12px 14px; margin:10px 0; }
+  .opt b { color:var(--accent); }
+  .opt.rec { border-color:var(--ok); }
+  .opt.rec b { color:var(--ok); }
+  .cost { margin-top:16px; font-size:13px; color:var(--dim); }
+  .cost b { color:var(--txt); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《我们还是分手吧》· 开场关键帧金丝雀复核（FS01 开场帧）</h1>
+  <div class="sub">横屏 16:9 ｜ MiniMax-H3 ｜ 深夜居家客厅 ｜ 三母板 A+B+客厅v2 --reference 锁脸锁景 ｜ 这是全片第一张关键帧的两次试出，验证生成通路</div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="assets/fenshou-KF-FS01-U1-first.png" alt="开场帧 v1">
+      <div class="body">
+        <span class="tag">v1 · 第一次</span>
+        <h2>锁脸锁景成功，但两处不对</h2>
+        <ul>
+          <li class="ok">A 女 / B 男脸与母板一致，东亚中国人、非网红脸</li>
+          <li class="ok">2S 双人中景、中间空位、外套搭臂弯、B 抬头</li>
+          <li class="ok">门口行李箱清晰可见</li>
+          <li class="bad">灯光偏暗偏暖（又踩“太暖压抑”）</li>
+          <li class="bad">中间倒扣合照相框 → 渲成了抱枕</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/fenshou-KF-FS01-U1-first-v2.png" alt="开场帧 v2">
+      <div class="body">
+        <span class="tag">v2 · 灯光修正版</span>
+        <h2>灯光修好了，相框还是不出</h2>
+        <ul>
+          <li class="ok">灯光明显变亮通透、中性偏暖白，接近客厅母板 v2</li>
+          <li class="ok">A / B 脸仍一致、2S 构图与中间空位保留</li>
+          <li class="bad">中间倒扣合照相框 → 这次被整个省略（座面空的）</li>
+          <li class="bad">门口行李箱被 A 的站位挡住了、看不清</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>结论：</b>三母板锁脸锁景的<span class="ok">生成通路已验证成功</span>（脸、客厅、双人构图都稳）。灯光问题 v2 已<span class="ok">解决</span>。<br>
+    唯一顽固卡点是<b>“中间那个倒扣的双人合照相框”</b>——这是全片核心隐喻道具（空位＋翻扣的合照＝分手已定）。
+    连续两版、即便用了极强的措辞（“这是关键道具/精确到硬皮书大小/明确不是抱枕”），GPT 都<span class="bad">画不出来</span>。
+    原因很可能是：<b>倒扣后看不到照片内容，模型识别不出“这是一个相框”</b>，于是要么替换成抱枕、要么直接省略。
+    这是道具本身对文生图不友好，不是提示词不够狠，再在这张远景 2S 里反复试只会继续烧钱。
+  </div>
+
+  <div class="ask">
+    <h3>请你定一个方向（倒扣相框怎么落地）</h3>
+    <div class="opt rec">
+      <b>方案 A（推荐）：开场帧不硬塞相框，另给相框一个专门的道具近景特写</b><br>
+      开场 2S 保持“空位 + 门口行李箱”做隐喻（A 让位让行李箱重新露出，重出一版即可），<b>不</b>在远景里强画相框；
+      倒扣合照单独做一个<b>茶几上的斜立/近景特写镜</b>（文生图静物、镜头近、相框造型给足＝木质边框＋背板支架），
+      这种近景相框易渲染、可控，反而是更有力的“点题签名镜”。代价：全片多一个道具特写镜（约 ¥0.25 图 + 后续一小段视频）。
+    </div>
+    <div class="opt">
+      <b>方案 B：继续在开场 2S 里试相框</b><br>
+      换造型再重出金丝雀 v3——相框改成<b>斜立/半立</b>（能看到一点边框侧面，模型更容易认出是相框）而非纯平躺。
+      不确定这次一定成，可能还要多试（每试 ¥0.25）。
+    </div>
+    <div class="opt">
+      <b>方案 C：相框整个不要</b><br>
+      只用“中间空位 + 门口行李箱”两个信号做分手隐喻，删掉倒扣相框这个道具。最省，但少一层“连合照都翻扣了”的情感重量。
+    </div>
+    <div class="cost">累计已花 <b>¥1.50</b>（A+B 母板、客厅两版、开场帧金丝雀两版；旧版/否版不退费）。<br>
+      你定方向后：走 A 我重出开场帧（露行李箱）+ 排一个相框特写，再铺其余关键帧；剩余预算约 ¥3.75。</div>
+  </div>
+</div>
+</body>
+</html>

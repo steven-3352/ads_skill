@@ -1,0 +1,40 @@
+{
+  "id": "travel-06-video",
+  "mode": "I2VA",
+  "model": "MiniMax-H3",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic, aerial drone footage with natural fine grain and soft diffuse high-altitude daylight. The clip opens exactly on <Picture 1>: a high, wide aerial view of a straight empty highway running dead ahead toward the horizon beside the vast blue expanse of a high-plateau lake, distant mountains and open sky preserved exactly, with no text, road signs, billboards or logos anywhere, lit by bright, clear, airy natural light with true-to-life color. The camera pushes in with small amplitude at slow speed straight along the road toward the horizon, the ribbon of asphalt and the sweeping blue water gliding gently past as the scene opens outward toward the distant skyline at the end of the shot.\n\noverall_soundscape: A broad high-plateau wind moves steadily across the open landscape, with the faint lap of distant lake water underneath and the occasional low whoosh of a far-off passing vehicle.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/Travel/shots/06/keyframe.png"
+  ],
+  "duration": 4,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "无对白校验:prompt无任何<d>/说话/唱词/画外音台词/speaker ID,旁白后期TTS单配",
+      "配乐校验:non_diegetic_music=N/A,H3不自造BGM",
+      "音景校验:overall_soundscape仅现场同期音(高原风+远处水声+偶尔过车),无语言",
+      "真实质感校验:Live-action photorealistic航拍,真实地貌/自然光/真实色彩,无塑料蜡感CG感",
+      "柔光校验:明亮清透自然光、中性真实色、不压抑",
+      "合规校验:画面无文字/字幕/路牌/招牌/广告牌/logo/品牌/水印",
+      "无人物镜:纯风景空镜无正脸开口",
+      "运镜校验:仅小幅慢速push in向天际,无大幅快速运镜",
+      "时长/模式校验:I2VA单Shot一镜到底,时间线对齐4s;首行<Picture 1>from[Shot 1]@0.00,images一张"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9ba7332891e7c21f96a4ab30c8d9abad74d7ab7710bd79d666b5b5d1919e9cd1"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": ["坚定·开阔抵达青海湖"],
+    "related_shots": ["镜06 远景航拍青海湖畔笔直公路通天际"],
+    "visual_evidence": ["旁白(仅参考):青海湖到了这蓝照片拍不出来", "坚定·开阔:湖蓝壮阔直通天际"],
+    "unresolved_blockers": []
+  }
+}

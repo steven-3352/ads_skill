@@ -1,0 +1,39 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens exactly on <Picture 1>: an over-the-shoulder single (CAM-B) past the woman's shoulder onto the mature East Asian Chinese man in his thirties (B, 33-38), in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. From the first-frame pose he leans his upper body further forward from the seat, owning up and reaching to make amends — his first real panic, but he is panicking about losing her, not about understanding why she is leaving; his brow tenses, his breath tight, his words tumbling fast, his eyes pleading, one hand pressing toward his own chest then reaching toward her. The mature man in his thirties, his voice tight and fast (S2), says: <d>[Chinese] 那天真的太忙。我不是故意的，我改。</d> His promise to change is itself a confession of what was missing all along. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums beneath the shot. His tight, quickened breathing and the faint rustle of his clothing as he leans forward are the only physical sounds.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS04-U1-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:B身体前倾+眉紧+语速快+眼神哀求,急的是'怕失去你'非'懂你为什么走'(第一次真着急),内心戏演足非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;坐姿前倾为反应非位移;单人CAM-B;三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 那天真的太忙。我不是故意的，我改。</d> 一字不改、画内同期口型同步、B=(S2)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b568f7def20567aea80e00709584f24fd7d87cc9ab268bdb911d3410eba3dc31"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B4"
+    ],
+    "related_shots": [
+      "FS04"
+    ],
+    "visual_evidence": [
+      "B认错求改:每句挽回都在暴露缺失",
+      "'我改'=缺失的告白"
+    ],
+    "unresolved_blockers": []
+  }
+}

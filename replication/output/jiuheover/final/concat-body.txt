@@ -1,0 +1,8 @@
+file '../shots/shot-U1/videos/U1-video.mp4'
+file '../shots/shot-U2/videos/U2-video-r2.mp4'
+file '../shots/shot-U3/videos/U3-video.mp4'
+file '../shots/shot-U4/videos/U4-video.mp4'
+file '../shots/shot-U5/videos/U5-video.mp4'
+file '../shots/shot-U6/videos/U6-video.mp4'
+file '../shots/shot-U7/videos/U7-video.mp4'
+file '../shots/shot-U8/videos/U8-video.mp4'

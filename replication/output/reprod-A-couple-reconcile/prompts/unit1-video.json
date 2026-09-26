@@ -1,0 +1,36 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, shot on an iPhone with realistic handheld texture, fine natural film grain, true-to-life skin and no plastic AI sheen, matte skin with no oily facial glare, in a warm home entryway beside an open kitchen with bright natural neutral-warm lighting. The clip begins exactly on Picture 1 and resolves exactly to Picture 2, acting out every verb of the state and position change. A mature East Asian Chinese woman about 42 (S2) stands with her back to the camera holding a folded dark-grey jacket, tense and about to leave; a mature East Asian Chinese man about 45 (S1) stands close behind her right shoulder. The man in a low steady male voice (S1) gently touches her arm and says at a natural, normal conversational pace: <d>[Chinese] 别走。</d> The woman, without turning, in a tense female voice (S2) replies without pause: <d>[Chinese] 放开我。</d> He wraps his arms around her waist from behind; she resists, then softens and slowly turns to face him, the folded jacket pressed between their chests. The man (S1) says close to her face: <d>[Chinese] 对不起，是我错了。</d> They settle chest to chest into a close embrace, foreheads almost touching, on the verge of a kiss, matching the pose, spacing and composition of Picture 2 at the 5.00-second mark. The camera holds a static shot with a slight push in of small amplitude at slow speed. No on-screen text, no subtitles, no captions, no logo, no watermark anywhere in the frame.\n\noverall_soundscape: A soft warm room tone hums underneath; the folded jacket and cotton clothing rustle, bare feet shift on the wood floor, and quiet restrained breaths are audible.\n\nnon_diegetic_music: A warm, gentle fingerpicked acoustic-guitar melody at a slow tempo with soft sustained notes held evenly.",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/shots/KF1a-unit1-first.png",
+    "/home/ubuntu/ads_skill/replication/output/reprod-A-couple-reconcile/shots/KF-mid-shared.png"
+  ],
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "首行FL2VA对齐指令:Picture 1@0.00、Picture 2@5.00,单镜连续;状态/位置变化逐动词(男背后轻触环抱→女僵持→转身面对→相拥将吻)+摆落点防单首帧漏演;末尾落Picture 2;三段字段齐",
+      "对白逐字<d>[Chinese]:男(S1)别走/对不起是我错了;女(S2)放开我;说话人ID稳定跨单元一致,delivery锁normal pace/without pause防慢对白留白",
+      "去字幕:显式no subtitles/captions/text;生成后人工查烧字幕(H3非确定性)",
+      "实拍去蜡感:iPhone handheld/film grain/matte skin/no oily glare/no plastic sheen;暖光正常明亮;东亚中国人物身份经首尾帧锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "40db6dae2e445e3782b778aa1910b1ee6c189121861ca442ca5c7abb0666588e"
+  },
+  "narrative_alignment": {
+    "source_story": "story/A-source-analysis.md",
+    "related_beats": [
+      "0-5s 挽留转身"
+    ],
+    "visual_evidence": [
+      "女背对攥外套→男背后环抱→女转身相拥将吻"
+    ],
+    "unresolved_blockers": []
+  }
+}

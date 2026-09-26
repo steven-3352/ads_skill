@@ -1,0 +1,39 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic — the emotional peak of the whole film. The clip opens exactly on <Picture 1>: an over-the-shoulder single (CAM-A) past the man's shoulder onto the mature East Asian Chinese woman in her thirties (A, 33-38), warm light on her face, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. This is the turning-point beat: the woman, who all film has kept her eyes away from him, now calmly turns her head and for the FIRST time looks straight into the man's eyes, near-frontal, quiet and piercing — the last time she lays her true heart bare, a parting gift; her gaze steady, her eyes rimmed but composed, exhaustion carrying release. The mature woman in her thirties, her voice calm and level yet cutting, evenly paced (S1), says: <d>[Chinese] 可是我的失望，不会等你有空。</d> Right after the line she draws a small breath in, as if setting something down at last. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums beneath the shot. A single small intake of breath follows her line; no other physical sounds.\n\nnon_diegetic_music: A single sustained low string tone rises extremely faintly beneath the dialogue at a slow tempo and stays well under her voice, never swelling over it, then settles.",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS05-U2-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:A平静转头、全片第一次正眼看B(近正面)、说完轻吸一口气像卸下重担(告别礼物、弧线到释然顶点),内心戏演足",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;金句语气平静扎心、匀速;non_diegetic_music极轻抬升不盖人声(写乐器/速度/动态不写情绪词);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 可是我的失望，不会等你有空。</d> 核心金句一字不改、画内同期口型同步、A=(S1)、delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8394fbb697bbf12ddffa918755891bcec45cc276fbbd7e7baa67c59e107f09f4"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B5"
+    ],
+    "related_shots": [
+      "FS05"
+    ],
+    "visual_evidence": [
+      "A第一次正眼看B说金句(全片顶点)",
+      "核心金句'我的失望，不会等你有空'"
+    ],
+    "unresolved_blockers": []
+  }
+}

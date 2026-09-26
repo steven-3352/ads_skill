@@ -1,0 +1,41 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic — the emotional peak of the whole film, opening exactly on <Picture 1>: a tight medium close-up of the mature East Asian Chinese woman in her thirties (A, 33-38), her face filling most of the frame in a head-and-shoulders composition, near-frontal, eye-level, only a thin blurred sliver of the man's shoulder in the extreme lower-left foreground to keep the over-the-shoulder relationship, her identity, face, hairstyle and beige knit sweater preserved exactly from <Picture 1>. The evenly and normally lit late-night East Asian Chinese urban family living room reads bright, clean and airy behind her — ceiling light on, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade; deep quiet dark night blurred in the window beyond. The camera pushes in with small amplitude at slow speed across the four seconds, closing on her face until it fills the frame even more, her face the subject throughout. A visible micro-expression arc develops in sync with the line: she begins with her gaze slightly lowered and held back, composed; then she lifts her eyes and for the FIRST time in the whole film looks straight into the man's eyes, near-frontal; the unshed tears on her lower lids well higher, brimming but never falling; her brows knit faintly; then the calm yet cutting, evenly paced woman (S1) says: <d>[Chinese] 可是我的失望，不会等你有空。</d> Her voice is level and quiet, her delivery calm but piercing, her throat faintly tight and one corner of her mouth and her chin trembling ever so slightly as she speaks. Right after the line she draws a small breath in and slowly blinks once, the tension on her face easing by a fraction as it settles into release. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field, subtle film grain, natural color.\n\noverall_soundscape: A low late-night indoor room tone hums beneath the shot. A single small intake of breath follows her line; no other physical action sounds.\n\nnon_diegetic_music: A single sustained low string tone at a slow tempo, extremely faint, staying well under her voice throughout and never swelling over it or rising.",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS05-U2-first-v3.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演弧线可见:目光略垂克制→抬眼第一次正眼直视→下眼睑泪意上涌(welling不流)→眉微蹙→匀速说金句喉紧嘴角微颤→说完轻吸气缓眨一下落到释然,微表情演足",
+      "首行I2VA对齐:<Picture 1> from [Shot 1] @0.00秒fully referenced,后接空行,三段字段(integrated/overall_soundscape/non_diegetic_music)齐全",
+      "金句verbatim同期:<d>[Chinese] 可是我的失望，不会等你有空。</d> 一字不改、画内同期口型同步、A=(S1)、delivery描述在<d>外",
+      "缓推近脸满画幅:Push In small amplitude slow speed,4秒内脸推得更满,脸为主体全程",
+      "无字幕:无任何引号包裹屏幕文字/字幕,不烧字幕;non_diegetic_music极轻不涨不盖人声",
+      "东亚锁定:东亚中国女主A身份/脸/发/米色针织衫锁定,客厅正常明亮通透、16:9"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "853fbfd81848a933f414afcac47b8639e25b4c2c5dffc99d75b0cfa4d11dcb80"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B5"
+    ],
+    "related_shots": [
+      "FS05"
+    ],
+    "visual_evidence": [
+      "近景金句表演:第一次正眼直视、含泪微表情弧线落到释然、缓推近脸满画幅",
+      "核心金句'可是我的失望,不会等你有空'画内同期"
+    ],
+    "unresolved_blockers": []
+  }
+}

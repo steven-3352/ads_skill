@@ -1,0 +1,15 @@
+{
+  "prompt": "Vertical 9:16 medium-close shot in a bright white-wall interior corridor. Two people only. A Chinese (East Asian) woman, 23-26 years old, long dark hair loose over her shoulders, bare-faced natural good skin, wearing a plain soft knit home top (no logo, no brand, no text), has snapped her hand free and pulled back half a step, her face turned to the opposite side, one shoulder shrugged up, her eyes cutting a quick sideways glance back toward him. A Chinese (East Asian) man, 25-28 years old, clean short black hair, wearing a plain white shirt with sleeves rolled to the forearms (no logo, no brand, no text), has his hand frozen in the air where hers just left, his jaw tight, looking at the back of her turned head. Bright white-wall interior corridor, soft even diffuse daylight, neutral-warm color that does not tint the faces, matte true-to-life skin with visible texture and fine natural grain, iPhone 17 realistic photo look, no plastic or wax or CG, no oily glare or highlights on the faces, no airbrushed fake skin. Vertical 9:16. No subtitles, captions, watermark, logo or on-screen text anywhere in the frame.",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "9:16 vertical single/two-person framing verified;identity locked (Chinese East Asian, casting-matched hair/wardrobe);no brand/logo/text on wardrobe or set;anti-subtitle: no on-screen text/watermark;realistic iPhone skin texture, matte no oily glare, no plastic/wax/CG;soft diffuse neutral-warm light not tinting faces"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e2a57c24e07d36a84a58a0baa5a8f5f1cfd4b8bfb31132a9d1c170bf0a96b945"
+  }
+}

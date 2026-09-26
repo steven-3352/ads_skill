@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: This is a fast-cut montage of three hard-cut beats at roughly a three-second cadence, each beat carrying continuous motion so no shot ever freezes on a settled static pose before the cut. [Shot 1] From 0.00s, starting exactly as framed in <Picture 1>: a bright daytime living room with soft diffused natural daylight and a neutral warm-white base, no single heavy yellow lamp washing the faces orange, skin keeping its natural tone. Near shot of the young East Asian Chinese man in a light-grey T-shirt and dark-blue shorts slumped back into the sofa, while the young East Asian Chinese woman in bright yellow bear-cartoon pajamas, black hair in a bun with a bear-ear headband, leans in and closes her hand around his wrist, already pulling with her weight tipping back. At a natural, slightly quick pace with no trailing silence, the woman with a soft, slightly coaxing young voice (S2) says: <d>[Chinese]不行等会太阳晒过来。</d> [Shot 2] Hard cut at 00:02.90 to a medium-near shot as the man is peeled off the sofa: his torso rises off the cushions, his free hand pushes against the seat, a reluctant half-smile on his face, a soft grunt of effort; the upward motion carries through the cut, no dialogue. [Shot 3] Hard cut at 00:05.80 to a wide shot of the bright daytime living room, warm daylight pouring from the window, the woman pulling the man by the hand as they walk together toward the window, both seen in three-quarter back view and still in mid-stride when the shot ends near 00:08.70, their steps unresolved. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A quiet daytime living-room tone runs unbroken beneath all three beats, with faint fabric rustle and a soft creak of couch springs as she grips his wrist and hauls, a light grunt of effort and shuffling movement as he is peeled upright, and soft barefoot footsteps on the floor as they walk toward the window; gentle breathing fills the micro-gaps so there is never dead silence.\n\nnon_diegetic_music: Light plucked acoustic-guitar notes at a moderate tempo, softly spaced and low in volume, holding continuous under all three beats.",
+  "references": [
+    "replication/output/fuke/assets/U14-first.png"
+  ],
+  "images": [
+    "replication/output/fuke/assets/U14-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 9,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA-multishot",
+    "duration_seconds": 9.0,
+    "checks": [
+      "模式:I2VA首帧U14-first全参考0.00s锚定,内部三镜硬切(00:00/00:02.90/00:05.80)复刻原片镜24→25→26快切蒙太奇",
+      "快切:显式three hard-cut beats~3s cadence每beat连续运动结尾不停静止(治翻页/慢感)",
+      "对白:镜24女不行等会太阳晒过来(S2)逐字<d>[Chinese],镜25他被拉起无对白只留使劲声,镜26牵手走窗边无对白",
+      "禁留白:房间底噪+沙发吱+使劲声+赤脚脚步连续铺满三beat无死寂",
+      "身份锁:女小熊发箍黄睡衣(S2)/男灰T恤深蓝短裤(S1)沿用母板,家日暖白自然光窗光禁大黄光染脸",
+      "质感:人脸哑光无油光真实毛孔iPhone噪点禁塑料蜡感CG",
+      "零字幕:显式no subtitles/on-screen text",
+      "时长:9s服从三beat快切密度"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d0db1fbd73c780380b6405e999c9292e72330ad32d9266ae005225792513c4cf",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U14-mtgB-video",
+    "usage": "重做家日甜蜜蒙太奇B(原片式快切):镜24她拉他太阳晒过来→镜25他被拉起→镜26牵手走窗边,I2VA自U14-first内部三镜硬切",
+    "locks": [
+      "女:黑发丸子头小熊发箍+亮黄小熊睡衣(S2)",
+      "男:浅灰T恤深蓝短裤(S1)",
+      "家日客厅柔和自然光暖白+窗光/禁大黄光染脸",
+      "人脸哑光真实质感iPhone噪点",
+      "零字幕",
+      "三镜硬切快节奏每beat连续运动不停静止",
+      "声连续无留白"
+    ]
+  },
+  "narrative_note": "重做B:把原片镜24-26三个3秒快镜还原为一条内部硬切的快切蒙太奇,替代原U14+U15慢拍;太阳晒过来→被拉起→牵手走窗边"
+}

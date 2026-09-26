@@ -1,0 +1,19 @@
+{
+  "unit": "fenshou-LOC-livingroom-v2",
+  "group": "shot_image",
+  "asset_type": "image",
+  "semantic_qc": "pass",
+  "reviewer": "user",
+  "reviewed_at": "2026-09-18",
+  "channel": "对话认客厅 + 公网HTML复核 (/ads-review/xiaozhu-qichuang-20260914/fenshou-master-review.html)",
+  "decision": "用户认客厅通过(2026-09-18回复\"通过\");v1因太暖黄压抑已reject,本v2为正常灯光重出版",
+  "checks": [
+    "灯光正常明亮通透、不压抑(顶灯开、光色自然中性偏暖白),已满足用户反馈",
+    "深夜时间感由窗外都市夜景交代,屋内正常开灯",
+    "双人沙发居中作全片环境根,浅景深适度房间可读",
+    "门口黑色硬壳行李箱清晰(开场将走/收尾已走回扣道具)",
+    "沙发中间倒扣双人相框可辨(空位回扣核心)",
+    "生活痕迹足非样板间,空镜无人,无文字水印,16:9横屏"
+  ],
+  "notes": "全片各镜关键帧将--reference本场景母板锁环境一致"
+}

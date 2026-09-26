@@ -1,0 +1,45 @@
+{
+  "id": "zhou-master-v2",
+  "replaces": "zhou-master",
+  "role": "周周 29岁，清醒毒舌的闺蜜、卸妆素颜利落",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "aspect_ratio": "16:9",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "一位29岁的东亚中国女性半身肖像，五官是自然的中国人长相，绝对不是欧美/高加索面孔。深夜居家客厅，真实房间的 LED 顶灯照明：光色是中性偏冷的日光白（约 4500–5000K），屋里明亮通透、光线均匀、不压暗；整体是干净的中性白光，绝对不要暖黄光、橘黄光、钨丝灯黄调或暖黄氛围，不用黄光染脸。她穿浅色家居宽松棉质衬衫，卸妆素颜、皮肤干净，神情清醒利落，眼神直、通透、带一点毒舌闺蜜的锐利，但眼底藏着心疼，坐姿松弛自然。柔和的中性白色漫射光包裹面部，肤色不偏黄、不偏橘、保持自然本色；人脸哑光、没有油光高光反光；iPhone17手持真实拍摄质感，画面带轻微噪点、真实肤质与可见毛孔、自然的肤色不均，绝无塑料感、蜡感、磨皮假脸、CG蜡像感。中近景半身居中，背景是虚化的居家客厅（茶几、落地灯、一杯红酒的模糊剪影），背景灯光同为中性白光、没有暖黄光斑，浅景深。16:9横向构图。画面中没有任何文字、字幕、logo、品牌或水印。",
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-23T00:00:00+08:00",
+    "reviewed_prompt_sha256": "41233133120d93df9dd6dc94f8bd1920cae73514788562628b70ecc2b92f7c97",
+    "checks": [
+      "选角锁 East Asian 中国人五官，显式排除欧美/高加索脸（daihuo-casting-must-be-chinese）",
+      "灯光=真实房间 LED 中性白光（4500–5000K），显式禁暖黄/橘黄/钨丝黄，肤色不偏黄；黄光会顶出蜡感（scene-lighting-normal-not-moody / soft-light-no-facial-glare）",
+      "去塑料/蜡感：噪点+真实肤质+可见毛孔+肤色不均，禁磨皮CG蜡像（iphone-realistic-no-plastic-texture）",
+      "柔光哑光脸：柔和中性白漫射光、人脸哑光无油光高光反光（soft-light-no-facial-glare）",
+      "合规：画面无文字/字幕/logo/品牌/水印（no-brand-products-in-videos）",
+      "画幅锁 16:9 横向 1536×1024，防拉伸（gpt-image-h3-aspect-mismatch-distortion）",
+      "母板身份根：中近景半身、五官清晰可复用，供各镜 --reference 锁脸",
+      "卸妆素颜皮肤干净，锐利但眼底心疼，避免渲成冷漠反派脸"
+    ],
+    "unresolved_blockers": []
+  },
+  "narrative_alignment": {
+    "source_story": "replication/output/zhanv/story/screenplay-locked-v2.md",
+    "related_beats": [
+      "人物母板/身份根（非具体某镜）"
+    ],
+    "related_shots": [
+      "全片 7 镜 13 单元复用（各镜关键帧 --reference 本母板锁脸）"
+    ],
+    "visual_evidence": [
+      "剧本人物表：周周 29岁，清醒毒舌的闺蜜、卸妆素颜利落",
+      "用户硬要求(2026-09-23)：去黄光，改真实房间 LED 中性白光；黄光会突出人物蜡感",
+      "质感：iPhone 手持真实拍摄，有噪点/真实肤质/自然光，禁塑料感·蜡感·磨皮假脸",
+      "选角：East Asian / 中国人"
+    ],
+    "unresolved_blockers": []
+  }
+}

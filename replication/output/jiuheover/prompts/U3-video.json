@@ -1,0 +1,33 @@
+{
+  "unit_id": "U3",
+  "scene": "双人立局倒酒镜 · 唯一双人立局 · 首帧起倒尾帧落定推杯落幕未复盖瓶盖",
+  "mode": "FL2VA",
+  "ratio": "9:16",
+  "duration": 6,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U3/images/U3-first-r2.png",
+    "replication/output/jiuheover/shots/shot-U3/images/U3-last-r2.png"
+  ],
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. At the start, established by Picture 1, the East Asian man in his early thirties with light stubble, speaking Mandarin at a normal, slightly quick pace with no dead air (S2) sits across the small wooden table from the East Asian young woman in her late twenties (S1) by the rain-streaked tavern window at night, both under bright warm-white light. He holds the plain unlabeled white ceramic bottle — a cylindrical straight body with a flat shoulder and short neck, its red cap topped with a thin gold ring, the whole bottle glossy plain white with no text, letters, logo, label or print, its shape matching the supplied bottle reference exactly — already tilted and pouring into one of the two clear glass stemmed cups on the table; its red cap sits removed and set separately at the side of the table with the bottle mouth open, and at no point in the shot does he twist, unscrew, or press the cap back onto the bottle. She stares at the bottle, caught off guard, going still. The camera holds a steady handheld shot at eye level as he finishes filling that cup, then tilts the bottle to fill the second clear glass stemmed cup to the same level, both pours landing cleanly inside the stemmed bowls with no spill. He slides one filled cup a short distance across the wood until it rests directly in front of her, then lifts the bottle upright and sets it back down on the table, the red cap still left separately at the side, never recapped. Speaking low and steady, weighting five years of restraint into every word, he says: <d>[Chinese]你送的。我留了五年。</d> He pauses briefly, then continues in the same low voice: <d>[Chinese]一人问一个。问的人，喝一杯。</d> She keeps staring at the bottle and the two filled cups, saying nothing, her composure held together only by effort. By the end of the shot, the two filled cups, the cup pushed in front of her, the upright bottle, and the separately placed red cap settle into the exact positions and composition established by Picture 2. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain taps against the window while low indoor room tone and faint bar murmur continue underneath without pause. A thin stream of liquid pours into glass, the base of each cup taps softly on the wood, and the bottle produces a muted thud as it is set back upright on the table.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:FL2VA 指令行 Picture 1/Picture 2 (from Shot 1) 对齐 0.00s/6.00s,S.SS=duration 两位小数",
+      "FL2VA 结构=first-frame state→intermediate changes→narrowing differences→last-frame state:首帧瓶已倾倒起倒→依次倒满两杯→推杯给苏晚→瓶直立放回→落定为尾帧构图",
+      "去蜡感强化写入 Shot 1 开头,单镜连续动作无 cut,适配 FL2VA『倾向单镜头插值』",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内(你送的。我留了五年。/一人问一个。问的人，喝一杯。),停顿写 <d> 外",
+      "speaker 稳定 ID S2=陈叙、S1=苏晚,首次出现给身份(early thirties/light stubble/East Asian/Mandarin/normal slightly quick pace)",
+      "显式禁止拧盖/开盖/旋盖复位动作:红盖全程单独搁桌面一侧、never recapped,写入正文防止模型误加盖回",
+      "瓶型描述锁 cylindrical straight body/flat shoulder/short neck/red cap+gold ring+素白无标,严格参照提供的瓶参考图",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:雨声+室内低语连续,倒酒细流声/杯底磕桌/瓶放回轻响,non_diegetic_music=N/A",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle/clear glass stemmed cups,无 logo/文字/清酒器/红酒瓶"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c895de1c9ede6f4b3571ff8b000cc99c8738b19c0878a87384d547eb7ffd78f4"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "travel-protagonist-master",
+  "role": "女主角（合照中留下的那位）：二十多岁末东亚中国女性，独自开车兑现承诺，单人身份根",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "一位二十多岁末（28 岁上下）东亚中国女性的近正面半身身份根照片。她是自然的普通中国人五官，绝对不是欧美/高加索/混血面孔，也不是网红滤镜脸、不做过度精致的整容脸，要与旅行合照里的同一位女生是同一个人。她穿休闲旅行装，外面搭一件红色冲锋衣（呼应剧情锚点），头发自然。表情是平和中性的基线状态，不做强情绪、不哭不笑不夸张，眼神平静、状态松弛自然。柔和的自然漫射光包裹面部，光色中性偏暖白、明亮通透不压抑，不用大黄光染脸；脸上是哑光肤质、没有油光高光反光。iPhone/单反真实照片级质感，画面带细腻真实的肤质、可见毛孔、自然噪点与轻微肤色不均，绝无塑料感、AI感、CG蜡感、磨皮假脸、蜡像感。近正面半身、面部清晰完整可辨识可复用（供后续背影、手部、湖边等镜头 --reference 锁定身份）。背景是中性简洁的浅色虚化背景，干净不抢主体，浅景深。竖构图 9:16，人物居中，面部特征不贴边不出画。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌。",
+  "references": [],
+  "identity_anchor": {
+    "character_id": "travel-protagonist",
+    "role": "女主角（第一人称『我』，独自开车替 TA 兑现承诺）",
+    "usage": "全片主角单人身份根；背影/手部/湖边等镜头 --reference 本母板锁脸锁人",
+    "locks": [
+      "东亚中国人五官，排除欧美/高加索/混血/网红滤镜脸",
+      "二十多岁末（28 岁上下）女性，与合照母板中女生为同一人",
+      "休闲旅行装、可搭红色冲锋衣呼应剧情锚点",
+      "平和中性基线表情、不做强情绪，便于后续各镜派生",
+      "近正面半身、面部清晰可复用，中性简洁背景",
+      "真实肤质自然光、非蜡感；画面无文字/logo；竖构图 9:16 居中"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T12:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344，近正面半身人物居中面部不贴边，防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "人物东亚中国人：自然中国人五官，显式排除欧美/高加索/混血/网红滤镜脸，且与合照母板同一人（daihuo-casting-must-be-chinese）",
+      "真实质感非塑料：iPhone/单反照片级、细腻毛孔+真实肤质+自然噪点，禁塑料感/AI感/CG蜡感/磨皮假脸（iphone-realistic-no-plastic-texture）",
+      "柔光无油光：柔和自然漫射光、中性偏暖白明亮通透，人脸哑光无油光高光反光，忌大黄光染脸（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo：画面任何位置无文字/字幕/数字/水印/logo/品牌，背景中性简洁（no-brand-products-in-videos）",
+      "身份根用途：主角单人身份根、平和中性基线表情，供背影/手部/湖边镜 --reference 锁脸派生（masters-before-shot-keyframes）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0a7ecf97fdc691819ac888e98a8eef610397a09cc6987eb44b1552d1d3d319bc"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "女主角单人母板/身份根（非具体某镜）：全片第一人称『我』的身份根"
+    ],
+    "related_shots": [
+      "01 手把红冲锋衣放进行李箱（手部）",
+      "08/12 雪山下/胡杨林人物背影",
+      "14 洱海边人物背影面朝湖面",
+      "15 坐湖边手握合照"
+    ],
+    "visual_evidence": [
+      "剧本人物：主角『我』第一人称，独自开车替不在场的 TA 兑现环中国自驾承诺",
+      "01 红冲锋衣锚点（女主服装呼应，结尾 18 合照呼应）",
+      "12/14 人物背影立于树下/面朝湖面；15 手握合照",
+      "质感：iPhone/单反真实拍摄，有噪点/真实肤质/自然光，禁塑料感·蜡感·磨皮假脸",
+      "选角：East Asian / 中国人；与合照母板中女生为同一人以锁一致"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "shot-06-image-first",
+  "role": "镜6首帧（I2VA）＝两人依偎的暖色温馨画面（暖转冷起点）",
+  "prompt": "Cinematic still, 9:16 vertical, medium shot, static, very slight shallow framing. A warm, cozy neutral-warm living room, ceiling light on, soft diffuse daylight, no dim moody lamp. A realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, and a realistic East Asian Chinese man about 30 to 35 years old (identity from the reference man), short neat dark hair, light-grey crew-neck top, sit nestled close together on the sofa, her head resting lightly against his shoulder, both quiet and content, neither speaking. The warm light is at its fullest and softest here, a tender ordinary moment that feels like a memory. Matte skin with realistic pores, fine film grain, shot on an iPhone with true-to-life handheld realism, no oily facial glare, no highlight on faces, no plastic AI sheen, no wax. They are Chinese with East Asian faces, not western faces. Warm natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景，静态，极浅的构图呼吸。温暖惬意的中性偏暖客厅，顶灯开、漫射日光，无暗黄压抑灯。真实东亚中国女性(30-35岁，参考女主)，中长深棕披肩发、燕麦米色针织上衣，与真实东亚中国男性(30-35岁，参考男主)，短发、浅灰圆领上衣，一起依偎坐在沙发上，她的头轻轻靠在他肩上，两人安静满足、谁也没说话。此处暖光最饱满最柔和，是像回忆一样的温柔日常。哑光肤质有毛孔、自然颗粒，iPhone真实手持质感，无脸部油光/高光/塑料AI感/蜡感。中国东亚脸，非欧美脸。温暖中性偏暖自然色，浅景深。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2VA first frame, shot-06 'thought there would be a later' (nestled warm two-shot, start of warm-to-cold fade)",
+    "checks": [
+      "couple identity locked via reference female + male, East Asian/Chinese 30-35",
+      "two nestled close on sofa, her head on his shoulder, quiet content — fullest warm memory beat before the fade handled in video",
+      "warmest softest light here (video does the edge desaturation), still bright not moody",
+      "medium shot, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "5dada1964753ab9117c663af851475d97584d79699df0308eddc39f5f3e1ae34"
+  }
+}

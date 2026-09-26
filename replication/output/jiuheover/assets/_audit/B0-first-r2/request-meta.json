@@ -1,0 +1,16 @@
+{
+  "request_id": "b0-first-r2-20260922",
+  "prompt_file": "replication/output/jiuheover/prompts/B0-first.json",
+  "output": "replication/output/jiuheover/shots/B0/B0-first-r2.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/jiuheover/assets/master-A.png",
+    "replication/output/jiuheover/assets/master-B.png",
+    "replication/output/jiuheover/assets/prop-bottle-baiciping.jpeg",
+    "replication/output/jiuheover/assets/prop-cup-glass.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-22T07:41:57+08:00"
+}

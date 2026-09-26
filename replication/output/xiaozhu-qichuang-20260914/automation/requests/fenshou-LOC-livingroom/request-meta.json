@@ -1,0 +1,11 @@
+{
+  "request_id": "fenshou-LOC-livingroom",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/prompts/fenshou-LOC-livingroom.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-LOC-livingroom.png",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-17T21:41:22+08:00"
+}

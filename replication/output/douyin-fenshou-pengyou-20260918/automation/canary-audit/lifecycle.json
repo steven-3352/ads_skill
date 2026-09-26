@@ -1,0 +1,7 @@
+{
+  "request_id": "canary-ref-1789710840",
+  "state": "completed",
+  "at": "2026-09-18T13:57:07+08:00",
+  "detail": "image saved; semantic QC still required",
+  "automatic_retry": false
+}

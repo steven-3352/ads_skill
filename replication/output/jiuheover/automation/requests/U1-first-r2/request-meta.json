@@ -1,0 +1,13 @@
+{
+  "request_id": "U1-first-r2",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/jiuheover/prompts/U1-first.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/jiuheover/shots/shot-U1/images/U1-first-r2.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/jiuheover/assets/master-A.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-21T13:45:36+08:00"
+}

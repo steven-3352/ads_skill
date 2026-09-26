@@ -1,0 +1,18 @@
+{
+  "unit": "U3-video",
+  "output": "replication/output/jiuheover/shots/shot-U3/U3.mp4",
+  "sha256": "cf942e6c67dcfc8b8ff1072a811a215f6cf4a496f29011e6fb47a5fbaab4a053",
+  "review_method": "编排抽帧人工看片(0.3s/1.5s/3.0s/4.5s/5.7s)",
+  "spec": {"width": 768, "height": 1344, "duration_s": 6.58, "audio": "aac"},
+  "checks": {
+    "倒酒动作": "首尾帧驱动成立:执瓶倒酒→两杯倒满→瓶直立放回→推一杯给苏晚",
+    "红盖合规": "红盖全程有且仅一个、单独搁桌面一侧,瓶口全程敞开无盖,镜内不演拧盖/盖回,红盖穿帮已根治",
+    "字幕": "全程无烧字幕(anti-subtitle 生效)",
+    "品牌合规": "乳白瓷瓶素白无标、无文字/logo/商标字,玻璃杯透明无字",
+    "身份": "苏晚(母板A)/陈叙(母板B)一致,East Asian",
+    "画幅音轨": "竖屏9:16、明亮暖白、含对白 aac 音轨"
+  },
+  "result": "pass",
+  "reviewer": "human-canary-review",
+  "note": "金丝雀通路+计费+画面全通过(committed 3.75->4.95, +1.2)"
+}

@@ -1,0 +1,14 @@
+{
+  "request_id": "kf-s01-first-1789565101",
+  "prompt_file": "replication/output/iloveyou-everywhere-20260916/prompts/assets/KF-S01-first.json",
+  "output": "replication/output/iloveyou-everywhere-20260916/assets/keyframes/KF-S01-first.png",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/iloveyou-everywhere-20260916/assets/characters/MASTER-boy.png",
+    "replication/output/iloveyou-everywhere-20260916/assets/characters/MASTER-girl.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-16T21:25:01+08:00"
+}

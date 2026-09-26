@@ -1,0 +1,33 @@
+{
+  "unit_id": "U2",
+  "scene": "陈叙单人近景 · 干脆否认后半秒停顿再轻声反刺 · 举杯",
+  "mode": "I2VA",
+  "ratio": "9:16",
+  "duration": 4,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U2/images/U2-first.png"
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. The man shown in <Picture 1> stays seated at his side of the small wooden table by the rain-streaked tavern window at night, keeping his appearance, clothing, seating, and the plain unlabeled white ceramic bottle with a red cap plus the two clear glass stemmed cups on the table. Bright warm-white interior light keeps his face clearly readable, not dim, not moody. The camera holds a near-static handheld shot with slight breathing motion. The East Asian man in his early thirties with light stubble, speaking Mandarin at a normal, slightly quick pace with no dead air (S2), answers plainly and without dodging, then pauses for only half a second as his eyes soften a fraction and he lets the quiet counter-question out immediately, not as an attack but as a man who has seen through both her and himself: <d>[Chinese]没有。你问，是因为你希望有，对不对。</d> Right after the last word he lifts the clear glass stemmed cup a small distance off the table. His micro-expressions stay restrained and real, no exaggeration and no theatrical recitation, as if pressing calm over an urge to break. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain taps against the window outside while low indoor room tone and faint bar murmur run continuously underneath. The soft clink of the lifted glass fills the half-second pause, keeping the ambience unbroken with no dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 规范重写:I2VA 指令行 <Picture 1>(from [Shot 1]) at 0.00s + 三核心字段 integrated_multimodal_description/overall_soundscape/non_diegetic_music 顺序正确(取代旧中文散文格式)",
+      "I2VA 结构=first-frame anchor→action onset→continuous development:先锚 <Picture 1> 陈叙坐姿/道具/暖白光,再干脆否认→半秒停顿眼神软→轻声反刺→举杯",
+      "去蜡感强化(2026-09-22):用户反馈首帧图OK但H3视频层冒蜡感,把去蜡感写进 Shot 1 开头正向+负向(matte real skin/visible pores/non-reflective/no glossy oily/no waxy plastic/no airbrushing/no CGI),力度强于 B0,只压肤质不堆整体视觉词以护对口型/音频",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内,停顿/表演等舞台指示写在 <d> 外(没有。你问，是因为你希望有，对不对。 原标点不改不译)",
+      "speaker 稳定 ID S2=陈叙,首次出现给身份(early thirties/light stubble/East Asian/Mandarin/slightly quick),延续全片",
+      "语速锁:normal slightly quick pace with no dead air,顿半秒后 immediately 接话不留死尾,合『禁留白/禁慢对白』",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame,成片零字幕",
+      "连续音频铺底:rain+room tone+bar murmur 连续,glass clink 填半秒停顿,no dead silence",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle red cap/clear glass stemmed cups,无 logo/文字/红酒",
+      "时长 4s 单镜无 cut,Shot 1 不加时间戳,竖屏 9:16 由 ref 帧承载",
+      "non_diegetic_music=N/A 无画外配乐"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "3f475438751b6b646af2bf83b6979e1adf7dd90cf518f02ed5ec363a0b24e980"
+  }
+}

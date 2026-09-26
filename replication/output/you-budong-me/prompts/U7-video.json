@@ -1,22 +1,22 @@
 {
-  "prompt": "第7个生成单元，约5秒，慢推近景。承接首帧：客厅顶灯全开、明亮通透、中性偏暖白（家常真实的晚间、绝不文艺单光源压暗）。情绪顶点：女主 A 看着 B、眼睛红了、眼泪在眼眶打转但没掉、很轻很慢地把她真正要的说出来——不是嚎、是强忍着的心碎。镜头缓慢推近她的脸。【对白】A（眼红、很轻很慢、一字一顿）：对。你就坐着。听我说完。抱我一下。就够了。【音效必带】A 的对白、极轻环境底噪（近乎安静但不死寂，铺极轻房间底噪避免静默突兀）。男主 B 穿深蓝针织衫配白衬衫领、女主 A 穿米色针织，面孔/发型/体型严格随参考帧一致，两人均为 East Asian 中国人面孔。16:9 横屏，iPhone 手持轻微晃动的真实 vlog 质感、不摆拍不打光、家常明亮。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。对白随镜 H3 同期配音+表演直出，不烧任何字幕。",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, handheld iPhone vlog realism with subtle natural shake, no staged lighting, a real domestic feel; the living-room ceiling light is fully on, bright and even, neutral warm-white (an ordinary real evening, never a moody single-source dim room). A near shot preserves the East Asian Chinese woman (A) from <Picture 1> in her beige knit sweater, seated on the sofa looking at the man (B) in his dark-navy knit sweater with a white shirt collar; faces, hair, and body type kept exactly as the reference frame. The camera pushes in with small amplitude at slow speed toward her face. Her eyes are rimmed red with tears welling but not falling; she speaks in a very soft, breathy, half-choked voice at low volume, each short phrase separated by a small emotional catch of breath rather than an even flat beat — held-back heartbreak at its peak, not a recitation (S1): <d>[Chinese] 对。你就坐着。听我说完。抱我一下。就够了。</d> \"抱我一下\" comes out the lightest and most trembling, and \"就够了\" fades to almost pure breath without dragging into a dead tail. Her lips stay in sync with the line. anti-subtitle: no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo. Explicit delivery negatives: no flat monotone reading, no robotic recitation, no news-anchor cadence, no evenly-paced narration.\n\noverall_soundscape: Near-silent but not dead — an extremely faint room-tone bed of low ambience runs underneath to avoid abrupt silence, with the small catches of her breath audible between the short phrases.\n\nnon_diegetic_music: N/A",
   "model": "MiniMax-H3",
   "h3_prompt_review": {
     "skill": "h3-prompt-writing",
     "authorship": "generated_by_skill",
     "result": "pass",
     "asset_type": "video",
-    "mode": "I2VA·对白同期·顶点慢推",
+    "mode": "I2VA·对白同期·顶点慢推·语气升级",
     "checks": [
-      "A眼泪在眶没掉、强忍心碎不嚎",
-      "很轻很慢一字一顿说出要的东西",
-      "慢推近景抓微表情",
-      "极轻房间底噪避免死寂(不触发静默突兀)",
-      "单段对白同期",
-      "anti-subtitle零字幕"
+      "H3规范I2VA结构:指令行+integrated_multimodal_description+overall_soundscape+non_diegetic_music,对白锁在<d>[Chinese]内逐字不改",
+      "A(S1)眼红泪在眶未掉、气声/半哽咽、低音量、强忍心碎顶点非嚎",
+      "'一字一顿'落为情绪性停顿带气音(每短句间小换气),显式禁拖成平淡念稿",
+      "'抱我一下'最轻最颤、'就够了'近乎纯气声但不拖死尾",
+      "慢推近景small amplitude/slow speed抓微表情、身份灯光随参考帧承5秒",
+      "显式负向:no flat monotone/robotic recitation/news-anchor cadence/evenly-paced narration;音效极轻房间底噪避免死寂+换气声,零字幕"
     ],
     "unresolved_blockers": [],
-    "reviewed_prompt_sha256": "8110c3592385b746f0e5e9de17c52f7e4c8638ad0c358aa70d2118f6adacf684"
+    "reviewed_prompt_sha256": "bbdf93342357136564a19b7e7e376ca1dc7a7e6ade5133a9cffd098e57b850ce"
   },
   "narrative_alignment": {
     "source_story": "story/你根本不懂我-对白驱动情感短剧剧本.md（v3）",

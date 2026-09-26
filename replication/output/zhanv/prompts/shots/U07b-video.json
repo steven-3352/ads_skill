@@ -1,0 +1,42 @@
+{
+  "id": "U07b",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U07b-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. A close handheld shot on the left woman as in <Picture 1>, the 28-year-old with a translucent skincare gel and knitted cardigan (S1); the right woman with bare skin and a loose cotton shirt (S2) is beside her. The left woman (S1), quiet: <d>[Chinese] ……我才醒。</d> The right woman (S2), gentle: <d>[Chinese] 不晚，他还在楼下等你呢。</d> The left woman lifts her head toward her friend; her eyes well up and a single tear slips down as a small, relieved smile breaks across her face; it reads as relief, not crying from being scolded, with no reddened or glowing eyes. Her face stays fully and evenly lit and readable all the way through the final frame; the shot does not darken and does not fade to black.\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum settling softly toward the end. A single quiet breath as she smiles.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "edc7d560a2a1aebc1a18427b87fea99281184203309160f95611f7a32aa6dac8"
+  }
+}

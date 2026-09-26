@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a memory-flashback look with cool white office lighting around 5600K, a slight overexposure and soft focus giving the frame a hazy, dreamlike quality. The young East Asian Chinese female colleague shown in <Picture 1> keeps her exact appearance and office clothing, framed in a medium-close shot as she glances over toward the man; at a natural, slightly quick pace with no trailing silence, the young female colleague with a gentle voice carrying a faint dreamy echo (S3) says: <d>[Chinese]你也早点回去休息。</d> [Shot 2] At 00:02.200, the shot cuts to a medium-close reverse angle of the young East Asian Chinese man in a black suit jacket, white shirt, and dark-navy tie, looking briefly grateful and tired; the man with a low, weary voice carrying the same faint echo (S1) says: <d>[Chinese]麻烦你了。</d> The flashback stays softly overexposed and slightly out of focus. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A muffled open-plan office ambience hums faintly underneath with a soft, distant keyboard tapping and a low ventilation hush, everything slightly dampened as if remembered. Light breathing fills the short pause.\n\nnon_diegetic_music: A single sustained synth pad at a slow tempo, blurred and low in volume, with a gentle reverberant tail under the dialogue.",
+  "references": [
+    "replication/output/fuke/assets/U10-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 4.0,
+    "checks": [
+      "模式:I2VA首帧U10-first全参考,0.00s锚定,身份延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段",
+      "正反打:Shot2在00:02.200切到男主反角,新信息",
+      "对白:女同事(S3)`你也早点回去休息。`+男主(S1)`麻烦你了。`逐字复刻,<d>内仅语言标签+原文;回声/朗胧递送外置",
+      "闪回质感:办公室冷白5600K/轻微过曝/柔焦朗胧,覆盖家夜暖黄规(这是闪回办公室)",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:女同事温和关切/男主感激疲惫,非空洞念白",
+      "时长:台词约14字+正反打快闪定4.0s,语速自然偏快无死尾",
+      "声景:闷声办公室底噪+键盘+通风,如记忆般发闷;非画内合成垫带混响尾",
+      "零字幕:显式no subtitles/on-screen text"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f5f84a7edeb257d2ac23532bfc0b950ddab3fd3013ad36796ed466fad1374023",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U10-video",
+    "usage": "U10(镜10)脑内闪回:办公室冷白过曝柔焦,女同事关切与男主道谢快闪,回声朗胧对白,I2VA自U10-first发展",
+    "locks": [
+      "女同事办公服装(S3)",
+      "男主黑西装白衬衫深蓝领带(S1)",
+      "办公室冷白5600K/闪回过曝柔焦",
+      "人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "快速记忆闪回:压缩重复镜6-7为快闪,办公室冷白过曝柔焦,女同事关心与男主道谢",
+  "images": [
+    "replication/output/fuke/assets/U10-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 4
+}

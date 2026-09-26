@@ -1,0 +1,39 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic — the closing establishing beat, a silent performance with no dialogue. The clip opens exactly on <Picture 1>: CAM-B settling onto the mature East Asian Chinese man in his thirties (B, 33-38) sitting alone on the two-seater loveseat, near-to-medium, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. He sits alone, hollow and vacant, staring not at the door but at the empty middle seat beside him where the face-down couple photo frame lies — finally seeing the emptiness that was there all along, a space that has been empty for a long time and that he only tonight truly sees; his shoulders slowly sink and he lets out one suppressed, heavy breath. The camera holds a static shot as the image dims very gradually toward black; the empty seat and the face-down frame stay in frame beside him until the fade. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable until it fades, subtle film grain, natural color.\n\noverall_soundscape: A low late-night room tone hums under the opening. After a beat, about 0.5 seconds of a very faint, suppressed breath, then the frame goes to a silent black hold for the final roughly 2 seconds with no ambient sound at all.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS07-U3-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:B独坐失神、看的是身旁空位(不是门)、肩慢慢塌+压抑呼吸(第一次看见空了很久的缺失、消化),内心戏靠留白与空位承担",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;空位与倒扣合照在侧、画面缓缓变暗;关门声后约0.5s极轻压抑呼吸→最后约2s静音黑场收束;三段字段齐",
+      "无对白silent performance校验:全片无<d>;overall_soundscape写呼吸+静音黑场,non_diegetic_music=N/A(留白冷收无音乐)",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;客厅正常明亮通透(渐暗前)、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "01d5a2b8d723cae5c3d7c796cb308764e84afddfa5dc5e59d30f937d6525fbae"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B7"
+    ],
+    "related_shots": [
+      "FS07"
+    ],
+    "visual_evidence": [
+      "B独坐失神看空位、画面渐暗",
+      "空位是主角:空了很久今晚才看见+静音黑场收束"
+    ],
+    "unresolved_blockers": []
+  }
+}

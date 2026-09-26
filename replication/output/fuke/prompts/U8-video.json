@@ -1,0 +1,48 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a warm 3200K living room at night, soft diffused light with a neutral warm-white base, not a single heavy yellow lamp washing the faces orange; skin keeps its natural tone. The young East Asian Chinese man shown in <Picture 1> keeps his exact appearance, a black suit jacket over a white shirt with a dark-navy tie, just home from work, framed in a medium-close shot as he stands by the coffee table where an unbranded plain takeout box sits; he furrows his brow and, at a natural, slightly quick conversational pace with no trailing silence, the man with a tired, faintly exasperated voice (S1) says: <d>[Chinese]怎么又点外卖？</d> His eyes carry weary reproach rather than a blank stare. [Shot 2] At 00:02.600, the camera cuts to a medium-close reverse angle of the young East Asian Chinese woman, black hair in a bun with a bear-ear headband and bright yellow bear-cartoon pajamas, sitting on the sofa biting into a slice of watermelon; taking it as a matter of course, she gives a small careless shrug and the woman with a soft, slightly petulant young voice (S2) says: <d>[Chinese]今天的碗还没洗。你帮我拿一罐呗。</d> Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A quiet living-room room tone hums underneath with a faint television murmur, soft fabric rustle as the man shifts in his suit, and the wet, crisp bite and chew of the watermelon slice. Light natural breathing fills the pauses.\n\nnon_diegetic_music: Sparse solo piano notes at a slow tempo, widely spaced and low in volume, sustaining gently under the dialogue.",
+  "references": [
+    "replication/output/fuke/assets/U8-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 6.0,
+    "checks": [
+      "模式:I2VA首帧U8-first全参考,0.00s锚定,身份/服装/布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段(integrated/soundscape/non_diegetic)",
+      "正反打:Shot2在00:02.600切到女友反角,新信息",
+      "对白:男主(S1)`怎么又点外卖？`+女友(S2)`今天的碗还没洗。你帮我拿一罐呗。`逐字复刻,<d>内仅语言标签+原文",
+      "身份/动作/递送外置于<d>,说话者ID固定S1/S2",
+      "灯光:家夜客厅暖黄3200K/柔和漫射/禁大黄光染脸/人脸自然肤色",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:男主皱眉无奈疲惫/女友理所当然吃西瓜,非空洞念白",
+      "时长:台词约21字+正反打定6.0s,语速自然偏快无死尾",
+      "声景:房间底噪+电视微声+西瓜咖噜+呼吸,不重复对白;非画内钢琴弱音",
+      "零字幕:显式no subtitles/on-screen text"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "09e4e5eb3c55144bbaa5b0b0c81988c51a24bc4aef54e34a10edd9cb7f020c18",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U8-video",
+    "usage": "U8(镜8)日常斗嘴·外卖:男主皱眉质问/女友理所当然回怙,客厅夜暖黄中近景正反打,I2VA自U8-first发展",
+    "locks": [
+      "男主黑西装白衬衫深蓝领带刚下班(S1)",
+      "女友黄色小熊睡衣丸子头小熊发箍(S2)",
+      "家夜客厅暖黄3200K",
+      "无品牌外卖盒",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "日常斗嘴:男主刚到家质问又点外卖,女友吃西瓜理所当然回怙并使唤,暖黄3200K正反打",
+  "images": [
+    "replication/output/fuke/assets/U8-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 6
+}

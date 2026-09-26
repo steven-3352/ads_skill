@@ -1,0 +1,9 @@
+{
+  "unit":"fenshou-FS02-U1-video",
+  "beat":"B2 FS02 B侥幸",
+  "decision":"accept",
+  "reviewer":"claude-selfcheck",
+  "at":"2026-09-18",
+  "why":"B侥幸达标:B身体僵一下、试探性半笑想把分手往'又生气/闹脾气'上降级(与台词'你……是不是又生气了'一致),反打A低头失落;表情非空白、与对白一致;东亚中国身份锁、灯光正常明亮;含配音无烧字幕;技术QC 1344x768/5.17s。对白verbatim。最终由用户审。",
+  "frames":"assets/fenshou-qc-FS02-U1-t{0.3,1.5,2.8,3.8}.png"
+}

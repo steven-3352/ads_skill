@@ -1,0 +1,53 @@
+{
+  "id": "travel-10-image",
+  "role": "镜10 关键帧：拉萨布达拉宫前全景平移跟拍，白墙红宫、经幡飘摇，远处有朝圣者身影",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "aspect_ratio": "9:16",
+  "authoring_skill": "seedance-prompt-zh",
+  "prompt": "竖构图 9:16 全景，平视略仰的平移跟拍视角看向拉萨布达拉宫建筑景观本体：宏伟的布达拉宫依山而建，标志性的白墙（白宫）与上方赭红色的红宫层叠而上、金顶隐约，建筑主体居中、顶部与两侧不贴边不出画、防拉伸变形。前景与建筑一侧有藏式五色经幡与长长的风马旗在风中飘摇翻动。画面下方远处广场上有几名朝圣者的身影，身形较小、看不清面部，自然站立或俯身朝拜的姿态，作为环境点缀。柔和自然的高原日光，光色中性偏暖白、明亮通透不压抑，白墙洁净、红宫沉稳，天空干净有层次，不用大黄光染整片画面。iPhone/单反真实照片级质感，画面带细腻真实的墙体石材纹理、经幡布料纹理与自然噪点、轻微不均，绝无塑料感、AI感、CG蜡感、蜡像感。画面任何位置都没有文字、字幕、字母、数字、水印、logo 或品牌，建筑与经幡上不出现任何可辨识文字或经文，广场上没有商业招牌、店名、路牌、广告牌或指示牌文字。",
+  "references": [],
+  "identity_anchor": {
+    "scene_id": "travel-10-lhasa-potala",
+    "role": "文化地标风光镜（含远处小身形朝圣者、无脸部身份锁），场景锚点为拉萨布达拉宫",
+    "locks": [
+      "景观本体为拉萨布达拉宫：白墙红宫依山而建、经幡风马旗飘摇",
+      "远处广场朝圣者身影身形小、看不清面部，作环境点缀",
+      "全景平移跟拍、竖构图 9:16、建筑主体居中顶部两侧不贴边不出画",
+      "真实照片级质感，禁塑料感/AI感/CG蜡感/蜡像感",
+      "建筑经幡不出可辨识文字/经文，画面无文字/水印/logo/品牌/招牌路牌"
+    ]
+  },
+  "seedance_prompt_review": {
+    "skill": "seedance-prompt-zh",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-25T14:00:00+08:00",
+    "checks": [
+      "画幅锁 9:16 竖构图 768×1344、全景平移跟拍、建筑主体居中顶部两侧不贴边、防拉伸变形（gpt-image-h3-aspect-mismatch-distortion）",
+      "文化地标本体：拉萨布达拉宫白墙红宫、经幡飘摇、远处朝圣者身影，画具体景观本体（keyframe-anchored-pipeline）",
+      "真实质感非塑料：iPhone/单反照片级、墙体石材纹理+经幡布料纹理+自然噪点，禁塑料感/AI感/CG蜡感（iphone-realistic-no-plastic-texture）",
+      "柔光通透：柔和自然高原日光、中性偏暖白明亮通透不压抑，白墙洁净不压暗，忌大黄光染整片（soft-light-no-facial-glare / scene-lighting-normal-not-moody）",
+      "合规无文字logo：建筑经幡不出经文字样，广场无招牌路牌指示牌文字，画面任何位置无文字/水印/logo/品牌（no-brand-products-in-videos）"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "85af5b0f50262a1b2bac5f08b232e8fac7d3008549894b20a06dd3e44b0cb9a8"
+  },
+  "narrative_alignment": {
+    "source_story": "story/travel-screenplay.md",
+    "related_beats": [
+      "转 · 打卡蒙太奇（眷恋）：06–14 沿途逐站兑现，第 05 站拉萨"
+    ],
+    "related_shots": [
+      "10 全景/平移跟拍：拉萨布达拉宫前，白墙红宫，经幡飘摇，朝圣者身影"
+    ],
+    "visual_evidence": [
+      "剧本 10 镜画面：拉萨布达拉宫前，白墙红宫，经幡飘摇，朝圣者身影",
+      "旁白：到了拉萨，我替咱俩许了个愿，是啥不告诉你",
+      "环境声：梵铃轻响；花字（后期外挂）：拉萨 · 打卡 05",
+      "合规：无品牌/商标/logo，不出文字招牌路牌、不出经文文字"
+    ],
+    "unresolved_blockers": []
+  }
+}

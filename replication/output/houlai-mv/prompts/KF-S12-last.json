@@ -1,0 +1,26 @@
+{
+  "id": "KF-S12-last",
+  "prompt": "Cinematic still, 16:9. a realistic East Asian Chinese woman, about 26 years old, long straight dark hair, soft beige knit sweater seen from a near-back angle as she lowers her now dark, locked smartphone and rises to her feet, turning toward a bright window full of warm morning sunlight that washes over her. A sense of quiet release and letting go. The room is evenly and normally lit, bright and clear with natural neutral-warm light; it is NOT a single dim warm lamp and NOT moody darkness; even at night the room lights are on and the space is clearly visible. She is Chinese with an East Asian face, not a western face. Realistic cinematic film still, natural color, shallow depth of field. No text, no subtitles, no lyrics, no logo, no watermark anywhere.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA last frame (phone locked, she rises and walks toward the light — release)",
+    "checks": [
+      "woman East Asian/Chinese, identity via master-A",
+      "phone screen dark/locked, she rises and turns toward bright sunlit window",
+      "mood of quiet release / letting go, warm morning light",
+      "near-back angle, 16:9 1344x768",
+      "no text/subtitles/lyrics/logo/watermark"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "fd2b7af6b00432e678ecb6221f76f66210fcc0fa6bdb2ee951f631e3d09fb822"
+  }
+}

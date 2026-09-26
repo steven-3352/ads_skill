@@ -1,0 +1,11 @@
+{
+  "request_id": "houzhihoujue-female-master",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/test-luorong-noodles/houzhihoujue/prompts/master-female.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-24T18:27:18+08:00"
+}

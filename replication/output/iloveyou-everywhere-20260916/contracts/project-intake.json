@@ -1,0 +1,46 @@
+{
+  "project": "iloveyou-everywhere-20260916",
+  "created": "2026-09-16",
+  "state": "storyboard",
+  "user_confirmations": {
+    "2026-09-16": ["剧本已确认", "砍B9收尾定18s", "六界顺序不变", "海底巨鲸保留"]
+  },
+  "owner_skill": "ad-creative-expert",
+  "intent": {
+    "theme": "我喜欢你,在天上、地下、山川、森林、海底。上山入地,我都喜欢你。",
+    "logline": "一句甜蜜告白挣脱地心引力,自上而下贯穿六界,爱意化作亿万人声在世界每个角落回响;被喜欢+找到所爱的心旷神怡。",
+    "tone": ["甜美", "开心", "雀跃", "心旷神怡", "空灵但明亮温暖", "非忧郁冷调"],
+    "format": "16:9",
+    "duration_policy": "由内容决定,不注水",
+    "duration_estimate_s": [18, 18]
+  },
+  "creative_directives": {
+    "compress_intro": "前戏压到 ~3.5s,前 3s 给钩子(开口即告白),提升看完率",
+    "content_density_gate": "走 [C] 门治节奏慢:每换一界=新事件,每 ~2.5s 有新推进",
+    "giant_object": "每界一个压倒性尺度巨物,人物 5-10% = 巨物效果",
+    "ethereal": "漫射柔光/晨雾/无硬阴影;调色通透暖光(非低饱和冷调)",
+    "medium_shot_allowed": true,
+    "final_voices_post": "结尾各种'我喜欢你'层叠人声=后期声音设计,不依赖模型出合唱",
+    "transitions": "梦境无缝(同向运动+叠化/形状匹配),不用硬切/跳切",
+    "references_are_nonbinding": "用户给的两段镜头参数/母版视觉是参考不是铁律,最终看故事"
+  },
+  "characters": [
+    {"id": "boy", "desc": "中国面孔 East Asian,青春干净素人感,母板锁身份", "confession": true},
+    {"id": "girl", "desc": "中国面孔 East Asian,青春干净素人感,母板锁身份"}
+  ],
+  "realms_order": ["天上", "山川", "森林", "海底", "地下", "上帝视角收束"],
+  "gates": {
+    "storyboard_requires_user_confirm_screenplay": true,
+    "paid_generation_requires_model_lock": true,
+    "no_media_in_git": true,
+    "subtitles_post_burn_only": true
+  },
+  "cost": {"spent_cny": 0, "model_locked": false, "policy_file": "contracts/prompt-policy.json (未创建)"},
+  "artifacts": {
+    "source": "story/source.md",
+    "screenplay": "story/screenplay.md",
+    "storyboard": "review/storyboard.md",
+    "capability_map": "CAPABILITY-MAP.md"
+  },
+  "next_gate": "用户确认分镜 → 出人物母板 + 六界立基关键帧(文生图,低成本)→ 付费前锁模型"
+}

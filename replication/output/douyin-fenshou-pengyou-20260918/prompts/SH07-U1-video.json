@@ -1,0 +1,38 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese man, an unmistakably Chinese man with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 28-30, an urban white-collar type with clean short black hair, a dark knit top over a white stand-collar shirt, his features, hairstyle and face shape kept identical across the whole film in a bright, airy cafe — the ceiling lights are on so the whole room reads clean and evenly lit, natural neutral warm-white light, not dim, not moody, not oppressive, no single amber lamp darkening the room; a coffee cup sits on the table in front of him and the cafe behind him falls into gentle bokeh. On '不是既要又要' he shakes his head, leans forward then slowly sinks back; at '我只是' he pauses with his hand braced on the table edge and his voice thinning on '舍不得'. On the line '曾经那么爱,都会消失吗' the camera makes its one restrained micro-push into a close-up while he looks off into empty space, his eyes rimming red with light but no tears falling, then it eases back — the point where the man cracks himself open. The urban Chinese man in his late twenties, his voice cracking, thin, close to breaking (S2), says: <d>[Chinese] 不是既要又要。我只是……舍不得。</d> then <d>[Chinese] 曾经那么爱,都会消失吗?</d> then <d>[Chinese] 真的舍得,从此再无音讯?不会难过吗?</d> Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, the camera making one single restrained micro-push from the mid-shot into a close-up on the line noted, then easing back — no other face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet cafe room tone hums under the shot. His voice cracking thin; no other events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH07/images/SH07-U1-first.png"
+  ],
+  "duration": 6,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:摇头前倾又塌回;『我只是』停顿手撑桌沿;唯一近景望空处、眼眶泛红不落泪 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;单人单镜(交叉硬切在剪辑不在单元内);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 不是既要又要。我只是……舍不得。</d> / <d>[Chinese] 曾经那么爱,都会消失吗?</d> / <d>[Chinese] 真的舍得,从此再无音讯?不会难过吗?</d> 一字不改、画内同期口型同步、男=(S2)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;咖啡馆正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "992176acb64c9a6dab67d589a1a02d84fbca1b1c97d832cfaa546d3f90b3dfb5"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍5·唯一近景"
+    ],
+    "related_shots": [
+      "SH07"
+    ],
+    "visual_evidence": [
+      "摇头前倾又塌回;『我只是』停顿手撑桌沿;唯一近景望空处、眼眶泛红不落泪"
+    ],
+    "unresolved_blockers": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "subproject_id": "travel",
+  "state": "route_confirmed",
+  "source": "story/source.md（用户提供的完整分镜脚本原稿，不覆盖）",
+  "business_goal": "情感共鸣驱动的收藏/转发；抖音情感治愈+公路旅行赛道",
+  "content_type": "情感剧情 · 公路旅行 · 兑现承诺（非带货）",
+  "platform": {"platform": "抖音", "aspect": "9:16 竖屏", "target_duration_s": 70, "shots": 18, "sound_env": "轻钢琴→行进感→高燃→收束单曲情绪曲线 + 环境声串联"},
+  "audience": "18–35 岁，热爱旅行/自驾/情感治愈内容",
+  "watch_promise": "看一个人如何替两个人走完约定，情绪弧线：怅惘→坚定→眷恋→释然",
+  "core_hook": "空副驾 + 一收好一空的双行李箱 + 环中国手绘路线图，独白反差『当初我答应过你……』",
+  "assets_provided": {"story_doc": true, "characters": false, "product": null, "footage": false, "authorization": "地名为真实景点属客观表达；如引用他人素材需确认授权（本项目 AI 生成）"},
+  "must_keep": ["独白/旁白情绪主线", "空副驾+双行李箱+合照+手绘路线图 视觉锚点", "打卡地名进度花字体系", "结尾落字『答应过你的 我都做到了』"],
+  "may_modify": ["逐镜时长与节奏", "具体镜头语言/机位", "打卡站点取舍以适配预算与连贯"],
+  "forbidden": ["露出知名品牌/商标/logo", "对『失去伴侣』作具体死亡描述", "暗示危险驾驶", "过度消费悲伤"],
+  "budget": {"image_unit_cny": 0.25, "video_unit_cny_per_s": 0.2, "note": "估价与首次成本在 production-plan 定稿时披露"},
+  "video_model": {"choice": "MiniMax-H3（暂定，stage2 复议）", "rationale": "旁白为非同期独白，视频层聚焦画面+环境声，旁白走 seed-audio TTS 对画面铺；风光航拍多、少量人物镜"},
+  "open_questions": ["最终视频模型 H3 vs Seedance（stage2 定）", "18 镜是否全生成或压缩站点以控成本（production-plan 披露首次成本后由用户确认）"]
+}

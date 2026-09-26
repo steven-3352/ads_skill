@@ -1,0 +1,31 @@
+{
+  "id": "shot-03-image-last",
+  "role": "镜3尾帧＝男继续哄、女绷不住扑哧笑、身体转回靠近（幸福）",
+  "reuse_note": "镜3首帧复用 shot-01-image-first（吵架起点同机位），本文件只出尾帧。",
+  "prompt": "Cinematic still, 9:16 vertical, medium wide shot, static, camera facing the sofa straight-on, same living room and same framing as the quarrel-start shot. A bright, airy neutral-warm living room, ceiling light on, soft diffuse daylight, no dim moody lamp. On the two-seat sofa, the realistic East Asian Chinese man about 30 to 35 years old (identity from the reference man), short neat dark hair, light-grey crew-neck top, leans in close from the RIGHT still coaxing, pulling a goofy playful face and reaching to tickle her side. The realistic East Asian Chinese woman about 30 to 35 years old (identity from the reference woman), shoulder-length loose dark brown hair, oatmeal-beige knit top, can no longer hold it in: corners of her mouth break into a warm burst-out laugh, she turns her body back toward him and leans in, the empty gap between them now closed. Warm happy candid moment. Matte skin with realistic pores, fine film grain, shot on an iPhone with true-to-life handheld realism, no oily facial glare, no highlight on faces, no plastic AI sheen, no wax. They are Chinese with East Asian faces, not western faces. Bright natural neutral-warm color, shallow depth of field. No text, no subtitles, no logo, no watermark, no brand anywhere.",
+  "prompt_zh": "电影感静帧，9:16竖屏，中景偏宽，静态，镜头正对沙发，与吵架起点同室同机位。明亮通透中性偏暖客厅，顶灯开、漫射日光，无暗黄压抑灯。双人沙发上，真实东亚中国男性(30-35岁，参考男主)，短发、浅灰圆领上衣，从右侧继续凑近哄、做傻气搞怪鬼脸、伸手要挠她痒。真实东亚中国女性(30-35岁，参考女主)，中长深棕披肩发、燕麦米色针织上衣，绷不住了：嘴角先松、扑哧一声温暖地笑出来，身体转回往男主那头靠拢，两人之间的空距此刻没了。温馨幸福的抓拍瞬间。哑光肤质有毛孔、自然颗粒，iPhone真实手持质感，无脸部油光/高光/塑料AI感/蜡感。中国东亚脸，非欧美脸。明亮中性偏暖自然色，浅景深。无文字/字幕/logo/水印/品牌。",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "FL2VA last frame, shot-03 happiness (man keeps coaxing, woman breaks into laugh and leans back in); first frame reuses shot-01-image-first",
+    "checks": [
+      "couple identity locked via reference female + male, East Asian/Chinese 30-35",
+      "same sofa framing as start; man keeps coaxing with goofy face/tickle, woman breaks into warm laugh and turns body back to lean in, gap closed — happiness payoff",
+      "bright airy neutral-warm living room, ceiling light on, not a single dim yellow lamp",
+      "medium wide two-person framing, 9:16 vertical 768x1344, static",
+      "realistic iPhone texture / film grain / matte skin / no oily glare / no plastic sheen",
+      "no text/subtitles/logo/watermark/brand"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "33ce13a40b3af5eba57df70a3363d549c5ef1525303e4a1c289d9c80f5814282"
+  }
+}

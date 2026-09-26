@@ -1,0 +1,33 @@
+{
+  "unit_id": "U1",
+  "scene": "苏晚单人近景 · 满杯放下镜头带到脸 · 画外音先入压物件后入画同步口型问出轨",
+  "mode": "I2VA",
+  "ratio": "9:16",
+  "duration": 5,
+  "images": [
+    "replication/output/jiuheover/shots/shot-U1/images/U1-first-r3.png"
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, realistic handheld with subtle film grain, skin rendered as natural matte real skin with visible pores, fine lines and slight imperfections, the face stays non-reflective with no glossy oily highlights, no waxy plastic over-smoothed skin, no beauty-filter airbrushing and no CGI or 3D-render sheen. The young woman shown in <Picture 1> stays seated at her side of the small wooden table by the rain-streaked tavern window at night, keeping her appearance, cream knit sweater, long dark hair and seating position, and the plain unlabeled white ceramic bottle with a red cap and thin gold ring plus the two clear glass stemmed cups on the table. Bright warm-white overhead and table-lamp light keeps the space clearly readable, not dim, not moody; soft warm neon blur and fine raindrops streak the window glass behind her. The camera holds close on the tabletop bottle and cups as her hand lowers one filled clear glass stemmed cup gently onto the wood, setting it down with a light knock. The East Asian young woman in her late twenties, quiet and tired, speaking Mandarin at a normal, slightly quick pace with no dead air (S1) says in an off-screen voiceover, her lips remaining completely closed while the frame stays on the tabletop objects and her hand: <d>[Chinese]在我们在一起这几年，你有没有过，</d> The camera pushes in with small amplitude at slow speed from the tabletop objects to her close-up; as her face fully enters the frame she looks across the table at him, tired and restrained, her lower eyelids faintly heavy, and finishes the same line with her lips now visibly synced to the words: <d>[Chinese]出轨？</d> Her tone stays low and even throughout, not an accusation but a question she is barely managing to keep calm, testing him rather than confronting him. No subtitles, no caption bar, no lyric strip and no on-screen text of any kind are burned into the frame.\n\noverall_soundscape: Steady rain falls outside the window while low indoor room tone and faint murmur from other tables continue underneath without pause. The soft knock of the glass meeting the wood punctuates the ambience, keeping the sound bed continuous with no dead silence.\n\nnon_diegetic_music: N/A",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "按 h3-prompt-writing/base-en.txt 重写:I2VA 指令行 <Picture 1>(from [Shot 1]) at 0.00s + 三核心字段顺序正确(取代旧中文散文格式)",
+      "I2VA 结构=first-frame anchor→action onset→continuous development:先锚 <Picture 1> 苏晚坐姿/道具/暖白光,镜头从桌面物件推近她的脸",
+      "画外音先入(pre-lap)按 §4.4 处理:开头对白以 says in an off-screen voiceover 呈现且紧跟 lips remaining completely closed,随后镜头推到她入画时后半句口型同步,原句按逗号拆两段 <d> 但字词标点逐字不改",
+      "去蜡感强化写入 Shot 1 开头(matte real skin/visible pores/non-reflective/no glossy oily/no waxy plastic/no airbrushing/no CGI)",
+      "对白逐字保留中文在 <d>[Chinese]…</d> 内,舞台指示(镜头/表演/停顿)写在 <d> 外",
+      "speaker 稳定 ID S1=苏晚,首次出现给身份(late twenties/East Asian/Mandarin/quiet tired/normal slightly quick pace)",
+      "语速锁:normal slightly quick pace with no dead air,合『禁留白/禁慢对白』",
+      "anti-subtitle:显式 no subtitles/caption bar/lyric strip/on-screen text burned into frame",
+      "连续音频铺底:雨声+室内低语连续,玻璃杯磕木桌轻响填动作,no dead silence",
+      "道具合规靠 ref 帧承载+正向 unlabeled white ceramic bottle red cap gold ring/clear glass stemmed cups,无 logo/文字/清酒器",
+      "时长 5s 单镜无 cut,Shot 1 不加时间戳,竖屏 9:16 由 ref 帧承载,non_diegetic_music=N/A"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "da638a20764c13f4010f1da8bf0ab746317b733f5fa19739b1f391823db6d0ff"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒喝完了，我们散了 · 人物母板验质感（iPhone 真实拍摄）</title>
+<style>
+  :root{--bg:#faf7f2;--card:#fff;--ink:#23201c;--sub:#6b635a;--line:#e7e0d6;--accent:#b23b3b;--ok:#2f7a3f;--warn:#a9812f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:20px 16px 80px}
+  h1{font-size:22px;margin:.2em 0}
+  h2{font-size:18px;margin:1.4em 0 .5em;padding-left:10px;border-left:4px solid var(--accent)}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .shot img{width:100%;border-radius:10px;display:block;border:1px solid var(--line)}
+  .cap{font-weight:700;margin:.4em 0 .1em}
+  .sub{color:var(--sub);font-size:13px}
+  .redline{background:#fff6f6;border:1px solid #f0d5d5;border-radius:10px;padding:10px 12px;font-size:13px;color:#7a3b3b;margin:10px 0}
+  .ok{color:var(--ok);font-weight:700}
+  .warn{color:var(--warn);font-weight:700}
+  ul{padding-left:18px;margin:.3em 0}
+  li{margin:.2em 0}
+  .chk{background:#f3f7f3;border:1px solid #d8e6d8;border-radius:10px;padding:10px 12px;font-size:13.5px;margin:.6em 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《酒喝完了，我们散了》· 人物母板验质感</h1>
+  <div class="meta">iPhone 17 真实拍摄质感 · 去塑料/AI感 · 竖屏 9:16 · East Asian 中国人 · 2026-09-21 · 请重点看脸的真实度</div>
+
+  <div class="redline">⚠️ 母板=身份根（只锁"这两张脸+基调"，各镜再 --reference 复用）。<strong>道具以各镜提示词为准</strong>：正片酒器=白瓷圆柱瓶（红盖金环无标）+玻璃白酒杯（均有参考图），母板背景/桌上出现的酒瓶酒杯不进正片、不作道具参考。</div>
+
+  <h2>母板 A · 苏晚（女主 · 约30岁）</h2>
+  <div class="card shot">
+    <img src="../assets/master-A.png" alt="苏晚母板">
+    <div class="cap">苏晚 · 清秀温柔 · 中性微表情（便于各镜复用）</div>
+    <div class="sub">小酒馆靠窗夜雨 · 暖白光看得清脸 · 素色针织无标</div>
+  </div>
+
+  <h2>母板 B · 陈叙（男主 · 约32岁）</h2>
+  <div class="card shot">
+    <img src="../assets/master-B.png" alt="陈叙母板">
+    <div class="cap">陈叙 · 成熟内敛带疲惫 · 淡胡茬 · 中性微表情</div>
+    <div class="sub">小酒馆靠窗夜雨 · 暖白光看得清脸 · 素色深针织无标</div>
+    <div class="redline" style="margin-top:8px">注意：此张背景酒架有一排（虚化）酒瓶、桌前一杯红酒——均无 logo 但与"白瓷瓶"设定不符。母板只取脸做身份锚，<strong>正片道具另按白瓷瓶提示词生成、不参考此背景</strong>。若你介意母板画面本身，我可重出去掉酒杯酒架。</div>
+  </div>
+
+  <h2>验收点（请人眼判）</h2>
+  <div class="chk">
+    <ul>
+      <li><span class="ok">✔ 真实度</span>：脸有毛孔/细纹/油光，暗部有噪点颗粒 → 像真拍，不是磨皮塑料脸。</li>
+      <li><span class="ok">✔ 光</span>：暖白自然、看得清脸、不过曝不 HDR、不压抑。</li>
+      <li><span class="ok">✔ 选角</span>：East Asian 中国人、非欧美非网红脸；女约30、男约32 情侣感。</li>
+      <li><span class="ok">✔ 画幅</span>：竖屏 9:16（A 948×1660 / B 768×1344）；无字幕/水印/商标字。</li>
+      <li><span class="warn">△ 待你定</span>：男主背景酒架+红酒杯（虚化无标，不进正片道具）——接受 or 重出。</li>
+    </ul>
+  </div>
+
+  <div class="meta" style="margin-top:24px">你确认这两张脸+质感后 → 各镜以母板 --reference 出关键帧（仍不生成视频，遵你"不要再生成视频"停令）。</div>
+</div>
+</body>
+</html>

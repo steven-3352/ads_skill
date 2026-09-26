@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Ultra-wide view inside a colossal underground crystal cavern at the earth's core; enormous glowing amber-gold crystal veins radiate across a vast cathedral-like chamber, warm luminous light pulsing from within the crystals, translucent and softly glowing, bright and warm and never dark or scary. One tiny warm-colored speck — an East Asian Chinese couple — moves between the giant crystal veins, pure accent, environment more than 90 percent of the frame with deep glowing negative space. Floating luminous particles rising, soft diffused inner glow, no harsh shadows, translucent palette of warm amber-gold crystal light. Awe-inspiring yet warm, joyful, mind-freeing atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
+  "size": "1344x768",
+  "quality": "high",
+  "output_format": "png"
+}

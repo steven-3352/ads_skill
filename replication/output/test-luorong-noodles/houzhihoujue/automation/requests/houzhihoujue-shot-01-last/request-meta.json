@@ -1,0 +1,14 @@
+{
+  "request_id": "houzhihoujue-shot-01-last",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/test-luorong-noodles/houzhihoujue/prompts/shot-01-image-last.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/test-luorong-noodles/houzhihoujue/shots/shot-01/images/last.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-24T21:52:08+08:00"
+}

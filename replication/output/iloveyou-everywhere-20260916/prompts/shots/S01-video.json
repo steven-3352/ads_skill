@@ -1,0 +1,33 @@
+{
+  "asset_type": "video",
+  "shot": "S01",
+  "role": "前戏甜告白·起飞启动(建立+钩子)",
+  "video_model": "MiniMax-H3",
+  "mode": "I2VA (single first frame = KF-S01-first.png fully referenced at 0.00s; camera develops forward from it, no last frame — 尾帧靠剪辑叠化)",
+  "duration_s": 5,
+  "aspect_ratio": "16:9",
+  "first_frame": "assets/keyframes/KF-S01-first.png",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Photorealistic live-action, cinematic, horizontal 16:9. The frame opens exactly on <Picture 1>: an early-morning mountain roadside where a young East Asian Chinese couple stand face to face beside a parked car, warm golden dawn side-light with distant blue mountains and soft morning mist behind them, preserving their faces, clothing, positions and the medium waist-up framing. The man with a soft warm low voice (S1) shyly smiles and says: <d>[Chinese] 我喜欢你。</d> The young woman's eyes light up with delighted surprise, and in a bright, playful, lilting voice (S2) she says: <d>[Chinese] 你再说一遍?</d> As she tilts her face upward, the camera pulls out and pedestals up with large amplitude at slow speed, the two people gradually shrinking toward roughly twenty percent of the frame while soft morning cloud vapor drifts in along the top edge, beginning the lift up into the sky. Soft diffused warm daylight, no harsh shadows, translucent airy palette of warm gold, pale teal and cream. The bottom 15-18 percent of the frame stays clean and empty, and absolutely no text, subtitles, captions, watermark, logo or Chinese characters appear anywhere in the image.\n\noverall_soundscape: A gentle dawn breeze and faint mountain birdsong lie under the scene; at the instant of the confession the ambience briefly drops to near-silence to lift the two spoken lines, then soft wind and rustling grass return as the cloud vapor rolls in and the camera rises.\n\nnon_diegetic_music: Very soft warm piano with a single sustained string note at a slow tempo, rising gently in volume near the end into a light, lifting cue.",
+  "negative": "hard cut, jump cut, close-up, big face, character dominates frame, crowded, cluttered, oversaturated, harsh sharp shadows, gloomy cold desaturated, studio portrait backdrop, sleepwear, bedroom, indoor, static frozen shot, text, subtitles, captions, watermark, logo, Chinese characters, western/caucasian faces",
+  "status": "prompt_ready_pending_paid_generation",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "I2VA指令首行:<Picture 1>(KF-S01-first)0.00s全参考,首帧锚点+向前发展,无尾帧(预算约束)",
+      "持续大幅运镜写死:pull out + pedestal up large amplitude slow speed,人物缩到~20%+云气入上缘=起飞物理引擎,非静止美图([C]门)",
+      "S01含真人中文配音:男(S1)<d>[Chinese] 我喜欢你。</d>+女(S2)<d>[Chinese] 你再说一遍?</d>,原文逐字保留不翻译",
+      "人物显式East Asian Chinese防欧美脸,中景可辨甜表情",
+      "通透明亮暖调/漫射柔光/无硬阴影,符合空灵暖亮基调",
+      "anti-subtitle:显式禁text/subtitles/captions/watermark/logo/Chinese characters,底部15-18%安全区留干净",
+      "三核心字段齐:integrated_multimodal_description/overall_soundscape/non_diegetic_music,时长匹配5s",
+      "声音:告白0.3s抽真空托台词+末起rising cue(音乐由弱到强起点)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4580ee9386870419ef08437447635801ec06784cffd5fa1e637f36036b59082f"
+  }
+}

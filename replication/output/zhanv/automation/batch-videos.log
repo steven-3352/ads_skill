@@ -1,0 +1,354 @@
+=== 顺序生成开始 2026-09-24 08:01:19 ===
+----- U02a 开始 08:01:19 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02a-video.json
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: moderating
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: moderating
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: running
+任务 01a0d0b7-8d23-73fe-8e08-a194191a7a86 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02a-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02a-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02a-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U02a-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U02a 结束 rc=0 status=generated_pending_qc -----
+----- U02b 开始 08:04:38 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02b-video.json
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: moderating
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: running
+任务 01a0d0ba-943c-77a8-941e-176f9ae9529e 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02b-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02b-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U02b-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U02b-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U02b 结束 rc=0 status=generated_pending_qc -----
+----- U03a 开始 08:08:47 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03a-video.json
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: moderating
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: moderating
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: running
+任务 01a0d0be-62a5-7c6d-98c3-420e428a8199 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03a-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03a-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03a-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U03a-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U03a 结束 rc=0 status=generated_pending_qc -----
+----- U03b 开始 08:11:55 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03b-video.json
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: moderating
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: moderating
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: running
+任务 01a0d0c1-4371-7388-a7ca-7ce251f812fe 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03b-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03b-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U03b-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U03b-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U03b 结束 rc=0 status=generated_pending_qc -----
+----- U04a 开始 08:14:54 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04a-video.json
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: moderating
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: running
+任务 01a0d0c3-fd8c-7e20-b6f5-4c349ba01d4c 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04a-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04a-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04a-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U04a-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U04a 结束 rc=0 status=generated_pending_qc -----
+----- U04b 开始 08:19:24 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04b-video.json
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: moderating
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: queued
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: running
+任务 01a0d0c8-1a43-71c5-9176-09babc373ba9 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04b-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04b-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U04b-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U04b-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U04b 结束 rc=0 status=generated_pending_qc -----
+----- U05a 开始 08:22:32 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05a-video.json
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: moderating
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: queued
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: running
+任务 01a0d0ca-fcfb-7321-a5ed-7f7dc5dd6c28 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05a-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05a-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05a-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U05a-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U05a 结束 rc=0 status=generated_pending_qc -----
+----- U05b 开始 08:26:02 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05b-video.json
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: moderating
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: running
+任务 01a0d0ce-2ac4-77ce-b4a8-32a6de3567ae 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05b-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05b-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U05b-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U05b-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U05b 结束 rc=0 status=generated_pending_qc -----
+----- U06a 开始 08:30:21 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06a-video.json
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: moderating
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: running
+任务 01a0d0d2-1f4f-7566-b0d3-1e7bf180781e 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06a-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06a-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06a-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U06a-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U06a 结束 rc=0 status=generated_pending_qc -----
+----- U06b 开始 08:33:19 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06b-video.json
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: moderating
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: running
+任务 01a0d0d4-ef84-704c-b85a-5fb11fc98bd4 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06b-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06b-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U06b-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U06b-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U06b 结束 rc=0 status=generated_pending_qc -----
+----- U07a 开始 08:37:04 -----
+h3 prompt gate: pass (video, h3-prompt-writing)
+h3 prompt gate: pass (video, h3-prompt-writing)
+MiniMax 视频任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U07a-video.json
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: moderating
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: moderating
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: running
+任务 01a0d0d8-45a5-75db-9fce-4447604f9577 状态: succeeded
+最终任务响应已保存: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U07a-video.json.status.json
+视频已下载: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U07a-video.mp4
+generated; semantic QC required: /home/ubuntu/ads_skill/replication/output/zhanv/shots/U07a-video.mp4
+foreign-guard: OK — 0 non-owner files unchanged
+unit U07a-video 已生成，待 QC/accept（paid-state: automation/zhanv.paid-state.json）
+----- U07a 结束 rc=0 status=generated_pending_qc -----
+----- U07b 开始 08:40:22 -----
+error: budget gate failed
+foreign-guard: OK — 0 non-owner files unchanged
+orchestrator run-asset 失败(rc=1) unit U07b-video；见 stderr（未结算/预算/授权/validate/provider）
+----- U07b 结束 rc=20 status=ready -----
+!!! U07b 未进入 generated_pending_qc（rc=20 status=ready），停止后续，见 stderr。
+=== 顺序生成结束 2026-09-24 08:40:22 ===
+committed=22.150000000000002

@@ -1,0 +1,22 @@
+{
+  "artifact": "final/couple-wallkiss-final.mp4",
+  "sha256": "0ee5f86611bf172cb5b58c236a272b23353820036c5ab1f05228ecf17dbd1126",
+  "reviewer": "claude-ads-orchestrator",
+  "reviewed_at": "2026-09-25",
+  "duration_sec": 25.916667,
+  "resolution": "768x1344",
+  "fps": 24,
+  "checks": {
+    "concat_order": "SH01→SH02→SH03-U1→SH03-U2→SH04 (分镜顺序)",
+    "reencode_not_copy": true,
+    "retention_silence_gt_2s": "PASS (无>2.0s静默)",
+    "audio_mean_dB": -16.2,
+    "burned_subtitle_residual": "PASS (13帧抽检底部0残留,含对白镜SH01/02/03全净)",
+    "brand_logo": "PASS (无品牌/logo/商品字)",
+    "identity_continuity": "PASS (男主清爽短发白衬衫/女主米色针织,跨镜一致)",
+    "texture": "PASS (iPhone真实质感,无塑料蜡感,柔光无脸部油光)",
+    "emotion_arc": "PASS (哄劝冷脸→甩手退步→抵墙临界吻→转软→额抵额害羞收尾,对白+微表情+动作三层兑现)",
+    "dialogue_legible": "PASS (对白连续铺满,语速正常无慢死尾)"
+  },
+  "verdict": "accept"
+}

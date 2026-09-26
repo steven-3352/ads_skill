@@ -1,0 +1,25 @@
+{
+  "gate": "stage4:semantic-qc:upper-episode",
+  "decision": "accept",
+  "reviewer": "user",
+  "review_method": "用户本人公网看片认可（本项目规则：视频不做程序/我方看片语义QC，只凭用户公网认可推进，合 only-validate-4-texts）",
+  "review_url": "https://www.tonbird.top/ads-review/fuke/videos-review.html",
+  "user_reply": "通过，继续往下",
+  "date": "2026-09-25",
+  "scope": {
+    "episode": "上集 U1–U17",
+    "note": "U2、U3 已按用户要求重设计为对白驱动零留白版本(v2)，用户公网复看后通过；其余 U1、U4–U17 一并通过。",
+    "accepted_units": [
+      "fuke-U1-video(已先行accept)",
+      "fuke-U2-video-v2", "fuke-U3-video-v2",
+      "fuke-U4-video", "fuke-U5-video", "fuke-U6-video", "fuke-U7-video",
+      "fuke-U8-video", "fuke-U9-video", "fuke-U10-video", "fuke-U11-video",
+      "fuke-U12-video", "fuke-U13-video", "fuke-U14-video", "fuke-U15-video",
+      "fuke-U16-video", "fuke-U17-video"
+    ],
+    "retired_units": [
+      "fuke-U2-video(旧默片留白版→reject+superseded_by fuke-U2-video-v2)",
+      "fuke-U3-video(旧默片留白版→reject+superseded_by fuke-U3-video-v2)"
+    ]
+  }
+}

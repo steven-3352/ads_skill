@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U04b 烧字幕修复授权 · 《爱你的人心疼你，你爱的人玩弄你》</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--txt:#e8eaed;--sub:#9aa3b2;--gold:#e6b566;--ok:#a6e3a1;--warn:#ffb454;--bad:#ff6b6b;--s1:#7cc4ff;--s2:#ff9db1;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif;line-height:1.7}
+  .wrap{max-width:900px;margin:0 auto;padding:20px 16px 96px}
+  h1{font-size:21px;margin:6px 0 2px}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:12px}
+  .tag{display:inline-block;background:#20242e;border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px;color:var(--sub);margin:2px 4px 2px 0}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}
+  .box h2{font-size:15px;margin:0 0 8px;color:var(--gold)}
+  .box ul{margin:0;padding-left:18px} .box li{font-size:13.5px;color:#cfd4dd;margin:6px 0}
+  .bad{color:var(--bad)} .ok{color:var(--ok)} .warn{color:var(--warn)}
+  img{width:100%;border-radius:10px;border:1px solid var(--line);display:block;margin-top:6px}
+  video{width:100%;border-radius:10px;background:#000;display:block;margin-top:6px}
+  .cost{width:100%;border-collapse:collapse;font-size:13px}
+  .cost td,.cost th{border:1px solid var(--line);padding:6px 9px;text-align:left}
+  .cost th{color:var(--gold);font-weight:600}
+  .big{font-size:16px;color:var(--gold);font-weight:700}
+  .confirm{position:fixed;left:0;right:0;bottom:0;background:#12151c;border-top:1px solid var(--line);padding:12px 16px;text-align:center;font-size:13.5px;color:var(--sub)}
+  .confirm b{color:var(--gold)}
+  code{background:#0c0e12;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12px;color:#cfd4dd}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>⚠️ U04b 烧字幕修复 · 付费授权页</h1>
+  <div class="meta">《爱你的人心疼你，你爱的人玩弄你》· 已发布 v1 违反「成片零字幕」死规矩 · 需重生 U04b</div>
+  <div>
+    <span class="tag">违规:成片零字幕</span><span class="tag">影响 v1 已发布</span><span class="tag">题眼①"他在遛你"</span>
+    <span class="tag">修复=重生 U04b</span>
+  </div>
+
+  <div class="box" style="border-color:#5a2a2a">
+    <h2 class="bad">① 发现的问题</h2>
+    <ul>
+      <li>逐条密采样复核 13 条：<b class="bad">只有 U04b 一条从头到尾烧了字幕</b>，底部逐帧能读出整段对白"林夏 / 爱你的人心疼你 / 他在遛你 / 我控制不住"。</li>
+      <li>其余 12 条底部干净（U06b 底部蓝框是手机聊天气泡＝画内 UI，不算字幕）。</li>
+      <li>成因：H3 <b>非确定性烧字幕</b>——提示词里本就写死"不烧字幕"，H3 仍随机烧（约 1/3 概率），人工看片这关漏了。</li>
+      <li>影响面：<b class="bad">已发布 v1 正片（约 45–52s 段）带烧字幕</b>；冷开场 v2 又正好把这条题眼怼到第 0 秒，也不能用。</li>
+    </ul>
+    <div style="font-size:12.5px;color:var(--sub);margin:8px 0 4px">▼ 13 条底部字幕带密采样（U04b 行整条有字，其余空白）</div>
+    <img src="audit-subband-U04b.png" alt="13条底部字幕带审计">
+  </div>
+
+  <div class="box">
+    <h2>② 修复方案：重生 U04b（你已选）</h2>
+    <ul>
+      <li>不改提示词、不改首帧：用<b>同一条技能生成的 H3 提示词</b>（sha 已核 <code>2494b96…</code>，内含 anti-subtitle）+ <b>同一张 U04b-first.png 首帧</b>重跑。</li>
+      <li>出片后我<b>逐帧查底部带</b>；若再烧就再重试（H3 随机，单次约 2/3 概率干净）。拿到干净的那条才 accept。</li>
+      <li>干净 U04b 到手后（¥0 步骤）：状态机合法回退 <code>complete→shot_videos_pending</code> → 换掉 U04b → gate-out → <b>重拼干净 v1 正片</b> → 重新交付。</li>
+      <li>顺带：干净的 U04b 也成为后续<b>冷开场</b>的可用题眼素材（冷开场是否上、另行定）。</li>
+    </ul>
+  </div>
+
+  <div class="box" style="border-color:#5a4a2a">
+    <h2 class="warn">③ 要花的钱（就这一项付费）</h2>
+    <table class="cost">
+      <tr><th>项</th><th>单价</th><th>次数</th><th>小计</th></tr>
+      <tr><td>重生 U04b（H3 I2VA · 7s）</td><td>¥0.20/秒 ×7s ＝ ¥1.40</td><td>预留最多 3 次（防再烧重试）</td><td class="warn">≤ ¥4.20</td></tr>
+      <tr><td>回退/重拼/重交付</td><td colspan="2">纯本地 ffmpeg</td><td class="ok">¥0</td></tr>
+    </table>
+    <p style="font-size:13px;margin:10px 0 0">当前已花 <b>¥22.95</b>，预算上限 <b>¥23.00</b>（只剩 ¥0.05）。重生要把上限抬到 <b class="big">¥27.50</b>（留浮点余头）。<br>
+    <span style="color:var(--sub);font-size:12.5px">实际大概率 1 次成功≈¥1.40；¥4.20 是"最坏烧 2 次重试 3 条"的封顶。用不完不扣。</span></p>
+  </div>
+
+  <div class="box">
+    <h2>④ 对照：现在的 U04b（带烧字幕，将被替换）</h2>
+    <video controls preload="none" src="../shots/U04b-video.mp4"></video>
+    <p class="meta" style="margin:6px 0 0">这条底部"爱你的人心疼你 / 他在遛你"字幕即违规处。重生目标＝同样表演、同样对白，<b>画面无任何字幕</b>。</p>
+  </div>
+</div>
+<div class="confirm">看完在对话里回我：<b>放行</b>（抬上限¥27.50→重生U04b→重拼干净v1→重交付）｜ <b>先不改</b>（说你的顾虑）</div>
+</body>
+</html>

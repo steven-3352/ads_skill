@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒喝完了，我们散了 · v2 剧本与分镜（口语化重做）</title>
+<style>
+  :root{--bg:#faf7f2;--card:#fff;--ink:#23201c;--sub:#6b635a;--line:#e7e0d6;--accent:#b23b3b;--gold:#a9812f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+  .wrap{max-width:720px;margin:0 auto;padding:20px 16px 80px}
+  h1{font-size:22px;margin:.2em 0}
+  h2{font-size:19px;margin:1.6em 0 .5em;padding-left:10px;border-left:4px solid var(--accent)}
+  h3{font-size:16px;margin:1.2em 0 .3em;color:var(--accent)}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .nav{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);z-index:9;display:flex;gap:8px;flex-wrap:wrap}
+  .nav a{font-size:13px;text-decoration:none;color:var(--accent);border:1px solid var(--line);border-radius:20px;padding:4px 12px;background:#fff}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+  .beat{font-weight:700;color:var(--ink)}
+  .dir{color:var(--sub);font-size:14px}
+  .line{margin:.15em 0}
+  .who{font-weight:600}
+  .paren{color:var(--sub)}
+  .gold{color:var(--gold);font-weight:700}
+  .dam{display:inline-block;background:#fbeaea;color:var(--accent);font-size:12px;border-radius:6px;padding:1px 7px;margin-left:4px}
+  .redline{background:#fff6f6;border:1px solid #f0d5d5;border-radius:10px;padding:10px 12px;font-size:13px;color:#7a3b3b;margin:10px 0}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin:.4em 0;display:block;overflow-x:auto;white-space:nowrap}
+  th,td{border:1px solid var(--line);padding:5px 7px;text-align:left}
+  th{background:#f3ede4}
+  details{margin:.4em 0;border:1px solid var(--line);border-radius:10px;padding:6px 12px;background:#fff}
+  summary{cursor:pointer;font-weight:600;font-size:14px}
+  ul{padding-left:18px;margin:.3em 0}
+  li{margin:.15em 0}
+  .tag{font-size:12px;color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《酒喝完了，我们散了》 · v2 重做</h1>
+  <div class="meta">口语化对白 · 按戏剧 beat 切分镜 · 时长服从内容 · 2026-09-21 · 竖屏 9:16 · H3</div>
+
+  <div class="nav">
+    <a href="#why">为什么重做</a>
+    <a href="#zheng">正片对白</a>
+    <a href="#fen">正片分镜</a>
+    <a href="#yu">预告片</a>
+  </div>
+
+  <div class="redline">⚠️ 合规红线：全片<strong>无任何品牌/商品/名字/logo</strong>；酒=<strong>素白无标白瓷瓶</strong>（无文字/logo/标签），台词画面均不出现酒名，手机等道具去标。成片零字幕（唯一例外=片尾金句②黑场）。</div>
+
+  <div class="card" style="border-color:#cbb78a;background:#fbf7ee">
+    <p class="beat">🎬 视觉基调（新）· iPhone 17 真实拍摄质感 · 去塑料感/AI感</p>
+    <div class="dir">用户硬要求：画面要像真人用 iPhone 17 拍下来的生活片段——<strong>有噪点、真实肤质（毛孔/细纹/油光）、自然光</strong>；<strong>不要</strong>磨皮塑料脸、过曝 HDR、CG 渲染那种"一眼假"。</div>
+    <ul>
+      <li><strong>正向锚</strong>：shot on iPhone 17 Pro · 计算摄影 · photorealistic 抓拍纪实 · 皮肤保留毛孔细纹瑕疵 · 暗部轻微传感器噪点/颗粒 · 自然混合色温光、高光自然滚降不过曝 · 手持轻微晃动/自然浅景深/镜头暗角 · 自然不过饱和调色。</li>
+      <li><strong>负向禁</strong>：塑料/蜡感/磨皮无毛孔脸 · 美颜滤镜 · CGI/3D/游戏渲染感 · 过锐/过 HDR/塑料高光 · 过曝死白 · 过饱和 · 无菌数码干净感。</li>
+      <li><strong>落地</strong>：关键帧 GPT Image 直接出 768×1344 锁 9:16；H3 保持极简、真实感靠关键帧质感带；先出人物母板再各镜 reference；明亮暖白看得清脸；East Asian 随母板。</li>
+    </ul>
+    <div class="tag">完整配方（正/负向词、验收）见 <code>review/视觉风格锁-iphone真实感.md</code>，所有镜提示词统一引用。</div>
+  </div>
+
+  <h2 id="why">一、这次改了什么（针对"慢"——已定位到根因）</h2>
+  <div class="card">
+    <div class="redline" style="margin-top:0">根因：SOP <code>storyboard-methodology.md §3「连续音频铺底」</code> 早写了"对白是连续时间轴、画面在其上切换、声音不断"，但这条<strong>只在文档里、没进机器门禁</strong>——校验器只查覆盖/秒数守恒/verbatim，<strong>不查对白密度</strong>，所以旧稿"30 字标 16 秒"照样放行。已把它固化成校验器<strong>密度门</strong>（下限 3.0 字/秒），并记为死命令 <code>ban-dead-air-content</code>。</div>
+    <p style="margin:.6em 0 .2em"><strong>旧稿"慢"的量化铁证（对白密度 字/秒）：</strong></p>
+    <table>
+      <tr><th>镜</th><th>Q1</th><th>Q8</th><th>Q9</th><th>B0</th><th>Q5</th><th>爆款样本</th><th>门下限</th></tr>
+      <tr><td>旧稿</td><td>1.44</td><td>1.61</td><td>1.56</td><td>2.44</td><td>1.89</td><td rowspan="2">4.5</td><td rowspan="2">3.0</td></tr>
+      <tr><td><strong>整改后</strong></td><td>3.29</td><td>3.63</td><td>3.50</td><td>3.55</td><td>3.40</td></tr>
+    </table>
+    <ul>
+      <li><strong>时长服从对白密度</strong>：每镜时长=对白字数÷~4 字/秒+必要动作余量；旧稿普遍 1.4–2.7 字/秒（说完干坐死尾=慢），整改后全片 3.3–3.8 字/秒。</li>
+      <li><strong>Σ 从 207s 砍到 130s（约 2:10）</strong>：砍掉的 ~1/3 全是留白，不是内容。片长服从内容——9 问演完就是这个真实体量；要更长则再加<strong>真问答</strong>（内容储备里还有料），绝不拉长留白注水。</li>
+      <li><strong>废掉"4 秒一镜凑时长"</strong>：改按戏剧 beat 切，一轮完整问答=一镜，对白镜内连续说完、接话不留缝、无死尾。</li>
+      <li><strong>纯对白、无旁白</strong>：本片不加第三人称旁白，全靠两人对白承载，声音连续铺满。</li>
+      <li><strong>唯一留白豁免</strong>：B8 落幕崩点静默（"喝完了"+推空瓶+手挪一寸又收回），须具名声明才豁免密度门。</li>
+      <li><strong>对白口语化</strong>：真人分手时的话，有停顿磕巴、话说不满，只留 2 句金句。</li>
+    </ul>
+  </div>
+
+  <h2 id="zheng">二、正片对白（口语化 · 真心话 9 问 · 约 2:10）</h2>
+  <div class="tag">规则：一人问一句，问的人喝一杯；酒位从满到空=时间。★=决堤未遂（演憋着装平静，不是真平静）。</div>
+
+  <div class="card">
+    <p class="beat">序场 · B0 出轨问 + 反刺 <span class="dir">（双人同框·镜内运镜 ~11s）</span></p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（盯着杯子，半天才开口）</span>：我问你个事……你别急着否认。</p>
+    <p class="line">这几年，你有没有过……别人。</p>
+    <p class="line"><span class="who">陈叙</span><span class="paren">（愣一下，很干脆）</span>：没有。你怎么突然问这个。</p>
+    <p class="line paren">（她别开脸，不接。）</p>
+    <p class="line"><span class="who">陈叙</span><span class="paren">（更轻）</span>：……你是不是，宁可我有。</p>
+    <p class="line paren">（她端起杯，一口喝了。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">B1 规则 <span class="dir">（双人同框 ~12s）</span></p>
+    <p class="line"><span class="who">陈叙</span><span class="paren">（摸出白瓷瓶）</span>：这个……你还记着吗。你送我的。我一直没舍得开。放了五年了。</p>
+    <p class="line"><span class="who">陈叙</span><span class="paren">（倒满两杯，推一杯给她）</span>：今天喝了吧。咱俩玩个游戏——一人问一句。问的人，喝一杯。</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q1 还爱吗 <span class="dir">（过肩→推近他 ~7s）</span></p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（低）</span>：那你……现在，还爱我吗。</p>
+    <p class="line"><span class="who">陈叙</span>：爱。就是……好像，不够了。<span class="paren">（喝，皱眉）</span>这酒，怎么这么苦。</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q2 委屈 <span class="dam">★决堤①</span> <span class="dir">（双人同框 ~14s）</span></p>
+    <p class="line"><span class="who">陈叙</span>：那换我问。这几年……你有没有，特别委屈的时候。</p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（笑一下）</span>：多了去了。就说吃饭吧。多少回，我心里堵得慌，还是把那碗饭吃完了。你一回都没看出来。</p>
+    <p class="line paren">（想再说点什么，忍住了，喝一口。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q3 卑微的等待 <span class="dir">（近景她·他沉默 ~16s）</span></p>
+    <p class="line"><span class="who">苏晚</span>：该我了。你有没有……让我等到特别难受过。</p>
+    <p class="line paren">（陈叙没说话，低着头。）</p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（自己接下去，轻）</span>：算了，我替你说。有时候你一天不回我，我就抱着手机，翻来覆去看。那个红点，就是不亮。我还骗自己，说你忙。</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q4 藏起来的爱 <span class="dam">★决堤②</span> <span class="dir">（过肩他 ~13s）</span></p>
+    <p class="line"><span class="who">陈叙</span>：我也有件事，一直没跟你讲。你发的每条朋友圈，我都翻过。翻到最底下那种。</p>
+    <p class="line"><span class="who">陈叙</span><span class="paren">（笑了下，眼睛有点红）</span>：我喜欢你，比你以为的，多得多。我就是……没说出口。</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q5 什么时候远了·那只猫 <span class="dir">（双人同框 ~10s）</span></p>
+    <p class="line"><span class="who">苏晚</span>：那你说，咱俩……是从啥时候，开始不对劲的。</p>
+    <p class="line paren">（陈叙想，没答上来。）</p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（很轻）</span>：我知道。从咱俩谁也不提，楼下那只猫，开始的。</p>
+    <p class="line paren">（她笑着，眼泪掉下来，赶紧喝一口压回去。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q6 迟来的道歉 <span class="dam">★决堤③</span> <span class="dir">（近景他 ~10s）</span></p>
+    <p class="line"><span class="who">陈叙</span>：对不起。<span class="paren">（她抬眼）</span>有些事，我做得太过，我自己清楚。这三个字，我想跟你说好久了。就是……说不出来。</p>
+    <p class="line paren">（他端杯，手有点抖，喝了。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q7 你喜欢我什么 · 金句① <span class="dir">（短切特写她·前后留半拍静 ~8s）</span></p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（不看他，很轻）</span>：你老说，让我有事别憋着，都说出来。可你看看咱俩……</p>
+    <p class="line"><span class="gold">真话，都藏得那么好。</span></p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q8 第一次接吻 <span class="dam">★决堤④</span> <span class="dir">（双人同框·同时红眼 ~8s）</span></p>
+    <p class="line"><span class="who">陈叙</span>：问你个开心的。咱俩第一次亲，是啥时候。</p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（噗一下笑出来）</span>：2019 年，4 月 17，下着大雨。</p>
+    <p class="line paren">（两人对视，都笑了，眼睛也都红了，谁也没让眼泪掉下来。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">Q9 再来一次 · 题眼顶点 <span class="dam">★决堤⑤</span> <span class="dir">（过肩→推近 ~8s）</span></p>
+    <p class="line"><span class="who">苏晚</span>：最后一个。要是能重来……你还会追我吗。</p>
+    <p class="line"><span class="who">陈叙</span>：会。这回我……会更用力点，把你留住。<span class="paren">（他喝。）</span></p>
+    <p class="line paren">（苏晚嘴唇动了动，像要说"我……"——她停住了，端起杯，喝掉，那句话没说。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">落幕 · B8 <span class="dam">★决堤⑥</span> <span class="dir">（双人同框长镜·FL2VA ~8s）</span></p>
+    <p class="line paren">（瓶空了。苏晚把空瓶轻轻推到桌子正中间。）</p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（很轻）</span>：喝完了。</p>
+    <p class="line paren">（两人看着对方，都没说话。他的手往桌子中间挪了一点——又收回去了。）</p>
+  </div>
+
+  <div class="card">
+    <p class="beat">尾声 · B9 金句② <span class="dir">（黑场字幕·全片唯一画面字幕 ~5s）</span></p>
+    <p class="line">不是酒不够。</p>
+    <p class="line"><span class="gold">是缘分，刚好就那么多。</span></p>
+  </div>
+
+  <h2 id="fen">三、正片分镜（13 beat 生成单元汇总）</h2>
+  <div class="tag">每 beat=一 H3 生成单元；短切特写仅 Q7/Q9/B8；B8 用 FL2VA 锁空瓶落点；其余 I2VA 单首帧。逐镜 A–G 详见 <code>review/storyboard-正片-v2.md</code>。</div>
+  <div class="card">
+  <table>
+    <tr><th>单元</th><th>景别/模式</th><th>字数÷时长=密度</th><th>要点</th></tr>
+    <tr><td>B0</td><td>双人同框·镜内运镜·I2VA</td><td>39÷11=3.55</td><td>犹豫开口+看穿式反刺</td></tr>
+    <tr><td>B1</td><td>双人同框·I2VA</td><td>45÷12=3.75</td><td>珍藏白瓷瓶+立规则</td></tr>
+    <tr><td>Q1</td><td>过肩→推近他·I2VA</td><td>23÷7=3.29</td><td>爱但不够/这么苦</td></tr>
+    <tr><td>Q2 ★①</td><td>双人同框·I2VA</td><td>53÷14=3.79</td><td>憋着委屈吃完饭·想说忍住</td></tr>
+    <tr><td>Q3</td><td>近景她·I2VA·手机去标</td><td>58÷16=3.63</td><td>抱手机等红点</td></tr>
+    <tr><td>Q4 ★②</td><td>过肩→推近他·I2VA</td><td>49÷13=3.77</td><td>翻遍你动态·眼红差点和好</td></tr>
+    <tr><td>Q5</td><td>近景她·I2VA</td><td>34÷10=3.40</td><td>那只猫·笑中落泪</td></tr>
+    <tr><td>Q6 ★③</td><td>近景他·I2VA</td><td>34÷10=3.40</td><td>迟来道歉·握杯手抖</td></tr>
+    <tr><td>Q7 金句①</td><td><strong>短切特写她</strong>·I2VA</td><td>28÷8=3.50</td><td>真话藏得那么好·前后留半拍静</td></tr>
+    <tr><td>Q8 ★④</td><td>双人同框·I2VA</td><td>29÷8=3.63</td><td>第一次接吻·同时笑同时红眼</td></tr>
+    <tr><td>Q9 ★⑤</td><td>过肩→<strong>推近</strong>·I2VA</td><td>28÷8=3.50</td><td>更用力留住你·三个字没说出口</td></tr>
+    <tr><td>B8 ★⑥</td><td>双人同框·<strong>FL2VA</strong></td><td>3÷8=<strong>豁免</strong></td><td>崩点静默·空瓶落点·手挪一寸又收回</td></tr>
+    <tr><td>B9</td><td>黑场字幕卡·非H3</td><td>无对白·豁免</td><td>金句②·唯一画面字幕</td></tr>
+  </table>
+  <p class="tag">Σ生成时长 ≈ <strong>130s（约 2:10）</strong>；全片密度 3.3–3.8 字/秒，均过校验器密度门（下限 3.0）。B8 崩点静默为唯一具名豁免。</p>
+  </div>
+
+  <h2 id="yu">四、预告片（口语化 · 5 beat · 约 46s）</h2>
+  <div class="tag">从正片抽最戳的骨头；镜数从旧稿 12→5；镜内对白连续压茬、无死尾。<strong>预告专属校准</strong>：不是拉长而是砍对白只留钩子——旧稿把整段硬塞进短时长密度冲到 5.6 字/秒会赶到听不清，本版砍到密度 3.4–3.9 字/秒（清晰又不拖）。到"喝完了"即止不放结局。逐镜 A–G / H1–H4 详见 <code>review/storyboard-预告片-v2.md</code>。</div>
+
+  <div class="card">
+    <p class="beat">P0 钩子 <span class="dir">（双人同框·前2秒压测跳出 ~9s · 3.44字/秒）</span></p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（画外 pre-lap，第0秒入耳）</span>：我问你个事，你别急着否认。这几年，你有没有过……别人。</p>
+    <p class="line"><span class="who">陈叙</span><span class="paren">（愣一下）</span>：没有。……你是不是，宁可我有。</p>
+  </div>
+  <div class="card">
+    <p class="beat">P1 立局 <span class="dir">（双人同框 ~8s · 3.88字/秒）</span></p>
+    <p class="line"><span class="who">陈叙</span>：这个……你还记着吗。你送我的，放了五年了。今天喝了吧——一人问一句，问的人，喝一杯。</p>
+  </div>
+  <div class="card">
+    <p class="beat">P2 高光·两轮压茬 <span class="dir">（双人同框长镜 ~11s · 3.55字/秒）</span></p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（低）</span>：你现在……还爱我吗。</p>
+    <p class="line"><span class="who">陈叙</span>：爱。就是……好像，不够了。</p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（接得很紧）</span>：你一天不回我，我就抱着手机翻来覆去看。那红点，就是不亮。</p>
+  </div>
+  <div class="card">
+    <p class="beat">P3 金句①+题眼 <span class="dir">（短切特写×2 ~11s · 3.64字/秒）</span></p>
+    <p class="line"><span class="who">苏晚</span><span class="paren">（不看他）</span>：你老说让我别憋着……<span class="gold">真话，都藏得那么好。</span></p>
+    <p class="line"><span class="who">苏晚</span>：要是能重来，你还会追我吗。</p>
+    <p class="line"><span class="who">陈叙</span>：会。这回我，会更用力点，把你留住。<span class="paren">（她想说"我…"，停住，喝掉，没说。）</span></p>
+  </div>
+  <div class="card">
+    <p class="beat">P4 落点+金句② <span class="dir">（双人同框→黑场 ~7s · 崩点静默豁免）</span></p>
+    <p class="line paren">（瓶空了。她把空瓶推到桌子正中。）</p>
+    <p class="line"><span class="who">苏晚</span>：喝完了。<span class="paren">（他手往桌中挪一点，又收回。）</span></p>
+    <p class="line">—— 黑场 ——　不是酒不够。<span class="gold">是缘分，刚好就那么多。</span></p>
+  </div>
+
+  <div class="meta" style="margin-top:30px">状态：正片对白+分镜已确认（B1=12s 保留）→ 待确认<strong>预告片分镜</strong>（storyboard-预告片-v2.md，5 beat / 约 46s / 密度 3.44–3.88 全过门 / P4 FL2VA+黑场卡）。全程未生成任何视频。</div>
+</div>
+</body>
+</html>

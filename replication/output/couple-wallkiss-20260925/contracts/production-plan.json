@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "projectId": "couple-wallkiss",
+  "title": "别生气了——情侣壁咚深吻甜宠短剧",
+  "note": "9:16 竖屏 15-18s 都市甜宠暧昧拉扯。高冲击情欲张力线：先冷先推(哄劝/抗拒)→壁咚深吻炸出情欲顶点→娇羞破防软化。全片每镜有可听人声/对白铺着，无一秒无声留白；镜3用'话说到一半被吻断'把顶点顶满，收在临界点不越红线。仅男女主2人，单场景白墙走廊。",
+  "revision": 1,
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 15,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "estTotalDurationSec": 18,
+  "aspectRatio": "9:16",
+  "casting": {
+    "male": "男主：中国人East Asian，25-28岁，清爽短发，白衬衫挽袖，身形挺拔，稳但被逼急，动手壁咚是压着的果断不油腻。母板 assets/master-male.png。",
+    "female": "女主：中国人East Asian，23-26岁，披肩长发，家居针织/衬衫，素颜感好肤质，嘴上硬心里软，冷脸躲视线是装的。母板 assets/master-female.png。"
+  },
+  "subtitlePolicy": "成片零烧对白字幕(anti-subtitle + 人工查残留)；对白由 H3 同镜内嵌生成。",
+  "narrativeShots": [
+    {
+      "id": "SH01",
+      "title": "哄劝·先立冷",
+      "sceneId": "SC_HALL",
+      "style": "中近景手持微晃，把女主冷淡侧脸与男主凑近的急切压进同一画面",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "别生气了，我错了……好不好？"
+      },
+      "watchFocus": "先立'冷/推'的反差，为镜3爆发蓄落差",
+      "requiredBeats": [
+        {
+          "id": "B1",
+          "sceneId": "SC_HALL",
+          "text": "男主哄劝『别生气了，我错了……好不好？』：白墙走廊，女主侧身背对、抱臂冷脸不看人、下巴微抬；男主半躬身凑近想绕到她面前，她偏头他就跟着偏，伸手去够她手腕却在半空顿了一下没敢真抓，语速发快带点讨好的急。女主手臂抱得更紧、眼睛盯着墙角不给对视、嘴角绷着。轻柔氛围感BGM起，脚步蹭地、衣料窸窣。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "SH01-U1",
+          "sceneId": "SC_HALL",
+          "durationSeconds": 4.0,
+          "mode": "I2VA",
+          "references": ["assets/master-male.png", "assets/master-female.png"],
+          "prompts": {
+            "images": ["prompts/SH01-U1-first.json"],
+            "video": "prompts/SH01-U1-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-SH01/images/SH01-U1-first.png",
+            "video": "shots/shot-SH01/video/SH01-U1.mp4"
+          },
+          "cuts": [
+            {
+              "id": "SH01-U1-C1",
+              "seconds": 4.0,
+              "note": "男主凑近哄劝、够手腕的手半空顿住；女主冷脸背对",
+              "coverage": [
+                {"beatId": "B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "SH02"
+    },
+    {
+      "id": "SH02",
+      "title": "抗拒·端着的赌气",
+      "sceneId": "SC_HALL",
+      "style": "中近景快切到甩手退步的动作线，抓那一记'甩'的干脆",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "你别碰我……我现在不想说话。"
+      },
+      "watchFocus": "把'端着的赌气'演出来——甩手是脆的、退半步没真走、别脸偷瞟一眼又收回",
+      "requiredBeats": [
+        {
+          "id": "B2",
+          "sceneId": "SC_HALL",
+          "text": "女主抗拒『你别碰我……我现在不想说话。』：男主的手刚碰到女主手腕，女主猛地一甩把手抽开、往后退半步、扭头把脸别向另一侧、肩膀一耸避开他视线；甩手是脆的快的，退半步却没真走远，别过脸后眼神有一瞬往他那边瞟了一下又收回（露馅那一眼）。男主的手僵在原地、喉结动一下、看着她别过去的后脑勺。衣袖摩擦声、甩手带风声，BGM不停。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "SH02-U1",
+          "sceneId": "SC_HALL",
+          "durationSeconds": 4.0,
+          "mode": "FL2VA",
+          "references": ["assets/master-male.png", "assets/master-female.png"],
+          "prompts": {
+            "images": ["prompts/SH02-U1-first.json", "prompts/SH02-U1-last.json"],
+            "video": "prompts/SH02-U1-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-SH02/images/SH02-U1-first.png",
+            "lastFrame": "shots/shot-SH02/images/SH02-U1-last.png",
+            "video": "shots/shot-SH02/video/SH02-U1.mp4"
+          },
+          "cuts": [
+            {
+              "id": "SH02-U1-C1",
+              "seconds": 4.0,
+              "note": "手被碰→猛甩抽开→退半步→别脸偷瞟；状态突变用FL2VA锁首尾帧(首:手被碰;尾:退半步别过脸偷瞟)",
+              "coverage": [
+                {"beatId": "B2", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "SH03"
+    },
+    {
+      "id": "SH03",
+      "title": "壁咚深吻·情欲顶点(有对白，绝非无声干吻)",
+      "sceneId": "SC_HALL",
+      "style": "近景/特写兑现微表情与细节——撑墙的手、揽腰、贴近侧脸、反攥衣领的手、喉结与睫毛；全片唯一亲密高潮",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "你干什么…唔——"
+      },
+      "watchFocus": "对白+微表情+动作三层同时兑现，全程气声/轻喘铺着无一秒无声；推→软肉眼可见；收在就差一点的临界点，不越红线",
+      "requiredBeats": [
+        {
+          "id": "B3A",
+          "sceneId": "SC_HALL",
+          "text": "男主壁咚深吻（情欲顶点起）：男主不哄了、一步跟上、一手撑上女主身侧的白墙、一手揽住她后腰把她轻抵到墙面，女主刚要开口质问、话说到一半被他俯身吻住堵回去。女主（话被吻断）『你干什么…唔——』戛然而止；男主贴着她、气声低哑、句子不说满『……别躲。看着我。』。女主先抬手推他肩膀、挣扎两三下、脚跟蹭着墙根想躲。急促呼吸声、衣料摩擦声、后背轻抵墙面的闷响，BGM收紧。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        },
+        {
+          "id": "B3B",
+          "sceneId": "SC_HALL",
+          "text": "情欲顶点近景兑现微表情与软化：女主推肩的手慢慢没了力气、顺着他手臂滑下去、转而反手攥住他的衣领/衣襟（软化肉眼可见）；睫毛颤、眉头先蹙起再慢慢松开、眼神从躲闪到被锁死、急促呼吸打在彼此脸上、咬唇、喉结滚动。女主挣扎转软『唔…你…』音渐软没说完、气声/轻喘全程铺着不留白。两人身体越贴越紧、停在就差一点的临界点，不往下——不写露骨过程、不给性化身体特写。",
+          "channels": ["picture", "dialogue", "action_sound"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "SH03-U1",
+          "sceneId": "SC_HALL",
+          "durationSeconds": 4.0,
+          "mode": "FL2VA",
+          "references": ["assets/master-male.png", "assets/master-female.png"],
+          "prompts": {
+            "images": ["prompts/SH03-U1-first.json", "prompts/SH03-U1-last.json"],
+            "video": "prompts/SH03-U1-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-SH03/images/SH03-U1-first.png",
+            "lastFrame": "shots/shot-SH03/images/SH03-U1-last.png",
+            "video": "shots/shot-SH03/video/SH03-U1.mp4"
+          },
+          "cuts": [
+            {
+              "id": "SH03-U1-C1",
+              "seconds": 4.0,
+              "note": "状态突变FL2VA(首:男撑墙揽腰将女抵墙、女将开口;尾:俯身深吻、女推肩挣扎手开始滑落)",
+              "coverage": [
+                {"beatId": "B3A", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SH03-U2",
+          "sceneId": "SC_HALL",
+          "durationSeconds": 2.5,
+          "mode": "FL2VA",
+          "references": ["assets/master-male.png", "assets/master-female.png"],
+          "prompts": {
+            "images": ["prompts/SH03-U2-first.json", "prompts/SH03-U2-last.json"],
+            "video": "prompts/SH03-U2-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-SH03/images/SH03-U2-first.png",
+            "lastFrame": "shots/shot-SH03/images/SH03-U2-last.png",
+            "video": "shots/shot-SH03/video/SH03-U2.mp4"
+          },
+          "cuts": [
+            {
+              "id": "SH03-U2-C1",
+              "seconds": 2.5,
+              "note": "近景特写FL2VA(首:推肩的手在他手臂上;尾:手反攥衣领、贴紧临界),微表情软化兑现",
+              "coverage": [
+                {"beatId": "B3B", "channels": ["picture", "dialogue", "action_sound"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "SH04"
+    },
+    {
+      "id": "SH04",
+      "title": "娇羞收尾·嘴硬手软破防",
+      "sceneId": "SC_HALL",
+      "style": "脸部特写，抓女主泛红脸颊与躲闪眼神、男主贴耳的笑；收在女主那声'讨厌'上",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "登徒子，讨厌。"
+      },
+      "watchFocus": "破防软化落地——嘴上还嘴硬、手指却抠着他衣角没松",
+      "requiredBeats": [
+        {
+          "id": "B4",
+          "sceneId": "SC_HALL",
+          "text": "娇羞收尾破防：吻毕两人分开一点点、鼻尖相抵额头轻碰，女主垂着眼、脸颊泛红、别过脸把下巴埋低、手指抠着他衣角没松开（嘴硬手软）；男主凑在她耳侧、嘴角带笑、还带着喘轻声『那你……还生不生气？』，女主小声别着脸娇嗔『登徒子，讨厌。』。两人呼吸渐匀，BGM缓缓转柔收尾。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "SH04-U1",
+          "sceneId": "SC_HALL",
+          "durationSeconds": 3.5,
+          "mode": "I2VA",
+          "references": ["assets/master-male.png", "assets/master-female.png"],
+          "prompts": {
+            "images": ["prompts/SH04-U1-first.json"],
+            "video": "prompts/SH04-U1-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-SH04/images/SH04-U1-first.png",
+            "video": "shots/shot-SH04/video/SH04-U1.mp4"
+          },
+          "cuts": [
+            {
+              "id": "SH04-U1-C1",
+              "seconds": 3.5,
+              "note": "鼻尖相抵、女主泛红别脸娇嗔、手抠衣角没松",
+              "coverage": [
+                {"beatId": "B4", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": null
+    }
+  ],
+  "state": "production_plan_pending"
+}

@@ -1,0 +1,13 @@
+{
+  "request_id": "fuke-A-home",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/fuke/prompts/assets/fuke-A-home.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/fuke/assets/A-home.png",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/fuke/assets/master-A.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-22T10:26:17+08:00"
+}

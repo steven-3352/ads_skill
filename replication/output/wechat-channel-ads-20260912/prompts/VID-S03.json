@@ -1,0 +1,32 @@
+{
+  "id": "S03",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, handheld iPhone vlog look, a close handheld shot begins on the clear glass exactly as in Picture 1, holding one dry curled piece of dried tangerine peel in pale yellow tea with the pot spout tilted just above it, about to pour. The camera stays close with a slight natural handheld sway as a steady stream of hot water pours in; the water swirls, the dried peel slowly unfurls and uncurls, and the tea deepens gradually from pale yellow into a clear, translucent amber, never turning dark or opaque, until it settles into the fully opened peel and the amber tone established by Picture 2 at the end of the shot.\n\noverall_soundscape: The bright continuous sound of hot water pouring into the glass, with gentle liquid swirling and the soft rustle of the peel opening.\n\nnon_diegetic_music: N/A\n",
+  "provider": "minimax",
+  "model": "MiniMax-Hailuo-02",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "references": [
+    "assets/keyframes/KF-S03-first.png",
+    "assets/keyframes/KF-S03-last.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "duration matches requested length",
+      "dialogue preserved verbatim in [Chinese] tag",
+      "red-line safe: no packaging/brand/vintage/origin/efficacy claims",
+      "handheld iPhone vlog mid-shot style per brief",
+      "East Asian casting locked via reference master",
+      "tea color stays pale->translucent amber, never dark/opaque"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "214f0ea079b1dde91d5dfa0670e29f0ece8beb44d596fa760e8a12570391ae93"
+  }
+}

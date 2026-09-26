@@ -1,0 +1,46 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a cool white 5600K office in daytime, soft diffused overhead light with a neutral cool-white base, bright and clear, no heavy yellow lamp and no orange cast on skin. A medium-close shot begins as framed in <Picture 1>, preserving the desk area and layout from the reference. The young East Asian Chinese woman colleague with long wavy brown hair, a white blouse and a khaki midi skirt stands near the man's desk; the young East Asian Chinese man in his black suit, white shirt and dark-blue tie sits facing her. The camera holds a medium-close shot with a small slow push in. The woman colleague, with a warm, gentle young voice (S3), tilts her head slightly toward him with a soft, friendly smile and, at a natural, slightly quick conversational pace with no trailing silence, says: <d>[Chinese]你也早点回去休息。</d> [Shot 2] At 00:02.600, the camera cuts to a reverse medium-close shot on the man, who meets her look with a polite, even-tempered nod and a brief courteous smile and, at a natural, slightly quick conversational pace with no trailing silence, replies: <d>[Chinese]麻烦你了。</d> His expression stays warm but reserved rather than flirtatious. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: A low office room tone hums throughout, with faint keyboard clatter in the background and the soft rustle of clothing as the two shift their posture across the cut.\n\nnon_diegetic_music: A gentle sustained synth pad at a slow tempo, quiet and steady beneath the exchange.",
+  "references": [
+    "replication/output/fuke/assets/U5-first.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "duration_seconds": 5.0,
+    "checks": [
+      "模式:I2VA首帧U5-first全参考,0.00s锚定,工位对话布局延续关键帧",
+      "指令行:标准I2VA首行+空行+三核心字段,正反打[Shot 2]切反打机位递增时间戳00:02.600",
+      "对白:女同事(S3)'你也早点回去休息。'+男主(S1)'麻烦你了。'逐字,<d>[Chinese]内仅语言标签+原文,身份/动作/递送外置",
+      "时长:5.0s两句共13字+正反打切换,语速自然偏快无死尾",
+      "灯光:办公室日冷白5600K/柔和漫射顶光/明亮通透/禁大黄光染脸",
+      "质感:人脸哑光无油光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮",
+      "表演:女同事温柔示好/男主礼貌点头浅笑克制不暧昧非空洞",
+      "零字幕:显式no subtitles/on-screen text",
+      "声景:办公室底噪+键盘+切镜织物窸窣;非画内弱synth pad"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "395d8cee0e013c20092ac1a7a14b0790cb4c6b6cbb0769dfa783489e636db97e",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U5-video",
+    "usage": "U5(示好·礼貌回应)正反打:女同事(S3)'你也早点回去休息。'男主(S1)'麻烦你了。',办公室日冷白,I2VA自U5-first",
+    "locks": [
+      "女同事棕色大波浪长发+白衬衫+卡其半身裙(S3)",
+      "男主黑西装白衬衫深蓝领带(S1)",
+      "办公室日冷白5600K",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕",
+      "正反打两机位"
+    ]
+  },
+  "narrative_note": "示好·礼貌回应:女同事示好男主礼貌克制回应,正反打两机位,冷白5600K",
+  "images": [
+    "replication/output/fuke/assets/U5-first.png"
+  ],
+  "ratio": "16:9",
+  "duration": 5
+}

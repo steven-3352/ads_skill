@@ -4,7 +4,7 @@
 #   phase run     : screenplay_confirmed  -> production_plan_pending（暂停，派分镜子 agent）
 #   phase gate-out: production_plan_pending -> storyboard_confirmed
 #     收编 scripts/validate-production-plan.mjs（三元组绑定 / verbatim 子串 / 秒数守恒 /
-#     每节拍×通道恰好认领一次 / 路径沙箱），exit0 才放行；plan sha256 入账。
+#     每节拍×通道恰好认领一次 / 对白密度门·禁留白 / 路径沙箱），exit0 才放行；plan sha256 入账。
 # =============================================================================
 set -Eeuo pipefail
 phase="${1:-}"; project_dir="${2:-}"; sub="${3:-}"; desc="${4:-}"; cur="${5:-}"

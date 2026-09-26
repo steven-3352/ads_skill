@@ -1,0 +1,40 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The scene opens exactly on the two-shot established in <Picture 1>, preserving its style, subjects, composition and scene anchors, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. In frame: a mature East Asian Chinese woman in her thirties (A, aged 33-38, calm and restrained with exhaustion underneath) stands beside a worn two-seater fabric loveseat, her coat draped over her forearm; a neatly packed upright hard-shell suitcase waits by the entrance door in the background; a face-down couple photo frame lies flat on the empty middle seat; a mature East Asian Chinese man in his thirties (B, aged 33-38, tired-looking) sits at one end of the loveseat and lifts his head toward her. For the first half second nobody moves and the air is held frozen; her hand at her side clenches once and releases, her breathing shallow. The camera then pushes in with small amplitude at slow speed toward her three-quarter profile, warm light on half her face; her eyes stay down on the floor and never rise to the man, as if one look would break her resolve, her jaw tight and her throat swallowing once. The mature woman in her thirties, her eyes still lowered, in a light, flat, level voice with a faint tremor on the tail (S1), says: <d>[Chinese] 我们还是分手吧。</d> The empty gap between them, the face-down frame and the doorway suitcase all stay legible in the frame. Eye-level, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable, subtle film grain, natural color.\n\noverall_soundscape: An extremely low late-night room tone runs underneath the whole shot, with a faint clock tick and a low refrigerator hum. The only physical sounds are one soft clench of fabric at her side and a single shallow, controlled breath.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS01-U1-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:A不看B、眼神落地、手攥一下松开、喉结吞咽、尾音微颤,克制不冷漠(撑不住的释然),内心戏演出而非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;三段字段齐(integrated_multimodal_description/overall_soundscape/non_diegetic_music)",
+      "0.5s静场靠首帧信息(行李箱/倒扣合照/已起身外套)非真空,第1秒内出口台词",
+      "对白verbatim校验:<d>[Chinese] 我们还是分手吧。</d> 一字不改、画内同期口型同步、身份+ID(S1)+delivery在<d>外",
+      "无字幕校验:prompt内无任何引号包裹的屏幕文字/字幕/caption(字幕后期统一烧);客厅正常明亮通透、16:9、东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0e7905f278d00af75b32a0fb70544a8bbfb99c651106d3c062fd32c3c5fb3d59"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B1"
+    ],
+    "related_shots": [
+      "FS01"
+    ],
+    "visual_evidence": [
+      "首帧决定已发生:行李箱/外套在臂弯/倒扣合照",
+      "A不看B轻声说出分手"
+    ],
+    "unresolved_blockers": []
+  }
+}

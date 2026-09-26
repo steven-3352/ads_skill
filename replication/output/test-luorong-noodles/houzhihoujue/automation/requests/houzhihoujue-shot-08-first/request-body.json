@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Cinematic still, 9:16 vertical, static, minimalist. A pure solid black frame with a single soft beam of light from directly overhead fading gently into the darkness, an empty stage-like pool of soft light at the center with generous deep black negative space all around. No people, no objects, no props. Subtle cinematic film grain, gentle light falloff toward black. Quiet, restrained, elegant emptiness, composed to leave clean central space for a title to be added later in post. Absolutely no text, no letters, no characters, no subtitles, no logo, no watermark, no brand anywhere in the image.",
+  "size": "768x1344",
+  "quality": "high",
+  "output_format": "png"
+}

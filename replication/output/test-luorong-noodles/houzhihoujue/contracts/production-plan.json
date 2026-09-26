@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "projectId": "houzhihoujue",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 8,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "冷战",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "你不哄，我不理，这就是冷战。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b1",
+          "sceneId": "scene-past-home",
+          "text": "你不哄，我不理，这就是冷战。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u1",
+          "sceneId": "scene-past-home",
+          "durationSeconds": 2.8,
+          "pictureBrief": "居家沙发两端各坐一头、中间空一段距离的吵架起点构图（镜1/2/3共用此机位）；起点后女主抱靠垫下巴微抬不看、男主手搭膝也不转头，两人各自僵住冷战，明亮通透暖白居家光，East Asian，无品牌。",
+          "cuts": [
+            {
+              "id": "c1",
+              "seconds": 2.8,
+              "coverage": [
+                { "beatId": "b1", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-01-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png", "assets/master-male.png"]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "较劲",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "你哄了，我不应，这就是较劲。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b2",
+          "sceneId": "scene-past-home",
+          "text": "你哄了，我不应，这就是较劲。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u2",
+          "sceneId": "scene-past-home",
+          "durationSeconds": 2.8,
+          "pictureBrief": "复用镜1吵架起点同机位构图；这次男主侧身伸手想碰女主肩去哄，女主肩膀一缩、头扭向另一边避开，男主的手停半空收回——男哄女不应的较劲。明亮通透暖白居家光，East Asian，无品牌。",
+          "cuts": [
+            {
+              "id": "c2",
+              "seconds": 2.8,
+              "coverage": [
+                { "beatId": "b2", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-02-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png", "assets/master-male.png"]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "幸福",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "你哄了，我笑了，这就是幸福。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b3",
+          "sceneId": "scene-past-home",
+          "text": "你哄了，我笑了，这就是幸福。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u3",
+          "sceneId": "scene-past-home",
+          "durationSeconds": 2.8,
+          "pictureBrief": "复用镜1吵架起点同机位构图；男主继续哄凑近做傻气鬼脸挠痒，女主憋不住嘴角先松、扑哧一笑，身体转回往男主那头靠拢，中间空距离没了——女破功笑的幸福。明亮通透暖白居家光，East Asian，无品牌。",
+          "cuts": [
+            {
+              "id": "c3",
+              "seconds": 2.8,
+              "coverage": [
+                { "beatId": "b3", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-03-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png", "assets/master-male.png"]
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "心疼",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "我委屈，你服软，这就是心疼。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b4",
+          "sceneId": "scene-past-home",
+          "text": "我委屈，你服软，这就是心疼。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u4",
+          "sceneId": "scene-past-home",
+          "durationSeconds": 2.8,
+          "pictureBrief": "女主低头、指背在眼角下面轻轻抹一下、肩膀微塌显委屈；男主抿嘴起身从侧面把她轻轻揽入怀里让步、心疼。严禁泪眼/红眼/发光眼，委屈只走低头抹眼角。明亮通透暖白居家光，East Asian，无品牌。",
+          "cuts": [
+            {
+              "id": "c4",
+              "seconds": 2.8,
+              "coverage": [
+                { "beatId": "b4", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-04-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png", "assets/master-male.png"]
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "迁就",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "我唠叨，你点头，这就是迁就。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b5",
+          "sceneId": "scene-past-home",
+          "text": "我唠叨，你点头，这就是迁就。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u5",
+          "sceneId": "scene-past-home",
+          "durationSeconds": 2.8,
+          "pictureBrief": "女主指着桌上某样东西边收拾边碎碎念叨不停；男主一手撑下巴笑着听、跟着她的话一下一下点头没打断——女唠叨男包容点头的迁就。明亮通透暖白居家光，East Asian，无品牌。",
+          "cuts": [
+            {
+              "id": "c5",
+              "seconds": 2.8,
+              "coverage": [
+                { "beatId": "b5", "channels": ["picture", "dialogue", "action_sound", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-05-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png", "assets/master-male.png"]
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "以为",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "以前我以为还有以后。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b6",
+          "sceneId": "scene-past-home",
+          "text": "以前我以为还有以后。",
+          "channels": ["picture", "dialogue", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u6",
+          "sceneId": "scene-past-home",
+          "durationSeconds": 2.6,
+          "pictureBrief": "两人依偎坐着谁也没说话，镜头极慢推近，画面边缘暖色一点点褪下去、虚化开，像这一幕正从记忆里往外淡——暖转冷过渡镜。明亮通透暖白居家光渐褪，East Asian，无品牌。",
+          "cuts": [
+            {
+              "id": "c6",
+              "seconds": 2.6,
+              "coverage": [
+                { "beatId": "b6", "channels": ["picture", "dialogue", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-06-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png", "assets/master-male.png"]
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "不在了",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "现在懂了，可是那个人已经不在了。"
+      },
+      "requiredBeats": [
+        {
+          "id": "b7",
+          "sceneId": "scene-now-void",
+          "text": "现在懂了，可是那个人已经不在了。",
+          "channels": ["picture", "dialogue", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u7",
+          "sceneId": "scene-now-void",
+          "durationSeconds": 3.7,
+          "pictureBrief": "切现在时纯黑背景头顶单束柔光，女主独自伫立在光里；身旁那个刚才还有人的位置空荡无人。她抿唇、屏住一口气、慢慢眨一次眼、缓缓低头。严禁泪眼/红眼/发光眼，情绪走抿唇屏息慢眨缓低头。East Asian，无品牌，电影颗粒浅景深。",
+          "cuts": [
+            {
+              "id": "c7",
+              "seconds": 3.7,
+              "coverage": [
+                { "beatId": "b7", "channels": ["picture", "dialogue", "ambience"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-07-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": ["assets/master-female.png"]
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "尾板",
+      "source": {
+        "storyFile": "story/houzhihoujue-片尾独白改编剧本.md",
+        "verbatim": "有些遗憾，后知后觉"
+      },
+      "requiredBeats": [
+        {
+          "id": "b8",
+          "sceneId": "scene-endslate",
+          "text": "有些遗憾，后知后觉",
+          "channels": ["picture", "onscreen_text"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "u8",
+          "sceneId": "scene-endslate",
+          "durationSeconds": 2.0,
+          "pictureBrief": "黑底渐暗，头顶那束光缓缓变暗、画面向黑收拢；黑场中央浮出一行设计性大字“有些遗憾，后知后觉”（非对白轨、不念），字停一拍随光淡出、全黑收尾。无对白、成片零字幕（此大字为设计元素）。",
+          "cuts": [
+            {
+              "id": "c8",
+              "seconds": 2.0,
+              "coverage": [
+                { "beatId": "b8", "channels": ["picture", "onscreen_text"] }
+              ]
+            }
+          ],
+          "prompts": { "images": [], "video": "prompts/shot-08-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ]
+    }
+  ]
+}

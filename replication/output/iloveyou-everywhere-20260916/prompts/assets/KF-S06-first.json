@@ -1,0 +1,36 @@
+{
+  "asset_type": "image",
+  "keyframe_id": "KF-S06-first",
+  "shot": "S06",
+  "role": "地下·立基帧(地心巨型晶洞,冷调通透晶体+暖金光柱)",
+  "generator": "GPT Image (gpt-image-2)",
+  "size": "1344x768",
+  "video_model": "pending (倾向 MiniMax-H3)",
+  "authoring_skill": "h3-prompt-writing",
+  "mode": "text2img (humans tiny accents only)",
+  "references": [],
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical, never portrait). Ultra-wide view inside a colossal underground crystal cavern at the earth's core; enormous cool-toned pale translucent crystals — soft aqua, pale blue-green, gentle lavender and clear quartz — form giant crystal columns and glowing crystal veins that rise to hold up a vast cathedral-like chamber. The crystals themselves are cool-toned pale translucent gemstone and ice, NOT amber, NOT orange, NOT yellow crystals. Soft warm rose-gold and pale gold god-rays and light shafts slant down through gaps between the crystals as a gentle warm accent, while the dominant palette stays clear teal-aqua and pale blue-green crystal with warm golden light beams. Everything is bright, luminous, airy, ethereal, translucent and crystalline, like light passing through clear gemstone and ice, soft diffused ambient light, no hard shadows, sweet and mind-freeingly open. One tiny warm speck of light — an East Asian Chinese couple — stands far away on a ledge at the left of the frame between the giant crystal veins, a single pure accent about 5 percent of the frame, while the environment fills more than 90 percent with deep glowing translucent negative space. Floating luminous particles drift upward through the cool crystalline air, delicate and dreamlike. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
+  "negative": "amber crystals, orange crystals, yellow crystals, fiery, molten lava, orange glow, amber inferno, burning, red hot embers, fire, magma, volcanic, smoke, ash, hot orange cave, sauna glow, red hot, inferno, apocalyptic, hard shadows, harsh shadows, close-up, big face, character dominates frame, crowded, cluttered, oversaturated, dark scary cave, horror, cold blue gloom, vertical, portrait, text, subtitles, watermark, logo, Chinese characters, western/caucasian faces",
+  "note": "巨物=地心巨型晶洞;第2版改色:晶体本体从琥珀/橙改为冷调通透(青蓝/浅绿/淡紫/水晶石英),主色清透青蓝+暖金光柱点缀(对标海底巨鲸teal+gold通透空灵),负面词加强排除橙/琥珀晶体与火感。呼应主题'入地'甜美空灵。末帧晶光上溢转升,为收束反向上升铺垫(用视频末帧)。",
+  "status": "prompt_ready_pending_model_and_budget",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "text2img",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "改色(晶体本体):cool-toned pale translucent crystals=soft aqua/pale blue-green/gentle lavender/clear quartz,显式NOT amber/NOT orange/NOT yellow crystals,从本体颜色根治火感",
+      "光:soft warm rose-gold+pale gold god-rays/light shafts斜射做暖点缀,主色锁清透teal-aqua+pale blue-green+暖金光柱,对标海底巨鲸teal+gold通透空灵",
+      "整体质感:bright/luminous/airy/ethereal/translucent/crystalline,like light through clear gemstone and ice,漫射柔光无硬阴影",
+      "负面词加强:amber/orange/yellow crystals+fiery/molten lava/orange glow/amber inferno/burning/red hot embers/fire/magma/volcanic/smoke/ash/hot orange cave/sauna glow/hard shadows全列",
+      "巨物不变:colossal underground crystal cavern at earth's core,巨型晶柱+晶脉撑起cathedral-like巨腔",
+      "人物占比不变:一对East Asian Chinese情侣仅一粒暖点(~5% pure accent,画左崖上ledge),环境>90%负空间,显式禁western/caucasian faces",
+      "floating luminous particles上升粒子保留,呼应上溢转升末帧铺垫;底部15-18%干净字幕安全区",
+      "16:9横构图锁1344x768,显式never vertical/never portrait,negative加vertical/portrait;写实电影真人禁illustration/anime/3D;结尾禁text/subtitles/watermark/logo/Chinese characters"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "122770ccd1198c424dcd2a5dcc9c9f6e963e462e1d41e10ef0397214ffcbe7cc"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "U05a",
+  "provider": "minimax",
+  "model": "MiniMax-H3",
+  "mode": "I2VA",
+  "duration": 8,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "pending"
+      },
+      "local_path": "replication/output/zhanv/shots/U05a-first.png",
+      "role": "first_frame"
+    }
+  ],
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld realistic footage with fine sensor grain, real skin texture and visible pores, no plastic or waxy CGI look and no beauty-smoothing. The late-night living room stays evenly and brightly lit by neutral-white LED ceiling light around 4800K, skin tones neutral rather than amber, faces matte without oily glare; the lighting stays constant and bright the whole clip with no dimming, no vignette and no fade to black, and no subtitles or captions are burned into the frame. An over-the-shoulder close framing between the two East Asian women as in <Picture 1>, the right woman with bare skin and a loose cotton shirt (S2) speaking, the left woman with a translucent skincare gel and knitted cardigan (S1) listening. Delivery is quick and even, landing like a quiet exposure rather than a lecture, no pauses. The right woman (S2): <d>[Chinese] 你不是离不开他。</d> The right woman (S2): <d>[Chinese] 你是离不开那句——\"终于有人看见我了\"。</d> The left woman (S1) lifts her eyes to her, lips pressed, holding it in, no tears and no glowing eyes. The right woman (S2): <d>[Chinese] 你要的根本不是他爱你。</d> The right woman (S2), landing the line: <d>[Chinese] 你要的是——他居然选了我。</d>\n\noverall_soundscape: A low late-night room tone with a faint clock and refrigerator hum. A single quiet breath as the left woman lifts her eyes.\n\nnon_diegetic_music: N/A\n",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "instruction-line-first",
+      "three-core-fields-in-order",
+      "speakers-S1-lin-S2-zhou-stable",
+      "dialogue-zh-verbatim-in-d-tags",
+      "delivery-and-action-outside-d",
+      "anti-wax-neutral-white-LED-4800K",
+      "constant-bright-no-fade-no-dim",
+      "no-burned-subtitles",
+      "east-asian-casting",
+      "no-brand-no-logo-props",
+      "16:9-ratio"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ac3de0fe1b77216bc11d039d9be93c5b2a10cde5cff6ce57adf83f07b23bb26f"
+  }
+}

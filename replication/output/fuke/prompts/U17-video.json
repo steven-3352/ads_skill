@@ -1,0 +1,45 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a rainy night at the entrance of an office building, cool blue lighting with wet ground reflecting the lights, soft diffused ambience and no heavy yellow wash on the faces; skin keeps its natural tone. The path begins exactly as in Picture 1, a medium-near shot: the young East Asian Chinese man (S1) in a black suit stands alone in the falling rain while a young East Asian Chinese female colleague (S3) with long brown wavy hair, a white shirt and a khaki midi skirt steps in from the side, raising a transparent umbrella toward him, preserving their appearance and wardrobe from the reference. The camera holds a near-static medium-near framing. As she moves in, she extends her arm and swings the clear canopy up and over his head until it fully covers him; rain now beads and runs off the transparent dome instead of striking him. In a warm, friendly young voice (S3), she says at a natural, slightly quick pace with no trailing silence: <d>[Chinese]我带伞了一起走吧。</d> The instant the canopy settles over him, the man freezes for about half a second — his eyes drift and lose focus in a brief blank daze, an involuntary flicker of inner hesitation — then he catches himself and pulls his gaze back to the present, subtle and internal, never a blank stare held too long. He settles into the pose, spacing, and composition established by Picture 2 at the end of the shot, the umbrella already covering him and his face just easing out of the startled beat. Faces stay matte with no oily highlights or glare, showing realistic skin pores and subtle iPhone-camera grain, no plastic, CG, or wax-like smoothing. No subtitles, captions, letters, numbers, watermarks, or on-screen text anywhere in the frame.\n\noverall_soundscape: Steady rain falls on the pavement and drums on the taut umbrella canopy, dripping from its rim, over a low night-street ambience with distant passing traffic. Faint breathing is audible under the brief pause.\n\nnon_diegetic_music: A single sustained soft synth note at a slow tempo that lifts subtly as the umbrella covers him, low in volume.",
+  "references": [
+    "replication/output/fuke/assets/U17-first.png",
+    "replication/output/fuke/assets/U17-last.png"
+  ],
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "duration_seconds": 5.0,
+    "checks": [
+      "模式:FL2VA首尾帧连续插值,Picture1=0.00s首帧(女同事举伞靠近/男主独立)→Picture2=5.00s尾帧(伞已遮男主上方/男主微怔),单Shot",
+      "状态变化:女同事侧入→伸臂→透明伞盖顶罩住男主,雨改打伞面不再落男主身;逐动词写清动作起落,指令行S.SS=5.00对齐duration",
+      "对白:女同事(S3)逐字`我带伞了一起走吧。`,<d>[Chinese]内仅语言标签+原文,身份/递送外置",
+      "表演·全片误导顶点钩子:伞罩下男主约0.5s恍神(愣住/眼神游移失焦)随即自己拉回神,细微内心波动不空洞久滞(合fenshou-perform/主约束6)",
+      "灯光:写字楼门口雨夜冷蓝cool blue,地面积水反光,柔和漫射,禁大黄光染脸,人脸自然肤色",
+      "质感:人脸哑光无油光高光/真实毛孔iPhone噪点/禁塑料蜡感CG磨皮;人物锁东亚中国人,男主黑西装,女同事棕色大波浪长发白衬衫卡其半身裙撑透明伞",
+      "语速:女同事自然偏快无死尾;零字幕显式no subtitles/on-screen text;声景=雨声/伞面雨滴/夜街底噪不重复对白;非画内单持续synth微升"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "13258776ab77aa5cb5980f4f3a1fe311111b3f7faea340151b6f612657f5a185",
+    "reviewed_at": "2026-09-25T00:00:00Z"
+  },
+  "identity_anchor": {
+    "character_id": "U17-video",
+    "usage": "U17(上集结尾)写字楼门口雨夜:女同事撑伞遮男主+男主恍神拉回神,FL2VA误导顶点钩子",
+    "locks": [
+      "男主黑西装(S1)",
+      "女同事棕色大波浪长发白衬衫卡其半身裙撑透明伞(S3)",
+      "写字楼门口雨夜冷蓝积水反光",
+      "柔和漫射/人脸哑光/真实质感",
+      "零字幕"
+    ]
+  },
+  "narrative_note": "上集结尾误导顶点:女同事撑伞遮男主上方,男主0.5s恍神→拉回神,FL2VA自U17-first到U17-last,雨夜冷蓝",
+  "images": [
+    "replication/output/fuke/assets/U17-first.png",
+    "replication/output/fuke/assets/U17-last.png"
+  ],
+  "ratio": "16:9",
+  "duration": 5
+}

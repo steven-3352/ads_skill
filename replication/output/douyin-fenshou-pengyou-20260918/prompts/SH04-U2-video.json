@@ -1,0 +1,38 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic. The clip opens on the composition of Picture 1: a mid-shot single of the same East Asian Chinese woman, an unmistakably Chinese woman with real, ordinary Chinese features (never Caucasian, mixed-race or influencer-filter looks), 26-28, a modern urban woman with neat natural long hair in a beige / light-apricot knit sweater, her features, hairstyle and face shape kept identical across the whole film in a bright, airy home living room by the sofa / dining table — the ceiling light is on and natural window light fills the room, neutral warm-white, clean and airy, not dim, not moody, not oppressive, no single amber lamp darkening the room, normal indoor brightness even though it is night outside; strictly an enclosed interior room, absolutely no outdoors, street or plaza. Her chin lifts a little in stubbornness, her body leaning back into the chair, and the tail of her voice goes thin and unsteady — the harder line, the shakier the breath under it. The urban Chinese woman in her late twenties, her voice stubborn, the tail of it going thin (S1), says: <d>[Chinese] 就因为难舍,才更要断。</d> Eye-level, DSLR 50mm, 16:9 horizontal framing (1536x1024 landscape), a mid-shot from the waist up, fixed camera or only the faintest drift with no face-hugging push, shallow depth of field kept mild so the room stays readable, subtle film grain, photorealistic natural color. No text, subtitles, captions, letters, numbers, watermark or logo anywhere in the frame. The entire frame is one single continuous image — no split screen, no side-by-side panels, no multi-panel or picture-in-picture.\n\noverall_soundscape: A low quiet home room tone hums under the shot. Her voice thinning at the end; no other events.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/shots/shot-SH04/images/SH04-U2-first-r3.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:下巴微抬(倔)、身体后靠、尾音发虚 — 内心戏靠身体/微表情演足,非只念台词",
+      "首行为I2VA对齐指令<Picture 1> from [Shot 1] @0.00;单人单镜(交叉硬切在剪辑不在单元内);三段字段齐",
+      "对白verbatim校验:<d>[Chinese] 就因为难舍,才更要断。</d> 一字不改、画内同期口型同步、女=(S1)、身份+delivery在<d>外",
+      "无字幕校验:无任何引号包裹屏幕文字/字幕;居家客厅正常明亮通透、16:9横构、东亚中国人物锁定、单一连续画面禁分屏"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "20ab73857b31b6a1a39b3143fe30fe0241e49fae4bdde9457a802ed3fa492d5a"
+  },
+  "narrative_alignment": {
+    "source_story": "story/screenplay.md",
+    "related_beats": [
+      "拍3.5"
+    ],
+    "related_shots": [
+      "SH04"
+    ],
+    "visual_evidence": [
+      "下巴微抬(倔)、身体后靠、尾音发虚"
+    ],
+    "unresolved_blockers": []
+  }
+}

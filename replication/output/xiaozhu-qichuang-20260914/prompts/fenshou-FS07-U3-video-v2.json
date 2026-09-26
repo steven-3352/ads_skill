@@ -1,0 +1,41 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, photorealistic — the closing establishing beat, a silent performance with no dialogue. The clip opens exactly on <Picture 1>: CAM-B settling onto the mature East Asian Chinese man in his thirties (B, 33-38) sitting alone on the two-seater loveseat, near-to-medium, in the evenly and normally lit late-night East Asian Chinese urban family living room — the ceiling light is on so every corner reads bright, clean and airy, neutral warm-white domestic lighting, low saturation and true-to-life, not dim, not moody, not oppressive, no heavy amber grade, the side-table lamp only a gentle secondary accent; deep quiet dark night outside the window. The lighting stays constant, even and bright for the entire clip, exactly as bright as the first frame — the ceiling light stays on and the whole room stays clearly and evenly lit, bright, clean and airy, and fully readable from the first frame to the very last; the scene must NOT get darker over time, there is NO exposure ramp-down, NO dimming, NO vignette closing in, and NO fade to black at any point; B's face and eyes stay clearly and fully lit and readable all the way through the final frame. He sits alone, hollow and vacant, staring not at the door but at the empty middle seat beside him where the face-down couple photo frame lies — finally seeing the emptiness that was there all along, a space that has been empty for a long time and that he only tonight truly sees; his shoulders slowly sink and he lets out one suppressed, heavy breath, then goes still. The camera holds a static shot; the empty seat and the face-down frame stay in frame beside him, and the final frame holds on him sitting still, clearly lit and readable. Eye-level, DSLR 50mm, 16:9 horizontal framing, shallow depth of field kept mild so the room stays readable throughout, subtle film grain, natural color. No text overlay, no subtitles, no captions.\n\noverall_soundscape: A low late-night room tone hums softly and steadily throughout the whole clip. After a beat, about 0.5 seconds of a very faint, suppressed breath, then the soft room tone continues quietly to the end — no music, no silent black hold.\n\nnon_diegetic_music: N/A",
+  "images": [
+    "/home/ubuntu/ads_skill/replication/output/xiaozhu-qichuang-20260914/assets/fenshou-KF-FS07-U3-first.png"
+  ],
+  "duration": 4,
+  "ratio": "16:9",
+  "generate_audio": true,
+  "watermark": false,
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "表演/情绪校验:B独坐失神、看的是身旁空位(不是门)、肩慢慢塌+一次压抑呼吸后静止;内心戏靠留白与空位承担,脸清晰可读",
+      "关键修正(收尾锁亮):删去原'渐渐变暗至黑场/末2s静音黑场';改为全程与首帧等亮、顶灯开、房间明亮通透可读到末帧,严禁变暗/曝光下滑/渐黑/暗角,B脸到最后一帧仍清晰(满足明亮通透+表情可读硬线)",
+      "首行I2VA对齐<Picture 1> from [Shot 1] @0.00;三段字段齐;末帧定格在B清晰可读",
+      "无对白silent performance:全片无<d>;soundscape=持续轻室内底噪+0.5s压抑呼吸,无黑场无音乐,non_diegetic_music=N/A",
+      "无字幕:无引号包裹屏幕文字;16:9;东亚中国人物锁定"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1c0fbface6e256f80f1e37acdf4dc9cc5c998586218825dc4c9faac06dde5f99"
+  },
+  "narrative_alignment": {
+    "source_story": "story/fenshou-screenplay.md",
+    "related_beats": [
+      "B7"
+    ],
+    "related_shots": [
+      "FS07"
+    ],
+    "visual_evidence": [
+      "B独坐失神看身旁空位、肩塌一次压抑呼吸后静止",
+      "空位+倒扣合照是主角:空了很久今晚才看见",
+      "收尾锁亮不渐黑,B脸读到末帧"
+    ],
+    "unresolved_blockers": []
+  }
+}

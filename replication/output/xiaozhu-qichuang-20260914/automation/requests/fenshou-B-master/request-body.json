@@ -1,0 +1,7 @@
+{
+  "model": "gpt-image-2",
+  "prompt": "Photorealistic cinematic photograph of an East Asian Chinese man, aged 33 to 38, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face), waist-up upper-body portrait. Mature adult man, visibly tired and worn with a weary heaviness in the eyes; a calm subdued baseline expression, not smiling, not exaggerated, faint fatigue under the eyes. Natural skin with fine pores and light stubble, short black hair slightly disheveled, plain home clothing. Setting: a lived-in late-night living room, warm yellow table-lamp light as the key source, shallow depth of field with a softly blurred background, subtle fine film grain, warm filmic color grade. His face is clearly visible and evenly, softly lit for stable identity anchoring; near-frontal, eye-level framing, upper body filling the frame. DSLR 50mm realistic look, 16:9 horizontal composition. No text, no subtitles, no captions, no letters, no numbers, no watermark, no logo anywhere in the image.",
+  "size": "1344x768",
+  "quality": "high",
+  "output_format": "png"
+}

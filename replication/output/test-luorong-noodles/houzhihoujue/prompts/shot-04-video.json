@@ -1,0 +1,40 @@
+{
+  "id": "shot-04-video",
+  "role": "镜4 心疼｜FL2VA｜女低头抹眼角显委屈边说、男抿嘴放软起身侧向轻揽入怀边应；严禁泪眼/红眼/发光眼",
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, iPhone handheld footage with realistic skin texture, natural pores, and fine film grain, no plastic or waxy CG look. In the same bright warm-white East Asian Chinese living room with the ceiling light on, airy and evenly lit, a medium shot begins on the framing of Picture 1 with the woman seated, her head lowering and shoulders slightly sagging in a quiet, aggrieved posture. She brings the back of one finger to just beneath her eye corner and lightly wipes once — her eyes stay clear and dry, with no tears, no redness, and no glow; the mature East Asian Chinese woman in her thirties, her voice low and muffled and holding it in (S1), says in sync on camera: <d>[Chinese] 我不是气你，我就是委屈。</d> The man, pressing his lips together and softening, rises and steps in from the side to gently gather her into his arms in a soft, yielding embrace; the mature East Asian Chinese man in his thirties, his voice going soft (S2), says in sync on camera: <d>[Chinese] 知道，是我不好。</d> The camera holds a nearly static shot with slight handheld drift, ending on the exact posture and composition of Picture 2 at the five-second mark, the two enclosed together. Both faces stay matte under soft diffused light with no glare or reflection; East Asian Chinese features throughout, no brand or logo anywhere.\n\noverall_soundscape: A quiet living-room tone hums underneath with a faint appliance drone. Clothing rustles as he rises and steps in, and fabric brushes softly as he wraps his arms around her.\n\nnon_diegetic_music: N/A",
+  "prompt_zh": "镜4心疼·FL2VA。首帧=女低头肩塌委屈，尾帧=男揽入怀两人相拥。女指背在眼角下轻抹一次(眼干净,无泪无红无光),画内同期口型说(S1)『我不是气你，我就是委屈。』→男抿嘴放软起身侧向轻揽入怀应(S2)『知道，是我不好。』语速正常不留死尾。静止微手持，明亮暖白顶灯居家光，哑光真实iPhone感。声景仅居家底噪+起身布料/相拥衣物声。情绪避坑:只走低头/抹眼角/肩塌,严禁泪光红眼发光眼。",
+  "model": "MiniMax-H3",
+  "durationSeconds": 5,
+  "duration": 5,
+  "ratio": "9:16",
+  "generate_audio": true,
+  "watermark": false,
+  "references": [
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-female.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/assets/master-male.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "state-change action with in-frame synced dialogue: woman lowers head + wipes under eye corner while speaking (S1) -> man rises, softens and pulls her into a gentle embrace while answering (S2)",
+      "对白verbatim校验: <d>[Chinese] 我不是气你，我就是委屈。</d> 与 <d>[Chinese] 知道，是我不好。</d> 逐字逐标点不改; 身份+ID(女S1/男S2)+delivery(声音发闷隐忍/放软) 全写在 <d> 之外; 画内同期、口型同步",
+      "表演校验: 演委屈与心疼的内心戏(隐忍/放软)而非只念台词; 语速正常、说完不留死尾静默",
+      "emotion beats 只走低头/肩塌/指背抹眼角; 严禁泪光、红眼、发光眼(H3泪眼易渲成发光妖异眼)",
+      "duration 5.00s 单镜一镜到底; 两人对白衔接不跨剪辑点(无cut)",
+      "soundscape 仅居家底噪+起身布料/相拥衣物声, 无人声重复; non_diegetic_music N/A",
+      "visual: 真实iPhone质感/自然毛孔/细颗粒, 哑光皮肤无油光高光, 无塑料蜡感CG感; 顶灯开明亮通透暖白不压暗; East Asian中国人物; 无品牌logo; prompt内无引号包裹的屏幕字幕文字",
+      "FL2VA: Picture 1 opens at 0.00s, Picture 2 lands the final pose at 5.00s; 单镜"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "041ea5fbd7854894a5ff9e9a4d39a9e5dce775c7edd7b9224a011e97b10f470c"
+  },
+  "images": [
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/images/first.png",
+    "replication/output/test-luorong-noodles/houzhihoujue/shots/shot-04/images/last.png"
+  ]
+}

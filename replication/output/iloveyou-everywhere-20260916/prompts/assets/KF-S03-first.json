@@ -1,0 +1,35 @@
+{
+  "asset_type": "image",
+  "keyframe_id": "KF-S03-first",
+  "shot": "S03",
+  "role": "山川·立基帧(万仞雪山巨脊)",
+  "generator": "GPT Image (gpt-image-2)",
+  "size": "1344x768",
+  "video_model": "pending (倾向 MiniMax-H3)",
+  "authoring_skill": "h3-prompt-writing",
+  "mode": "text2img (humans tiny accents only)",
+  "references": [],
+  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Sweeping ultra-wide aerial view soaring over immense towering snow-mountain ridges, colossal ridgelines cutting diagonally across the frame, warm golden dawn light glancing off the snow. A single valley in the fold holds one tiny warm speck — an East Asian Chinese couple holding hands, barely perceptible, pure accent. Environment more than 90 percent of the frame, vast negative space of pale sky. Thin drifting mist between the peaks, soft diffused light, no harsh shadows, translucent warm palette of warm-gold snow, pale teal sky and cream mist. Majestic yet bright, joyful, mind-freeing atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
+  "negative": "close-up, big face, character dominates frame, crowded, cluttered, oversaturated, harsh sharp shadows, gloomy cold dead-grey, dark storm, text, subtitles, watermark, logo, western/caucasian faces",
+  "note": "巨物=雪山巨脊;山坳暖点=两人牵手小影,保持暖色可辨但极小。谷底渐现绿意为向森林过渡的末帧铺垫。",
+  "status": "prompt_ready_pending_model_and_budget",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "text2img",
+    "reviewed_at": "2026-09-16",
+    "checks": [
+      "16:9横构图锁1344x768,显式never vertical防画幅拉伸",
+      "写实电影真人,禁illustration/anime/3D",
+      "巨物锚点=万仞雪山巨脊(对角构图),人物仅牵手暖点(~5%)+显式East Asian Chinese防欧美脸",
+      "通透暖光/漫射薄雾/无硬阴影/巨量留白,明亮幸福非冷调死灰",
+      "负面词齐:近景/大脸/人物占画/杂乱/过饱和/硬阴影/冷调/字幕水印logo/欧美脸",
+      "底部15-18%留干净字幕安全区已落文",
+      "结尾禁字/字幕/水印/logo/中文"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "eac42aa6a51cf510c90a056baa56ff2a5d7b107cd0226dbdd4847e319f0d3adf"
+  }
+}

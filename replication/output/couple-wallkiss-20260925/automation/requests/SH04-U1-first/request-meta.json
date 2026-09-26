@@ -1,0 +1,11 @@
+{
+  "request_id": "SH04-U1-first",
+  "prompt_file": "/home/ubuntu/ads_skill/replication/output/couple-wallkiss-20260925/prompts/SH04-U1-first.json",
+  "output": "/home/ubuntu/ads_skill/replication/output/couple-wallkiss-20260925/shots/shot-SH04/images/SH04-U1-first.png",
+  "model": "gpt-image-2",
+  "size": "768x1344",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-25T22:01:14+08:00"
+}

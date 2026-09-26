@@ -1,0 +1,1 @@
+{"code":"fail_to_fetch_task","message":"{\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `content[0].image_url.url` specified in the request is not valid: the specified asset is not an image. Request id: 021789896040066bb3fbf3dabf37e3128b6921120665470f7df8f\",\"param\":\"content[0].image_url.url\",\"type\":\"BadRequest\"}}","data":null}

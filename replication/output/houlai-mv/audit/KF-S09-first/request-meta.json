@@ -1,0 +1,14 @@
+{
+  "request_id": "houlai-KF-S09-first-1789887947-586",
+  "prompt_file": "replication/output/houlai-mv/prompts/KF-S09-first.json",
+  "output": "replication/output/houlai-mv/shots/KF-S09-first.png",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/you-budong-me/assets/master-A.png",
+    "replication/output/you-budong-me/assets/master-B.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-20T15:05:48+08:00"
+}

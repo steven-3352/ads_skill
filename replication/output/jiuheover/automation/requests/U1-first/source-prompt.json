@@ -1,0 +1,33 @@
+{
+  "prompt": "写实情感短剧首帧，竖屏 9:16 取景，iPhone 手持轻微晃动的真实质感、不摆拍不打光。场景：夜里一间小酒馆靠窗的老位置，暖白偏暖的顶灯与桌面吊灯全开、整体明亮温暖、光色自然中性偏暖白（不压暗、不阴郁、不文艺单光源）。前景木桌上一只素白无标白瓷瓶与两只白瓷小杯，瓶身与杯身无任何文字、logo、标签、品牌；女主苏晚（East Asian 中国人面孔，发型/体型严格随参考母板 A）的一只手刚把一只满杯轻放到桌上。构图为竖屏近景：白瓷瓶与满杯占据下三分之一前景，苏晚的脸在上方入画，她看着对面的人、眼神疲惫克制、忍着一句话要问出口。窗外是被雨化开的霓虹光斑（暖色、柔和），窗上有细雨痕。人物面孔发型体型严格保持与参考母板一致。anti-subtitle：no subtitles, no captions, no on-screen text, no Chinese characters, no watermark, no logo。",
+  "references": [
+    "replication/output/jiuheover/assets/master-A.png"
+  ],
+  "size": "768x1344",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "checks": [
+      "竖屏9:16取景+size 768x1344，锁 H3 竖屏画幅一致防拉伸",
+      "East Asian 中国人面孔、随母板A锁身份，防文生图默认欧美脸",
+      "酒=素白无标白瓷瓶，显式无文字/logo/标签/品牌（合规红线）",
+      "明亮暖白顶灯+桌面吊灯、看得清脸，不压暗煽情",
+      "anti-subtitle：无字幕/字幕条/屏幕文字/中文字/水印/logo",
+      "物件先行：白瓷瓶+满杯前景，为pre-lap人声与递减酒位起点铺垫"
+    ],
+    "unresolved_blockers": [],
+    "mode": "T2I·母板A(苏晚)",
+    "reviewed_prompt_sha256": "f72432cec54f3dbe7a96ec3f7b63b3a3c6987347365f685d77576feaba6ae3ca"
+  },
+  "narrative_alignment": {
+    "source_story": "story/酒喝完了-预告片剧本-从正片提炼版.md（screenplay_confirmed）钩子0–5s",
+    "related_beats": [
+      "b01"
+    ],
+    "related_shots": [
+      "01"
+    ]
+  }
+}
