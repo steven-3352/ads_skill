@@ -1,0 +1,41 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-03 关心被当成管束 H3视频",
+  "mode": "I2VA",
+  "shot": "03",
+  "unit": "unit-03",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, restrained contemporary Chinese-life cinema in the same apartment dining-kitchen at night. The opening exactly preserves <Picture 1>: Zhou Mingyuan stands in the left foreground wearing the same charcoal-gray commuter jacket over a fog-gray shirt, one hand gripping the jacket front; Lin Jing remains seated at the right side of the table holding the black phone; the three dishes, two place settings, right-side door and room lighting remain fixed. Zhou avoids her gaze, tightens his grip on the jacket front, adjusts it with a short impatient movement, then turns his head farther away as his shoulders tense. The camera holds a medium-close view with slight natural breathing but no dramatic shake. [Shot 2] At 00:05.000, the camera cuts to Lin Jing in a restrained medium-close reverse angle while Zhou's shoulder stays soft in the near foreground and the table remains visibly between them. Lin Jing lowers the phone toward the tabletop but does not stand or pursue him; she takes one controlled breath and keeps looking directly at him, worry visible beneath restrained anger. Both identities, hair, clothing, room layout, three dishes and two place settings remain consistent. No audible or lip-synced dialogue is generated; both mouths remain naturally closed for final Chinese dialogue in post. No pointing, yelling, crying, touching or physical confrontation.\n\noverall_soundscape: Quiet room tone with refrigerator hum and a faint wall clock; jacket fabric moves quickly, followed by a soft phone touch on the table and one controlled breath.\n\nnon_diegetic_music: N/A. Absolutely no readable text, subtitles, captions, title cards, watermark, logo, pinyin or interface graphics anywhere in frame.",
+  "images": ["shots/shot-03/images/unit-03-first.png"],
+  "content": [{"type":"image_url","image_url":{"url":"pending"},"local_path":"replication/output/love-story-nagging-20260913/shots/shot-03/images/unit-03-first.png","role":"first_frame"}],
+  "duration": 10,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": false,
+  "watermark": false,
+  "output": "shots/shot-03/video/unit-03.mp4",
+  "status": "generated_rejected_pending_user_decision",
+  "generated_at": "2026-09-13",
+  "output_sha256": "40aac3004afbbc5373f38af3e25240df8c19e06a2ba5566c5f544f82bc4f62aa",
+  "provider_task_id": "01a09ab4-2a10-7b94-9aeb-00752f31d86a",
+  "technical_review": {
+    "result": "fail",
+    "duration_seconds": 10.125,
+    "dimensions": "1344x768",
+    "frame_rate": 24,
+    "video_codec": "h264",
+    "audio_stream": "aac 32000Hz stereo; replace in Jianying final mix",
+    "passed_checks": [
+      "前半段丈夫抓住外套并回避视线",
+      "约5秒处完成同一空间的反打",
+      "人物、服装、餐桌菜品和房间连续",
+      "无可读文字或水印"
+    ],
+    "failure_reason": "后半段妻子明显张口，并从座位站起；违反模型不承担对白及妻子不站起、不追赶的已确认要求",
+    "retry_authorized": false
+  },
+  "note": "5秒处正反打；全部对白留给剪映，视频模型只承担防御与克制回应的表演。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"video","mode":"I2VA","reviewed_at":"2026-09-13","checks":["I2VA首帧在0.00秒完全引用","10秒且5秒处单次正反打","丈夫外套急动作与回避视线","妻子坐姿手机与餐桌阻隔连续","不生成准确中文对白","无文字水印和肢体冲突"],"unresolved_blockers":[],"reviewed_prompt_sha256":"86b501711e51d4e551ee81d8ffa5ada3bbf1a96679a165e8e234137f87045b12"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B03","B04"],"related_shots":["03"],"visual_evidence":["丈夫抓紧外套并回避视线","丈夫动作加快表现防御","妻子没有起身追赶","正反打保留餐桌阻隔"],"unresolved_blockers":[]}
+}

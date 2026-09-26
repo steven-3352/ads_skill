@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-12-first 德行首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与shot-11完全相同的住宅区人行道、旧式路灯、低矮围墙、暗绿树木和远处住宅窗灯，保持同一行进方向和人物左右关系。侧前方双人中近景：周明远严格保持人物master中的脸型发型、深炭灰夹克与雾灰衬衫，仍在画面左侧，左手提同一个银色保温袋，右臂被妻子挽住；他此刻仍看向前方、嘴唇闭合，还没有转头笑。林静严格保持人物master中的低髻、浅燕麦开衫和浅蓝牛仔裤，始终位于画面右侧，左手挽丈夫右臂，右手握黑色手机，正侧头继续认真叮嘱，神情有余怒但不尖锐。两人步速自然缓慢，路灯形成真实明暗变化，背景为可继续走远的纵深街道，结尾片名区域保持干净但首帧不出现文字。画面下方留字幕安全区。Clean frame, no readable text, no title, no subtitles, no captions, no watermark, no logo, no pinyin, no swapped positions, no embrace, no exaggerated smile.",
+  "output": "shots/shot-12/images/unit-12-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；丈夫转头轻笑、妻子回看和两人走远均留给视频，片名由后期添加。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["与shot-11同街道同方向同左右关系","丈夫首帧尚未转头笑","妻子继续叮嘱且手机连续","后方留走远纵深与后期片名净区","无文字水印"],"unresolved_blockers":[],"reviewed_prompt_sha256":"a95dd631a01a2a65d4f518f4a8694b858fd090bacc61f78dd03cf82babf8ab93"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B16","B17"],"related_shots":["12"],"visual_evidence":["妻子继续叮嘱别摔门","丈夫尚未转头笑","妻右夫左与提袋关系连续","街道纵深支持两人走远"],"unresolved_blockers":[]}
+}

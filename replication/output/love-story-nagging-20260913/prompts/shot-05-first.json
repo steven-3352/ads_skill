@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-05-first 烧烤摊抱怨首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，当代中国居民区边缘的小型露天烧烤摊夜景，稳定双人中景。褪色深绿色雨棚覆盖画面上方；韩磊严格保持人物master中的38岁圆脸、短寸、宽肩微胖体型、深橄榄绿短袖和黑色帆布围裙，站在画面左侧炭火烤炉工作侧，右手握烤串夹正在翻串，刚自然抬眼看向朋友。周明远严格保持人物master中的35岁脸型、短黑发和深炭灰夹克，坐在画面右侧不锈钢窄桌外侧，身体前倾、手肘靠近桌缘，正准备抱怨。桌上固定有烤串托盘、透明无字玻璃杯和银色保温袋，保温袋在丈夫手边；远处只有虚化居民楼窗灯和便利店光块，不出现可读店招。顶部中性工作灯、炭火橙红侧后光和城市冷光混合，真实烟气不过量。人物不看镜头，表情生活化。画面下方留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no nightclub neon, no exaggerated comedy.",
+  "output": "shots/shot-05/images/unit-05-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/han-lei-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；建立烧烤摊固定左右关系与道具位置。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["16:9烧烤摊空间建立","韩磊在烤炉工作侧且围裙完整","周明远坐在窄桌外侧","保温袋与托盘位置锁定","无店招文字与夸张喜剧表演"],"unresolved_blockers":[],"reviewed_prompt_sha256":"6684a096f2e0e67e2c24c71dcd023975f5daf3b884ded8fd1028c81c1e3dd31f"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B06","B07"],"related_shots":["05"],"visual_evidence":["老板翻串时抬眼观察","丈夫前倾准备抱怨","烤炉与坐席关系清楚","银色保温袋在丈夫手边"],"unresolved_blockers":[]}
+}

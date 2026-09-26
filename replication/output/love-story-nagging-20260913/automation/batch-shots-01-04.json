@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "shots-01-04-first-pass",
+  "status": "paused_on_shot_03_video_review",
+  "authorizedAt": "2026-09-13",
+  "scope": {
+    "shots": ["01", "02", "03", "04"],
+    "imageCount": 4,
+    "videoSeconds": 38,
+    "imageCost": 1.0,
+    "videoCost": 7.6,
+    "costCap": 8.85,
+    "automaticRetry": false
+  },
+  "deferredShots": ["05", "06", "07", "08", "09", "10", "11", "12"],
+  "permissionRequired": {
+    "imageProviderUpload": ["assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png"],
+    "videoProviderUpload": ["shots/shot-01/images/unit-01-first.png", "shots/shot-02/images/unit-02-first.png", "shots/shot-03/images/unit-03-first.png", "shots/shot-04/images/unit-04-first-v2.png"],
+    "approvedAt": "2026-09-13",
+    "uploaded": true,
+    "charged": true
+  },
+  "assets": [
+    {"id":"shot-01-first","kind":"image","status":"accepted","cost":0.25,"prompt":"prompts/shot-01-first.json","output":"shots/shot-01/images/unit-01-first.png","sha256":"4d40c86d0e65807638d7469009b1212a863b457c954d4f806e6df29ac564075a","dimensions":"1672x941"},
+    {"id":"shot-02-first","kind":"image","status":"accepted","cost":0.25,"prompt":"prompts/shot-02-first.json","output":"shots/shot-02/images/unit-02-first.png","sha256":"c981a598b10370b628b0bbd45e3389da851d915bf8b64da47a3fd63869f1e44d","dimensions":"1672x941"},
+    {"id":"shot-03-first","kind":"image","status":"accepted","cost":0.25,"prompt":"prompts/shot-03-first.json","output":"shots/shot-03/images/unit-03-first.png","sha256":"fbc7be09594b67eac638c0d4076f3f42c70ec61a00c41f19a75478660dc05b59","dimensions":"1672x941"},
+    {"id":"shot-04-first","kind":"image","status":"rejected","cost":0.25,"prompt":"prompts/shot-04-first.json","output":"shots/shot-04/images/unit-04-first.png","sha256":"7945f09c9d08d0453689c7ef5737ba37ccdc0016a91f5b917f509b2b53da8457","dimensions":"1536x1024","rejectionReason":"门外错误为白天；丈夫身穿夹克同时手提第二件外套"},
+    {"id":"shot-01-video","kind":"video","status":"accepted","cost":2.0,"durationSeconds":10,"prompt":"prompts/shot-01-video.json","output":"shots/shot-01/video/unit-01.mp4","sha256":"c1348bf38aec5d7128704f7001bbab70ffbd113ed2c0a00038bfc64fa020b977","actualDurationSeconds":10.125,"dimensions":"1344x768","frameRate":24},
+    {"id":"shot-02-video","kind":"video","status":"accepted_with_user_override","cost":2.0,"durationSeconds":10,"prompt":"prompts/shot-02-video.json","output":"shots/shot-02/video/unit-02.mp4","sha256":"60ea2eaea460da50a57d2e12400c229837df5acfb6baf5db35a21d6306e34c13","actualDurationSeconds":10.125,"dimensions":"1344x768","frameRate":24,"knownDeviation":"后半段妻子明显张口说话，违反模型不承担对白、嘴唇保持闭合的要求","userDecision":"接受，然后做完03，04。","acceptedAt":"2026-09-13"},
+    {"id":"shot-03-video","kind":"video","status":"rejected_pending_user_decision","cost":2.0,"durationSeconds":10,"prompt":"prompts/shot-03-video.json","output":"shots/shot-03/video/unit-03.mp4","sha256":"40aac3004afbbc5373f38af3e25240df8c19e06a2ba5566c5f544f82bc4f62aa","actualDurationSeconds":10.125,"dimensions":"1344x768","frameRate":24,"rejectionReason":"后半段妻子明显张口，并从座位站起；违反模型不承担对白及妻子不站起、不追赶的要求"},
+    {"id":"shot-04-video","kind":"video","status":"not_submitted_after_stop","cost":1.6,"durationSeconds":8,"prompt":"prompts/shot-04-video.json","output":"shots/shot-04/video/unit-04.mp4"}
+  ],
+  "videoGenerationProgress": {
+    "generatedShots": ["01", "02", "03"],
+    "acceptedShots": ["01", "02"],
+    "acceptedWithOverrideShots": ["02"],
+    "rejectedShots": ["03"],
+    "notSubmittedShots": ["04"],
+    "incurredVideoSeconds": 30,
+    "incurredVideoCost": 6.0,
+    "totalSpentIncludingImages": 8.0,
+    "automaticRetry": false,
+    "stopReason": "shot-03 wife speaks and stands despite post-dub and seated-performance constraints",
+    "resumedReason": "用户接受分镜02已知口型偏差并要求完成03、04"
+  },
+  "retryProposal": {
+    "asset": "shot-04-first-v2",
+    "incrementalCost": 0.25,
+    "changes": ["明确门外为深夜黑蓝环境", "丈夫只穿雾灰衬衫", "画面中仅有一件深炭灰夹克且握在右手", "保持妻子、餐桌、三盘菜和右侧门位"],
+    "authorized": true,
+    "authorizedAt": "2026-09-13",
+    "result": "user_override_accept",
+    "output": "shots/shot-04/images/unit-04-first-v2.png",
+    "sha256": "c3c1c7255065c5e45fd00cfd203fa2b06531b590a063e9c2f650c35bc1028738",
+    "rejectionReason": "修复未生效：门外仍为白天，丈夫仍身穿夹克并手提第二件",
+    "userDecision": "先过，生成视频"
+  }
+}

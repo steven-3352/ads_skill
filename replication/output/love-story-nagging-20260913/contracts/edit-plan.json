@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-nagging-20260913",
+  "status": "draft",
+  "targetSeconds": 118,
+  "principle": "以对白自然语速决定剪辑，不压缩台词；用真实动态反应、动作停顿和声音桥补足节奏，不使用静态推拉。",
+  "timeline": [
+    {"shot":"01","generatedSeconds":10,"targetWindow":"0-10","role":"等待、入门、建立空间"},
+    {"shot":"02","generatedSeconds":10,"targetWindow":"10-20","role":"妻子追问五小时无消息"},
+    {"shot":"03","generatedSeconds":10,"targetWindow":"20-30","role":"关心与管束的理解冲突"},
+    {"shot":"04","generatedSeconds":8,"targetWindow":"30-38","role":"摔门和声音桥"},
+    {"shot":"05","generatedSeconds":12,"targetWindow":"38-50","role":"烧烤摊抱怨"},
+    {"shot":"06","generatedSeconds":10,"targetWindow":"50-60","role":"后悔问题与抹药细节"},
+    {"shot":"07","generatedSeconds":12,"targetWindow":"60-72","role":"胃药和十斤蒜"},
+    {"shot":"08","generatedSeconds":8,"targetWindow":"72-80","role":"幸福与已婚者调侃"},
+    {"shot":"09","generatedSeconds":8,"targetWindow":"80-88","role":"特辣烤串回扣"},
+    {"shot":"10","generatedSeconds":8,"targetWindow":"88-96","role":"妻子找来与赔罪"},
+    {"shot":"11","generatedSeconds":7,"targetWindow":"96-103","role":"回家路上前半段念叨"},
+    {"shot":"12","generatedSeconds":7,"targetWindow":"103-110","role":"笑与德行"}
+  ],
+  "deterministicPostSeconds": {
+    "openingContextCard": 2,
+    "sceneSoundBridgesAndBreathingRoom": 4,
+    "endingTitleHold": 2,
+    "estimatedFinalTotal": 118
+  },
+  "voiceTracks": [
+    {"id":"wife","speaker":"林静","source":"剪映免费自然女声，待实际选择和计时"},
+    {"id":"husband","speaker":"周明远","source":"剪映免费自然男声，待实际选择和计时"},
+    {"id":"owner","speaker":"韩磊","source":"剪映免费松弛男声，待实际选择和计时"}
+  ],
+  "export": {"resolution":"1920x1080","frameRate":24,"videoCodec":"H.264","audio":"AAC 48kHz stereo","loudness":"-16 LUFS, true peak <= -1.5 dBTP"}
+}
+

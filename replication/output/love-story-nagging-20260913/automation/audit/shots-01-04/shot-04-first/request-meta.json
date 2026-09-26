@@ -1,0 +1,14 @@
+{
+  "request_id": "love-story-nagging-shot-04-first-v1",
+  "prompt_file": "replication/output/love-story-nagging-20260913/prompts/shot-04-first.json",
+  "output": "replication/output/love-story-nagging-20260913/shots/shot-04/images/unit-04-first.png",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/love-story-nagging-20260913/assets/zhou-mingyuan-master.png",
+    "replication/output/love-story-nagging-20260913/assets/lin-jing-master.png"
+  ],
+  "automatic_retry": false,
+  "endpoint": "images/edits",
+  "request_ready_at": "2026-09-13T11:21:16Z"
+}

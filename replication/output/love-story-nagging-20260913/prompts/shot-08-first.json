@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-08-first 其实挺幸福首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与前面烧烤摊镜头完全相同的稳定双人中景。韩磊严格保持人物master中的圆脸短寸、橄榄绿短袖和黑色帆布围裙，站在画面左侧烤炉后方，低头翻动烤串但余光留意朋友。周明远严格保持人物master中的脸型发型和深炭灰夹克，坐在画面右侧不锈钢窄桌外侧，身体刚开始从前倾姿态向椅背放松，肩膀已经松开但尚未完全靠回，嘴角只有极轻微笑意，目光落在桌面银色保温袋上。烤串托盘、无字玻璃杯和保温袋保持固定位置，炭火橙红、中性工作灯和城市冷光保持混合。真实生活表演，不看镜头。画面下方留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no broad grin, no slapstick gesture, no changed set layout.",
+  "output": "shots/shot-08/images/unit-08-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/han-lei-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；以身体刚开始后靠作为情绪放松的可见起点。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["稳定双人中景","丈夫由前倾向放松后靠的起点","老板继续工作不做喜剧反应","烧烤摊空间和桌面道具连续","无文字水印"],"unresolved_blockers":[],"reviewed_prompt_sha256":"91e0654669d93e7e5627595a5776d64dd72b012f004f657cc8c3a1f8eb11684c"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B12"],"related_shots":["08"],"visual_evidence":["丈夫肩膀放松并开始后靠","轻微笑意而非夸张大笑","老板低头翻串","视线落在给妻子带走的保温袋"],"unresolved_blockers":[]}
+}

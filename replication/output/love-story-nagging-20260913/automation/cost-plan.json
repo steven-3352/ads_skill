@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-nagging-20260913",
+  "status": "paused_on_shot_03_video_review",
+  "currency": "CNY",
+  "rates": {"image": 0.25, "videoSecond": 0.2},
+  "firstPass": {
+    "characterMasterImages": 3,
+    "shotFirstFrames": 12,
+    "totalImages": 15,
+    "imageCost": 3.75,
+    "videoSeconds": 110,
+    "videoCost": 22.0,
+    "total": 25.75
+  },
+  "spent": 8.0,
+  "spentBreakdown": {
+    "characterMasterImages": 3,
+    "imageCost": 0.75,
+    "shotFirstFrames": 4,
+    "shotFirstFramesAccepted": 3,
+    "shotFirstFramesRejected": 1,
+    "shotFirstFrameCost": 1.0,
+    "videoSeconds": 30,
+    "videosGenerated": 3,
+    "videosAccepted": 2,
+    "videosAcceptedWithOverride": 1,
+    "videosRejected": 1,
+    "videoCost": 6.0
+  },
+  "activeBatch": {
+    "id": "shots-01-04-first-pass",
+    "shots": ["01", "02", "03", "04"],
+    "images": 4,
+    "imageCost": 1.0,
+    "videoSeconds": 38,
+    "videoCost": 7.6,
+    "costCap": 8.85,
+    "authorized": true,
+    "externalAssetUploadPermission": true,
+    "automaticRetry": false,
+    "incurredVideoSeconds": 30,
+    "incurredVideoCost": 6.0,
+    "remainingAuthorizedVideoSeconds": 8,
+    "remainingAuthorizedVideoCost": 1.6,
+    "remainingShotsDeferred": ["05", "06", "07", "08", "09", "10", "11", "12"]
+  },
+  "retryReserve": 0,
+  "spentRetries": 0.25,
+  "authorization": {
+    "approved": true,
+    "scope": "首次生成计划；不含任何失败重试",
+    "approvedAt": "2026-09-13"
+  },
+  "gate": {
+    "open": false,
+    "reason": "分镜03首版出现未批准的口型和起身动作，按不自动重试规则暂停；等待用户决定接受或授权追加10秒重做。分镜04尚未提交，分镜05-12保持关闭"
+  }
+}

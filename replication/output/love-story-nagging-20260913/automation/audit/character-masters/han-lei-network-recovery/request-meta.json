@@ -1,0 +1,11 @@
+{
+  "request_id": "love-story-nagging-han-lei-v1-network-recovery",
+  "prompt_file": "replication/output/love-story-nagging-20260913/prompts/han-lei-master.json",
+  "output": "replication/output/love-story-nagging-20260913/assets/han-lei-master.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": "2026-09-13T10:36:16Z"
+}

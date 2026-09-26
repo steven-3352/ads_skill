@@ -1,0 +1,46 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-02 五小时没有消息 H3视频",
+  "mode": "I2VA",
+  "shot": "02",
+  "unit": "unit-02",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, restrained contemporary Chinese-life cinema in the same apartment dining-kitchen at night. The opening exactly preserves <Picture 1>: Zhou Mingyuan's shoulder and the back of his head remain softly out of focus in the left foreground; Lin Jing sits opposite him behind the dark wooden table, holding the same black phone upright in her right hand; the three dishes, two place settings, sage-green kitchen and right-side entry door remain unchanged. The camera holds the over-the-shoulder medium-close composition and pushes in with very small amplitude at slow speed. Lin Jing briefly looks down at the blank phone screen, lifts it a few centimeters as visual evidence of unanswered calls, then lowers it gently to the tabletop on her right while maintaining direct eye contact with Zhou. Her expression moves from contained worry to firmer disappointment, never shouting or crying. Zhou remains mostly still in the foreground, making one small tired shift of his shoulder. No audible or lip-synced dialogue is generated; her lips stay relaxed and closed so final Chinese dialogue can be added in post. No cuts, no pointing, no physical confrontation, no moving dishes or changing room geometry.\n\noverall_soundscape: Low refrigerator hum, a faint wall clock, subtle phone movement against her palm, and the soft touch of the phone meeting the wooden table.\n\nnon_diegetic_music: N/A. Absolutely no readable phone text, subtitles, captions, title cards, watermark, logo, pinyin or interface graphics anywhere in frame.",
+  "images": ["shots/shot-02/images/unit-02-first.png"],
+  "content": [{"type":"image_url","image_url":{"url":"pending"},"local_path":"replication/output/love-story-nagging-20260913/shots/shot-02/images/unit-02-first.png","role":"first_frame"}],
+  "duration": 10,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": false,
+  "watermark": false,
+  "output": "shots/shot-02/video/unit-02.mp4",
+  "status": "generated_accepted_by_user_with_known_lip_movement",
+  "generated_at": "2026-09-13",
+  "output_sha256": "60ea2eaea460da50a57d2e12400c229837df5acfb6baf5db35a21d6306e34c13",
+  "provider_task_id": "01a09aa7-8a20-784c-b714-51858d719704",
+  "technical_review": {
+    "result": "fail",
+    "duration_seconds": 10.125,
+    "dimensions": "1344x768",
+    "frame_rate": 24,
+    "video_codec": "h264",
+    "audio_stream": "aac 32000Hz stereo; replace in Jianying final mix",
+    "passed_checks": [
+      "手机举起后放回桌面的动作清楚",
+      "人物、服装、餐桌菜品和房间连续",
+      "无可读文字或水印",
+      "具有真实人物与镜头运动"
+    ],
+    "failure_reason": "后半段妻子明显张口说话，违反模型不承担对白、嘴唇保持闭合的已确认要求",
+    "retry_authorized": false,
+    "user_override": {
+      "accepted": true,
+      "accepted_at": "2026-09-13",
+      "decision": "接受，然后做完03，04。"
+    }
+  },
+  "note": "完整妻子与丈夫对白在剪映后期配音；本镜只生成克制表演与手机动作。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"video","mode":"I2VA","reviewed_at":"2026-09-13","checks":["I2VA首帧在0.00秒完全引用","10秒且16:9","举手机到放回桌面的动作清楚","丈夫肩后与餐桌阻隔连续","不生成准确中文对白","无文字水印"],"unresolved_blockers":[],"reviewed_prompt_sha256":"83a692f1bf629f03dd27f771ae015c0f48f836b445e7202314d2ac65ecb19224"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B02"],"related_shots":["02"],"visual_evidence":["妻子以手机指向联系不上","手机回到桌面右侧","妻子直视丈夫","情绪从担心转为失望"],"unresolved_blockers":[]}
+}

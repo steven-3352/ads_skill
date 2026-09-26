@@ -3,7 +3,10 @@ set -Eeuo pipefail
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$BASE_DIR/../.." && pwd)"
-ENV_FILE="/home/ubuntu/ads_skill/.env"
+ENV_FILE="${ADS_SKILL_ENV_FILE:-$PROJECT_DIR/.env}"
+if [[ ! -f "$ENV_FILE" && -f "/home/ubuntu/ads_skill/.env" ]]; then
+  ENV_FILE="/home/ubuntu/ads_skill/.env"
+fi
 [[ -f "$ENV_FILE" ]] || { echo "missing env: $ENV_FILE" >&2; exit 1; }
 set -a
 source "$ENV_FILE"
@@ -28,6 +31,7 @@ Options:
   --size <widthxheight>
   --audit-dir <dir>          Persist request/response lifecycle evidence.
   --request-id <id>          Idempotency key for one paid request.
+  --provider <provider>      Override prompt validator: minimax or seedance.
 USAGE
   exit 2
 }
@@ -132,7 +136,7 @@ write_lifecycle() {
   local detail="${2:-}"
   local tmp
   tmp="$(mktemp "$AUDIT_DIR/.lifecycle.XXXXXX")"
-  jq -n --arg id "$REQUEST_ID" --arg state "$state" --arg at "$(date -Is)" --arg detail "$detail" \
+  jq -n --arg id "$REQUEST_ID" --arg state "$state" --arg at "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" --arg detail "$detail" \
     '{request_id:$id,state:$state,at:$at,detail:$detail,automatic_retry:false}' > "$tmp"
   mv "$tmp" "$AUDIT_DIR/lifecycle.json"
 }
@@ -174,7 +178,7 @@ fi
 if [[ -n "$AUDIT_DIR" ]]; then
   [[ ! -e "$AUDIT_DIR/submission.locked" ]] || { echo "request id already used: $REQUEST_ID" >&2; exit 1; }
   : > "$AUDIT_DIR/submission.locked"
-  jq --arg endpoint "$ENDPOINT" --arg at "$(date -Is)" '. + {endpoint:$endpoint,request_ready_at:$at}' \
+  jq --arg endpoint "$ENDPOINT" --arg at "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" '. + {endpoint:$endpoint,request_ready_at:$at}' \
     "$AUDIT_DIR/request-meta.json" > "$AUDIT_DIR/request-meta.next.json"
   mv "$AUDIT_DIR/request-meta.next.json" "$AUDIT_DIR/request-meta.json"
   write_lifecycle submitting "POST started; interruption is potentially billable"
@@ -204,7 +208,11 @@ else
 fi
 [[ -s "$OUTPUT" ]] || { write_lifecycle ambiguous_result "empty image output"; exit 1; }
 if [[ -n "$AUDIT_DIR" ]]; then
-  sha256sum "$OUTPUT" > "$AUDIT_DIR/output.sha256"
+  if command -v sha256sum >/dev/null; then
+    sha256sum "$OUTPUT" > "$AUDIT_DIR/output.sha256"
+  else
+    shasum -a 256 "$OUTPUT" > "$AUDIT_DIR/output.sha256"
+  fi
   write_lifecycle completed "image saved; semantic QC still required"
 fi
 echo "image saved: $OUTPUT"

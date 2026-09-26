@@ -1,0 +1,18 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-04-first 摔门离开首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与shot-01完全相同的固定中广景和家庭布局：深木餐桌在画面中央，入户门在餐桌后方右侧，鼠尾草绿开放式厨房在左后方，两副碗筷和同样三盘家常菜保持原位。周明远严格保持人物master中的身份、雾灰衬衫和黑裤，深炭灰夹克刚被他从餐椅靠背拿起并握在右手，身体已转向右侧入户门，迈出离开的第一步；动作急但不奔跑。林静严格保持人物master中的低髻和浅燕麦开衫，仍坐在餐桌左侧，右手握手机，安静看着他的背影，没有追赶。门此刻仍开着，后续视频才完成关门。真实生活光线、自然肤质、轻微胶片颗粒，情绪靠距离和动作表达。画面下方保留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no violence, no crying, no pointing, no changed room layout.",
+  "output": "shots/shot-04/images/unit-04-first.png",
+  "status": "generated_qc_rejected",
+  "output_sha256": "7945f09c9d08d0453689c7ef5737ba37ccdc0016a91f5b917f509b2b53da8457",
+  "output_dimensions": "1536x1024",
+  "semantic_qc": {"result":"reject","checked_at":"2026-09-13","note":"门外错误生成为白天，且丈夫身穿夹克同时又手提第二件外套，破坏夜景与服装连续性；禁止自动重试"},
+  "references": ["assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；关门必须留给视频完成，首帧锁定外套、门和妻子位置。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["固定中广景承接家庭空间","丈夫拿外套迈向门口的动作起点","妻子留在餐桌旁不追赶","门在首帧仍打开","无文字水印与暴力动作"],"unresolved_blockers":[],"reviewed_prompt_sha256":"b1135f6cb0e97eabda5a93f0a5f5a18e600f193bb0a0f2e520f90a8ce6fc7fc2"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B05"],"related_shots":["04"],"visual_evidence":["丈夫拿起夹克转向入户门","妻子仍坐在原位","门在动作起点仍打开","三盘菜与餐桌留在画面"],"unresolved_blockers":[]}
+}

@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-10-first 妻子找来首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与shot-05至shot-09完全相同的社区露天烧烤摊夜景，中广景一次交代三人空间。韩磊严格保持人物master中的短寸、宽肩微胖体型、橄榄绿短袖和黑围裙，位于画面左侧烤炉后方，手中仍握夹子。周明远严格保持人物master中的35岁脸型发型和深炭灰夹克，坐在画面中右侧不锈钢窄桌外侧，正转头望向道路入口，一只手刚放到桌上银色保温袋的提手旁，还没有起身。林静严格保持人物master中的33岁脸型、低髻、浅燕麦开衫、白色上衣和浅蓝牛仔裤，从画面最右侧道路方向刚走进雨棚边缘，停在两三米外，先确认丈夫完好，表情仍有担心而非怒骂。桌上保温袋、托盘和无字玻璃杯位置连续；远处居民楼与便利店光块虚化且无可读文字。混合色夜光、真实肤质、克制表演。画面下方留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no extra people, no shouting pose, no romantic embrace.",
+  "output": "shots/shot-10/images/unit-10-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png", "assets/han-lei-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；三人均在各自固定空间，妻子入画、丈夫起身拿袋留给视频发展。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["三人身份均由已批准master锚定","妻子从道路方向进入","丈夫尚未起身但手靠近袋子","老板保持烤炉工作侧","无文字水印和夸张冲突"],"unresolved_blockers":[],"reviewed_prompt_sha256":"ab41305ec76a2a2a9fd034fe25dfd950be2b84fdb297c5ddb0a31e4634138599"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B14"],"related_shots":["10"],"visual_evidence":["妻子刚从道路方向走入","丈夫转头并准备拿保温袋","老板仍在烤炉后","三人空间关系清楚"],"unresolved_blockers":[]}
+}

@@ -1,0 +1,22 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-04 摔门离开 H3视频",
+  "mode": "I2VA",
+  "shot": "04",
+  "unit": "unit-04",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, restrained contemporary Chinese-life cinema. The opening exactly preserves <Picture 1>: Lin Jing remains seated at the left side of the dark wooden dining table holding her black phone; the same three dishes and two place settings stay fixed; Zhou Mingyuan stands near the open entry door on the right, facing away from her and holding the loose charcoal jacket in his right hand. The camera remains a completely static medium-wide observer. Zhou takes two decisive steps through the doorway, his right hand and the loose jacket leaving frame with him. He reaches back with his free left hand and pulls the entry door shut in one firm continuous motion. The door closes once, cleanly, without bouncing open. Lin Jing does not rise or follow; she only turns her eyes toward the closing door and remains beside the untouched food after he exits. Keep her identity, hair, oatmeal cardigan, phone, table, three dishes, two place settings, sage-green kitchen and all furniture unchanged. No audible or lip-synced dialogue is generated; both mouths remain closed. No cuts, no camera movement, no extra people, no violence, no crying, no object duplication, no clothing transformation.\n\noverall_soundscape: Quiet apartment room tone, two restrained footsteps, jacket fabric movement, the door hinge, and one firm door-closing impact followed by silence.\n\nnon_diegetic_music: N/A. Absolutely no readable text, subtitles, captions, title cards, watermark, logo, pinyin or interface graphics anywhere in frame.",
+  "images": ["shots/shot-04/images/unit-04-first-v2.png"],
+  "content": [{"type":"image_url","image_url":{"url":"pending"},"local_path":"replication/output/love-story-nagging-20260913/shots/shot-04/images/unit-04-first-v2.png","role":"first_frame"}],
+  "duration": 8,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": false,
+  "watermark": false,
+  "output": "shots/shot-04/video/unit-04.mp4",
+  "status": "prompt_ready_not_generated",
+  "note": "用户接受v2首帧已知偏差；H3负责丈夫离开和关门，摔门声及后续声音在剪映完成。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"video","mode":"I2VA","reviewed_at":"2026-09-13","checks":["I2VA首帧在0.00秒完全引用","8秒且16:9","丈夫出门并单次关门","妻子始终留在餐桌旁","不生成准确中文对白","无文字水印、无镜头运动、无物体复制"],"unresolved_blockers":[],"reviewed_prompt_sha256":"4fdeb1be41704b631bf86de2b69e4ce3d5b1330aaa832868011e3c58df0797e9"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B05"],"related_shots":["04"],"visual_evidence":["丈夫从右侧门离开","门一次关上","妻子没有追赶","妻子与未动的饭菜留在室内"],"unresolved_blockers":[]}
+}

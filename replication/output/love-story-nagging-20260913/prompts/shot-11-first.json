@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-11-first 回家路上的报备首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，当代中国普通住宅区夜晚街道，侧前方双人中景。人行道画面左侧是低矮围墙和暗绿树木，右后方可见稀疏住宅窗灯；旧式路灯发出中性偏暖白光，背景保留真实暗部。周明远严格保持人物master中的35岁脸型、短黑发、深炭灰夹克、雾灰衬衫和黑裤，位于画面左侧向前慢走，左手明确提着银色保温袋，右臂自然弯曲。林静严格保持人物master中的33岁脸型、低髻、浅燕麦开衫、白色上衣和浅蓝牛仔裤，始终位于丈夫右侧，左手自然挽住他的右臂，右手握无品牌黑色手机垂在身侧；她侧头对他说话，丈夫看向前方认真听。两人身体距离已经消失，但不拥抱、不看镜头。路灯逐段照亮自然肤色，轻微胶片颗粒，适合后续稳定跟拍。画面下方留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no swapped left-right positions, no extra pedestrians, no glossy studio lighting.",
+  "output": "shots/shot-11/images/unit-11-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；锁定妻右夫左、挽右臂、丈夫左手提袋三项连续性。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["16:9回家街道建立","妻子位于丈夫右侧并挽右臂","丈夫左手提银色保温袋","人物服装身份连续","无文字水印与左右互换"],"unresolved_blockers":[],"reviewed_prompt_sha256":"004235cd9e914f175a0d07464dd38d5116c33ed026ebf8fe1ff680ed0f9cdb16"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B15"],"related_shots":["11"],"visual_evidence":["夫妻并肩慢走","妻子在丈夫右侧挽住右臂","丈夫左手提保温袋","妻子侧头继续叮嘱"],"unresolved_blockers":[]}
+}

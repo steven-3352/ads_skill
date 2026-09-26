@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-nagging-20260913",
+  "title": "别嫌她唠叨",
+  "status": "confirmed",
+  "generation_allowed": false,
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "audioPolicy": {
+    "modelDialogue": "disabled_as_final_source",
+    "dialogue": "三位角色全部在剪映使用免费音色后期配音",
+    "subtitles": "根据最终配音逐句制作确定性中文字幕",
+    "mix": "对白优先；环境声低于对白；loudnorm I=-16:TP=-1.5:LRA=11"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 15,
+    "aspect": "16:9",
+    "durationTargetSeconds": 118,
+    "durationRangeSeconds": [115, 120],
+    "plannedGeneratedVideoSeconds": 110,
+    "note": "110秒动态素材加片头、场景声音桥和结尾停顿完成115-120秒成片；不使用静态推拉填充时长。"
+  },
+  "visualGrammarRef": "contracts/visual-grammar.json",
+  "screenplayRef": "contracts/screenplay.json",
+  "charactersRef": "characters.md",
+  "narrativeShots": [
+    {
+      "id": "01",
+      "title": "等待与迟归",
+      "sceneId": "scene-01",
+      "inputMode": "I2VA",
+      "camera": "稳定中广景建立餐桌、妻子和入户门；丈夫从门口进入，轻微跟随",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"妻子独自坐在餐桌旁。"},
+      "requiredBeats": [
+        {"id":"B01","sceneId":"scene-01","text":"妻子守着热过三遍的饭菜，已经等了五个小时。","channels":["picture","ambience"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-01","sceneId":"scene-01","durationSeconds":10,"inputMode":"I2VA",
+        "cuts":[{"id":"c01","seconds":10,"camera":"餐桌稳定中广景到丈夫入门后的双人关系景","coverage":[{"beatId":"B01","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-01-first.json"],"video":"prompts/shot-01-video.json"},
+        "media":{"firstFrame":"shots/shot-01/images/unit-01-first.png","lastFrame":null,"video":"shots/shot-01/video/unit-01.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/lin-jing-master.png"]
+      }],
+      "postTasks":[{"id":"pt-01-amb","type":"ambience","description":"墙钟、冰箱低鸣、门锁和轻微碗筷声","coverage":[{"beatId":"B01","channels":["ambience"]}]}]
+    },
+    {
+      "id": "02",
+      "title": "五小时没有消息",
+      "sceneId": "scene-01",
+      "inputMode": "I2VA",
+      "camera": "妻子中近景与丈夫肩后关系景，保持餐桌在两人之间",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"我等了你五个小时。"},
+      "requiredBeats": [
+        {"id":"B02","sceneId":"scene-01","text":"妻子追问丈夫为什么不发加班消息、不接电话。","channels":["picture","dialogue"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-02","sceneId":"scene-01","durationSeconds":10,"inputMode":"I2VA",
+        "cuts":[{"id":"c02","seconds":10,"camera":"妻子正面中近景，丈夫肩部留在前景；她举起手机后放回桌面","coverage":[{"beatId":"B02","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-02-first.json"],"video":"prompts/shot-02-video.json"},
+        "media":{"firstFrame":"shots/shot-02/images/unit-02-first.png","lastFrame":null,"video":"shots/shot-02/video/unit-02.mp4"},
+        "references":["assets/lin-jing-master.png","assets/zhou-mingyuan-master.png"]
+      }],
+      "postTasks":[{"id":"pt-02-dia","type":"dialogue","description":"妻子：我等了你五个小时……我连你是不是出事了都不知道。丈夫：忙到现在。","coverage":[{"beatId":"B02","channels":["dialogue"]}]}]
+    },
+    {
+      "id": "03",
+      "title": "关心被当成管束",
+      "sceneId": "scene-01",
+      "inputMode": "I2VA",
+      "camera": "克制正反打；丈夫脱外套动作加快，妻子没有起身追赶",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"我怪你加班了吗？我就想让你告诉我一声。"},
+      "requiredBeats": [
+        {"id":"B03","sceneId":"scene-01","text":"丈夫以工作忙为由反击，把报备说成汇报行程。","channels":["picture","dialogue"]},
+        {"id":"B04","sceneId":"scene-01","text":"妻子强调自己不怪他加班，只想让他告诉一声。","channels":["picture","dialogue"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-03","sceneId":"scene-01","durationSeconds":10,"inputMode":"I2VA",
+        "cuts":[
+          {"id":"c03a","seconds":5,"camera":"丈夫中近景，回避视线并快速整理外套","coverage":[{"beatId":"B03","channels":["picture"]}]},
+          {"id":"c03b","seconds":5,"camera":"切回妻子中近景，她压住情绪直视丈夫","coverage":[{"beatId":"B04","channels":["picture"]}]}
+        ],
+        "prompts":{"images":["prompts/shot-03-first.json"],"video":"prompts/shot-03-video.json"},
+        "media":{"firstFrame":"shots/shot-03/images/unit-03-first.png","lastFrame":null,"video":"shots/shot-03/video/unit-03.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/lin-jing-master.png"]
+      }],
+      "postTasks":[{"id":"pt-03-dia","type":"dialogue","description":"丈夫：我那是在工作……回来还得跟你汇报行程，是不是？妻子：我怪你加班了吗？我就想让你告诉我一声。","coverage":[{"beatId":"B03","channels":["dialogue"]},{"beatId":"B04","channels":["dialogue"]}]}]
+    },
+    {
+      "id": "04",
+      "title": "摔门离开",
+      "sceneId": "scene-01",
+      "inputMode": "I2VA",
+      "camera": "固定关系景；丈夫拿起外套从餐桌旁走向门口并关门，妻子留在原地",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"丈夫不耐烦地拿起外套，摔门离开。"},
+      "requiredBeats": [
+        {"id":"B05","sceneId":"scene-01","text":"丈夫不耐烦地拿起外套，摔门离开。","channels":["picture","action_sound","transition"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-04","sceneId":"scene-01","durationSeconds":8,"inputMode":"I2VA",
+        "cuts":[{"id":"c04","seconds":8,"camera":"固定中广景，不追出门外；门关上后保留妻子和餐桌","coverage":[{"beatId":"B05","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-04-first.json"],"video":"prompts/shot-04-video.json"},
+        "media":{"firstFrame":"shots/shot-04/images/unit-04-first.png","lastFrame":null,"video":"shots/shot-04/video/unit-04.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/lin-jing-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-04-sfx","type":"action_sound","description":"外套布料、脚步和一次真实但不过分夸张的关门重响","coverage":[{"beatId":"B05","channels":["action_sound"]}]},
+        {"id":"pt-04-tr","type":"transition","description":"关门声延续到烧烤摊第一帧，再被炭火声接住","coverage":[{"beatId":"B05","channels":["transition"]}]}
+      ]
+    },
+    {
+      "id": "05",
+      "title": "烧烤摊抱怨",
+      "sceneId": "scene-02",
+      "inputMode": "I2VA",
+      "camera": "老板工作侧与丈夫坐席的双人中景，随后切丈夫正面中近景",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"又跟嫂子吵架了？"},
+      "requiredBeats": [
+        {"id":"B06","sceneId":"scene-02","text":"烧烤摊老板看出丈夫又与妻子吵架。","channels":["picture","dialogue","ambience"]},
+        {"id":"B07","sceneId":"scene-02","text":"丈夫向老板复述妻子的追问，抱怨自己只是加班，并非出去鬼混。","channels":["picture","dialogue"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-05","sceneId":"scene-02","durationSeconds":12,"inputMode":"I2VA",
+        "cuts":[
+          {"id":"c05a","seconds":4,"camera":"双人中景，老板翻串时自然抬眼","coverage":[{"beatId":"B06","channels":["picture"]}]},
+          {"id":"c05b","seconds":8,"camera":"丈夫中近景，前倾抱怨并用手势复述争执","coverage":[{"beatId":"B07","channels":["picture"]}]}
+        ],
+        "prompts":{"images":["prompts/shot-05-first.json"],"video":"prompts/shot-05-video.json"},
+        "media":{"firstFrame":"shots/shot-05/images/unit-05-first.png","lastFrame":null,"video":"shots/shot-05/video/unit-05.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/han-lei-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-05-dia","type":"dialogue","description":"老板：又跟嫂子吵架了？丈夫完整讲述临时加班、进门被问消息和不是出去鬼混。","coverage":[{"beatId":"B06","channels":["dialogue"]},{"beatId":"B07","channels":["dialogue"]}]},
+        {"id":"pt-05-amb","type":"ambience","description":"炭火、翻串和远处稀疏车声","coverage":[{"beatId":"B06","channels":["ambience"]}]}
+      ]
+    },
+    {
+      "id": "06",
+      "title": "后悔与抹药",
+      "sceneId": "scene-02",
+      "inputMode": "I2VA",
+      "camera": "老板平静发问，切丈夫先愣后笑；两人保持烤炉与桌面的空间关系",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"那你后悔娶她没？"},
+      "requiredBeats": [
+        {"id":"B08","sceneId":"scene-02","text":"老板问丈夫是否后悔娶她，丈夫笑了。","channels":["picture","dialogue"]},
+        {"id":"B09","sceneId":"scene-02","text":"丈夫说起晒伤后妻子一边骂他、一边给他抹药。","channels":["picture","dialogue"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-06","sceneId":"scene-02","durationSeconds":10,"inputMode":"I2VA",
+        "cuts":[
+          {"id":"c06a","seconds":3,"camera":"老板中景，手上继续翻串，抬眼发问","coverage":[{"beatId":"B08","channels":["picture"]}]},
+          {"id":"c06b","seconds":7,"camera":"丈夫中近景，愣一下后笑着摆手，手指无意识摸到后肩","coverage":[{"beatId":"B09","channels":["picture"]}]}
+        ],
+        "prompts":{"images":["prompts/shot-06-first.json"],"video":"prompts/shot-06-video.json"},
+        "media":{"firstFrame":"shots/shot-06/images/unit-06-first.png","lastFrame":null,"video":"shots/shot-06/video/unit-06.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/han-lei-master.png"]
+      }],
+      "postTasks":[{"id":"pt-06-dia","type":"dialogue","description":"老板：那你后悔娶她没？丈夫：后悔啥……晚上还不是蹲在那儿给我抹药。","coverage":[{"beatId":"B08","channels":["dialogue"]},{"beatId":"B09","channels":["dialogue"]}]}]
+    },
+    {
+      "id": "07",
+      "title": "胃药与十斤蒜",
+      "sceneId": "scene-02",
+      "inputMode": "I2VA",
+      "camera": "丈夫近景为主，穿插手整理保温袋和烤串的细节；老板安静听",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"我胃不好，可我每次出去，她还是把药往我包里塞。"},
+      "requiredBeats": [
+        {"id":"B10","sceneId":"scene-02","text":"丈夫说起妻子每次往他包里塞胃药。","channels":["picture","dialogue"]},
+        {"id":"B11","sceneId":"scene-02","text":"丈夫说起自己想吃糖蒜，妻子默默买了十斤蒜。","channels":["picture","dialogue"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-07","sceneId":"scene-02","durationSeconds":12,"inputMode":"I2VA",
+        "cuts":[
+          {"id":"c07a","seconds":5,"camera":"丈夫中近景，语速和手势逐渐放慢","coverage":[{"beatId":"B10","channels":["picture"]}]},
+          {"id":"c07b","seconds":7,"camera":"手部插入整理银色保温袋，再回到丈夫带笑的近景","coverage":[{"beatId":"B11","channels":["picture"]}]}
+        ],
+        "prompts":{"images":["prompts/shot-07-first.json"],"video":"prompts/shot-07-video.json"},
+        "media":{"firstFrame":"shots/shot-07/images/unit-07-first.png","lastFrame":null,"video":"shots/shot-07/video/unit-07.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/han-lei-master.png"]
+      }],
+      "postTasks":[{"id":"pt-07-dia","type":"dialogue","description":"丈夫完整讲述胃药、糖蒜、十斤蒜和阳台。","coverage":[{"beatId":"B10","channels":["dialogue"]},{"beatId":"B11","channels":["dialogue"]}]}]
+    },
+    {
+      "id": "08",
+      "title": "其实挺幸福",
+      "sceneId": "scene-02",
+      "inputMode": "I2VA",
+      "camera": "双人中景，丈夫放松靠回座位，老板用平常反应接住他的自我和解",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"想想这些，也挺幸福的。"},
+      "requiredBeats": [
+        {"id":"B12","sceneId":"scene-02","text":"丈夫承认这些日常让自己觉得幸福，随后用已婚者口吻调侃老板不懂。","channels":["picture","dialogue","ambience"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-08","sceneId":"scene-02","durationSeconds":8,"inputMode":"I2VA",
+        "cuts":[{"id":"c08","seconds":8,"camera":"稳定双人中景，丈夫短暂停顿后轻笑，老板摇头继续干活","coverage":[{"beatId":"B12","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-08-first.json"],"video":"prompts/shot-08-video.json"},
+        "media":{"firstFrame":"shots/shot-08/images/unit-08-first.png","lastFrame":null,"video":"shots/shot-08/video/unit-08.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/han-lei-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-08-dia","type":"dialogue","description":"丈夫：想想这些，也挺幸福的……你没结婚，你不懂。老板：哎，算了算了。是是是，我不懂。","coverage":[{"beatId":"B12","channels":["dialogue"]}]},
+        {"id":"pt-08-amb","type":"ambience","description":"炭火和夹子轻响，丈夫说完幸福后留半拍安静","coverage":[{"beatId":"B12","channels":["ambience"]}]}
+      ]
+    },
+    {
+      "id": "09",
+      "title": "特辣烤串",
+      "sceneId": "scene-02",
+      "inputMode": "I2VA",
+      "camera": "烤串与保温袋手部插入，切回丈夫带着得意笑意的近景",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"我特意点的特辣。"},
+      "requiredBeats": [
+        {"id":"B13","sceneId":"scene-02","text":"丈夫特意点妻子最爱的特辣烤串，表明自己仍惦记她。","channels":["picture","dialogue","action_sound"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-09","sceneId":"scene-02","durationSeconds":8,"inputMode":"I2VA",
+        "cuts":[{"id":"c09","seconds":8,"camera":"近距离跟随老板把特辣烤串装入银色保温袋，再切丈夫的反应","coverage":[{"beatId":"B13","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-09-first.json"],"video":"prompts/shot-09-video.json"},
+        "media":{"firstFrame":"shots/shot-09/images/unit-09-first.png","lastFrame":null,"video":"shots/shot-09/video/unit-09.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/han-lei-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-09-dia","type":"dialogue","description":"丈夫与老板关于特辣、吃独食和惦记妻子的全部对白。","coverage":[{"beatId":"B13","channels":["dialogue"]}]},
+        {"id":"pt-09-sfx","type":"action_sound","description":"烤串落入托盘、保温袋摩擦和封口声","coverage":[{"beatId":"B13","channels":["action_sound"]}]}
+      ]
+    },
+    {
+      "id": "10",
+      "title": "妻子找来",
+      "sceneId": "scene-02",
+      "inputMode": "I2VA",
+      "camera": "丈夫坐席与道路入口同框；妻子走近后停下，丈夫连忙拿起保温袋",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"妻子赶到烧烤摊。"},
+      "requiredBeats": [
+        {"id":"B14","sceneId":"scene-02","text":"妻子赶到烧烤摊，丈夫拎起烤串说正准备回去赔罪。","channels":["picture","dialogue","transition"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-10","sceneId":"scene-02","durationSeconds":8,"inputMode":"I2VA",
+        "cuts":[{"id":"c10","seconds":8,"camera":"中广景保持三人空间清楚；妻子入画，丈夫起身拿袋，老板在后方看着","coverage":[{"beatId":"B14","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-10-first.json"],"video":"prompts/shot-10-video.json"},
+        "media":{"firstFrame":"shots/shot-10/images/unit-10-first.png","lastFrame":null,"video":"shots/shot-10/video/unit-10.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/lin-jing-master.png","assets/han-lei-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-10-dia","type":"dialogue","description":"老板：嫂子，你咋来了？丈夫：我这不刚点完你最爱的特辣烤串，正准备回去给你赔罪呢。","coverage":[{"beatId":"B14","channels":["dialogue"]}]},
+        {"id":"pt-10-tr","type":"transition","description":"妻子拉丈夫离开，脚步声连续衔接回家路","coverage":[{"beatId":"B14","channels":["transition"]}]}
+      ]
+    },
+    {
+      "id": "11",
+      "title": "回家路上的报备",
+      "sceneId": "scene-03",
+      "inputMode": "I2VA",
+      "camera": "侧前方缓慢跟拍夫妻并肩行走，妻子挽住丈夫右臂，丈夫左手提保温袋",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"以后加班提前说一声。"},
+      "requiredBeats": [
+        {"id":"B15","sceneId":"scene-03","text":"回家路上，妻子要求以后加班提前说，手机再忙也看一眼。","channels":["picture","dialogue","ambience"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-11","sceneId":"scene-03","durationSeconds":7,"inputMode":"I2VA",
+        "cuts":[{"id":"c11","seconds":7,"camera":"侧前方小幅稳定跟拍，不绕行、不切换人物左右位置","coverage":[{"beatId":"B15","channels":["picture"]}]}],
+        "prompts":{"images":["prompts/shot-11-first.json"],"video":"prompts/shot-11-video.json"},
+        "media":{"firstFrame":"shots/shot-11/images/unit-11-first.png","lastFrame":null,"video":"shots/shot-11/video/unit-11.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/lin-jing-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-11-dia","type":"dialogue","description":"妻子：以后加班提前说一声。丈夫：听见了。妻子：手机再忙也偷空看一眼。联系不上你才吓人。丈夫：嗯。","coverage":[{"beatId":"B15","channels":["dialogue"]}]},
+        {"id":"pt-11-amb","type":"ambience","description":"同步脚步、保温袋轻响、树叶和远处稀疏车声","coverage":[{"beatId":"B15","channels":["ambience"]}]}
+      ]
+    },
+    {
+      "id": "12",
+      "title": "德行",
+      "sceneId": "scene-03",
+      "inputMode": "I2VA",
+      "camera": "保持上一镜人物左右关系，缓慢跟拍后停住，让两人继续走远",
+      "source": {"storyFile":"story/别嫌她唠叨.md","verbatim":"你让我上哪儿找你去？"},
+      "requiredBeats": [
+        {"id":"B16","sceneId":"scene-03","text":"妻子说明联系不上才吓人，并要求丈夫以后别摔门离开。","channels":["picture","dialogue"]},
+        {"id":"B17","sceneId":"scene-03","text":"丈夫不再反驳，只是笑；妻子挽着他回家，以一句‘德行’结束。","channels":["picture","dialogue","ambience","onscreen_text"]}
+      ],
+      "generationUnits": [{
+        "id":"unit-12","sceneId":"scene-03","durationSeconds":7,"inputMode":"I2VA",
+        "cuts":[
+          {"id":"c12a","seconds":3,"camera":"双人中近景，妻子继续说，丈夫侧头看她","coverage":[{"beatId":"B16","channels":["picture"]}]},
+          {"id":"c12b","seconds":4,"camera":"丈夫轻笑，妻子看他一眼后两人继续向前，镜头停住","coverage":[{"beatId":"B17","channels":["picture"]}]}
+        ],
+        "prompts":{"images":["prompts/shot-12-first.json"],"video":"prompts/shot-12-video.json"},
+        "media":{"firstFrame":"shots/shot-12/images/unit-12-first.png","lastFrame":null,"video":"shots/shot-12/video/unit-12.mp4"},
+        "references":["assets/zhou-mingyuan-master.png","assets/lin-jing-master.png"]
+      }],
+      "postTasks":[
+        {"id":"pt-12-dia","type":"dialogue","description":"妻子：还有，下次别一生气就摔门走……你笑什么？妻子最后一句：德行。","coverage":[{"beatId":"B16","channels":["dialogue"]},{"beatId":"B17","channels":["dialogue"]}]},
+        {"id":"pt-12-amb","type":"ambience","description":"脚步逐渐走远，结尾音乐轻入，不盖住最后一句对白","coverage":[{"beatId":"B17","channels":["ambience"]}]},
+        {"id":"pt-12-title","type":"onscreen_text","description":"人物走远后确定性叠加片名《别嫌她唠叨》，不添加说教式主题文案","coverage":[{"beatId":"B17","channels":["onscreen_text"]}]}
+      ]
+    }
+  ],
+  "costCheck": {
+    "characterMasterImages": 3,
+    "shotFirstFrames": 12,
+    "totalImages": 15,
+    "generatedVideoSeconds": 110,
+    "plannedFirstPassCost": 25.75,
+    "withinApprovedBudget": true
+  },
+  "note": "对白全部由 postTasks 承担；H3画面只生成自然表演、动作与环境变化。图片通过后才允许锁定视频提示词。"
+}

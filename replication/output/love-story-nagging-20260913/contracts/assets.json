@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-nagging-20260913",
+  "status": "character_masters_approved",
+  "generationAllowed": false,
+  "publicAssets": [
+    {
+      "id": "zhou-mingyuan",
+      "type": "character",
+      "status": "approved_identity_anchor",
+      "path": "assets/zhou-mingyuan-master.png",
+      "sha256": "20439245e16ae22557f91a66fa066adefda258f5668b6df76402c1b5221b769e",
+      "dimensions": "1086x1448",
+      "plannedPath": "assets/zhou-mingyuan-master.png",
+      "usage": "丈夫全片身份锚",
+      "definitionRef": "characters.md#周明远丈夫35岁"
+    },
+    {
+      "id": "lin-jing",
+      "type": "character",
+      "status": "approved_identity_anchor",
+      "path": "assets/lin-jing-master.png",
+      "sha256": "5b086a7a7c650d06aae3902cfacd8867636fa682882f4e2cb98f9d08e931f8df",
+      "dimensions": "1086x1448",
+      "plannedPath": "assets/lin-jing-master.png",
+      "usage": "妻子全片身份锚",
+      "definitionRef": "characters.md#林静妻子33岁"
+    },
+    {
+      "id": "han-lei",
+      "type": "character",
+      "status": "approved_identity_anchor",
+      "path": "assets/han-lei-master.png",
+      "sha256": "1263239b0889377a0f3015b5537441669b13dab08abc8f4bfbd2fe897beb19ca",
+      "dimensions": "1086x1448",
+      "plannedPath": "assets/han-lei-master.png",
+      "usage": "烧烤摊老板身份锚",
+      "definitionRef": "characters.md#韩磊烧烤摊老板38岁"
+    }
+  ],
+  "sceneAssets": [
+    {"id":"home","type":"scene","status":"definition_ready","definitionRef":"contracts/visual-grammar.json#scenes.home"},
+    {"id":"bbq-stall","type":"scene","status":"definition_ready","definitionRef":"contracts/visual-grammar.json#scenes.bbqStall"},
+    {"id":"walk-home","type":"scene","status":"definition_ready","definitionRef":"contracts/visual-grammar.json#scenes.walkHome"}
+  ],
+  "note": "三张人物 master 图已获用户确认并锁定为全片身份锚。当前只编写和审阅 12 张分镜首帧提示词，不直接生成首帧。"
+}

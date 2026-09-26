@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "林静人物master",
+  "mode": "still-master",
+  "prompt": "写实电影感人物身份参考图，竖构图3:4，单人全身偏中景。一位33岁左右的普通中国女性林静，中等身高，清瘦，柔和方圆脸，浅内双，五官生活化，黑发在脑后束成低髻，额前有少量自然碎发，自然淡妆，真实自然肤质，不是明星脸、网红脸或医美精致脸。她穿浅燕麦色细针织开衫、白色圆领棉质上衣、低饱和浅蓝直筒牛仔裤和深灰平底鞋，无夸张首饰、无品牌标志。身体略朝画面右侧，脸转向镜头，右手自然握一部无品牌黑色手机，左手自然下垂，表情平静直接，嘴唇闭合。中性浅灰无缝背景，柔和自然侧光，五官、低髻发型、清瘦体型和完整服装清晰可辨，用作全片跨镜身份锚。画面只出现一个人，不出现家具。Clean frame, no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": "assets/lin-jing-master.png",
+  "status": "approved_identity_anchor",
+  "output_sha256": "5b086a7a7c650d06aae3902cfacd8867636fa682882f4e2cb98f9d08e931f8df",
+  "output_dimensions": "1086x1448",
+  "references": [],
+  "generator": "GPT Image",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": ["单人身份锚", "33岁普通中国女性", "低髻与固定服装", "手机道具", "无文字水印品牌"],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c5a2af1010f5e90a8dacc525964851f817bd5f6ec2c16d231f314fbe89bd281e",
+    "mode": "still-master"
+  },
+  "narrative_alignment": {
+    "source_story": "story/别嫌她唠叨.md",
+    "related_beats": ["B01", "B02", "B04", "B14", "B15", "B16", "B17"],
+    "related_shots": ["01", "02", "03", "04", "10", "11", "12"],
+    "visual_evidence": ["五官与低髻发型清晰", "浅燕麦开衫与浅蓝牛仔裤", "朴素利落的普通上班族年龄感"],
+    "unresolved_blockers": []
+  }
+}

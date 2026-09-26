@@ -1,0 +1,32 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "韩磊人物master",
+  "mode": "still-master",
+  "prompt": "写实电影感人物身份参考图，竖构图3:4，单人全身偏中景。一位38岁左右的普通中国男性韩磊，个子稍高，肩背宽，微胖，圆脸，短寸黑发，肤色健康，下巴有很淡的胡茬，真实自然肤质，不是明星脸或喜剧夸张脸。他穿深橄榄绿色纯棉短袖、黑色帆布围裙和深色长裤，无品牌标志。身体略朝画面右侧，脸转向镜头，双手自然放在身前，表情松弛坦率，嘴唇闭合。中性浅灰无缝背景，柔和自然侧光，五官、发型、宽肩微胖体型和完整工作服清晰可辨，用作全片跨镜身份锚。画面只出现一个人，不出现烤炉、食物或其他道具。Clean frame, no text, no subtitles, no captions, no watermark, no logo, no pinyin anywhere in the image.",
+  "output": "assets/han-lei-master.png",
+  "status": "approved_identity_anchor",
+  "output_sha256": "1263239b0889377a0f3015b5537441669b13dab08abc8f4bfbd2fe897beb19ca",
+  "output_dimensions": "1086x1448",
+  "references": [],
+  "generator": "GPT Image",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "reviewed_at": "2026-09-13",
+    "checks": ["单人身份锚", "38岁普通中国男性", "宽肩微胖与短寸", "橄榄绿短袖黑围裙", "无文字水印品牌"],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "16b79da332b5b47496bf128911cfe03f7b851b22cce838fce64abb85344b49b8",
+    "mode": "still-master"
+  },
+  "narrative_alignment": {
+    "source_story": "story/别嫌她唠叨.md",
+    "related_beats": ["B06", "B08", "B12", "B13", "B14"],
+    "related_shots": ["05", "06", "07", "08", "09", "10"],
+    "visual_evidence": ["五官短寸清晰", "宽肩微胖体型", "橄榄绿短袖与黑色围裙"],
+    "unresolved_blockers": []
+  }
+}

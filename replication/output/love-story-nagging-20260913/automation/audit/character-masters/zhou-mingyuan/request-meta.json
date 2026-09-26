@@ -1,0 +1,11 @@
+{
+  "request_id": "love-story-nagging-zhou-mingyuan-v1",
+  "prompt_file": "replication/output/love-story-nagging-20260913/prompts/zhou-mingyuan-master.json",
+  "output": "replication/output/love-story-nagging-20260913/assets/zhou-mingyuan-master.png",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "references": [],
+  "automatic_retry": false,
+  "endpoint": "images/generations",
+  "request_ready_at": ""
+}

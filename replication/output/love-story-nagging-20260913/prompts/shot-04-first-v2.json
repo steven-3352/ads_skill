@@ -1,0 +1,18 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-04-first-v2 摔门离开首帧定向修复",
+  "mode": "I2VA-first-frame-repair",
+  "prompt": "Use case: identity-preserve and lighting-weather. Asset type: MiniMax-H3 I2VA first frame, 16:9 horizontal. Input image roles: Image 1 is the edit target and composition base; Image 2 is Zhou Mingyuan's identity reference only; Image 3 is Lin Jing's identity reference only. Preserve from Image 1 exactly: camera position, 16:9 room composition, Lin Jing seated at the left side of the dark wooden dining table holding a black phone, the same three dishes and two place settings, sage-green kitchen, right-side open entry door, and both characters' faces, body proportions and positions. Change only two failures. First, the exterior beyond the open door must be unmistakable deep night: dark blue-black apartment corridor or night exterior with no sunlight, no bright sky, no daytime greenery and no daylight spilling indoors; interior remains lit by warm practical lamps mixed with faint cool night light. Second, Zhou Mingyuan must wear only his fog-gray button-up shirt and black trousers, with no jacket, coat or overshirt on his torso; he carries exactly one charcoal-gray commuter jacket in his right hand beside his thigh. There must be exactly one jacket in the entire image. He is stepping toward the open door; Lin Jing remains seated and watches him without chasing. Photorealistic natural Chinese-life cinema, real skin and fabric texture, restrained expression, slight film grain. Clean lower subtitle-safe area. No readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no duplicate clothing, no second jacket, no daylight, no violence, no crying.",
+  "output": "shots/shot-04/images/unit-04-first-v2.png",
+  "status": "generated_user_accepted_with_known_deviation",
+  "output_sha256": "c3c1c7255065c5e45fd00cfd203fa2b06531b590a063e9c2f650c35bc1028738",
+  "output_dimensions": "1672x941",
+  "semantic_qc": {"result":"user_override_accept","checked_at":"2026-09-13","note":"用户明确先过并进入视频；保留门外偏亮和重复外套两项已知偏差，不再重做"},
+  "references": ["shots/shot-04/images/unit-04-first.png", "assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png"],
+  "generator": "GPT Image",
+  "note": "失败首版的最小定向修复；不覆盖v1，只修复昼夜与重复夹克。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame-repair","reviewed_at":"2026-09-13","checks":["输入图1仅作构图底图","门外明确深夜且无日光","丈夫仅穿雾灰衬衫黑裤","全画面恰好一件夹克且在丈夫右手","妻子餐桌三盘菜门位保持不变","无文字水印与重复服装"],"unresolved_blockers":[],"reviewed_prompt_sha256":"adc645491c008550b8305781bbbd093d247e4d3203b3cb84908cb39d4b3d1046"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B05"],"related_shots":["04"],"visual_evidence":["丈夫只穿灰衬衫并右手提唯一夹克","门外为深夜","妻子仍坐在餐桌左侧","门在动作起点仍打开"],"unresolved_blockers":[]}
+}

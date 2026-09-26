@@ -1,0 +1,7 @@
+{
+  "request_id": "love-story-nagging-zhou-mingyuan-v1",
+  "state": "completed",
+  "at": "2026-09-13T10:33:00Z",
+  "detail": "provider response was preserved after the original local timestamp failure; image recovered without resubmission and semantic QC passed",
+  "automatic_retry": false
+}

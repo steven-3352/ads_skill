@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-09-first 特辣烤串首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与前面完全相同的社区露天烧烤摊夜景，中等距离双人关系构图，不是静物特写。韩磊严格保持人物master中的38岁身份、橄榄绿短袖和黑围裙，站在画面左侧烤炉与不锈钢窄桌之间，双手正端着一只盛有撒好红色辣椒面的烤串托盘，托盘停在打开的银色保温袋上方，处于准备装袋的动作起点。周明远严格保持人物master中的35岁脸型发型和深炭灰夹克，坐在画面右侧，身体略向托盘靠近，脸上带一点惦记妻子的克制得意。两人的脸都清晰可辨；保温袋在桌面、袋口完整打开，无字玻璃杯仍在原位。顶部中性工作灯、炭火暖光和城市冷光混合，食物真实不过度广告化。画面下方留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no product label, no floating skewers, no extra hands, no still-life-only composition.",
+  "output": "shots/shot-09/images/unit-09-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/han-lei-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；采用双人关系景避免人物参考把手部插入镜吸成人像，装袋动作留给视频完成。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["双人关系景而非静物特写","特辣烤串与打开的银色保温袋清楚","装袋动作尚未完成","丈夫惦记妻子的克制反应","无文字水印与多余手指"],"unresolved_blockers":[],"reviewed_prompt_sha256":"1aaacb5dac41969a27b69a586a5aea391d505e0876413023a170a09a8f15e7f2"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B13"],"related_shots":["09"],"visual_evidence":["辣椒面烤串托盘悬在袋口上方","银色保温袋已打开","丈夫关注给妻子带走的烤串","老板装袋动作起势"],"unresolved_blockers":[]}
+}

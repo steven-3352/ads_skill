@@ -1,0 +1,18 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-01-first 等待与迟归首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，当代中国普通城市住宅夜晚，稳定中广景。餐厨一体空间使用暖白墙面、低饱和鼠尾草绿橱柜和深木四人餐桌；入户门固定在餐桌后方画面右侧。林静严格保持人物master中的33岁中国女性脸型、低髻和浅燕麦色开衫，独自坐在面向门的位置，右手握无品牌黑色手机，疲惫担心但不哭。桌上固定摆两副碗筷和三盘已经失去热气的家常菜，菜品完整没有被吃过。周明远严格保持人物master中的35岁中国男性脸型与深炭灰夹克，刚从右侧入户门跨进半步，一只手仍扶门把，身体带着加班后的疲惫。餐桌暖灯与窗外冷灰夜光混合，真实肤质，轻微胶片颗粒，空间留白克制。人物不看镜头，不出现争吵动作。画面下方保留干净字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no luxury interior, no exaggerated expression.",
+  "output": "shots/shot-01/images/unit-01-first.png",
+  "status": "generated_internal_qc_pass",
+  "output_sha256": "4d40c86d0e65807638d7469009b1212a863b457c954d4f806e6df29ac564075a",
+  "output_dimensions": "1672x941",
+  "semantic_qc": {"result":"pass","checked_at":"2026-09-13","note":"16:9构图、人物身份、三盘菜、两套餐具、右侧门位和无文字要求通过；手机双手握持为可接受轻微差异"},
+  "references": ["assets/zhou-mingyuan-master.png", "assets/lin-jing-master.png"],
+  "generator": "GPT Image",
+  "note": "作为MiniMax-H3 I2VA首帧；锁定家庭空间、两副碗筷、三盘菜和入户门方位。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["16:9家庭空间建立","周明远与林静身份锚定","三盘菜两副碗筷与门位连续性","迟归动作起点可读","无文字水印且留字幕安全区"],"unresolved_blockers":[],"reviewed_prompt_sha256":"722e4924838d0cb5f0735b9eae7013bd5adef8ef73aeca5ea8c8b55305eb6a4c"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B01"],"related_shots":["01"],"visual_evidence":["林静守着冷下来的三盘菜","手机握在右手","周明远刚跨进入户门","餐桌暖光与窗外冷灰夜光"],"unresolved_blockers":[]}
+}

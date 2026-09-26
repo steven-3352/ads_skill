@@ -31,7 +31,8 @@ replication/edit/
 /submitting
 
 # Raw image-gen API responses embed base64 image payloads (b64_json) — treat as media
-**/audit/assets/**/response.json
+# 覆盖整个 audit 子树(assets/ 与 automation/audit/ 等),避免 base64 大文件污染文本仓
+**/audit/**/response.json
 
 # Per-generation video response JSONs carry a download URL to the generated MP4
 # (a media pointer) — treat as media, keep out of the text-only repo
@@ -43,5 +44,24 @@ replication/edit/
 *.ts
 *.m4a
 *.aac
+*.aiff
+*.aif
 *.mkv
 *.webm
+
+# 自动化管线中间工程态(机器生成、非人类可读)——不入文本仓
+# 提交锁 / 互斥锁 / 状态标记
+**/*.locked
+**/*.lock
+**/*.reconciled-submitting
+**/*.truncated-corrupt
+# 产物哈希校验
+**/*.sha256
+# 追加式事件台账 / 运行日志 / 错误转储
+**/*.ndjson
+**/*.log
+**/*.err
+# automation 目录下的机器状态清单(status/budget/asset_ids 快照)
+# 注意:保留 wild-mode/prompts/*-state-*.json(提示词产物)与 *subs-manifest.json(字幕清单)
+**/automation/*.paid-state.json
+**/automation/manifest.json

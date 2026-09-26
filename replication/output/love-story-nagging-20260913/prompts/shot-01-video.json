@@ -1,0 +1,39 @@
+{
+  "asset_type": "video",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-01 等待与迟归 H3视频",
+  "mode": "I2VA",
+  "shot": "01",
+  "unit": "unit-01",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, restrained contemporary Chinese-life cinema in a modest apartment dining-kitchen at night. The opening exactly preserves <Picture 1>: Lin Jing remains seated at the left side of the dark wooden dining table, the same three untouched dishes and two place settings stay fixed, and Zhou Mingyuan remains at the open entry door on the right. The camera holds a stable medium-wide composition with only a very small, slow push in. Lin Jing looks down at the black phone in her hands, waits without speaking, then lifts her eyes toward the sound of the door. Zhou enters slowly from the doorway, closes the distance by two measured steps, and stops near the empty chair without approaching her further. His shoulders sag from fatigue; her body stays still and guarded. Their identities, hair, clothing, body proportions, room layout, tableware, dishes, sage-green cabinets, warm dining lamp and cool night window light remain unchanged. No lip-synced dialogue is generated; both mouths remain naturally closed. No cuts, no sudden camera move, no exaggerated expression, no added people or objects.\n\noverall_soundscape: A quiet apartment bed of refrigerator hum and a faint wall clock, followed by the soft door latch, restrained footsteps, and light fabric movement.\n\nnon_diegetic_music: N/A. Absolutely no readable text, subtitles, captions, title cards, watermark, logo, pinyin or interface graphics anywhere in frame.",
+  "images": ["shots/shot-01/images/unit-01-first.png"],
+  "content": [{"type":"image_url","image_url":{"url":"pending"},"local_path":"replication/output/love-story-nagging-20260913/shots/shot-01/images/unit-01-first.png","role":"first_frame"}],
+  "duration": 10,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": false,
+  "watermark": false,
+  "output": "shots/shot-01/video/unit-01.mp4",
+  "status": "generated_accepted",
+  "generated_at": "2026-09-13",
+  "output_sha256": "c1348bf38aec5d7128704f7001bbab70ffbd113ed2c0a00038bfc64fa020b977",
+  "provider_task_id": "01a09aa4-1ddf-7070-9dd7-b763ae97fdf8",
+  "technical_review": {
+    "result": "pass",
+    "duration_seconds": 10.125,
+    "dimensions": "1344x768",
+    "frame_rate": 24,
+    "video_codec": "h264",
+    "audio_stream": "aac 32000Hz stereo; replace in Jianying final mix",
+    "visual_checks": [
+      "妻子由看手机转向丈夫，丈夫从门口走到空椅旁",
+      "人物、服装、三盘菜、两套餐具和房间连续",
+      "无可读文字或水印",
+      "具有真实人物与镜头运动"
+    ]
+  },
+  "note": "对白、字幕、环境声与混音在剪映后期完成；H3仅生成无对白画面。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"video","mode":"I2VA","reviewed_at":"2026-09-13","checks":["I2VA首帧在0.00秒完全引用","10秒且16:9","妻子等待到丈夫入室的单镜发展","人物房间餐具菜品连续","无模型对白且嘴唇闭合","无文字水印"],"unresolved_blockers":[],"reviewed_prompt_sha256":"3450ce867b300366c11a9d2af1db808ccb7c5c38d67b3e87edf51efcc7c51a27"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B01"],"related_shots":["01"],"visual_evidence":["妻子守着未动的饭菜等待","丈夫从右侧门进入","两人停在餐桌两侧","疲惫与担心通过视线和停顿表达"],"unresolved_blockers":[]}
+}

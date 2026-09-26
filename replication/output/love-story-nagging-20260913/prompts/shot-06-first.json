@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-06-first 后悔与抹药首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与shot-05完全相同的社区露天烧烤摊、深绿色雨棚、烤炉和不锈钢窄桌方位。韩磊严格保持人物master中的圆脸短寸、宽肩微胖体型、橄榄绿短袖和黑围裙，位于画面左侧烤炉后方中景，手中夹子仍压着烤串，眼睛平静看向丈夫，处于随口发问前的一瞬。周明远严格保持人物master中的脸型发型和深炭灰夹克，坐在画面右侧，刚从抱怨的前倾姿态停住，侧脸略愣，双手暂时落在桌边，还没有笑也没有摸后肩。银色保温袋、烤串托盘和无字玻璃杯保持原位。顶部中性灯、炭火暖光和远处城市冷光混合，烟气薄而真实，表演克制。画面下方留字幕安全区。Clean frame, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no changed character clothing, no exaggerated reaction.",
+  "output": "shots/shot-06/images/unit-06-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/han-lei-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；首帧停在老板发问与丈夫愣住的起点，笑和摸肩留给视频。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["承接shot-05空间与人物左右关系","老板平静发问起点","丈夫愣住但尚未笑和摸肩","关键桌面道具连续","无文字水印与夸张反应"],"unresolved_blockers":[],"reviewed_prompt_sha256":"fa78de6fa4bdf998320ac7c7ce893c63efe3d9d5474a53c2d4f982f1464ceca2"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B08","B09"],"related_shots":["06"],"visual_evidence":["老板翻串时平静抬眼","丈夫从抱怨中突然停顿","丈夫双手尚未摸肩","保温袋持续在手边"],"unresolved_blockers":[]}
+}

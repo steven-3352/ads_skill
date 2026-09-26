@@ -1,0 +1,15 @@
+{
+  "asset_type": "image",
+  "model": "MiniMax-H3",
+  "authoring_skill": "h3-prompt-writing",
+  "title": "shot-07-first 胃药与十斤蒜首帧",
+  "mode": "I2VA-first-frame",
+  "prompt": "写实电影感，16:9横构图，与shot-05、shot-06相同的社区烧烤摊夜景和混合光。周明远严格保持人物master中的35岁脸型、短黑发、深炭灰夹克与雾灰衬衫，位于画面右侧中近景，身体不再前冲，目光落向桌面，左手靠近银色保温袋的提手但尚未触碰，右手做一个很小的叙述手势，表情从防御转为回想。韩磊严格保持人物master中的身份和黑围裙，在画面左后方烤炉工作侧轻度虚化，安静听着并继续照看烤串。桌面仍有烤串托盘、无字玻璃杯和银色保温袋；远处居民楼灯光虚化。自然肤质、轻微胶片颗粒、有限景深，情绪安静具体。画面下方留字幕安全区。Clean frame, no medicine packaging text, no garlic pile in the current scene, no readable text, no subtitles, no captions, no watermark, no logo, no pinyin, no flashback collage, no exaggerated smile.",
+  "output": "shots/shot-07/images/unit-07-first.png",
+  "status": "prompt_ready_not_generated",
+  "references": ["assets/zhou-mingyuan-master.png", "assets/han-lei-master.png"],
+  "generator": "GPT Image",
+  "note": "作为I2VA首帧；用丈夫动作变慢表现回想，胃药和糖蒜由对白而非模型文字承担。",
+  "h3_prompt_review": {"skill":"h3-prompt-writing","authorship":"generated_by_skill","result":"pass","asset_type":"image","mode":"I2VA-first-frame","reviewed_at":"2026-09-13","checks":["丈夫中近景且动作由快转慢","左手靠近保温袋的动作起点","老板保持工作侧安静倾听","不生成带字药盒或回忆拼贴","无文字水印"],"unresolved_blockers":[],"reviewed_prompt_sha256":"e3a2afe26e764e9cd968e23e474ca0946ebb76f0e8f0fbabf707eebd43f06b42"},
+  "narrative_alignment": {"source_story":"story/别嫌她唠叨.md","related_beats":["B10","B11"],"related_shots":["07"],"visual_evidence":["丈夫低头回想并放慢手势","左手接近保温袋","老板在后方安静听","烧烤摊道具与灯光连续"],"unresolved_blockers":[]}
+}

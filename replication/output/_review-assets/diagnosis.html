@@ -1,0 +1,120 @@
+<html style="margin:0;padding:0;">
+<title>历史项目剧本阶段·双引擎诊断</title>
+<div style="width:100%;box-sizing:border-box;background:#f5f6f8;padding:24px 18px;font-family:-apple-system,'PingFang SC','Segoe UI',Arial,sans-serif;color:#1f2329;">
+  <div style="max-width:920px;margin:0 auto;">
+
+    <!-- 标题 -->
+    <div style="background:linear-gradient(135deg,#0f4c81,#1c6dd0);border-radius:14px;padding:22px 24px;color:#fff;">
+      <div style="font-size:21px;font-weight:700;letter-spacing:.5px;">历史项目剧本阶段 · 双引擎诊断</div>
+      <div style="font-size:13px;opacity:.9;margin-top:8px;line-height:1.6;">抽样 replication/output 中 8 个不同类型剧本，按《script-direction》双引擎标准人工评分（0–100）。诊断日期 2026-09-27。</div>
+    </div>
+
+    <!-- 核心结论 -->
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;">
+      <div style="flex:1;min-width:260px;background:#fff;border-left:5px solid #1c6dd0;border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+        <div style="font-size:13px;color:#1c6dd0;font-weight:700;">留存工程（防守·决定完播）</div>
+        <div style="font-size:26px;font-weight:800;color:#1c6dd0;margin-top:4px;">78<span style="font-size:14px;font-weight:500;"> / 平均</span></div>
+        <div style="font-size:12.5px;color:#646a73;margin-top:6px;line-height:1.6;">钩子前置、金句前置、缺失显影、密度自检都已成熟，是当前强项。</div>
+      </div>
+      <div style="flex:1;min-width:260px;background:#fff;border-left:5px solid #e8590c;border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+        <div style="font-size:13px;color:#e8590c;font-weight:700;">传播工程（进攻·决定破圈）</div>
+        <div style="font-size:26px;font-weight:800;color:#e8590c;margin-top:4px;">35<span style="font-size:14px;font-weight:500;"> / 平均</span></div>
+        <div style="font-size:12.5px;color:#646a73;margin-top:6px;line-height:1.6;">无传播核、机关多在包装层、情绪偏低唤醒——最大结构性短板。</div>
+      </div>
+    </div>
+
+    <!-- 评分条形 -->
+    <div style="background:#fff;border-radius:14px;padding:20px 22px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+      <div style="font-size:15px;font-weight:700;margin-bottom:4px;">一、逐项目双引擎评分</div>
+      <div style="font-size:12px;color:#8a9099;margin-bottom:16px;">蓝=留存（防守）　橙=传播（进攻）；分差越大，代表"好看但不会被转"越严重</div>
+
+      <div id="bars"></div>
+
+      <div style="display:flex;gap:18px;margin-top:14px;font-size:12px;color:#646a73;">
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#1c6dd0;border-radius:3px;display:inline-block;"></span>留存工程</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#e8590c;border-radius:3px;display:inline-block;"></span>传播工程</span>
+      </div>
+    </div>
+
+    <!-- 覆盖矩阵 -->
+    <div style="background:#fff;border-radius:14px;padding:20px 22px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+      <div style="font-size:15px;font-weight:700;margin-bottom:4px;">二、传播工程要素覆盖矩阵（8 个项目整体）</div>
+      <div style="font-size:12px;color:#8a9099;margin-bottom:14px;">✓ 显式设计　△ 隐性碰巧/仅在包装层　✗ 缺失</div>
+      <div id="matrix"></div>
+    </div>
+
+    <!-- 一句话 -->
+    <div style="background:#fff7f0;border:1px solid #ffd8bf;border-radius:12px;padding:14px 18px;margin-top:16px;font-size:13.5px;line-height:1.7;color:#7a3410;">
+      <b>诊断一句话：</b>这批片"让人看完"的功夫已经 80 分，"让人主动转"的功夫只有 30 分——它们更可能成为<b>结构工整、情绪到位但破不了圈的"好片"</b>，而不是刷屏爆款。传播工程是当前投入产出比最高的改进区。
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var data = [
+    {name:"分手 v2·抖音落地版", ret:88, vir:32},
+    {name:"分手后做朋友",        ret:85, vir:38},
+    {name:"你根本不懂我",        ret:86, vir:48},
+    {name:"闺蜜私房话",          ret:78, vir:42},
+    {name:"酒喝完了·预告片",     ret:80, vir:40},
+    {name:"环中国自驾",          ret:82, vir:25},
+    {name:"陈皮广告",            ret:68, vir:30},
+    {name:"别嫌她唠叨",          ret:60, vir:28}
+  ];
+  var bars = document.getElementById('bars');
+  if(!bars) return;
+  var html = '';
+  data.forEach(function(d){
+    html += '<div style="margin-bottom:13px;">'
+      + '<div style="font-size:12.5px;font-weight:600;margin-bottom:4px;">'+d.name+'</div>'
+      + row('#1c6dd0', d.ret, '留存 '+d.ret)
+      + row('#e8590c', d.vir, '传播 '+d.vir)
+      + '</div>';
+  });
+  function row(color, v, label){
+    return '<div style="display:flex;align-items:center;gap:8px;margin-top:3px;">'
+      + '<div style="flex:1;background:#eef1f5;border-radius:5px;height:15px;overflow:hidden;">'
+      + '<div style="height:100%;width:'+v+'%;background:'+color+';border-radius:5px;"></div></div>'
+      + '<div style="width:64px;font-size:11.5px;color:'+color+';font-weight:600;text-align:right;">'+label+'</div>'
+      + '</div>';
+  }
+  bars.innerHTML = html;
+
+  var items = [
+    ["传播核（动笔前定“为自己什么而转”）", "x"],
+    ["六大传播动机逐条诊断", "x"],
+    ["传播路径显式选择（转发/评论/收藏/涨粉）", "x"],
+    ["传播工程设计画布", "x"],
+    ["传播力自检闸门", "x"],
+    ["金句机关（可截图引用）", "ok"],
+    ["@某人 / 转给具体的人", "x"],
+    ["站队机关（进入内容，非仅评论区）", "tri"],
+    ["对号入座（你是哪种人/扣1扣2）", "tri"],
+    ["争议观点（反主流但有理）", "tri"],
+    ["名场面（刻意可截图做梗的画面）", "tri"],
+    ["悬念机关（正片留白，非仅预告）", "tri"],
+    ["社交货币 / 内幕揭秘", "x"],
+    ["干货清单 / 收藏价值", "x"]
+  ];
+  var map = {
+    ok:  ['✓','#1a7f37','#e6f6ec','显式做'],
+    tri: ['△','#b8860b','#fdf4d7','隐性/包装层'],
+    x:   ['✗','#c0392b','#fdecea','缺失']
+  };
+  var mh = document.getElementById('matrix');
+  if(!mh) return;
+  var mhtml = '<div style="display:flex;flex-direction:column;">';
+  items.forEach(function(it){
+    var s = map[it[1]];
+    mhtml += '<div style="display:flex;align-items:center;gap:12px;padding:8px 10px;border-bottom:1px solid #f0f1f3;">'
+      + '<div style="width:30px;height:30px;flex:none;border-radius:7px;background:'+s[2]+';color:'+s[1]+';font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;">'+s[0]+'</div>'
+      + '<div style="flex:1;font-size:13px;">'+it[0]+'</div>'
+      + '<div style="font-size:11.5px;color:'+s[1]+';font-weight:600;white-space:nowrap;">'+s[3]+'</div>'
+      + '</div>';
+  });
+  mhtml += '</div>';
+  mh.innerHTML = mhtml;
+})();
+</script>

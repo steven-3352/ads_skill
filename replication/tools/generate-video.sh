@@ -3,7 +3,10 @@ set -Eeuo pipefail
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$BASE_DIR/../.." && pwd)"
-ENV_FILE="/home/ubuntu/ads_skill/.env"
+ENV_FILE="${ADS_SKILL_ENV_FILE:-$PROJECT_DIR/.env}"
+if [[ ! -f "$ENV_FILE" && -f "/home/ubuntu/ads_skill/.env" ]]; then
+  ENV_FILE="/home/ubuntu/ads_skill/.env"
+fi
 [[ -f "$ENV_FILE" ]] || { echo "找不到项目配置: $ENV_FILE" >&2; exit 1; }
 set -a; source "$ENV_FILE"; set +a
 

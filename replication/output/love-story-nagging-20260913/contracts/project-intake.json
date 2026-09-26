@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "projectId": "love-story-nagging-20260913",
+  "title": "别嫌她唠叨",
+  "stage": "shot_01_04_video_generation",
+  "status": "paused_for_shot_03_user_decision",
+  "source": {
+    "type": "user_supplied_reference_video_and_confirmed_transcript",
+    "referenceVideo": "/Users/wmzuo/Downloads/24帧情书-别嫌她唠叨，那是她爱你最笨拙的方式。_#-20260913173105.mp4",
+    "storyFile": "story/别嫌她唠叨.md",
+    "reusePolicy": "原视频仅用于故事、动作与节奏分析，不复用原演员画面"
+  },
+  "brief": {
+    "platform": "抖音",
+    "aspect": "16:9",
+    "durationTargetSeconds": 118,
+    "durationRangeSeconds": [115, 120],
+    "dialoguePolicy": "保留全部已确认对白",
+    "format": "写实生活情感短片",
+    "region": "当代中国普通城市",
+    "audience": "成年伴侣及家庭关系内容观看者",
+    "visualStyle": "写实生活电影感，表演克制自然，不使用夸张短剧表情",
+    "model": "MiniMax-H3",
+    "audio": {
+      "generation": "模型画面不承担准确中文对白",
+      "final": "剪映免费音色完成丈夫、妻子、老板三人配音，并制作字幕、环境声和混音"
+    }
+  },
+  "cast": {
+    "husband": "35岁左右，普通公司职员，疲惫但不邋遢",
+    "wife": "33岁左右，朴素利落，讲话直接",
+    "stallOwner": "38岁左右，丈夫熟识的爽朗朋友"
+  },
+  "budget": {
+    "currency": "CNY",
+    "imageUnitPrice": 0.25,
+    "videoSecondUnitPrice": 0.2,
+    "plannedImages": 15,
+    "plannedVideoSeconds": 110,
+    "firstPassApproved": 25.75,
+    "retryIncluded": false,
+    "retryPolicy": "任何付费重试先展示失败结果、修正变量和增量成本，再由用户确认"
+  },
+  "confirmed": {
+    "platformAndAspect": true,
+    "fullDialogue": true,
+    "newCastAndLocations": true,
+    "model": true,
+    "castAndRegion": true,
+    "visualStyle": true,
+    "postDub": true,
+    "firstPassBudget": true,
+    "screenplay": true,
+    "characterDefinitions": true,
+    "visualGrammar": true,
+    "productionPlan": true,
+    "characterPrompts": true,
+    "characterMasterImages": true,
+    "shotFirstFramePrompts": false,
+    "shotFirstFramePromptsApproved": ["01", "02", "03", "04"]
+  },
+  "generationAllowed": false,
+  "generationScope": {
+    "shots": ["01", "02", "03", "04"],
+    "assets": "first-frame images and MiniMax-H3 videos only",
+    "additionalCostCap": 8.85,
+    "automaticRetry": false,
+    "remainingShots": ["05", "06", "07", "08", "09", "10", "11", "12"]
+  },
+  "externalAssetUploadApproved": true,
+  "nextAction": "用户审阅分镜03首版的口型和起身偏差，并决定接受首版继续04，或追加2.00元重做分镜03；分镜04尚未提交，分镜05-12保持待定"
+}
