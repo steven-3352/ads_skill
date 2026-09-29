@@ -1,0 +1,28 @@
+{
+  "prompt": "Photorealistic candid wide two-shot filmed on an iPhone 17 Pro on a tripod at a neutral third-person distance across a home apartment living-room, 16:9 horizontal composition (generated at 1536x1024), strictly indoors. This is NOT a selfie and nobody looks into the lens. In the mid-left of the frame a young East Asian Chinese woman stands with her head bowed over a smartphone held in both hands, her thumbs caught mid-motion typing a message, absorbed and unhurried, paying attention only to the phone; she is the exact same person as the second reference image, with the same ordinary real Chinese face (not Western, not an idol face), the same long loose natural black hair and the same plain off-white to cream chunky unbranded knit sweater over light-blue denim jeans; her expression is relaxed and preoccupied, absolutely not cheerful, eyes lowered to the screen. A few steps to the right a young East Asian Chinese man stands still and settled, one hand loosely holding his own phone at his side, the other hand in his trouser pocket, quietly watching her; he is the exact same person as the first reference image, with the same ordinary real Chinese face, the same short natural black hair and the same plain solid dark-grey zip-up knit sweater with no logo and no text; his expression is heavy, patient and quietly resigned, his lips closed, not cheerful. A plain wheeled suitcase stands upright near the entrance door behind them. Keep both people's identity, hair and clothing exactly as their reference images and only change their pose and framing. The smartphone screens show only an indistinct glow with no readable text and no Chinese characters. The living-room clearly fills the frame: a fabric sofa with cushions, a wooden coffee table, an interior wall with a framed picture and a leafy houseplant are visible. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street, and any window shows only a soft far-away out-of-focus city apartment building, never nature. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward the camera, nobody looking into the lens. No smiling, no cheerful or happy expression. No outdoor scene, no park, no trees, no lake, no river, no mountains, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-B.png",
+    "replication/output/xianliao/assets/master-A-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FL2VA LAST frame (U3-1, 段3): woman head bowed over phone typing/absorbed (r2 head-bowed pose works, no frontal smile-inheritance risk), man standing settled a few steps away quietly watching, resigned; suitcase by door",
+      "two-shot identity lock: man=first ref (master-B), woman=second ref (master-A-r2); wardrobe consistent with U3-1-first (dark-grey zip knit / off-white chunky knit + light-blue jeans)",
+      "woman looking DOWN at phone (not frontal) so global no-smile negative is safe here and included; man not cheerful, heavy/resigned",
+      "phone screens indistinct glow only, no readable text/Chinese",
+      "strictly indoor living-room, window only far city never nature; full outdoor negatives; no animal",
+      "bright airy neutral-white daytime; iPhone17 realistic texture; anti-selfie third-person tripod; 16:9 1536x1024; no text/logo/Chinese"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f80db668836340c0162af659d815131824084dc14f47679352a4a952ee414c16"
+  },
+  "reviewed_prompt_sha256": "f80db668836340c0162af659d815131824084dc14f47679352a4a952ee414c16"
+}

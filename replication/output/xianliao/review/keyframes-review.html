@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《不是我不要你，是你根本不需要我》— 关键帧确认</title>
+<style>
+  :root{--bg:#0f1218;--card:#161b24;--line:#273040;--fg:#e8ecf3;--sub:#9aa6b8;--accent:#7fb2ff;--warn:#ffcf6b;--bad:#ff8b8b;--ok:#7fd6a0;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;}
+  .wrap{max-width:1180px;margin:0 auto;padding:22px 18px 80px;}
+  h1{font-size:22px;margin:8px 0 2px;}
+  .meta{color:var(--sub);font-size:13.5px;margin-bottom:6px;}
+  .banner{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0;}
+  .banner b{color:var(--accent);}
+  h2.sec{font-size:16px;margin:30px 0 12px;padding-left:10px;border-left:3px solid var(--accent);}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+  @media(max-width:900px){.grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.grid{grid-template-columns:1fr;}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .card img{width:100%;display:block;background:#000;aspect-ratio:3/2;object-fit:cover;}
+  .card .body{padding:11px 13px;}
+  .card h3{font-size:14px;margin:2px 0 6px;}
+  .card p{color:var(--sub);font-size:12.5px;margin:5px 0;}
+  .id{color:var(--accent);font-weight:600;}
+  .badge{display:inline-block;border-radius:6px;padding:1px 7px;font-size:11px;margin:0 5px 5px 0;}
+  .b-ok{background:#16301f;color:var(--ok);}
+  .b-warn{background:#332a12;color:var(--warn);}
+  .b-bad{background:#331717;color:var(--bad);}
+  .b-neu{background:#242a35;color:var(--sub);}
+  .ask{background:#1d2230;border:1px solid #33405c;border-radius:12px;padding:18px 20px;margin-top:30px;}
+  .ask h3{margin:0 0 8px;font-size:16px;color:var(--accent);}
+  .ask ul{margin:8px 0 0;padding-left:20px;}
+  .ask li{margin:7px 0;font-size:14px;}
+  .warnbox{background:#241d12;border:1px solid #4a3a1a;border-radius:12px;padding:14px 18px;margin:14px 0;}
+  .warnbox h3{margin:0 0 6px;font-size:15px;color:var(--warn);}
+  .warnbox p{margin:5px 0;font-size:13.5px;color:#e6dcc4;}
+  .okbox{background:#132318;border:1px solid #1e4a2e;border-radius:12px;padding:14px 18px;margin:14px 0;}
+  .okbox h3{margin:0 0 6px;font-size:15px;color:var(--ok);}
+  .okbox p{margin:5px 0;font-size:13.5px;color:#cfe6d6;}
+  .b-ok{background:#12331f;color:var(--ok);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>《不是我不要你，是你根本不需要我》— 关键帧确认</h1>
+  <div class="meta">骂醒赛道情感短剧 · 16:9 · 出租屋客厅单场景 · iPhone 明亮生活流 · 约 200s / 13 段 · 30 张关键帧全部落盘（¥7.5）</div>
+
+  <div class="banner">
+    这是全片 <b>13 段 30 张关键帧</b>（每个视频镜头的首/尾帧起点）。母板你已认可，这一层锁的是<b>每个镜头的机位、构图、人物站位、穿着连戏</b>。确认后我才进 <b>视频层（约 ¥39）</b> —— 视频阶段才让 H3 把这些静帧「演活」（说话、落泪、转身、砸门）。<br>
+    <b>请重点看两件事：①阿澈的 7 张情绪镜已按修正配方重出，静帧上就能看到落泪/崩溃了（下方绿框说明），请你确认哭戏到不到位；②开场双人镜（U3-1）仍有连戏漂移，待你定要不要重出（下方黄框）。</b>
+  </div>
+
+  <div class="okbox">
+    <h3>✅ 已解决 ①：阿澈的情绪镜，静帧上已能看到眼泪/崩溃</h3>
+    <p>上一版「中性脸」的真因不是母板、也不是模型不支持——是<b>我在提示词里写的「与参考一致 / 只变表情 / 保持不变」这套身份锁话术，被模型当成「连表情一起冻住」</b>，把哭摁成了平静脸。我用同一张中性母板做了控制变量实测：只把这几句身份锁话术删掉、正向狠写哭戏，同一个人当场就真哭了、脸和衣服还是本人。</p>
+    <p>已按修正配方把 <b>7 张情绪镜（U4-3 / U5-3 / U7-2 / U8-2 / U11-1 / U12-2 / U13-2）全部重出</b>：U4-3 争吵初落泪、U5-3 红眼压泪、U7-2 单泪滚落、U8-2 张嘴崩溃、U11-1 近景无声崩溃泪成股、U12-2 站着低头红眼、U13-2 哭尽空洞。身份/服装/场景全连戏，无发光眼、无字幕。<b>关键帧就哭到位了，H3 视频层只需让它动起来（说话、抽气、泪继续流），不再赌「从平静脸演到崩溃」。</b>（此项花 7×¥0.25＝¥1.75，已入账。）</p>
+  </div>
+
+  <div class="warnbox">
+    <h3>⚠ 待你定 ②：开场双人镜 U3-1 连戏漂移</h3>
+    <p>U3-1（开场，阿沉拖箱进门）里：阿澈穿的是<b>灰色家居裤</b>，不是全片锁定的<b>浅蓝牛仔裤</b>；「回头甜笑冻住」也没出来（中性脸）。阿沉穿黑外套+双肩包+黑硬壳箱，和后面 U9-1 转身镜里的<b>深灰针织开衫+灰箱子对不上</b>（同一场戏、同一下午，男主服装/行李必须一致）。</p>
+    <p>其余单人镜（阿沉近景骂段、阿澈背影/静物/大远景）穿着与身份都连戏，达标。要不要我重出 U3-1 这一组双人帧统一穿着+补甜笑，请你定。</p>
+  </div>
+
+  <!-- 段3 开场 -->
+  <h2 class="sec">段3 · 开场：阿沉拖箱进门 → 阿澈只顾回消息</h2>
+  <div class="grid">
+    <div class="card"><img src="../shots/shot-U3-1/images/U3-1-first.png" alt="U3-1-first">
+      <div class="body"><h3><span class="id">U3-1 首</span> 双人·进门</h3>
+      <span class="badge b-bad">阿澈穿灰家居裤(应浅蓝牛仔)</span><span class="badge b-bad">甜笑没出</span><span class="badge b-warn">阿沉服装与U9不一致</span>
+      <p>门推开阿沉拖箱站玄关，阿澈本该回头甜笑冻住——实际是中性脸+错穿。</p></div></div>
+    <div class="card"><img src="../shots/shot-U3-1/images/U3-1-last.png" alt="U3-1-last">
+      <div class="body"><h3><span class="id">U3-1 尾</span> 双人·低头玩手机</h3>
+      <span class="badge b-warn">同上双人连戏待定</span>
+      <p>阿澈低头玩手机，阿沉揣手机站定。FL2VA 尾帧。</p></div></div>
+    <div class="card"><img src="../shots/shot-U3-2/images/U3-2-first.png" alt="U3-2-first">
+      <div class="body"><h3><span class="id">U3-2</span> 阿沉近景·说话起势</h3>
+      <span class="badge b-ok">身份/穿着/室内 OK</span>
+      <p>「我在门口站了十分钟，你手机响一次你抬一次头。」</p></div></div>
+  </div>
+
+  <!-- 段4-8 骂醒 -->
+  <h2 class="sec">段4–8 · 客厅对峙 + 逐句骂醒（阿沉近景为主 · 阿澈反打）</h2>
+  <div class="grid">
+    <div class="card"><img src="../shots/shot-U4-1/images/U4-1-first.png" alt="U4-1">
+      <div class="body"><h3><span class="id">U4-1</span> 双人中景·对峙</h3><span class="badge b-ok">OK</span>
+      <p>「不顺心的，是我等你这五年。」</p></div></div>
+    <div class="card"><img src="../shots/shot-P04-U1/images/P04-U1-first.png" alt="P04">
+      <div class="body"><h3><span class="id">段4锚 P04</span> 阿沉近景（已验）</h3><span class="badge b-ok">短测已 accepted</span>
+      <p>「你以为你善良？你是怕。」骂醒锚句，管线已验证。</p></div></div>
+    <div class="card"><img src="../shots/shot-U4-3/images/U4-3-first.png?v=fix1" alt="U4-3">
+      <div class="body"><h3><span class="id">U4-3</span> 阿澈近景·急辩</h3><span class="badge b-ok">已重出·争吵初落泪✓</span>
+      <p>「我那是……群里有人等我回话。」眉头拧起、张嘴争辩、眼含泪光。</p></div></div>
+    <div class="card"><img src="../shots/shot-U5-1/images/U5-1-first.png" alt="U5-1">
+      <div class="body"><h3><span class="id">U5-1</span> 阿沉近景·连珠</h3><span class="badge b-ok">OK</span>
+      <p>「别人发个表情包，你也得回个表情包……就是没人真的要听。」</p></div></div>
+    <div class="card"><img src="../shots/shot-U5-2/images/U5-2-first.png" alt="U5-2">
+      <div class="body"><h3><span class="id">U5-2</span> 阿沉近景·收压</h3><span class="badge b-ok">OK</span>
+      <p>「连一句没人要的『收到』，都排在我前面。」</p></div></div>
+    <div class="card"><img src="../shots/shot-U5-3/images/U5-3-first.png?v=fix1" alt="U5-3">
+      <div class="body"><h3><span class="id">U5-3</span> 阿澈近景·泛红压泪</h3><span class="badge b-ok">已重出·红眼压泪✓</span>
+      <p>情绪铰链镜，承接骂段落到阿澈脸上：红眼眶泛泪、脸颊泪痕、抿唇隐忍。</p></div></div>
+    <div class="card"><img src="../shots/shot-U6-1/images/U6-1-first.png" alt="U6-1">
+      <div class="body"><h3><span class="id">U6-1</span> 阿澈挡在行李箱前</h3><span class="badge b-ok">OK</span>
+      <p>「我是心好！我帮别人，有错吗？」</p></div></div>
+    <div class="card"><img src="../shots/shot-U6-2/images/U6-2-first.png" alt="U6-2">
+      <div class="body"><h3><span class="id">U6-2</span> 双人隔箱对峙侧</h3><span class="badge b-ok">OK</span>
+      <p>「你是打心里觉得，自己不配被谁排第一。」</p></div></div>
+    <div class="card"><img src="../shots/shot-U7-1/images/U7-1-first.png" alt="U7-1">
+      <div class="body"><h3><span class="id">U7-1</span> 阿沉近景·约会段</h3><span class="badge b-ok">OK</span>
+      <p>「我订好位子等你三个钟头……你说扔就扔了。」</p></div></div>
+    <div class="card"><img src="../shots/shot-U7-2/images/U7-2-first.png?v=fix1" alt="U7-2">
+      <div class="body"><h3><span class="id">U7-2</span> 阿澈近景·一滴泪</h3><span class="badge b-ok">已重出·单泪滚落✓</span>
+      <p>一滴泪顺颊滚落、垂眼隐忍，右前景带阿沉肩正反打。</p></div></div>
+    <div class="card"><img src="../shots/shot-U8-1/images/U8-1-first.png" alt="U8-1">
+      <div class="body"><h3><span class="id">U8-1</span> 阿沉近景·诛心</h3><span class="badge b-ok">OK</span>
+      <p>「我等你五年，等来的，是我永远排最后一个。」</p></div></div>
+    <div class="card"><img src="../shots/shot-U8-2/images/U8-2-first.png?v=fix1" alt="U8-2">
+      <div class="body"><h3><span class="id">U8-2</span> 阿澈·崩溃大颗泪</h3><span class="badge b-ok">已重出·张嘴崩溃痛哭✓（金丝雀首验）</span>
+      <p>「我等了你五年，你就这么走？」张嘴哭喊、脸颊泛红、湿泪痕——修正配方在此镜首验通过。</p></div></div>
+  </div>
+
+  <!-- 段9-10 -->
+  <h2 class="sec">段9–10 · 转身走 → 判决 → 砸门金句</h2>
+  <div class="grid">
+    <div class="card"><img src="../shots/shot-U9-1/images/U9-1-first.png" alt="U9-1-first">
+      <div class="body"><h3><span class="id">U9-1 首</span> 阿沉拖箱转身+阿澈伸手</h3><span class="badge b-ok">构图 OK</span>
+      <p>转身走状态变化 FL2VA 起帧。阿沉穿深灰针织（此镜对，与U3-1不一致见待定②）。</p></div></div>
+    <div class="card"><img src="../shots/shot-U9-1/images/U9-1-last.png" alt="U9-1-last">
+      <div class="body"><h3><span class="id">U9-1 尾</span> 阿沉门框回头最后一眼</h3><span class="badge b-ok">OK</span>
+      <p>平静发红压泪不发光。</p></div></div>
+    <div class="card"><img src="../shots/shot-U9-2/images/U9-2-first.png" alt="U9-2">
+      <div class="body"><h3><span class="id">U9-2</span> 阿沉近景·判决</h3><span class="badge b-ok">OK</span>
+      <p>「你不是不会爱我——是你不敢停。」</p></div></div>
+    <div class="card"><img src="../shots/shot-U10-1/images/U10-1-first.png" alt="U10-1">
+      <div class="body"><h3><span class="id">U10-1</span> 阿沉近景</h3><span class="badge b-ok">OK</span>
+      <p>「我等你五年，等来的全是『等我回完这条』。」</p></div></div>
+    <div class="card"><img src="../shots/shot-P10-U1/images/P10-U1-first.png" alt="P10-first">
+      <div class="body"><h3><span class="id">段10砸门 P10 首</span> 砸门金句</h3><span class="badge b-ok">已验</span>
+      <p>「不是我不要你……是你根本不需要我。」</p></div></div>
+    <div class="card"><img src="../shots/shot-P10-U1/images/P10-U1-last.png" alt="P10-last">
+      <div class="body"><h3><span class="id">段10砸门 P10 尾</span></h3><span class="badge b-warn">末帧「包」瑕疵·全片修时一并处理</span>
+      <p>砸门尾帧，已知有一处道具瑕疵待修。</p></div></div>
+  </div>
+
+  <!-- 段11-13 余波 -->
+  <h2 class="sec">段11–13 · 门后余波：条件反射回「收到」→ 钥匙木牌 → 空房间</h2>
+  <div class="grid">
+    <div class="card"><img src="../shots/shot-U11-1/images/U11-1-first.png?v=fix1" alt="U11-1">
+      <div class="body"><h3><span class="id">U11-1</span> 阿澈抽空特写</h3><span class="badge b-ok">已重出·无声崩溃泪成股✓</span>
+      <p>喉头紧、无声崩溃，泪成股滑落、红眼眶——全片情绪高点之一。</p></div></div>
+    <div class="card"><img src="../shots/shot-U11-2/images/U11-2-first.png" alt="U11-2-first">
+      <div class="body"><h3><span class="id">U11-2 首</span> 抹泪抓手机打字</h3><span class="badge b-ok">OK</span>
+      <p>条件反射打「好的收到！辛苦啦~」。</p></div></div>
+    <div class="card"><img src="../shots/shot-U11-2/images/U11-2-last.png" alt="U11-2-last">
+      <div class="body"><h3><span class="id">U11-2 尾</span> 脚边钥匙串落地</h3><span class="badge b-ok">OK</span>
+      <p>迈步踢到钥匙，低头。FL2VA 尾帧。</p></div></div>
+    <div class="card"><img src="../shots/shot-U12-1/images/U12-1-first.png" alt="U12-1">
+      <div class="body"><h3><span class="id">U12-1</span> 钥匙+木牌俯拍 POV（静物）</h3><span class="badge b-ok">静物·文生图</span>
+      <p>木牌刻字「下次，让我排第一」——生成阶段刻痕不可读，<b>清晰刻字留装配阶段作实物标签叠加</b>（非烧字幕）。</p></div></div>
+    <div class="card"><img src="../shots/shot-U12-2/images/U12-2-first.png?v=fix1" alt="U12-2-first">
+      <div class="body"><h3><span class="id">U12-2 首</span> 阿澈站着泛红看地</h3><span class="badge b-ok">已重出·站姿低头红眼✓</span>
+      <p>蹲下捡钥匙状态变化 FL2VA 起帧：站姿低头、红眼泪痕，地上钥匙串点睛。</p></div></div>
+    <div class="card"><img src="../shots/shot-U12-2/images/U12-2-last.png" alt="U12-2-last">
+      <div class="body"><h3><span class="id">U12-2 尾</span> 蹲下握钥匙摩挲木牌</h3><span class="badge b-ok">动作/道具 OK</span>
+      <p>肩抖。FL2VA 尾帧。</p></div></div>
+    <div class="card"><img src="../shots/shot-U13-1/images/U13-1-first.png" alt="U13-1">
+      <div class="body"><h3><span class="id">U13-1</span> 阿澈跪坐背影握木牌</h3><span class="badge b-ok">背影镜·达标</span>
+      <p>手机再亮，她第一次没回头。背影无需表情。</p></div></div>
+    <div class="card"><img src="../shots/shot-U13-2/images/U13-2-first.png?v=fix1" alt="U13-2-first">
+      <div class="body"><h3><span class="id">U13-2 首</span> 阿澈近景·哭尽</h3><span class="badge b-ok">已重出·哭尽空洞干泪痕✓</span>
+      <p>旁白起：哭尽后空洞、红肿眼、眼神发直、干泪痕。</p></div></div>
+    <div class="card"><img src="../shots/shot-U13-2/images/U13-2-last.png" alt="U13-2-last">
+      <div class="body"><h3><span class="id">U13-2 尾</span> 大远景·身影缩小屏光明灭</h3><span class="badge b-ok">收尾大远景·达标</span>
+      <p>全片唯一黑场留装配（此帧不黑）。「这屋里，是真没人了。」</p></div></div>
+  </div>
+
+  <div class="ask">
+    <h3>请你拍板</h3>
+    <ul>
+      <li><b>① 阿澈情绪镜（U4-3/U5-3/U7-2/U8-2/U11-1/U12-2/U13-2）已修好重出</b> —— 静帧就哭到位了（真因是提示词身份锁话术，已删+重出，见上方绿框）。请你确认 <b>7 张哭戏到不到位</b>；到位我就直接进视频。</li>
+      <li><b>② 开场双人镜 U3-1</b> 阿澈错穿灰家居裤(应浅蓝牛仔)+甜笑没出，阿沉服装/行李与 U9-1 不一致 —— 要不要我<b>重出这一组统一穿着+补甜笑</b>？（约 ¥0.5）</li>
+      <li>其余单人/静物/背影/大远景镜身份、穿着、室内、明亮调性都连戏达标。</li>
+      <li>你确认 ① 到位、定完 ②，我据此收尾关键帧层，<b>进视频生成（金丝雀→批量，约 ¥39）</b>，出片再挂 videos-review.html 交你看。</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

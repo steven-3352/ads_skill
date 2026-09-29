@@ -1,0 +1,26 @@
+{
+  "prompt": "A photorealistic character expression reference sheet: a clean 3-by-2 grid of six separate head-and-shoulders portrait photos of ONE single young East Asian Chinese woman, the exact same person in every one of the six panels, shot on a plain seamless light neutral-grey studio backdrop with even soft frontal studio lighting. She must be the exact same person as the reference image, with the exact same ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate idol face), the same long loose natural black hair and the same plain solid off-white to cream chunky unbranded knit sweater; her face, face shape, features, hairstyle and clothing must be identical in all six panels and only the facial expression changes. Every panel is a straight-on head-and-shoulders portrait at the same scale and framing, and each panel shows one clearly different, strongly emotional crying expression, unmistakably intense and distinctly different from the others: panel 1 (top-left) crying while arguing, eyebrows pulled up and together, mouth open mid-word, tears already welling and shining and starting to spill; panel 2 (top-middle) breaking down, both eyes overflowing with tears streaming down, rims flushed red, lips pressed and chin trembling; panel 3 (top-right) crying quietly, two clear wet tears rolling all the way down her cheeks leaving shiny wet tear-tracks, eyebrows drawn up in the middle, gaze dropped; panel 4 (bottom-left) full uncontrolled sobbing, her whole face contorted and crumpled in grief, eyebrows sharply up and together, mouth wide open crying out loud, chin puckered, heavy tears streaming down both cheeks, cheeks and nose flushed red, wet and messy; panel 5 (bottom-middle) cried-out and hollow, face raw swollen and exhausted after hard crying, eyes puffy bloodshot and glassy staring at nothing, wet tear-streaked cheeks, lips slack, utterly emptied out; panel 6 (bottom-right) trying to hold it in and failing, jaw clenched, lips quivering, tears escaping down the sides of her face. The crying is heavy, wet and real with visibly streaming and streaked tears in every panel. Her eyes stay ordinary and matte and the tears are ordinary natural wetness, with no reddened glow, no glowing eyes and no unnatural light coming from the eyes. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real photographic camera texture, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. All six panels are the same identical woman with the same face and hair, never a different woman and never a different face. No outdoor scene, no room interior, plain grey studio backdrop only. No text, no labels, no captions, no numbers, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FINAL RECIPE TEST: master-A-neutral reference (identity lock) + explicit STREAMING wet tears every panel (no held-back/restrained/matte-suppression wording) - tests whether reference keeps identity AND tears still render",
+      "root-cause fix: earlier mild sheet described 4/6 panels as held-back/not-yet-spilling/restrained + global no-reddened; that suppression (a video-layer anti-glow rule mis-imported to stills) flattened them, NOT the model",
+      "identity lock: exact same person as reference in all six panels, same Chinese face/hair/cream knit, only expression changes",
+      "anti glowing-eye rule kept (no glow/no unnatural light) but tears explicitly allowed to stream - proven compatible in t2i sheet",
+      "six crying states 1 arguing-spilling 2 overflow-streaming 3 quiet-two-tears 4 full-sob-contorted 5 cried-out-hollow 6 holding-in-failing; plain grey backdrop even framing for crops; no text/label/number/logo/Chinese"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a31251b6def792c9f13cf0672393dc383ef3583834b4162a80679e74970c3ba9"
+  },
+  "reviewed_prompt_sha256": "a31251b6def792c9f13cf0672393dc383ef3583834b4162a80679e74970c3ba9"
+}

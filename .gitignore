@@ -65,3 +65,10 @@ replication/edit/
 # 注意:保留 wild-mode/prompts/*-state-*.json(提示词产物)与 *subs-manifest.json(字幕清单)
 **/automation/*.paid-state.json
 **/automation/manifest.json
+
+# 视频制作运行台账 = 机器生成的中间产物,不入文本仓
+# (请求/响应/生命周期/QC/授权/项目账本/foreign基线;重试 r2/r3/fix 快照)
+# 只保留人类创作产物:剧本(story)、分镜(storyboard)、提示词(prompts)、契约(contracts)、审阅页(*.html)
+**/output/*/automation/
+# 审阅目录下的 QC/对账记录也是机器中间态,只留审阅 HTML 本身
+**/output/*/review/qc/

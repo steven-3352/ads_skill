@@ -1,0 +1,30 @@
+{
+  "prompt": "Photorealistic candid two-shot medium shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024) with a still, freeze-frame feel, a young East Asian Chinese woman on the left and a young East Asian Chinese man on the right sharing the frame, seated on a sofa with a low coffee table between them. The woman on the left has taken the plain unbranded sealed full-sugar milk-tea cup back from the coffee table into her hand, inserted a straw into it and lowered her head to take a sip, then puts on a fake polite smile that does not reach her eyes; the milk-tea cup is now in her hand with a straw inserted. The man on the right keeps holding his phone up in his hand exactly as in the first scene reference image, still absorbed and looking down at his phone screen or staring blankly ahead with a faintly bewildered, clueless expression, the look of someone who has no idea anything is wrong; he does NOT put the phone down and he is NOT looking warmly or attentively at the woman, his attention stays on his own phone. Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or net-red faces). The woman must be the exact same person as the second reference image, with the same face, the same long loose natural black hair and the same plain solid beige to light-apricot unbranded knit home loungewear top with no logo and no text; the man must be the exact same person as the third reference image, with the same face, the same clean tidy short black hair and the same plain solid light-grey crew-neck home T-shirt with no logo and no text. Only change their pose, framing, props and expression; do not change their identity, hairstyle or clothing. They are in the same cozy home living room as the reference images, with a sofa, a floor lamp and a warm neutral-white ceiling light, and a bookshelf and green plants in soft background bokeh. Lighting is bright, airy and warm with both the ceiling light and the floor lamp on, evenly and clearly illuminating the whole scene, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed, not dark and not a fade to black. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn their faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. The milk-tea cup is a plain white light sealed milk-tea cup with no logo, no text and no brand. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image. Keep the exact same plain light plastic disposable milk-tea cup as shown in the first scene reference image, a plastic milk-tea cup with a smooth closed dome or flat sealed lid holding visible tapioca pearls; it must NOT be a ceramic mug, not a coffee mug and not a glass, and the same identical milk-tea cup appears consistently throughout. Keep the same plain unbranded smartphone in the man's hand as in the first scene reference image, no brand and no logo.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/dou-keyi/shots/shot-U7/images/U7-first.png",
+    "replication/output/dou-keyi/assets/master-A.png",
+    "replication/output/dou-keyi/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "two-shot medium shot, freeze-frame feel, no fade to black, warm lighting continues; woman has taken full-sugar cup BACK into hand, straw inserted, head down sipping, fake smile not reaching eyes; cup now in woman's hand with straw (the ONLY straw frame payoff)",
+      "STORY FIX v2: man KEEPS holding phone up as in lead reference, attention on his own phone / blank, bewildered-clueless, explicitly NOT putting phone down and NOT looking warmly at her — preserves the 'he still never understood' ending beat",
+      "PROP FIX v2: lead reference changed to U7-first.png (carries B's raised phone + correct milk-tea cup on table + scene + identity) so phone prop no longer vanishes; explicit keep-phone clause added",
+      "identity locked: woman = second reference, man = third reference; only pose/props/expression changed, not identity/hair/clothing",
+      "same cozy living room, sofa + floor lamp + warm neutral-white ceiling light, bookshelf/plants bokeh; bright airy warm neutral-white, both lights on, not moody/dim/underexposed",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR",
+      "milk-tea cup plain white sealed unbranded with tapioca pearls, no logo/text/brand; phone unbranded; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no static-object or insert-shot trigger phrasing used"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "237e292e743552de0309575c829c7cf3e7d2c1a2d4feb5bd2b077ce8eca2e756"
+  }
+}

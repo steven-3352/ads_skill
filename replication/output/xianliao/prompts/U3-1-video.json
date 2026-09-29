@@ -1,0 +1,41 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 12.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black, beginning exactly in the framing, positions, clothing and props established by Picture 1 — the man just inside the opened entrance door on the left gripping his wheeled suitcase with a smartphone in his other hand, and the woman on the sofa on the right twisted around with a startled sweet smile frozen on her face. The camera holds a mostly static wide two-shot with a slight handheld sway. At the very start the suitcase wheels finish rolling over the door threshold. The woman (S1), in a sweet, soft, placating and slightly absent-minded female voice at a normal-to-brisk pace that never slows and never trails into a dead tail, keeps her eyes ordinary and dry with no tears, no reddening and no glow as she says: <d>[Chinese]你怎么这点来了？我正忙着回消息呢。</d> The man (S2), a calm, low, slightly hoarse male voice pressing tiredness down underneath, plain and even and never trailing into a dead tail, slides his smartphone into his trouser pocket and says: <d>[Chinese]我来拿我的东西。</d> The woman's gaze is already dropping back down to the phone in her hands, her thumbs returning to the screen, her voice staying light and breezy and never trailing off as she says: <d>[Chinese]急什么，等我回完这条。你吃了没，我给你煮碗面？</d> By the end her head is lowered over her phone and the man stands still beside the suitcase with both hands empty and the entrance door closed behind him, settling into the exact poses, spacing and composition established by Picture 2 at the 12.00-second mark. Neither of them looks at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; at the very start the suitcase wheels roll briefly over the door threshold, and a short phone message alert tone chimes once while the woman speaks her last line.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, staying quiet and gradually rising slightly in tension underneath the exchange, with no fade to black.",
+  "model": "MiniMax-H3",
+  "duration": 12,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U3-1/images/U3-1-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U3-1/images/U3-1-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA single 12s shot Picture1->Picture2 (U3-1, 段3 镜2-6): from man-at-open-door + woman frozen-smile, through the 3-line exchange, to woman head-down-on-phone + man phone-pocketed-standing = last frame (enter/state-change path via first+last frame)",
+      "verbatim <d>[Chinese]> lines = storyboard 片段三 镜头4 (阿澈) + 镜头5 (阿沉) + 镜头6 (阿澈), copied word-for-word incl. punctuation, no edits",
+      "speakers: S1 = woman (阿澈, speaks first), S2 = man (阿沉), consistent; woman sweet/soft/placating, man calm/low/hoarse; all lines normal-to-brisk, never slowing, never trailing into a dead tail (ban-slow-dialogue rule); action/message-tone tail, not dead air",
+      "emotion performed via frozen sweet smile / dropping gaze / restraint; explicit no tears / no reddening / no glow for both (anti glowing-eye rule)",
+      "clothing/props continuity across FL2VA: same garments and suitcase as first frame carried to last frame per keyframe prompts (no change of clothes / no tote bag)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (nobody looks at camera, no arm toward camera)",
+      "soundscape = continuous room floor (clock tick, fabric) never silent + suitcase wheels over threshold at start + one phone message alert during her last line (storyboard <消息提示音>); non_diegetic electronic pad rising slightly",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a2ddb265d84bb8b29eb2e066842bae30bdba8bc041822d8e2855230466776d3d"
+  },
+  "reviewed_prompt_sha256": "a2ddb265d84bb8b29eb2e066842bae30bdba8bc041822d8e2855230466776d3d"
+}

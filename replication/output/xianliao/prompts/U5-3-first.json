@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid medium close-up filmed on an iPhone 17 Pro mounted on a tripod roughly 1.8 meters away across a home apartment living-room, 16:9 horizontal composition (generated at 1536x1024). This is a neutral third-person cinematic shot filmed by another person standing across the room, and it is absolutely NOT a selfie and NOT a video call: the woman does not hold any phone, no arm and no hand reaches toward or comes near the camera, her nearest arm hangs down at her side, and she does NOT stare straight into the lens. A single young East Asian Chinese woman is the only subject in sharp focus, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate idol face). She has long loose natural black hair and wears a plain off-white to cream chunky unbranded knit sweater over light-blue denim jeans. She is on her feet and tense, her body still and braced. She is framed as a medium close-up of her face, shoulders and upper chest, but with the living-room clearly visible behind and to the sides of her: a fabric sofa with cushions, an interior wall with a framed picture and a leafy houseplant are visible in gentle background bokeh, so the interior room clearly fills the background. She is turned toward the man standing just off to the side of the camera and looks slightly off-camera toward him, not into the lens, caught at the exact moment a cutting line lands on her, both her eyes brimming full with red-rimmed lower lids, tears welling right to the edge and about to overflow, her lips pressed tight and her chin trembling, and one or two tears sliding down her cheek. Her tears are ordinary natural wetness, with no glowing eyes and no unnatural light coming from the eyes. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street, and any window in the background shows only a soft far-away out-of-focus city apartment building, never nature. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating her face, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm or hand extended toward the camera, no phone in hand, nobody looking straight into the lens. Her mouth stays closed and downturned, her whole face pained and heavy. No outdoor scene, no park, no trees, no lake, no river, no mountains, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "REWORK v4 (A-Che canary, pink-elephant fix): r2/r3 inherited master-A-r2 sweet smile because prompt repeated 'no smile/not smiling' (negation reinforces). v4 removes ALL smile-tokens and POSITIVELY redescribes a stricken/crumpling face (brows drawn+up, mouth corners DOWN in flat tucked line, chin trembling, lip pressed in, eyes glassy rims pink, breath held)",
+      "front-loaded anti-selfie/anti-drift: tripod third-person 1.8m, arms down, gaze OFF-lens; living-room fills background bokeh",
+      "posture: on her feet and tense/braced (r2/r3 drifted to relaxed sofa-sit inherited from master)",
+      "outfit HARD lock: off-white chunky knit + light-blue denim jeans, explicit no grey sweatpants/no loungewear/no coat/no wardrobe change",
+      "tears welled do NOT spill; explicit no tears running / no reddened glow / no glowing eyes (anti glowing-eye rule)",
+      "strictly indoors, window shows only far out-of-focus city building never nature; full outdoor negatives; no animal/pet/cat/dog; bright airy neutral-white; iPhone17 realistic texture; 16:9 1536x1024; no text/logo/Chinese characters"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4ea3053e92498c6322a528385c4783070ceb16299b1886111ff181fb3acaada4"
+  },
+  "reviewed_prompt_sha256": "4ea3053e92498c6322a528385c4783070ceb16299b1886111ff181fb3acaada4"
+}

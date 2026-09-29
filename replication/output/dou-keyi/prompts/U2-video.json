@@ -1,0 +1,32 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a warm, brightly and evenly lit living room. The young East Asian Chinese couple shown in <Picture 1> stay in the same seating, clothing, framing and props, the woman on the left still holding the plain unbranded full-sugar milk-tea cup without a straw. The camera holds a mostly static shot with a slight handheld sway. The woman (S1), a soft natural female voice at a normal pace, glances at the cup then at the man and half-jokingly probes: <d>[Chinese]你就没发现，我平时点几分糖？</d> The man on the right (S2), sincere and genuinely puzzled, looks down at the cup and answers: <d>[Chinese]啊？全糖不挺好喝。</d> The woman presses gently: <d>[Chinese]我上周说过我戒糖。</d> The man, well-meaning and eager to fix it, replies without any impatience: <d>[Chinese]没记住……你想喝啥直说，我给你重点一杯。</d> No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A low television murmur and faint room ambience run continuously underneath without dropping to silence. Light fabric and hand movements and the soft creak of the sofa are audible between the lines.\n\nnon_diegetic_music: Sparse sustained low strings at a slow tempo, kept very low so they never cover the voices.",
+  "model": "MiniMax-H3",
+  "duration": 7,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U2/images/U2-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA 7s single shot from Picture1: 4-line probe volley A/B/A/B, no object state shift",
+      "verbatim Chinese <d>[Chinese]>; S1=woman S2=man; normal pace continuous 4 lines fill 7s no dead air",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; warm bright even light",
+      "unbranded cup no brand/logo; no subtitles/captions/on-screen text",
+      "soundscape continuous TV murmur+ambience; music low sustained strings"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "725d2be907a6c3416c85e5e4f0ef25b1733d2ada9d45cb39c8c7ae8ed61d8799"
+  }
+}

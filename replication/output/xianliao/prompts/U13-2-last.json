@@ -1,0 +1,26 @@
+{
+  "prompt": "Photorealistic candid very wide full shot filmed on an iPhone 17 Pro on a tripod from across a home apartment living-room, 16:9 horizontal composition (generated at 1536x1024), strictly indoors, with a still, quiet, end-of-film cinematic feel. This is absolutely NOT a selfie and nobody looks at the camera. The whole living-room fills the frame and dominates the composition: a fabric sofa with cushions, a wooden coffee table, an interior wall with a framed picture, a leafy houseplant, a low TV cabinet and the closed apartment entrance door are all visible, the room emptied and quiet. Small and alone near the middle of the pale wooden floor, reduced by the wide framing, a single young East Asian Chinese woman kneels and sits back on her heels with her back and side to the camera, her head bowed, a small figure in the large empty room. She is the exact same person as the reference image, recognizable from her long loose natural black hair and her plain off-white to cream chunky unbranded knit sweater over light-blue denim jeans; keep her hair and clothing exactly as the reference and only change her pose, framing and scale so she appears small and distant. On the floor beside her a smartphone screen is lit with a faint pale glow, catching the moment its light flickers on then fades, with no readable text and no Chinese characters on the screen. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street, and any window shows only a soft far-away out-of-focus city apartment building, never nature. Lighting is a quiet daytime interior at the very end of the scene: the room is still clearly and evenly lit and legible with no crushed black corners, the main light from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), with a gentle subdued end-of-film calm but still bright enough to read the whole room, not fully dark, not moody-black, not lamp-lit, not underexposed and with no heavy vignette. Natural texture with fine detail, subtle natural film grain and gentle sensor noise, soft diffused light. Real iPhone 17 handheld photographic texture, true-to-life white balance. no plastic look, no waxy over-smoothed surfaces, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward the camera, nobody facing or looking at the camera, no big close-up face. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FL2VA LAST frame (U13-2, 段13 镜6): VERY WIDE, room dominates, woman a small distant kneeling figure back/side to camera, phone glow flickering on->fade beside her (final shot before assembly fade-to-black)",
+      "reference master-A-neutral for wardrobe/hair identity; scale small/distant, face not a factor (back-side, no close-up)",
+      "phone screen faint glow flicker only, no readable text/Chinese (screen light is the last diegetic beat)",
+      "wardrobe lock off-white chunky knit + light-blue jeans; emptied room fills frame; still legible/bright end mood NOT black (only fade-to-black added at assembly per production-units flag 2); full outdoor negatives; no animal",
+      "iPhone17 realistic texture; anti-selfie third-person tripod, nobody facing camera; 16:9 1536x1024; no text/logo/Chinese"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1d6998ee974055b10bfea7a54525d1f1fc78876d614c395b26241b321e13f86b"
+  },
+  "reviewed_prompt_sha256": "1d6998ee974055b10bfea7a54525d1f1fc78876d614c395b26241b321e13f86b"
+}

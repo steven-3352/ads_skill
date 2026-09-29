@@ -1,0 +1,30 @@
+{
+  "prompt": "Photorealistic candid medium shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024) with a still, freeze-frame feel, a single young East Asian Chinese man standing alone in the open doorframe of a home apartment living-room entrance door, strictly indoors (absolutely not outdoors, no park, no trees, no lake, no street). The camera is at a neutral third-person distance inside the room, positioned to see him standing in the doorframe depth; he is turned mostly away with his back three-quarter to the room, one hand still gripping the upright pull-handle of a plain wheeled suitcase beside him, having walked several steps to the doorframe and now pausing with his body squared toward the exit hallway beyond; he has turned his head back over his shoulder to look one last time into the room behind him. His face is calm, drained, restrained, with his eyes ordinary and slightly reddened from held emotion but absolutely not crying, no tears on his face, no tear trails, and no glowing eyes; his gaze is steady, final, and quietly pained, absolutely not smiling and not cheerful, lips closed. He is an ordinary real East Asian Chinese person (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face). He must be the exact same person as the reference image, with the same face, the same short natural black hair and the same plain solid dark-grey zip-up knit sweater with no logo and no text; keep his identity, hairstyle and clothing unchanged and only change his pose, framing and expression. Behind him inside the room, visible in the background depth but not the focus, the young woman from the first frame stands frozen where she was left several steps back, her clothing unchanged: the same off-white to cream chunky knit sweater and light-blue denim jeans, empty hands, no bag and no tote bag. The entrance door stands fully open to one side. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating his hair and clothing and the background room, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn his face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward camera, no smiling, no cheerful or happy expression, nobody looking at the camera, not facing the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-B.png",
+    "replication/output/xianliao/assets/master-A-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FL2VA LAST frame (U9-1, 段9 镜3): man in doorframe pausing, back three-quarter to room, head turned back over shoulder for one last look; calm drained restrained, eyes slightly reddened but no tears/no glowing eyes (landing state for turn->walk path)",
+      "identity locked: man = first reference (master-B / 阿沉) in doorframe focus, woman = second reference (master-A-r2 / 阿澈) frozen in background depth; only pose/framing/expression changed",
+      "clothing consistency with first frame: 阿沉 same dark-grey zip-up knit sweater; woman in background same off-white/cream chunky knit + light-blue jeans, empty hands, no bag/no tote (FL2VA first-last consistency iron rule)",
+      "calm final stillness; explicit eyes slightly reddened but absolutely not crying / no tears / no tear trails / no glowing eyes (anti glowing-eye rule); lips closed, gaze steady/final/quietly pained",
+      "bright airy daytime living room, ceiling + window daylight, neutral-white not orange/amber, evenly lit, not moody/dim/underexposed/dark",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "31bb121e2a2754bb4665dca50b846a8ed498b2c6b2af3384a1a7585cd4aa3120"
+  },
+  "reviewed_prompt_sha256": "31bb121e2a2754bb4665dca50b846a8ed498b2c6b2af3384a1a7585cd4aa3120"
+}

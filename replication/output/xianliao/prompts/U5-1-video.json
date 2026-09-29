@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The restrained man shown in <Picture 1> (S1) stays exactly as established — same face, short black hair, plain dark-grey zip-up knit sweater, tight near-frontal close-up — as he looks straight at the woman just off camera and speaks in a calm, relentless rhythm, reeling off one observed behavior after another, never slowing, pressing anger and pain down underneath. The camera holds a static shot with a slight handheld sway. A calm, low, slightly hoarse male voice at a normal-to-brisk conversational pace that grows steadily heavier line by line, never slowing and never trailing into a dead tail, he (S1) says: <d>[Chinese]你半夜给同事改方案，朋友喊一声搬家你就冲出去。同事说“明天发”，你回“好的收到辛苦啦”；别人发个表情包，你也得回个表情包。人家一句“我先睡了”，你都要接“晚安明天见”。这些话说给谁听都行，就是没人真的要听。</d> Through the lines his jaw sets harder, his brows draw faintly, his lips press tight between phrases, his gaze stays locked and unwavering, and his throat swallows once; his eyes stay ordinary and dry with no tears, no reddening and no glow. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; a single quiet, tense breath is heard between his phrases.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, staying low and gradually rising slightly in volume and tension underneath the relentless list.",
+  "model": "MiniMax-H3",
+  "duration": 11,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U5-1/images/U5-1-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 11s shot from <Picture 1> (U5-1, 段5 镜1-3 阿沉近景连珠): he reels off the behavior list in a calm relentless rhythm straight to the off-camera woman, camera static with slight handheld sway",
+      "verbatim <d>[Chinese]> = storyboard 片段五 镜头1-2-3 阿沉 lines, copied word-for-word incl. 。；“”punctuation, no edits; 85 characters ÷ 11s ≈ 7.7 chars/s well above ≥5.5 target (骂醒赛道语速锁)",
+      "S1 = the man, consistent; delivery normal-to-brisk pace growing heavier line by line, relentless rhythm, no slow tail / no dead air (ban-slow-dialogue + grows heavier line by line spirit from P04-U1-video)",
+      "emotion performed via jaw set harder / brows draw / lips pressing / locked unwavering gaze / throat swallow; explicit no tears / no reddening / no glow (anti glowing-eye rule)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = continuous room white-noise floor (clock tick, fabric, tense breath) never dropping to silence; non_diegetic = electronic ambience pad staying low, rising slightly under the relentless list (氛围电子渐强 spirit)",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8d30f6015f2d117fbbafb5bc248629eccc8e2f0d633c9502263f4bcbf0da3dc5"
+  },
+  "reviewed_prompt_sha256": "8d30f6015f2d117fbbafb5bc248629eccc8e2f0d633c9502263f4bcbf0da3dc5"
+}

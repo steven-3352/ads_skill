@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The restrained man shown in <Picture 1> (S1) stays exactly as established — same face, short black hair, plain dark-grey zip-up knit sweater, tight near-frontal close-up — as he watches the side of the woman's face just off camera and begins to speak, holding a made-up-mind calm while pressing tiredness and pain down underneath. The camera holds a static shot with a slight handheld sway. A calm, low, slightly hoarse male voice at a normal-to-brisk conversational pace that grows steadily heavier and firmer line by line, never slowing and never trailing into a dead tail, he (S1) says: <d>[Chinese]阿澈，我在门口站了十分钟。你手机响一次你抬一次头。你连我要走，都没舍得看我一眼——刚才我打给你，你把我挂了。</d> Through the line his jaw sets harder, his lips press tight between phrases, his gaze stays locked on her profile and unwavering, and his throat swallows once; his eyes stay ordinary and dry with no tears, no reddening and no glow. He does not look at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; a single quiet, tense breath is heard between his phrases.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, gradually rising in volume and tension underneath the line.",
+  "model": "MiniMax-H3",
+  "duration": 9,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U3-2/images/U3-2-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 9s shot from <Picture 1> (U3-2, 段3 镜7-8): A-Chen close-up delivers the '门口站了十分钟' beat straight to the off-camera woman, camera static with slight handheld sway",
+      "verbatim <d>[Chinese]> = storyboard 片段三 镜头7 line, copied word-for-word incl. —— punctuation, no edits; ~51 chars / 9s ~= 5.7 zi/s (meets >=5.5 zi/s speed lock)",
+      "S1 = the man, consistent; delivery normal-to-brisk pace growing heavier line by line, no slow tail / no dead air (ban-slow-dialogue rule)",
+      "emotion performed via jaw set / lips pressing / locked gaze on her profile / throat swallow; explicit no tears / no reddening / no glow (anti glowing-eye rule)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (not looking at camera, no arm toward camera)",
+      "soundscape = continuous room white-noise floor (clock tick, fabric, tense breath) never dropping to silence; non_diegetic = electronic ambience pad rising (氛围电子渐强)",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2a5c0140e47378bf4b5d9025d832474ac39e285e312ef0de19f1ab570fb3957a"
+  },
+  "reviewed_prompt_sha256": "2a5c0140e47378bf4b5d9025d832474ac39e285e312ef0de19f1ab570fb3957a"
+}

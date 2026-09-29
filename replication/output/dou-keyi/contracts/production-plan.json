@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "projectId": "dou-keyi",
+  "title": "《我说了两年\"我都可以\"》——对白驱动·男女思维错位情感短剧",
+  "note": "16:9 横屏 ≈48-50s 居家客厅一个连续场景。对白驱动、全程无旁白/无内心独白/画面零文字。7 个 H3 生成单元 U1-U7 一对一逐镜；短测版=U1/U2/U3/U6/U7 子集，原样复用进长版，本契约不区分。cold open U0 复用 U6 素材 + \"10秒前\"转场字幕均为后期剪辑层，不建生成单元。衔接靠母板身份锁 + 逐单元奶茶/手机状态锚 + 0.3s 叠化。仅 A/B 两人，锁 East Asian 中国人。",
+  "revision": 1,
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 8,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "estTotalDurationSec": 50,
+  "aspectRatio": "16:9",
+  "casting": {
+    "A": "A（她）：中国人 East Asian，24-28 岁，披肩或半扎长发，家居针织/卫衣，素颜好肤质、真实肤质有细节不磨皮。性格拧巴讨好型，习惯说\"随便/都行\"、把需求藏起来，笑着接一切却在观察他有没有主动发现；情绪上头时眼红、声音抖但话不停；结尾不是哭闹是\"光灭了\"的平静。母板 assets/master-A.png。",
+    "B": "B（他）：中国人 East Asian，26-30 岁，清爽短发，家居 T 恤/衬衫，普通真实长相。真诚直球、态度好、就事论事只会解决问题、读不懂绕圈和潜台词；被连串点破是懵不是冷。关键红线：全片任何时候 B 都不能露出无所谓的笑、不能不耐烦、不能嘲讽，他的\"不懂\"必须是善意认真的。母板 assets/master-B.png。"
+  },
+  "subtitlePolicy": "成片零烧对白字幕(anti-subtitle + 人工查残留)；对白由 H3 同镜内嵌一次性生成；画面内唯一允许文字是后期确定性烧的 cold open \"10秒前\"转场，站队互动只在置顶评论、不烧画面卡。",
+  "narrativeShots": [
+    {
+      "id": "U1",
+      "title": "递奶茶·日常里埋错位",
+      "sceneId": "SC_LIVING",
+      "style": "双人中景手持平视轻微晃动，两人同框，茶几奶茶居中为视觉点",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "给你带了奶茶，全糖，跟我一样。"
+      },
+      "watchFocus": "错位母题起手——他给的是自己喜欢的口味，她的\"好啊\"言不由衷、握杯不插吸管",
+      "requiredBeats": [
+        {
+          "id": "U1-B1",
+          "sceneId": "SC_LIVING",
+          "text": "客厅暖光明亮（顶灯+落地灯、不压暗），双人中景同框、茶几居中。B 把两杯同款封口全糖奶茶放上茶几、坐进沙发（画右），自然无恶意地报口味『给你带了奶茶，全糖，跟我一样。』；A 在侧（画左）伸手接过一杯、笑着应『好啊。』，笑里却在观察他有没有发现——她没插吸管，只把杯子握在手里（反常落点，奶茶=A握手里·未插吸管）。B 说完随手拿起手机低头看，没看她。表演：B 真诚松弛，A 低头看奶茶、嘴角笑意到不了眼底。环境声：电视低声画面反光垫底、奶茶塑封袋窸窣、放杯与落座的动作拟音；BGM 可极轻垫底。画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U1",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 6,
+          "mode": "FL2VA",
+          "references": ["assets/master-A.png", "assets/master-B.png"],
+          "prompts": {
+            "images": ["prompts/U1-first.json", "prompts/U1-last.json"],
+            "video": "prompts/U1-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U1/images/U1-first.png",
+            "lastFrame": "shots/shot-U1/images/U1-last.png",
+            "video": "shots/shot-U1/video/U1.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U1-C1",
+              "seconds": 6,
+              "note": "状态突变 FL2VA(首:B 把两杯奶茶放上茶几、A 侧坐将接;尾:A 接过握在手里未插吸管、B 已拿起手机低头看)",
+              "coverage": [
+                {"beatId": "U1-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U2"
+    },
+    {
+      "id": "U2",
+      "title": "试探·她绕圈暗示",
+      "sceneId": "SC_LIVING",
+      "style": "双人中景随对话轻摇/小推、手持平视",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "你就没发现，我平时点几分糖？"
+      },
+      "watchFocus": "她在给机会等他自己想起，他只接字面——\"你直说\"第一次出现",
+      "requiredBeats": [
+        {
+          "id": "U2-B1",
+          "sceneId": "SC_LIVING",
+          "text": "同一客厅暖光延续，双人中景随对白轻摇。A 手里仍握着那杯没插吸管的全糖奶茶（状态锚：A 握手里），看看奶茶又看看 B，半开玩笑地试探发问『你就没发现，我平时点几分糖？』，眼神带着期待观察；B 低头认真看杯子、一脸真诚茫然地答『啊？全糖不挺好喝。』；A 提示『我上周说过我戒糖。』；B 态度很好、想解决问题地说『没记住……你想喝啥直说，我给你重点一杯。』。表演：A 绕圈等他自己想起，B 认真却读不懂潜台词、绝不显不耐烦或嘲讽。环境声：电视低声垫底、衣料与握杯细响；画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U2",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 7,
+          "mode": "I2VA",
+          "references": ["assets/master-A.png", "assets/master-B.png"],
+          "prompts": {
+            "images": ["prompts/U2-first.json"],
+            "video": "prompts/U2-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U2/images/U2-first.png",
+            "video": "shots/shot-U2/video/U2.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U2-C1",
+              "seconds": 7,
+              "note": "纯对白试探镜 I2VA 单首帧(两人同框、A 握杯看 B、B 低头看奶茶杯)，无物体状态位移",
+              "coverage": [
+                {"beatId": "U2-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U3"
+    },
+    {
+      "id": "U3",
+      "title": "踩到·\"直说\"两个字引爆",
+      "sceneId": "SC_LIVING",
+      "style": "双人中景，A 放杯时轻推近、手持",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "我不想直说。我说出口你再去买，那是完成任务。"
+      },
+      "watchFocus": "矛盾由暗到明——她点破\"开口要来=完成任务\"，他觉得冤",
+      "requiredBeats": [
+        {
+          "id": "U3-B1",
+          "sceneId": "SC_LIVING",
+          "text": "同一客厅暖光，双人中景、A 放杯时镜头轻推近。A 笑容淡了下来，把手里那杯全糖奶茶放到茶几上（关键落点：奶茶从手里放到茶几），平静认真地说『我不想直说。我说出口你再去买，那是完成任务。』；B 放下手机、皱眉、有点冤但无恶意地反驳『不是，你不告诉我，我怎么知道？我又不会读心术。』。表演：A 平静里藏失望，B 真诚不解、不冷漠不嘲讽。道具状态变化：A 把奶茶放上茶几、B 把手机放下。环境声：放杯子与放手机的动作拟音、电视低声垫底；画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U3",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 7,
+          "mode": "FL2VA",
+          "references": ["assets/master-A.png", "assets/master-B.png"],
+          "prompts": {
+            "images": ["prompts/U3-first.json", "prompts/U3-last.json"],
+            "video": "prompts/U3-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U3/images/U3-first.png",
+            "lastFrame": "shots/shot-U3/images/U3-last.png",
+            "video": "shots/shot-U3/video/U3.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U3-C1",
+              "seconds": 7,
+              "note": "状态突变 FL2VA(首:A 握杯、B 看手机;尾:A 把杯放到茶几上、B 已放下手机、两人开始正视)——奶茶落点在此镜",
+              "coverage": [
+                {"beatId": "U3-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U4"
+    },
+    {
+      "id": "U4",
+      "title": "对撞·两套逻辑正面交锋",
+      "sceneId": "SC_LIVING",
+      "style": "双人中景保持同框，正反打靠镜内轻摇非硬切、手持",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "我要的不是读心术，是你主动留意我一下。"
+      },
+      "watchFocus": "两套逻辑都自洽、互不相让——给足评论站队素材",
+      "requiredBeats": [
+        {
+          "id": "U4-B1",
+          "sceneId": "SC_LIVING",
+          "text": "同一客厅暖光，双人中景保持同框、随说话方镜内轻摇（不硬切保连续）。A 转身正对 B（正式摊牌的动作信号），逼视着说『我要的不是读心术，是你主动留意我一下。』；B 认真自证『我留意了啊，还专门给你带了奶茶。』；A 追问『你带的是\"你\"喜欢的。你有一秒想过我喜欢什么吗？』；B 真诚摊手、坚持自己那套『那你得说啊，说了我肯定记。在一块儿有啥说啥，猜来猜去多累。』。表演：两人正面相对、A 逼视、B 摊手真诚不嘲讽。道具状态：奶茶在茶几、手机已放下。环境声：电视低声垫底、坐姿转向的衣料声；画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U4",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 8,
+          "mode": "I2VA",
+          "references": ["assets/master-A.png", "assets/master-B.png"],
+          "prompts": {
+            "images": ["prompts/U4-first.json"],
+            "video": "prompts/U4-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U4/images/U4-first.png",
+            "video": "shots/shot-U4/video/U4.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U4-C1",
+              "seconds": 8,
+              "note": "纯对白对撞镜 I2VA 单首帧(A 转身正对、B 摊手，奶茶在茶几手机已放下)，无物体状态位移",
+              "coverage": [
+                {"beatId": "U4-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U5"
+    },
+    {
+      "id": "U5",
+      "title": "顶点起·组合拳（一）嘴替",
+      "sceneId": "SC_LIVING",
+      "style": "慢推 A 近景、手持缓慢推近、眼神光给到",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "不是没喜好，是怕你嫌我事多。"
+      },
+      "watchFocus": "被说中——拧巴/讨好型人群强烈身份共鸣，说出具体渴望\"三分糖\"",
+      "requiredBeats": [
+        {
+          "id": "U5-B1",
+          "sceneId": "SC_LIVING",
+          "text": "同一客厅暖光，慢推 A 近景、眼神光给到（本镜 A 独角、B 可虚/不入画）。A 眼眶红了、声音抖但不停、一句接一句地把长期隐忍点破『我说了两年\"随便\"\"都行\"，不是没喜好，是怕你嫌我事多。』，接着说出具体渴望『我就想有一次，我不用开口，你能说——\"我知道你要那家三分糖\"。』。表演：A 直视、眼泪在眼眶打转但克制不嚎、渴望被主动懂。道具状态：那杯全糖奶茶在茶几（不动）。环境声：电视低声垫底、BGM 极轻进托情绪不盖人声；画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U5",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 7,
+          "mode": "I2VA",
+          "references": ["assets/master-A.png"],
+          "prompts": {
+            "images": ["prompts/U5-first.json"],
+            "video": "prompts/U5-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U5/images/U5-first.png",
+            "video": "shots/shot-U5/video/U5.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U5-C1",
+              "seconds": 7,
+              "note": "纯表情/对白嘴替镜 I2VA 单首帧(A 眼红近景直视、A 独角)，无物体状态位移",
+              "coverage": [
+                {"beatId": "U5-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U6"
+    },
+    {
+      "id": "U6",
+      "title": "顶点收·组合拳（二）+ 直球补救",
+      "sceneId": "SC_LIVING",
+      "style": "A 近景 → B 中近景（掏手机），手持随 B 掏手机轻摇",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "主动给的，才叫偏爱。伸手要来的，我宁可不要。"
+      },
+      "watchFocus": "金句收口（与片头 U0 呼应、二次砸中）；B 仍用\"我马上下单\"办事逻辑回应，错位到底",
+      "requiredBeats": [
+        {
+          "id": "U6-B1",
+          "sceneId": "SC_LIVING",
+          "text": "同一客厅暖光，A 近景决绝转 B 中近景、手持随 B 掏手机轻摇。A 决绝地说出金句『主动给的，才叫偏爱。伸手要来的，我宁可不要。』；B 被砸懵、愣了两秒，还是本能地拿起茶几/身边的手机（关键动作：B 重新拿起手机下单），态度急而善地补救『……你现在告诉我哪家，我马上下单，三分钟。这总行了吧？别气了。』。表演：A 死心决绝，B 发懵后本能想解决问题、绝不露无所谓的笑或不耐烦。道具状态变化：B 拿起手机准备下单；那杯全糖奶茶仍在茶几。环境声：拿手机与点屏的动作拟音、电视低声、BGM 轻托；画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U6",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 6,
+          "mode": "FL2VA",
+          "references": ["assets/master-A.png", "assets/master-B.png"],
+          "prompts": {
+            "images": ["prompts/U6-first.json", "prompts/U6-last.json"],
+            "video": "prompts/U6-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U6/images/U6-first.png",
+            "lastFrame": "shots/shot-U6/images/U6-last.png",
+            "video": "shots/shot-U6/video/U6.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U6-C1",
+              "seconds": 6,
+              "note": "状态突变 FL2VA(首:A 近景决绝说金句、B 愣住未拿手机;尾:B 已拿起手机准备下单)——B 掏手机为关键动作",
+              "coverage": [
+                {"beatId": "U6-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U7"
+    },
+    {
+      "id": "U7",
+      "title": "收口·判决与窒息闭环",
+      "sceneId": "SC_LIVING",
+      "style": "双人中景 → 定格，手持结尾稳住，暖调延续不黑场",
+      "source": {
+        "storyFile": "story/我说了两年我都可以-对白驱动情感短剧剧本.md",
+        "verbatim": "你看，你到现在还觉得，这是一杯奶茶的事。"
+      },
+      "watchFocus": "判决金句 + 她把全糖拿回插吸管自己妥协（呼应开头闭环）；高唤醒扎心不治愈、不黑场",
+      "requiredBeats": [
+        {
+          "id": "U7-B1",
+          "sceneId": "SC_LIVING",
+          "text": "同一客厅暖光延续（不压暗、不黑场），双人中景 → 定格。A 看着 B 还举着手机想把事办了的样子，眼里的光慢慢灭了、反而很平静地下判决『你看，你到现在还觉得，这是一杯奶茶的事。』；约 0.3s 停顿蓄力，A 伸手把茶几上那杯全糖奶茶拿回来、插上吸管、低头（闭环关键动作：从茶几拿回·插吸管·喝），轻声说『……算了，全糖我喝也行。』，喝一口、又挂上开头那句\"好啊\"的假笑但笑不到眼底；B 举着手机一脸\"我到底哪错了\"的茫然发懵。镜头停住、不黑场。表演：A 平静下的死心（不哭闹不放空），B 真诚茫然。环境声：拿奶茶、插吸管、吸食的动作拟音、电视低声保留、BGM 不泄不渐弱到死寂；画面零文字。",
+          "channels": ["picture", "dialogue", "action_sound", "ambience"]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U7",
+          "sceneId": "SC_LIVING",
+          "durationSeconds": 7,
+          "mode": "FL2VA",
+          "references": ["assets/master-A.png", "assets/master-B.png"],
+          "prompts": {
+            "images": ["prompts/U7-first.json", "prompts/U7-last.json"],
+            "video": "prompts/U7-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U7/images/U7-first.png",
+            "lastFrame": "shots/shot-U7/images/U7-last.png",
+            "video": "shots/shot-U7/video/U7.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U7-C1",
+              "seconds": 7,
+              "note": "状态突变 FL2VA(首:A 看 B 说判决、全糖杯在茶几;尾:A 已把杯从茶几拿回手中、插上吸管喝一口假笑、B 举手机茫然、定格不黑场)",
+              "coverage": [
+                {"beatId": "U7-B1", "channels": ["picture", "dialogue", "action_sound", "ambience"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": []
+    }
+  ],
+  "state": "production_plan_pending"
+}

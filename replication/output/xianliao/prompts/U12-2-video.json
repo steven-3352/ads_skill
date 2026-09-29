@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 9.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black, beginning exactly in the standing pose, framing and clothing established by Picture 1 — the woman standing with her arms at her sides, tear-streaked and red-rimmed, looking down at the keyring, keys and small wooden tag on the floor ahead of her feet. The camera holds a mostly static medium framing with a slight handheld sway and tilts down a little to follow her as she lowers. Her chin crumples, and she sinks slowly down into a crouch, folding toward the floor; she reaches out with both hands, gathers up the metal keyring and keys, closes one hand around the keys so her knuckles whiten, then turns the small wooden tag face-up in her cupped palms and brushes her fingertips slowly across it as her shoulders draw in and begin to tremble, settling into the exact crouched, keys-in-hands, tag-caressed pose, framing and composition established by Picture 2 at the 9.00-second mark. She does not look at the camera and no arm reaches toward the camera; the wooden tag shows only carved groove texture with no readable text and no Chinese characters, and her eyes stay ordinary and human with no glowing eyes, no unnatural eye glow and no red glow. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience runs underneath throughout and never drops into full silence, with a soft rustle of her knit sweater as she crouches and a light metallic clink of the keys as they are gathered and closed into her palm.\n\nnon_diegetic_music: A minimal, sparse solo piano enters very softly, single quiet notes falling one at a time at a slow tempo with long gaps between them, tender and restrained, staying quiet with no fade to black.",
+  "model": "MiniMax-H3",
+  "duration": 9,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U12-2/images/U12-2-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U12-2/images/U12-2-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA single 9s shot Picture1->Picture2 (U12-2, 段12 镜3-6): standing looking down -> slow crouch -> gather keys -> close fist knuckles white -> turn tag face-up and caress -> shoulders tremble = last frame (state-change crouch/pick-up via first/last frame per fl2va rule)",
+      "no dialogue (无对白); <d> omitted; beats carried by descend/pick-up action + piano",
+      "grief via crumple / trembling shoulders / whitening knuckles; explicit no glowing eyes / no unnatural eye glow / no red glow (anti glowing-eye rule)",
+      "props/clothing continuity: same keyring+keys+wooden tag and same garments across first->last; tag carved groove texture only, no readable text/Chinese",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = continuous faint room ambience never silent (roomtone gate) + knit rustle on crouch + light key clink; non_diegetic = minimal sparse solo piano single notes entering (极简钢琴单音轻轻落下)",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bd6405eac1b1ecc61b21f54131220f3e40accf23589e4c00635b2159e65ba784"
+  },
+  "reviewed_prompt_sha256": "bd6405eac1b1ecc61b21f54131220f3e40accf23589e4c00635b2159e65ba784"
+}

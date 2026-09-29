@@ -1,0 +1,24 @@
+{
+  "prompt": "A photorealistic character expression reference sheet: a clean 3-by-2 grid of six separate head-and-shoulders portrait photos of ONE single young East Asian Chinese woman in her late twenties, the exact same person in every one of the six panels, shot on a plain seamless light neutral-grey studio backdrop with even soft frontal studio lighting. She has an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate idol face): a soft oval face, natural soft double eyelids, a small natural nose, and long loose straight natural black hair falling past her shoulders, wearing a plain solid off-white to cream chunky unbranded knit sweater. Her face shape, features, hairstyle and clothing must be identical in all six panels and ONLY the facial expression changes between panels; every panel is the same identical woman, never a different woman and never a different face. Each panel is a straight-on head-and-shoulders portrait at the same scale and framing, and each panel shows one clearly different, strongly emotional crying expression, distinctly different from the others and unmistakably intense: panel 1 (top-left) arguing and upset, eyebrows pulled up and together, mouth open mid-word protesting, eyes already wet and shining with the very first tears; panel 2 (top-middle) on the brink of breaking down, both eyes brimming full of tears about to overflow, rims flushed red, lips pressed and chin trembling hard; panel 3 (top-right) crying quietly, two clear wet tears rolling all the way down her cheeks leaving shiny wet tear-tracks, eyebrows drawn up in the middle, gaze dropped; panel 4 (bottom-left) full uncontrolled sobbing, her whole face contorted and crumpled in grief, eyebrows sharply up and together, mouth wide open crying out loud, chin puckered, heavy tears streaming down both cheeks, cheeks and nose flushed deep red, wet and messy; panel 5 (bottom-middle) cried-out and hollow, face raw swollen and exhausted after hard crying, eyes puffy bloodshot and glassy staring at nothing, wet tear-streaked cheeks, lips slack, utterly emptied out; panel 6 (bottom-right) trying to hold it in and failing, jaw clenched, lips quivering, eyes squeezed with tears escaping down the sides. The crying is heavy, wet and real with visibly streaming and streaked tears in every panel. Her eyes stay ordinary and matte and the tears are ordinary natural wetness, with no reddened glow, no glowing eyes and no unnatural light coming from the eyes. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real photographic camera texture, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No outdoor scene, no room interior, plain grey studio backdrop only. No text, no labels, no captions, no numbers, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "DECISIVE TEST: same 6-cell A-Che expression sheet but references=[] (pure T2I, no calm master) + strongly explicit STREAMING wet tears in every panel, to isolate whether the calm reference was flattening emotion vs gpt-image refusing to render heavy crying",
+      "identity via strong descriptor only (soft oval Chinese face, soft double eyelids, long straight black hair, cream chunky knit) - some drift from established A-Che expected and acceptable for this test",
+      "six escalating crying states: 1 upset-first-tears 2 brimming-about-to-overflow 3 quiet-two-tears-rolling 4 full-sob-contorted-streaming 5 cried-out-hollow-swollen 6 holding-in-failing; every panel explicitly wet/streaked tears",
+      "anti glowing-eye rule kept (ordinary matte eyes, natural wetness, no glow) despite heavy crying",
+      "plain grey studio backdrop, even per-panel framing for clean crops; photoreal no plastic/wax; no text/label/number/logo/Chinese anywhere"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "287ef436d1bc1b8c2d42a73a79547b12beeeb5c78eba818b2a2783be0324f736"
+  },
+  "reviewed_prompt_sha256": "287ef436d1bc1b8c2d42a73a79547b12beeeb5c78eba818b2a2783be0324f736"
+}

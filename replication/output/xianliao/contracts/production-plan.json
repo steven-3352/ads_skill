@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "projectId": "xianliao",
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 15,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "narrativeShots": [
+    {
+      "id": "P01",
+      "title": "片段一·兜底的人-图卡快切(闲聊揣摩+内心VO)",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段一：00:00 - 00:15（本段包含 8 张图卡 + 4 句内心对白）"
+      },
+      "requiredBeats": [
+        { "id": "P01-b1", "sceneId": "living_room", "text": "工作群07:00领导发通知，阿澈秒回“收到，好的老板！”（手机截图俯拍大特写，急促消息提示音+低频氛围电子铺底）", "channels": ["picture", "onscreen_text", "action_sound", "ambience"] },
+        { "id": "P01-b2", "sceneId": "living_room", "text": "闺蜜群09:30八卦链接，阿澈秒回“哈哈哈哈笑死我了！”（时钟走针声叠入）", "channels": ["picture", "onscreen_text", "ambience"] },
+        { "id": "P01-b3", "sceneId": "living_room", "text": "朋友群10:30自拍，阿澈连发三条夸“好看！绝了！你皮肤也太好了！”", "channels": ["picture", "onscreen_text"] },
+        { "id": "P01-b4", "sceneId": "living_room", "text": "内心VO：他是天蝎座，你觉得他什么意思？我该怎么回？", "channels": ["picture", "onscreen_text", "dialogue"] },
+        { "id": "P01-b5", "sceneId": "living_room", "text": "内心VO：他这性格，跟你前男友很像，你觉得他到底什么意思？", "channels": ["picture", "onscreen_text", "dialogue"] },
+        { "id": "P01-b6", "sceneId": "living_room", "text": "内心VO：我这么说是不是不好？他会不会不高兴？", "channels": ["picture", "onscreen_text", "dialogue"] },
+        { "id": "P01-b7", "sceneId": "living_room", "text": "内心VO：他如果爱我，会懂我。（12:00阿沉点的外卖已读却未回）", "channels": ["picture", "onscreen_text", "dialogue"] },
+        { "id": "P01-b8", "sceneId": "living_room", "text": "内心VO：每天要应付各种人，好累。可被需要、被认可的感觉，好满足。（切真人中景，屏幕光打在她眼下青黑的脸上，惯性甜笑眼神空）", "channels": ["picture", "dialogue"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P01-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P01-b1", "channels": ["picture", "onscreen_text", "action_sound", "ambience"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P01-b2", "channels": ["picture", "onscreen_text", "ambience"] } ] },
+            { "id": "c3", "seconds": 2, "coverage": [ { "beatId": "P01-b3", "channels": ["picture", "onscreen_text"] } ] },
+            { "id": "c4", "seconds": 2.5, "coverage": [ { "beatId": "P01-b4", "channels": ["picture", "onscreen_text", "dialogue"] } ] },
+            { "id": "c5", "seconds": 2, "coverage": [ { "beatId": "P01-b5", "channels": ["picture", "onscreen_text", "dialogue"] } ] },
+            { "id": "c6", "seconds": 2, "coverage": [ { "beatId": "P01-b6", "channels": ["picture", "onscreen_text", "dialogue"] } ] },
+            { "id": "c7", "seconds": 1.5, "coverage": [ { "beatId": "P01-b7", "channels": ["picture", "onscreen_text", "dialogue"] } ] },
+            { "id": "c8", "seconds": 1, "coverage": [ { "beatId": "P01-b8", "channels": ["picture", "dialogue"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P01-U1-first.json"], "video": "prompts/P01-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P02",
+      "title": "片段二·兜底的人-图卡快切(外卖忘拿/妈妈3条回1条)",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段二：00:15 - 00:30（本段包含 8 张图卡 + 2 句内心对白）"
+      },
+      "requiredBeats": [
+        { "id": "P02-b1", "sceneId": "living_room", "text": "14:00同事私聊请帮忙，阿澈秒回“没问题，包在我身上！”（消息提示音不断）", "channels": ["picture", "onscreen_text", "action_sound"] },
+        { "id": "P02-b2", "sceneId": "living_room", "text": "15:00闲聊群聊明星，阿澈插话“我也觉得！他好帅！”（时钟走针声继续）", "channels": ["picture", "onscreen_text", "ambience"] },
+        { "id": "P02-b3", "sceneId": "living_room", "text": "16:00群里表情包，她秒回表情包又补一句“哈哈哈”", "channels": ["picture", "onscreen_text"] },
+        { "id": "P02-b4", "sceneId": "living_room", "text": "内心VO：我要是说不去，他们会不会觉得我不合群？（12:30同事群喊吃饭她头也不回走了，阿沉点的外卖原封不动放桌上忘拿）", "channels": ["picture", "onscreen_text", "dialogue"] },
+        { "id": "P02-b5", "sceneId": "living_room", "text": "17:00妈妈连发三条“晚饭吃了吗”“降温了记得加衣服”“这周末回来吗？”，阿澈只回一条“嗯，再说吧。”", "channels": ["picture", "onscreen_text"] },
+        { "id": "P02-b6", "sceneId": "living_room", "text": "19:30阿沉连发三条“今天有空吗”“我给你带了你想吃的”“在吗”，全部已读不回", "channels": ["picture", "onscreen_text"] },
+        { "id": "P02-b7", "sceneId": "living_room", "text": "20:00阿沉来电，阿澈看了一眼手指滑向挂断，切回群里继续回消息", "channels": ["picture", "onscreen_text"] },
+        { "id": "P02-b8", "sceneId": "living_room", "text": "01:50深夜阿澈还躺在工作群里回“收到！辛苦啦~”（时钟走针声骤然停下）", "channels": ["picture", "onscreen_text", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P02-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 6,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P02-b1", "channels": ["picture", "onscreen_text", "action_sound"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P02-b2", "channels": ["picture", "onscreen_text", "ambience"] } ] },
+            { "id": "c3", "seconds": 2, "coverage": [ { "beatId": "P02-b3", "channels": ["picture", "onscreen_text"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P02-U1-first.json"], "video": "prompts/P02-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        },
+        {
+          "id": "P02-U2",
+          "sceneId": "living_room",
+          "durationSeconds": 2.5,
+          "cuts": [
+            { "id": "c1", "seconds": 2.5, "coverage": [ { "beatId": "P02-b4", "channels": ["picture", "onscreen_text", "dialogue"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P02-U2-first.json"], "video": "prompts/P02-U2-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        },
+        {
+          "id": "P02-U3",
+          "sceneId": "living_room",
+          "durationSeconds": 6.5,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P02-b5", "channels": ["picture", "onscreen_text"] } ] },
+            { "id": "c2", "seconds": 1.5, "coverage": [ { "beatId": "P02-b6", "channels": ["picture", "onscreen_text"] } ] },
+            { "id": "c3", "seconds": 1.5, "coverage": [ { "beatId": "P02-b7", "channels": ["picture", "onscreen_text"] } ] },
+            { "id": "c4", "seconds": 1.5, "coverage": [ { "beatId": "P02-b8", "channels": ["picture", "onscreen_text", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P02-U3-first.json"], "video": "prompts/P02-U3-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P03",
+      "title": "片段三·你都记得-阿沉进门",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段三：00:30 - 00:45（本段包含 8 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P03-b1", "sceneId": "living_room", "text": "手机又震来电显示“阿沉”，阿澈拇指在屏幕上方悬半秒又一次滑向挂断（消息/来电提示音）", "channels": ["picture", "action_sound"] },
+        { "id": "P03-b2", "sceneId": "living_room", "text": "门被推开，阿沉拖着行李箱走进玄关，逆着楼道冷光站门口看她，手里还攥着刚被挂断的手机（门轴轻响，行李箱轮子滚过门槛）", "channels": ["picture", "action_sound"] },
+        { "id": "P03-b3", "sceneId": "living_room", "text": "阿澈猛地抬头，前一秒的甜笑瞬间冻住，随即又堆上标准甜笑", "channels": ["picture"] },
+        { "id": "P03-b4", "sceneId": "living_room", "text": "阿澈：你怎么这点来了？我正忙着回消息呢。", "channels": ["picture", "dialogue"] },
+        { "id": "P03-b5", "sceneId": "living_room", "text": "阿沉：我来拿我的东西。", "channels": ["picture", "dialogue"] },
+        { "id": "P03-b6", "sceneId": "living_room", "text": "阿澈：急什么，等我回完这条。你吃了没，我给你煮碗面？（消息提示音响起）", "channels": ["picture", "dialogue", "action_sound"] },
+        { "id": "P03-b7", "sceneId": "living_room", "text": "阿沉：阿澈，我在门口站了十分钟。你手机响一次你抬一次头。你连我要走，都没舍得看我一眼——刚才我打给你，你把我挂了。（氛围电子渐强）", "channels": ["picture", "dialogue", "ambience"] },
+        { "id": "P03-b8", "sceneId": "living_room", "text": "阿澈的笑意僵在脸上，手指悬在屏幕上方，停住", "channels": ["picture"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P03-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 1.5, "coverage": [ { "beatId": "P03-b1", "channels": ["picture", "action_sound"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P03-b2", "channels": ["picture", "action_sound"] } ] },
+            { "id": "c3", "seconds": 1.5, "coverage": [ { "beatId": "P03-b3", "channels": ["picture"] } ] },
+            { "id": "c4", "seconds": 2, "coverage": [ { "beatId": "P03-b4", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c5", "seconds": 1.5, "coverage": [ { "beatId": "P03-b5", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c6", "seconds": 2.5, "coverage": [ { "beatId": "P03-b6", "channels": ["picture", "dialogue", "action_sound"] } ] },
+            { "id": "c7", "seconds": 2.5, "coverage": [ { "beatId": "P03-b7", "channels": ["picture", "dialogue", "ambience"] } ] },
+            { "id": "c8", "seconds": 1.5, "coverage": [ { "beatId": "P03-b8", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P03-U1-first.json"], "video": "prompts/P03-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P04",
+      "title": "片段四·你都记得-你不是善良你是怕",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段四：00:45 - 01:00（本段包含 7 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P04-b1", "sceneId": "living_room", "text": "阿澈：你说什么呢，我们不是好好的？你是不是工作不顺心？", "channels": ["picture", "dialogue"] },
+        { "id": "P04-b2", "sceneId": "living_room", "text": "阿沉：我工作挺顺。不顺心的，是我等你这五年。", "channels": ["picture", "dialogue"] },
+        { "id": "P04-b3", "sceneId": "living_room", "text": "阿澈：我怎么让你不顺心了？我对你还不够好？", "channels": ["picture", "dialogue"] },
+        { "id": "P04-b4", "sceneId": "living_room", "text": "阿沉：你以为你善良？你是怕。群里少回一句你怕得睡不着，你自己的价值就是去讨好吗？我一晚上没信儿，你睡得可香。", "channels": ["picture", "dialogue"] },
+        { "id": "P04-b5", "sceneId": "living_room", "text": "阿澈：（急）我那是……群里有人等我回话。", "channels": ["picture", "dialogue"] },
+        { "id": "P04-b6", "sceneId": "living_room", "text": "阿沉：群里没人等你。", "channels": ["picture", "dialogue"] },
+        { "id": "P04-b7", "sceneId": "living_room", "text": "屏幕上那串“收到、表情包、哈哈哈、辛苦啦”的消息一条条快速划过", "channels": ["picture", "onscreen_text"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P04-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P04-b1", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c2", "seconds": 2.5, "coverage": [ { "beatId": "P04-b2", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c3", "seconds": 2.5, "coverage": [ { "beatId": "P04-b3", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c4", "seconds": 3, "coverage": [ { "beatId": "P04-b4", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c5", "seconds": 2, "coverage": [ { "beatId": "P04-b5", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c6", "seconds": 1.5, "coverage": [ { "beatId": "P04-b6", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c7", "seconds": 1.5, "coverage": [ { "beatId": "P04-b7", "channels": ["picture", "onscreen_text"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P04-U1-first.json"], "video": "prompts/P04-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P05",
+      "title": "片段五·教养还是讨好-群里没人等你",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段五：01:00 - 01:15（本段包含 7 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P05-b1", "sceneId": "living_room", "text": "阿沉：你半夜给同事改方案，朋友喊一声搬家你就冲出去。", "channels": ["picture", "dialogue"] },
+        { "id": "P05-b2", "sceneId": "living_room", "text": "阿沉：同事说“明天发”，你回“好的收到辛苦啦”；别人发个表情包，你也得回个表情包。", "channels": ["picture", "dialogue"] },
+        { "id": "P05-b3", "sceneId": "living_room", "text": "阿沉：人家一句“我先睡了”，你都要接“晚安明天见”。这些话说给谁听都行，就是没人真的要听。", "channels": ["picture", "dialogue"] },
+        { "id": "P05-b4", "sceneId": "living_room", "text": "阿澈别过脸，下颔线绷紧，手无意识攥紧衣角", "channels": ["picture"] },
+        { "id": "P05-b5", "sceneId": "living_room", "text": "阿沉：可你不接，你就心慌。你退那些群，三天，没一个人问你去哪了——你自己心里清楚。（氛围电子压到最低）", "channels": ["picture", "dialogue", "ambience"] },
+        { "id": "P05-b6", "sceneId": "living_room", "text": "阿沉：连一句没人要的“收到”，都排在我前面。", "channels": ["picture", "dialogue"] },
+        { "id": "P05-b7", "sceneId": "living_room", "text": "阿澈瞳孔骤缩，呼吸发紧，眼眶泛红，眼泪硬压着不掉", "channels": ["picture"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P05-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P05-b1", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P05-b2", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c3", "seconds": 2.5, "coverage": [ { "beatId": "P05-b3", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c4", "seconds": 2.5, "coverage": [ { "beatId": "P05-b4", "channels": ["picture"] } ] },
+            { "id": "c5", "seconds": 3, "coverage": [ { "beatId": "P05-b5", "channels": ["picture", "dialogue", "ambience"] } ] },
+            { "id": "c6", "seconds": 1.5, "coverage": [ { "beatId": "P05-b6", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c7", "seconds": 1.5, "coverage": [ { "beatId": "P05-b7", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P05-U1-first.json"], "video": "prompts/P05-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P06",
+      "title": "片段六·教养还是讨好-你不配被谁排第一",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段六：01:15 - 01:30（本段包含 7 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P06-b1", "sceneId": "living_room", "text": "阿澈：我是心好！我帮别人，有错吗？", "channels": ["picture", "dialogue"] },
+        { "id": "P06-b2", "sceneId": "living_room", "text": "阿沉：你没错。你只是把谁都排我前面，把我排最后。", "channels": ["picture", "dialogue"] },
+        { "id": "P06-b3", "sceneId": "living_room", "text": "阿澈：那你要我怎样？抛下所有人，眼里只有你？那我还是我吗？", "channels": ["picture", "dialogue"] },
+        { "id": "P06-b4", "sceneId": "living_room", "text": "阿沉：我没要你眼里只有我。我要你眼里，有你自己。", "channels": ["picture", "dialogue"] },
+        { "id": "P06-b5", "sceneId": "living_room", "text": "阿沉：你不是眼里没我——你是打心里觉得，自己不配被谁排第一。", "channels": ["picture", "dialogue"] },
+        { "id": "P06-b6", "sceneId": "living_room", "text": "阿澈嘴唇发抖，眼泪在眼眶打转，却还强撑", "channels": ["picture"] },
+        { "id": "P06-b7", "sceneId": "living_room", "text": "两人隔着行李箱对峙，一个崩溃，一个平静，光影在中间劈开", "channels": ["picture"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P06-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P06-b1", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c2", "seconds": 2.5, "coverage": [ { "beatId": "P06-b2", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c3", "seconds": 2.5, "coverage": [ { "beatId": "P06-b3", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c4", "seconds": 3, "coverage": [ { "beatId": "P06-b4", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c5", "seconds": 2.5, "coverage": [ { "beatId": "P06-b5", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c6", "seconds": 1.5, "coverage": [ { "beatId": "P06-b6", "channels": ["picture"] } ] },
+            { "id": "c7", "seconds": 1, "coverage": [ { "beatId": "P06-b7", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P06-U1-first.json"], "video": "prompts/P06-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P07",
+      "title": "片段七·等来的永远是最后-你说扔就扔了",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段七：01:30 - 01:45（本段包含 6 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P07-b1", "sceneId": "living_room", "text": "阿沉深吸一口气，声音低下去却更重（氛围电子骤停，只剩环境白噪）", "channels": ["picture", "ambience"] },
+        { "id": "P07-b2", "sceneId": "living_room", "text": "阿沉：上礼拜六，我订好位子等你三个钟头。你老板一句话，你把我扔饭馆就走了。", "channels": ["picture", "dialogue"] },
+        { "id": "P07-b3", "sceneId": "living_room", "text": "阿澈：他那是……着急。", "channels": ["picture", "dialogue"] },
+        { "id": "P07-b4", "sceneId": "living_room", "text": "阿沉：他明天交都行。你还是走了——他都说了周一也行，不着急。你非得挑咱俩吃饭这个点去弄吗？你晚一个钟头回他，他会辞退你吗？不会。可我这顿饭、我这三个钟头，你说扔就扔了。", "channels": ["picture", "dialogue"] },
+        { "id": "P07-b5", "sceneId": "living_room", "text": "阿澈张了张嘴说不出话，眼泪终于滑下来一滴", "channels": ["picture"] },
+        { "id": "P07-b6", "sceneId": "living_room", "text": "阿沉：今天中午我给你点的外卖，你看一眼，跟同事吃饭去了，到现在还搁桌上。", "channels": ["picture", "dialogue"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P07-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P07-b1", "channels": ["picture", "ambience"] } ] },
+            { "id": "c2", "seconds": 3, "coverage": [ { "beatId": "P07-b2", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c3", "seconds": 2.5, "coverage": [ { "beatId": "P07-b3", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c4", "seconds": 4.5, "coverage": [ { "beatId": "P07-b4", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c5", "seconds": 1.5, "coverage": [ { "beatId": "P07-b5", "channels": ["picture"] } ] },
+            { "id": "c6", "seconds": 1.5, "coverage": [ { "beatId": "P07-b6", "channels": ["picture", "dialogue"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P07-U1-first.json"], "video": "prompts/P07-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P08",
+      "title": "片段八·等来的永远是最后-排最后一个",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段八：01:45 - 02:00（本段包含 6 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P08-b1", "sceneId": "living_room", "text": "阿沉：你妈连发三条，你回一个“嗯”。我打十个电话，你挂十个。", "channels": ["picture", "dialogue"] },
+        { "id": "P08-b2", "sceneId": "living_room", "text": "阿澈：（崩溃）我等了你五年，你就这么走？", "channels": ["picture", "dialogue"] },
+        { "id": "P08-b3", "sceneId": "living_room", "text": "阿沉站定，伸手拉起行李箱拉杆，指节用力到发白", "channels": ["picture"] },
+        { "id": "P08-b4", "sceneId": "living_room", "text": "阿沉：我心疼你，你嫌压力；我惦记你，你说麻烦。别人随口一句“辛苦啦”，你能供一晚上、当成命。", "channels": ["picture", "dialogue"] },
+        { "id": "P08-b5", "sceneId": "living_room", "text": "阿沉：我等你五年，等来的，是我永远排最后一个。（弦乐一声低鸣）", "channels": ["picture", "dialogue", "ambience"] },
+        { "id": "P08-b6", "sceneId": "living_room", "text": "阿澈整个人僵住，眼泪大颗砸下来", "channels": ["picture"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P08-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2.5, "coverage": [ { "beatId": "P08-b1", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c2", "seconds": 2.5, "coverage": [ { "beatId": "P08-b2", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c3", "seconds": 2.5, "coverage": [ { "beatId": "P08-b3", "channels": ["picture"] } ] },
+            { "id": "c4", "seconds": 3, "coverage": [ { "beatId": "P08-b4", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c5", "seconds": 2.5, "coverage": [ { "beatId": "P08-b5", "channels": ["picture", "dialogue", "ambience"] } ] },
+            { "id": "c6", "seconds": 2, "coverage": [ { "beatId": "P08-b6", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P08-U1-first.json"], "video": "prompts/P08-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P09",
+      "title": "片段九·等来的永远是最后-你不敢停",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段九：02:00 - 02:15（本段包含 6 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P09-b1", "sceneId": "living_room", "text": "阿沉拨开她挡着门的手，拖起行李箱转身（行李箱轮子转动）", "channels": ["picture", "action_sound"] },
+        { "id": "P09-b2", "sceneId": "living_room", "text": "阿沉拖着行李箱走向门口，阿澈在身后伸手想抓又停住", "channels": ["picture"] },
+        { "id": "P09-b3", "sceneId": "living_room", "text": "阿沉在门框里站定，回头看了她最后一眼，眼里平静却发红", "channels": ["picture"] },
+        { "id": "P09-b4", "sceneId": "living_room", "text": "阿澈：我改……我改还不行吗？你别走。", "channels": ["picture", "dialogue"] },
+        { "id": "P09-b5", "sceneId": "living_room", "text": "阿沉看着她的眼泪，平静地一字一句（弦乐沉到底）", "channels": ["picture", "ambience"] },
+        { "id": "P09-b6", "sceneId": "living_room", "text": "阿沉：你改不了。你不是不会爱我——是你不敢停。你一停下来，就得面对：没人真的需要你。所以你宁可一条条回“收到”，也不敢好好看我一眼。", "channels": ["picture", "dialogue"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P09-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 3, "coverage": [ { "beatId": "P09-b1", "channels": ["picture", "action_sound"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P09-b2", "channels": ["picture"] } ] },
+            { "id": "c3", "seconds": 3, "coverage": [ { "beatId": "P09-b3", "channels": ["picture"] } ] },
+            { "id": "c4", "seconds": 2, "coverage": [ { "beatId": "P09-b4", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c5", "seconds": 3, "coverage": [ { "beatId": "P09-b5", "channels": ["picture", "ambience"] } ] },
+            { "id": "c6", "seconds": 2, "coverage": [ { "beatId": "P09-b6", "channels": ["picture", "dialogue"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P09-U1-first.json"], "video": "prompts/P09-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P10",
+      "title": "片段十·等来的永远是最后-砸门金句",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段十：02:15 - 02:30（本段包含 6 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P10-b1", "sceneId": "living_room", "text": "阿沉：你说你等了我五年。可我等你五年，等来的，全是“等我回完这条”。", "channels": ["picture", "dialogue"] },
+        { "id": "P10-b2", "sceneId": "living_room", "text": "阿澈：（崩溃）那你要我怎样……", "channels": ["picture", "dialogue"] },
+        { "id": "P10-b3", "sceneId": "living_room", "text": "阿沉：不是我不要你，也不是我不等你——是你根本不需要我。（字幕：不是我不要你，是你根本不需要我）", "channels": ["picture", "dialogue", "onscreen_text"] },
+        { "id": "P10-b4", "sceneId": "living_room", "text": "阿沉：我给你五年的爱，比不过群里随便一个人，一句“辛苦了”。（字幕：……比不过别人一句“辛苦了”。）", "channels": ["picture", "dialogue", "onscreen_text"] },
+        { "id": "P10-b5", "sceneId": "living_room", "text": "阿沉转身，门在他身后甩上（“砰”一声巨响，锁舌咔嗒，音乐骤停只剩寂静）", "channels": ["picture", "action_sound", "ambience"] },
+        { "id": "P10-b6", "sceneId": "living_room", "text": "阿澈僵在原地，眼泪砸在地上，整个人像被抽空", "channels": ["picture"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P10-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 3, "coverage": [ { "beatId": "P10-b1", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c2", "seconds": 2.5, "coverage": [ { "beatId": "P10-b2", "channels": ["picture", "dialogue"] } ] },
+            { "id": "c3", "seconds": 3, "coverage": [ { "beatId": "P10-b3", "channels": ["picture", "dialogue", "onscreen_text"] } ] },
+            { "id": "c4", "seconds": 1.5, "coverage": [ { "beatId": "P10-b4", "channels": ["picture", "dialogue", "onscreen_text"] } ] },
+            { "id": "c5", "seconds": 2, "coverage": [ { "beatId": "P10-b5", "channels": ["picture", "action_sound", "ambience"] } ] },
+            { "id": "c6", "seconds": 3, "coverage": [ { "beatId": "P10-b6", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P10-U1-first.json"], "video": "prompts/P10-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P11",
+      "title": "片段十一·条件反射-踢到钥匙",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段十一：02:30 - 02:45（本段包含 7 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P11-b1", "sceneId": "living_room", "text": "阿澈嘴唇微微发抖，喉头滚动，发不出声", "channels": ["picture"] },
+        { "id": "P11-b2", "sceneId": "living_room", "text": "她身后的手机屏幕亮起、震动（字幕气泡：工作群——“那方案就这么定啦？”，消息提示音在寂静中格外刺耳）", "channels": ["picture", "onscreen_text", "action_sound"] },
+        { "id": "P11-b3", "sceneId": "living_room", "text": "阿澈抹了一把眼泪，条件反射地伸手去抓手机", "channels": ["picture"] },
+        { "id": "P11-b4", "sceneId": "living_room", "text": "她握住手机，指尖已经要敲字，眼泪还在脸上", "channels": ["picture"] },
+        { "id": "P11-b5", "sceneId": "living_room", "text": "她飞快打字发送“好的收到！辛苦啦~”，消息显示已发送（键盘敲击声）", "channels": ["picture", "onscreen_text", "action_sound"] },
+        { "id": "P11-b6", "sceneId": "living_room", "text": "她吸了吸鼻子，习惯性地要往下翻，继续盯着群里下一句", "channels": ["picture"] },
+        { "id": "P11-b7", "sceneId": "living_room", "text": "她迈出一步，脚边踢到什么发出一声轻响（金属钥匙串落地轻响）", "channels": ["picture", "action_sound"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P11-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 1.5, "coverage": [ { "beatId": "P11-b1", "channels": ["picture"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P11-b2", "channels": ["picture", "onscreen_text", "action_sound"] } ] },
+            { "id": "c3", "seconds": 2.5, "coverage": [ { "beatId": "P11-b3", "channels": ["picture"] } ] },
+            { "id": "c4", "seconds": 2, "coverage": [ { "beatId": "P11-b4", "channels": ["picture"] } ] },
+            { "id": "c5", "seconds": 2.5, "coverage": [ { "beatId": "P11-b5", "channels": ["picture", "onscreen_text", "action_sound"] } ] },
+            { "id": "c6", "seconds": 2, "coverage": [ { "beatId": "P11-b6", "channels": ["picture"] } ] },
+            { "id": "c7", "seconds": 2.5, "coverage": [ { "beatId": "P11-b7", "channels": ["picture", "action_sound"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P11-U1-first.json"], "video": "prompts/P11-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P12",
+      "title": "片段十二·第一次没有去接-木牌",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段十二：02:45 - 03:00（本段包含 6 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P12-b1", "sceneId": "living_room", "text": "她低头——地上是阿沉落下的家门钥匙，钥匙串上挂着一个她从没见过的小木牌，上面刻着一行字", "channels": ["picture"] },
+        { "id": "P12-b2", "sceneId": "living_room", "text": "木牌特写，阿沉的笔迹轻轻一句“下次，让我排第一。”（字幕：下次，让我排第一。只剩极轻的环境白噪）", "channels": ["picture", "onscreen_text", "ambience"] },
+        { "id": "P12-b3", "sceneId": "living_room", "text": "阿澈整个人僵在原地，眼泪再次涌出，眼眶通红", "channels": ["picture"] },
+        { "id": "P12-b4", "sceneId": "living_room", "text": "阿澈缓缓蹲下，手指伸向那串钥匙（极简钢琴单音轻轻落下）", "channels": ["picture", "ambience"] },
+        { "id": "P12-b5", "sceneId": "living_room", "text": "她捡起钥匙握进手里，指节一根根收紧发白（钥匙在掌心轻微的碰撞声）", "channels": ["picture", "action_sound"] },
+        { "id": "P12-b6", "sceneId": "living_room", "text": "她把木牌翻到正面，指尖摩挲那行字，肩膀开始微微颤抖", "channels": ["picture"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P12-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 15,
+          "cuts": [
+            { "id": "c1", "seconds": 2.5, "coverage": [ { "beatId": "P12-b1", "channels": ["picture"] } ] },
+            { "id": "c2", "seconds": 3, "coverage": [ { "beatId": "P12-b2", "channels": ["picture", "onscreen_text", "ambience"] } ] },
+            { "id": "c3", "seconds": 2, "coverage": [ { "beatId": "P12-b3", "channels": ["picture"] } ] },
+            { "id": "c4", "seconds": 2.5, "coverage": [ { "beatId": "P12-b4", "channels": ["picture", "ambience"] } ] },
+            { "id": "c5", "seconds": 2.5, "coverage": [ { "beatId": "P12-b5", "channels": ["picture", "action_sound"] } ] },
+            { "id": "c6", "seconds": 2.5, "coverage": [ { "beatId": "P12-b6", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P12-U1-first.json"], "video": "prompts/P12-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    },
+    {
+      "id": "P13",
+      "title": "片段十三·第一次没有去接-旁白落点",
+      "source": {
+        "storyFile": "story/xiaoliao.md",
+        "verbatim": "#### 片段十三：03:00 - 03:15（本段包含 6 个分镜）"
+      },
+      "requiredBeats": [
+        { "id": "P13-b1", "sceneId": "living_room", "text": "她跪坐在地上，把木牌握在胸前，头埋下去（一声压抑的哽咽）", "channels": ["picture", "action_sound"] },
+        { "id": "P13-b2", "sceneId": "living_room", "text": "她身后的手机屏幕又亮起，工作群发来一句等人接的话，屏幕光映在她背上（消息提示音再次响起）", "channels": ["picture", "action_sound"] },
+        { "id": "P13-b3", "sceneId": "living_room", "text": "她第一次没有回头去接，只是一动不动跪在原地握着木牌", "channels": ["picture"] },
+        { "id": "P13-b4", "sceneId": "living_room", "text": "她独自跪在空荡的客厅中央，身边是行李箱的轮印、桌上那份忘拿的外卖、门在画面深处（缓慢拉镜，极简钢琴渐强）", "channels": ["picture", "ambience"] },
+        { "id": "P13-b5", "sceneId": "living_room", "text": "她望向屏幕又移开，眼泪滑落，第一次露出一点真实的、不像“甜笑”的表情", "channels": ["picture"] },
+        { "id": "P13-b6", "sceneId": "living_room", "text": "旁白：他说群里没人等我，我不信。可他走了我才发现——这屋里，是真没人了。我回了一辈子的“收到”，没有一句，是回给他的。（大远景背面，钢琴淡出黑场）", "channels": ["picture", "dialogue", "ambience"] }
+      ],
+      "generationUnits": [
+        {
+          "id": "P13-U1",
+          "sceneId": "living_room",
+          "durationSeconds": 12,
+          "cuts": [
+            { "id": "c1", "seconds": 2, "coverage": [ { "beatId": "P13-b1", "channels": ["picture", "action_sound"] } ] },
+            { "id": "c2", "seconds": 2, "coverage": [ { "beatId": "P13-b2", "channels": ["picture", "action_sound"] } ] },
+            { "id": "c3", "seconds": 2, "coverage": [ { "beatId": "P13-b3", "channels": ["picture"] } ] },
+            { "id": "c4", "seconds": 3, "coverage": [ { "beatId": "P13-b4", "channels": ["picture", "ambience"] } ] },
+            { "id": "c5", "seconds": 3, "coverage": [ { "beatId": "P13-b5", "channels": ["picture"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P13-U1-first.json"], "video": "prompts/P13-U1-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        },
+        {
+          "id": "P13-U2",
+          "sceneId": "living_room",
+          "durationSeconds": 3,
+          "cuts": [
+            { "id": "c1", "seconds": 3, "coverage": [ { "beatId": "P13-b6", "channels": ["picture", "dialogue", "ambience"] } ] }
+          ],
+          "prompts": { "images": ["prompts/P13-U2-first.json"], "video": "prompts/P13-U2-video.json" },
+          "media": { "firstFrame": null, "lastFrame": null, "video": null },
+          "references": []
+        }
+      ],
+      "postTasks": []
+    }
+  ]
+}

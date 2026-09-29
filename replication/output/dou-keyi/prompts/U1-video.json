@@ -1,0 +1,37 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a warm, brightly and evenly lit living room. A young East Asian Chinese couple sit on a sofa with a low coffee table, beginning exactly in the position, framing, clothing and props established by Picture 1, where the man has just set two identical plain unbranded sealed full-sugar milk-tea cups on the coffee table and the woman on the left is turning to receive one. The camera holds a mostly static shot with a slight handheld sway. The relaxed, sincere young man (S2), a mid-tone natural male voice at a normal conversational pace, says: <d>[Chinese]给你带了奶茶，全糖，跟我一样。</d> The woman on the left (S1), a soft natural female voice, takes one milk-tea cup into her hand without inserting a straw and answers with a light smile that does not reach her eyes: <d>[Chinese]好啊。</d> As she lowers the cup to hold it, the man picks up his phone and lowers his head to look at the screen, arriving in the exact poses, hand positions, the cup-in-hand-without-straw state and the composition established by Picture 2. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A low television murmur and faint room ambience continue underneath throughout without ever dropping to silence. The plastic milk-tea cups tap softly on the wooden table, fabric rustles as they settle, and there is a faint tap on the phone screen.\n\nnon_diegetic_music: A soft, sparse piano at a slow tempo kept very low in the mix, continuing gently without swelling.",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U1/images/U1-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U1/images/U1-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA 6s single shot Picture1->Picture2: man sets 2 cups & speaks, woman takes cup WITHOUT straw & answers, man picks phone head-down=last frame",
+      "verbatim Chinese <d>[Chinese]>; S1=woman S2=man consistent; normal pace continuous no dead tail",
+      "16:9 locked (3:2 frame crop); iPhone realistic pores/matte/no waxy-CGI; warm bright even light",
+      "unbranded cup+phone no brand/logo; no subtitles/captions/on-screen text",
+      "soundscape continuous TV murmur+ambience no dead air; music low sparse piano"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "330033c526492df7e3b092a5c0ea889b2872faac149e4a0a47917a0015cad491"
+  }
+}

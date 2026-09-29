@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid medium shot filmed on an iPhone 17 Pro at a neutral third-person distance across a home apartment living-room, 16:9 horizontal composition (generated at 1536x1024), strictly indoors, with a still cinematic feel. This is absolutely NOT a selfie: the woman does not look at the camera and no arm reaches toward the camera. A single young East Asian Chinese woman stands near the closed apartment entrance door, shown from roughly the knees up with a stretch of pale wooden floor visible in front of her feet; she has just taken a step and stopped, her head bowed and her gaze dropping down to the floor just ahead of her feet where her foot has nudged a small metal keyring. She is the exact same person as the reference image, with the same ordinary real East Asian Chinese face (not Western, not an idol face), the same long loose natural black hair and the same plain off-white to cream chunky unbranded knit sweater over light-blue denim jeans; keep her identity, hair and clothing unchanged and only change her pose, framing and expression. A smartphone hangs low in one of her hands, its screen only an indistinct glow with no readable text and no Chinese characters. Her face is tear-streaked and hollow, her brows drawn, her lips pressed, caught in a small dawning realization as she looks down; her eyes stay ordinary and matte, tears just ordinary natural wetness, with no reddened glow, no glowing eyes and no unnatural light from the eyes. On the pale floor right at her feet lies the small metal keyring holding a few ordinary house keys and a small plain natural-wood tag, just nudged and slightly out of focus; the keyring, keys and wooden tag are plain and unbranded with no logo, no readable text and no Chinese characters. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street, and any window shows only a soft far-away out-of-focus city apartment building, never nature. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), with at most a very slight subdued end-of-scene mood but still bright overall, not moody, not dim, not lamp-lit, not underexposed, not dark and with no heavy vignette. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward the camera, nobody looking at the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FL2VA LAST frame (U11-2, 段11 镜7): woman stepped and stopped, head bowed looking DOWN at keyring her foot just nudged, small dawning realization -> continues passed U11-2-first (typing, keys on floor ahead)",
+      "continuity with U11-2-first: same ref master-A-r2, same wardrobe off-white chunky knit + light-blue jeans, keyring+keys+plain wood tag on floor now at her feet, phone glow indistinct",
+      "head bowed/looking down (not frontal) so master-A-r2 safe (no smile inheritance) and no-smile negative included",
+      "grief tear-streaked hollow; eyes ordinary/matte, tears natural, no reddened glow/no glowing eyes (anti glowing-eye rule)",
+      "props plain unbranded no readable text/Chinese; phone screen indistinct glow only",
+      "strictly indoor living-room, only very slight subdued end mood but still bright, no heavy vignette; full outdoor negatives; no animal; iPhone17 realistic; anti-selfie; 16:9 1536x1024; no text/logo/Chinese"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bee57906bcb4293e6767baada7c502aef4088fe2665c963960924d4d2639339c"
+  },
+  "reviewed_prompt_sha256": "bee57906bcb4293e6767baada7c502aef4088fe2665c963960924d4d2639339c"
+}

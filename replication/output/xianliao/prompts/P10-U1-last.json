@@ -1,0 +1,28 @@
+{
+  "prompt": "Photorealistic candid medium-wide shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024) with a still, freeze-frame feel, a single young East Asian Chinese woman standing alone strictly indoors in the same home apartment living-room (absolutely not outdoors, no park, no trees, no lake, no street). The camera is at a neutral third-person distance across the room, positioned slightly behind and to the side of her so we mostly see her back and three-quarter profile as she faces the just-closed apartment entrance door ahead of her; this is absolutely NOT a selfie, she does not look at the camera, she does not face the camera, and no arm reaches toward the camera. Behind and around her are a fabric sofa and interior wall, and the apartment entrance door in the background depth is now fully closed. She is an ordinary real East Asian Chinese person (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face). She must be the exact same person as the reference image, with the same face, the same long loose natural black hair and the same plain solid beige to light-apricot unbranded knit home top with no logo and no text; keep her identity, hairstyle and clothing unchanged and only change her pose, framing and expression. The man and his suitcase are gone from the frame; she stands frozen alone where she was left, facing the just-closed door, her visible three-quarter profile devastated and hollow, absolutely not smiling and not cheerful, the light drained completely from her face, lips faintly parted, emptied-out as if the air has been pulled from her, arms hanging slack at her sides. On the floor near her there is a faint suitcase wheel track; no tears, no reddened eyes and no glowing eyes. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating her hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward camera, no smiling, no cheerful or happy expression, nobody looking at the camera, not facing the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FL2VA LAST frame: same room/framing as first frame, entrance door now fully closed, man + suitcase gone; woman alone frozen facing the door, drained and emptied-out (landing state for turn->walk->slam path)",
+      "identity locked to master-A-r2 (A-Che): same face/long black hair/beige-apricot knit top; only pose/framing/expression changed",
+      "hollow drained stillness; explicit no tears / no reddened eyes / no glowing eyes (anti glowing-eye rule); faint suitcase wheel track on floor for continuity",
+      "bright airy daytime living room, ceiling + window daylight, neutral-white not orange/amber, evenly lit, not moody/dim/underexposed/dark",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ccdc2457058fa2094d5fed384a4c2cc88ef886e4bb6ae8a8d9ed8ab6599e76d3"
+  },
+  "reviewed_prompt_sha256": "ccdc2457058fa2094d5fed384a4c2cc88ef886e4bb6ae8a8d9ed8ab6599e76d3"
+}

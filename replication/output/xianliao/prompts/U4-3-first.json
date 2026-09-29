@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid medium close-up filmed on an iPhone 17 Pro mounted on a tripod roughly 1.8 meters away across a home apartment living-room, 16:9 horizontal composition (generated at 1536x1024). This is a neutral third-person cinematic shot filmed by another person standing across the room, and it is absolutely NOT a selfie and NOT a video call: the woman does not hold any phone, no arm and no hand reaches toward or comes near the camera, her nearest arm hangs down at her side, and she does NOT stare straight into the lens. A single young East Asian Chinese woman is the only subject in sharp focus, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate idol face). She has long loose natural black hair and wears a plain off-white to cream chunky unbranded knit sweater over light-blue denim jeans. She is on her feet and tense, her body still and braced. She is framed as a medium close-up of her face, shoulders and upper chest, but with the living-room clearly visible behind and to the sides of her: a fabric sofa with cushions, an interior wall with a framed picture and a leafy houseplant are visible in gentle background bokeh, so the interior room clearly fills the background. She is turned toward the man standing just off to the side of the camera and looks slightly off-camera toward him, not into the lens, caught mid-protest, talking back and refusing to back down, anxious and wronged, her eyebrows drawn together and lifted in the middle in a hurt knot, her eyes rapidly reddening and flooding with tears, her lower lids brimming, her lips parted and quivering as if her voice is shaking, and the first tear spilling over and running down one cheek. Her tears are ordinary natural wetness, with no glowing eyes and no unnatural light coming from the eyes. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street, and any window in the background shows only a soft far-away out-of-focus city apartment building, never nature. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating her face, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm or hand extended toward the camera, no phone in hand, nobody looking straight into the lens. No outdoor scene, no park, no trees, no lake, no river, no mountains, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "A-Che emotional close-up, pink-elephant fix: reference is master-A-neutral.png (the non-joyful neutral master); prompt contains ZERO expression-family joy tokens (not even negated forms) and POSITIVELY describes the distressed/crying face - seg4 anxious mid-protest, not yet crying (lightest of the 5)",
+      "front-loaded anti-selfie/anti-drift: tripod third-person 1.8m, arms down at side, gaze OFF-lens, not a selfie/not a video call",
+      "posture: on her feet and tense/braced (not relaxed sofa-sit)",
+      "outfit HARD lock: off-white chunky knit + light-blue denim jeans, explicit no grey sweatpants/loungewear/coat/wardrobe change",
+      "eyes: no reddened glow, no glowing eyes (anti glowing-eye rule); welled moisture kept ordinary/matte",
+      "strictly indoors, window only far out-of-focus city building never nature; full outdoor negatives; no animal/pet; bright airy neutral-white; iPhone17 realistic texture; 16:9 1536x1024; no text/logo/Chinese characters"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "565f57de4237c86cb1da29930cab252799d8563ad3aeb753c7f894a75e9f6eec"
+  },
+  "reviewed_prompt_sha256": "565f57de4237c86cb1da29930cab252799d8563ad3aeb753c7f894a75e9f6eec"
+}

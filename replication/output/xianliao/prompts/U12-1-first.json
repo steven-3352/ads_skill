@@ -1,0 +1,24 @@
+{
+  "prompt": "Photorealistic candid top-down point-of-view still-life photo filmed on an iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), looking straight down at the pale wooden floor of a home apartment living-room, strictly indoors. Lying on the floor is a small ordinary metal keyring holding a few plain house keys and a small plain natural-wood tag the size of a thumb. The wooden tag has faint, shallow, hand-scratched grooves worn into its surface, but the marks are indistinct, worn and completely unreadable and do not form any legible letters, words or Chinese characters. The keyring, the keys and the wooden tag are all plain and unbranded, with no logo, no readable text and no Chinese characters anywhere. Around the keys a stretch of pale wooden floor fills most of the frame, with a soft out-of-focus hint of a fabric sofa leg and the base of a leafy houseplant at the edges of the frame, so it clearly reads as an indoor living-room floor. There is no person anywhere in the frame: no hands, no feet, no legs, nobody. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street. Lighting is a bright, airy daytime interior: the floor is evenly and clearly lit and well exposed with no dark corners, the light a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), not moody, not dim, not lamp-lit, not underexposed and not dark. Natural surface texture with fine wood-grain detail, subtle natural film grain and gentle sensor noise, soft diffused light, no oily glare or blown highlights. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic look, no waxy over-smoothed surfaces, no CGI, no 3D render look, no over-sharpening, no over-HDR. No person, no hands, no feet. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no readable Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "still-life POV of keys+wooden tag on floor, NO person -> text-to-image no reference (generate-image auto-forces T2I for insert/still-life anyway)",
+      "wooden-tag carved marks explicitly indistinct/worn/unreadable, no legible letters or Chinese (clean readable carving added at assembly as diegetic overlay per production-units flag 1)",
+      "keyring+keys+tag plain unbranded no logo/text; matches FL2VA props in U11-2 / U12-2",
+      "strictly indoor living-room floor, sofa leg + plant base bokeh at edges; full outdoor negatives",
+      "bright airy neutral-white daytime; iPhone17 realistic wood-grain texture; 16:9 1536x1024; no text/logo/Chinese/animal"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f5a0a36d1c37e5837c89da2480304dc38560b2af7165e843e63083aebea51a47"
+  },
+  "reviewed_prompt_sha256": "f5a0a36d1c37e5837c89da2480304dc38560b2af7165e843e63083aebea51a47"
+}

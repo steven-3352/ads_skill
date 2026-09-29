@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The devastated woman shown in <Picture 1> stays exactly as established — same face, same long black hair, same off-white chunky knit sweater — beginning in the back three-quarter view kneeling on the floor sitting on her heels, hunched, head bowed, hands cupping the keys and wooden tag near her chest, and the smartphone lying on the floor nearby with its screen dark. The camera holds a mostly static medium back three-quarter shot with a slight handheld sway. She sits still, head lowered, holding the tag. After a few seconds the phone screen on the floor abruptly lights up and buzzes faintly with a new message, a small cold glow appearing on the floor beside her (the screen shows only an indistinct glow with no readable text and no Chinese characters). She does not move and does not turn her head toward the phone, does not look at it; she stays kneeling still with her head bowed and her hands cupping the wooden tag, the phone's glowing screen illuminating the floor beside her while she remains where she is, her shoulders drawing in very slightly as a faint hitched breath escapes her but she does not turn, the phone left unattended. Throughout, her eyes stay ordinary and human with no glowing eyes, no unnatural eye glow and no red glow. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: Almost complete stillness with only a very faint low room ambience running underneath that never drops into full silence, the barely audible air-conditioning hum continuing; a single sharp phone message alert tone cuts through the quiet, followed by a tiny faint hitched breath, and then silence resumes.\n\nnon_diegetic_music: The minimal sparse solo piano continues very softly, a single quiet note here and there at a slow tempo with long gaps, tender and restrained, staying quiet with no fade to black.",
+  "model": "MiniMax-H3",
+  "duration": 10,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U13-1/images/U13-1-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 10s shot from <Picture 1> (U13-1, 段13 镜1-4): kneeling holding tag still -> phone screen lights/buzzes -> she does NOT turn/look, stays still head bowed -> faint hitched breath, phone left unattended (第一次没回头)",
+      "no dialogue (无对白 but 哽咽 rendered as faint hitched breath, not spoken words); <d> omitted; beat = phone alert + her NOT reacting/NOT turning per storyboard 镜2-4",
+      "grief via stillness / not turning / hitched breath / shoulders drawing; explicit no glowing eyes / no unnatural eye glow / no red glow (anti glowing-eye rule)",
+      "phone screen = indistinct glow only on floor, no readable text/Chinese (光效)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = almost stillness, very faint room ambience never silent (roomtone gate) + one sharp phone alert + tiny faint hitched breath, then silence resumes; non_diegetic = minimal sparse solo piano continues (极简钢琴继续)",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2b00a705a5f8ecb0d0b0e4e5b208fda3f17b8f9f91e1aee478480bc2f7a8fa97"
+  },
+  "reviewed_prompt_sha256": "2b00a705a5f8ecb0d0b0e4e5b208fda3f17b8f9f91e1aee478480bc2f7a8fa97"
+}

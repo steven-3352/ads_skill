@@ -1,0 +1,29 @@
+{
+  "prompt": "Photorealistic candid two-shot medium shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024). Keep the same cozy home living room, the same two people and the same plain unbranded milk-tea cup exactly as in the scene. A young East Asian Chinese woman on the left and a young East Asian Chinese man on the right share the frame, seated on a sofa with a low wooden coffee table in front of them. The woman on the left holds the plain unbranded full-sugar milk-tea cup low, resting it near her lap and the table, not raised to her chest or mouth. The cup keeps a smooth fully closed rounded dome lid with absolutely no straw, no straw hole and nothing sticking out of the cup, exactly the same unopened sealed cup as before. Her earlier smile is fading, her face turning calm and a little serious as if she is about to say something, and she looks down toward the cup and toward the man, not at the camera. The man on the right is looking down and away at a phone he holds low in his hands, his head tilted down toward the phone screen, absorbed in the phone, not looking at the camera and not smiling at the viewer. A second identical unopened milk-tea cup with the same closed dome lid and no straw rests on the coffee table. Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or net-red faces). The woman must be the exact same person as the woman reference, with the same face, the same long loose natural black hair and the same plain solid beige to light-apricot unbranded knit home loungewear top with no logo and no text; the man must be the exact same person as the man reference, with the same face, the same clean tidy short black hair and the same plain solid light-grey crew-neck home T-shirt with no logo and no text. Do not change their identity, hairstyle or clothing; only change pose, gaze and expression. Same cozy living room as the scene, with a sofa, a floor lamp and a warm neutral-white ceiling light, and a bookshelf and green plants in soft background bokeh. Lighting is bright, airy and warm with both the ceiling light and the floor lamp on, evenly and clearly illuminating the whole scene, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn their faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. Both milk-tea cups are plain white light sealed unbranded cups with no logo, no text and no brand, both cups identical, both with fully closed lids and no straw. No straw, no drinking straw, no boba straw, no straw poking out and nothing sticking out of either cup. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/dou-keyi/shots/shot-U1/images/U1-last.png",
+    "replication/output/dou-keyi/assets/master-A.png",
+    "replication/output/dou-keyi/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "leads with U1-last.png (correct sealed no-straw cup + scene + people) as the base edit frame to preserve the no-straw sealed cup; master-A/master-B follow to lock identity",
+      "cup held LOW near lap/table (not raised to chest/mouth) to avoid triggering a drinking/straw gesture; smile fading, about to speak, looks down/at man not camera",
+      "man explicitly head-down at phone held low, not facing camera / not smiling at viewer (fixes prior two renders where both faced camera)",
+      "cup = smooth fully closed rounded dome lid, unopened, NO straw / no straw hole / nothing sticking out (third attempt to defeat gpt-image straw bias; two prior renders added a straw and were rejected)",
+      "identity locked to references; only pose/gaze/expression changed, not identity/hair/clothing",
+      "same cozy living room, sofa + floor lamp + warm neutral-white ceiling light, bookshelf/plants bokeh; bright airy warm neutral-white, both lights on, not moody/dim/underexposed",
+      "iPhone 17 realistic texture negatives; both cups plain white sealed unbranded no logo/text/brand; 16:9 1536x1024; no text/subtitles/watermark/logo/Chinese characters; no static-object or insert-shot trigger phrasing"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b26d1714aa61241a6eb3c9185a64a40d4208422760a6bfdc5e2ad28071588cc5"
+  }
+}

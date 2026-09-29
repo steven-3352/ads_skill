@@ -1,0 +1,37 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a warm, brightly and evenly lit living room. The scene begins exactly as in Picture 1, the woman on the left composed and resolute with her hands folded and the plain unbranded milk-tea cup resting on the coffee table, the man on the right not yet holding his phone. The camera holds a near-static shot with a slight handheld sway. The woman (S1), calm and final at a normal steady pace, looks straight at him and delivers her line: <d>[Chinese]主动给的，才叫偏爱。伸手要来的，我宁可不要。</d> The man on the right (S2) is stunned for a beat, then instinctively picks up his phone from the coffee table and lowers his head to it, anxious and well-meaning as he tries to fix things: <d>[Chinese]你现在告诉我哪家，我马上下单，三分钟。这总行了吧？</d> He settles into the exact pose with the phone in hand as established by Picture 2. Her eyes stay steady and dry, not red and not glowing. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A low television murmur and faint room ambience continue underneath without ever dropping to silence. The phone slides up off the table with a soft sound and light taps, with faint fabric movement.\n\nnon_diegetic_music: A low sustained synth pad at a slow tempo with a single soft piano note, kept very low.",
+  "model": "MiniMax-H3",
+  "duration": 8,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U6/images/U6-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U6/images/U6-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA 8s Picture1->Picture2: A delivers punchline composed, B stunned a beat then picks phone from table head-down to order=last frame (phone-in-hand)",
+      "verbatim Chinese <d>[Chinese]>; S1=woman S2=man; ~5.4 char/s continuous no dead tail",
+      "A eyes steady and DRY, not red not glowing (anti glowing-eyes)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; warm bright even light; unbranded cup+phone; no subtitles/on-screen text",
+      "soundscape continuous TV murmur + phone pickup taps; music low pad+piano"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0c03c3cd56d687588d204718527c78313c05ca4916ebbf3f361af972d5bef287"
+  }
+}

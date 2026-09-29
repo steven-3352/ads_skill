@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The devastated woman shown in <Picture 1> stays exactly as established — same face, same long black hair, same off-white chunky knit sweater — beginning in the tight near-frontal close-up, her lips trembling and her throat swallowing as she tries and fails to make a sound, no words spoken. The camera holds a mostly static close-up with a slight handheld sway and eases back a touch to reveal a little more of her and the room behind her. Behind her shoulder her smartphone screen abruptly lights up and buzzes with a message, a small cold glow entering the frame edge (the screen shows only an indistinct glow with no readable text and no Chinese characters). She flinches at the sound, wipes the back of her hand roughly across her eyes, and — almost reflexively, before she can think — her hand reaches back toward the phone; she closes her hand around it and lifts it, her thumb already poised over the screen to type, tears still wet on her face. Throughout, her eyes stay ordinary and human with no glowing eyes, no unnatural eye glow and no red glow. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: In the near-silence left after the door slam, a very faint low room ambience runs underneath and never drops into full silence, with a barely audible air-conditioning hum; a single sharp phone message alert tone cuts through the stillness, followed by a soft sniff and a shaky breath.\n\nnon_diegetic_music: Almost no music — only a barely-there low sustained tone at a very low volume under the shot, no melody, staying hushed.",
+  "model": "MiniMax-H3",
+  "duration": 8,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U11-1/images/U11-1-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 8s shot from <Picture 1> (U11-1, 段11 镜1-4): swallowing-unable-to-speak close-up -> phone lights up/buzzes behind her -> she wipes tears and reflexively reaches, grips phone, thumb poised to type; camera static with slight sway easing back",
+      "no dialogue in this unit (无对白); <d> omitted; beats carried by action/expression per storyboard 镜1-4",
+      "grief via trembling lips / swallowing / flinch / reflex reach; explicit no glowing eyes / no unnatural eye glow / no red glow (anti glowing-eye rule)",
+      "phone screen = indistinct glow only, no readable text / no Chinese characters (手机屏亮为光效, 屏上不出现可读中文)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = continuous very faint room ambience never silent (roomtone gate) + one sharp phone alert tone + sniff/shaky breath; non_diegetic = barely-there low sustained tone (near-silence after slam)",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c0eb18a19e1789e9e11c070b52782cc5199e288b2c3fc71267da429f2a3dd995"
+  },
+  "reviewed_prompt_sha256": "c0eb18a19e1789e9e11c070b52782cc5199e288b2c3fc71267da429f2a3dd995"
+}

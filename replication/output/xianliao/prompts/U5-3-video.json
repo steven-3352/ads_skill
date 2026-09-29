@@ -1,0 +1,34 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The young woman shown in <Picture 1> (S1) stays exactly as established — same face, long black hair, cream knit sweater — standing indoors and listening to the man just off camera, not speaking. The camera holds a static shot with a slight handheld sway. Across the shot her just-collapsed smile stays gone: her pupils tighten, the rims of her eyes flush faintly red, her throat hard-swallows once and her pressed lips give a single small tremble as she forces down tears that never spill; she does not look at the camera and her expression stays devastated and restrained. Her eyes stay ordinary and matte with tears welled but never running, no reddening glow and no glow. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement, and one quiet held breath from her.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, holding quiet tension underneath.",
+  "model": "MiniMax-H3",
+  "duration": 4,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U5-3/images/U5-3-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA 4s reaction shot from <Picture 1> (A-Che close-up), no dialogue; the smile-collapse -> welled-tears-not-falling beat that single-first-frame I2VA of 阿沉 could not deliver (fills the 段5->段6 emotional hinge)",
+      "no <d> dialogue (silent reaction); S1 = the woman, listening not speaking",
+      "emotion via pupil tighten / flushed rims / hard swallow / trembling lips; explicit tears welled but never run / no reddening glow / no glow (anti glowing-eye)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = continuous room floor (clock tick, fabric, one held breath) never dropping to silence (roomtone gate); non_diegetic low pad holding tension",
+      "no subtitles/captions/on-screen text (anti-subtitle)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b27046db687739e565a66b25a08a703e7bc391d10641919366e546fec5a1ddad"
+  },
+  "reviewed_prompt_sha256": "b27046db687739e565a66b25a08a703e7bc391d10641919366e546fec5a1ddad"
+}

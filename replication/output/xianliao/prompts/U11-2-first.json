@@ -1,0 +1,28 @@
+{
+  "prompt": "Photorealistic candid medium shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single young East Asian Chinese woman alone strictly indoors in a home apartment living-room (absolutely not outdoors, no park, no trees, no lake, no street), standing near the closed apartment entrance door with her head bowed over the smartphone held in both hands, her thumbs caught mid-motion typing a message. This is absolutely NOT a selfie: she does not look at the camera, no arm reaches toward the camera; the shot is taken from a neutral third-person distance across the room, showing her from roughly the knees up with a stretch of pale floor visible in front of her feet. She is an ordinary real East Asian Chinese person (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face). She must be the exact same person as the reference image, with the same face, the same long loose natural black hair and the same plain off-white to beige chunky knit sweater together with light-blue denim jeans, all unbranded with no logo and no text; keep her identity, hairstyle and clothing unchanged and only change her pose, framing and expression. Her face is tear-streaked and hollow, absolutely not smiling, brows drawn, eyes lowered to the phone, cheeks still wet — no glowing eyes, no unnatural eye glow, no red glow. On the pale floor a short step ahead of her feet lies a small metal keyring holding a few ordinary house keys and a small plain natural-wood tag, dropped and unnoticed and slightly out of focus; the keyring, keys and wooden tag bear no logo, no readable text and no Chinese characters. The smartphone screen shows only an indistinct glow with no readable text and no Chinese characters. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating her face, hair and clothing, with at most a very slight subdued end-of-scene mood but still bright overall, not moody, not dim, not lamp-lit, not underexposed, not dark and with no heavy vignette. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward camera, no smiling, no cheerful or happy expression, nobody looking at the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "FL2VA FIRST frame (U11-2, 段11 镜5): A-Che standing head bowed over phone typing reflexively, tear-streaked; keyring+wooden tag lying unnoticed on floor ahead of her feet (staged for the type -> step -> kick-keys path)",
+      "identity locked to master-A-r2 (A-Che): same face / long black hair / off-white chunky knit + light-blue jeans; only pose/framing/expression changed",
+      "grief via tear-streaked hollow face / drawn brows; explicit no glowing eyes / no unnatural eye glow / no red glow (anti glowing-eye rule)",
+      "props continuity for FL2VA: keyring + keys + plain wooden tag already on floor (dropped by the man) for the last-frame kick; phone screen indistinct glow only, no readable text/Chinese",
+      "bright airy daytime living room, neutral-white not orange/amber, evenly lit, only very slight subdued end mood, no heavy vignette, not moody/dim/underexposed/dark",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "anti-selfie; 16:9 horizontal 1536x1024; no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "002e8e7e0e28fe17ff43bf4808066a36f8f6934cc78bfaab353f4129122c4d7e"
+  },
+  "reviewed_prompt_sha256": "002e8e7e0e28fe17ff43bf4808066a36f8f6934cc78bfaab353f4129122c4d7e"
+}

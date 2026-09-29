@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The restrained man shown in <Picture 1> (S1) stays exactly as established — same face, short black hair, plain dark-grey zip-up knit sweater, tight near-frontal close-up — as he looks straight at the woman just off camera and delivers the climactic litany of how she treats her mother, his phone calls, and everyone else ahead of him, holding a made-up-mind calm while pressing deep tiredness, hurt and quiet devastation down underneath. The camera holds a static shot with a slight handheld sway. A calm, low, slightly hoarse male voice at a normal-to-brisk conversational pace that grows steadily heavier and more relentless line by line, never slowing and never trailing into a dead tail, he (S1) says: <d>[Chinese]你妈连发三条，你回一个“嗯”。我打十个电话，你挂十个。我心疼你，你嫌压力；我惦记你，你说麻烦。别人随口一句“辛苦啦”，你能供一晚上、当成命。我等你五年，等来的，是我永远排最后一个。</d> Through the line his jaw sets harder and tighter, his lips press tight between phrases, his gaze stays locked and unwavering and grows heavier, and his throat swallows once; his eyes stay ordinary and dry with no tears, no reddening and no glow. He does not look at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; a single quiet, tense breath is heard between his phrases.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, gradually rising in volume and tension underneath the line, swelling to its peak by the final phrase.",
+  "model": "MiniMax-H3",
+  "duration": 12,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U8-1/images/U8-1-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 12s shot from <Picture 1> (U8-1, 段8 镜1-5): A-Chen close-up delivers climactic litany (mom/phone calls/everyone vs him) straight to the off-camera woman, camera static with slight handheld sway",
+      "verbatim <d>[Chinese]> = production-units U8-1 line (段8 阿沉 镜头1+3+4+5 merged into one continuous near-scene close-up), copied word-for-word incl. punctuation, no edits; ~90 chars / 12s ~= 7.5 zi/s (meets >=5.5 zi/s speed lock)",
+      "S1 = the man, consistent; delivery normal-to-brisk pace growing heavier/more relentless line by line, no slow tail / no dead air (ban-slow-dialogue rule)",
+      "emotion performed via jaw set harder/tighter / lips pressing / locked gaze growing heavier / throat swallow; explicit no tears / no reddening / no glow (anti glowing-eye rule)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (not looking at camera, no arm toward camera)",
+      "soundscape = continuous room white-noise floor (clock tick, fabric, tense breath) never dropping to silence; non_diegetic = electronic ambience pad rising, swelling to peak by final phrase",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2421db353d74d3d999d451b190d21023d9b9219db9c3c46a7ae316427bc2973f"
+  },
+  "reviewed_prompt_sha256": "2421db353d74d3d999d451b190d21023d9b9219db9c3c46a7ae316427bc2973f"
+}

@@ -1,0 +1,40 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black, beginning exactly in the framing, position and clothing established by Picture 1 — the woman standing head bowed over her phone near the closed entrance door, thumbs typing, tears on her face, a keyring with a small wooden tag lying unnoticed on the floor ahead of her. The camera holds a mostly static medium framing with a slight handheld sway and follows her a step as she moves. Her thumbs tap rapidly across the screen as she fires off a reflexive work-group reply, she sniffs and wipes her nose with the back of her hand, and out of pure habit she starts to drop her gaze to scroll to the next message; the phone screen shows only an indistinct glow with no readable text and no Chinese characters. Then she takes one step forward — and the toe of her shoe nudges the keyring on the floor, the keys skidding a few centimetres with a light metallic jingle. She stops short, her thumb freezing over the screen, and her gaze drops from the phone down to the keys and the small wooden tag at her feet, settling into the exact stepped-forward, looking-down pose, framing and composition established by Picture 2 at the 8.00-second mark. She does not look at the camera and no arm reaches toward the camera; her eyes stay ordinary and human with no glowing eyes, no unnatural eye glow and no red glow. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A very faint low room ambience runs underneath throughout and never drops into full silence; a rapid run of soft smartphone keyboard taps, a small soft sniff, then a light metallic jingle of the keyring skidding across the floor as her foot catches it near the end.\n\nnon_diegetic_music: Almost no music — only a barely-there low sustained tone at a very low volume, no melody, staying hushed with no fade to black.",
+  "model": "MiniMax-H3",
+  "duration": 8,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U11-2/images/U11-2-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U11-2/images/U11-2-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA single 8s shot Picture1->Picture2 (U11-2, 段11 镜5-7): reflexive typing/sniff/habitual-scroll -> one step forward -> toe kicks keyring -> stops short and looks down at keys+tag = last frame (state-change kick via first/last frame per fl2va rule)",
+      "no dialogue in this unit (无对白); <d> omitted; beats carried by action + keyboard/jingle sound",
+      "grief via tear-streaked face carried through; explicit no glowing eyes / no unnatural eye glow / no red glow (anti glowing-eye rule)",
+      "props/clothing continuity: same keyring+keys+wooden tag and same garments across first->last; phone screen indistinct glow only, no readable text/Chinese",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = continuous very faint room ambience never silent (roomtone gate) + rapid keyboard taps + sniff + light metallic keyring jingle at end (金属钥匙串落地轻响); non_diegetic = barely-there low sustained tone",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bc8cbe7d8fa3febeb94eb6c70722a47da3621ce4953e89e4fa9eacb942a88c59"
+  },
+  "reviewed_prompt_sha256": "bc8cbe7d8fa3febeb94eb6c70722a47da3621ce4953e89e4fa9eacb942a88c59"
+}

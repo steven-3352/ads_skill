@@ -1,0 +1,37 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a warm, brightly and evenly lit living room, with no fade to black. The scene begins exactly as in Picture 1, the woman on the left looking at the man while the full-sugar milk-tea cup sits on the coffee table and the man on the right still holds up his phone. The camera holds a static shot. The light in the woman's eyes quietly goes out, yet she stays very calm as she (S1), at a normal steady pace, delivers her verdict: <d>[Chinese]你看，你到现在还觉得，这是一杯奶茶的事。</d> After a brief pause, she reaches out, takes the milk-tea cup back from the coffee table into her hand, inserts a straw into it, lowers her head and takes one sip, then puts on a thin fake polite smile that does not reach her eyes and says softly: <d>[Chinese]……算了，全糖我喝也行。</d> Meanwhile the man on the right sets his phone down, folds his hands, and looks at her with a satisfied, oblivious little smile, entirely failing to notice that her smile is fake, arriving in the exact poses, the cup-in-her-hand-with-straw state, and the composition established by Picture 2. The shot holds and does not cut to black. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A low television murmur and faint room ambience continue underneath and do not drop into dead silence, especially under the ending. The cup lifts from the table, a straw pushes through the lid with a soft crackle, and a quiet single sip is heard.\n\nnon_diegetic_music: A single sustained low piano note at a slow tempo that continues under the ending without fading into silence.",
+  "model": "MiniMax-H3",
+  "duration": 8,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U7/images/U7-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U7/images/U7-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA 8s Picture1->Picture2 PLAN-B ending: A verdict, pause, takes cup back from table INSERTS STRAW sips fake-smile; B sets phone down folds hands content-oblivious smile=last frame; hold no cut to black",
+      "verbatim Chinese <d>[Chinese]>; S1=woman S2=man; normal pace, brief pause allowed, ending not slow-tail",
+      "straw appears ONLY here (payoff); cup-in-hand-with-straw = last frame state",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; warm bright even light, NO fade to black; unbranded cup+phone; no subtitles/on-screen text",
+      "soundscape continuous TV murmur under ending (no dead silence) + straw crackle + sip; music single sustained low piano not fading out"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a238dc4e8c064cdc0bf6f7f80aa9a7ba88f2909efef23ec4acfb2dc6be028b20"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The tense confrontation shown in <Picture 1> stays exactly as established — same faces, same hair, the man (S2) in his plain dark-grey zip-up knit sweater on the left near the entrance door with one hand on the upright suitcase handle, the woman (S1) on the right blocking the path with her body tense and arms spread slightly, a medium two-shot with a clear gap between them. The camera holds a static shot with a slight handheld sway. The woman (S1), in a strained, defensive, slightly high and sharp female voice at a normal-to-brisk pace that never slows and never trails into a dead tail, keeps her eyes ordinary and dry with no tears fallen yet, no reddening and no glow as she says: <d>[Chinese]我是心好！我帮别人，有错吗？</d> Then, after one tense micro-beat, the man (S2) — a calm, flat, low, slightly hoarse male voice at a normal-to-brisk pace that never slows and never trails into a dead tail — replies, his jaw set, his gaze steady and slightly lowered toward her, his eyes ordinary and dry with no tears, no reddening and no glow, and he says: <d>[Chinese]你没错。你只是把谁都排我前面，把我排最后。</d> On the last words her strained expression tightens and her lips tremble, still with no tears fallen, no reddening and no glow. Neither of them looks at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; a single quiet, tense breath is heard in the micro-beat between the lines.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, staying quiet and gradually rising slightly in tension underneath the exchange.",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U6-1/images/U6-1-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 9s shot from <Picture 1> (U6-1, 段6 镜1-2-3 双人中景 阿澈挡门): woman blocks path defending herself, man replies with flat calm verdict; camera static with slight handheld sway",
+      "verbatim <d>[Chinese]> lines = storyboard 片段六 镜头1 阿澈 + 镜头2 阿沉, copied word-for-word incl. ！？。punctuation, no edits; 阿澈 12字 + 阿沉 19字 = 31字 ÷ 9s ≈ 3.4 chars/s well under ≥5.5 target → FLAG for atempo raise in assembly (骂醒赛道语速锁; beat-driven short exchange justifies lower WPS but still recommend raise)",
+      "speakers: S1 = woman (阿澈, speaks first), S2 = man (阿沉); woman strained/defensive/sharp, man calm/flat/low; normal-to-brisk, never slowing, never trailing into a dead tail (ban-slow-dialogue rule)",
+      "emotion via strained tense blocking body / jaw set / gaze lowered / lips tremble on last words; explicit no tears fallen / no reddening / no glow for both (anti glowing-eye rule; 阿澈 starting to crumble but no tears fallen yet)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (nobody looks at camera, no arm toward camera, clear gap between them)",
+      "soundscape = continuous room floor (clock tick, fabric, tense breath in micro-beat) never silent; non_diegetic electronic pad rising slightly",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)",
+      "ASSEMBLY FLAG (not a blocker): WPS = 3.4 字/秒 well under ≥5.5 target; beat-driven short exchange justifies lower density, but recommend atempo ~1.6x raise in final_cut to reach ~5.5 字/秒 (骂醒赛道5.5~6+字/秒目标)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "165ea31ddfa777187c0a69a9d56ea0af5e0385b3f3102b0ec992807df195b711"
+  },
+  "reviewed_prompt_sha256": "165ea31ddfa777187c0a69a9d56ea0af5e0385b3f3102b0ec992807df195b711"
+}

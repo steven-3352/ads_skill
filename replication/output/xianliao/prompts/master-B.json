@@ -1,0 +1,26 @@
+{
+  "prompt": "Photorealistic candid still shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single East Asian Chinese man as the only subject, 27 to 30 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate boy-band idol face). He has short natural black hair, neat and clean-cut, with a clean, tidy everyday grooming. He wears a plain solid dark-grey or navy casual jacket or knit sweater with no logo, no brand and no text, as if he has just come in from outside. Medium to close portrait, near-frontal at a slight angle, looking straight into the camera so his face, hairstyle and clothing all read clearly; his expression is calm, quiet and settled with the firmness of someone who has made up his mind, yet the pain and weariness pressed down under his eyes still show, an emotionally restrained man carrying hurt inside rather than a cold villain, not fierce, not smug and not slick. He is in a cozy home living room, with a sofa and soft domestic furnishings in gentle background bokeh. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly and clearly illuminating his face, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn his face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "single East Asian/Chinese man 27-30, ordinary real Chinese face, not Western/Caucasian, not influencer/net-red, not delicate boy-band idol face — identity root for shot keyframes (character A-Chen)",
+      "short natural black hair neat clean-cut, plain solid dark-grey/navy unbranded casual jacket or knit sweater, no logo/brand/text, just came in from outside",
+      "temperament locked as restrained/calm-with-hidden-hurt: quiet settled expression with the firmness of a made-up mind, pain and weariness pressed under the eyes; not a cold villain, not fierce, not smug, not slick; near-frontal medium-to-close, looking at camera so face+hair+clothing read clearly",
+      "cozy home living room, ceiling light + floor lamp, bright airy warm neutral-white, evenly lit face, not moody/not a single dim lamp/not underexposed/not dark",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily facial glare, light does not turn face yellow; explicit negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "16:9 horizontal 1536x1024 composition",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "694517aeea80eee7866dbc6c61dfe34aa10931374b772891d628048a689ab650"
+  },
+  "reviewed_prompt_sha256": "694517aeea80eee7866dbc6c61dfe34aa10931374b772891d628048a689ab650"
+}

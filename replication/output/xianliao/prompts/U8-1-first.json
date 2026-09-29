@@ -1,0 +1,28 @@
+{
+  "prompt": "Photorealistic candid close-up on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single East Asian Chinese man as the only subject in sharp focus, 27 to 30 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate boy-band idol face). He must be the exact same person as the reference image, with the same face, the same short natural black hair, neat and clean-cut, and the same plain solid dark-grey zip-up knit sweater with no logo, no brand and no text; keep his identity, hairstyle and clothing unchanged and only change his framing and expression. Medium close-up of his face, shoulders and upper chest, turned toward the woman standing just off camera, caught at the very start of quietly beginning to deliver the climactic litany of how she ranks everyone ahead of him, with the living-room fabric sofa and interior wall clearly visible behind him and the closed apartment entrance door in the background depth. His expression is restrained and outwardly calm while pressing deep tiredness, hurt and quiet devastation down underneath: jaw quietly set and tight, lips just parting to begin speaking, a steady heavy unwavering gaze fixed on her, his throat swallowing faintly with the Adam's apple moving; not fierce, not smug, not slick, no tears, no reddened eyes and no glowing eyes. The scene is strictly indoors, inside a home apartment living-room, absolutely not outdoors: directly behind him are a fabric sofa with cushions, an interior wall and soft domestic furnishings in gentle background bokeh, with an apartment entrance door visible far in the background depth; there is no park, no trees, no lake, no river, no grass, no street and no outdoor scenery of any kind. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating his face, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn his face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. This is not a selfie, he does not look at the camera and no arm reaches toward the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "I2VA FIRST frame (U8-1, 段8 镜1-5): tight near-frontal close-up of A-Chen (man) beginning to deliver the climactic litany (mom/phone calls/everyone vs him), start-of-speaking pose facing off-camera woman; identity/hair/clothing locked to master-B (dark-grey zip-up knit), only framing+expression changed",
+      "restrained calm pressing tiredness/hurt/quiet devastation: jaw set tight, lips parting, steady heavy gaze on her, throat/Adam's-apple swallow; NOT fierce/smug/slick; explicit no tears / no reddened eyes / no glowing eyes (anti glowing-eye rule)",
+      "anti-selfie: not a selfie, does not look at camera, no arm toward camera",
+      "bright airy daytime living room, ceiling + window daylight, neutral-white not orange/amber, evenly lit, not moody/dim/underexposed/dark; closed entrance door in background depth",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "East Asian Chinese man ordinary real face, not Western/net-red/idol; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8ac6faac78e9c88732c59647976c7c8424d6631a69aba016ad98debc92300ec8"
+  },
+  "reviewed_prompt_sha256": "8ac6faac78e9c88732c59647976c7c8424d6631a69aba016ad98debc92300ec8"
+}

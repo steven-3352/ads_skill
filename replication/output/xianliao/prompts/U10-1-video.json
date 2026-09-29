@@ -1,0 +1,36 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The restrained man shown in <Picture 1> (S1) stays exactly as established — same face, short black hair, plain dark-grey zip-up knit top, tight near-frontal close-up — as he keeps his gaze locked on the woman just off camera. The camera holds a static shot with a slight handheld sway. The man (S1), in a calm, low, slightly hoarse and weary male voice at a normal-to-brisk pace that grows heavier line by line, never slowing and never trailing into a dead tail, keeps his jaw set and his gaze holding, his eyes ordinary and dry with no tears, no reddening and no glow as he says: <d>[Chinese]你说你等了我五年。可我等你五年，等来的，全是\"等我回完这条\"。</d> Then, after one tense micro-beat, an off-screen woman's voice — breaking, collapsing, hurried — is heard from beyond the frame; the woman is not visible and stays off camera, and the man's own lips stay closed and still during her words while his steady gaze holds on her. The off-screen woman (S2), in a collapsing, tearful, unsteady female voice that does not trail into dead air, says: <d>[Chinese]那你要我怎样……</d> As her voice breaks off, the man's expression stays grim and unmoved, his eyes still dry with no tears, no reddening and no glow. He does not look at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; a single quiet, tense breath and the woman's unsteady crying breath are heard in the micro-beat before her off-screen line.\n\nnon_diegetic_music: A low sustained string pad at a slow tempo with no melody stays quiet under the man's line, then sinks to its lowest register under the woman's short broken reply without fading to silence.",
+  "model": "MiniMax-H3",
+  "duration": 7,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U10-1/images/U10-1-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 7s shot from <Picture 1> (U10-1, 段10 镜1-2): 阿沉 close-up delivers weary final line, then 阿澈's collapsing reply lands off-screen; camera static with slight handheld sway",
+      "verbatim <d>[Chinese]> lines = storyboard 片段十 镜头1 (阿沉) + 镜头2 (阿澈, （崩溃）stage-direction excluded from spoken text), copied word-for-word incl. curly quotes \"等我回完这条\" and …… punctuation, no edits",
+      "off-screen speaker handling: 阿澈 (S2) speaks from beyond the frame, not visible; man's lips explicitly stay closed/still during her line to prevent H3 burning her words onto his mouth (h3 lip-sync safeguard, S2 off-camera-voice)",
+      "speakers: S1 = man on-screen (阿沉), S2 = off-screen woman (阿澈); man calm/low/weary growing heavier, woman collapsing/tearful/hurried; normal-to-brisk with one tense micro-beat, no dead tail (ban-slow-dialogue rule)",
+      "emotion via jaw set / locked gaze / grim unmoved on man; explicit no tears / no reddening / no glow for man (anti glowing-eye rule)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (not looking at camera, no arm toward camera)",
+      "soundscape = continuous room floor (clock tick, fabric, tense breath, woman's crying breath) never silent; non_diegetic string pad quiet under man's line, sinks to lowest under woman's reply, never fading to silence",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "d19c8de9ecfa149c84488812024f130c266c3fb3ea7adddc4239c46233d87312"
+  },
+  "reviewed_prompt_sha256": "d19c8de9ecfa149c84488812024f130c266c3fb3ea7adddc4239c46233d87312"
+}

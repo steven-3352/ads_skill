@@ -1,0 +1,24 @@
+{
+  "prompt": "Photorealistic candid still shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single East Asian Chinese man as the only subject, 25 to 28 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or model beauty face). He has clean tidy short black hair and a clean, sincere, approachable ordinary-guy look. He wears a plain solid light-grey crew-neck home T-shirt with no logo, no brand and no text. Medium to close portrait, near-frontal at a slight angle, looking straight into the camera so his face, hairstyle and clothing all read clearly; his expression is warm, gentle and direct, honest and straightforward, not oily, not smarmy and not overly posed. He is in a cozy home living room, with a sofa and soft domestic furnishings in gentle background bokeh. Lighting is bright, airy and warm from a ceiling light plus a floor lamp, evenly and clearly illuminating his face, hair and clothing, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn his face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "single East Asian/Chinese man 25-28, clean tidy short black hair, plain solid light-grey crew-neck unbranded home T-shirt, no logo/brand/text — identity root for shot keyframes",
+      "temperament locked as warm/gentle/direct honest ordinary guy, not oily/smarmy; near-frontal medium-to-close, looking at camera so face+hair+clothing read clearly",
+      "cozy home living room, ceiling light + floor lamp, bright airy warm neutral-white, not moody/not a single dim lamp/not underexposed",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily facial glare, light does not turn face yellow; explicit negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR",
+      "16:9 horizontal 1536x1024 composition",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "f5dd362fbb3904de317221ca0e83aaa56a718f9ff7418a613c82d927c26ef20d"
+  }
+}

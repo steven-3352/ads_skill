@@ -1,0 +1,36 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The tense confrontation shown in <Picture 1> stays exactly as established — same faces, same hair, the man (S2) in his plain dark-grey zip-up knit sweater on the left near the entrance door with one hand on the upright suitcase handle, the woman (S1) on the right a step apart with her body tense, a medium two-shot side angle with a clear gap and the suitcase physically dividing them. The camera holds a static shot with a very slight slow push in and a slight handheld sway. The woman (S1), in a strained, defensive, cold-laugh female voice at a normal-to-brisk pace that never slows and never trails into a dead tail, keeps her eyes ordinary and dry with no tears fallen yet, no reddening and no glow as she says: <d>[Chinese]那你要我怎样？抛下所有人，眼里只有你？那我还是我吗？</d> Then, after one tense micro-beat, the man (S2) — a calm, flat, low, slightly hoarse male voice at a normal-to-brisk pace that never slows and never trails into a dead tail — replies, his jaw set, his gaze steady and fixed on her, his eyes ordinary and dry with no tears, no reddening and no glow, and he says: <d>[Chinese]我没要你眼里只有我。我要你眼里，有你自己。</d> He pauses for one slow breath, his throat swallows, his gaze lowers a fraction, and his voice drops even quieter and heavier as he lands the final verdict: <d>[Chinese]你不是眼里没我——你是打心里觉得，自己不配被谁排第一。</d> On the last words her face freezes, her lips tremble, her eyes brim but with no tears fallen, no reddening and no glow. Neither of them looks at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; a single quiet, tense breath is heard in the micro-beat and in the slow-breath pause between his lines.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, staying quiet then dropping to its lowest under his final heavy verdict.",
+  "model": "MiniMax-H3",
+  "duration": 9,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U6-2/images/U6-2-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 9s shot from <Picture 1> (U6-2, 段6 镜4-5-6-7 双人侧 阿澈反问→阿沉存在拷问): woman cold-laugh defensive question, man replies with steady verdict then drops quieter heavier for the final 存在拷问 line; camera static with very slight slow push in",
+      "verbatim <d>[Chinese]> lines = storyboard 片段六 镜头3 阿澈 (冷笑) + 镜头4 阿沉 + 镜头5 阿沉, copied word-for-word incl. ？。——punctuation, no edits; 阿澈 23字 + 阿沉 15字 + 阿沉 23字 = 61字 ÷ 9s ≈ 6.8 chars/s well above ≥5.5 target (骂醒赛道语速锁; existential-question climax justifies density)",
+      "speakers: S1 = woman (阿澈, speaks first), S2 = man (阿沉, two beats); woman strained/cold-laugh, man calm/flat/low dropping quieter heavier on final verdict; normal-to-brisk, never slowing, never trailing into a dead tail (ban-slow-dialogue rule)",
+      "emotion via cold laugh / jaw set / gaze fixed then lowered / throat swallow / slow breath pause / face freezes lips tremble eyes brim (no tears fallen); explicit no tears fallen / no reddening / no glow for both (anti glowing-eye rule; 阿澈 brimming but not fallen yet)",
+      "NOTE: storyboard 镜6 阿澈近景 '嘴唇发抖，眼泪在眼眶打转，却还强撑' and 镜7 双人侧 '两人隔着行李箱对峙，一个崩溃，一个平静，光影在中间劈开' folded into this unit as woman's final reaction (face freezes/lips tremble/eyes brim) while staying in the two-shot",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (nobody looks at camera, no arm toward camera, suitcase dividing gap)",
+      "soundscape = continuous room floor (clock tick, fabric, tense breath in micro-beat and slow-breath pause) never silent; non_diegetic electronic pad dropping to its lowest under final verdict (氛围电子压到最低 spirit)",
+      "no subtitles/captions/on-screen text (anti-subtitle; H3 sometimes burns captions)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4824e42b5ce022b9ac054ef37133ca308a715bc9a59fe764d5570da6b8beac08"
+  },
+  "reviewed_prompt_sha256": "4824e42b5ce022b9ac054ef37133ca308a715bc9a59fe764d5570da6b8beac08"
+}

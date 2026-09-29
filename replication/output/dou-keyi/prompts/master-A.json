@@ -1,0 +1,24 @@
+{
+  "prompt": "Photorealistic candid still shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single East Asian Chinese woman as the only subject, 23 to 26 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face). She has long natural black hair falling loosely over her shoulders, a fresh bare-skin look with good clear skin and only the faintest natural makeup. She wears a plain solid beige to light-apricot knit home loungewear top with no logo, no brand and no text. Medium to close portrait, near-frontal at a slight angle, looking straight into the camera so her face, hairstyle and clothing all read clearly; the corner of her mouth carries a small hesitant smile while her eyes stay quietly watchful and observing, giving a conflicted, people-pleasing, eager-to-please temperament rather than a cold, glamorous or sexy look. She is in a cozy home living room, with a sofa and soft domestic furnishings in gentle background bokeh. Lighting is bright, airy and warm from a ceiling light plus a floor lamp, evenly and clearly illuminating her face, hair and clothing, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "single East Asian/Chinese woman 23-26, long loose natural black hair, plain solid beige/light-apricot unbranded knit loungewear top, no logo/brand/text — identity root for shot keyframes",
+      "temperament locked as conflicted/people-pleasing: faint hesitant smile with quietly watchful eyes, not cold/glamorous/sexy; near-frontal medium-to-close, looking at camera so face+hair+clothing read clearly",
+      "cozy home living room, ceiling light + floor lamp, bright airy warm neutral-white, not moody/not a single dim lamp/not underexposed",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily facial glare, light does not turn face yellow; explicit negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR",
+      "16:9 horizontal 1536x1024 composition",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0a978e7693829a795bd5fb4067b27493f153d111d162074a7b3937844250887a"
+  }
+}

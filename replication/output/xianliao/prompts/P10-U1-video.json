@@ -1,0 +1,39 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 14.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black, beginning exactly in the framing, positions, clothing, suitcase and closed-in door established by Picture 1, with the man half-turned toward the woman near the entrance door and the woman frozen a step away. The camera holds a mostly static medium-wide shot with a slight handheld sway. The restrained man (S1), a calm, low, slightly hoarse male voice pitched very softly yet landing with weight, at a normal steady pace that never slows and never trails into a dead tail, keeps his eyes ordinary and dry with no tears, no reddening and no glow as he says: <d>[Chinese]不是我不要你，也不是我不等你——是你根本不需要我。</d> After one brief controlled beat he lowers his gaze slightly and adds, still quiet and even: <d>[Chinese]我给你五年的爱，比不过群里随便一个人，一句“辛苦了”。</d> Then he closes his mouth, grips the suitcase handle, turns his back to her, walks the few steps to the entrance door, pulls it open and swings it shut hard behind him as he exits the frame; the woman stays where she is as the light drains from her face into a hollow, emptied-out stillness. As the door bangs shut and the man is gone, the scene settles into the exact closed-door, woman-alone-and-frozen pose, framing and composition established by Picture 2 at the 14.00-second mark. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience runs underneath during the two lines, then the suitcase wheels roll and the man's footsteps cross the floor; the door swings and slams shut with one single loud bang and a sharp lock-bolt click, after which the room falls into near stillness with only the faintest residual air still present.\n\nnon_diegetic_music: A low sustained electronic drone at a slow tempo continues quietly under the two lines, then cuts out abruptly at the instant the door slams, with no music afterward.",
+  "model": "MiniMax-H3",
+  "duration": 14,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-P10-U1/images/P10-U1-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/xianliao/shots/shot-P10-U1/images/P10-U1-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA single 14s shot Picture1->Picture2: man delivers the two closing punch lines, then turns, grips suitcase, walks to door, swings it shut hard and exits; woman drains to hollow stillness = last frame (state-change turn+slam via first/last frame per fl2va rule)",
+      "verbatim <d>[Chinese]> = storyboard 片段十 镜头3 + 镜头4 lines, copied word-for-word incl. —— and curly-quote “辛苦了” punctuation, no edits",
+      "S1 = the man; delivery quiet/restrained but weighty, normal steady pace, one brief beat between the two lines, no slow tail (ban-slow-dialogue); action tail is the door slam, not dead air",
+      "emotion via lowered gaze / closed lips / restraint; explicit no tears / no reddening / no glow for man AND draining woman (anti glowing-eye rule)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; unbranded suitcase",
+      "soundscape = room ambience under lines + suitcase wheels + footsteps + one loud door bang + lock-bolt click, then faintest residual air (no >2s dead silence per room-tone gate); non_diegetic drone cuts out at slam (音乐骤停)",
+      "no subtitles/captions/on-screen text (anti-subtitle; storyboard 字幕 intent dropped for zero-subtitle final)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "862b931988109237400ddd8b326c8fd4acf1cf72bb6dc03d593d71f78e10433e"
+  }
+}

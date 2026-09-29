@@ -1,0 +1,29 @@
+{
+  "prompt": "Photorealistic candid medium-close two shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a young East Asian Chinese woman on the left and a young East Asian Chinese man on the right sharing the frame, seated on a sofa with a low coffee table between them. The man has instinctively picked up his phone and lowered his head to look at the screen, ready to place an order, his manner urgent but well-meaning and earnest to fix things; his look is anxious and helpful, absolutely not an impatient, indifferent or dismissive smile. The woman on the left looks at him resolutely and steadily. One plain unbranded sealed milk-tea cup still sits on the coffee table. Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or net-red faces). The woman must be the exact same person as the first reference image, with the same face, the same long loose natural black hair and the same plain solid beige to light-apricot unbranded knit home loungewear top with no logo and no text; the man must be the exact same person as the second reference image, with the same face, the same clean tidy short black hair and the same plain solid light-grey crew-neck home T-shirt with no logo and no text. Only change their pose, framing, props and expression; do not change their identity, hairstyle or clothing. They are in the same cozy home living room as the reference images, with a sofa, a floor lamp and a warm neutral-white ceiling light, and a bookshelf and green plants in soft background bokeh. Lighting is bright, airy and warm with both the ceiling light and the floor lamp on, evenly and clearly illuminating the whole scene, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn their faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. The milk-tea cup is a plain white light sealed milk-tea cup with no logo, no text and no brand. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image. Keep the exact same plain light plastic disposable milk-tea cup as shown in the scene reference image, a plastic milk-tea cup with a smooth closed dome or flat sealed lid; it must NOT be a ceramic mug, not a coffee mug and not a glass, and the same identical milk-tea cup appears consistently throughout.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/dou-keyi/shots/shot-U3/images/U3-last.png",
+    "replication/output/dou-keyi/assets/master-A.png",
+    "replication/output/dou-keyi/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "medium-close two shot; man has picked up phone, head down ready to order, urgent but well-meaning/earnest, explicitly NOT impatient/indifferent/dismissive smile (red line); woman looks at him resolutely; one cup still on coffee table",
+      "identity locked to references: woman = first reference, man = second reference; only pose/props/expression changed, not identity/hair/clothing",
+      "same cozy living room, sofa + floor lamp + warm neutral-white ceiling light, bookshelf/plants bokeh; bright airy warm neutral-white, both lights on, not moody/dim/underexposed",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR",
+      "milk-tea cup plain white sealed unbranded, no logo/text/brand; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no static-object or insert-shot trigger phrasing used",
+      "lead reference set to U3-last.png (carries the correct plastic milk-tea cup + scene + identity) to lock cup type; explicit anti-ceramic-mug/coffee-cup clause added after prior render substituted a ceramic mug"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "999f8ef627577235e75e7e2c5a714992197d90cd74f2ebb9eac8e315b1e51942"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "prompt": "Photorealistic candid medium two-shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a tense breakup confrontation between a young East Asian Chinese man and a young East Asian Chinese woman standing clearly apart inside a home apartment living-room, framed from a side angle. This is absolutely NOT a selfie and NOT a couple photo: neither person looks at the camera, no arm reaches toward the camera, they do not touch, their faces and cheeks are far apart, and there is a clear gap of empty floor between them; the shot is taken from a neutral third-person distance across the room. The scene is strictly indoors (absolutely not outdoors, no park, no trees, no lake, no street), with a fabric sofa and interior wall behind them and an apartment entrance door clearly visible in the background depth. The man is on the LEFT, standing nearer the entrance door in three-quarter side view turned toward the woman, one hand resting on the upright handle of a plain wheeled suitcase beside him, caught mid-sentence as he delivers a hard, cutting line straight at her, his face grim and restrained, jaw set, brows low, lips parted speaking, gaze steady and locked on her, absolutely not smiling; not fierce, not smug, no tears, no reddened eyes and no glowing eyes. The woman is on the RIGHT, a full step apart facing him in three-quarter side view, her body tense and arms hanging stiff at her sides, her face strained and starting to crumble, lips trembling, brows knit, eyes wide and brimming but with no tears fallen yet, no reddened eyes and no glowing eyes, absolutely not smiling and not cheerful. The plain wheeled suitcase stands upright between them, physically dividing the gap. Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or net-red beauty faces). The man must be the exact same person as the first reference image, with the same face, the same short natural black hair, neat and clean-cut, and the same plain solid dark-grey zip-up knit sweater with no logo and no text; the woman must be the exact same person as the second reference image, with the same face, the same long loose natural black hair and the same plain solid off-white to beige chunky knit sweater and light-blue jeans with no logo and no text. Keep both identities, hairstyles and clothing unchanged; only change their pose, framing and expression. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating both faces, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn their faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward camera, no smiling, no cheerful or happy expression, no couple hugging, no faces touching, no cheeks touching, no posing for a photo, nobody looking at the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. The suitcase is a plain unbranded wheeled suitcase with no logo and no text. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-B.png",
+    "replication/output/xianliao/assets/master-A-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "medium two-shot side angle, man (left) near door mid-hard-line, woman (right) a step apart starting to crumble; upright suitcase physically dividing the gap between them; entrance door in background depth",
+      "identity locked: man = first reference (master-B / A-Chen), woman = second reference (master-A-r2 / A-Che); only pose/framing/expression changed, not identity/hair/clothing",
+      "man restrained grim delivering hard line, woman strained trembling brimming (no tears fallen); explicit no tears fallen / no reddened eyes / no glowing eyes for BOTH (anti glowing-eye rule)",
+      "bright airy daytime living room, ceiling + window daylight, neutral-white not orange/amber, evenly lit, not moody/dim/underexposed/dark",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "anti-selfie: nobody looks at camera, no arm toward camera, clear gap divided by suitcase, neutral third-person distance; suitcase plain unbranded no logo/text; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "ea167e18cdcd570c2a6540d8d2e1bcc70a102273e3a4a71084f957da45d79a9e"
+  },
+  "reviewed_prompt_sha256": "ea167e18cdcd570c2a6540d8d2e1bcc70a102273e3a4a71084f957da45d79a9e"
+}

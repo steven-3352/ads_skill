@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid two-shot medium shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a young East Asian Chinese woman on the left and a young East Asian Chinese man on the right sharing the frame, seated on a sofa with a low coffee table centered between them. The man has just settled onto the sofa and is placing two identical plain unbranded sealed full-sugar milk-tea cups down onto the coffee table; the woman on the left leans in and reaches out to take one of the cups, a polite courteous smile at the corner of her mouth. Both milk-tea cups rest on the coffee table, and the man's other hand rests near his phone beside him, not yet lowered to look at it. Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or net-red faces). The woman must be the exact same person as the first reference image, with the same face, the same long loose natural black hair and the same plain solid beige to light-apricot unbranded knit home loungewear top with no logo and no text; the man must be the exact same person as the second reference image, with the same face, the same clean tidy short black hair and the same plain solid light-grey crew-neck home T-shirt with no logo and no text. Only change their pose, framing, props and expression; do not change their identity, hairstyle or clothing. They are in the same cozy home living room as the reference images, with a sofa, a floor lamp and a warm neutral-white ceiling light, and a bookshelf and green plants in soft background bokeh. Lighting is bright, airy and warm with both the ceiling light and the floor lamp on, evenly and clearly illuminating the whole scene, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn their faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. The two milk-tea cups are plain white light sealed milk-tea cups with no logo, no text and no brand, both cups identical. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/dou-keyi/assets/master-A.png",
+    "replication/output/dou-keyi/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "two-shot medium shot with coffee table centered; woman left reaching to accept cup with polite smile, man right just placed two identical unbranded milk-tea cups on table, phone beside him not yet looked at",
+      "identity locked to references: woman = first reference (face/long loose black hair/beige-apricot unbranded knit loungewear), man = second reference (face/short black hair/light-grey unbranded crew-neck tee); only pose/props/expression changed, not identity/hair/clothing",
+      "same cozy living room, sofa + floor lamp + warm neutral-white ceiling light, bookshelf/plants bokeh; bright airy warm neutral-white, both lights on, not moody/dim/underexposed",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR",
+      "both milk-tea cups plain white sealed unbranded, no logo/text/brand; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no static-object or insert-shot trigger phrasing used"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a02ab3caf35b46970b4cdec9cffb56a015059732359e0955e167c7d9bd12a354"
+  }
+}

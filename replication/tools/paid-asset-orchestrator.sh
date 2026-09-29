@@ -400,7 +400,19 @@ supersede-accepted)
   [[ "$rg" == "$bg" ]] || die "group mismatch: $rid($rg) vs $byid($bg)"
   ro="$(jq -r --argjson i "$ri" '.assets[$i].output // ""' "$state")"
   bo="$(jq -r --argjson i "$bi" '.assets[$i].output // ""' "$state")"
-  [[ -n "$ro" && "$ro" != "$bo" ]] || die "loser/replacement share the same output (or empty): $ro"
+  [[ -n "$ro" ]] || die "loser asset has empty output: $rid"
+  if [[ "$ro" == "$bo" ]]; then
+    # 同路径关键帧返工：新版已覆盖同一产物文件，旧 accepted 需退役。放行须 sha 护栏——
+    # 替代者 sha 必须 == 磁盘现值(它才是磁盘成品)，败者 sha 必须 != 磁盘现值(确是被覆盖的旧版)，
+    # 二者缺一不放行，杜绝误把磁盘上的真成品退役。
+    rsha="$(jq -r --argjson i "$ri" '.assets[$i].sha256 // ""' "$state")"
+    bsha="$(jq -r --argjson i "$bi" '.assets[$i].sha256 // ""' "$state")"
+    op="$ro"; [[ "$op" = /* ]] || op="$root/$op"
+    dsha="$(sha256sum "$op" 2>/dev/null | awk '{print $1}')"
+    [[ -n "$dsha" ]] || die "same-output supersede: disk product missing ($op)"
+    [[ "$bsha" == "$dsha" ]] || die "same-output supersede: replacement $byid sha != disk (replacement is not the on-disk product)"
+    [[ "$rsha" != "$dsha" ]] || die "same-output supersede: loser $rid sha == disk (loser IS the on-disk product; refusing to retire it)"
+  fi
   ts="$(now)"
   save --argjson i "$ri" --arg rid "$rid" --arg byid "$byid" --arg ts "$ts" --arg note "$note" --arg reviewer "$reviewer" '
     .assets[$i].status="rejected" |

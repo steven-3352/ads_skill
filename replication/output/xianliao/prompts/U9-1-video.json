@@ -1,0 +1,41 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 10.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black, beginning exactly in the framing, positions, open door, suitcase and reaching-hand pose established by Picture 1, with the restrained man having just brushed the woman's blocking hand aside and gripping the suitcase handle as his body begins to turn away from her toward the open entrance door. The camera holds a mostly static medium-wide shot with a slight handheld sway. The man pivots his torso and steps, pulling the wheeled suitcase after him; the suitcase wheels roll audibly across the floor as he walks the several steps toward the open doorframe in the background depth, his back turning more fully to the woman with each step while she stays frozen where she is, her lifted hand slowly falling slack to her side. He reaches the doorframe, his body squared toward the exit hallway, then pauses; he turns his head back over his shoulder to look one last time into the room, his face calm, drained and restrained, eyes slightly reddened from held emotion but with no tears and no glowing eyes, gaze steady and final. As he settles into this doorframe pause, the framing, his back-three-quarter pose, suitcase position, head-turned-back angle, and the woman frozen in the background depth match Picture 2 exactly at the 10.00-second mark. No dialogue is spoken. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: The suitcase wheels roll steadily across the floor, accompanied by the man's footsteps and faint fabric movement; the room holds a low ambient stillness underneath with the barely audible tick of a wall clock, and when he stops in the doorframe the rolling and footsteps cease, leaving only the faintest residual room air.\n\nnon_diegetic_music: A low sustained electronic drone at a slow tempo continues quietly underneath, then drops to its lowest level as he reaches the doorframe and turns back, with no music cutting out entirely.",
+  "model": "MiniMax-H3",
+  "duration": 10,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U9-1/images/U9-1-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U9-1/images/U9-1-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA single 10s shot Picture1->Picture2 (U9-1, 段9 镜1-3): man brushes her hand aside, grips suitcase, turns and walks to doorframe, pauses and turns head back for last look; woman stays frozen as her lifted hand falls slack (state-change turn+walk path, NO dialogue per storyboard)",
+      "first-last clothing consistency iron rule: 阿沉 = dark-grey zip-up knit unchanged; 阿澈 = off-white/cream chunky knit + light-blue jeans unchanged, empty hands throughout, no bag/no tote (explicit alignment check)",
+      "path: pivots torso, steps, pulls suitcase (wheels roll audibly), walks several steps to doorframe (back turning more fully), reaches doorframe squared to exit, pauses, turns head back over shoulder = last frame pose",
+      "emotion via restrained face / calm drained / eyes slightly reddened / steady final gaze; explicit no tears / no glowing eyes for man, woman frozen (anti glowing-eye rule)",
+      "NO dialogue spoken (无对白 per storyboard 片段九 镜1-3); action driven by suitcase wheels + footsteps + fabric, not words",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = suitcase wheels roll + man's footsteps + fabric movement, low room ambience (clock tick) underneath; rolling+footsteps cease in doorframe leaving faintest residual air (no >2s dead silence per room-tone gate); non_diegetic drone drops to lowest as he reaches doorframe, does NOT cut out entirely (音乐压到最低 not 骤停)",
+      "no subtitles/captions/on-screen text (anti-subtitle; storyboard 无对白 intent = zero on-screen text)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4dcf5530ce22a10dffccc7b09113128a63a357b57938796b2b4bd168e1af48ff"
+  },
+  "reviewed_prompt_sha256": "4dcf5530ce22a10dffccc7b09113128a63a357b57938796b2b4bd168e1af48ff"
+}

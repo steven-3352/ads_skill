@@ -1,0 +1,26 @@
+{
+  "prompt": "A photorealistic character expression reference sheet: a clean 3-by-2 grid of six separate head-and-shoulders portrait photos of ONE single young East Asian Chinese woman, the exact same person in every one of the six panels, shot on a plain seamless light neutral-grey studio backdrop with even soft frontal studio lighting. She is the exact same person as the reference image, with the exact same ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate idol face), the same long loose natural black hair and the same plain solid off-white to cream chunky unbranded knit sweater; her face, face shape, features, hairstyle and clothing must be identical in all six panels and only the facial expression changes between panels. Each of the six panels is a straight-on head-and-shoulders portrait of her face at the same scale and framing, evenly lit, clearly separated from the neighbouring panels by a thin plain gap, and each panel shows one clearly different distinct emotional expression, so the six expressions are strongly distinguishable from one another. The six expressions, one per panel, are: panel 1 (top-left) arguing and defensive, eyebrows pulled up and together, mouth caught mid-word protesting, a flustered unconvinced look; panel 2 (top-middle) on the verge of crying, her eyes reddening and brimming with welled-up tears held back, lips pressed and chin faintly trembling, not yet spilling; panel 3 (top-right) a single tear brimming over one lower lash and just starting down one cheek, eyebrows drawn up in the middle, gaze dropping away, quietly breaking; panel 4 (bottom-left) full sobbing breakdown, her whole face crumpling in grief, eyebrows sharply up and together, mouth open and trembling in a sob, chin puckered, thick tears on both lower lids, cheeks flushed; panel 5 (bottom-middle) cried-out and hollow, her face raw and spent after crying, eyes glassy swollen-rimmed and staring at nothing, lips slack and parted, faint tear-tracks on her cheeks, utterly emptied out; panel 6 (bottom-right) restrained and holding it in, lips pressed tight, eyes lowered, a quiet suppressed pain. Across every panel her eyes stay ordinary and matte, tears are ordinary natural wetness, with no reddened glow, no glowing eyes and no unnatural light coming from the eyes. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real photographic camera texture, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. All six panels are the same identical woman with the same face and hair, never a different woman and never a different face between panels. No outdoor scene, no room interior, plain grey studio backdrop only. No text, no labels, no captions, no numbers, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "PURPOSE: A-Che 6-cell expression reference sheet (one grid image, identity locked across all cells because generated in one pass); cells to be cropped and used as per-shot I2I roots so the shot inherits the RIGHT locked expression instead of neutral",
+      "identity lock: exact same person as reference master-A-neutral, same ordinary Chinese face/hair/cream knit in ALL six panels, only expression changes; explicit never-a-different-woman",
+      "six distinct expressions mapped to shots: 1 arguing(U4-3), 2 welling-holding-back(U5-3/U12-2/U11-1), 3 single-tear(U7-2), 4 full-sob-breakdown(U8-2/U9-2), 5 cried-out-hollow(U13-2), 6 restrained",
+      "anti glowing-eye rule kept across all panels; ordinary matte eyes, natural wetness, no glow",
+      "plain grey studio backdrop, even framing/scale per panel for clean crops; iPhone/photoreal texture, no plastic/wax; no text/label/number/logo/Chinese anywhere (contact-sheet models tend to add labels - explicitly banned)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "40563ce6d4806ed73013f1c4101441cf33372a0cf77bf34cee9f8bf6708b7f12"
+  },
+  "reviewed_prompt_sha256": "40563ce6d4806ed73013f1c4101441cf33372a0cf77bf34cee9f8bf6708b7f12"
+}

@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The devastated woman shown in <Picture 1> (S1) stays exactly as established — same face, long black hair, plain off-white chunky knit sweater, tight near-frontal close-up, large heavy tears streaming down both cheeks — as she collapses under the weight of his words, her face crumpled and trembling, lips parted and quivering, eyes squeezed shut or barely open, while the camera holds a static shot with a very slight slow push in and a slight handheld sway. The woman (S1), in a broken, trembling, choked female voice at a normal-to-brisk pace that never slows and never trails into a dead tail, forces the words out through her tears: <d>[Chinese]我等了你五年，你就这么走？</d> Her voice cracks on the last word, and more tears stream down her face; her eyes stay ordinary and matte with no glowing eyes, no red glowing eyes, and no bright shining luminous eyes (the tears are real, wet and heavy but her eyes stay natural and matte with visible pores). She does not look at the camera and no arm reaches toward the camera. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; her choked, broken breaths and a faint sob are heard as she speaks.\n\nnon_diegetic_music: A low electronic ambience pad at a slow tempo with no melody, staying at its peak tension from the previous beat, then dropping slightly to let her broken voice land.",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U8-2/images/U8-2-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 6s shot from <Picture 1> (U8-2, 段8 镜2+6): A-Che close-up in complete breakdown with large heavy tears, delivers her broken line; camera static with very slight slow push in",
+      "verbatim <d>[Chinese]> line = production-units U8-2 (段8 镜2 阿澈 line, 崩溃 stage-direction excluded from spoken text), copied word-for-word incl. punctuation, no edits; ~14 chars / 6s ~= 2.3 zi/s (below 5.5 zi/s lock BUT acceptable: this is A-Che's broken/choked/trembling collapse beat, not A-Chen's relentless骂醒 beat; short devastated cry allows slower pace; flagged in report for user review, may atempo if needed)",
+      "S1 = woman on-screen (阿澈); delivery broken/trembling/choked through tears, voice cracks on last word, normal-to-brisk (for a collapse beat), no dead tail (ban-slow-dialogue rule)",
+      "emotion via face crumpled/trembling / lips parted/quivering / eyes squeezed shut or barely open / voice cracks / more tears streaming; explicit no glowing eyes / no red glowing eyes / no bright shining luminous eyes (tears real/wet/heavy but eyes matte/natural, anti glowing-eye rule with extreme emphasis)",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black; anti-selfie (not looking at camera, no arm toward camera)",
+      "soundscape = continuous room floor (clock tick, fabric, choked breaths, faint sob) never silent; non_diegetic electronic pad stays at peak tension then drops slightly to let broken voice land",
+      "no subtitles/captions/on-screen text (anti-subtitle)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "72026be82346da938a57bcff87bb1b04531e0e56106aa9dc6db088dd4f155f28"
+  },
+  "reviewed_prompt_sha256": "72026be82346da938a57bcff87bb1b04531e0e56106aa9dc6db088dd4f155f28"
+}

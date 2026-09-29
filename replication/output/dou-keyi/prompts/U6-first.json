@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid medium-close-up on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), the framing favoring a young East Asian Chinese woman in medium-close-up on the left while a young East Asian Chinese man remains visible in the frame on the right, both seated on a sofa with a low coffee table between them. The woman is delivering a resolute key line, her gaze resolute yet restrained, her eyes may look faintly moist but she is not crying, her eyes are not red, not swollen and do not glow; the man beside her is caught stunned and frozen, taken aback, his phone not yet picked up and still resting on the coffee table beside him. One plain unbranded sealed milk-tea cup sits on the coffee table. Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or net-red faces). The woman must be the exact same person as the first reference image, with the same face, the same long loose natural black hair and the same plain solid beige to light-apricot unbranded knit home loungewear top with no logo and no text; the man must be the exact same person as the second reference image, with the same face, the same clean tidy short black hair and the same plain solid light-grey crew-neck home T-shirt with no logo and no text. Only change their pose, framing, props and expression; do not change their identity, hairstyle or clothing. They are in the same cozy home living room as the reference images, with a sofa, a floor lamp and a warm neutral-white ceiling light, and a bookshelf and green plants in soft background bokeh. Lighting is bright, airy and warm with both the ceiling light and the floor lamp on, evenly and clearly illuminating the whole scene, a natural neutral warm-white color temperature, not moody, not a single dim lamp, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn their faces yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. The milk-tea cup is a plain white light sealed milk-tea cup with no logo, no text and no brand. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/dou-keyi/assets/master-A.png",
+    "replication/output/dou-keyi/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "medium-close-up favoring woman with man still visible in frame; woman delivers resolute key line, resolute-restrained gaze, eyes faintly moist but NOT crying/red/swollen/glowing; man stunned frozen, phone not yet picked up (on coffee table)",
+      "identity locked to references: woman = first reference, man = second reference; only pose/props/expression changed, not identity/hair/clothing",
+      "same cozy living room, sofa + floor lamp + warm neutral-white ceiling light, bookshelf/plants bokeh; bright airy warm neutral-white, both lights on, not moody/dim/underexposed",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-HDR",
+      "milk-tea cup plain white sealed unbranded, no logo/text/brand; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no static-object or insert-shot trigger phrasing used"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "fc37ba927073a7761ca11990320acf8675da8fd45a97cb8b092f084c13d052e9"
+  }
+}

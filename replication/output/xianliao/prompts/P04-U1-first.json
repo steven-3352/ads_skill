@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid close-up on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single East Asian Chinese man as the only subject in sharp focus, 27 to 30 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face, not a delicate boy-band idol face). He must be the exact same person as the reference image, with the same face, the same short natural black hair, neat and clean-cut, and the same plain solid dark-grey or navy casual jacket or knit sweater with no logo, no brand and no text; keep his identity, hairstyle and clothing unchanged and only change his framing and expression. Medium close-up of his face, shoulders and upper chest, looking straight ahead at the woman he is speaking to just off camera, caught at the very start of delivering a hard, cutting line, with the living-room fabric sofa and interior wall clearly visible behind him. His expression is restrained and outwardly calm while pressing down anger and pain underneath: jaw quietly set, lips just parting to begin speaking, a steady unwavering gaze, a faint swallow at his throat; not fierce, not smug, not slick, no tears, no reddened eyes and no glowing eyes. The scene is strictly indoors, inside a home apartment living-room, absolutely not outdoors: directly behind him are a fabric sofa with cushions, an interior wall and soft domestic furnishings in gentle background bokeh, with an apartment entrance door visible far in the background depth; there is no park, no trees, no lake, no river, no grass, no street and no outdoor scenery of any kind. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly illuminating his face, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn his face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "tight near-frontal close-up of A-Chen (man), start-of-speaking pose for the anchor line, looking at the off-camera woman; identity/hair/clothing locked to master-B reference, only framing+expression changed",
+      "restrained calm pressing down anger/pain: jaw set, lips parting to speak, steady gaze, throat swallow; NOT fierce/smug; explicit no tears / no reddened eyes / no glowing eyes (anti glowing-eye rule)",
+      "bright airy daytime living room, ceiling light + window daylight, neutral-white not orange/amber, evenly lit face, not moody/dim/underexposed/dark; entrance door in background depth",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily facial glare, light not yellow; negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "East Asian Chinese man, ordinary real face, not Western/net-red/idol; 16:9 horizontal 1536x1024",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "52dbbd116087a205f72ed6fbccf9648bf3fccd05f3098498417df55054bc6fc6"
+  },
+  "reviewed_prompt_sha256": "52dbbd116087a205f72ed6fbccf9648bf3fccd05f3098498417df55054bc6fc6"
+}

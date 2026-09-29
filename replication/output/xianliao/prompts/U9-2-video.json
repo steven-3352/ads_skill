@@ -1,0 +1,37 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, airy, evenly lit daytime living room, with no fade to black. The restrained man shown in <Picture 1> (S1) stays exactly as established — same face, short black hair, plain dark-grey zip-up knit top, tight near-frontal close-up — as he keeps his gaze locked on the devastated woman just off camera. The camera holds a static shot with a very slight slow push in and a slight handheld sway. First, the woman off camera with her face not visible (S2), in a choked, desperate, breaking female voice, unsteady and pleading with ragged breaths but not trailing into dead air, says: <d>[Chinese]我改……我改还不行吗？你别走。</d> while the man's own lips stay completely closed and still and he only watches her, his jaw tightening. Then the man (S1), in a calm, low, slightly hoarse male voice at a normal steady pace that grows heavier with each phrase and never slows or trails into a dead tail, keeps his eyes ordinary and dry with no tears, no reddening and no glow as he delivers his verdict: <d>[Chinese]你改不了。你不是不会爱我——是你不敢停。你一停下来，就得面对：没人真的需要你。所以你宁可一条条回\"收到\"，也不敢好好看我一眼。</d> Through the lines his jaw sets harder, his lips press tight between phrases, his gaze stays locked and unwavering, and his throat swallows once; on the final words his expression stays grim and final. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A low room ambience continues underneath throughout without ever dropping into silence, with the barely audible tick of a wall clock and soft fabric movement; the woman's quiet ragged crying breaths are heard under the opening plea and faintly beneath the man's words, and a single tense breath falls between his phrases.\n\nnon_diegetic_music: A low sustained electronic drone at a slow tempo stays quietly underneath the woman's plea, then drops to its lowest register under the man's steady verdict, growing slightly in tension before settling into stillness, never fading out entirely.",
+  "model": "MiniMax-H3",
+  "duration": 11,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U9-2/images/U9-2-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA single 11s shot from <Picture 1> (U9-2, 段9 镜4-6): opens ON 阿沉 close-up (Picture 1 = first frame at 0.00s), 阿澈 pleads off-camera, then 阿沉 delivers steady final verdict (正反打 handled as single on-camera shot + off-camera voice, NOT a cut, per h3 lip-sync anchor)",
+      "verbatim <d>[Chinese]> lines = storyboard 片段九 镜头4 (阿澈, （崩溃）stage-direction excluded) + 镜头6 (阿沉), copied word-for-word incl. …… —— and ASCII-quote \"收到\" punctuation escaped in JSON, no text edits",
+      "S2 off-camera-voice iron rule (照 U4-3-video): 阿澈 (S2) pleads from beyond frame, face NOT visible; man's lips explicitly stay completely closed/still during her plea to stop H3 burning her words onto his mouth; camera stays on 阿沉 the whole time",
+      "speakers: S1 = man on-screen (阿沉), S2 = off-screen woman (阿澈); woman choked/desperate/breaking with ragged breaths, man calm/low/hoarse growing heavier phrase-by-phrase, normal steady pace never slowing, no dead tail (ban-slow-dialogue rule; ~65 chars/11s well above 5.5 on spoken portions)",
+      "emotion via jaw set / lips pressing / locked gaze / throat swallow (man); explicit no tears / no reddening / no glow for man (anti glowing-eye rule)",
+      "single reference = master-B (阿沉 on-camera) per off-camera-voice precedent U4-3-first (阿澈 not visible so not referenced); NOTE deviation from task 'U9-2 references两张' flagged to caller",
+      "16:9 locked; iPhone realistic pores/matte/no waxy-CGI; bright airy even daytime light, no fade to black",
+      "soundscape = continuous room floor (clock tick, fabric) never silent, woman's ragged crying breaths + man's tense breath; non_diegetic drone quiet under plea, drops to lowest under verdict, grows slightly then settles, never fading out (no >2s dead silence per room-tone gate)",
+      "no subtitles/captions/on-screen text (anti-subtitle; storyboard 字幕 intent dropped for zero-subtitle final)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "bfc6c75f4ec8589ef9eb50dc2c6015c93cfc0d560b976f6ae621fadbbea26004"
+  },
+  "reviewed_prompt_sha256": "bfc6c75f4ec8589ef9eb50dc2c6015c93cfc0d560b976f6ae621fadbbea26004"
+}

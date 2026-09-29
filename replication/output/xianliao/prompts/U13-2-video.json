@@ -1,0 +1,41 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 10.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, natural skin texture with visible pores and fine detail, matte skin with no waxy or CGI sheen, in a bright, softly lit living room that stays clearly lit and only very slightly dims and cools toward the very end, beginning exactly in the near-frontal close framing established by Picture 1 — the woman kneeling on the floor, her face raw and real with grief, tears sliding down, head slightly lowered and beginning to turn away, holding the small wooden tag near her chest. Over the shot the camera slowly and continuously pulls far back and cranes up and away into a big high-wide view, her kneeling figure shrinking until she is small and alone in the center of the emptied living room, with the faint suitcase wheel tracks on the floor, the forgotten unopened takeout on the side table, the closed entrance door in the background depth, and her smartphone screen glowing and flickering faintly on the floor near her, settling into the exact extreme-wide, small-figure, from-behind composition established by Picture 2 at the 10.00-second mark. The line below is the woman's off-screen internal-monologue voiceover only: she does NOT speak it on camera, her lips do not move to the words and there is no lip-sync, and as the camera pulls away her face turns from the camera and is no longer clearly visible. A gentle, worn female voice, quiet and thick with held-back tears, at a slow, spent, unhurried pace fitting this closing beat and never trailing into dead air, delivers the off-screen internal monologue: <d>[Chinese]他说群里没人等我，我不信。可他走了我才发现——这屋里，是真没人了。我回了一辈子的“收到”，没有一句，是回给他的。</d> At the very end, after the voiceover finishes and the small figure is still, the piano fades out and the image gently fades to black. No subtitles, captions or on-screen text appear at any point.\n\noverall_soundscape: A faint low room ambience runs underneath and never drops into full silence, hushed and still, carrying the off-screen internal narration clearly over the quiet room; near the very end the ambience thins to the faintest residual air just before the fade to black.\n\nnon_diegetic_music: A minimal, sparse solo piano continues softly under the narration, single tender notes at a slow tempo, then gradually fades out to silence exactly as the image fades to black at the very end.",
+  "model": "MiniMax-H3",
+  "duration": 10,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U13-2/images/U13-2-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/xianliao/shots/shot-U13-2/images/U13-2-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA single 10s shot Picture1->Picture2 (U13-2, 段13 镜5-6): near-frontal grief close -> slow continuous pull-back/crane to extreme-wide from-behind small figure in emptied room = last frame (拉镜落点 via first/last frame)",
+      "FLAG旁白: line is off-screen internal-monologue voiceover only — explicit 'does NOT speak on camera / lips do not move / no lip-sync / face turns away and not clearly visible' to stop H3 forcing lip-sync; verbatim <d>[Chinese]> = storyboard 片段十三 镜头6 旁白, copied word-for-word incl. —— and full-width quotes “收到”, no edits",
+      "voiceover pace slow/spent/choked but never trailing into dead air (落点镜allow稍慢 per coordinator, still not ban-slow dead tail)",
+      "real grief via tears/crumpled face at start, then face hidden by scale/turn-away; explicit no glowing eyes / no unnatural eye glow / no red glow (anti glowing-eye rule)",
+      "environment continuity: suitcase wheel tracks + forgotten takeout + closed door + phone glow flickering; phone = light effect only, no readable text/Chinese",
+      "end-of-scene stays clearly lit, only very slightly dims/cools; fade to black permitted ONLY here at the very end (全片唯一黑场); 16:9 locked; iPhone realistic pores/matte/no waxy-CGI",
+      "soundscape = faint room ambience never full silence (roomtone gate) carrying VO, thinning to faintest residual air before black; non_diegetic = minimal solo piano fading to silence at the black (钢琴淡出黑场)",
+      "no subtitles/captions/on-screen text (anti-subtitle; storyboard 旁白/字幕 intent kept as audio VO only, zero burned text)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "0e443654e16ae8ef4ecac2c89babcd31ea47caf999d2df22b9feec48fcfe4e22"
+  },
+  "reviewed_prompt_sha256": "0e443654e16ae8ef4ecac2c89babcd31ea47caf999d2df22b9feec48fcfe4e22"
+}

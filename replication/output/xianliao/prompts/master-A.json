@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic candid still shot on iPhone 17 Pro, 16:9 horizontal composition (generated at 1536x1024), a single East Asian Chinese woman as the only subject, 24 to 27 years old, an ordinary real Chinese face (absolutely not a Western or Caucasian face, not an influencer or net-red beauty face). She has long natural black hair falling loosely over her shoulders, a fresh bare-skin look with good clear skin and only the faintest natural makeup. She wears a plain solid beige to light-apricot knit home top with no logo, no brand and no text. Medium to close portrait, near-frontal at a slight angle, looking straight into the camera so her face, hairstyle and clothing all read clearly; the corner of her mouth carries a small habitual sweet smile while her eyes stay quietly empty, tired and gently watchful in a reading-the-room way, giving a conflicted, people-pleasing, eager-to-please temperament rather than a cold, glamorous or sexy look. There are faint natural dark circles and a hint of fatigue under her eyes, as if she often stays up late replying to messages on her phone. She is in a cozy home living room, with a sofa and soft domestic furnishings in gentle background bokeh. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light coming from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), evenly and clearly illuminating her face, hair and clothing, not moody, not dim, not lamp-lit, not underexposed and not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen, and the light does not turn her face yellow. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "single East Asian/Chinese woman 24-27, ordinary real Chinese face, not Western/Caucasian, not influencer/net-red beauty face — identity root for shot keyframes (character A-Che)",
+      "long loose natural black hair, fresh bare-skin good skin faint makeup, plain solid beige/light-apricot unbranded knit home top, no logo/brand/text",
+      "temperament locked as conflicted/people-pleasing: habitual sweet smile at mouth corner with empty tired quietly-watchful eyes reading the room, not cold/glamorous/sexy; near-frontal medium-to-close, looking at camera so face+hair+clothing read clearly",
+      "distinguishing trait: faint natural dark circles and fatigue under eyes (stays up late on phone)",
+      "cozy home living room, ceiling light + floor lamp, bright airy warm neutral-white, evenly lit face, not moody/not a single dim lamp/not underexposed/not dark",
+      "iPhone 17 realistic texture: visible pores, film grain, sensor noise, matte skin, no oily facial glare, light does not turn face yellow; explicit negatives against plastic/waxy/poreless/beauty-filter/CGI/3D/over-sharpening/over-HDR",
+      "16:9 horizontal 1536x1024 composition",
+      "no text/subtitles/captions/watermark/logo/on-screen text/Chinese characters; no brand product/logo"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8380ecdd0206bee5c9932a455c76a90ca558d3bcdea4caed309b5df696d12a5c"
+  },
+  "reviewed_prompt_sha256": "8380ecdd0206bee5c9932a455c76a90ca558d3bcdea4caed309b5df696d12a5c"
+}

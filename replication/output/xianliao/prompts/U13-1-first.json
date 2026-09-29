@@ -1,0 +1,26 @@
+{
+  "prompt": "Photorealistic candid medium-wide shot filmed on an iPhone 17 Pro at a neutral third-person distance across a home apartment living-room, 16:9 horizontal composition (generated at 1536x1024), strictly indoors, with a still, quiet cinematic feel. This is absolutely NOT a selfie and there is no face toward the camera. A single young East Asian Chinese woman is seen from behind, kneeling and sitting back on her heels on the pale wooden floor in the middle of the quiet living-room, her back to the camera, her head slightly bowed forward. She is the exact same person as the reference image, recognizable only from her long loose natural black hair falling down her back and her plain off-white to cream chunky unbranded knit sweater over light-blue denim jeans; keep her hair and clothing exactly as the reference and only change her pose and framing so that she is viewed from behind. Her hands are gathered in her lap in front of her, cradling a small plain natural-wood tag on a metal keyring; her shoulders are low and still. On the floor close beside her lies a smartphone, its screen lit with only an indistinct pale glow and no readable text and no Chinese characters, as if a message has just arrived unanswered. The keyring, keys and wooden tag are plain and unbranded with no logo, no readable text and no Chinese characters. The living-room is visible around her: a fabric sofa with cushions, an interior wall with a framed picture and a leafy houseplant, the emptied room quiet around her. The scene is strictly indoors inside a home apartment living-room; there is absolutely no outdoor scenery anywhere in the frame: no park, no trees, no lake, no river, no mountains, no grass, no sky and no street, and any window shows only a soft far-away out-of-focus city apartment building, never nature. Lighting is a bright, airy daytime interior: the whole room is evenly and clearly lit and well exposed with no dark corners, the main light from an overhead ceiling light together with soft daylight through a large window, a clean natural neutral-white to only slightly warm color temperature (not orange, not yellow-cast, not amber), with at most a very slight subdued end-of-scene mood but still bright overall, not moody, not dim, not lamp-lit, not underexposed, not dark and with no heavy vignette. Natural texture with fine detail, subtle natural film grain and gentle sensor noise, soft diffused light. Real iPhone 17 handheld photographic texture, shallow depth of field, true-to-life white balance. no plastic look, no waxy over-smoothed surfaces, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. No selfie, no selfie pose, no arm extended toward the camera, nobody facing or looking at the camera. No outdoor scene, no park, no trees, no lake, no river, no grass, no sky, no street. No animal, no pet, no cat, no dog. No text, no subtitles, no captions, no watermark, no logo, no on-screen text and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "U13-1 (段13 镜1-4): woman kneeling on floor seen from BEHIND, cradling wooden tag+keyring in lap, phone lit beside her (message arrived, she does not turn) - BACK VIEW so no face/expression, identity via hair+sweater only",
+      "reference master-A-neutral for wardrobe/hair identity; pose changed to kneeling back-view (expression not a factor since face away)",
+      "props continuity keyring+plain wood tag in lap; phone screen indistinct pale glow only, no readable text/Chinese",
+      "wardrobe lock off-white chunky knit + light-blue jeans, long black hair down back; strictly indoor emptied room; only slight subdued end mood still bright; full outdoor negatives; no animal",
+      "iPhone17 realistic texture; anti-selfie third-person, nobody facing camera; 16:9 1536x1024; no text/logo/Chinese"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "29a04bf3bf502418dd6f5b525f6ec6f30bfabc751125443f1fc8be0219c1ad7e"
+  },
+  "reviewed_prompt_sha256": "29a04bf3bf502418dd6f5b525f6ec6f30bfabc751125443f1fc8be0219c1ad7e"
+}

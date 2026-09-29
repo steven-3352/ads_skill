@@ -1,0 +1,26 @@
+{
+  "prompt": "A photorealistic candid close-up portrait photograph of a young East Asian Chinese woman crying hard, in the middle of a heavy uncontrollable sob. Her whole face is contorted and crumpled in grief: her eyebrows are pulled sharply up and together, deep creases between them, her eyes are squeezed and puffy with red swollen rims, her mouth is open wide crying out loud, her chin is puckered and trembling. Heavy wet tears are streaming down both of her cheeks in visible shining streaks, her cheeks and the tip of her nose are flushed blotchy red, her face is wet and messy from crying. She has an ordinary real Chinese face, long loose natural black hair and a plain off-white cream chunky knit sweater, on a plain seamless light neutral-grey studio backdrop with soft even lighting. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare. Real photographic camera texture, true-to-life white balance, shallow depth of field. The tears are ordinary natural wetness with no glowing eyes and no unnatural light coming from the eyes. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look. No text, no watermark, no logo, no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1024x1024",
+  "references": [
+    "replication/output/xianliao/assets/master-A-neutral.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "DECISIVE LEVER TEST: keep master-A-neutral reference (supplies identity) but REMOVE all 'same person as reference / identical / only expression changes' copy-language; prompt is ONLY an aggressive crying description - tests whether the copy-language (not the reference itself) was what forced the calm face",
+      "single big close-up (not grid) for a clean read; full-sob contorted face, streaming wet tears, red swollen rims",
+      "anti glowing-eye rule kept (no glow/no unnatural light) - proven compatible with heavy tears in t2i sheet",
+      "identity left to the reference image alone via edits endpoint; ordinary Chinese face, long black hair, cream knit, grey backdrop",
+      "photoreal iPhone texture no plastic/wax; no text/logo/Chinese"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "e968bc2cc50c99f71a9bf9ea5d66e6930670c29181e8bf8c74ea539b5dc77179"
+  },
+  "reviewed_prompt_sha256": "e968bc2cc50c99f71a9bf9ea5d66e6930670c29181e8bf8c74ea539b5dc77179"
+}
