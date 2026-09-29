@@ -1,7 +1,0 @@
-{
-  "model": "gpt-image-2",
-  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Ultra-wide aerial view bursting up above a vast sea of clouds at dawn; a colossal soft diffused warm sun-halo glows through the cloud layer, filling the sky with translucent golden light. An endless rolling cloud ocean below stretches to the horizon like snow ridges. Two almost-invisible tiny warm-colored specks — an East Asian Chinese couple — drift far below as subtle accents, environment more than 90 percent of the frame, immense negative space. Ethereal mist, soft diffused light, no harsh shadows, dreamy airy palette of warm gold, pale teal and cream. Grand, weightless, serene yet bright and joyful atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
-  "size": "1344x768",
-  "quality": "high",
-  "output_format": "png"
-}

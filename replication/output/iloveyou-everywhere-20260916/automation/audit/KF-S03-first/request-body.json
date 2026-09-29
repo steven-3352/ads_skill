@@ -1,7 +1,0 @@
-{
-  "model": "gpt-image-2",
-  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Sweeping ultra-wide aerial view soaring over immense towering snow-mountain ridges, colossal ridgelines cutting diagonally across the frame, warm golden dawn light glancing off the snow. A single valley in the fold holds one tiny warm speck — an East Asian Chinese couple holding hands, barely perceptible, pure accent. Environment more than 90 percent of the frame, vast negative space of pale sky. Thin drifting mist between the peaks, soft diffused light, no harsh shadows, translucent warm palette of warm-gold snow, pale teal sky and cream mist. Majestic yet bright, joyful, mind-freeing atmosphere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle 21mm, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
-  "size": "1344x768",
-  "quality": "high",
-  "output_format": "png"
-}

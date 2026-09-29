@@ -1,7 +1,0 @@
-{
-  "request_id": "love-story-nagging-han-lei-v1",
-  "state": "local_dns_failed_no_post",
-  "at": "2026-09-13T10:35:34Z",
-  "detail": "curl exit 6 (DNS resolution failed before HTTP connection); provider was not reached and no paid generation occurred",
-  "automatic_retry": false
-}

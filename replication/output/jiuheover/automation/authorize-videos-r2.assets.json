@@ -1,5 +1,0 @@
-[
-  {"id":"U4-video-r2","kind":"video","group":"shot_video","cost_yuan":1.2,"model":"MiniMax-H3","output":"replication/output/jiuheover/shots/shot-U4/U4-r2.mp4","prompt_file":"replication/output/jiuheover/prompts/U4-video.json","depends_on":["U4-first"],"replaces":"U4-video"},
-  {"id":"U6-video-r2","kind":"video","group":"shot_video","cost_yuan":0.8,"model":"MiniMax-H3","output":"replication/output/jiuheover/shots/shot-U6/U6-r2.mp4","prompt_file":"replication/output/jiuheover/prompts/U6-video.json","depends_on":["U6-first"],"replaces":"U6-video"},
-  {"id":"U7-video-r2","kind":"video","group":"shot_video","cost_yuan":1.0,"model":"MiniMax-H3","output":"replication/output/jiuheover/shots/shot-U7/U7-r2.mp4","prompt_file":"replication/output/jiuheover/prompts/U7-video.json","depends_on":["U7-first"],"replaces":"U7-video"}
-]

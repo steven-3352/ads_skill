@@ -1,7 +1,0 @@
-{
-  "model": "gpt-image-2",
-  "prompt": "Photorealistic cinematic live-action still, horizontal 16:9 landscape rendered at 1344x768 (wide frame, never vertical or portrait). Sweeping god's-eye ultra-wide view from extreme high altitude looking down over an entire world at dawn: mountains, lakes, ocean coast and forests all stretching together to the curved horizon, wrapped in thin drifting mist and soft golden light. Countless millions of tiny points of warm light glow softly scattered across the whole land like awakening fireflies, one of them being an East Asian Chinese couple — imperceptible, just one warm light among millions. Environment about 99 percent of the frame, immense luminous negative space of misty sky. Soft diffused warm light, no harsh shadows, translucent bright palette of warm gold, pale teal and cream. Vast, uplifting, blissful, mind-freeing atmosphere of love echoing everywhere. Keep the bottom 15-18 percent of the frame clean as a subtitle safe area. Ultra wide-angle, deep focus, full-frame cinema camera. Not illustration, not anime, not 3D render. no text, no subtitles, no watermark, no logo, no Chinese characters.",
-  "size": "1344x768",
-  "quality": "high",
-  "output_format": "png"
-}

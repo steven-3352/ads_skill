@@ -1,2 +1,0 @@
-file '/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/edit/seg/12a_mv.mp4'
-file '/home/ubuntu/ads_skill/replication/output/douyin-fenshou-pengyou-20260918/automation/edit/seg/12b_fv.mp4'

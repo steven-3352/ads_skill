@@ -1,7 +1,0 @@
-{
-  "model": "gpt-image-2",
-  "prompt": "Vertical 9:16 portrait, iPhone 17 handheld realistic photo with fine natural photographic grain. A single subject only: a Chinese (East Asian) woman, 23-26 years old, long dark hair loose over her shoulders, clear front-facing three-quarter upper-body view, bare-faced natural good skin with realistic texture, matte complexion with no oily glare or specular highlights, delicate features and a soft neutral expression. She wears a plain soft knit home top — no logo, no brand, no text, no print. Background is a plain bright white-wall interior corridor with soft even diffuse daylight, neutral-to-slightly-warm color temperature that does not tint the face. Photorealistic true-to-life skin texture, natural individual hair strands, no plastic or wax or CG look, no airbrushed fake face, no beauty smoothing. This is a clean single-person identity reference. No subtitles, no captions, no watermark, no logo, no on-screen text anywhere in the frame.",
-  "size": "768x1344",
-  "quality": "high",
-  "output_format": "png"
-}

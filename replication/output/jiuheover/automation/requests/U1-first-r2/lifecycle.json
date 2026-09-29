@@ -1,7 +1,0 @@
-{
-  "request_id": "U1-first-r2",
-  "state": "completed",
-  "at": "2026-09-21T13:47:30+08:00",
-  "detail": "image saved; semantic QC still required",
-  "automatic_retry": false
-}

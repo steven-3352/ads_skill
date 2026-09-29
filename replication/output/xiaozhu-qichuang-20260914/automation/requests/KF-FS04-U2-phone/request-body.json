@@ -1,7 +1,0 @@
-{
-  "model": "gpt-image-2",
-  "prompt": "Photorealistic tight still-life macro photograph of a smartphone lying face-up on a wooden coffee table, the phone screen fills the frame; this is a still-life insert with no human face in frame, absolutely no person, 面部不入画, not a portrait. The screen shows a plain instant-messaging chat interface: at the top the contact / note name reads 「我」; the last outgoing message bubble reads 「晚安」 with the timestamp 02:17 shown beside it; above it a few earlier message bubbles are each marked 「已读」 with no reply underneath them. The chat text on the screen is in-picture prop content displayed on the device (part of the scene, a phone screen), not an overlay or caption. Cool bluish phone-screen glow spills onto the wooden tea-table surface around the phone in the dark late-night room; realistic phone photograph, shallow depth of field, subtle fine film grain. 16:9 horizontal composition, macro close-up, eye-level top-down on the phone. No text overlay outside the phone screen, no subtitles, no captions, no watermark, no logo.",
-  "size": "1344x768",
-  "quality": "high",
-  "output_format": "png"
-}

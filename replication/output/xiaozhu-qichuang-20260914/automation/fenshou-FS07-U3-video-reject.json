@@ -1,5 +1,0 @@
-{
-  "unit":"fenshou-FS07-U3-video","beat":"B7 FS07 收尾定场B独坐","decision":"reject","reviewer":"claude-selfcheck","at":"2026-09-18",
-  "why":"驳回:曝光一路下漂,结尾t3.8近乎全黑、B脸读不出。踩两条硬线:①提示词明确要求顶灯开明亮通透不压抑(scene-lighting-normal-not-moody),成片却越走越暗;②收尾镜靠'B独坐失神'的表情立住,脸黑到看不清=情绪没了(用户硬要求表情要体现内心)。重做:保留用户已认可首帧KF-FS07-U3-first,重生视频v2加'全程锁定与首帧等亮、绝不变暗、无曝光下滑、无渐黑、B脸到末帧仍清晰可读'护栏。",
-  "frames":"assets/fenshou-qc-FS07-U3-t{0.3,1.5,3.8}.png"
-}
