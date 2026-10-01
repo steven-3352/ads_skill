@@ -1,7 +1,0 @@
-{
-  "references": [
-    "replication/output/wild-mode/keyframes/production/shoes-state-a-animal-v2.png",
-    "replication/output/wild-mode/keyframes/production/shoes-design-product-crop.png"
-  ],
-  "prompt": "Use case: precise-object-edit. Asset type: exact matching last-frame production keyframe for a vertical 9:16 premium animal-to-fashion TVC. Image 1 is the immutable base frame and edit target. Image 2 is only the approved finished shoe-design reference. In Image 1, replace only the two black panther cubs on top of the graphite console with exactly one matched pair of the finished shoes from Image 2. Put the left shoe exactly where the left animal stood and the right shoe exactly where the right animal stood, with equivalent visual footprint and scale. Preserve every other pixel-level visual property of Image 1: identical room architecture, graphite console position and edges, wardrobe and clothing, doorway, blue wall artwork, camera position, vertical crop, lens perspective, sunlight, shadows, exposure and color. Shoes: low-profile graphite-black leather, streamlined feline-spine sole geometry, cobalt mechanical channels and champagne-silver heel locks, complete and commercially wearable. One normal single-camera frame only. No animals or transformation effects remain. No extra shoes, person, mirror, reflection, glowing energy, sparks, text, brand, logo or watermark. Avoid changing the background, table, camera, framing, light, clothing or adding any object."
-}

@@ -1,7 +1,0 @@
-{
-  "references": [
-    "replication/output/wild-mode/keyframes/production/belt-state-a-animal-v1.png",
-    "replication/output/wild-mode/keyframes/production/belt-design-product-crop.png"
-  ],
-  "prompt": "Use case: precise-object-edit. Asset type: exact matching last-frame production keyframe for a vertical 9:16 premium animal-to-fashion TVC. Image 1 is the immutable base frame and edit target. Image 2 supplies only the approved finished belt design. Replace only the snake in Image 1 with exactly one finished black segmented leather belt, laid in the identical broad S curve, position and footprint. Preserve every other visual property of Image 1: identical graphite tabletop, room architecture, blurred cobalt jacket, camera position, vertical crop, perspective, sunlight, shadows, exposure, depth of field and color. Belt: fine black leather grain, articulated scale-like graphite segments, restrained cobalt edge details, precision champagne-silver buckle whose geometry subtly derives from the snake head without showing an animal face; commercially wearable menswear proportions. One normal single-camera frame only, finished product state with no active effects. No snake, animal head, eyes or tail remaining, extra belt, person, hand, mirror, reflection, glow, sparks, text, brand, logo or watermark. Avoid changing background, table, camera, framing or lighting; avoid fantasy weapon, literal snake-head buckle, dark cyberpunk and multiple time states."
-}

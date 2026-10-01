@@ -1,8 +1,0 @@
-{
-  "prompt": "Vertical premium e-commerce product video. Preserve the exact brown and tan structured handbag from the first frame: identical handles, shoulder strap, printed panels, seams, gold hardware, pearl chain and leaf charm. A restrained studio camera makes one slow 10-degree arc while warm highlights move across the hardware. The bag remains still and upright. Warm cream set, realistic leather-like texture, crisp commercial lighting. No people, no hands, no added objects, no transformation, no readable text, no logo invention, no watermark, no cuts.",
-  "duration": 5,
-  "aspect_ratio": "9:16",
-  "content": [
-    {"type": "image_url", "local_path": "replication/output/four-product-ads-20260906/motion-frames/D-first-frame.png", "role": "first_frame"}
-  ]
-}

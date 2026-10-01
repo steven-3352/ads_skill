@@ -1,1 +1,0 @@
-{"code":"fail_to_fetch_task","message":"{\"error\":{\"code\":\"InputImageSensitiveContentDetected.PrivacyInformation\",\"message\":\"The request failed because the input image 'content[0]' may contain real person. Request id: 02178990963660858f2fcd7b6996c2abcdc77dac59912ac5487e9\",\"param\":\"\",\"type\":\"BadRequest\"}}","data":null}

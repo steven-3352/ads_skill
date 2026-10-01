@@ -1,8 +1,0 @@
-{
-  "prompt": "Vertical premium e-commerce product video. Preserve the exact champagne-gold brocade square-toe Mary Jane shoe from the first frame: identical silhouette, strap, buckle, heel height, toe cap, pattern and colors. A restrained studio camera makes one slow lateral slide while soft warm highlights reveal the brocade texture. The shoe remains still. Elegant ivory and muted red set, realistic textile and metal, crisp commercial lighting. No people, no feet, no hands, no added objects, no transformation, no readable text, no logo invention, no watermark, no cuts.",
-  "duration": 5,
-  "aspect_ratio": "9:16",
-  "content": [
-    {"type": "image_url", "local_path": "replication/output/four-product-ads-20260906/motion-frames/C-first-frame.png", "role": "first_frame"}
-  ]
-}

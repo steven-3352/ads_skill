@@ -1,6 +1,0 @@
-{
-  "references": [
-    "replication/output/mirror-outfit-replication/images/outfit-frame-black-v1.png"
-  ],
-  "prompt": "Use case: identity-preserve. Asset type: vertical outdoor fashion montage still. Image 1 is the sole source of truth for the person and the complete outfit. Copy the exact same face, hair, age, body proportions, every garment, garment color, construction, fit, folds, trousers and shoes from Image 1 without redesigning or substituting anything. Remove only the phone and replace only the bedroom with an outdoor setting. Scene: beneath a clean modern concrete overpass in the morning, graphic structural lines and a cool neutral city palette. The same man walks toward camera in one natural mid-stride step, arms relaxed, calm focused expression. Photorealistic editorial street photography, full body head-to-shoes, eye-level 35mm view, vertical 9:16 composition, subject sharp with slight natural background motion blur. Keep identity and clothing unchanged. No phone, no other people, no text, no brand, no logo, no watermark, no altered clothing, no face drift, no extra limbs, no distorted hands."
-}

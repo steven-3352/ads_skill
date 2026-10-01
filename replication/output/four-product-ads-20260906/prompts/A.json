@@ -1,8 +1,0 @@
-{
-  "prompt": "Vertical premium e-commerce product video. Preserve the exact pair of cream, black and red high-top platform sneakers from the first frame: identical silhouette, panels, laces, sole thickness and colors. A restrained studio camera makes one slow 12-degree arc while a soft highlight travels across the shoes. The shoes stay still on the set. Clean warm neutral background, realistic materials, crisp commercial lighting. No people, no feet, no hands, no added objects, no transformation, no readable text, no logo invention, no watermark, no cuts.",
-  "duration": 5,
-  "aspect_ratio": "9:16",
-  "content": [
-    {"type": "image_url", "local_path": "replication/output/four-product-ads-20260906/motion-frames/A-first-frame.png", "role": "first_frame"}
-  ]
-}
