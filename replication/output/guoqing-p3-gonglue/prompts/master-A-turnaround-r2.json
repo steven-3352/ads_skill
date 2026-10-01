@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic outdoor-travel outfit character turnaround sheet photographed on iPhone 17 Pro, 16:9 horizontal layout, one young East Asian Chinese woman shown five times side by side, full body from head to shoes, same scale, on a plain seamless light warm-grey studio backdrop. IMPORTANT WARDROBE CHANGE: take ONLY her face and hairstyle from the reference image; completely replace the beige knit sweater she wears in the reference. She must NOT wear any knit sweater or jumper. Her new outfit is: an oat-beige thin woven cotton button-up shirt jacket with collar and chest pockets, worn OPEN and unbuttoned; clearly visible underneath it a plain pure-white crew-neck short-sleeve cotton T-shirt; light-blue straight-leg jeans; plain white canvas sneakers. Travel gear she carries in every view: a plain solid black backpack worn on both shoulders with both black shoulder straps clearly visible over the shirt jacket in the front views; a clear transparent plastic water bottle hanging at her hip from a thin strap worn diagonally across her chest; a smartphone in a plain dark case held in her right hand with the screen turned toward her. She is the organized one carrying all the gear. The five views, strictly left to right, each different: 1 front view facing camera, both straps and cross-body bottle strap visible; 2 three-quarter view turned toward frame left; 3 three-quarter view turned toward frame right; 4 full side profile facing frame right, backpack visible on her back; 5 back view showing the whole black backpack. Only one back view. She is the exact same person as the reference image: the same ordinary real Chinese face and facial features, the same long loose natural black hair falling over her shoulders, 24 to 27 years old, bare-skin look with only faint natural makeup (absolutely not a Western or Caucasian face, not an influencer or net-red face). Natural, slightly tired expression. Bright, soft, even diffused daylight-balanced light, neutral color temperature, not moody, not dark. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily facial glare or highlight sheen. Real iPhone 17 photographic texture, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no poreless airbrushed beauty-filter, no CGI, no 3D render look, no illustration, no over-sharpening, no over-HDR. All clothing, backpack, bottle, phone and shoes are completely plain with no logo, no brand, no print, no pattern and no text. No text, no letters, no numbers, no labels, no captions, no watermark, no logo, no brand mark, no printed graphics and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p3-gonglue/assets/characters/A-face-master.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "character turnaround 5 views in one 16:9 sheet: front / three-quarter left / three-quarter right / side profile / back, full body, plain studio backdrop",
+      "identity locked to reference (dou-keyi master-A face + long loose black hair); only clothing changes; East Asian Chinese explicitly locked",
+      "outfit per screenplay §1: open oat-beige cotton shirt jacket + white crew T + light-blue straight jeans + white canvas sneakers; plain black backpack + cross-body clear water bottle + dark-case phone (screen facing her)",
+      "iPhone 17 realistic texture, pores/grain/noise, soft diffused light, matte skin no oily glare, anti plastic/waxy/beauty-filter/CGI",
+      "no logo/brand/print/text/letters/Chinese characters anywhere; size 1344x768 (gpt-image 16:9 tier)",
+      "no insert/still-life trigger phrasing (reference allowed)",
+      "r2: explicit wardrobe replacement (reference knit sweater forbidden), per-view gear visibility, single back view — fixes r1 reject (automation/qc/master-A-turnaround.reject.json)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "a85f09dd90d3cca6d58f44994e13be4fb7d2d3ecb6b7abcd98b2897e5d20f400"
+  }
+}

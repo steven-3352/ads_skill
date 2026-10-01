@@ -1,0 +1,25 @@
+{
+  "prompt": "Photorealistic five-view full-body character turnaround sheet of a young East Asian Chinese woman, an ordinary real Chinese face, the exact same person as the reference image: the same face, the same long natural black hair with a center part falling loosely over her shoulders, the same fresh bare-skin look. One 16:9 horizontal image on a plain light warm-grey studio backdrop, five full-body standing views of her side by side at equal size and spacing, left to right: 1) front view facing the camera, 2) three-quarter view turned to her left, 3) three-quarter view turned to her right, 4) full side profile, 5) back view showing the back of her hair and outfit. Head to toe fully visible in every view, relaxed neutral standing pose, arms resting naturally at her sides, calm natural expression. She wears the same home outfit as the reference in every view: the same plain solid beige to light-apricot soft knit home loungewear top, plain mid-blue straight jeans, and plain light-grey soft home slippers; all clothing has smooth plain fabric surfaces. Bright soft even diffused studio light, natural neutral warm-white color temperature. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with a soft even finish, real iPhone 17 Pro photographic texture, true-to-life white balance and natural colors, the look of a real candid photograph of real people. The backdrop is clean and plain, the image is pure photographic content.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/dou-keyi/assets/master-A.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "positive-only phrasing (P3 lesson: negative clauses pull X into frame); text/logo handled as 'plain unmarked surfaces'",
+      "East Asian Chinese lock explicit",
+      "identity + outfit anchored to dou-keyi accepted reference",
+      "16:9 1344x768 = H3 16:9 tier (no aspect distortion)",
+      "iPhone 17 real texture, matte soft diffused light, bright ceiling light + floor lamp"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "b80e4f1d430d35d20cc7704603714ddc799ce51f559b90c3f54414ec72a18dfc"
+  }
+}

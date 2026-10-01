@@ -1,0 +1,47 @@
+{
+  "project": "guoqing-p1",
+  "assets": [
+    {
+      "id": "A-face-master",
+      "path": "assets/characters/A-face-master.png",
+      "role": "A 脸/发型/居家装身份根",
+      "source": "dou-keyi/assets/master-A.png",
+      "sha256": "baf711284f6e8da7805ba48b9ea51c27c1b0438173e918085f8219a694c45af1",
+      "cost_yuan": 0,
+      "status": "reused_accepted_upstream"
+    },
+    {
+      "id": "B-face-master",
+      "path": "assets/characters/B-face-master.png",
+      "role": "B 脸/发型/居家装身份根",
+      "source": "dou-keyi/assets/master-B.png",
+      "sha256": "af70e60982a8dd7a73c11d6c68b777346117c2c5597ec3b941aa63167d4a5525",
+      "cost_yuan": 0,
+      "status": "reused_accepted_upstream"
+    },
+    {
+      "id": "A-turnaround",
+      "paid_id": "master-A-turnaround",
+      "path": "assets/characters/A-turnaround.png",
+      "role": "A 五视图（米杏针织上衣+牛仔裤，同 dou-keyi 脸）",
+      "sha256": "c8da347f6a02195f066f2b9e42082db7f19b2a775e3a67b2150d2e10d7e12002",
+      "status": "generated_pending_qc"
+    },
+    {
+      "id": "B-turnaround",
+      "paid_id": "master-B-turnaround",
+      "path": "assets/characters/B-turnaround.png",
+      "role": "B 五视图（浅灰T+深色长裤，颈挂素色头戴耳机）",
+      "sha256": "ec467566e37b21550b12b48d7c81849c76d6eacc9a5f9b2bdfc38fbad9c2c7c7",
+      "status": "generated_pending_qc"
+    },
+    {
+      "id": "scene-livingroom",
+      "paid_id": "scene-livingroom",
+      "path": "assets/locations/scene-livingroom.png",
+      "role": "SC_LIVING 无人客厅空间/光向基准，16:9",
+      "sha256": "2c847186f88fe64a71e76e563214c5ea6088c4c949586735ab81489c37b73de7",
+      "status": "generated_pending_qc"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage of an ordinary East Asian Chinese couple, natural skin texture with visible pores, subtle film grain, soft diffuse daylight, matte skin with no oily shine, no waxy, plastic or CGI sheen, at a crowded, bright sunny National Day scenic-spot entrance ticket-check queue area; behind them a dense queue of tourists, silver metal barrier railings, turnstile gates and a distant stone archway, all heavily blurred in shallow depth of field. The woman stays on the left of the frame in a beige knit sweater and light-blue jeans with a plain matte black backpack on both shoulders and a plain light-grey water bottle at her hip on a thin cross-body strap; the man stays on the right in a plain light-grey T-shirt and dark blue jeans, carrying nothing at all, no bag. The shot begins exactly as in <Picture 1>: a medium two-shot from slightly behind the man's right shoulder, the man looking down at the phone in a plain dark case held in both hands at chest height and poking the screen with his thumb, the woman with her arms crossed, glaring sideways at him. The camera is handheld and follows the man with small amplitude. Right away, fumbling and scrolling, the young man with a hurried, muttering voice (S2) grumbles at a quick pace: <d>[Chinese]码呢……码在哪啊？这么多人，至于这么累吗——</d> Mid-sentence, the crowd behind him pushes forward and bumps him, and he stumbles one step forward, catching his balance while still gripping the phone. Before he can finish, the woman uncrosses her arms, leans her upper body toward him, pulls her own plain dark phone from her jeans pocket and shakes it once at chest height with its screen facing her, and the fed-up young woman with a loud, sharp, fast voice (S1) cuts him off at a rapid pace: <d>[Chinese]发你三遍了！三遍！我排队找路，一张照片都没拍上！</d> She stays leaning toward him as she finishes, and he keeps the phone in his hands. Any phone screen faces the person holding it, never the camera. All clothing, the backpack, the bottle and the phone case are plain with no logo or print, and no readable signs appear in the background. No subtitles, captions, on-screen text, Chinese characters or watermark appear at any point.\n\noverall_soundscape: A dense crowd murmur of many tourists, an indistinct distorted loudspeaker announcement and the repeated short electronic beep of the turnstile gates continue underneath throughout and never drop into silence, with shuffling footsteps on stone paving. His thumb taps the phone screen, fabric rubs as the crowd pushes into his back, and his sneakers scuff in a quick stumbling step.\n\nnon_diegetic_music: N/A",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/guoqing-p3-gonglue/shots/shot-U2/images/U2-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA 6s from U2-first: B low head poking phone, A arms crossed",
+      "B stumble from crowd push; A interrupts, leans forward, lifts her own phone once (storyboard B/F: 举自己手机晃一下), screen faces her",
+      "verbatim dialogue per screenplay U2 <d>[Chinese]; S2 then S1 interrupting; 36 chars/5.5s fast pace, no dead tail",
+      "16:9 768P; iPhone realistic pores/grain, matte skin no shine, no waxy/plastic/CGI; soft diffuse daylight",
+      "East Asian Chinese couple; woman LEFT with black backpack + grey bottle, man RIGHT empty-handed no bag (matches accepted keyframes)",
+      "no brand/logo/print, no readable signs; phone screen never to camera; anti-subtitle; no tear/red-eye/glow wording",
+      "overall_soundscape: crowd murmur, indistinct loudspeaker, turnstile beeps, footsteps continuous; non_diegetic_music N/A (screenplay: no BGM)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "63688687f2e7e161e616550b896b3ced6c29ab5a7da02af22a2bb046338d419d"
+  }
+}

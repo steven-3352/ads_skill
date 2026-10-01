@@ -1,0 +1,28 @@
+{
+  "prompt": "Photorealistic candid frame from a real handheld iPhone video, 16:9 horizontal. Continuation of the fourth reference frame, a few seconds later. Both now stand facing each other in the open floor in front of the sofa, about an arm's length apart, in profile to the camera, woman frame-left, man frame-right. The woman points at him with her right hand, brows knitted, biting her lower lip, chin trembling, mid-accusation. The man has just stood up from the sofa; his right hand is drawn back and hovering in mid-air in front of his chest after reaching toward her arm, his face tense, throat tight, mouth half open, eyes darting away. Behind them on the light-grey sofa cushion lie a pair of plain matte dark-grey over-ear headphones (smooth headband, round cushioned ear cups, same as on his turnaround sheet) where she threw them, clearly visible between them, and the plain black phone face-down on the sofa. Reference images: the first is the woman's five-view turnaround sheet, the second is the man's five-view turnaround sheet, the third is the empty living room that sets the space and light, the fourth is the previous frame of this same continuous scene for continuity of position, props and light. Both are ordinary real East Asian Chinese people. The woman on the LEFT of the frame is the same person as her turnaround sheet: same face, long natural black hair with a center part, the same plain beige to light-apricot knit home top and mid-blue jeans. The man on the RIGHT of the frame is the same person as his turnaround sheet: same face, clean short black hair, the same plain light-grey crew-neck T-shirt and dark charcoal trousers. Setting: the same bright home living room as the scene reference at night: light-grey fabric sofa with yellow and cream cushions against the back wall, a floor lamp at the left end of the sofa, a light-wood bookshelf with green plants on the back wall to the left, a doorway to the hallway far left in soft focus, a low light-wood coffee table in front of the sofa slightly right of center. Ceiling light on plus the floor lamp on, bright, airy, evenly lit, natural neutral warm-white, soft diffused light on faces. Camera on the coffee-table side facing the sofa, medium focal length, eye-level handheld medium two-shot of both standing, waist-up, headroom above, 16:9 horizontal, woman frame-left and man frame-right on a consistent axis, background bookshelf and doorway softly out of focus. Natural skin texture with visible pores, subtle film grain and gentle sensor noise, matte skin with a soft even finish, real iPhone 17 Pro handheld video-frame texture, true-to-life white balance. The headphones and phone have plain smooth unmarked surfaces; the phone screen faces away from the camera; book spines, walls and decor are plain; the whole frame is clean photographic content.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p1-lengbaoli/assets/characters/A-turnaround.png",
+    "replication/output/guoqing-p1-lengbaoli/assets/characters/B-turnaround.png",
+    "replication/output/guoqing-p1-lengbaoli/assets/locations/scene-livingroom.png",
+    "replication/output/guoqing-p1-lengbaoli/shots/shot-U1/images/U1-last.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "storyboard H2 keyframe for U2-last; shared boundary frames: U2-first=U1-last, U3-first=U2-last (¥0 copy)",
+      "headphones state per storyboard prop chain (head -> her hand -> sofa cushion)",
+      "axis: woman frame-left, man frame-right, camera on coffee-table side; light = SC_LIVING ceiling+floor lamp",
+      "emotion via brows/lip-bite/mouth/body; no tear/eye-color wording (H3 glowing-eye lesson)",
+      "positive phrasing, East Asian lock, 16:9 1344x768"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "9ee38ca7319de1c3c2e96aaaed7398db0cb77db5c91f1d62cd203af2409e9c20"
+  }
+}

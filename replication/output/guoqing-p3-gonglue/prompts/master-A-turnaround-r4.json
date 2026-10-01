@@ -1,0 +1,24 @@
+{
+  "prompt": "Photorealistic five-view full-body character turnaround sheet of a young East Asian Chinese woman on a plain light warm-grey studio backdrop, 16:9 horizontal, based on the reference image. Keep the same person, face and long loose black hair, the same beige knit sweater, light-blue jeans, white sneakers and the same plain black backpack, in the same five standing views. Add two items to her in every view: 1) a cross-body water bottle: a thin plain black strap runs diagonally from her right shoulder across her chest to her left hip, where a plain solid light-grey cylindrical water bottle hangs clearly visible against her jeans; the diagonal strap is clearly visible across the front of her sweater in the front and three-quarter views and the bottle is visible at her hip in the side and back views. 2) a smartphone in a plain dark case held in her right hand down by her side, clearly visible in every view, screen facing her body. Her hands are no longer empty. The bottle, strap, phone case, backpack and shoes have no logo, no label, no tag, no patch, no emblem and no printed or readable text. Bright soft even diffused light. Natural skin texture with visible pores, subtle film grain, matte skin, real iPhone 17 photographic texture, no plastic skin, no CGI, no 3D render look. No text, no letters, no numbers, no watermark, no logo, no brand mark and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p3-gonglue/assets/characters/A-turnaround-r3.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "base = A-turnaround-r3 (backpack ok); add only cross-body plain bottle + phone in right hand (r3 missed both)",
+      "keep identity/sweater/jeans/shoes/backpack",
+      "no logo/label/text/watermark; 16:9 1344x768",
+      "East Asian lock; realistic texture"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "72cf9942086f21c9c25d6a3f655e6f0bca5f157c3c1f6a34c7f890abe002d034"
+  }
+}

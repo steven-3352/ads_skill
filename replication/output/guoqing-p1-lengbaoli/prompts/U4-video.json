@@ -1,0 +1,38 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage of an ordinary East Asian Chinese couple at night in a bright home living room, natural skin texture with visible pores, subtle film grain, soft diffused light from the ceiling light and a floor lamp, bright airy natural neutral warm-white, matte skin with a soft even finish. Behind them a light-grey fabric sofa with yellow and cream cushions, a floor lamp at the left end of the sofa, a light-wood bookshelf with green plants and a doorway in soft focus; a low light-wood coffee table in front of the sofa. The woman stays on the left of the frame: long black hair with a center part, a plain beige to light-apricot knit home top and mid-blue jeans. The man stays on the right of the frame: clean short black hair, a plain light-grey crew-neck T-shirt and dark charcoal trousers. The camera stays on the coffee-table side facing the sofa and never crosses the line between them. The shot begins exactly as in Picture 1, a slightly wider eye-level handheld medium two-shot: the woman frame-left leaning toward him, the man frame-right tipping forward with his hand starting to rise, the plain matte dark-grey over-ear headphones on the sofa cushion behind them. He steps toward her and reaches for her hand, urgent and anxious, and the man (S2) says quickly: <d>[Chinese]好好好，我说，我说——</d> She steps back out of his reach, his hand stops and hangs in mid-air; with a bitter half-laugh she wipes her cheek with the back of her hand, then turns her face straight to the camera, looking directly into the lens, exasperated and wronged, brows knitted, voice loud and fast, and the woman (S1) says: <d>[Chinese]现在才说……姐妹们，这日子没法过了，绝对不能找冷暴力。</d> The moment her last word lands, she holds still staring into the lens with his hand still hanging behind her, a nearly still final moment of about 0.8 seconds, arriving at the exact poses and composition established by Picture 2 at the end of the shot. The headphones and phone stay plain and unmarked, the phone screen faces away from the camera. Both speak at a normal-to-fast pace, picking up each other's lines instantly with no pauses and no lingering silence. No subtitles, captions, on-screen text, Chinese characters or watermark appear at any point.\n\noverall_soundscape: A television in the room plays very low and indistinct throughout, under a soft constant room tone, so the room never drops into dead silence. His quick hurried step on the wooden floor; her step backward; a short sharp sniff and catch of breath from her before and after her line; in the final still moment only the quiet room tone and the faint television remain.\n\nnon_diegetic_music: N/A",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/guoqing-p1-lengbaoli/shots/shot-U4/images/U4-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/guoqing-p1-lengbaoli/shots/shot-U4/images/U4-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA 6s per storyboard H1/H2; instruction line per base-en.txt; single shot",
+      "verbatim dialogue per screenplay <d>[Chinese]; S1=woman S2=man; normal-to-fast pace >=4.8 chars/s, no dead tail",
+      "headphones state per prop chain; axis woman LEFT man RIGHT; camera coffee-table side",
+      "performance: she high-arousal (brows/lip-bite/loud/steps in); he anxious, hand reaches then retracts, not cold/mocking; no tear/red-eye/glow wording",
+      "overall_soundscape: low TV, headphone rip, headphones thump on sofa, footsteps, her breaths; music N/A",
+      "anti-subtitle; no brand; 16:9 768P"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "35cc2bf5d314c6fdfbbc50d85b93cfdd0eac19e6a0006e15aa3aaa179127077e"
+  }
+}

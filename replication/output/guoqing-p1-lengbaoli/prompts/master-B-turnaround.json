@@ -1,0 +1,25 @@
+{
+  "prompt": "Photorealistic five-view full-body character turnaround sheet of a young East Asian Chinese man, an ordinary real Chinese face, the exact same person as the reference image: the same face, the same clean tidy short black hair, the same sincere ordinary-guy look. One 16:9 horizontal image on a plain light warm-grey studio backdrop, five full-body standing views of him side by side at equal size and spacing, left to right: 1) front view facing the camera, 2) three-quarter view turned to his left, 3) three-quarter view turned to his right, 4) full side profile, 5) back view. Head to toe fully visible in every view, relaxed neutral standing pose, arms resting naturally at his sides, calm serious expression. He wears the same home outfit as the reference in every view: the same plain solid light-grey crew-neck short-sleeve T-shirt, plain dark charcoal long casual trousers, and plain dark-grey soft home slippers. Around his neck in every view rests a pair of over-ear headphones: a smooth matte dark-grey headband and two round cushioned matte dark-grey ear cups resting on his collarbones, with completely smooth plain unmarked surfaces all over, a simple generic design; the headphones are clearly visible in the front, three-quarter and side views and the headband is visible at the back of his neck in the back view. Bright soft even diffused studio light, natural neutral warm-white color temperature. Natural skin texture with visible pores and fine detail, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with a soft even finish, real iPhone 17 Pro photographic texture, true-to-life white balance and natural colors, the look of a real candid photograph of real people. The backdrop is clean and plain, the image is pure photographic content.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/dou-keyi/assets/master-B.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "positive-only phrasing (P3 lesson: negative clauses pull X into frame); text/logo handled as 'plain unmarked surfaces'",
+      "East Asian Chinese lock explicit",
+      "identity + outfit anchored to dou-keyi accepted reference",
+      "16:9 1344x768 = H3 16:9 tier (no aspect distortion)",
+      "iPhone 17 real texture, matte soft diffused light, bright ceiling light + floor lamp"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8fb5f13aec2cfd6c76dd291a4004810d088539da0637bea9545cee6c91f6b207"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "prompt": "Photorealistic candid frame from a real handheld iPhone video, the first frame of an argument at a scenic-spot entrance. The frustrated woman has her right arm already raised and thrust forward, mid-motion, pushing her smartphone in a plain dark case toward the man's chest; the phone is still in her hand, a few centimeters from his chest, about to slap against it. Her face is exasperated and fed-up, brows knitted, mouth open as if shouting 'you do it'. The man is caught off guard, eyebrows raised, body just starting to lean back, both hands still down and empty. Motion energy, slight motion blur on her hand. Reference images: the first reference is the man's turnaround sheet, the second is the woman's turnaround sheet, the third is the location: it shows (scenic-spot entrance ticket-check queue area with metal barriers, turnstiles and a stone archway); Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or idol faces). The woman on the LEFT of the frame is the same person as in her turnaround sheet: same face, long loose natural black hair, beige knit sweater, light-blue jeans, plain white sneakers, a plain matte black city backpack on both shoulders and a plain light-grey water bottle hanging at her hip from a thin black cross-body strap. The man on the RIGHT of the frame is the same person as in his turnaround sheet: same face, clean short black hair, a plain light-grey crew-neck T-shirt with both shoulders clean and uncovered by anything, dark blue jeans, plain white canvas sneakers; he is travelling light, dressed exactly like his turnaround sheet, the grey T-shirt fully visible across his chest, shoulders and upper arms. Setting: the same crowded National Day scenic-spot entrance ticket-check queue area as the scene reference, sunny daytime; behind them a dense queue of tourists, silver metal barrier railings, turnstile gates and the distant stone archway, all heavily blurred in shallow depth of field, no background face sharp. Camera: eye-level handheld medium two-shot, waist-up, 16:9 horizontal, the two of them large in the foreground, woman frame-left and man frame-right on a consistent axis. Lighting: bright airy natural daylight, sunlight coming softly from behind and to the side as a gentle side-backlight rim on hair and shoulders, faces lit by soft diffused fill light, natural neutral color temperature, matte skin with no oily facial glare or highlight sheen, not moody, not dark. Natural skin texture with visible pores, subtle natural film grain and gentle sensor noise, real iPhone 17 handheld photographic texture, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. Any phone screen faces the person, never the camera. Clothing, backpack, bottle, phone case and shoes are plain with no logo, label or print. No text, no subtitles, no captions, no letters, no watermark, no logo, no readable signs and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p3-gonglue/assets/characters/B-turnaround-r3.png",
+    "replication/output/guoqing-p3-gonglue/assets/characters/A-turnaround-r4.png",
+    "replication/output/guoqing-p3-gonglue/assets/locations/scene-gate-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "U1 FL2VA start: phone in A's raised right hand thrusting toward B's chest, B empty-handed surprised",
+      "A left / B right axis; A backpack+bottle, B no bag",
+      "side-backlight, matte faces, iPhone texture, no text/logo",
+      "East Asian lock; identity+outfit via accepted turnarounds (A-r4/B-r3) + scene-gate-r2",
+      "16:9 1344x768 matches H3 16:9",
+      "hardened: man has NO backpack/straps (U1-first r1 rendered a backpack on him), both people framed readable",
+      "r3: same strategy as U1-last (man described only positively, B turnaround first ref)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1dc6fe384b579e72bfeb178ced42c4c7335a1618b43eff99d490ae764b52a1f0"
+  }
+}

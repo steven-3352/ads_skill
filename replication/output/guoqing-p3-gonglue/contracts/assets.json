@@ -1,0 +1,47 @@
+{
+  "project": "guoqing-p3",
+  "assets": [
+    {
+      "id": "A-face-master",
+      "path": "assets/characters/A-face-master.png",
+      "role": "A 脸/发型身份根",
+      "source": "dou-keyi/assets/master-A.png",
+      "sha256": "baf711284f6e8da7805ba48b9ea51c27c1b0438173e918085f8219a694c45af1",
+      "cost_yuan": 0,
+      "status": "reused_accepted_upstream"
+    },
+    {
+      "id": "B-face-master",
+      "path": "assets/characters/B-face-master.png",
+      "role": "B 脸/发型身份根",
+      "source": "dou-keyi/assets/master-B.png",
+      "sha256": "af70e60982a8dd7a73c11d6c68b777346117c2c5597ec3b941aa63167d4a5525",
+      "cost_yuan": 0,
+      "status": "reused_accepted_upstream"
+    },
+    {
+      "id": "A-turnaround",
+      "paid_id": null,
+      "path": null,
+      "role": "A 出游服装五视图（燕麦衬衫外套敞开+白T+浅蓝直筒牛仔+白帆布鞋；素黑双肩包+斜挎透明水壶+深色素壳手机）",
+      "status": "blocked_needs_human_decision",
+      "note": "r1(服装未换/道具缺)与 r2(冲锋衣+工装裤+登山包带标志) 均 rejected，已达重生上限，待人工定改法"
+    },
+    {
+      "id": "B-turnaround",
+      "paid_id": "master-B-turnaround-r2",
+      "path": "assets/characters/B-turnaround-r2.png",
+      "role": "B 出游服装五视图（浅灰T+深卡其长裤+白灰运动鞋；两手空空不背包）",
+      "status": "generated_pending_qc",
+      "note": "r1 rejected(蓝牛仔/鞋似swoosh)；r2 脸像空手 ✓，裤仍深色牛仔、鞋仍似swoosh，待人工判"
+    },
+    {
+      "id": "scene-gate",
+      "paid_id": "scene-gate-r2",
+      "path": "assets/locations/scene-gate-r2.png",
+      "role": "景区入口检票排队区空间/光向基准，16:9，前景留双人中景位",
+      "status": "generated_pending_qc",
+      "note": "r1 rejected(右下角水印)；r2 自检通过"
+    }
+  ]
+}

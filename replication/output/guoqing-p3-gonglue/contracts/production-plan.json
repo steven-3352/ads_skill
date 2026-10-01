@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "projectId": "guoqing-p3",
+  "title": "《国庆出游，我做了20页攻略，他只带了个人》——国庆 20s 对白驱动情感短剧",
+  "note": "16:9 横屏约 20.5s，国庆景区入口检票排队区单一连续场景，对白驱动、零旁白、成片零字幕。4 个 H3 生成单元一对一逐镜：U1 FL2VA(手机从 A 手里易主到 B 胸前，首尾 2 帧)，U2/U3/U4 I2VA(各 1 首帧)。衔接=母板身份锁(dou-keyi 脸 + 本片服装五视图) + 场景图空间锁 + 逐单元道具状态锚(手机自 U1 尾起一直在 B 手里；A 双肩包+斜挎水壶始终在身；B 两手空空不背包) + 对白 beat 动接动硬切。仅 A/B 两人，锁 East Asian 中国人；A 画左 B 画右不越轴。",
+  "revision": 1,
+  "promptPolicy": {
+    "model": "MiniMax-H3",
+    "authoringSkill": "h3-prompt-writing",
+    "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+  },
+  "constraints": {
+    "maxGenerationSeconds": 8,
+    "minDialogueCharsPerSecond": 3.0
+  },
+  "estTotalDurationSec": 20.5,
+  "aspectRatio": "16:9",
+  "casting": {
+    "A": "A（她）：中国人 East Asian，24-28 岁，黑长发披发（脸/发型=dou-keyi master-A）。出游装：燕麦色薄棉衬衫外套敞开+纯白圆领短袖T+浅蓝直筒牛仔裤+白色帆布鞋；素黑双肩包背身上、斜挎透明水壶、深色素壳手机——一身装备。全身无 logo/印花/文字。累到爆、憋屈、连珠炮，结尾气笑转头对镜。母板 assets/characters/A-face-master.png + A-turnaround.png。",
+    "B": "B（他）：中国人 East Asian，26-30 岁，清爽短发（脸/发型=dou-keyi master-B）。出游装：浅灰纯色短袖T+深卡其休闲长裤+白灰素色运动鞋；两手空空、全身不背包不拎东西（“只带了个人”的视觉证据）。真不挑、真觉得在配合，手忙脚乱、冤、发懵，不演混蛋、不嘲讽不耐烦。母板 assets/characters/B-face-master.png + B-turnaround.png。"
+  },
+  "subtitlePolicy": "成片零烧对白字幕(anti-subtitle + 人工逐帧查残留)；对白由 H3 同镜内嵌一次性生成；手机屏幕不朝镜头，画面零可读文字/招牌/logo。",
+  "narrativeShots": [
+    {
+      "id": "U1",
+      "title": "炸点开场·手机拍胸口",
+      "sceneId": "SC_GATE",
+      "style": "中景双人侧45°同框，A 画左 B 画右，手持微晃；片头即动作起",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "你来！你不是都行吗？你来！"
+      },
+      "watchFocus": "第0帧即冲突动作：A 把手机拍到 B 胸口，B 手忙脚乱接住——“你都行那你来”",
+      "requiredBeats": [
+        {
+          "id": "U1-B1",
+          "sceneId": "SC_GATE",
+          "text": "国庆景区入口检票排队区，白天晴天明亮通透，背景人潮与金属护栏浅景深虚化。第0帧 A（画左，背素黑双肩包、斜挎透明水壶）已抬手、深色素壳手机在半空冲向 B（画右，两手空空）；约0.3s 手机“啪”地拍到 B 胸口，A 嗓门冲『你来！你不是都行吗？你来！』；B 被拍得后仰半步，双手慌乱按住胸前手机『哎哎哎——行行行，我来，我来！』。尾帧：手机在 B 胸前被他双手捂住，A 手已松开收回。表演：A 累到爆的冲劲，B 手忙脚乱不是混蛋。音效：手机拍胸口啪声、人潮嘈杂、扩音器模糊广播（不可辨字）、闸机嘀声、脚步。画面零文字。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U1",
+          "sceneId": "SC_GATE",
+          "durationSeconds": 4,
+          "mode": "FL2VA",
+          "references": [
+            "assets/characters/A-turnaround-r4.png",
+            "assets/characters/B-turnaround-r3.png",
+            "assets/locations/scene-gate-r2.png",
+            "assets/characters/A-face-master.png",
+            "assets/characters/B-face-master.png"
+          ],
+          "prompts": {
+            "images": [
+              "prompts/U1-first.json",
+              "prompts/U1-last.json"
+            ],
+            "video": "prompts/U1-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U1/images/U1-first.png",
+            "lastFrame": "shots/shot-U1/images/U1-last.png",
+            "video": "shots/shot-U1/video/U1.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U1-C1",
+              "seconds": 4,
+              "note": "状态突变 FL2VA（首：A 持机冲向 B 胸口、B 空手；尾：手机在 B 胸前 B 双手捂住、A 手已松开）",
+              "coverage": [
+                {
+                  "beatId": "U1-B1",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U2"
+    },
+    {
+      "id": "U2",
+      "title": "他接了，但不会",
+      "sceneId": "SC_GATE",
+      "style": "中景双人，略偏 B 肩后可见 A 正脸，手持跟随",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "发你三遍了！三遍！我排队找路，一张照片都没拍上！"
+      },
+      "watchFocus": "B 接手即露怯（找不到码、被挤踉跄还嫌累），A 打断甩证据并埋“照片没拍”伏笔",
+      "requiredBeats": [
+        {
+          "id": "U2-B1",
+          "sceneId": "SC_GATE",
+          "text": "同一检票排队区延续。手机在 B 手里、A 空手抱臂（状态锚）。B 低头戳屏边翻边嘟囔『码呢……码在哪啊？这么多人，至于这么累吗——』，被身后人流挤得往前一踉跄；A 抱臂瞪他，打断时身体前倾、举起自己的手机晃一下（屏幕不朝镜头）『发你三遍了！三遍！我排队找路，一张照片都没拍上！』。表演：B 真不会不是摆烂，A 憋屈抢话不留死尾。音效：人潮、被挤的衣料摩擦与踉跄脚步、戳屏轻响、扩音器模糊广播。画面零文字。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U2",
+          "sceneId": "SC_GATE",
+          "durationSeconds": 6,
+          "mode": "I2VA",
+          "references": [
+            "assets/characters/A-turnaround-r4.png",
+            "assets/characters/B-turnaround-r3.png",
+            "assets/locations/scene-gate-r2.png",
+            "assets/characters/A-face-master.png",
+            "assets/characters/B-face-master.png"
+          ],
+          "prompts": {
+            "images": [
+              "prompts/U2-first.json"
+            ],
+            "video": "prompts/U2-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U2/images/U2-first.png",
+            "video": "shots/shot-U2/video/U2.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U2-C1",
+              "seconds": 6,
+              "note": "对白 beat I2VA 单首帧（B 低头握手机、A 抱臂侧脸瞪他），成片剪 5.5s",
+              "coverage": [
+                {
+                  "beatId": "U2-B1",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U3"
+    },
+    {
+      "id": "U3",
+      "title": "对撞：我都行 vs 20页",
+      "sceneId": "SC_GATE",
+      "style": "中景双人正侧同框（稍近），A 正对镜头方向，手持",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "天气、路线、门票、吃饭，二十页，我一个人弄的！你就带了个人！"
+      },
+      "watchFocus": "两派立场对撞：他“听你的还不行”vs 她掰手指数二十页，题眼“你就带了个人”指他空手",
+      "requiredBeats": [
+        {
+          "id": "U3-B1",
+          "sceneId": "SC_GATE",
+          "text": "同一检票排队区延续，手机仍在 B 手里。B 抬头一脸冤、摊开一只手『我不挑啊，听你的还不行？』；A 打断，右手一根根掰左手手指越说越快『天气、路线、门票、吃饭，二十页，我一个人弄的！你就带了个人！』，最后一指 B 空着的另一只手/空身。表演：A 连珠炮高唤醒，B 冤而不怼。音效：人潮、掰手指时衣料与包带轻响、扩音器模糊广播。画面零文字。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U3",
+          "sceneId": "SC_GATE",
+          "durationSeconds": 6,
+          "mode": "I2VA",
+          "references": [
+            "assets/characters/A-turnaround-r4.png",
+            "assets/characters/B-turnaround-r3.png",
+            "assets/locations/scene-gate-r2.png",
+            "assets/characters/A-face-master.png",
+            "assets/characters/B-face-master.png"
+          ],
+          "prompts": {
+            "images": [
+              "prompts/U3-first.json"
+            ],
+            "video": "prompts/U3-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U3/images/U3-first.png",
+            "video": "shots/shot-U3/video/U3.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U3-C1",
+              "seconds": 6,
+              "note": "对白 beat I2VA 单首帧（A 抬起双手准备掰手指、B 抬头摊手），成片剪 5.5s",
+              "coverage": [
+                {
+                  "beatId": "U3-B1",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "U4"
+    },
+    {
+      "id": "U4",
+      "title": "收口金句·对镜定格",
+      "sceneId": "SC_GATE",
+      "style": "中景双人同框，A 转头时缓推至中近景（A 正对镜头、B 在旁入画）",
+      "source": {
+        "storyFile": "story/screenplay.md",
+        "verbatim": "姐妹们出来玩好累，照片都没拍，好像换了他。"
+      },
+      "watchFocus": "他真不会（检票口往哪走）→ 她气笑转头对镜喊观众站队，回收照片伏笔",
+      "requiredBeats": [
+        {
+          "id": "U4-B1",
+          "sceneId": "SC_GATE",
+          "text": "同一检票排队区延续，手机在 B 手里。B 被说得一噎，低头看手机小声真诚发懵地问『哎……那检票口往哪走啊？往哪走？』；A 气笑，转头直冲镜头，累到崩溃又好笑地吐槽『姐妹们出来玩好累，照片都没拍，好像换了他。』；镜头缓推至中近景，尾 B 在旁举着手机抬头发懵。台词落地即定格≤0.7s（后期），不黑场，环境人声延续到最后一帧。音效：人潮、闸机嘀声、扩音器模糊广播。画面零文字。",
+          "channels": [
+            "picture",
+            "dialogue",
+            "action_sound",
+            "ambience"
+          ]
+        }
+      ],
+      "generationUnits": [
+        {
+          "id": "U4",
+          "sceneId": "SC_GATE",
+          "durationSeconds": 6,
+          "mode": "I2VA",
+          "references": [
+            "assets/characters/A-turnaround-r4.png",
+            "assets/characters/B-turnaround-r3.png",
+            "assets/locations/scene-gate-r2.png",
+            "assets/characters/A-face-master.png",
+            "assets/characters/B-face-master.png"
+          ],
+          "prompts": {
+            "images": [
+              "prompts/U4-first.json"
+            ],
+            "video": "prompts/U4-video.json"
+          },
+          "media": {
+            "firstFrame": "shots/shot-U4/images/U4-first.png",
+            "video": "shots/shot-U4/video/U4.mp4"
+          },
+          "cuts": [
+            {
+              "id": "U4-C1",
+              "seconds": 6,
+              "note": "对白 beat I2VA 单首帧（B 低头看手机、A 侧身对 B）；若漏演 A 转头对镜改 FL2VA 补尾帧 +¥0.25；成片剪 5.5s 含定格",
+              "coverage": [
+                {
+                  "beatId": "U4-B1",
+                  "channels": [
+                    "picture",
+                    "dialogue",
+                    "action_sound",
+                    "ambience"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "postTasks": [],
+      "linkNext": "END"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage of an ordinary East Asian Chinese couple, natural skin texture with visible pores, subtle film grain, soft diffuse daylight, matte skin with no oily shine, no waxy, plastic or CGI sheen, at a crowded, bright sunny National Day scenic-spot entrance ticket-check queue area; behind them a dense queue of tourists, silver metal barrier railings, turnstile gates and a distant stone archway, all heavily blurred in shallow depth of field. The woman stays on the left of the frame in a beige knit sweater and light-blue jeans with a plain matte black backpack on both shoulders and a plain light-grey water bottle at her hip on a thin cross-body strap; the man stays on the right in a plain light-grey T-shirt and dark blue jeans, carrying nothing at all, no bag. The shot begins exactly as in <Picture 1>: a medium two-shot, the man deflated and looking down at the phone held in both hands at chest height, the woman turned toward him with an exasperated half-laugh starting at the corner of her mouth. Right away, quietly and sincerely lost, the young man with a soft, puzzled voice (S2) asks at a normal quick pace: <d>[Chinese]哎……那检票口往哪走啊？往哪走？</d> The woman lets out a short disbelieving laugh, turns her head away from him and looks directly into the camera lens, while the camera pushes in with small amplitude at slow speed to a medium close-up that keeps her face frame-left and the man still visible beside her. Looking straight at the viewer, tired to the point of collapse yet laughing, the young woman with a clear, sharp, fast voice (S1) complains at a quick pace: <d>[Chinese]姐妹们出来玩好累，照片都没拍，好像换了他。</d> Beside her the man lifts his head from the phone, still holding it up, and stares blankly. For the final moment both hold still: she keeps looking straight into the lens with a see-what-I-mean expression and he stands dazed beside her with the phone raised; the shot holds and does not fade to black. Any phone screen faces the person holding it, never the camera. All clothing, the backpack, the bottle and the phone case are plain with no logo or print, and no readable signs appear in the background. No subtitles, captions, on-screen text, Chinese characters or watermark appear at any point.\n\noverall_soundscape: A dense crowd murmur of many tourists, an indistinct distorted loudspeaker announcement and the repeated short electronic beep of the turnstile gates continue underneath throughout and never drop into silence, with shuffling footsteps on stone paving. A short breathy laugh from her and a soft rustle of her sweater as she turns her head; the crowd ambience continues to the very last frame.\n\nnon_diegetic_music: N/A",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/guoqing-p3-gonglue/shots/shot-U4/images/U4-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA 6s from U4-first: B looking down at phone, A half-laugh turned to him",
+      "A turns head to look directly into the lens (fourth wall), slow small push-in to medium close-up keeping B in frame; B lifts head dazed holding phone",
+      "final ~0.7s held still state (定格-able), no fade to black",
+      "verbatim dialogue per screenplay U4 <d>[Chinese] incl. ending line exactly; normal-quick pace, no dead tail",
+      "16:9 768P; iPhone realistic pores/grain, matte skin no shine, no waxy/plastic/CGI; soft diffuse daylight",
+      "East Asian Chinese couple; woman LEFT with black backpack + grey bottle, man RIGHT empty-handed no bag (matches accepted keyframes)",
+      "no brand/logo/print, no readable signs; phone screen never to camera; anti-subtitle; no tear/red-eye/glow wording",
+      "overall_soundscape: crowd murmur, indistinct loudspeaker, turnstile beeps, footsteps continuous; non_diegetic_music N/A (screenplay: no BGM)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "92389074270594c40064f19f4670e9b51a13b52c543734b7440e4f4a69b8f131"
+  }
+}

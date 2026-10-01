@@ -1,0 +1,30 @@
+{
+  "prompt": "Photorealistic candid frame from a real handheld iPhone video, moments later in the same place (the first reference image shows the previous moment, same people and camera axis). The man, deflated, looks down at the smartphone held in both hands at chest height, lips slightly parted as if quietly and sincerely asking which way the ticket gate is, genuinely lost. The woman stands turned toward him, arms lowered, an exasperated half-laugh starting at the corner of her mouth, her head just beginning to turn from him toward the camera, eyes moving toward the lens. Reference images: the first reference is the previous moment of this scene (same people, same place, same camera axis), the second is the man's turnaround sheet, the third is the woman's turnaround sheet, the fourth is the location: it shows (scenic-spot entrance ticket-check queue area with metal barriers, turnstiles and a stone archway); Both are ordinary real East Asian Chinese people (absolutely not Western or Caucasian faces, not influencer or idol faces). The woman on the LEFT of the frame is the same person as in her turnaround sheet: same face, long loose natural black hair, beige knit sweater, light-blue jeans, plain white sneakers, a plain matte black city backpack on both shoulders and a plain light-grey water bottle hanging at her hip from a thin black cross-body strap. The man on the RIGHT of the frame is the same person as in his turnaround sheet: same face, clean short black hair, a plain light-grey crew-neck T-shirt with both shoulders clean and uncovered by anything, dark blue jeans, plain white canvas sneakers; he is travelling light, dressed exactly like his turnaround sheet, the grey T-shirt fully visible across his chest, shoulders and upper arms. Setting: the same crowded National Day scenic-spot entrance ticket-check queue area as the scene reference, sunny daytime; behind them a dense queue of tourists, silver metal barrier railings, turnstile gates and the distant stone archway, all heavily blurred in shallow depth of field, no background face sharp. Camera: eye-level handheld medium two-shot, waist-up, 16:9 horizontal, the two of them large in the foreground, woman frame-left and man frame-right on a consistent axis. Lighting: bright airy natural daylight, sunlight coming softly from behind and to the side as a gentle side-backlight rim on hair and shoulders, faces lit by soft diffused fill light, natural neutral color temperature, matte skin with no oily facial glare or highlight sheen, not moody, not dark. Natural skin texture with visible pores, subtle natural film grain and gentle sensor noise, real iPhone 17 handheld photographic texture, true-to-life white balance. no plastic skin, no waxy over-smoothed face, no beauty-filter, no CGI, no 3D render look, no over-sharpening, no over-HDR. Any phone screen faces the person, never the camera. Clothing, backpack, bottle, phone case and shoes are plain with no logo, label or print. No text, no subtitles, no captions, no letters, no watermark, no logo, no readable signs and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p3-gonglue/shots/shot-U3/images/U3-first.png",
+    "replication/output/guoqing-p3-gonglue/assets/characters/B-turnaround-r3.png",
+    "replication/output/guoqing-p3-gonglue/assets/characters/A-turnaround-r4.png",
+    "replication/output/guoqing-p3-gonglue/assets/locations/scene-gate-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "U4 I2VA start: B head down at phone asking quietly; A half-laughing, head starting to turn toward camera",
+      "continuity lead = U3-first",
+      "A left / B right; no text/logo",
+      "East Asian lock; identity+outfit via accepted turnarounds (A-r4/B-r3) + scene-gate-r2",
+      "16:9 1344x768 matches H3 16:9",
+      "hardened: man has NO backpack/straps (U1-first r1 rendered a backpack on him), both people framed readable",
+      "U1-last-proven strategy: man described only positively, B turnaround 2nd ref, chain lead = previous accepted-candidate frame shots/shot-U3/images/U3-first.png"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "89358bc6258dfcfc0131b105d7a8238e2aefe468bfcc46566201e77db0bd1a9d"
+  }
+}

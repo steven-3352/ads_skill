@@ -1,0 +1,33 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, East Asian Chinese couple, natural skin texture with visible pores and fine detail, soft diffuse even light, matte skin with no shine, no waxy or CGI sheen, in a warm, brightly and evenly lit living room. The couple begin exactly as in <Picture 1>, preserving their faces, clothing and seats: the woman on the left holding the plain unbranded milk-tea cup with a straw at her lips in both hands, the man on the right looking down at his phone with a content little smile. The camera holds a static shot. The woman releases the straw from her lips, lowers the cup to her chest, the corner of her mouth twitches, and she turns her head to look directly into the camera lens, breaking the fourth wall. Looking straight into the lens, half aggrieved and half amused, the young woman with a clear, lively voice (S1) says at a normal, slightly quick pace with no trailing pause: <d>[Chinese]姐妹们，全糖就全糖吧，反正他也记不住。</d> On the second half of the line she gives a small chin nod sideways toward the man, then presses her lips into a resigned, wry little smile. Throughout, the man keeps looking down at his phone, scrolling with his thumb, content and completely oblivious; he never looks at her, never looks at the camera and does not react to her words. In the final half second she holds still, still looking straight into the lens with the wry smile, the frame stays bright and does not fade to black. No subtitles, captions, on-screen text, Chinese characters or watermark appear at any point.\n\noverall_soundscape: A low television murmur and faint room ambience continue underneath without ever dropping to silence, including the final held moment. The straw leaves her lips with a soft pop, pearls shift in the cup as she lowers it, and his thumb lightly taps the phone screen.\n\nnon_diegetic_music: N/A",
+  "model": "MiniMax-H3",
+  "duration": 5,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U8p/images/U8p-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA 5s: Picture1=U7.mp4@4.10 ¥0 frame grab of accepted U7-video; forward development: release straw -> lower cup -> turn to lens -> line -> chin nod -> wry smile -> hold",
+      "user-final line verbatim <d>[Chinese]姐妹们，全糖就全糖吧，反正他也记不住。</d>; S1=woman only; normal slightly quick pace, no trailing pause",
+      "B locked: looks down at phone, content, oblivious, never looks at her or camera, no mocking",
+      "straw present (continuity from U7); final ~0.5s held gaze into lens, no fade to black",
+      "16:9; iPhone realistic pores/matte/no waxy-CGI; soft diffuse light no facial shine; Chinese couple; unbranded; anti-subtitle; no tear/red-eye/glow wording",
+      "soundscape continuous TV murmur incl. ending + straw pop + pearls + phone taps; music N/A per screenplay"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "041e512fe445588d5c344703d2d070b4b583e03ffb04b5b3e4583bbc66f2c119"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "prompt": "Photorealistic five-view full-body character turnaround sheet of a young East Asian Chinese woman on a plain light warm-grey studio backdrop, 16:9 horizontal, based on the first reference image. Keep the same person, the same face and long loose black hair (the second reference image shows her face more closely), the same beige knit sweater, the same light-blue jeans and the same layout of five standing views. Add travel gear to her in every view: a plain solid matte black everyday city backpack (a simple minimalist commuter backpack, not a hiking or outdoor backpack, no chest strap, no hip belt, no webbing loops) worn on both shoulders, with its black shoulder straps visible in front views and the whole plain black backpack visible in back views; a plain solid light-grey water bottle hanging at her hip from a thin plain strap worn diagonally across her body; and a smartphone in a plain dark case held in one hand with the screen facing her. Her shoes are plain pure-white low-top canvas sneakers with completely smooth plain sides. The backpack, straps, bottle, phone case and shoes have no logo, no label, no tag, no patch, no badge, no emblem, no stitched symbol and no printed or readable text of any kind. Bright soft even diffused light, neutral color temperature. Natural skin texture with visible pores, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily glare. Real iPhone 17 photographic texture. no plastic skin, no waxy over-smoothed face, no beauty-filter, no CGI, no 3D render look, no over-HDR. No text, no letters, no numbers, no labels, no watermark, no logo, no brand mark and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p3-gonglue/assets/characters/A-turnaround.png",
+    "replication/output/guoqing-p3-gonglue/assets/characters/A-face-master.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "base = A-turnaround r1 (main-session decision): keep identity, beige knit sweater, light-blue jeans; add gear only",
+      "add plain matte black city backpack (not hiking), cross-body plain water bottle, dark-case phone in hand",
+      "white canvas shoes plain; all gear/shoes no logo/label/tag/patch/text",
+      "second reference = dou-keyi master-A face for identity",
+      "no text/logo/watermark; 16:9 1344x768",
+      "East Asian lock; iPhone realistic texture"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "8f3c1ab2387ce40f08d203c41525cc86593325aae68d670d06e08856d9ce4740"
+  }
+}

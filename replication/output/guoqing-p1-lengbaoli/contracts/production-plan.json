@@ -1,0 +1,360 @@
+{
+ "schemaVersion": 1,
+ "projectId": "guoqing-p1",
+ "title": "《你说你要冷静，可你冷的是我》——国庆 20s 对白驱动情感短剧",
+ "note": "16:9 横屏约 21.3s（4 单元 20.5s + 0.8s 定格），dou-keyi 同一居家客厅单一连续场景 SC_LIVING，对白驱动、零旁白、成片零字幕。4 个 H3 生成单元一对一逐镜：U1 FL2VA(扯耳机)、U2 FL2VA(甩耳机+坐→站，首帧共享 U1-last)、U3 I2VA(首帧共享 U2-last)、U4 FL2VA(后退+转头对镜，尾帧=定格帧)。新关键帧 5 张（U1-first/U1-last/U2-last/U4-first/U4-last）。衔接=母板身份锁(dou-keyi 脸 + 本片居家装五视图) + 场景图空间锁 + 耳机道具状态锚(B头上→A手里→沙发垫上，至片尾可见) + 共享边界帧 + 对白 beat 动接动硬切。仅 A/B 两人，锁 East Asian 中国人；A 画左 B 画右不越轴。",
+ "revision": 1,
+ "promptPolicy": {
+  "model": "MiniMax-H3",
+  "authoringSkill": "h3-prompt-writing",
+  "reviewGate": "replication/tools/validate-h3-prompt-review.sh"
+ },
+ "constraints": {
+  "maxGenerationSeconds": 8,
+  "minDialogueCharsPerSecond": 3.0
+ },
+ "estTotalDurationSec": 21.3,
+ "aspectRatio": "16:9",
+ "sceneSettings": {
+  "SC_LIVING": {
+   "space": "dou-keyi 同一居家客厅。机位正对沙发：浅灰布艺三人沙发（黄/米色抱枕）靠后墙居中偏右；沙发画左端旁立落地灯；后墙画左为原木书架+绿植；书架再往画左后景为通向门廊的开口（远处门廊）；原木矮茶几在沙发正前方偏画右、画面下沿。沙发前与茶几画左侧之间是一块空地（两人站立对峙区）。B 起初坐沙发中间偏右（画右）；A 从画左进入站在他左前方。U2 起 B 在原地站起，两人在沙发前空地面对面相距一臂（A 画左 B 画右），耳机落在两人之间身后的沙发垫上；U3 A 向画右逼近一步；U4 B 向画左迈一步、A 向画左后退一步并转头正对镜头。",
+   "axis": "A–B 连线为 180° 轴，A 恒在画左、B 恒在画右；摄影机固定在茶几/观众一侧（沙发正前方），全片不越轴、不绕到沙发后。U4 A 转头直视镜头属打破第四面墙，机位不变不越轴。",
+   "light": "顶灯（画面上方居中，主光，柔和漫射）开 + 画左后方落地灯（辅光/轮廓）亮；夜晚屋内灯正常亮，明亮通透，中性偏暖白约 4000K；脸部柔光哑光无油光，光色只染环境不染黄脸；全场不变。",
+   "lens": "中焦感（约 35–50mm 等效），平视为主（U1 略低于站立 A 的视线、约坐姿 B 胸口高度）；人物清晰，书架/绿植/门廊轻度虚化；手持极轻微晃。"
+  }
+ },
+ "casting": {
+  "A": "A（她）：中国人 East Asian，24-28 岁，黑长发中分披发（脸/发型=dou-keyi master-A）。居家装：米杏色针织上衣 + 牛仔裤（照 master-A 与 dou-keyi 关键帧）。焦虑型，全片高唤醒，气急委屈话不停语速快。母板 assets/characters/A-face-master.png + A-turnaround.png。",
+  "B": "B（他）：中国人 East Asian，26-30 岁，清爽短发（脸/发型=dou-keyi master-B）。居家装：浅灰纯色短袖 T + 深色长裤；道具=素色哑光深灰头戴式耳机（无任何标识/字样）。回避型，不冷漠不嘲讽不翻白眼全程不笑；慌、躲闪、握拳压火、伸手又缩回。母板 assets/characters/B-face-master.png + B-turnaround.png。"
+ },
+ "props": {
+  "headphones": "哑光深灰/黑素色头戴式耳机，无任何 logo/字样。状态链：U1 起戴在 B 头上 → U1 尾在 A 右手里 → U2 起甩到沙发垫上并保持至片尾可见。",
+  "phone": "纯黑无标手机，屏幕不朝镜头。U1 在 B 手里 → 滑到 B 腿上 → U2 B 起身时落在沙发上。"
+ },
+ "subtitlePolicy": "成片零烧对白字幕(anti-subtitle + 人工逐帧查残留)；对白由 H3 同镜内嵌一次性生成；画面零可读文字/logo。",
+ "narrativeShots": [
+  {
+   "id": "U1",
+   "title": "炸点钩子·扯耳机",
+   "sceneId": "SC_LIVING",
+   "style": "中景双人，沙发正前方略低机位，A 画左站、B 画右坐；片头即动作进行中",
+   "source": {
+    "storyFile": "story/screenplay.md",
+    "verbatim": "戴什么耳机！看着我！看着我！我跟你说话呢！"
+   },
+   "watchFocus": "第0帧 A 的手已抓住耳机头梁，0.6s 内把耳机从 B 头上扯下——冲突一眼可见",
+   "requiredBeats": [
+    {
+     "id": "U1-B1",
+     "sceneId": "SC_LIVING",
+     "text": "夜晚居家客厅（SC_LIVING，顶灯+落地灯明亮通透）。B 坐沙发中间偏右（画右）戴着素色头戴式耳机、低头攥手机、眉头紧锁；A（画左）站在他左前方，手已抓住耳机头梁，0.0–0.6s 一把扯下，B 头发被带乱、手机滑到腿上，耳机漏音骤远；A 攥着耳机俯身吼『戴什么耳机！看着我！看着我！我跟你说话呢！』；B 被吓得猛抬头后缩、眼神慌躲、一手攥紧膝盖压火，抢着说『我没躲你……我是怕一开口，话说重了。』。尾态：耳机在 A 右手里，B 坐着仰头看 A，手机在他腿上。音效：耳机扯离的咔哒摩擦声、漏音音乐骤远、手机落腿闷响、A 急促呼吸、房间底噪。画面零文字。",
+     "channels": [
+      "picture",
+      "dialogue",
+      "action_sound",
+      "ambience"
+     ]
+    },
+    {
+     "id": "U1-B2",
+     "sceneId": "SC_LIVING",
+     "text": "成片 2.2s（B 抬头开口处）¥0 数码推近 1.0→1.25 作首切点，动接动落在他抬头动作上（R1 首切≤3s）。",
+     "channels": [
+      "transition"
+     ]
+    }
+   ],
+   "generationUnits": [
+    {
+     "id": "U1",
+     "sceneId": "SC_LIVING",
+     "durationSeconds": 6,
+     "mode": "FL2VA",
+     "references": [
+      "assets/characters/A-turnaround.png",
+      "assets/characters/B-turnaround.png",
+      "assets/locations/scene-livingroom.png",
+      "assets/characters/A-face-master.png",
+      "assets/characters/B-face-master.png"
+     ],
+     "prompts": {
+      "images": [
+       "prompts/U1-first.json",
+       "prompts/U1-last.json"
+      ],
+      "video": "prompts/U1-video.json"
+     },
+     "media": {
+      "firstFrame": "shots/shot-U1/images/U1-first.png",
+      "lastFrame": "shots/shot-U1/images/U1-last.png",
+      "video": "shots/shot-U1/video/U1.mp4"
+     },
+     "cuts": [
+      {
+       "id": "U1-C1",
+       "seconds": 6,
+       "note": "状态突变 FL2VA（首：A 手抓头梁、耳机仍在 B 头上；尾：耳机在 A 手里、B 仰头、手机在腿上），生成 6s 成片剪 5.0s",
+       "coverage": [
+        {
+         "beatId": "U1-B1",
+         "channels": [
+          "picture",
+          "dialogue",
+          "action_sound",
+          "ambience"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "postTasks": [
+    {
+     "id": "U1-PT1",
+     "type": "edit_digital_pushin",
+     "description": "成片 2.2s 处 ¥0 数码推近 1.0→1.25（裁切），动接动首切点",
+     "coverage": [
+      {
+       "beatId": "U1-B2",
+       "channels": [
+        "transition"
+       ]
+      }
+     ]
+    }
+   ],
+   "linkNext": "U2"
+  },
+  {
+   "id": "U2",
+   "title": "升级·甩耳机+你别跟我装死",
+   "sceneId": "SC_LIVING",
+   "style": "中景双人同机位，B 坐→站，画面上沿留足头部空间",
+   "source": {
+    "storyFile": "story/screenplay.md",
+    "verbatim": "重了怎么了？你骂我两句都行！你别跟我装死啊！"
+   },
+   "watchFocus": "A 把耳机甩到沙发上连珠炮控诉；B 猛站起伸手想拉又缩回",
+   "requiredBeats": [
+    {
+     "id": "U2-B1",
+     "sceneId": "SC_LIVING",
+     "text": "同一客厅延续，承接 U1 尾态（A 站画左攥耳机，B 坐画右仰头，手机在腿上）。A 把耳机狠狠甩到 B 左侧沙发垫上（弹一下），手指着他，截住他的话吼『重了怎么了？你骂我两句都行！你别跟我装死啊！』，声音由吼转带哭腔；B 猛地站起（手机滑落沙发），下意识伸手想拉她胳膊，手到半空又缩回胸前，嗓子发紧『我哪有不理你，我就是……』话说一半卡住。尾态：两人在沙发前面对面站立相距一臂，A 画左 B 画右，B 手收在胸前半空，耳机躺在沙发垫上可见。音效：耳机砸沙发垫闷响、沙发弹簧布料声、A 哭腔吸气、房间底噪。画面零文字。",
+     "channels": [
+      "picture",
+      "dialogue",
+      "action_sound",
+      "ambience"
+     ]
+    }
+   ],
+   "generationUnits": [
+    {
+     "id": "U2",
+     "sceneId": "SC_LIVING",
+     "durationSeconds": 6,
+     "mode": "FL2VA",
+     "references": [
+      "assets/characters/A-turnaround.png",
+      "assets/characters/B-turnaround.png",
+      "assets/locations/scene-livingroom.png",
+      "assets/characters/A-face-master.png",
+      "assets/characters/B-face-master.png"
+     ],
+     "prompts": {
+      "images": [
+       "prompts/U2-last.json"
+      ],
+      "video": "prompts/U2-video.json"
+     },
+     "media": {
+      "firstFrame": "shots/shot-U2/images/U2-first.png",
+      "lastFrame": "shots/shot-U2/images/U2-last.png",
+      "video": "shots/shot-U2/video/U2.mp4"
+     },
+     "cuts": [
+      {
+       "id": "U2-C1",
+       "seconds": 6,
+       "note": "状态突变 FL2VA（首=U1-last 共享边界帧 ¥0 复制入本镜目录；尾：两人站立对峙、耳机在沙发垫上），生成 6s 成片剪 5.5s",
+       "coverage": [
+        {
+         "beatId": "U2-B1",
+         "channels": [
+          "picture",
+          "dialogue",
+          "action_sound",
+          "ambience"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "postTasks": [],
+   "linkNext": "U3"
+  },
+  {
+   "id": "U3",
+   "title": "顶点·你别走，跟我说句话",
+   "sceneId": "SC_LIVING",
+   "style": "中景双人对峙，镜内缓推到中近景，仍双人同框",
+   "source": {
+    "storyFile": "story/screenplay.md",
+    "verbatim": "我又不用你认错！你别走，看着我，跟我说句话行不行！"
+   },
+   "watchFocus": "A 哭着说出真正要的东西——不要认错，只要他看着她说句话",
+   "requiredBeats": [
+    {
+     "id": "U3-B1",
+     "sceneId": "SC_LIVING",
+     "text": "同一客厅延续，承接 U2 尾态（两人站立对峙，耳机在沙发垫上）。B 两手一摊又放下，急而憋屈『那你要我怎么样嘛？你说，你说！』；A 眼泪掉下来不去擦，往前逼一步打断他，哭着吼『我又不用你认错！你别走，看着我，跟我说句话行不行！』，镜头缓推至中近景。尾态：A 满脸泪痕上身前倾，B 被吼僵住、嘴微张。表演走眼眶湿、泪痕、抿唇、胸口起伏、声音劈。音效：A 哭腔吸气、一声脚步踩地板、房间底噪。画面零文字。",
+     "channels": [
+      "picture",
+      "dialogue",
+      "action_sound",
+      "ambience"
+     ]
+    }
+   ],
+   "generationUnits": [
+    {
+     "id": "U3",
+     "sceneId": "SC_LIVING",
+     "durationSeconds": 6,
+     "mode": "I2VA",
+     "references": [
+      "assets/characters/A-turnaround.png",
+      "assets/characters/B-turnaround.png",
+      "assets/locations/scene-livingroom.png",
+      "assets/characters/A-face-master.png",
+      "assets/characters/B-face-master.png"
+     ],
+     "prompts": {
+      "images": [],
+      "video": "prompts/U3-video.json"
+     },
+     "media": {
+      "firstFrame": "shots/shot-U3/images/U3-first.png",
+      "video": "shots/shot-U3/video/U3.mp4"
+     },
+     "cuts": [
+      {
+       "id": "U3-C1",
+       "seconds": 6,
+       "note": "对白 beat I2VA 单首帧（首=U2-last 共享边界帧 ¥0 复制入本镜目录），生成 6s 成片剪 5.0s",
+       "coverage": [
+        {
+         "beatId": "U3-B1",
+         "channels": [
+          "picture",
+          "dialogue",
+          "action_sound",
+          "ambience"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "postTasks": [],
+   "linkNext": "U4"
+  },
+  {
+   "id": "U4",
+   "title": "收口·对镜头吐槽定格",
+   "sceneId": "SC_LIVING",
+   "style": "中景双人同对峙机位略拉回，两人间距入画；A 转头直视镜头",
+   "source": {
+    "storyFile": "story/screenplay.md",
+    "verbatim": "现在才说……姐妹们，这日子没法过了，绝对不能找冷暴力。"
+   },
+   "watchFocus": "他终于松口伸手，她后退躲开，转头冲镜头喊出判决",
+   "requiredBeats": [
+    {
+     "id": "U4-B1",
+     "sceneId": "SC_LIVING",
+     "text": "同一客厅延续，承接 U3 尾态（A 满脸泪前倾，B 僵住）。B 回过神急着往前一步伸手去抓她的手『好好好，我说，我说——』；A 往后退一步躲开，他的手停在半空；A 甩下『现在才说……』抹一把眼泪，转头直冲镜头又气又委屈地吐槽『姐妹们，这日子没法过了，绝对不能找冷暴力。』。尾态（=全片定格帧/封面底图）：A 退后一步含泪直视镜头，B 的手悬在她身后半空，耳机在后景沙发垫上可见。音效：B 急促踏步、A 后退脚步、A 抽泣气音、房间底噪。画面零文字。",
+     "channels": [
+      "picture",
+      "dialogue",
+      "action_sound",
+      "ambience"
+     ]
+    },
+    {
+     "id": "U4-B2",
+     "sceneId": "SC_LIVING",
+     "text": "最后一字落地后定格 0.8s（A 含泪直视镜头 + B 悬着的手 + 沙发上的耳机），带极轻房间底噪与 A 一声抽气，不黑场不上字直接结束。",
+     "channels": [
+      "transition"
+     ]
+    }
+   ],
+   "generationUnits": [
+    {
+     "id": "U4",
+     "sceneId": "SC_LIVING",
+     "durationSeconds": 6,
+     "mode": "FL2VA",
+     "references": [
+      "assets/characters/A-turnaround.png",
+      "assets/characters/B-turnaround.png",
+      "assets/locations/scene-livingroom.png",
+      "assets/characters/A-face-master.png",
+      "assets/characters/B-face-master.png"
+     ],
+     "prompts": {
+      "images": [
+       "prompts/U4-first.json",
+       "prompts/U4-last.json"
+      ],
+      "video": "prompts/U4-video.json"
+     },
+     "media": {
+      "firstFrame": "shots/shot-U4/images/U4-first.png",
+      "lastFrame": "shots/shot-U4/images/U4-last.png",
+      "video": "shots/shot-U4/video/U4.mp4"
+     },
+     "cuts": [
+      {
+       "id": "U4-C1",
+       "seconds": 6,
+       "note": "状态/位置变化 FL2VA（首：对峙 A 满脸泪、B 刚要迈步；尾：A 退后转头直视镜头、B 手悬半空），生成 6s 成片剪 5.0s",
+       "coverage": [
+        {
+         "beatId": "U4-B1",
+         "channels": [
+          "picture",
+          "dialogue",
+          "action_sound",
+          "ambience"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "postTasks": [
+    {
+     "id": "U4-PT1",
+     "type": "edit_freeze_frame",
+     "description": "尾帧定格 0.8s，铺极轻房间底噪+抽气，不黑场不上字",
+     "coverage": [
+      {
+       "beatId": "U4-B2",
+       "channels": [
+        "transition"
+       ]
+      }
+     ]
+    }
+   ],
+   "linkNext": "END"
+  }
+ ]
+}

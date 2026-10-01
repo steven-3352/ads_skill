@@ -1,0 +1,26 @@
+{
+  "prompt": "Photorealistic empty interior photo on iPhone 17 Pro, 16:9 horizontal composition, the same cozy home living room as in the reference images, shown completely empty and unoccupied, a quiet room waiting for its occupants. Camera at eye level in front of the sofa, facing it squarely, medium-wide view. Layout: a light-grey fabric three-seat sofa with yellow and cream cushions stands against the back wall, centered slightly to the right of frame; a floor lamp, switched on, stands beside the left end of the sofa; on the back wall to the left, a natural light-wood bookshelf with a few plain books, small objects and green potted plants; further left in the background, an open doorway leading to a softly lit entrance hallway; a low natural light-wood coffee table sits in front of the sofa, slightly right of center, in the lower part of the frame, its top tidy and clear; between the sofa and the left side of the coffee table there is an open clear area of wooden floor where two standing people could later face each other. Night time indoors with the room fully lit: the ceiling light is on as the main soft diffused light from above, plus the warm floor lamp, bright, airy and clearly illuminated, natural neutral warm-white color temperature around 4000K, gentle soft shadows. Medium focal length look, the sofa and coffee table in clear focus, the bookshelf, plants and doorway softly out of focus. Subtle natural film grain and gentle sensor noise, real iPhone 17 photographic texture, true-to-life white balance. Book spines, walls and decor are plain, simple and unmarked; the whole frame including all four corners is clean photographic content.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/dou-keyi/shots/shot-U3/images/U3-first.png",
+    "replication/output/dou-keyi/shots/shot-U7/images/U7-first.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "positive-only phrasing (P3 lesson: negative clauses pull X into frame); text/logo handled as 'plain unmarked surfaces'",
+      "empty room, unoccupied; layout = SC_LIVING scene setting (sofa/coffee table/floor lamp/bookshelf/doorway)",
+      "same living room as dou-keyi accepted U3-first/U7-first",
+      "16:9 1344x768 = H3 16:9 tier (no aspect distortion)",
+      "iPhone 17 real texture, matte soft diffused light, bright ceiling light + floor lamp"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "909c8db36546fbc044bf0bd3a9f88e7fcd9b0014c21b84fecba8db29bcb85f6a"
+  }
+}

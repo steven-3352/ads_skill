@@ -1,0 +1,33 @@
+{
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage of an ordinary East Asian Chinese couple at night in a bright home living room, natural skin texture with visible pores, subtle film grain, soft diffused light from the ceiling light and a floor lamp, bright airy natural neutral warm-white, matte skin with a soft even finish. Behind them a light-grey fabric sofa with yellow and cream cushions, a floor lamp at the left end of the sofa, a light-wood bookshelf with green plants and a doorway in soft focus; a low light-wood coffee table in front of the sofa. The woman stays on the left of the frame: long black hair with a center part, a plain beige to light-apricot knit home top and mid-blue jeans. The man stays on the right of the frame: clean short black hair, a plain light-grey crew-neck T-shirt and dark charcoal trousers. The camera stays on the coffee-table side facing the sofa and never crosses the line between them. The shot begins exactly as in Picture 1: the two stand facing each other an arm's length apart in front of the sofa, woman frame-left, man frame-right, the plain matte dark-grey over-ear headphones lying on the sofa cushion behind them. The man throws both hands open and drops them again, frustrated and cornered rather than impatient, and the man (S2) says fast: <d>[Chinese]那你要我怎么样嘛？你说，你说！</d> The woman takes one step forward toward him, brows knitted tightly, biting her lip, chest heaving, her voice breaking as she cuts him off and shouts louder and louder, and the woman (S1) cries out: <d>[Chinese]我又不用你认错！你别走，看着我，跟我说句话行不行！</d> The camera pushes in slowly with small amplitude to a medium close two-shot that still holds both of them. At the end she stays leaning toward him, breathing hard, and he stands frozen, lips parted, unable to answer. The headphones and phone stay plain and unmarked, the phone screen faces away from the camera. Both speak at a normal-to-fast pace, picking up each other's lines instantly with no pauses and no lingering silence. No subtitles, captions, on-screen text, Chinese characters or watermark appear at any point.\n\noverall_soundscape: A television in the room plays very low and indistinct throughout, under a soft constant room tone, so the room never drops into dead silence. Her ragged, shaky breathing; one firm footstep on the wooden floor as she steps forward; a soft rustle of clothing.\n\nnon_diegetic_music: N/A",
+  "model": "MiniMax-H3",
+  "duration": 6,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/guoqing-p1-lengbaoli/shots/shot-U3/images/U3-first.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "I2VA",
+    "checks": [
+      "I2VA 6s per storyboard H1/H2; instruction line per base-en.txt; single shot",
+      "verbatim dialogue per screenplay <d>[Chinese]; S1=woman S2=man; normal-to-fast pace >=4.8 chars/s, no dead tail",
+      "headphones state per prop chain; axis woman LEFT man RIGHT; camera coffee-table side",
+      "performance: she high-arousal (brows/lip-bite/loud/steps in); he anxious, hand reaches then retracts, not cold/mocking; no tear/red-eye/glow wording",
+      "overall_soundscape: low TV, headphone rip, headphones thump on sofa, footsteps, her breaths; music N/A",
+      "anti-subtitle; no brand; 16:9 768P"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "4c647139f7b38434921184d66bc632e429cd1fa36a29580a4087a5b5079fd459"
+  }
+}

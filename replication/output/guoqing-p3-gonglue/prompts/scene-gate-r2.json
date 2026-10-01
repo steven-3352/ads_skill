@@ -1,0 +1,25 @@
+{
+  "prompt": "Photorealistic candid wide establishing photo on iPhone 17 Pro, 16:9 horizontal composition, eye-level handheld view at the entrance and ticket-check queue area of a crowded popular Chinese scenic spot during the National Day golden-week holiday, sunny daytime. Background: a dense but softly out-of-focus crowd of ordinary East Asian Chinese tourists queuing, silver metal queue barrier railings zig-zagging toward a row of generic turnstile ticket gates, and far behind them the blurred silhouette of a traditional grey stone archway gate with trees. Strong shallow depth of field: the crowd, gates and archway are heavily blurred into soft bokeh, no individual face is sharp or recognizable. Foreground: an empty clear paved stone area in the lower middle of the frame, left free and unobstructed so that two people can later stand there in a waist-up medium two-shot; no person stands in the foreground. Lighting: bright, airy, clear natural daylight, soft diffused sunshine with gentle shadows, natural neutral color temperature, a light hazy blue sky, bright and transparent, not moody, not overcast gloom, not orange sunset, not overexposed. Subtle natural film grain and gentle sensor noise, real iPhone 17 photographic texture, true-to-life white balance, no CGI, no 3D render look, no illustration, no over-sharpening, no over-HDR. The archway has no name plaque with readable characters; all signs, banners, boards, screens and ticket gates are blank or unreadable blurred shapes; no real scenic spot name, no brand, no advertising. No text, no letters, no numbers, no labels, no captions, no watermark, no logo, no brand mark, no printed graphics and no Chinese characters anywhere in the image. The whole frame, including all four corners and especially the bottom-right corner, is clean photographic content with no watermark, no stamp, no badge, no app icon and no signature overlay.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "T2I",
+    "checks": [
+      "empty-foreground scenic-spot entrance / ticket-check queue area, National Day crowd, sunny daytime, bright airy natural daylight",
+      "background crowd + metal queue barriers + generic turnstiles + distant blurred stone archway, heavy shallow-depth bokeh to reduce AI crowd artifacts",
+      "foreground clear paved area reserved for later waist-up two-shot of A (left) and B (right); no person in foreground",
+      "no real scenic spot name, no readable plaque/sign/banner/screen text, no brand/advertising",
+      "16:9 horizontal 1344x768 to match H3 16:9 video (avoid aspect distortion)",
+      "iPhone 17 texture, film grain, natural white balance, anti CGI/3D/over-HDR",
+      "r2: explicit clean corners / no watermark overlay (r1 had a small watermark logo+text in bottom-right)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "2949a15d5f453c05e81c7369ee855031e1fe4516348b173ac16d2f105273e895"
+  }
+}

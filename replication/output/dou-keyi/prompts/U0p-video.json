@@ -1,0 +1,38 @@
+{
+  "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, authentic handheld iPhone-style footage, East Asian Chinese couple, natural skin texture with visible pores and fine detail, soft diffuse even light, matte skin with no shine, no waxy or CGI sheen, in a warm, brightly and evenly lit living room. The shot begins exactly as in Picture 1: a medium two-shot on the sofa, the woman on the left gripping a plain unbranded sealed milk-tea cup with no straw in both hands, a second plain cup standing on the wooden coffee table, and the man on the right looking down at his phone. The camera holds a near-static handheld shot. Within the first moment her face turns cold and she lifts the cup and slams it down hard onto the coffee table with a loud thud, her right hand still gripping it tightly; the milk tea sloshes and the pearls tumble inside the sealed cup but nothing spills. The man flinches at the bang, his shoulders jerk, his phone freezes in mid-air and he looks up, startled and confused. Glaring at him, the young woman with a clear, sharp, fast voice (S1) says right away, at a quick natural pace: <d>[Chinese]全糖？跟你一样？你问过我一句没有！</d> [Shot 2] At 00:02.700, the camera cuts to a slightly closer medium two-shot of the couple. The man lowers his phone out of frame, rests his hands on the edge of the coffee table and turns toward her, sincere, a little anxious and wronged, not cold and not mocking, and the young man with a warm, slightly hurried voice (S2) immediately replies at a quick natural pace: <d>[Chinese]不是……那你想喝啥，你直说啊？</d> The woman keeps her right hand clenched around the cup, raises it slightly above the table, presses her lips, then parts them as if about to answer, arriving in the exact poses, the cup-in-her-hand and no-phone states, and the composition established by Picture 2. No subtitles, captions, on-screen text, Chinese characters or watermark appear at any point.\n\noverall_soundscape: A low television murmur and faint room ambience continue underneath without ever dropping to silence. The plastic cup bottom hits the wooden coffee table with a heavy thud and the milk tea and pearls slosh inside, followed by a startled breath, the soft tap of the phone being set down and light fabric movement as he turns.\n\nnon_diegetic_music: N/A",
+  "model": "MiniMax-H3",
+  "duration": 5,
+  "ratio": "16:9",
+  "resolution": "768P",
+  "generate_audio": true,
+  "content": [
+    {
+      "type": "image_url",
+      "role": "first_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U0p/images/U0p-first.png"
+    },
+    {
+      "type": "image_url",
+      "role": "last_frame",
+      "local_path": "replication/output/dou-keyi/shots/shot-U0p/images/U0p-last.png"
+    }
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "video",
+    "mode": "FL2VA",
+    "checks": [
+      "FL2VA 5s: Picture1=U3.mp4@0.00 (Shot1), Picture2=U3.mp4@2.05 (Shot2 closer two-shot, H3 internal cut at 2.70 mirrors U3's own cut) - both ¥0 frame grabs of accepted U3-video",
+      "slam action within first moment (<=0.3s onset): lift -> slam thud -> slosh no spill -> grip held; B flinch -> phone freezes -> looks up -> lowers phone out -> turns",
+      "verbatim dialogue per screenplay v3 (<d>[Chinese]); S1=woman S2=man; quick natural pace, first line starts right away, no dead tail",
+      "no straw anywhere (straw only appears in U7); cup in her hand at end = last frame; B no phone at end",
+      "16:9; iPhone realistic pores/matte/no waxy-CGI; soft diffuse light no facial shine; Chinese couple; unbranded cup/phone; anti-subtitle; no tear/red-eye/glow wording",
+      "soundscape continuous TV murmur + cup thud + slosh + phone tap; music N/A per screenplay (no BGM)"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "1e150ecb1c652302b6e442f0c0c6ce0fa7b805f699b4ef7ec4b4dc280cbae165"
+  }
+}

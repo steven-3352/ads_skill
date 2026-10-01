@@ -1,0 +1,24 @@
+{
+  "prompt": "Photorealistic five-view full-body character turnaround sheet of a young East Asian Chinese man on a plain light warm-grey studio backdrop, 16:9 horizontal, based on the reference image. Keep the same person, the same face and short black hair, the same plain light-grey crew-neck T-shirt, the same dark blue jeans, the same five poses and layout, and keep both hands completely empty with no bag of any kind. Replace only his footwear: in every view he now wears plain pure-white low-top canvas sneakers with white rubber soles and simple white fabric laces, completely smooth plain canvas sides with no swoosh, no curved side panel, no stripes, no stitched shapes, no metal eyelets or buckles, no tongue label, no heel tab label and no marks of any kind. Bright soft even diffused light, neutral color temperature. Natural skin texture with visible pores, subtle natural film grain and gentle sensor noise, soft diffused light, matte skin with no oily glare. Real iPhone 17 photographic texture. no plastic skin, no waxy over-smoothed face, no beauty-filter, no CGI, no 3D render look, no over-HDR. No text, no letters, no numbers, no labels, no watermark, no logo, no brand mark and no Chinese characters anywhere in the image.",
+  "model": "gpt-image-2",
+  "size": "1344x768",
+  "references": [
+    "replication/output/guoqing-p3-gonglue/assets/characters/B-turnaround-r2.png"
+  ],
+  "authoring_skill": "h3-prompt-writing",
+  "h3_prompt_review": {
+    "skill": "h3-prompt-writing",
+    "authorship": "generated_by_skill",
+    "result": "pass",
+    "asset_type": "image",
+    "mode": "I2I",
+    "checks": [
+      "base = B-turnaround-r2 (main-session decision): keep identity, grey T, dark jeans (accepted), empty hands; replace only shoes",
+      "shoes: plain white canvas low-tops, no swoosh/stripes/eyelets/buckles/labels (fix brand-like swoosh)",
+      "no text/logo/watermark; 16:9 1344x768",
+      "East Asian lock; iPhone realistic texture"
+    ],
+    "unresolved_blockers": [],
+    "reviewed_prompt_sha256": "c9b73a46b04a625e734e58d8cb669b2e227fce20479d7187a4819e0a61fedaa4"
+  }
+}
